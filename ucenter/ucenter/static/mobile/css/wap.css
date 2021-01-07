@@ -1,0 +1,293 @@
+
+body{background:#fff !important;}
+input,button{border:0;}
+/* 登录 begin*/
+.uwap-header{
+	line-height:1.818rem;
+	text-align:center;
+}
+.uwap-header span{
+	font-size:0.818rem;
+	color:#000;
+}
+.uwap-header i.iconfont{
+	font-size:1.363rem;
+	color:#666;
+}
+.shopwap-logo img{
+	margin-top:2.045rem;
+	width:3.75rem;
+	height:3.75rem;
+	border-radius:0.568rem;
+	background:#FF6D78;
+}
+.uwap-login-content{
+	margin-top:3.568rem;
+	
+}
+.uwap-login-content,.uwap-new-entrance{
+	padding:0 1.704rem;
+}
+.uwap-login-item{
+	padding:0 0 0.636rem;
+	margin-bottom:0.954rem;
+	border-bottom:1px solid #dbdbdb;
+}
+.uwap-login-item input{
+	font-size:0.636rem;
+}
+
+.phone-local{
+	margin-right:0.454rem;
+	padding-right:0.545rem;
+	font-size:0.636rem;
+	color:#333;
+	border-right:1px solid #cacaca !important;
+}
+.uwap-phone-input input{
+	font-size:0.636rem;
+}
+
+.uwap-btn-code{
+	padding-left:0.409rem;
+	font-size:0.636rem;
+	color:#FF4F5C;
+	line-height:1.204rem;
+	border-left:1px solid #cacaca;
+}
+.btn-uwap-button{
+	display:inline-block;
+	margin-top:1.545rem;
+	margin-bottom:0.59rem;
+	width:13.636rem;
+	line-height:2rem;
+	background:linear-gradient(90deg,rgba(255,109,120,1),rgba(255,75,89,1));
+	border-radius:1rem;
+	font-size:0.636rem;
+	color:#fff;
+	letter-spacing:4px;
+}
+.btn-uwap-button.active{
+	background:#DFDFDF;
+}
+.uwap-new-entrance em,.uwap-new-entrance i{
+	color:#FF525F;
+	vertical-align:middle;
+}
+
+.uwap-new-entrance a{
+	font-size:0.636rem;
+}
+.uwap-new-entrance i{
+	font-size:0.909rem;
+}
+.uwap-other-login-content{
+	margin-top:2.272rem;
+}
+.uwap-other-login-content h4 span{
+	position:relative;
+	font-size:0.636rem;
+	color:#BDBDBD;
+}
+.uwap-other-login-content h4 span:before,.uwap-other-login-content h4 span:after{
+	content:"";
+	width:2.5rem;
+	height:1px;
+	background:#cacaca;
+	position:absolute;
+	top:0.227rem;
+}
+.uwap-other-login-content h4 span:before{
+	left:-3.636rem;
+}
+.uwap-other-login-content h4 span:after{
+	right:-3.636rem;
+}
+.uwap-other-login-ul{
+	display:flex;
+	justify-content:space-evenly;
+	padding-top:1.068rem;
+	padding-bottom:0.636rem;
+	text-align:center;
+}
+.uwap-other-login-ul::before,
+.uwap-other-login-ul::after{
+    content: '';
+    display: block;
+}
+.uwap-other-login-ul li{
+	margin:0 0.636rem;
+	text-align:center;
+}
+.uwap-other-login-ul li span{
+	display:block;
+	margin-top:0.34rem;
+	font-size:0.636rem;
+	color:#999;
+}
+.uwap-other-login-ul li img{
+	width:2.045rem;
+	height:2.045rem;
+}
+.btn-open-see{
+	font-size:0.818rem !important;
+	color:#9B9B9B;
+}
+.forget-passpord-entrance{
+	color:#aaa;
+}
+/* 登录end */
+
+/* 忘记密码begin */
+.resetps-item{
+	margin:1.5rem 1.704rem 0.909rem;
+}
+.resetps-content-item{
+	padding-bottom:0.909rem;
+	border-bottom:1px solid #dbdbdb;
+}
+.resetps-content-item span,.resetps-content-item input{
+	font-size:0.636rem;
+	color:#333;
+}
+.resetps-content-item input{
+	padding-left: 0.909rem;
+}
+.resetps-content-item .iconfont{
+	display: inline-block;
+	margin-top: 0.1rem;
+	font-size: 0.681rem;
+	color: #666;
+	vertical-align: top;
+	line-height: 0.8rem;
+}
+.resetps-code-item span{
+	font-size:0.681rem;
+	color:#262626;
+}
+.resetps-code-tips{
+	margin-top:0.318rem;
+	font-size:0.545rem;
+	color:#a0a0a0;
+}
+.resetps-code-input{
+	padding-top:1.818rem;
+	justify-content:space-around;
+}
+.resetps-code-input input{
+	margin:0 0.454rem;
+	width:1.704rem;
+	border-bottom:1px solid #dbdbdb;
+	text-align:center;
+	font-size:1.136rem;
+	color:#333;
+}
+.resetps-password-input{
+	margin-top:1.59rem;
+	padding-bottom:0.863rem;
+	border-bottom:1px solid #dbdbdb;
+}
+.resetps-password-input i{
+	font-size:0.818rem;
+	color:#b3b3b3;
+}
+.resetps-password-tips{
+	margin-top:0.454rem;
+	font-size:0.5rem;
+	color:#B3B3B3;
+	line-height:0.909rem;
+}
+
+/* 忘记密码end */
+/* 注册begin */
+.uwap-agreement{
+	margin:0.613rem 1.363rem 0;
+	width:10.409rem;
+	font-size:0.5rem;
+	color:#aaa;
+}
+.uwap-agreement a{
+	color:#FF515F;
+}
+/* 注册end */
+/* 用户协议弹框begin */
+.uwap-alert-dialog{
+	display:none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+}
+.uwap-alert-dialog-box{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.uwap-alert-dialog .mask{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgba(39,39,39,.4);
+}
+.uwap-alert-dialog .uwap-alert-content{
+	display:inline-block;
+	padding:0.909rem 0.818rem;
+	width:14.772rem;
+	background:#fff;
+	border-radius:0.681rem;
+	box-sizing:border-box;
+	position:relative;
+	z-index:2;
+	text-align:left;
+}
+.uwap-regist-agreement-text h4{
+	position:relative;
+	margin-bottom:0.795rem;
+	font-size:0.727rem;
+	color:#000;
+}
+.uwap-regist-agreement-text h4 .iconfont{
+	position:absolute;
+	right:0;
+	font-size:0.681rem;
+	color:#888;
+}
+.uwap-regist-agreement-text .uwap-alert-body{
+	font-size:0.545rem;
+	color:#262626;
+	line-height:0.909rem;
+	max-height:15.909rem;
+	overflow-y:scroll;
+}
+.uwap-regist-agreement-text .uwap-alert-body h5{
+	margin-top:0.772rem;
+}
+/* 用户协议弹框end */
+.pass-step{
+	font-size:0.636rem;
+	color:#bfbfbf;
+}
+
+.uwap-text-tips{
+	margin-top:0.977rem;
+	
+}
+.uwap-text-tips b{
+	display:inline-block;
+	width:0.818rem;
+	height:0.818rem;
+	background:url(../images/success.png) no-repeat center;
+	background-size:contain;
+	vertical-align:middle;
+}
+.uwap-text-tips em{
+	font-size:0.636rem;
+	color:#A0A0A0;
+}

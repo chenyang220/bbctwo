@@ -1,0 +1,67 @@
+.slidetounlock {
+ 	font-size: 12px;
+ 	background: -webkit-gradient(linear, left top, right top, color-stop(0, #4d4d4d), color-stop(.4, #4d4d4d), color-stop(.5, #fff), color-stop(.6, #4d4d4d), color-stop(1, #4d4d4d));
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+ 	-webkit-animation: slidetounlock 3s infinite;
+ 	-webkit-text-size-adjust: none
+ }
+
+ @-webkit-keyframes slidetounlock {
+ 	0% {
+ 		background-position: -200px 0
+ 	}
+
+ 	100% {
+ 		background-position: 200px 0
+ 	}
+ }
+
+ #drag {
+ 	position: relative;
+ 	background-color:#F3F4F6;
+ 	width: 13.636rem;
+ 	height:1.772rem;
+ 	line-height:1.772rem;
+ 	text-align: center;
+ }
+
+ #drag .handler {
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 0px;
+ 	width:1.909rem;
+ 	height:1.772rem;
+	box-shadow:0px 1px 7px 0px rgba(17,17,17,0.2);
+ 	/*  cursor: move; */
+ }
+
+.handler_bg {
+ 	background: #fff url("../images/arrow.png") no-repeat center;
+	background-size:60%;
+ }
+
+.handler_ok_bg {
+ 	background: #fff url("../images/success.png") no-repeat center;
+	background-size:60%;
+ }
+
+ #drag .drag_bg {
+ 	background-color: #57BE6A;
+ 	height:1.772rem;
+ 	width: 0px;
+ }
+
+ #drag .drag_text {
+ 	position: absolute;
+ 	top: 0;
+ 	width: 13.636rem;
+ 	color: #9c9c9c;
+ 	-moz-user-select: none;
+ 	-webkit-user-select: none;
+ 	user-select: none;
+ 	-o-user-select: none;
+ 	-ms-user-select: none;
+
+ 	font-size:0.59rem; //  add
+ }
