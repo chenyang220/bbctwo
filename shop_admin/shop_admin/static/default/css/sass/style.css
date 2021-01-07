@@ -1,0 +1,160 @@
+.themes-1 #nav, .themes-1 #col-main, .themes-1 .ui-btn-sp, .themes-1 .ui-btn, .themes-1 .l-tab-menu, .themes-1 .tab-base a.current:before, .themes-1 .tab-base a.current:after, .themes-1 .tab-base a.current span:after {
+  background: #ff4564; }
+
+.themes-1 #nav .main-nav i {
+  color: #fff; }
+
+.themes-1 #tabManage i {
+  border-color: #fff transparent transparent; }
+
+.themes-1 .tab-base a.current {
+  color: #ff4564; }
+
+.themes-1 .l-tab-menu {
+  border-color: #ff4564; }
+
+.themes-1 .l-tab-menu p:hover, .themes-1 .ui-jqgrid-bdiv .ui-state-hover {
+  background: #ff4564;
+  opacity: .7; }
+
+.themes-1 .onoff .selected {
+  background: #ff4564;
+  border-color: #ff4564; }
+
+.themes-2 #nav, .themes-2 #col-main, .themes-2 .ui-btn-sp, .themes-2 .ui-btn, .themes-2 .l-tab-menu, .themes-2 .tab-base a.current:before, .themes-2 .tab-base a.current:after, .themes-2 .tab-base a.current span:after {
+  background: #456EE2; }
+
+.themes-2 #nav .main-nav i {
+  color: #fff; }
+
+.themes-2 #tabManage i {
+  border-color: #fff transparent transparent; }
+
+.themes-2 .tab-base a.current {
+  color: #456EE2; }
+
+.themes-2 .l-tab-menu {
+  border-color: #456EE2; }
+
+.themes-2 .l-tab-menu p:hover, .themes-2 .ui-jqgrid-bdiv .ui-state-hover {
+  background: #456EE2;
+  opacity: .7; }
+
+.themes-2 .onoff .selected {
+  background: #456EE2;
+  border-color: #456EE2; }
+
+.themes-3 #nav, .themes-3 #col-main, .themes-3 .ui-btn-sp, .themes-3 .ui-btn, .themes-3 .l-tab-menu, .themes-3 .tab-base a.current:before, .themes-3 .tab-base a.current:after, .themes-3 .tab-base a.current span:after {
+  background: #6137D4; }
+
+.themes-3 #nav .main-nav i {
+  color: #fff; }
+
+.themes-3 #tabManage i {
+  border-color: #fff transparent transparent; }
+
+.themes-3 .tab-base a.current {
+  color: #6137D4; }
+
+.themes-3 .l-tab-menu {
+  border-color: #6137D4; }
+
+.themes-3 .l-tab-menu p:hover, .themes-3 .ui-jqgrid-bdiv .ui-state-hover {
+  background: #6137D4;
+  opacity: .7; }
+
+.themes-3 .onoff .selected {
+  background: #6137D4;
+  border-color: #6137D4; }
+
+.themes-4 #nav, .themes-4 #col-main, .themes-4 .ui-btn-sp, .themes-4 .ui-btn, .themes-4 .l-tab-menu, .themes-4 .tab-base a.current:before, .themes-4 .tab-base a.current:after, .themes-4 .tab-base a.current span:after {
+  background: #FF5A5A; }
+
+.themes-4 #nav .main-nav i {
+  color: #fff; }
+
+.themes-4 #tabManage i {
+  border-color: #fff transparent transparent; }
+
+.themes-4 .tab-base a.current {
+  color: #FF5A5A; }
+
+.themes-4 .l-tab-menu {
+  border-color: #FF5A5A; }
+
+.themes-4 .l-tab-menu p:hover, .themes-4 .ui-jqgrid-bdiv .ui-state-hover {
+  background: #FF5A5A;
+  opacity: .7; }
+
+.themes-4 .onoff .selected {
+  background: #FF5A5A;
+  border-color: #FF5A5A; }
+
+.themes-5 #nav, .themes-5 #col-main, .themes-5 .ui-btn-sp, .themes-5 .ui-btn, .themes-5 .l-tab-menu, .themes-5 .tab-base a.current:before, .themes-5 .tab-base a.current:after, .themes-5 .tab-base a.current span:after {
+  background: #19CCC5; }
+
+.themes-5 #nav .main-nav i {
+  color: #fff; }
+
+.themes-5 #tabManage i {
+  border-color: #fff transparent transparent; }
+
+.themes-5 .tab-base a.current {
+  color: #19CCC5; }
+
+.themes-5 .l-tab-menu {
+  border-color: #19CCC5; }
+
+.themes-5 .l-tab-menu p:hover, .themes-5 .ui-jqgrid-bdiv .ui-state-hover {
+  background: #19CCC5;
+  opacity: .7; }
+
+.themes-5 .onoff .selected {
+  background: #19CCC5;
+  border-color: #19CCC5; }
+
+.themes-6 #nav, .themes-6 #col-main, .themes-6 .ui-btn-sp, .themes-6 .ui-btn, .themes-6 .l-tab-menu, .themes-6 .tab-base a.current:before, .themes-6 .tab-base a.current:after, .themes-6 .tab-base a.current span:after {
+  background: #FFC53B; }
+
+.themes-6 #nav .main-nav i {
+  color: #fff; }
+
+.themes-6 #tabManage i {
+  border-color: #fff transparent transparent; }
+
+.themes-6 .tab-base a.current {
+  color: #FFC53B; }
+
+.themes-6 .l-tab-menu {
+  border-color: #FFC53B; }
+
+.themes-6 .l-tab-menu p:hover, .themes-6 .ui-jqgrid-bdiv .ui-state-hover {
+  background: #FFC53B;
+  opacity: .7; }
+
+.themes-6 .onoff .selected {
+  background: #FFC53B;
+  border-color: #FFC53B; }
+
+.themes-7 #nav, .themes-7 #col-main, .themes-7 .ui-btn-sp, .themes-7 .ui-btn, .themes-7 .l-tab-menu, .themes-7 .tab-base a.current:before, .themes-7 .tab-base a.current:after, .themes-7 .tab-base a.current span:after {
+  background: #42BDF2; }
+
+.themes-7 #nav .main-nav i {
+  color: #fff; }
+
+.themes-7 #tabManage i {
+  border-color: #fff transparent transparent; }
+
+.themes-7 .tab-base a.current {
+  color: #42BDF2; }
+
+.themes-7 .l-tab-menu {
+  border-color: #42BDF2; }
+
+.themes-7 .l-tab-menu p:hover, .themes-7 .ui-jqgrid-bdiv .ui-state-hover {
+  background: #42BDF2;
+  opacity: .7; }
+
+.themes-7 .onoff .selected {
+  background: #42BDF2;
+  border-color: #42BDF2; }

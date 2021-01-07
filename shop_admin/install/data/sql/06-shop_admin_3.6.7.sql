@@ -1,0 +1,25 @@
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES (40001, 14000, 'plus会员', '', 0, '', '', '', 'plus会员', 0, '0000-0-0 00:00:00');
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES (40002, 40001, 'plus会员设置', '', 0, 'Config', 'editPlus', 'config_type%5B%5D=plus', '<li>plus会员设置</li>', 30, '0000-0-0 00:00:00');
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES (40003, 40001, 'plus会员权益设置', '', 0, 'Config', 'editPlusQuity', 'config_type%5B%5D=plus', '<li>plus会员权益设置</li>', 80, '0000-0-0 00:00:00');
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES (40004, 40001, 'plus会员管理', '', 0, 'User_Plus', 'editPlusManage', '', '<li>plus会员管理</li>', 50, '0000-0-0 00:00:00');
+
+-- 砍价管理菜单：
+INSERT INTO `yf_admin_rights_base` (`rights_id`, `rights_name`, `rights_parent_id`, `rights_remark`, `rights_order`) VALUES ('19400', '砍价管理', '100', '砍价管理', '50');
+
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES ('19024', '16000', '砍价管理', '', '19400', '', '', '', '砍价管理', '0', '0000-00-00 00:00:00');
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES ('19025', '19024', '活动列表', '', '0', 'Promotion_Bargain', 'bargain_list', '', '砍价管理列表', '49', '0000-00-00 00:00:00');
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES ('19026', '19024', '套餐管理', '', '0', 'Promotion_Bargain', 'bargain_combo', '', '砍价套餐管理', '49', '0000-00-00 00:00:00');
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES ('19207', '19024', '设置', '', '0', 'Config', 'bargain_buy', 'config_type%5B%5D=bargain_buy', '砍价活动购买设置', '49', '0000-00-00 00:00:00');
+
+-- plus会员菜单
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES (40001, 14000, 'plus会员', '', 0, '', '', '', 'plus会员', 0, '0000-0-0 00:00:00');
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES (40002, 40001, 'plus会员设置', '', 0, 'Config', 'editPlus', 'config_type%5B%5D=plus', '<li>plus会员设置</li>', 30, '0000-0-0 00:00:00');
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES (40003, 40001, 'plus会员权益设置', '', 0, 'Config', 'editPlusQuity', 'config_type%5B%5D=plus', '<li>plus会员权益设置</li>', 80, '0000-0-0 00:00:00');
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES (40004, 40001, 'plus会员管理', '', 0, 'User_Plus', 'editPlusManage', '', '<li>plus会员管理</li>', 50, '0000-0-0 00:00:00');
+
+-- 后台新增微信公众号管理菜单
+INSERT INTO `yf_admin_menu` VALUES ('40013', '19000', '微信公众号', '', '0', '', '', '', '微信公众号绑定与设置', '50', '0000-00-00 00:00:00');
+INSERT INTO `yf_admin_menu` VALUES ('40014', '40013', '菜单列表', '', '0', 'WxPublic_Menu', 'menu', 'config_type%5B%5D=publicMenu', '<li>1、自定义菜单最多包括3个一级菜单，每个一级菜单最多包含5个二级菜单。</li><li>2、一级菜单最多4个汉字，二级菜单最多7个汉字，多出来的部分将会以“...”代替。</li><li>3、创建自定义菜单后，大约5分钟左右就可以看到效果。或者取消关注，然后再次关注可立马看到最新效果</li><li>备注：系统创建的自定义菜单在微信公众号管理后台不展示！</li>', '50', '0000-00-00 00:00:00');
+INSERT INTO `yf_admin_menu` VALUES ('40015', '40013', '自动回复', '', '0', 'WxPublic_Menu', 'msg', '', '设置关键词，用户输入的内容与关键词匹配则自动回复对应内容！', '50', '0000-00-00 00:00:00');
+INSERT INTO `yf_admin_menu` VALUES ('40016', '40013', '公众号设置', '', '0', 'WxPublic_Menu', 'publicSet', 'config_type%5B%5D=publicSet', '<li>微信公众号设置</li><li>1.将公众号信息（名称，原始ID，微信号，AppId，Secret）填入对应项，点击确认提交进行保存；</li><li>2.复制回调url，token信息到微信公众号后台【开发/服务器配置】进行对应设置。</li>', '50', '0000-00-00 00:00:00');
+INSERT INTO `yf_admin_menu` VALUES ('40017', '40013', '行业设置', '', '0', 'WxPublic_Industry', 'set', 'config_type%5B%5D=industry', '设置所属行业，建议主行业设置为：IT科技/互联网/电子商务！', '50', '0000-00-00 00:00:00');

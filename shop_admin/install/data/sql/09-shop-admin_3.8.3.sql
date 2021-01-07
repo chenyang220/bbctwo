@@ -1,0 +1,1 @@
+INSERT INTO `yf_admin_menu` (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) VALUES ('90017', '16001', '同城配送', '', '0', 'Config', 'set_delivery', 'config_type%5B%5D=set_delivery', '设置平台收取买家每单的配送费', '50', '0000-00-00 00:00:00');

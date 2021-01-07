@@ -1,0 +1,349 @@
+/*限时折扣A*/
+
+ul li {
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+
+.xs-discount {
+
+}
+
+.xs-discount ul {
+	padding-top: 30px;
+	width: 100%;
+	height: 100%;
+}
+
+.xs-discount li {
+	float: left;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+.xs-discount li:hover {
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+}
+
+.discount-img {
+	width: 100%;
+	height:78px;
+	/*border: 1px dashed #eee;*/
+}
+
+.discount-img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.xs-discount li p {
+	margin-top: 10px;
+    line-height: 16px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.xs-discount li div.clearfix {
+	width: 100%;
+	box-sizing: border-box;
+	text-align:center;
+}
+
+.xs-discount li div span:nth-child(1) {
+	font-size: 12px;
+	color: #fd3d53;
+}
+
+.xs-discount li div span:nth-child(2) {
+	float: right;
+	font-size: 14px;
+	color: #999;
+	text-decoration: line-through;
+}
+
+.xs-discount li>span {
+	display: block;
+	margin-top: 5px;
+	font-size: 14px;
+	color: #fd3d53;
+	text-align: center;
+}
+
+
+/*拼团活动A*/
+
+.pt-discount {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 auto;
+	width: 490px;
+	height: 130px;
+	border: 1px dashed #eee;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.details-pt {
+	width: 68%;
+	height: 80px;
+	position: relative;
+}
+
+.details-pt h4 {
+    line-height: 18px;
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+}
+
+.details-pt p {
+	margin-top: 10px;
+	line-height: 16px;
+	font-size: 16px;
+	color: #999;
+}
+
+.details-pt span {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 30px;
+	line-height: 16px;
+	font-size: 16px;
+	color: #fd3d53;
+}
+
+
+.details-pt div {
+	margin-top: 10px;
+}
+
+.details-pt div span {
+	font-size: 16px;
+	color: #999;
+}
+
+.details-pt div em {
+	margin-left: 6px;
+}
+.details-pt em{
+	font-size:12px;
+	color:#999;
+	text-decoration:line-through;
+}
+.details-pt a {
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #fd3d53;
+	font-size: 12px;
+	color: #fff
+}
+
+.pt-discount li.fr {
+	width: 28%;
+	height: 100%;
+}
+
+.pt-discount li.fr img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+}
+
+
+/*团购活动A*/
+
+.tg-discount {
+	width: 100%;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	border: 1px dashed #eee;
+}
+
+.tg-discount li.fl {
+	width: 28%;
+	height: 100%;
+}
+
+.tg-discount li.fl img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*限购B*/
+
+.xs-discount-b {
+	/* width: 300px; */
+	/* height: 158px; */
+}
+
+.xs-discount-b .discount-img {
+	height: 80px;
+}
+
+.xs-discount-b p {
+	color: #fd3d53;
+}
+
+.xs-discount-b span {
+	color: #999 !important;
+	text-decoration: line-through;
+}
+
+
+/*拼团活动/团购活动*/
+
+.activity {
+	width: 300px;
+	height: 160px;
+}
+
+.activity div {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 48%;
+	height: 140px;
+	border: 1px dashed #eee;
+}
+
+.activity div:hover {
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+}
+
+.activity div img {
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.activity div a {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 4px;
+	right: 4px;
+	cursor: pointer;
+	font-size: 12px;
+	padding: 4px 8px;
+	color: #FFF;
+	background-color: #FF4564;
+}
+
+.activity div:hover a {
+	display: block;
+}
+
+
+/*平台红包*/
+
+.platform {
+	width: 300px;
+	height: 160px;
+}
+
+.platform div {
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+
+/*代金券*/
+
+.voucher {
+	width: 300px;
+	height: 160px;
+}
+
+.voucher div {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+
+/*活动板块A*/
+
+.activity-A {
+	width: 520px;
+	/*height: 250px;*/
+}
+
+.activity-A .n-title {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.activity-A .n-content {
+	width: 500px;
+	height: 230px;
+	margin: 0 auto;
+	margin-top: 10px;
+	border: 1px solid red;
+}
+
+
+/*活动板块B*/
+
+.activity-B {
+	width: 700px;
+}
+
+.activity-B>li {
+	width: 328px;
+	height: 230px;
+	/*border: 1px solid #999;*/
+	box-sizing: border-box;
+}
+
+.activity-B .n-title {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.activity-B p {
+	font-size: 14px;
+}
+
+.activity-B select {
+	margin-left: 10px;
+}
+
+.activity-content {
+	margin: 0 auto;
+	margin-top: 18px;
+}
+
+.activity-B .activity-content {
+	width: 300px;
+	height: 160px;
+	box-sizing: border-box;
+	border: 1px solid #999;
+}
+.indexImg{
+	display: inline-block;
+	vertical-align:top;
+}
+.actA{
+	padding:30px 0 0;
+}

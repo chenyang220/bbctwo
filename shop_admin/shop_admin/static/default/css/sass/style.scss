@@ -1,0 +1,36 @@
+$color:#ff4564 #456EE2 #6137D4 #FF5A5A #19CCC5 #FFC53B #42BDF2;
+$index:0;
+
+@each $i in $color{
+	.themes-#{$index+1} {
+		 #nav,#col-main,.ui-btn-sp,.ui-btn,.l-tab-menu,.tab-base a.current:before,.tab-base a.current:after,.tab-base a.current span:after {
+			background:$i;
+		}
+		#nav .main-nav i{
+			color:#fff;
+		}
+		#tabManage i{
+			border-color:#fff transparent transparent;
+		}
+		.tab-base a.current{
+			color:$i;
+		}
+		.l-tab-menu{
+			border-color:$i;
+		}
+		.l-tab-menu p:hover,.ui-jqgrid-bdiv .ui-state-hover{
+			background:$i;
+			opacity:.7;
+		}
+		.onoff .selected{
+			background:$i;
+			border-color:$i;
+		}
+		
+	}
+	
+	$index:$index+1;
+}
+
+
+
