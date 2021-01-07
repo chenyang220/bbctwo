@@ -1,0 +1,55 @@
+<!DOCTYPE html>  
+ <html>  
+ <head>  
+ <meta charset="utf-8" />  
+ <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />  
+ <title>测试页面</title>  
+ </head>  
+ <body>  
+ <p id="wrap">测试页面测试页面测试页面测试页面测试页面测试页面测试页面测试页面测试页面测试页面测试页面测试页面6666</p >  
+   <script src="js/ucsdk.min.js"></script>  
+ <script type="text/javascript">  
+ function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+var tk=getQueryVariable("token");
+ // 配置SDK  
+ UC.config = {  
+ debug: true, // 开启调试模式  
+ appId: '172d1c69e247207db52b54081255e450', // 必填  
+ appSecurity: '896f886913826082f52a49a63aef4cff', // 必填  
+ redirectUri: location.href // 鉴权后跳转地址（当前页面地址）, 注意域名必须和创建APP时候设置的域名保持一致  
+ };  
+ // 用于处理接口异常、接口不存在  
+ UC.error = function (data) {  
+ alert('客户端接口打开失败');  
+ };  
+ UC.ready = function () { 
+ UC.debug.log("token:"+tk);
+ testInterface2();  
+ testInterface3();  
+ }  
+   function testInterface2 () {  
+ UC.call('setNavigationBarRight', '', function (data) {  
+  document.getElementById('wrap').innerHTML = '成功2';  
+ }, function (error) {  
+  document.getElementById('wrap').innerHTML = '失败2';  
+ });  
+ }  
+   function testInterface3 () {  
+ UC.call('hideNavigationBarLeft', '', function (data) {  
+  document.getElementById('wrap').innerHTML = '成功3';  
+ }, function (error) {  
+  document.getElementById('wrap').innerHTML = '失败3';  
+ });  
+ }  
+ </script>  
+ </body>  
+ </html>  

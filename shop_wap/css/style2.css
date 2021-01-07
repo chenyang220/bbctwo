@@ -1,0 +1,220 @@
+header{
+	background:#f5f5f5;
+	height:auto;
+	border-bottom:0;
+}
+.header-inp2{
+	margin:0.636rem 0.681rem 0.5rem;
+	height:1.363rem;
+	background:#fff;
+	border-radius:0.681rem;
+}
+.header-inp2 .search-input{
+	display: inline-block;
+	font-size: 0.545rem;
+	color: #9b9b9b;
+	vertical-align: top;
+	line-height: 1.363rem;
+}
+.header-inp2 .iconfont{
+	font-size:0.636rem;
+	color:#9b9b9b;
+}
+.class-search-input{
+	border:none !important;
+	background:transparent;
+}
+.class-swiper-container{
+	padding-bottom:0.636rem;
+	text-align:center;
+}
+.class-swiper-container li{
+	display:inline-block;
+	margin-right:0.5rem;
+	width:auto;
+	
+}
+.class-swiper-container li .img-box{
+	position:relative;
+	display:inline-block;
+	width:2rem;
+	height:2rem;
+	border-radius:100%;
+	overflow:hidden;
+}
+.class-swiper-container li span{
+	display:inline-block;
+	padding:0 0.363rem;
+	margin-top:0.363rem;
+	font-size:0.545rem;
+	color:#4a4a4a;
+	line-height:1rem;
+}
+.class-swiper-container li span.active{
+	color:#fff;
+	background:#FD3D53;
+	border-radius:0.5rem;
+}
+.nctouch-main-layout-style2 .categroy-cnt ,.nctouch-main-layout-style2 .categroy-rgt{
+	top:6.5rem;
+	background:#fff;
+}
+.nctouch-main-layout-style2 .categroy-cnt{
+	border-right: 1px solid #f5f5f5;
+	border-top-left-radius: 0.363rem;
+}
+.nctouch-main-layout-style2 .categroy-rgt{
+	border-top-right-radius: 0.363rem;
+}
+.nctouch-main-layout-style2 .ci-fcategory-name{
+	position:relative;
+	border-left:0 !important;
+	border-bottom: 0;
+}
+.nctouch-main-layout-style2 .category-item.selected .ci-fcategory-name:before{
+	border-left:0;
+	content:"";
+	width:0.272rem;
+	height:0.772rem;
+	position:absolute;
+	left:0;
+	top:0.636rem;
+	background:#FF5A58;
+}
+.triangle{
+	position:relative;
+}
+.triangle:after{
+	content: "";
+	border: 6px solid;
+	border-color: transparent transparent #fff transparent;
+	position: absolute;
+	left: 1.5rem;
+	top: -0.5rem;
+}
+.nctouch-main-layout-style2 .categroy-rgt{
+	padding:0;
+	bottom:2.4rem;
+	overflow:hidden;
+}
+.fresh-class-content{
+	position:relative;
+	height:100%;
+}
+.fresh-class-module{
+	position: absolute;
+	top: 2rem;
+	width: 100%;
+	bottom: 0;
+	overflow:auto;
+}
+.fresh-class-sx{
+	padding: 0 0.636rem;
+	text-align: right;
+	line-height: 1.818rem;
+	border: 1px solid #f5f5f5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+.fresh-class-sx span{
+	margin-left:1rem;
+	font-size:0.545rem;
+	color:#4a4a4a;
+}
+.fresh-class-sx span.active{
+	color:#FF0505;
+}
+
+.trangle-icon{
+	position: relative;
+	margin-left:0.1rem;
+}
+.trangle-icon:before,.trangle-icon:after{
+	content:"";
+	border:4px solid;
+	position:absolute;
+	top:0;
+}
+.trangle-icon:before{
+	top:-0.1rem;
+	border-color:transparent transparent #9b9b9b transparent;
+}
+.trangle-icon:after{
+	top:0.4rem;
+	border-color:#9b9b9b transparent transparent  transparent;
+}
+.fresh-class-sx span.up .trangle-icon:before{
+	border-bottom-color:#FF0505;
+}
+.fresh-class-sx span.down .trangle-icon:after{
+	border-top-color:#FF0505;
+}
+.fresh-class-ul li{
+	position:relative;
+	padding:0.227rem 0.409rem 0.454rem 0.5rem;
+	height:3.636rem;
+}
+.fresh-class-ul li .img-box{
+	position:absolute;
+	left:0.5rem;
+	top:0.227rem;
+	display:inline-block;
+	width:3.636rem;
+	height:3.636rem;
+	border-radius:100%;
+	overflow:hidden;
+}
+.fresh-class-text{
+	position: relative;
+	z-index:10;
+	margin-left:4.09rem;
+	height:3.6361rem;
+}
+.fresh-class-text-flex{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	height:100%;
+}
+.fresh-class-goods-name{
+	margin-bottom:0.2rem;
+	font-size:0.636rem;
+	color:#4a4a4a;
+}
+.fresh-class-goods-des{
+	font-size:0.545rem;
+	color:#9b9b9b;
+}
+.fresh-class-text p{
+	margin-top:0.272rem;
+}
+.fresh-class-text p strong{
+	font-size:0.636rem;
+	color:#FF0000;
+}
+.fresh-class-text p b{
+	margin-left:0.227rem;
+	font-size:0.545rem;
+	color:#9b9b9b;
+}
+.fresh-class-text p span{
+	display:inline-block;
+	margin-top: 0.3rem;
+	width:1.09rem;
+	height:1.09rem;
+	line-height:1.09rem;
+	background:#FF5A58;
+	border-radius:100%;
+	text-align:center;
+	cursor:pointer;
+}
+
+.fresh-class-text p span i{
+	color:#fff;
+}

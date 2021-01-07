@@ -1,0 +1,559 @@
+.express-lists,.express-box,.express-progress-box{
+	margin-bottom:2.5rem;
+	padding:0.727rem;
+}
+.express-lists li{
+	margin-bottom:0.454rem;
+	padding:1.09rem 0.454rem 0;
+	background:#fff;
+	border-radius:0.181rem;
+}
+.express-lists li img{
+	margin-right:0.454rem;
+	width:4.318rem;
+	height:3.181rem;
+}
+.express-lists li>div{
+	padding-bottom:0.59rem;
+}
+.express-lists li div dl{
+	margin-bottom:0.272rem;
+	font-size:0.545rem;
+}
+.express-lists li div dt,.express-lists li div dd{
+	display:inline-block;
+	vertical-align:top;
+}
+.express-lists li div dt{
+	width:2.772rem;
+	text-align:right;
+	color:#9B9B9B;
+}
+.express-lists li div dd{
+	color:#4a4a4a;
+}
+.express-lists-order-oper{
+	padding:0.272rem 0 0.272rem;
+	border-top:1px solid #E8E8E8;
+}
+.express-lists-order-oper a{
+	display:inline-block;
+	font-size:0.636rem;
+	height:1.409rem;
+	line-height:1.409rem;
+	border:1px solid;
+	box-sizing:border-box;
+	border-radius:0.704rem;
+	text-align:center;
+}
+.express-oper-order-view{
+	width:5rem;
+	border-color:#F5A623;
+	color:#F5A623;
+}
+.express-oper-logistic-view{
+	margin-left:0.272rem;
+	width:4.09rem;
+	border-color:#FD3D53;
+	color:#FD3D53;
+}
+.express-lists-bottom{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:2.227rem;
+	line-height:2.227rem;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.12);
+	background:#fff;
+}
+.express-lists-bottom:before{
+	content:"";
+	width:1px;
+	background:#D0D0D0;
+	position:absolute;
+	left:50%;
+	top:0.272rem;
+	bottom:0.272rem;
+}
+.express-lists-bottom a{
+	display:inline-block;
+	width:50%;
+	text-align:center;
+	font-size:0.727rem;
+	color: #9B9B9B;
+}
+.express-lists-bottom a i.iconfont{
+	margin-right:0.318rem;
+	font-size:1.09rem;
+	vertical-align:middle;
+}
+.express-lists-bottom a.active,.express-lists-bottom a.active .iconfont{
+	color:#FD3D53;
+}
+/*物流跟踪*/
+
+.express-order-status-module,.express-order-logistics-module{
+	margin-bottom:0.454rem;
+	padding:0.636rem 0.5rem;
+	border-radius:0.181rem;
+}
+.express-progress-tit{
+	margin-bottom:0.818rem;
+	font-size:0.681rem;
+	color: #4A4A4A;
+}
+.express-progress-tit b{
+	font-size: 0.545rem;
+	color: #9B9B9B;
+}
+.express-order-status-module dl{
+	margin-bottom:1.363rem;
+}
+.express-order-status-module dt,.express-order-status-module dd{
+	display:inline-block;
+	vertical-align: top;
+	font-size:0.636rem;
+}
+.express-order-status-module dt{
+	width:3.181rem;
+	color: #9B9B9B;
+	text-align:right;
+}
+.express-order-status-module dd{
+	color: #4A4A4A;
+}
+.express-order-logistics-module li{
+	position:relative;
+}
+.express-order-logistics-module li div{
+	position:relative;
+	margin-left:4rem;
+	padding-left:0.545rem;
+	padding-bottom:0.954rem;
+	line-height:0.636rem;
+	border-left:1px solid #E8E8E8;
+}
+.express-order-logistics-module li div:before{
+	content:"";
+	width:0.363rem;
+	height:0.363rem;
+	background:#D8D8D8;
+	position:absolute;
+	left:-0.181rem;
+	top:0;
+	border-radius:100%;
+}
+.express-order-logistics-module li div span{
+	font-size:0.636rem;
+	color:#9b9b9b;
+}
+.express-order-logistics-module li.active div span{
+	display: inline-block;
+	color:#4a4a4a;
+	vertical-align:top;
+}
+.express-order-logistics-module li.active div:before{
+	background:#FF4742;
+}
+.express-order-logistics-module li p{
+	position:absolute;
+	left:0;
+	font-size:0.545rem;
+	color:#4a4a4a;
+	width:3.636rem;
+	text-align:right;
+}
+.express-order-logistics-module li p span{
+	display:block;
+}
+/*寄快递*/
+
+.express-sel,.express-infor-box{
+	padding:0.363rem 0.5rem;
+	border-radius:0.181rem;
+	margin-bottom:0.454rem;
+}
+.express-sel div{
+	padding-left:0.5rem;
+	padding-right:1.818rem;
+}
+.express-sel div label{
+	font-size: 0.636rem;
+	color: #4A4A4A;
+}
+.express-sel div label input{
+	margin-right:0.181rem;
+	vertical-align:middle;
+}
+.express-sel div label em{
+	display:inline-block;
+	vertical-align:middle;
+}
+.express-sel{
+	padding-bottom:1.272rem;
+}
+.express-infor-item{
+	position:relative;
+	padding-left:0.2rem;
+	margin-bottom:1.045rem;
+	border-bottom: 1px solid #EEEEEE;
+}
+.express-infor-item b{
+	position:absolute;
+	left:-0.1rem;
+	font-size:0.636rem;
+	color: #D0021B;
+}
+.express-infor-item i.iconfont{
+	display:inline-block;
+	font-size:0.818rem;
+	color:#878787;
+	vertical-align:middle;
+}
+.express-infor-item input{
+	line-height:30px;
+	border:0;
+}
+.express-infor-item .icon-dingwei{
+	color: #FF5F6A !important;
+}
+.btn-express-bottom-common{
+	display:inline-block;
+	width:14.31rem;
+	height:2.181rem;
+	line-height:2.181rem;
+	text-align:center;
+	font-size:0.727rem;
+	color: #FFFFFF;
+	background-image: linear-gradient(-134deg, #FF603F 0%,  #FF4242 100%);
+	border-radius:1.09rem;
+}
+.express-infor-had-box .express-infor-item{
+	border:0;
+}
+.express-data{
+	display:inline-block;
+	width:78%;
+	font-size: 0.636rem;
+	color: #4A4A4A;
+}
+.express-infor-had-box .express-infor-item h4{
+	display: inline-block;
+    font-size: 0.636rem;
+    color: #878787;
+}
+
+/*改版-new*/
+
+header .tit-nav a{
+	display:inline-block;
+	padding:0 0.727rem;
+	font-size: 0.727rem;
+	color: #4A4A4A;
+}
+header .tit-nav a.active{
+	color:#FB3E54;
+	border-bottom:2px solid #FB3E54;
+}
+.new-express-relativer-infor li{
+	padding:0 0.59rem;
+	border-bottom:1px solid #F1F1F1;
+	height:2.181rem;
+	line-height:2.181rem;
+}
+.new-express-relativer-infor li:last-child{
+	border-bottom:0;
+}
+.new-express-relativer-infor li input{
+	margin-left:0.363rem;
+	border:0;
+}
+.b-send,.b-receipt{
+	display: inline-block;
+	width:1rem;
+	height:1rem;
+	line-height:1rem;
+	border-radius:100%;
+	text-align:center;
+	font-size:0.545rem;
+	color:#fff;
+}
+.b-send{
+	background:#FF9800;
+}
+.b-receipt{
+	background:#52A2FF;
+}
+.new-express-about-infor{
+	min-height:18.727rem;
+}
+.new-express-about-infor dl{
+	padding:0 0.5rem;
+	height:2.181rem;
+	line-height:2.181rem;
+	border-bottom:1px solid #f1f1f1;
+	font-size:0;
+}
+.new-express-about-infor dl dt,.new-express-about-infor dl dd{
+	display:inline-block;
+	vertical-align:top;
+}
+.new-express-about-infor dl dt{
+	width:20%;
+	font-size:0.636rem;
+	color:#4a4a4a;
+}
+.new-express-about-infor dl dd{
+	width:80%;
+}
+.new-express-about-infor dl dd input{
+	margin-left:0.545rem;
+	padding:0.636rem 0;
+	border:0;
+	vertical-align:top;
+	text-align:right;
+	float:right;
+}
+.choose-new-express{
+	font-size:0.545rem;
+	color:#9b9b9b;
+}
+.choose-new-express em{
+	vertical-align:middle;
+}
+.choose-new-express .iconfont{
+	margin-left: 0.181rem;
+	font-size: 0.636rem;
+	vertical-align: middle;
+}
+.new-express-bottom{
+	position:fixed;
+	left:0;
+	bottom:0;
+	z-index:4;
+	background:#fff;
+	height:2.272rem;
+	line-height:2.272rem;
+	width:100%;
+}
+.new-express-bottom-confirm,.new-express-bottom-text{
+	display:inline-block;
+	width:50%;
+	font-size:0.636rem;
+	vertical-align:top;
+	text-align:center;
+}
+.new-express-bottom-text strong{
+	color:#FD3E54;
+}
+.new-express-bottom-confirm-height{
+	margin-bottom:2.727rem;
+}
+
+.new-express-bottom-confirm{
+	background:#FD3E54;
+	color:#fff;
+}
+.new-express-agreements{
+	padding:0.454rem;
+}
+.new-express-agreements span,.new-express-agreements a{
+	font-size:0.545rem;
+	vertical-align:middle;
+}
+.new-express-agreements span{
+	color:#4a4a4a;
+}
+.new-express-agreements a{
+	color:#52A2FF;
+}
+.new-express-edit-dialog{
+	position:absolute;
+	top:2.24rem;
+	bottom:0;
+	background:rgba(29,29,29,0.66);
+	width:100%;
+	display:none;
+}
+
+.new-express-edit-dialog_receipt{
+	position:absolute;
+	top:2.24rem;
+	bottom:0;
+	background:rgba(29,29,29,0.66);
+	width:100%;
+	display:none;
+	top:4.46rem;
+}
+
+.new-express-edit-dialog .new-express-about-infor dl input{
+	float:left;
+	text-align:left;
+}
+
+.new-express-edit-dialog_receipt .new-express-about-infor dl input{
+	float:left;
+	text-align:left;
+}
+
+.new-express-edit-textarea{
+	margin:0.272rem 0;
+	background:#F1F1F1;
+	border:0;
+	padding:0.636rem 0.318rem;
+	resize:none;
+	width:100%;
+	box-sizing:border-box;
+	min-height:4.318rem;
+}
+.btn-new-express-edit-sure{
+	display:inline-block;
+	margin-bottom:1.454rem;
+	width:13.681rem;
+	height:2.318rem;
+	line-height:2.318rem;
+	border: 1px solid #FD3E54;
+	border-radius:1.159rem;
+	text-align:center;
+	font-size:0.636rem;
+	color:#FD3E54;
+	background:transparent;
+}
+/*服务协议*/
+.new-express-agreement-text{
+	padding:1.363rem 1.272rem;
+	font-size:0.727rem;
+	color:#4a4a4a;
+}
+.btn-new-express-agreement-agree{
+	display:inline-block;
+	margin:0.818rem auto;
+	width:12.4rem;
+	height:2.181rem;
+	background-image: linear-gradient(-134deg, #FF603F 0%,  #FF4242 100%);
+	border-radius:1.136rem;
+	font-size:0.727rem;
+	color:#fff;
+	text-align:center;
+	border:0;
+}
+
+.new-express-lists li{
+	padding:0 1rem 0 0.454rem;
+	font-size:0.636rem;
+	color:#333;
+	line-height:2.181rem;
+	border-bottom:1px solid transparent;
+}
+.new-express-lists li .iconfont{
+	display:none;
+	font-weight:bold;
+}
+.new-express-lists li.active{
+	border-color:#f1f1f1;
+	color:#FD3E54;
+}
+.new-express-lists li.active i.iconfont{
+	display:inline-block;
+}
+.new-express-lists-mask .nctouch-bottom-mask-top{
+	padding:0;
+}
+.new-express-lists-mask .nctouch-bottom-mask-block{
+	min-height:auto;
+}
+.new-express-lists-mask .nctouch-bottom-mask-rolling{
+	padding-bottom:0;
+}
+.new-express-protect-values{
+	padding:1.363rem 0.454rem;
+}
+.new-express-protect-values dl dt,.new-express-protect-values dl dd{
+	display:inline-block;
+	vertical-align:middle;
+}
+.new-express-protect-values dl dt{
+	font-size:0.727rem;
+	color: #333;
+}
+.new-express-protect-values dl dd input{
+	padding-left:0.545rem;
+	width:10.681rem;
+	height:1.409rem;
+	background: #F4F4F4;
+	border-radius: 0.704rem;
+	border:0;
+	box-sizing:border-box;
+}
+.new-express-protect-values p{
+	padding:0.636rem 0.454rem 0;
+	font-size:0.636rem;
+}
+.new-express-protect-values p span{
+	color:#4a4a4a;
+}
+.new-express-protect-values p a{
+	color: #4A90E2;
+	text-decoration:underline;
+}
+
+
+.new-express-weight-select,.new-express-types-select{
+	padding:0.727rem 0.454rem 0;
+	font-size:0;
+}
+.new-express-weight-select em,.new-express-types-select em{
+	display:inline-block;
+	margin-bottom:1rem;
+	margin-right:1.454rem;
+	width:4.318rem;
+	height:1.454rem;
+	line-height:1.454rem;
+	font-size:0.545rem;
+	color:#4a4a4a;
+	background:transparent;
+	border-radius:0.75rem;
+	border:1px solid #D7D7D7;
+	text-align:center;
+	box-sizing:border-box;
+}
+.new-express-weight-select em:nth-child(3n),.new-express-types-select em:nth-child(3n){
+	margin-right:0;
+}
+.new-express-weight-select em.active,.new-express-types-select em.active{
+	background: #FD3E54;
+	border-color: #FD3E54;
+	color:#fff;
+}
+.new-express-protect-fee-dialog{
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	bottom:0;
+	z-index:21;
+	width:100%;
+	background:rgba(0,0,0,.65);
+}
+.new-express-protect-fee{
+	position:relative;
+	display:inline-block;
+	width:12.272rem;
+	border-radius:0.09rem;
+}
+.new-express-protect-fee h4{
+	font-size: 0.727rem;
+	color: #000000;
+	line-height:1.636rem;
+	border-bottom:1px solid #ddd;
+	text-align:center;
+}
+.new-express-protect-fee-content{
+	padding:0.454rem 0.545rem;
+	font-size:0.636rem;
+	color: #4A4A4A;
+	letter-spacing: 0.013rem;
+	line-height:1.045rem;
+	text-align:left;
+}

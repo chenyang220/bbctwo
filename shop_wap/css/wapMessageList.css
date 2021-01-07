@@ -1,0 +1,542 @@
+@charset "utf-8";
+p, button {
+    font-size: 0.545rem;
+}
+body{
+    background-color: #fff;
+}
+img{
+    width:100%;
+}
+
+.header-l a i {
+    display: inline-block;
+    width: 0.409rem;
+    height: 0.75rem;
+    background: url(../images/images_news/arrow_01.png) no-repeat center;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+/*选项卡*/
+.TabControlBox {
+    position: fixed;
+    width: 94.6%;
+    top: 2rem;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 0.45rem;
+}
+
+.TabControl {
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 0.4rem;
+    font-size: 0;
+
+}
+
+.UnfoldTabControl {
+    white-space: normal !important;
+    padding-bottom: 2rem;
+}
+
+.TabControl > li {
+    border-bottom: 2px solid #f5f6f6;
+    display: inline-block;
+    width: 27.53vw;
+    font-size: 0.6rem;
+    line-height: 2rem;
+    height: 2rem;
+    color: #686868;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.pitchOnLi {
+    font-size: 0.63rem;
+    color: #fd3d53 !important;
+
+}
+
+/* for Chrome */
+.inner-container::-webkit-scrollbar {
+    display: none;
+}
+
+.TbClMoreBox {
+    width: 3rem;
+    height: 2rem;
+    background: linear-gradient(to right, transparent, #f9fafb 20%, #f9fafb);
+    position: absolute;
+    top: 1px;
+    right: 0;
+    display: none;
+
+}
+
+.TbClMoreRotate {
+    top: auto !important;
+    bottom: 0;
+
+}
+
+.TbClMoreRotate > i {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -moz-transform: rotate(180deg); /* Firefox */
+    -webkit-transform: rotate(180deg); /* Safari 和 Chrome */
+    -o-transform: rotate(180deg); /* Opera */
+    border-bottom: 1px solid #3c3c3c;
+    padding-top: 0.2rem;
+}
+
+.TbClMore {
+    width: 0.63rem;
+    height: 0.45rem;
+    background: url(../images/images_news/bbc-bg45.png) no-repeat center;
+    background-size: contain;
+    margin-top: 0.7rem;
+    margin-right: 0.8rem;
+    float: right;
+
+}
+
+.articleListsBox {
+    padding: 0 0.45rem;
+    background-color: #fff;
+}
+
+.orderingMethod {
+    position: fixed;
+    width: 94.6%;
+    font-size: 0;
+    top: 4rem;
+    padding-right: 0.45%;
+}
+
+.orderingMethod > button {
+    width: 50%;
+    height: 1.4rem;
+    font-size: 0.6rem;
+    background-color: #eee;
+    font-family: "STXhei";
+    color: #666;
+    display: inline-block;
+    border: none;
+    outline: none;
+}
+
+.orderingMethod .activeRank {
+    background-color: #fd3d53;
+    color: #fff;
+
+}
+
+.contentBox {
+    margin-top: 5.3rem;
+}
+
+.contentBox > li {
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.cententL {
+    display: inline-block;
+    /*border:1px solid ;*/
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.ctLHd {
+    width: 100%;
+    height: 1.18rem;
+    line-height: 1.18rem;
+    font-size: 0.66rem;
+    color: #6a6a6a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.ctParagraph {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 0.8rem;
+    font-size: 0.6rem;
+    color: #999;
+}
+
+.ctBmOther {
+    width: 100%;
+    margin-top: 0.4rem;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.ctBmOther > p {
+    line-height: 0.68rem;
+    display: inline-block;
+    font-size: 0.5rem;
+    color: #999;
+    margin-right: 0.6rem;
+}
+
+.cententIconR {
+    float: right;
+    display: inline-block;
+    width: 28.5vw;
+    height: 21.3vw;
+    margin-top: 0.2rem;
+}
+
+.cententIconR img {
+    width: 100%;
+    height: 100%;
+}
+
+/*fotter*/
+.footer ul li {
+    width: 20% !important;
+}
+
+.footer ul li:nth-child(1) i.icon {
+    background: url(../images/images_news/homePage.png) no-repeat center;
+    background-size: contain;
+}
+
+.footer ul li:nth-child(2) i.icon {
+    background: url(../images/images_news/SH-class_03.png) no-repeat center;
+    background-size: contain;
+}
+
+.footer ul li:nth-child(3) i.icon {
+    background: url(../images/images_news/messageIcon.png) no-repeat center;
+    background-size: contain;
+}
+
+.footer ul li:nth-child(4) i.icon {
+    background: url(../images/images_news/SH-cart_03.png) no-repeat center;
+    background-size: contain;
+}
+
+.footer ul li:nth-child(5) i.icon {
+    background: url(../images/images_news/SH-mine_03.png) no-repeat center;
+    background-size: contain;
+}
+
+.footer ul li.active h3 {
+    color: #488ce0;
+}
+
+.footer ul li.active:nth-child(3) i.icon {
+    background: url(../images/images_news/message_active.png) no-repeat center;
+    background-size: contain;
+}
+
+.footer ul li.active h3 {
+    color: #fd3d53;
+}
+
+/*资讯详情*/
+.MeLtSwitch {
+    /*display: none;*/
+}
+/*.MeParticularsSh{
+    display: none;
+}*/
+
+.iconshare {
+    display: inline-block;
+    width: 0.9rem;
+    height: 0.9rem;
+    background: url(../images/images_news/shareIcon.png) no-repeat center;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.title-info {
+    font-size: 0.66rem;
+    line-height: 1rem;
+    /*padding: .533333rem .493333rem 0;*/
+
+    font-weight: 700;
+    color: #222;
+}
+
+.article-contentBox {
+    position:relative;
+    z-index:1;
+    margin-top: 2rem;
+    background-color: #fff;
+    padding: .533333rem .493333rem 0;
+
+}
+
+.article-contentBox .subheadInfo {
+    padding-bottom: .666667rem;
+    line-height: 1rem;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.authorBox > p {
+    padding-bottom: .666667rem;
+    font-size: .48rem !important;
+    line-height: .76rem;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.subheadInfo {
+    font-size: 0.65rem;
+    line-height: 1rem;
+    margin-top: 0.4rem;
+    color: #414141;
+}
+
+.entranceBn {
+    float: right;
+    display: inline-block;
+    font-size: 14px;
+    color: #e34848;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.entranceBn > i {
+    display: inline-block;
+    position: relative;
+    top: -0.1rem;
+    width: 0.63rem;
+    margin-right: 0.3rem;
+    height: .72rem;
+    background: url(../images/images_news/storeIcon.png) no-repeat center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.authorBox {
+    height: 1rem;
+    font-size: 0;
+
+}
+
+.authorBox > p {
+    display: inline-block;
+    line-height: 1rem;
+    color: #454545;
+    margin-right: 24px;
+
+}
+
+.bannerBox {
+    width: 94.93vw;
+    /*height: 58.1vw;*/
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+.bannerBox embed{
+    display:inline-block;
+    width:100%;
+}
+.bannerBox > img {
+    width: 100%;
+    height: 100%;
+}
+.detailPic{
+    width: 94.93vw;
+    text-indent:0!important;
+}
+
+.detailPic > img {
+    width: 100%;
+    height: 100%;
+}
+.paragraphP {
+    line-height: 1.2rem;
+    font-size: 0.6rem;
+    color: #1f1f1f;
+}
+
+.BmOther {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    height: 1rem;
+    margin-bottom: 1rem;
+}
+
+.BmOther > p {
+    display: inline-block;
+    font-size: 0.5rem;
+    line-height: 1rem;
+    vertical-align: middle;
+}
+
+.complainBn {
+    float: right;
+    width: 2.54rem;
+    height: 0.9rem;
+    line-height: 0.5rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #e45050;
+    font-size: 0.5rem;
+    text-align: center;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+.ShareBox{
+    position: absolute;
+    bottom:-9rem;
+    width: 100%;
+    height: 8.77rem;
+    background-color: #fff;
+    font-size: 0;
+    text-align: center;
+
+}
+.ShareSon{
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    margin-top:1.8rem;
+
+}
+.ShareSon>img{
+    width: 1.63rem;
+    height: 1.63rem;
+ }
+.ShareSon>p{
+font-size: 0.6rem;
+    color:#333;
+     margin-top:0.45rem;
+
+}
+.ShareBox>button{
+    width: 2.54rem;
+    height: 1rem;
+    line-height: 0.5rem;
+    border: none;
+    outline: none;
+    color: #636363;
+    background-color: #fff;
+    font-size: 0.6rem;
+    text-align: center;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-top: 2.16rem;
+    font-weight: 600;
+}
+/*余额*/
+.popupAwardBox{
+    display: none;
+    width: 32%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+}
+.PpTopP{
+    font-size: 0.86rem;
+    color:#ffed26;
+    height: 1rem;
+    line-height: 1rem;
+    margin-top: 1rem;
+}
+.PpMoneyICON{
+    width: 100%;
+    height: 26vw;
+    margin-top:-0.3rem;
+}
+.PpBmP{
+    font-size: 0.6rem;
+    color: #ffed26;
+    height: 1rem;
+    line-height: 1rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/*遮盖*/
+.timeSelectBox, .complainTeBox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    width: 100vw;
+    /*    height: 100%;*/
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    z-index: 10;
+}
+
+.UpWindows {
+    width: 74%;
+    height: 200px;
+    text-align: center;
+    padding: 50px 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.UpWindows > p {
+    display: block;
+    white-space: normal !important;
+    font-size: 0.7rem;
+    color: #333;
+    height: 45px;
+}
+
+.DeleteBnBox {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    margin-top:20px;
+}
+
+.DeleteBnBox > button {
+    width: 80px;
+    height: 30px;
+    border-right: 21px;
+    background-color: #e02222;
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+}
+
+.DeleteBnBox > button:last-child {
+    float: right;
+}
+video:-webkit-full-page-media{
+    z-index:2;
+}

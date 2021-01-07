@@ -1,0 +1,603 @@
+.bargain-module-index{
+	padding:0 0.636rem;
+	height:100%;
+	background:red url(../images/bargain/bg.png) no-repeat left top;
+	background-size:contain;
+	box-sizing:border-box;
+}
+.bargain-index-content{
+	padding:0.363rem 0 0.954rem;
+	margin-top:5.681rem;
+	margin-bottom:0.909rem;
+	background: rgba(255,245,245,0.93);
+	border-radius: 0.5rem;
+}
+.bargain-index-head{
+	height:2.681rem;
+}
+.bargain-index-head .fl{
+	padding-left:0.636rem;
+	line-height:2.681rem;
+}
+.bargain-index-head .fl .img-box{
+	display:inline-block;
+	width:1.863rem;
+	height:1.863rem;
+	border-radius:100%;
+	overflow:hidden;
+	vertical-align:middle;
+}
+.bargain-index-head .fl .img-box img{
+	width:100%;
+}
+.bargain-index-head .fl .bargain-user{
+	margin-left:0.454rem;
+	font-size:0.636rem;
+	color:#4a4a4a;
+	vertical-align: middle;
+}
+.bargain-index-head .fr a{
+	display:inline-block;
+	margin-top:0.318rem;
+	margin-right:0.181rem;
+	min-width:4.363rem;
+	height:1.272rem;
+	line-height:1.272rem;
+	background-image: linear-gradient(45deg,#FF603F  0%,  #FF4242 100%);
+	box-shadow: 0 0 10px 0 rgba(223,28,23,0.53);
+	border-radius: 0.681rem;
+	text-align:center;
+}
+.bargain-index-head .fr a i,.bargain-index-head .fr a span{
+	display:inline-block;
+	vertical-align:top;
+	color:#fff;
+}
+.bargain-index-head .fr a i{
+	margin-right:0.181rem;
+}
+.bargain-index-head .fr a span{
+	font-size:0.636rem;
+}
+.bargain-index-goods{
+	position:relative;
+	padding:0.545rem 0.636rem;
+	min-height:3.954rem;
+	background: #F4E0E0;
+}
+.bargain-index-goods .img-box{
+	position:absolute;
+	left:0.636rem;
+	top:0.545rem;
+	display:inline-block;
+	width:3.954rem;
+	height:3.954rem;
+	overflow:hidden;
+}
+.bargain-index-goods .img-box img{
+	width:100%;
+}
+.bargain-index-goods div{
+	padding-left:4.409rem;
+}
+.bargain-index-goods div span{
+	font-size:0.818rem;
+	color: #212121;
+}
+.bargain-index-goods div strong{
+	font-size:0.727rem;
+	color: #FF3850;
+}
+.bargain-index-goods div p{
+	margin-top:0.454rem;
+	font-size:0.681rem;
+	color: #4A4A4A;
+}
+.bargain-index-goods div p b{
+	margin:0 0.181rem;
+	font-size:0.818rem;
+	color:#FF4000;
+}
+.bargain-index-det{
+	padding-top:0.545rem;
+}
+.bargain-index-det p{
+	font-size:0.727rem;
+	color: #4A4A4A;
+}
+.bargain-index-det p strong{
+	font-size:1.09rem;
+}
+.bargain-index-det p strong.bargain-pri-had{
+	color:#F5A623;
+}
+.bargain-index-det p strong.bargain-pri-have{
+	color:#F61628;
+}
+.bargain-index-progress{
+	display:inline-block;
+	margin-top:0.545rem;
+	width:13.409rem;
+	height:0.909rem;
+	background: #F4B0A9;
+	border-radius:0.522rem;
+	overflow:hidden;
+}
+.bargain-index-progress i{
+	display:inline-block;
+	height:100%;
+	background-image: linear-gradient(-180deg, #FF7085 0%, #FF1E30 100%);
+	border-radius:0.522rem;
+	vertical-align:top;
+}
+.bargain-index-time{
+	margin-top:0.381rem;
+	font-size:0.727rem;
+	color: #4A4A4A;
+}
+.bargain-index-time em{
+	display:inline-block;
+	padding:0 0.181rem;
+	margin:0 0.09rem;
+	line-height:1.272rem;
+	height:1.272rem;
+	font-size:0.727rem;
+	color:#fff;
+	background: #DB4444;
+}
+.bargain-index-time i{
+	color:#FF3850;
+}
+.bargain-btn a{
+	display:inline-block;
+	margin-top:0.727rem;
+	width:13.727rem;
+	height:2.272rem;
+	line-height:2.272rem;
+	text-align:center;
+	font-size:0.727rem;
+	color: #FFFFFF;
+	background-image: linear-gradient(-133deg,#FF3C00 0%, #FF9601 100%);
+	box-shadow: 0 0 14px 0 rgba(255,78,0,0.37);
+	border-radius:1.136rem;
+}
+.bargain-index-help{
+	padding:0.636rem 0.545rem;
+	margin-bottom: 0.909rem;
+	min-height:12.318rem;
+	background: #EA5D5D;
+	border: 1px solid #FF8C8C;
+	border-radius: 0.5rem;
+	box-sizing:border-box;
+}
+.bargain-index-help-tit{
+	margin-bottom: 0.363rem;
+}
+.bargain-index-help-tit .iconfont{
+	margin:0 0.181rem;
+	color:#fff;
+}
+.bargain-index-help-tit span{
+	position:relative;
+	font-size:0.727rem;
+	color: #FFFFFF;
+}
+.bargain-index-help-tit span:before,.bargain-index-help-tit span:after{
+	content:"";
+	width:4.227rem;
+	height:1px;
+	background:#fff;
+	position:absolute;
+	top:0.363rem;
+	
+}
+.bargain-index-help-tit span:before{
+	left:-5.6rem;
+}
+.bargain-index-help-tit span:after{
+	right:-5.6rem;
+}
+.bargain-index-help-li li{
+	padding:0.454rem 0;
+	border-bottom: 1px solid #FE8A8A;
+}
+.bargain-index-help-li li .fl{
+	min-width:50%;
+}
+.bargain-index-help-li li .fl .img-box{
+	display:inline-block;
+	width:1.863rem;
+	height:1.863rem;
+	overflow: hidden;
+	border-radius:100%;
+}
+.bargain-index-help-li li .fl .img-box img{
+	width:100%;
+}
+.bargain-index-help-li li .fl span{
+	display:inline-block;
+	margin-left:0.545rem;
+	font-size:0.636rem;
+	color:#fff;
+}
+.bargain-index-help-li li .fr{
+	line-height:1.863rem;
+}
+.bargain-index-help-li li .fr .icon{
+	margin-top: 0.2rem;
+	font-size:0.909rem;
+	color:#fff;
+	vertical-align:middle;
+}
+.bargain-index-help-li li .fr span{
+	font-size:0.636rem;
+	color:#fff;
+}
+.bargain-index-help-li li .fr strong{
+	font-size:0.727rem;
+	color:#F5A623;
+}
+.bargain-progress{
+	padding:0.545rem 0;
+	border-bottom:1px solid #eee;
+}
+.bargain-progress .bargain-progress-li{
+	display:inline-block;
+} 
+.bargain-progress .bargain-progress-li .iconfont{
+	font-size:1.272rem;
+	color:#434343;
+}
+.bargain-progress .bargain-progress-li span{
+	display:block;
+	margin-top:0.272rem;
+	font-size:0.545rem;
+	color: #4A4A4A;
+}
+.bargain-progress b{
+	display:inline-block;
+	margin-top: 0.272rem;
+	width:2rem;
+	height:0.8rem;
+	background:url(../images/bargain/arrow.png) no-repeat center;
+	background-size:contain;
+	vertical-align:top;
+}
+.bargain-progress-lis.active span,.bargain-progress-lis.active i{
+	color:#FF5854 !important;
+}
+.bargain-progress-lis.active b{
+	background:url(../images/bargain/arrow-active.png) no-repeat center;
+	background-size:contain;
+}
+.bargain-goods-lists{
+	margin-bottom:3rem;
+}
+.bargain-goods-lists li{
+	padding:0.954rem 0.772rem 0.363rem 1.045rem;
+	border-bottom:1px solid #eee;
+}
+.bargain-goods-lists .bargain-goods-item-content{
+	position:relative;
+	padding-bottom:0.409rem;
+	min-height:4.318rem;
+}
+.bargain-goods-item-content .img-box{
+	position:absolute;
+	left:0;
+	top:0;
+	display:inline-block;
+	width:4.409rem;
+	height:4.318rem;
+	overflow: hidden;
+}
+.bargain-goods-item-content div{
+	padding-left:4.954rem;
+}
+.bargain-goods-item-content div h4{
+	margin-bottom: 0.272rem;
+	font-size: 0.681rem;
+	color: #333333;
+}
+.bargain-goods-item-content div span{
+	margin-top: 0.181rem;
+	font-size:0.636rem;
+	color: #FE244B;
+}
+.bargain-goods-item-content div .bargain-btn-go{
+	position:absolute;
+	right:0;
+	bottom:0.409rem;
+	display:inline-block;
+	width:4.136rem;
+	height:1.5rem;
+	line-height:1.5rem;
+	font-size:0.636rem;
+	color: #FFF;
+	background: #F61628;
+	border-radius: 0.75rem;
+	text-align:center;
+}
+.bargain-btn-go.empty{
+	background:#D1D1D1 !important;
+}
+.bargain-goods-item-operate .fl span,.bargain-goods-item-operate .fl strong{
+	display:inline-block;
+	font-size: 0.545rem;
+	
+}
+.bargain-goods-item-operate .fl span{
+	color: #4A4A4A;
+}
+.bargain-goods-item-operate .fl .bargain-operate-pri-had{
+	color:#F5A623;
+}
+.bargain-goods-item-operate .fl .bargain-operate-pri-have{
+	color:#F61628;
+}
+.bargain-goods-item-operate .fr em{
+	display:inline-block;
+	margin:0 0.09rem;
+	padding:0 0.181rem;
+	font-size:0.545rem;
+	color: #FFF;
+	height:0.909rem;
+	line-height:0.909rem;
+	background:#DB4444;
+
+}
+.bargain-goods-item-operate .fr span{
+	font-size:0.545rem;
+	color: #4A4A4A;
+}
+.bargain-bottom-btn{
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:2;
+	width:100%;
+	background: #FDFDFD;
+	box-shadow: 0 0 0.272rem 0 rgba(0,0,0,0.30);
+}
+.bargain-bottom-btn:before{
+	content:"";
+	width:1px;
+	background:#DFDFDF;
+	position:absolute;
+	left:50%;
+	top:0.454rem;
+	bottom:0.454rem;
+
+}
+.bargain-bottom-btn a{
+	display:inline-block;
+	width:50%;
+	height:2.272rem;
+	line-height: 2.272rem;
+	text-align:center;
+}
+.bargain-bottom-btn a{
+	font-size:0.636rem;
+	color:#9b9b9b;
+}
+.bargain-bottom-btn a.active{	
+	color: #F61628;
+}
+.bargain-bottom-btn a .iconfont{
+	display:inline-block;
+	margin-right:0.363em;
+	vertical-align: middle;
+	font-size:0.909rem;
+}
+.bargain-address-lists,.bargain-address-add{
+	padding:0 0.636rem;
+}
+.bargain-address-lists li{
+	position:relative;
+	padding:0.272rem 0;
+	border-bottom:1px solid #F1F1F1;
+}
+.bargain-address-lists li div{
+	margin-right:1.272rem;
+}
+.bargain-address-lists li span,.bargain-address-lists li em,.bargain-address-add span{
+	display:inline-block;
+	font-size:0.636rem;
+	color:#333;
+}
+.bargain-address-receiver{
+	margin-right:0.681rem;
+}
+.bargain-address-lists li .iconfont,.bargain-address-add .iconfont{
+	position:absolute;
+	right:0;
+	top:0.909rem;
+	font-size:1.272rem;
+	color:#CBCBCB;
+}
+.bargain-address-add span{
+	line-height:2.272rem;
+}
+.bargain-address-add .iconfont{
+	top:0.545rem;
+}
+.bargain-address-alert-head{
+	position: relative;
+}
+.bargain-address-alert-head span{
+	display:block;
+	padding:0.363rem 0;
+	font-size:0.727rem;
+	color:#333;
+	text-align:center;
+	border-bottom:1px solid #eee;
+}
+.bargain-address-alert-head .nctouch-bottom-mask-close{
+	position:absolute;
+	right:1.081rem;
+	top:0.272rem;
+	
+}
+.bargain-address-alert-head .nctouch-bottom-mask-close .iconfont{
+	font-size:0.909rem;
+	color:#CBCBCB;
+}
+
+/*新增收货地址*/
+/*.bargain-address-build{
+	padding:0.636rem 0.636rem 0;
+	box-sizing:border-box;
+}
+.bargain-address-build dl{
+	position:relative;
+	margin-bottom:0.545rem;
+	min-height:1.727rem;
+}
+.bargain-address-build dl dt{
+	position:absolute;
+	left:0;
+	top:0;
+	font-size:0.727rem;
+	color: #4A4A4A;
+	line-height:1.727rem
+}
+.bargain-address-build dl dd{
+	padding-left:4.545rem;
+	font-size:0.636rem;
+	line-height:1.727rem
+}
+.bargain-address-build dl dd input[type="text"]{
+	padding-left:0.454rem;
+	width:100%;
+	height:1.727rem;
+	background: #F4F4F4;
+	border:0;
+	box-sizing:border-box;
+}*/
+
+/*活动规则*/
+.bargain-index-rule{
+	padding:0 0.363rem 0.909rem 1rem;
+	margin-bottom:0.909rem;
+	background:rgba(255,255,255,.93);
+	border-radius:0.318rem;
+}
+.bargain-index-rule-tit{
+	padding-top: 0.772rem;
+	margin-bottom:0.863rem;
+}
+.bargain-index-rule-tit span{
+	position:relative;
+	font-size: 0.727rem;
+	color: #FF4E48;
+}
+.bargain-index-rule-tit span:before,.bargain-index-rule-tit span:after{
+	content:"";
+	width:4.59rem;
+	height:1px;
+	background:#FF4E48;
+	position:absolute;
+	top:0.35rem;
+}
+.bargain-index-rule-tit span:before{
+	left:-5rem;
+}
+.bargain-index-rule-tit span:after{
+	right:-5rem;
+}
+
+
+
+.bargain-rule-items li{
+	position:relative;
+	margin-bottom:0.818rem;
+}
+.bargain-rule-items li b{
+	position:absolute;
+	left:0;
+	top:0;
+	display:inline-block;
+	width:0.727rem;
+	height:0.727rem;
+	line-height:0.8rem;
+	font-size:0.545rem;
+	color:#fff;
+	background: #FF5D3F;
+	border-radius:100%;
+	text-align:center;
+}
+.bargain-rule-items li p{
+	padding-left:0.909rem;
+	font-size:0.545rem;
+	color: #4A4A4A;
+}
+.bargain-help-module{
+	margin-top:0.545rem;
+	padding-top:0.2272rem;
+	border-top: 1px solid #FFCCD0;
+}
+.bargain-help-tips{
+	padding:0 0 0.363rem;
+	font-size:0.727rem;
+	color: #4A4A4A;
+	
+}
+.bargain-btn-share a{
+	display:inline-block;
+	width:13.727rem;
+	height:2.272rem;
+	line-height:2.272rem;
+	background: #FFD5C8;
+	border: 1px solid #FF3C00;
+	box-shadow: 0 0 14px 0 rgba(255,64,0,0.25);
+	border-radius:1.136rem;
+	font-size: 0.727rem;
+	color: #FF3C00;
+	box-sizing:border-box;
+	text-align:center;
+}
+.bargain-success{
+	padding:0.272rem 0;
+}
+.bargain-help-success-tips{
+	padding-top:0.863rem;
+}
+.bargain-success strong{
+	font-size:0.818rem;
+	color: #F61628
+}
+.bargain-address-sure{
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.bargain-address-sure .s-dialog-wrapper{
+	position:relative;
+	display:inline-block;
+}
+.bargain-address-sure .s-dialog-content{
+	/*padding-top:0.863rem;
+	text-align:left;*/
+}
+.bargain-address-sure .s-dialog-btn-ok {
+	color: #F61628;
+}
+
+
+.bargain-wechat-share{
+	background:rgba(0,0,0,.6);
+}
+.bargain-wechat-share div{
+	display:inline-block;
+	padding:10.6rem 1.6rem 0;
+	width:14rem;
+	height: 16.227rem;
+	background: url(../images/bargain/fenxiang-bg.png) no-repeat center;
+    background-size: contain;
+    font-size: 0.636rem;
+    color: #4A4A4A;
+    box-sizing:border-box;
+}

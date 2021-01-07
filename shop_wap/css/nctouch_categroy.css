@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* 触屏版商品分类样式类型				*/
+/*商品分类*/
+.categroy-cnt { width: 4.545rem;display: block; float: left; position: fixed; z-index:5; top: 2rem; bottom:2.4rem; left: 0;background:#fff;overflow-y: auto;
+    background: #fff;-webkit-overflow-scrolling: touch;}
+
+/*分类一级导航*/
+.categroy-list {position: absolute;width:100%; }
+.category-item { width:100%;}
+.category-item-a { display: block; }
+.ci-fcategory-ico { width: 1rem; height: 1rem; padding: 0.45rem 0 0.25rem 0; margin: 0 auto; }
+.ci-fcategory-ico img { display: block; vertical-align: top; width: 100%; filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */ -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray;}
+.ci-fcategory-name { font-size: 0.6rem; line-height: 2rem; color: #222; text-align: center; width: 100%; border-bottom: solid 0.05rem #EEE;}
+.category-item.selected .ci-fcategory-ico img { -webkit-filter: grayscale(0); -moz-filter: grayscale(0); -ms-filter: grayscale(0); -o-filter: grayscale(0); filter: grayscale(0); filter: gray; }
+.category-item.selected .ci-fcategory-name { color: #ED5564;border-left: solid 0.1rem #ED5564; }
+.categroy-third-list { display: none; color: #666; border-bottom: 1px solid #ccc; box-shadow: 0 -2px 0 #e4e4e4 inset;/*border-top:2px solid #e4e4e4;*/ background: #f5f5f5; }
+.categroy-third-list li { border-bottom: 1px solid #dddddd; }
+.categroy-third-list a { color: #6d6d6d; display: block; padding: 15px 0px 15px 11px; }
+
+/* 分类子级内容 */
+.categroy-rgt {position: absolute; z-index: 1; left:4.545rem; top: 2.434rem; bottom:2.8rem; right: 0;padding-left:0.454rem;padding-right:0.454rem;
+    -webkit-overflow-scrolling: touch;overflow:auto;}
+.categroy-child-list {/* position:absolute;*/ font-size: 0;}
+.categroy-child-list dt { background-color: #f2f2f2;}
+.categroy-child-list dt a {position:relative; display: block;font-size: 0.545rem; line-height:1.6rem;height:1.6rem; color: #6d6d6d;text-align:center;}
+.categroy-child-list dt a:after{content:"";border-bottom:1px solid #ddd;position:absolute;left:15%;right:15%;top:45%;}
+.categroy-child-list dt a span{display:inline-block;position:relative;z-index:2; padding:0 0.652rem;background:#f2f2f2;}
+.categroy-child-list dd {display: inline-block;padding:0 0.454rem 0.681rem; width:100%;box-sizing:border-box; font-size:0;vertical-align: top; background:#fff;}
+.categroy-child-list dd a { display: inline-block;vertical-align: top;margin: 0.681rem 0 0 0;width:33.33%;color: #333; text-align:center; }
+.categroy-child-list dd a .img-box{display:inline-block;width:2.727rem;height:2.727rem;overflow:hidden;}
+.categroy-child-list dd img { max-width: 100%;max-height:100%;}
+.categroy-child-list dd p {margin-top:0.681rem; font-size: 0.5rem;white-space: nowrap; text-overflow: ellipsis; text-align: center; overflow: hidden;}
+
+/*商品列表头部特征*/
+.nctouch-product-header .header-inp {}
+.nctouch-product-header .header-inp { margin: 0.275rem 3.8rem 0 2rem;}
+.nctouch-product-header .header-inp .search-input { width: 7.5rem; color: #333;}
+.nctouch-product-header .header-r a { padding: 0.5rem 0.6rem 0.5rem 0.2rem;}
+.nctouch-product-header .header-r a.categroy { width: 0.975rem; height: 1.575rem; padding: 0.2rem 0.5rem 0.2rem 0.3rem;}
+.nctouch-product-header .header-r a.categroy i { width: 100%; height: 1rem; background-image: url(../images/stiore_categroy_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 70%; opacity: 0.65;}
+.nctouch-product-header .header-r a.categroy p {display: block; font-size: 0.45rem; line-height: 0.575rem; text-align: center; color: #555; }
+
+.categroy-loading{left:4.454rem !important;}
+
+
+
+/* 黄页商城 */
+.zk-hy-module{
+	padding-top:1.11rem;
+}
+.zk-hy-store-dl{
+	padding:0 0.681rem;
+}
+.zk-hy-store-dl dt{
+	margin-bottom:0.954rem;
+	font-size:0.863rem;
+	color:#000;
+}
+.zk-hy-store-dl dd li{
+	float:left;
+	margin-bottom: 1.363rem;
+	width:20%;
+	text-align:center;
+}
+.zk-hy-store-dl dd .img-box{
+	position:relative;
+	display:inline-block;
+	width:1.136rem;
+	height:1.136rem;
+	overflow:hidden;
+}
+
+.zk-hy-store-dl dd span{
+	font-size:0.545rem;
+	color:#333;
+}

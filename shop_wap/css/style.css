@@ -1,0 +1,20 @@
+@charset "utf-8";
+.m-box{ margin: 0 auto;background:rgba(255,255,255,1);}
+.m-box .list{ width: 100%; }
+.m-box .list ul li{ width: 100%;border-bottom: 5px solid #eeee; }
+.m-box .list ul li .box{ width: 100%; position: relative;}
+.m-box .list ul li .box .check,.foot .check{ width: 0.77272rem; height:0.77272rem; border-radius: 50%; border:1px solid rgba(228,228,228,1); position: absolute; left: 0.863636rem; top: 50%; margin-top: -10px;   }
+.m-box .list ul li .box .check.action,.foot .check.action{ background: url(../img/check_on.jpg)no-repeat center center; background-size:auto 100%; border: none;  }
+.m-box .list ul li .box .img{ margin:0.409rem 0.409rem;float: left;width: 3.81818rem;height: 3.81818rem;margin-left: 1.7rem; }
+.m-box .list ul li .box .img img{width: 3.81818rem;height: 3.81818rem; }
+.m-box .list ul li .box .info{ padding-left: 5rem; }
+.m-box .list ul li .box .info .title{ font-size:0.63636rem;font-family:PingFangSC-Medium,PingFang SC;font-weight:500;color:rgba(74,74,74,1); white-space: nowrap; text-overflow: ellipsis;padding-bottom: 1.5rem; }
+.m-box .list ul li .box .m-num{font-size:0.72727rem;font-family:PingFangSC-Medium,PingFang SC;font-weight:500;color:rgba(240,47,34,1);padding-left: 0.681rem;}
+.m-box .list ul li .box .price{ position: relative;margin-right: 0.863636rem;top: 50%; margin-top:-2.39363636rem;font-size: 0.65181rem;width:2.72727rem;color: rgba(240,47,34,1);;line-height: 1.27272rem;text-align:center;height:1.27272rem;background:rgba(255,255,255,1);border-radius:0.636363rem;border:1px solid rgba(240,47,34,1);}
+.m-box .box_title{margin: auto;display: flex;justify-content: space-between;border-bottom:1px solid rgba(241,241,241,1);}
+.m-box .box_title a{font-size: 0.545454rem;font-family: PingFangSC-Regular,PingFang SC;font-weight: 400;color: rgba(232,112,127,1);margin-top: 0.681818rem;margin-bottom: 0.681818rem;}
+.quan{display: block;width: 60%;margin-left: 0.6818rem;}
+.xia{display: block;width: 20%;text-align: right;}
+.tui{display: block;width: 10%;text-align: right;margin-right: 0.6818rem;}
+.foot{ width: 100%; background: #F2F2F2;  position: fixed; }
+.foot .all-check{ padding-left: 20px;  width: 60px; float: left; }
