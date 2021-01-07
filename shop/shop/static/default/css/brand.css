@@ -1,0 +1,241 @@
+*, div {
+    margin: 0;
+    padding: 0;
+}
+
+.brand {
+    width: 1200px;
+    margin: auto;
+    background: #ffffff;
+}
+
+.brand_one {
+    text-align: center;
+    padding: 38px 0px 28px;
+}
+
+.brand_one span {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.brand_one span:before, .brand_one span:after {
+    width: 43px;
+    height: 2px;
+    background: rgba(151, 151, 151, 1);
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    content: "";
+}
+
+.brand_one span:before {
+    left: -50px;
+}
+
+.brand_one span:after {
+    right: -50px;
+}
+
+.brand_two {
+    padding: 0 34px;
+    font-size: 0;
+}
+
+.brand_twoa {
+    width: 194px;
+    margin: 0px 16px 16px;
+    display: inline-block;
+}
+
+.brand_twob {
+    border: 1px solid rgba(219, 219, 219, 1);
+    height: 92px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+.brand_twoc {
+    width: 138px;
+    height: 68px;
+    border: 1px dashed rgba(219, 219, 219, 1);
+    box-sizing: border-box;
+    margin: 7px auto;
+}
+
+.brand_twoc img {
+    width: 92.4px;
+    height: 53px;
+    margin: 7px auto;
+    display: block;
+}
+
+.brand_twoa p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.brand_four {
+    text-align: center;
+}
+
+.brand_num {
+    font-size: 0;
+    width: 100%;
+    padding: 0 57px;
+}
+
+.brand_num div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.brand_num .brand_numa {
+    width: 56px;
+    height: 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.brand_num .active {
+    border: 1px solid rgba(208, 2, 27, 1);
+    color: rgba(208, 2, 27, 1);
+}
+
+.brand_num .brand_numb {
+    font-size: 14px;
+    /*color: rgba(74, 74, 74, 1);*/
+    padding: 0 11px;
+    cursor: pointer;
+    /*border: 1px solid transparent;*/
+}
+
+.brand_num .brand_numb:active {
+    border-radius: 15px;
+    border: 1px solid rgba(208, 2, 27, 1);
+    box-sizing: border-box;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(208, 2, 27, 1);
+    box-sizing: border-box;
+}
+
+.brand_numc {
+    position: relative;
+    overflow: hidden;
+}
+
+.brand_numc input {
+    box-sizing: border-box;
+    padding-right: 22px;
+    padding-left: 5px;
+    width: 149px;
+    height: 31px;
+    border: 1px solid rgba(214, 214, 214, 1);
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.brand_numc img {
+    width: 18px;
+    height: 22px;
+    position: absolute;
+    right: 4px;
+    top: 5px;
+}
+
+.barand_three {
+    padding: 28px 63px 0 68px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.barand_threea {
+    width: 100%;
+    border: 1px solid rgba(225, 225, 225, 1);
+    margin-bottom: 20px;
+    font-size: 0;
+    position: relative;
+    padding-left: 149px;
+    box-sizing: border-box;
+}
+
+.barand_threeb {
+    width: 149px;
+    height: 100%;
+    border-right: 1px solid rgba(219, 219, 219, 1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.barand_threeb span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
+    font-size: 14px;
+    color: rgba(74, 74, 74, 1);
+}
+
+.barand_threed {
+    height: 71px;
+    width: 307px;
+    font-size: 0;
+    display: inline-flex;
+    align-items: center;
+    border-right: 1px solid rgba(219, 219, 219, 1);
+    border-bottom: 1px solid rgba(219, 219, 219, 1);
+    box-sizing: border-box;
+}
+
+.barand_threed {
+    margin-bottom: -1px;
+    margin-right: -1px;
+}
+
+.barand_threed .barand_threee {
+    font-size: 14px;
+    color: rgba(74, 74, 74, 1);
+    width: 110px;
+    text-align: center;
+    line-height: 71px;
+    display: inline-block;
+    border-right: 1px solid rgba(219, 219, 219, 1);
+    box-sizing: border-box;
+}
+
+.barand_threed .barand_threef {
+    display: inline-block;
+    width: 196px;
+    height: 100%;
+}
+
+.barand_threed .barand_threeg {
+    width: 124px;
+    height: 61px;
+    border: 1px dashed rgba(219, 219, 219, 1);
+    text-align: center;
+    margin: 4px auto 0;
+    box-sizing: border-box;
+}
+
+.barand_threed .barand_threeg img {
+    width: 88.4px;
+    height: 55.7px;
+    display: inline-block;
+    margin-top: 2px;
+}

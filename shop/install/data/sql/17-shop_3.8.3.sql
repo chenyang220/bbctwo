@@ -1,0 +1,1 @@
+INSERT INTO `yf_web_config`(`config_key`, `config_value`, `config_type`, `config_enable`, `config_comment`, `config_datatype`) VALUES ('photo_goods_logo', '../shop_admin/static/common/images/image.png', 'photo', 1, '商品默认图片', 'string');

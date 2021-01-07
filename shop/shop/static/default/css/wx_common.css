@@ -1,0 +1,112 @@
+.ncap-form-default dl.row, .ncap-form-all dd.opt {
+    font-size: 0;
+    color: #777;
+    background-color: #FFF;
+    *: ;
+    word-spacing: -1px;
+    padding: 12px 0;
+    position: relative;
+    border-bottom: 1px solid #F0F0F0;
+}
+.ncap-form-default dt.tit {
+    text-align: right;
+    width: 25%;
+    padding-right: 2%;
+}
+.ncap-form-default dt.tit, .ncap-form-default dd.opt {
+    font-size: 12px;
+    line-height: 30px;
+    vertical-align: top;
+    letter-spacing: normal;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.ncap-form-default dd.opt {
+    text-align: left;
+    width: 55%;
+}
+.w400 {
+    width: 400px;
+}
+.ui-input {
+    padding: 5px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #e2e2e2;
+    color: #555;
+    vertical-align: middle;
+    outline: 0;
+}
+.onoff {
+    display: block;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+}
+.onoff .cb-enable {
+    border-radius: 4px 0 0 4px;
+    border-width: 1px 0 1px 1px;
+}
+.onoff .cb-enable, .onoff .cb-disable {
+    background-color: #ecf0f1;
+    border-color: #bec3c7;
+    border-style: solid;
+    color: #777;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 1px 9px;
+}
+.onoff label {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
+.onoff .selected {
+    background-color: #FF4564;
+    border-color: #FF4564;
+    color: #fff;
+}
+.ncap-form-default dd.opt input {
+    outline: none;
+}
+.onoff input[type="radio"] {
+    left: -999px;
+    position: absolute;
+    top: 0;
+}
+.onoff .cb-disable {
+    border-radius: 0 4px 4px 0;
+    border-width: 1px 1px 1px 0;
+}
+.ncap-form-default p.notic, .ncap-form-all p.notic {
+    line-height: 12px;
+    line-height: 18px;
+    color: #AAA;
+    margin-top: 4px;
+    clear: both;
+}
+div.bot {
+    display: block;
+    padding: 12px 0 10px 22%;
+}
+.ui-btn-sp {
+    background-color: #F53A59;
+    color: #fff;
+}
+.ui-btn {
+    display: inline-block;
+    padding: 0 8px 0 10px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 2px;
+    background-color: #f53a59;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+a {
+    outline: none;
+}

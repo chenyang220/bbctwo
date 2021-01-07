@@ -1,0 +1,19 @@
+im在安装的时候要注意.
+注意修正im/config.php
+在im/~token_autocreate.php 要删除
+在配置好后同时im目录可写。
+写好这个token就可以把写的权限拿掉了。
+
+checkConfig.php 需要拿到与shop平级，
+访问后可查看几个基础的configs配置。
+以下目录支持自动检测配置，以及批量修改。
+
+$shop_key = 'shop';
+$shop_admin = 'shop_admin';
+$ucenter = 'ucenter';
+$ucenter_admin = 'ucenter_admin';
+$paycenter = 'paycenter';
+$paycenter_admin = 'paycenter_admin';
+$imbuilder = 'imbuilder';
+$imbuilder_admin = 'imbuilder_admin';
+$analytics_key = 'analytics';

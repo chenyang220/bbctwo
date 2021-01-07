@@ -1,0 +1,7 @@
+#example {
+    font-size: 14px !important;
+}
+
+#container #example {
+    font-size: 10px;
+}

@@ -1,0 +1,7 @@
+{
+    "require": {
+       
+        "alchemy/zippy": "^0.4.8",
+        "phpseclib/phpseclib": "^2.0"
+    }
+}

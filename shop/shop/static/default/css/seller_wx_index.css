@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+input:focus {outline: none} 
+.min-width{min-width:1080px;}
+.main{width:1412px;min-width:1080px;margin:0 auto;}
+/*login and reg*/
+label{ margin:0; font-weight:normal;}
+.login-box-pan{ padding:50px 80px 50px 30px;}
+.login-info{ width:290px;}
+.login-info h2{ border-bottom:2px solid #eeeff3; color:#3498db; font-size:18px; font-weight:700; line-height:38px; width:100%;}
+.login-info h2 span{ border-bottom:2px solid #3498db; height:38px; display:inline-block; padding:0 10px;position:relative; bottom:-2px;}
+.login-info .item{ height:70px; width:290px;}
+.login-info .item-input{ border:1px solid #e5e5e5; height:38px; line-height:24px; padding:7px 10px;}
+.txt02{ height:24px; line-height:24px; border:0; float:left; font-size:13px;}
+.login-info .item-input .txt02{ width:220px; float:left;}
+.login-info .item-tips{ line-height:30px; font-size:12px; color:#ee1615;}
+.login-info img{ width:70px; height:30px; margin:2px 10px 0;}
+.f-h34{ height:34px; line-height:34px;}.f-h24{height:24px; line-height:24px;}
+.login-box a.c-blue:hover{ color:#ff7d27; text-decoration:underline;}
+.reg-box-pan{ padding:40px 40px 50px; width:100%;}
+.txt03{width:270px;line-height: 16px;padding:9px 10px;border: 1px solid #cccccc;float: none;font-size: 14px;font-family: arial,"宋体";color: #999;overflow: hidden;margin-left: 30px;}
+.reg-box .item {line-height:34px;position: relative;z-index:5;margin-left: 100px;}
+.reg-box .items {line-height:34px;position: relative;z-index:5;}
+.reg-box .intelligent-label {width:100px;font-size: 14px;color: #666;}
+.reg-box .intelligent-label b{font-family: "????";margin-right: 5px;font-weight: normal; color:red;}
+.reg-box .item .item-ifo{position: relative;width: 242px; /* margin: auto; */margin-top: 5rem;}
+.reg-box .txt02{width:270px;line-height: 16px;padding:9px 10px;border: 1px solid #cccccc;float: none;font-size: 14px;font-family: arial,"宋体";color: #999;overflow: hidden;}
+.reg-box .txt03.v_error{border-color:#FF0000;}
+.reg-box .txt03:focus{border-color:#1a97d7;}
+.reg-box .blank {width:16px;height:16px; font-size:16px;position: absolute;left:280px;top:11px;float: none; color:#7abd54}
+.reg-box .close{position: absolute;top:5px;right:25px;font-size: 24px;}
+.reg-box .focus,.reg-box .focusa,.reg-box .error{line-height:34px;height:34px;position: absolute;top: 0px;left:280px;width:270px;padding: 0 5px;z-index:3; font-weight:normal; font-size:12px; color:#999}
+.reg-box .focus span,.reg-box .error span{ line-height:16px; display:block; padding:3px 0;}
+.reg-box .focus{color: #999;}
+.reg-box .valid{color: #f00;}
+.reg-box .strength {color: #999;line-height: 22px;padding-right: 10px;clear: both;float: none;position: absolute;top:39px;right: -9px; display:none}
+.reg-box .strength b {float: left;width: 108px;height:16px;overflow: hidden;margin-top: 5px; font-weight:400;}
+.reg-box .strength b i{ font-style:normal; font-size:10px; width:34px; height:16px;line-height:16px; display:inline-block; float:left; background:#dbdbdb; text-align:center; margin-left:1px; color:#fff;}
+.reg-box .strength b i.on{ background:#ff6160}
+.reg-box .btn-blue{ font-size:14px; height:53px; line-height:53px; padding:0; width:242px;}
+.reg-box .btn-red{ font-size:14px; height:53px; line-height:53px; padding:0; width:242px;}
+.reg-box .btn-gray{ height:34px; line-height:34px; padding:0 12px;}
+.reg-box .part1,.reg-box .part2,.reg-box .part3{ padding-left:150px;padding-top:30px;}
+.regcon {width: 482px;height:360px;margin-left: -241px;margin-top: -180px;background: #fff;}
+.regcon pre {border: 1px solid #B2B2B2;height: 240px;margin: 10px;overflow-x: hidden;overflow-y: scroll;padding: 5px;resize: both;width: 450px;background: #fff;font-size: 12px;color: #333;line-height: 1.7em;}
+.showpwd{ display:inline-block; width:16px; height:16px; background:url(../images/showPwd.png) no-repeat center center; background-size:16px 16px; position:absolute; top:8px;right:10px; cursor:pointer;}
+.showpwd.hidepwd{ background-image:url(../images/hidePwd.png);}
+.sto{
+	width: 222px;
+	    height: 212px;
+	    background: rgba(255,255,255,1);
+	    border: 1px solid rgba(219,219,219,1);
+		margin: auto;
+		margin-top: 4rem;
+		margin-bottom: 10rem;
+}
+.inp{
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+}
+.sto span{
+	width: 100%;
+	    text-align: center;
+	    display: block;
+		color:rgba(191,191,191,1);
+}
+.log{
+	margin-top: 59px;
+	font-size: 30px;
+	color:rgba(191,191,191,1);
+}
+.mask {
+    width: 100px;
+    height: 0;
+	margin-top: 0rem!important;
+    position: absolute;
+    top: 0;
+   left: 0px;
+    display: inline-block;
+    background: rgba(26,132,190,.3);
+    border-bottom: 3px solid #4AB86A;
+    animation: move 5s linear infinite;
+    -webkit-animation: move 5s linear infinite;
+    -moz-animation: move 5s linear infinite;
+    -o-animation: move 5s linear infinite;
+    -ms-animation: move 5s linear infinite;
+}
+keyframes move{from{height:0}
+    to{height:100px}
+}
+@-webkit-keyframes move{from{height:0}
+    to{height:100px}
+}
+@-moz-keyframes move{from{height:0}
+    to{height:100px}
+}
+@-o-keyframes move{from{height:0}
+    to{height:100px}
+}
+.mb10 img{
+	width: 100px;
+	height: 100px;
+}
+.item span{
+	font-size:14px;
+	font-family:Alibaba-PuHuiTi-R,Alibaba-PuHuiTi;
+	font-weight:normal;
+	color:rgba(155,155,155,1);
+	line-height:20px;
+	margin-top: 10px;
+}
+ .title{
+	padding-left: 50px;
+	font-size:14px;
+	font-family:Alibaba-PuHuiTi-R,Alibaba-PuHuiTi;
+	font-weight:normal;
+	color:#444444 !important;
+	line-height:20px;
+}
+.imp{
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+select{
+	width:270px;
+	line-height: 26px;
+	height: 40px;
+	border-radius: 3px;
+	 margin-left: 30px;
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(225,225,225,1);
+}
+.time_lit{
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 30px;
+}
+.act{
+	width: 50px;
+	height: 46px;
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(227,227,227,1);
+}
+.act1{
+	width: 80px;
+	height: 46px;
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(227,227,227,1);
+}
+.tipes{
+	margin-left: 130px;
+	font-size:12px;
+	font-family:Alibaba-PuHuiTi-R,Alibaba-PuHuiTi;
+	font-weight:normal;
+	color:rgba(155,155,155,1);
+	line-height:17px;
+	width: 300px;
+	margin-top: 10px;
+}

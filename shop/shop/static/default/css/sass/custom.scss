@@ -1,0 +1,136 @@
+$color:#fe0071 #13eaf4 #00a895 #c98787 #0094ff #01b4df #ff8d00 #008800 #000033 #db2c2c;
+$index:0;
+@each $i in $color{
+	// 前台
+	.front-#{$index+1}{
+		.bbc_color,.activity-a h3, h3.index-module-tit,
+		.activity-a h3>i, h3.index-module-tit>i,
+		.activity-a h3 em, h3.index-module-tit em,
+		.group-purchase-a .swiper-slide div.pri,
+		.time-limit-a .swiper-slide div.time .iconfont,
+		.platform-details p,.platform-details p span,.rmb,
+		.platform-details div span.yq,.coupon-details p,.coupon-details p span,.coupon-details div em,
+		.coupon-details div span.yq,.activity-a h3, h3.index-module-tit,.activity-a h3 em,
+		 h3.index-module-tit em,.guess-like li p,.count-down dl dt, .count-down dl dd,
+		 .count-down i.iconfont,.pri-color,.al a:hover,.tnav a:hover, .tnav a.active,
+		 .gpc-special-goods-text p strong,li.seles a,.brand_num .active,
+		 .cr_xie_lia2_span2-1,._p strong,.same_2,.jiaoyizhognxin ._Color:hover,
+		 .sel_color,.tabmenu .tab .active a, .tabmenu .tab .active a:hover,
+		 .order_types a.currect,.order_content a:hover, .to_views:hover i.iconfont,
+		 .order_mess_one a i.iconfont,.tracks_con_time_list ul li span,.btn-operate,
+		 hover_leave h3 a,.goods_ul_S li:hover a,.joinin-index-step span.step i,.reds,
+		 .tleft>ul>li.hover_leave h3 a,.frame5 .mc span a,
+		  .goods-price em,.coupon-a .swiper-slide a,.common-color,.infor-head-nav p a.active,
+		  .infor-nav-sel ul li.active span, .infor-nav-sel ul li.active i,
+		  .bus_name .icon-icoshop{color:$i;}
+		 .back_mall_index a:hover{
+			 color: lighten($i,50%);
+		 }
+		.nav_right{
+			.search-types li{
+				a{
+					color:$i;
+				}
+				&.active a{
+					background:$i;
+					color:#fff;
+				}
+			}
+			input{
+				border-color:$i;
+			}
+		} 
+			
+		.ser,.class_title,.thead .tleft,.hr-her,.hd li.on,.time-limit-a .swiper-slide div span,
+		.activity-a h3 span, .index-module-tit span,.group-purchase-a .swiper-slide a.btn-tuan,.bbc_btns,
+		.bbc_btns,.bbc_bg,.login-form .login-box .login-btn .btn-img,.channels a:hover,.reds,
+		.lift_item:hover, .lift_item_on,.bbc_bg_col,.hova,input.ui_state_highlight:hover,
+		.infor-head-nav strong:before,.cart_ft_lk,.bbc_btns,.save{
+			background:$i;
+		}
+		.group-purchase-a .swiper-slide a.btn-tuan:before{
+			border-right-color:$i;
+		}
+		.group-purchase-a .swiper-slide a.btn-tuan:after{
+			border-left-color:$i;
+		}
+		.goods_det_about li a:hover,.login-form .login-tab a.checked,
+		.tabmenu .tab .active a, .tabmenu .tab .active a:hover,
+		li.seles,.bbc-main-layout .title{
+			border-bottom-color:$i;
+		}
+		.discount-a-pri,.platform-details div,.coupon-details div,
+		.ev_left ul li.check,.tuan_go,.goods_det_about li a.checked,
+		.goods_det_about li a.checked,.login-form .login-box .login-btn .btn-img,
+		.brand_num .active,.btn-operate,.goods_ul_S li:hover,.lift_item:hover, 
+		.lift_item_on,.nch-sortbar-array .screen li.selected a,
+		.gr_goods_list li:hover,.infor-head-nav p a.active{
+			border-color:$i;
+		}
+		.platform-details div em,.coupon-details div em{
+			background-color:$i;
+			opacity:.5;
+		}
+		.gpc-special-goods-box,.tab-text,.page b,.tracks-operate button,.nch-sortbar-array .screen li.selected a,
+		.bbc-memeber-pointcart a em{
+			background-color:$i;
+		}
+		.gpc-special-goods-lists li{
+			background:linear-gradient(to right, $i, adjust-hue($i, 100deg));
+		}
+		.btn-gpc-special-goods{
+			background:linear-gradient(to right, $i, adjust-hue($i, 40deg));
+		}
+		.joinin-info .tabs-nav li.tabs-selected{
+			border-top-color:$i;
+		}
+		.tab-sub{
+			background:$i;
+			border-color:$i;
+		}
+		.hover_content{
+			border-right-color: $i;
+			border-bottom-color:$i;
+		}
+		
+	}
+	// 商家中心
+	.front-#{$index+1}{
+		.red,.bbc_seller_color,.container .mc ul li a.active,.seller-a-link-red,
+		.seller-a-link-blue{
+			color:$i;
+		}
+		.bbc_seller_bg,.dis_flag,.bbc_seller_submit_btns,.bbc_seller_btns,.search-goods-list .close,
+		.bbc_seller_btns1,.bulk-drliver-btn,.btn-icon-submit{
+			background:$i;
+		}
+		a:hover.ncbtn-mini, a:hover.ncbtn{
+			background-color:darken($i,10%);
+		}
+		.image-list .image-item:hover .image-box{
+			border-color:$i;
+		}
+		.bbc_img_btns{
+			background:lighten($i,20%);
+		}
+	}
+	
+	
+	$index:$index+1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
