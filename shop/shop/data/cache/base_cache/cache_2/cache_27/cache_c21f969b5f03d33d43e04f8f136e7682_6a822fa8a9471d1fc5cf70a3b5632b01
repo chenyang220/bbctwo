@@ -1,0 +1,1 @@
+                      1005871794a:1:{s:15:"image_allow_ext";a:7:{s:10:"config_key";s:15:"image_allow_ext";s:12:"config_value";s:24:"gif,jpg,jpeg,bmp,png,swf";s:11:"config_type";s:6:"upload";s:13:"config_enable";s:1:"1";s:14:"config_comment";s:116:"图片扩展名，用于判断上传图片是否为后台允许，多个后缀名间请用半角逗号 "," 隔开。";s:15:"config_datatype";s:6:"string";s:2:"id";s:15:"image_allow_ext";}}

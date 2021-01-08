@@ -1,0 +1,1086 @@
+                      2208589002s:65986:"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <meta name="description" content="网上超市，最经济实惠的网上购物商城，用鼠标逛超市，不用排队，方便实惠送上门，网上购物新生活。"/>
+    <meta name="Keywords" content="网上超市，网上商城，网络购物，进口食品，美容护理，母婴玩具，厨房清洁用品，家用电器，手机数码，电脑软件办公用品，家居生活，服饰内衣，营养保健，钟表珠宝，饰品箱包，汽车生活，图书音像，礼品卡，药品，医疗器械，隐形眼镜等，1号店。"/>
+    <title>BBCbuilder1331中酷商城平台</title>
+        <!--css 替换 -->
+        <link rel="stylesheet" type="text/css" href="https://sitemap.look56.com/shop/static/default/css/headfoot.css"/>
+    <link rel="stylesheet" type="text/css" href="https://sitemap.look56.com/shop/static/default/css/sidebar.css"/>
+	<link rel="stylesheet" type="text/css" href="https://sitemap.look56.com/shop/static/default/css/sass/custom.css"/>
+    <link rel="stylesheet" type="text/css" href="https://sitemap.look56.com/shop/static/default/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="https://sitemap.look56.com/shop/static/default/css/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="https://sitemap.look56.com/shop/static/default/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="https://sitemap.look56.com/shop/static/default/css/swiper.css"/>
+    <link rel="stylesheet" href="https://sitemap.look56.com/shop/static/default/css/iconfont/iconfont.css"/>
+	
+    <link rel="stylesheet" href="https://sitemap.look56.com/shop/static/default/css/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://sitemap.look56.com/shop/static/default/css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="https://sitemap.look56.com/shop/static/common/css/jquery/plugins/dialog/green.css">
+        <script type="text/javascript" src="https://sitemap.look56.com/shop/static/common/js/jquery.js"></script>
+        <script type="text/javascript" src="https://sitemap.look56.com/shop/static/default/js/swiper.min.js"></script>
+        <script type="text/javascript" src="https://sitemap.look56.com/shop/static/default/js/jquery.SuperSlide.2.1.1.js"></script>
+        <script type="text/javascript" src="https://sitemap.look56.com/shop/static/default/js/select2.min.js"></script>
+        <script type="text/javascript" src="https://sitemap.look56.com/shop/static/common/js/plugins/jquery.cookie.js"></script>
+        <script type="text/javascript" src="https://sitemap.look56.com/shop/static/common/js/jquery.nicescroll.js"></script>
+        <script type="text/javascript" src="https://sitemap.look56.com/shop/static/default/js/common.js"></script>
+        <script type="text/javascript" src="https://sitemap.look56.com/shop/static/default/js/index.js"></script>
+        <script type="text/javascript" src="https://sitemap.look56.com/shop/static/default/js/nav.js"></script>
+        <script type="text/javascript" src="https://sitemap.look56.com/shop/static/default/js/decoration/common.js"></script>
+        <script type="text/javascript" src="https://sitemap.look56.com/shop/static/default/js/base.js"></script>
+        
+    
+    <script type="text/javascript">
+        var IM_URL = "";
+        var IM_STATU = "";
+        var BASE_URL = "https://sitemap.look56.com";
+        var protocolStr = document.location.protocol;
+        var SITE_URL = "https://sitemap.look56.com/index.php";
+        if (protocolStr === "http:") {
+            SITE_URL = SITE_URL.replace(/https:/, "http:");
+        } else if (protocolStr === "https:") {
+            SITE_URL = SITE_URL.replace(/http:/, "https:");
+        } else {
+            SITE_URL = SITE_URL.replace(/https:/, "http:");
+        }
+        var INDEX_PAGE = "index.php";
+        var STATIC_URL = "https://sitemap.look56.com/shop/static/default";
+        var PAYCENTER_URL = "https://paycenters.look56.com/";
+        var UCENTER_URL = "https://ucenters.look56.com/";
+        var is_open_city = "";
+        var DOMAIN = document.domain;
+        var WDURL = "";
+        var SCHEME = "default";
+        var MASTER_SITE_URL = "https://shops.look56.com/";
+    </script>
+    
+    <script type="text/javascript">
+        //分站定位
+        if (!getCookie("isset_local_subsite") && !getCookie("sub_site_id")) {
+            //没有设置过分站，就调用该方法
+            getLocalSubsite();
+        }
+        function getLocalSubsite() {
+            $.ajax({
+                type: "GET",
+                url: SITE_URL + "?ctl=Base_District&met=getLocalSubsite&typ=json",
+                data: {},
+                dataType: "json",
+                success: function (data) {
+                    if (data.status == 200) {
+                        $.cookie("isset_local_subsite", 1);
+                        $.cookie("sub_site_id", data.data.subsite_id);
+                        $.cookie("sub_site_name", data.data.sub_site_name);
+                        $.cookie("sub_site_logo", data.data.sub_site_logo);
+                        $.cookie("sub_site_copyright", data.data.sub_site_copyright);
+                        window.location.reload();
+                    }
+                }
+            });
+        }
+    </script>
+    <script src="https://sitemap.look56.com/shop/static/default/js/locales/lang.min.js"></script>
+<script src="https://sitemap.look56.com/messages/zh_CN/app.js"></script>
+<script src="https://sitemap.look56.com/shop/static/default/js/locales/message.js"></script>
+<script src="https://sitemap.look56.com/shop/static/default/js/locales/md5.js"></script></head>
+<body>
+<div class="head">
+    <div class="wrapper clearfix">
+        <div class="head_left">
+            <!-- 3.2.0新增消息显示 -->
+            <div class="fl" id="login_top">
+                <dl class="header_select_province" style="display:none;" >
+                    <dt>
+                        <b class="iconfont icon-dingwei2"></b> <span id="area">
+                                                    </span>
+                    </dt>
+                    <dd></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="head_right">
+            <dl>
+                <p></p>
+                <dt><a href="https://sitemap.look56.com/index.php?ctl=Buyer_Order&met=physical">我的订单</a></dt>
+                <dd class="rel_nav">
+                    <a href="https://sitemap.look56.com/index.php?ctl=Buyer_Order&met=physical">实物订单</a> <a href="https://sitemap.look56.com/index.php?ctl=Buyer_Order&met=virtual">虚拟订单</a>
+                </dd>
+            </dl>
+            <dl>
+                <p></p>
+                <dt>
+                    <a href="https://paycenters.look56.com/" target="_blank"> <span class="iconfont icon-paycenter bbc_color"></span>
+                        fff                    </a>
+                </dt>
+            </dl>
+            
+            <dl>
+                <p></p>
+                <dt><a href="https://sitemap.look56.com/index.php?ctl=Buyer_Favorites&met=favoritesGoods" target="_blank"><span class="iconfont icon-taoxinshi bbc_color"></span>我的收藏</a></dt>
+                <dd class="rel_nav">
+                     <a href="https://sitemap.look56.com/index.php?ctl=Buyer_Favorites&met=favoritesShop">店铺收藏</a> <a href="https://sitemap.look56.com/index.php?ctl=Buyer_Favorites&met=favoritesGoods">商品收藏</a> <a href="https://sitemap.look56.com/index.php?ctl=Buyer_Favorites&met=footprint">我的足迹</a>
+                </dd>
+            </dl>
+            <dl>
+                <p></p>
+                <dt>
+                    <a href="https://sitemap.look56.com/index.php?ctl=Buyer_Cart&met=cart"><span class="iconfont icon-zaiqigoumai bbc_color"></span>购物车</a>
+                </dt>
+            </dl>
+            <dl>
+                <p></p>
+                <dt><a href="https://sitemap.look56.com/index.php?ctl=Buyer_Service_Custom&met=index" target="_blank">客服中心</a></dt>
+                <dd class="rel_nav">
+                    <a href="https://sitemap.look56.com/index.php?ctl=Article_Base&met=index&article_id=2">帮助中心</a> <a href="https://sitemap.look56.com/index.php?ctl=Buyer_Service_Return&met=index">售后服务</a>
+            </dl>
+            <dl id="phoney">
+                <dt><span class="iconfont icon-shoujibangding bbc_color"></span><a href="#"  >手机版</a></dt>
+                <dd class="rel_nav qrcode_erweima" id="catter"style="">
+                    <a class="qrcodes mobile_app"id="mobile_khd" style="display: none!important;">
+                        <img id="mobile_top_app_qr_img"  src="" width="90" height="90" />
+                        <li>扫一扫</li>
+                        <li>下载手机客户端</li>
+                    </a>
+                    <a class="qrcodes mobile_wap"id="mobile_wapy" style="display: none!important;">
+                        <img id="mobile_top_wap_qr_img" src="" width="90" height="90"/>
+                        <li>扫一扫</li>
+                        <li>浏览移动端商城</li>
+                    </a>
+                    <a class="qrcodes mobile_wx" id="mobile_wxy" style="display: none!important;">
+                        <img id="mobile_top_wx_qr_img" src="" width="90" value="11111" height="90"/>
+                        <li>扫一扫</li>
+                        <li>关注商城公众号</li>
+                    </a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    .qrcodes{
+        text-decoration:none!important;
+        float: left!important;
+        padding: 20px!important;
+        height: 110px!important;
+        margin-top: 10px!important;
+        line-height: 18px!important;
+    }
+</style>
+
+<script>
+    // 最新
+    var theme_page_color = "#db2c2c";//后台传class名，例：front-1 front-2 ...
+    document.getElementsByTagName('body')[0].className=theme_page_color;
+    // 原版
+    // var theme_page_color = "#db2c2c"
+    // document.documentElement.style.setProperty("--color", theme_page_color);
+	
+    var phoney = document.getElementById("phoney")  /*获取id名字为p的标签*/
+    phoney.onmouseover = function () {
+        var lujing = $(".mobile_wx img").attr("src");
+        var mobile_wap = $(".mobile_wap img").attr("src");
+        var mobile_app = $(".mobile_app img").attr("src");
+        var brand4 = lujing.substr(lujing.length-9);
+        var mobile_app = mobile_app.substr(mobile_app.length-9);
+        var mobile_wap = mobile_wap.substr(mobile_wap.length-9);
+
+        if( brand4=='image.png')
+        {
+            $('#catter').attr("style","width: 262px;height: 180px;left: -280px");
+            $('#mobile_wxy').attr("style","display:none");
+        }else if(mobile_app =="image.png")
+        {
+            $('#catter').attr("style","width: 262px;height: 180px;left: -280px");
+            $('#mobile_app').attr("style","display:none");
+        }else if(mobile_wap =="image.png")
+        {
+            $('#catter').attr("style","width: 262px;height: 180px;left: -280px");
+            $('#mobile_wapy').attr("style","display:none");
+        }
+        if(mobile_app=="image.png" && brand4=='image.png')
+        {
+            $('#catter').attr("style","width: 130px;height: 180px;left: -280px");
+            $('#mobile_app').attr("style","display:none");
+            $('#mobile_wxy').attr("style","display:none");
+        }else if(mobile_app=="image.png" && mobile_wap=='image.png')
+        {
+            $('#catter').attr("style","width: 130px;height: 180px;left: -280px");
+            $('#mobile_wxy').attr("style","display:none");
+            $('#mobile_wapy').attr("style","display:none");
+        }else if(brand4=="image.png" && mobile_wap=='image.png')
+        {
+            $('#catter').attr("style","width: 130px;height: 180px;left: -280px");
+            $('#mobile_wxy').attr("style","display:none");
+            $('#mobile_wapy').attr("style","display:none");
+        }
+
+    }
+
+</script>
+
+    
+    <link rel="stylesheet" type="text/css" href="https://sitemap.look56.com/shop/static/common/css/iealert/style.css"/>
+    <link href="https://sitemap.look56.com/shop/static/default/css/select2.min.css" rel="stylesheet">
+    <script src="https://sitemap.look56.com/shop/static/common/js/iealert.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://sitemap.look56.com/shop/static/common/js/jquery.blueberry.js"></script>
+    <script src="https://sitemap.look56.com/shop/static/common/js/plugins/jquery.timeCountDown.js"></script>
+    <script type="text/javascript" src="https://sitemap.look56.com/shop/static/default/js/jquery.lazy.js"></script>
+    <script src="https://sitemap.look56.com/shop/static/default/js/select2.min.js"></script>
+<!-- 定位用户位置 @nsy 2019-02-20 -->
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script>
+$(function() {
+	if(!$.cookie("c_ip")){
+		setTimeout("setClientIp()",3000);//设置5秒钟后执行
+	}	
+});
+function setClientIp(){
+	var ip = returnCitySN["cip"];
+	$.ajax({
+		url:SITE_URL + '?ctl=Index&met=setClientIpByCookie',
+		type:'POST',
+		data:{ip:ip},
+		success: function (data) {
+			$.cookie('c_ip',ip);
+		}
+	});
+}
+</script>
+<div class="tip" style="display: none;">
+	<div class="relative">
+		<div class="tip-area">
+			<h5><span class="icon"></span>提示</h5>
+			<div class="tip-cont"></div>
+			<div class="clearfix"><a href="javascript:;" class="btn-sure">确定</a> </div>
+
+		</div>
+		<a href="javascript:;" class="btn-close"></a>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function alert_box(msg){
+						$('.btn-sure').attr('href','javascript:;');  
+						$(".tip-cont").html(msg);
+						$('.tip').show(); 
+	}
+
+	function alert_box_link(msg,link){ 
+					
+					alert_box(msg);
+					$('.btn-sure').attr('href',link);
+	}
+
+ 
+	$('.btn-close').click(function(){ $(".tip").hide(); });
+	$('.btn-sure').click(function(){ $(".tip").hide(); });
+
+</script>
+<div class="bgf">
+    <div class="wrap">
+        <div class="head_cont clearfix">
+            <div class="nav_left">
+                <a href="https://sitemap.look56.com/index.php" class="logo iblock w240"> <img class="wp100" src="https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20201021/160325464079748724173414062213.png!240x60.png"/> </a> <a href="#" class="download iconfont"></a>
+            </div>
+            <div class="nav_right clearfix">
+                <ul class="clearfix search-types">
+                    <li class="active" onclick="searchWords()">
+                        <a href="javascript:void(0);" data-param='goods'>宝贝</a>
+                    </li>
+                                        <li class="" onclick="searchShopWords()" id="shop">
+                        <a href="javascript:void(0);" data-param='shop'>店铺</a>
+                    </li>
+                                    </ul>
+                <div class="clearfix">
+                    <form name="form_search" id="form_search" action="" class="">
+                        <input type="hidden" id="search_ctl" name="ctl" value="Goods_Goods"> <input type="hidden" id="search_met" name="met" value="goodslist"> <input type="hidden" name="typ" value="e"> <input name="keywords" id="site_keywords" type="text" value="" placeholder=""> <input type="submit" style="display: none;">
+                    </form>
+                    <a href="#" class="ser" id="site_search">搜索</a>
+                    <!-- 购物车 -->
+                    <div class="bbuyer_cart" id="J_settle_up">
+                        <div id="J_cart_head">
+                            <a href="https://sitemap.look56.com/index.php?ctl=Buyer_Cart&met=cart" target="_blank" class="bbc_buyer_icon bbc_buyer_icon2"> <i class="ci_left iconfont icon-zaiqigoumai bbc_color rel_top2"></i> <span>我的购物车</span> <i class="ci_right iconfont icon-iconjiantouyou"></i> <i class="ci-count bbc_bg" id="cart_num"></i> </a>
+                        </div>
+                        <div class="dorpdown-layer zIndex12" id="J_cart_body"><span class="loading"></span></div>
+                    </div>
+                </div>
+                                <div class="nav clearfix searchs">
+                                    </div>
+                            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+
+        
+        <script>
+            var $dialog = $("#J_cart_bodys");
+            $("#movers").click(function(){
+
+                if( $("#J_cart_bodys").css("display")=='none' ) {
+
+                    $dialog.css("display","block");
+                }else{
+                    $dialog.css("display","none");
+                }
+            })
+            // 谁有active就给谁默认词
+            $(function () {
+                if ($("#shop").is(".active")) {
+                    $("#site_keywords").attr("placeholder", "");
+                } else {
+                    $("#site_keywords").attr("placeholder", "");
+                }
+            });
+            
+            // 当点击宝贝时，填充商品关键词
+            function searchWords() {
+                $("#site_keywords").val("");
+                $("#site_keywords").attr("placeholder", "");
+            }
+            
+            // 当点击店铺时，填充店铺关键词
+            function searchShopWords() {
+                $("#site_keywords").attr("placeholder", "");
+            }
+        
+        </script>
+        <div>
+                         <div class="thead clearfix" style="margin-top: 20px;">
+                <div class="classic clearfix">
+                    <div class="class_title">
+                        <span>&equiv;</span> <a href="https://sitemap.look56.com/index.php?ctl=Goods_Cat&met=goodsCatList" class="ta1">全部分类</a>
+                    </div>
+
+                    <div class="tleft" id="show"  style="display:block;">
+                        <ul>
+                                                                    <li onclick="tocha(this)">
+                                            <h3>
+                                                                                                                                                        <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9003">
+                                                        购物                                                    </a>
+                                                                                                <span class="iconfont icon-iconjiantouyou"></span>
+                                            </h3>
+                                            <div class="hover_content clearfix">
+                                                <div class="left">
+                                                    <div class="channels">
+                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&brand_id=2">
+                                                                        面食                                                                        <span class="iconfont icon-iconjiantouyou "></span> </a>
+                                                                                                                    </div>
+                                                    
+                                                    <div class="rel_content">
+                                                                                                                                                                                    <dl class="clearfix">
+                                                                    <dt>
+                                                                        <a class="one-overflow" href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9043">
+                                                                            购物                                                                            <span class="iconfont icon-iconjiantouyou rel_top1"></span> </a>
+                                                                    </dt>
+                                                                    <dd>
+                                                                                                                                                        <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9046">
+                                                                                    便利店                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9047">
+                                                                                    超商                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9048">
+                                                                                    商城商圈                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9049">
+                                                                                    步行街                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9050">
+                                                                                    市场                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9051">
+                                                                                    药店                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9052">
+                                                                                    菜市场                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9053">
+                                                                                    花店                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9054">
+                                                                                    书店                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9055">
+                                                                                    专卖店                                                                                </a>
+                                                                                                                                                </dd>
+                                                                </dl>
+                                                                                                                                                                        </div>
+                                                </div>
+                                                
+                                                <!-- 广告位-->
+                                                <div class="right">
+                                                    <!-- 品牌-->
+                                                                                                            <div class="clearfix mb10">
+                                                            <a class="fr" href="https://sitemap.look56.com/index.php?ctl=Goods_Brand&met=index">
+                                                                更多品牌                                                                <span class="middle iconfont icon-btnrightarrow"></span> </a>
+                                                        </div>
+                                                                                                        <ul class="d1ul clearfix mb10">
+                                                                                                                            <li class="">
+                                                                        <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&brand_id=2">
+                                                                            <img src="https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20201104/160445676167708945453865528357.jpg!93x35.jpg" data-src="https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20201104/160445676167708945453865528357.jpg!93x35.jpg" alt="面食">
+                                                                            <span><b class="table wp100 hp100"><i class="table-cell wp100 align-middle">面食</i></b></span>
+                                                                        </a>
+                                                                    </li>
+                                                                                                                    </ul>
+                                                    
+                                                    <ul class="index_ad_big">
+                                                                                                                        <li>
+                                                                    
+                                                                        <a href="javascript:;"><img src="" data-src=""></a>
+                                                                        
+                                                                </li>
+                                                                                                                            <li>
+                                                                    
+                                                                        <a href="javascript:;"><img src="" data-src=""></a>
+                                                                        
+                                                                </li>
+                                                                                                                </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                                                            <li onclick="tocha(this)">
+                                            <h3>
+                                                                                                                                                        <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9004">
+                                                        休闲娱乐                                                    </a>
+                                                                                                <span class="iconfont icon-iconjiantouyou"></span>
+                                            </h3>
+                                            <div class="hover_content clearfix">
+                                                <div class="left">
+                                                    <div class="channels">
+                                                                                                            </div>
+                                                    
+                                                    <div class="rel_content">
+                                                                                                                                                                                    <dl class="clearfix">
+                                                                    <dt>
+                                                                        <a class="one-overflow" href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9044">
+                                                                            休闲娱乐                                                                            <span class="iconfont icon-iconjiantouyou rel_top1"></span> </a>
+                                                                    </dt>
+                                                                    <dd>
+                                                                                                                                                        <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9057">
+                                                                                    电影院                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9066">
+                                                                                    游乐场                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9065">
+                                                                                    足疗按摩                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9064">
+                                                                                    洗浴                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9063">
+                                                                                    美容美发                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9062">
+                                                                                    网吧                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9061">
+                                                                                    酒吧                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9060">
+                                                                                    KTV                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9059">
+                                                                                    体育场馆                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9058">
+                                                                                    棋牌室                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9067">
+                                                                                    展馆                                                                                </a>
+                                                                                                                                                </dd>
+                                                                </dl>
+                                                                                                                                                                        </div>
+                                                </div>
+                                                
+                                                <!-- 广告位-->
+                                                <div class="right">
+                                                    <!-- 品牌-->
+                                                                                                        <ul class="d1ul clearfix mb10">
+                                                                                                            </ul>
+                                                    
+                                                    <ul class="index_ad_big">
+                                                                                                            </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                                                            <li onclick="tocha(this)">
+                                            <h3>
+                                                                                                                                                        <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9005">
+                                                        生活服务                                                    </a>
+                                                                                                <span class="iconfont icon-iconjiantouyou"></span>
+                                            </h3>
+                                            <div class="hover_content clearfix">
+                                                <div class="left">
+                                                    <div class="channels">
+                                                                                                            </div>
+                                                    
+                                                    <div class="rel_content">
+                                                                                                                                                                                    <dl class="clearfix">
+                                                                    <dt>
+                                                                        <a class="one-overflow" href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9045">
+                                                                            生活服务                                                                            <span class="iconfont icon-iconjiantouyou rel_top1"></span> </a>
+                                                                    </dt>
+                                                                    <dd>
+                                                                                                                                                        <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9068">
+                                                                                    医院                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9080">
+                                                                                    派出所                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9079">
+                                                                                    社区                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9078">
+                                                                                    车管所                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9077">
+                                                                                    营业厅                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9076">
+                                                                                    银行                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9075">
+                                                                                    ATM                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9074">
+                                                                                    文印照相                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9073">
+                                                                                    裁缝                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9072">
+                                                                                    修理站                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9071">
+                                                                                    洗车修车                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9070">
+                                                                                    停车场                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9069">
+                                                                                    开锁配锁                                                                                </a>
+                                                                                                                                                            <a href="https://sitemap.look56.com/index.php?ctl=Goods_Goods&met=goodslist&cat_id=9082">
+                                                                                    站点                                                                                </a>
+                                                                                                                                                </dd>
+                                                                </dl>
+                                                                                                                                                                        </div>
+                                                </div>
+                                                
+                                                <!-- 广告位-->
+                                                <div class="right">
+                                                    <!-- 品牌-->
+                                                                                                        <ul class="d1ul clearfix mb10">
+                                                                                                            </ul>
+                                                    
+                                                    <ul class="index_ad_big">
+                                                                                                            </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                                            </ul>
+                    </div>
+                </div>
+                <nav class="tnav" shop_id="0">
+                    <a href="index.php" >首页</a><a href="index.php?ctl=Goods_Brand" target="_blank">品牌列表</a><a href="index.php?ctl=GroupBuy&met=index" >团购中心</a><a href="index.php?ctl=Points&met=index" >积分商城</a><a href="index.php?ctl=Seller_Shop_Settled&amp;met=index&amp;type=e" >商家中心</a><a href="index.php?ctl=Shop_Index&met=index&typ=e&keywords=" >商家店铺</a><a href="index.php?ctl=RedPacket&met=redPacket" >平台红包</a><a href="index.php?ctl=PinTuan&met=index&typ=e" target="_blank">拼团活动</a><a href="index.php?ctl=Seller_Supplier_Settled&amp;met=index&amp;type=e" target="_blank">供应商中心</a>                </nav>
+
+
+                <p class="high_gou"></p>
+            </div>
+                    </div>
+    </div>
+</div>
+<div class="hr hr-her"></div>
+<div class="J-global-toolbar"></div>
+<script>
+    function tocha(obj) {
+        $("a", obj)[0].click();
+    }
+</script>
+<link href="https://sitemap.look56.com/shop/static/default/css/login.css" rel="stylesheet">
+<link href="https://sitemap.look56.com/shop/static/default/css/new_file.css" rel="stylesheet">
+<link href="https://sitemap.look56.com/shop/static/default/css/tips.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="https://sitemap.look56.com/shop/static/common/js/plugins/jquery.toastr.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://sitemap.look56.com/shop/static/default/js/home.js"></script>
+
+
+<!--<link rel="stylesheet" type="text/css" href="https://sitemap.look56.com/shop/static/common/css/swiper.min.css" />-->
+<!--<script src="https://sitemap.look56.com/shop/static/common/js/swiper.min.js"></script>-->
+
+<style>
+    body {
+        min-width: 1200px;
+        background: #eee;
+    }
+    .plus-status {
+        display: inline-block;
+        width: 48px;
+        height: 20px;
+        line-height: 18px;
+        background: #E94458;
+        border: 1px solid #FFE5E8;
+        font-size: 12px;
+        font-weight: normal;
+        color: #FFFFFF;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .wrap, .wrapper {
+        width: 1202px;
+        margin: 0 auto;
+        font-size: 14px;
+        position: relative
+    }
+</style>
+
+<div id="redpacket_content" style="display:none">
+    <img src="https://sitemap.look56.com/shop/static/default/images/icon-closes.png" id="redpacket-close">
+    <a href="https://sitemap.look56.com/index.php?ctl=RedPacket&met=redPacket"><img class="redpacket-img" width="50%" src="https://sitemap.look56.com/shop/static/default/images/redpacket.png"></a>
+</div>
+
+<script>
+    $("#redpacket-close").click(function(){
+        $("#redpacket_content").hide();
+    });
+</script>
+<div style="height:500px;" class="slideBox">
+    <div class="hd">
+        <ul>
+                    </ul>
+    </div>
+    <div class="banner  bd">
+        <ul class="banimg">
+                    
+        </ul>
+        <script type="text/javascript">
+            jQuery(".slideBox").slide({mainCell: ".bd ul", autoPlay: true, delayTime:3000,interTime:3000});
+        </script>
+        <div class="wrap t_cont clearfix">
+            <ul class="tcenter fz0">
+                <li>
+                                                        </li>
+                <li>
+                                                        </li>
+            </ul>
+            <div class="tright" id="login_tright">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrap" style="width:1202px;">
+
+        
+    <div class="wrap floor fn-clear">
+            </div>
+
+    <!--猜你喜欢-->
+    <div class="activity-a guess-like">
+        <h3>
+            <span></span>
+            <em>猜你喜欢</em>
+            <span></span>
+        </h3>
+        <ul class="clearfix" id="guess_id"></ul>
+    </div>
+</div>
+</div>
+<div class="J_f J_lift lift" id="lift" style="left: 42.5px; top: 134px;">
+    <ul class="lift_list  aad">
+        <li class="J_lift_item_top lift_item lift_item_top">
+            <a href="javascript:;" class="lift_btn">
+                <span class="lift_btn_txt">
+                    顶部                    <i class="lift_btn_arrow"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+<script src="https://sitemap.look56.com/shop/static/common/js/plugins/jquery.timeCountDown.js"></script>
+<script>
+    function ReceiveRedPack(redpacket_t_id) {
+        if (!redpacket_t_id) {
+            return;
+        }
+
+        Public.ajaxPost(SITE_URL + "?ctl=RedPacket&typ=json&met=receiveRedPacket", {red_packet_t_id: redpacket_t_id}, function (data) {
+            if (data.status == 200) {
+                Public.tips.success(data.msg);
+            } else {
+                Public.tips.warning(data.msg);
+            }
+        });
+
+    }
+    $(function () {
+        var _TimeCountDown = $(".fnTimeCountDown");
+        _TimeCountDown.fnTimeCountDown();
+    });
+    $(function () {
+
+//              a标签隐藏
+        if ($("#ul-num").children("li").length < 6) {
+            $(".js-a-none").css("display", "none");
+        }
+        
+        //遍历导航楼层111
+        var atrf = [];
+        var len = $(".floor .m").length;
+        for (var mm = 0; mm < len; mm++) {
+            var str = $(".floor .m").eq(mm).find("em").text();
+            atrf.push(str);
+        }
+        var lis = "";
+        $(atrf).each(function (i, n) {
+            lis += "<li class=\"J_lift_item lift_item lift_item_first\"><a class=\"lift_btn\"><span class=\"lift_btn_txt\">" + n + "</span></a></li>";
+        });
+        $(".lift_list").prepend(lis);
+        
+        $(window).scroll(function () {
+            //滚动轴
+            var CTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var floorone = $(".floor .m").eq(0).offset().top;
+            //当滚动轴到达楼层一时，左菜单栏显示
+            if (CTop >= floorone) {
+                $("#lift").show(500);
+            }else if(CTop<floorone-200){
+                $("#lift").hide(500);
+            }
+        });
+        
+        var b;
+        $(".lift_list .J_lift_item").click(function () {
+            b = $(this).index();
+            $(".J_lift_item").removeClass("reds");
+            $(this).addClass("reds");
+            //离顶部距离
+            var offsettop = $(".floor .m").eq(b).offset().top;
+            //滚动轴距离
+            var scrolltop = document.body.scrollTop || document.documentElement.scrollTop;
+            //scrollTop() 方法返回或设置匹配元素的滚动条的垂直位置。
+            $("html,body").stop().animate({
+                scrollTop: offsettop
+            }, 1000);
+        });
+        //返回顶部
+        $(".lift_item_top").click(function () {
+            $("html,body").animate({
+                scrollTop: "0px"
+            }, 800);
+        });
+        //滚动楼层对应切换左侧楼层导航
+        var le = $(".floor .m").length;
+        var arr = [];
+        for (var s = 0; s < le; s++) {
+            var nums = $(".floor .m").eq(s).offset().top;
+            arr.push(nums);
+        }
+       
+
+        $(window).scroll(function () {
+            var scrTop = $(window).scrollTop();
+            for (var w = 0; w < arr.length; w++) {
+                var cc = arr[w + 1] || 1111111111;
+                if (scrTop > arr[w] && scrTop < cc) {
+                    if (arr[w + 1] < 0) {
+                        w = w + 1;
+                    }
+                    $(".J_lift_item").removeClass("reds");
+                    $(".J_lift_item").eq(w + 1).addClass("reds");
+                }else if(scrTop<arr[0]){
+                    $(".J_lift_item").removeClass("reds");
+                    $(".J_lift_item").eq(0).addClass("reds");
+                }
+            }
+            
+            
+        });
+        
+    });
+</script>
+<script>
+    //删除限时折扣和团购模块商品滑玩箭头跳转事件
+    function clockcss(){
+        $(".swiper-button-next").removeClass("swiper-button-disabled");
+        $(".swiper-button-prev").removeClass("swiper-button-disabled");
+    }
+    setInterval(clockcss,1000);
+
+	 // window.onload=function(){
+	 	var swiper1 = new Swiper('.swiper-container1', {
+			pagination: {
+				el: '.swiper-pagination1',
+				dynamicBullets: true,
+			},
+			  observer:true,//修改swiper自己或子元素时，自动初始化swiper
+	        observeParents:true,//修改swiper的父元素时，自动初始化swiper
+		});
+
+	 	//限时折扣版块1
+		var swiper2 = new Swiper('.time-limit-a .swiper-container', {
+			slidesPerView: 5,
+			spaceBetween: 0,
+			slidesPerGroup: 5,
+			loopFillGroupWithBlank: true,
+		
+			prevButton:'.time-limit-a .swiper-button-prev',
+			nextButton:'.time-limit-a .swiper-button-next',
+
+			  observer:true,//修改swiper自己或子元素时，自动初始化swiper
+	        observeParents:true,//修改swiper的父元素时，自动初始化swiper
+		});
+
+		//团购风暴版块1
+		var swiper3 = new Swiper('.group-purchase-a .swiper-container', {
+			slidesPerView: 5,
+			spaceBetween: 0,
+			slidesPerGroup: 5,
+			loopFillGroupWithBlank: true,
+			
+			prevButton:'.group-purchase-a .swiper-button-prev',
+			nextButton:'.group-purchase-a .swiper-button-next',
+			 observer:true,//修改swiper自己或子元素时，自动初始化swiper
+	        observeParents:true,//修改swiper的父元素时，自动初始化swiper
+		});
+
+		//领券中心版块1
+		var swiper4 = new Swiper('.coupon-a .swiper-container', {
+			slidesPerView: 3,
+			spaceBetween: 10,
+			slidesPerGroup: 3,
+			loopFillGroupWithBlank: true,
+
+			prevButton:'.coupon-a .swiper-button-prev',
+			nextButton:'.coupon-a .swiper-button-next',
+			  observer:true,//修改swiper自己或子元素时，自动初始化swiper
+	        observeParents:true,//修改swiper的父元素时，自动初始化swiper
+		});
+
+		//平台红包版块1
+		var swiper5 = new Swiper('.platform-a .swiper-container', {
+			slidesPerView: 3,
+			spaceBetween: 10,
+			slidesPerGroup: 3,
+			loopFillGroupWithBlank: true,
+//			navigation: {
+//				nextEl: '.platform-a .swiper-button-next',
+//				prevEl: '.platform-a .swiper-button-prev',
+//			},
+			prevButton:'.platform-a .swiper-button-prev',
+			nextButton:'.platform-a .swiper-button-next',
+			 observer:true,//修改swiper自己或子元素时，自动初始化swiper
+	        observeParents:true,//修改swiper的父元素时，自动初始化swiper
+		});
+
+		//团购风暴版块2
+        var swiper6 = new Swiper('.swiper-container-groupbuy', {
+            slidesPerView: 1,
+            slidesPerColumn:3,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination-groupbuy',
+            paginationClickable: true,
+        });
+
+        //限时折扣版块2
+        var swiper8 = new Swiper('.swiper-container-discount', {
+            slidesPerView: 1,
+            slidesPerColumn:3,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination-discount',
+            paginationClickable: true,
+        });
+
+        //领券中心版块2
+        var swiper9 = new Swiper('.swiper-container-voucher', {
+            slidesPerView: 1,
+            slidesPerColumn:3,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination-voucher',
+            paginationClickable: true,
+        });
+
+        //平台红包版块2
+        var swiper10 = new Swiper('.swiper-container-redpacket', {
+            slidesPerView: 1,
+            slidesPerColumn:3,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination-redpacket',
+            paginationClickable: true,
+        });
+
+
+	 // }
+	
+	$(function() {
+		var arr = ["#fff0f0", "#fdf5f2", "#f1f6ef", "#f9f9f9", "#f2fbff"];
+		$.each($(".group-purchase-a .swiper-slide"), function(i, obj) {
+			if(i >= 5) {
+				var thisindex = $(this).index();
+				i = thisindex - Math.floor(thisindex / 5) * 5;
+			}
+			$(this).css("backgroundColor", arr[i])
+		})
+	})
+</script>
+<script> 
+	/**
+	 *懒加载处理 
+	 *@nsy 2019-10-14
+	 **/
+	var lock_id;
+	$(window).on('scroll', function (){
+		if (lock_id) {
+			clearTimeout(lock_id);
+		}
+		lock_id = setTimeout(function (){
+			lazyLoading();
+		}, 300);
+	});
+
+	//懒加载主方法 
+	function lazyLoading(){
+		$('.wrap img').each(function (){
+			if (_check($(this)) && !loadFlag($(this))){
+				loadingImage($(this));
+			}
+		})
+	}
+
+	//检测
+	function _check($pic){
+		var scrollTop = $(window).scrollTop();
+		var windowHeight = $(window).height();
+		var offsetTop = $pic.offset().top; 
+		if ((offsetTop < (scrollTop + windowHeight)) && (offsetTop > scrollTop)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	//加载标识
+	function loadFlag($pic){
+		if($pic.attr('data-src') === $pic.attr('src')){
+			return true;//已加载
+		}else{
+			return false;//未加载
+		}
+	}
+	
+	//加载图片
+	function loadingImage($pic){
+		$pic.attr('src', $pic.attr('data-src'));
+		//图片加载完成，轮播图展示
+		$("ul.slides").css("height", "100%");
+	} 
+</script>
+<script language="JavaScript">
+    $(function() {
+        setTimeout("getFavouriteGoods()",5000);
+    });
+
+    /**
+     * 异步获取猜你喜欢商品数据
+     * @nsy 2019-10-15
+     */
+    function getFavouriteGoods(){
+        Public.ajaxPost(SITE_URL + "?ctl=Index&met=guessFavourite&typ=json", '',function(data) {
+            var html = '';
+            var url = "https://sitemap.look56.com/index.php";
+            if(data.status==200 && data.data){
+                for (var i in data.data){
+                    html+='<li><a href="'+url+'?ctl=Goods_Goods&met=goods&type=goods&gid='+data.data[i].goods_id+'" target="_blank"><div class="img-box-limit"><em><b><img src="'+data.data[i].goods_image+'"/></b></em></div><span class="one-overflow">'+data.data[i].goods_name+'</span><p><b class="rmb">￥</b>'+data.data[i].goods_price+'</p></a></li>';
+                }
+            }
+            $("#guess_id").html(html);
+        } );
+    }
+</script>
+<script>
+    $(function () {
+        setTimeout("getWapQrcodeImg()",1000);
+    });
+    /**
+     *获取wap端扫码二维码进入的图片
+     *@nsy 2019-10-16
+     */
+    function getWapQrcodeImg(){
+        Public.ajaxPost(SITE_URL + "?ctl=Common&met=qrCodeImage&typ=json", {},
+            function (data) {
+                if (data.status == 200) {
+                    $("#left_wap_qr_img").attr('src',data.data.img);
+                    var mobile_app = data.data.mobile_app;
+                    var mobile_wap = data.data.mobile_wap;
+                    var mobile_wx_code = data.data.mobile_wx_code;
+                    var a = 0;
+                    if(mobile_app){
+                        $(".mobile_app").show();
+                        a++;
+                    }
+                    if(mobile_wap){
+                        $(".mobile_wap").show();
+                        $(".mobile_app").css("border-right","1px solid #e1e1e1");
+                        a++;
+                    }
+                    if(mobile_wx_code){
+                        $(".mobile_wx").show();
+                        $(".mobile_wap").css("border-right","1px solid #e1e1e1");
+                        a++;
+                    }
+                    console.log(a);
+                    if(a==1){
+                        $(".qrcode_erweima").css("width","140px");
+                    }else if(a==2){
+                        $(".qrcode_erweima").css("width","280px");
+                    }
+                    $("#mobile_top_app_qr_img").attr('src',mobile_app);
+                    $("#mobile_top_wap_qr_img").attr('src',mobile_wap);
+                    $("#mobile_top_wx_qr_img").attr('src',mobile_wx_code);
+                }
+            }
+        );
+    }
+</script>
+</div>
+<div class="footer">
+    <div class="wrapper">
+                <ul class="services clearfix">
+                    </ul>
+        <p class="about">
+                    </p>
+        <p class="copyright">
+            
+版权所有：上海中酷网络科技有限公司
+<div style="color: #AEAEAE;font-size: 14px;text-align: center;">
+					<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402005014" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+					<img src="https://www.look56.com/img/gonganbeian.png" style="float:left;margin-bottom:5px">沪公网安备 31010402005014号</a>
+				</div>
+<div style="color: #AEAEAE;font-size: 14px;text-align: center;">
+					<a target="_blank" href="http://wap.scjgj.sh.gov.cn/businessCheck/verifKey.do?showType=extShow&amp;serial=9031000020190122031711000003614133-SAIC_SHOW_310000-4028e4cb6bb22dee016bce72dda211bb030&amp;signData=MEUCIBeEY5m46xECVfL3rLeutyLjQNgRDaodcjeB1sjDB6D7AiEAq0Eo8hiHqC8H8WzBr9EFtb3bDwX9RFl4ExcfRRa/Qag=" style="display:inline-block;text-decoration:none;">
+					<img src="https://www.look56.com/img/lz2.jpg" style="float:left;width:20px;height:20px;margin-bottom:5px">市场监督管理备案</a>
+				</div>        </p>
+                <p class="statistics_code">沪ICP备18027840号-1</p>
+    </div>
+</div>
+</div>
+    <script type="text/javascript" src="https://sitemap.look56.com/shop/static/common/js/plugins/jquery.ui.js"></script>
+    <script type="text/javascript" src="https://sitemap.look56.com/shop/static/common/js/plugins/jquery.dialog.js"></script>
+    <script type="text/javascript" src="https://sitemap.look56.com/shop/static/common/js/respond.js"></script>
+    <!--    <script type="text/javascript">
+        (function () {
+            var analytics = document.createElement("script");
+            analytics.type = "text/javascript";
+            analytics.async = true;
+            analytics.src = "";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(analytics, s);
+        })();
+    </script>-->
+    
+<p class="statistics_code"></p>
+<!--     <iframe style='width:1px;height:1px;' src="https://paycenters.look56.com/?ctl=Index&met=iframe"></iframe>
+ -->
+
+<!--<iframe class="hidden" src=""></iframe>-->
+<!--延迟加载iframe @nsy 2019-10-16-->
+<iframe class="hidden" id="paycenter_ifrm"></iframe>
+<script>
+    setTimeout(function(){
+        document.getElementById('paycenter_ifrm').src="https://paycenters.look56.com/?ctl=Index&met=iframe";
+    }, 5000);
+</script>
+<!--
+/**
+ * Created by PhpStorm.
+ * Author: Michael Ma
+ * Date: 2018年08月28日
+ * Time: 11:31:25
+ *
+ * Notes：统一配置IM的文件代码
+ *
+ */
+ 对应表
+ IM 状态        im_statu             0-关;1-开
+ IM URL         im_url              IM的地址
+ IM Api URL     im_api_url          IM的App token    未使用到,但是token是隐含使用加密的
+ IM App Key     im_api_key          IM的App app_id
+ IM Secret      im_admin_api_url    IM的App secret
+ -->
+</body>
+</html>
+";
