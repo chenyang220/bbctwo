@@ -562,3 +562,19 @@
 16:24:23 01/11/21 FILE=/var/www/html/bbctwo/paycenter/paycenter/api/payment/wx/jh_notify_url.php [debug] effect_rows=2
 17:24:24 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] UPDATE pay_user_base SET user_key= '5f6d8d2034bb8',user_login_time= '2021-01-11 17:24:24',user_login_times= '105',user_login_ip= '114.85.118.188' WHERE 1   AND user_id=10002
 17:24:24 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] effect_rows=1
+18:08:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] UPDATE pay_user_base SET user_key= '5fab963d62b23',user_login_time= '2021-01-11 18:08:16',user_login_times= '158',user_login_ip= '120.26.203.208' WHERE 1   AND user_id=10054
+18:08:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] effect_rows=1
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] UPDATE pay_consume_trade SET order_state_id= '7' WHERE 1   AND consume_trade_id IN ("DD-10002-1-102-20210107093610-0001")
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] effect_rows=1
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] UPDATE pay_consume_record SET record_status= '3' WHERE 1   AND consume_record_id IN (1379,1380)
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] effect_rows=2
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] UPDATE pay_union_order SET order_state_id= '7' WHERE 1   AND union_order_id IN ("U20210107093610610")
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] effect_rows=1
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] UPDATE pay_consume_trade SET order_state_id= '7' WHERE 1   AND consume_trade_id IN ("DD-10002-1-102-20210107093502-0001")
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] effect_rows=1
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] UPDATE pay_consume_record SET record_status= '3' WHERE 1   AND consume_record_id IN (1377,1378)
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] effect_rows=2
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] UPDATE pay_union_order SET order_state_id= '7' WHERE 1   AND union_order_id IN ("U20210107093503115")
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] effect_rows=1
+18:08:52 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] UPDATE pay_user_base SET user_key= '5fab963d62b23',user_login_time= '2021-01-11 18:08:52',user_login_times= '159',user_login_ip= '120.26.203.208' WHERE 1   AND user_id=10054
+18:08:52 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] effect_rows=1

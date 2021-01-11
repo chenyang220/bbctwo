@@ -4011,3 +4011,79 @@
 17:30:27 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_resource WHERE 1   AND user_id=10002 LIMIT 500 
 17:30:33 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
 17:30:33 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   LIMIT 500 
+18:01:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:01:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=105 LIMIT 500 
+18:01:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   AND user_id=10002 LIMIT 500 
+18:01:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT  SQL_CALC_FOUND_ROWS payment_channel_id FROM pay_payment_channel WHERE 1   AND payment_channel_code="baitiao" LIMIT 500 
+18:01:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_payment_channel WHERE 1   AND payment_channel_id IN (9) LIMIT 500 
+18:01:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_resource WHERE 1   AND user_id=10002 LIMIT 500 
+18:01:18 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:01:18 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=102 LIMIT 500 
+18:01:18 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_resource WHERE 1   AND user_id=10002 LIMIT 500 
+18:01:24 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:01:24 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   LIMIT 500 
+18:02:22 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:02:22 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=102 LIMIT 500 
+18:02:22 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_resource WHERE 1   AND user_id=10033 LIMIT 500 
+18:02:26 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:02:26 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   LIMIT 500 
+18:02:28 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:02:28 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=105 LIMIT 500 
+18:02:28 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   AND user_id=10002 LIMIT 500 
+18:02:28 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT  SQL_CALC_FOUND_ROWS payment_channel_id FROM pay_payment_channel WHERE 1   AND payment_channel_code="baitiao" LIMIT 500 
+18:02:28 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_payment_channel WHERE 1   AND payment_channel_id IN (9) LIMIT 500 
+18:02:28 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_resource WHERE 1   AND user_id=10002 LIMIT 500 
+18:08:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:08:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_base WHERE 1   AND user_id=10054 LIMIT 500 
+18:08:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   AND user_id=10054 LIMIT 500 
+18:08:16 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_base WHERE 1   AND user_id=10054 LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=105 LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT  SQL_CALC_FOUND_ROWS consume_record_id FROM pay_consume_record WHERE 1   AND order_id IN ("DD-10002-1-102-20210107093610-0001") LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_consume_record WHERE 1   AND consume_record_id IN (1379,1380) LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT  SQL_CALC_FOUND_ROWS union_order_id FROM pay_union_order WHERE 1   AND inorder IN ("DD-10002-1-102-20210107093610-0001") LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_union_order WHERE 1   AND union_order_id IN ("U20210107093610610") LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=105 LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT  SQL_CALC_FOUND_ROWS consume_record_id FROM pay_consume_record WHERE 1   AND order_id IN ("DD-10002-1-102-20210107093502-0001") LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_consume_record WHERE 1   AND consume_record_id IN (1377,1378) LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT  SQL_CALC_FOUND_ROWS union_order_id FROM pay_union_order WHERE 1   AND inorder IN ("DD-10002-1-102-20210107093502-0001") LIMIT 500 
+18:08:17 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_union_order WHERE 1   AND union_order_id IN ("U20210107093503115") LIMIT 500 
+18:08:52 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:08:52 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_base WHERE 1   AND user_id=10054 LIMIT 500 
+18:08:52 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   AND user_id=10054 LIMIT 500 
+18:08:52 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_base WHERE 1   AND user_id=10054 LIMIT 500 
+18:08:53 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:08:53 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   LIMIT 500 
+18:37:04 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:37:04 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=105 LIMIT 500 
+18:37:04 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="yunshan_status" LIMIT 500 
+18:37:06 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:37:06 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=105 LIMIT 500 
+18:37:06 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="yunshan_status" LIMIT 500 
+18:44:53 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+18:44:53 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=105 LIMIT 500 
+18:44:53 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="yunshan_status" LIMIT 500 
+19:29:45 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+19:29:45 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=102 LIMIT 500 
+19:29:45 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_resource WHERE 1   AND user_id=10002 LIMIT 500 
+19:29:48 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+19:29:48 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   LIMIT 500 
+19:38:34 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+19:38:34 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=102 LIMIT 500 
+19:38:34 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_resource WHERE 1   AND user_id=10002 LIMIT 500 
+19:38:37 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+19:38:37 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   LIMIT 500 
+19:43:26 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+19:43:26 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=105 LIMIT 500 
+19:43:26 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   AND user_id=10002 LIMIT 500 
+19:43:26 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT  SQL_CALC_FOUND_ROWS payment_channel_id FROM pay_payment_channel WHERE 1   AND payment_channel_code="baitiao" LIMIT 500 
+19:43:26 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_payment_channel WHERE 1   AND payment_channel_id IN (9) LIMIT 500 
+19:43:26 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_resource WHERE 1   AND user_id=10002 LIMIT 500 
+19:43:30 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+19:43:30 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_app WHERE 1   AND app_id=102 LIMIT 500 
+19:43:30 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_resource WHERE 1   AND user_id=10002 LIMIT 500 
+19:43:36 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_web_config WHERE 1   AND config_key="language_id" LIMIT 500 
+19:43:36 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM pay_user_info WHERE 1   LIMIT 500 

@@ -169,3 +169,13 @@
 15:52:44 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [debug] effect_rows=1
 17:24:18 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [debug] UPDATE ucenter_user_info_detail SET user_count_login= '75',user_lastlogin_time= '1610357058' WHERE 1   AND user_name=13311767111
 17:24:18 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [debug] effect_rows=1
+18:08:15 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [debug] insert into ucenter_login_limit (`account`,`type` ,`login_time`,`ip`) 
+		values ('19815394175',1,1610359695,'120.26.203.208')
+18:08:15 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [debug] effect_rows=1
+18:08:16 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [debug] UPDATE ucenter_user_info SET token= '0',enterId= '0' WHERE 1   AND user_id=10054
+18:08:16 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [debug] effect_rows=0
+18:08:52 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [debug] insert into ucenter_login_limit (`account`,`type` ,`login_time`,`ip`) 
+		values ('19815394175',1,1610359732,'120.26.203.208')
+18:08:52 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [debug] effect_rows=1
+18:08:52 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [debug] UPDATE ucenter_user_info SET token= '0',enterId= '0' WHERE 1   AND user_id=10054
+18:08:52 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [debug] effect_rows=0
