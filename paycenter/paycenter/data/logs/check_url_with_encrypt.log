@@ -2119,3 +2119,20 @@
 )
 17:24:19 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [info] $tmp_str:app_id=102&rtime=1610357058&user_id=10002&key=gWp180wX
 17:24:19 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [info] md5-key:6023735e605b7869335d4fd9efd1affa
+17:30:26 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [info] array (
+  'app_id' => '105',
+  'user_id' => '10002',
+  'resource' => '1',
+  'rtime' => '1610357425',
+  'token' => '7dc71a75e0713b83eb8a4e965341e24a',
+)
+17:30:26 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [info] $tmp_str:app_id=105&resource=1&rtime=1610357425&user_id=10002&key=gWp180wX
+17:30:26 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [info] md5-key:7dc71a75e0713b83eb8a4e965341e24a
+17:30:27 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [info] array (
+  'user_id' => '10002',
+  'app_id' => '102',
+  'rtime' => '1610357427',
+  'token' => '37c3c248ae4a97e704aeb297de180ed5',
+)
+17:30:27 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [info] $tmp_str:app_id=102&rtime=1610357427&user_id=10002&key=gWp180wX
+17:30:27 01/11/21 FILE=/var/www/html/bbctwo/paycenter/index.php [info] md5-key:37c3c248ae4a97e704aeb297de180ed5
