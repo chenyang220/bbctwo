@@ -1,0 +1,2 @@
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM ucenter_admin_user_base WHERE 1   AND user_id=10001 LIMIT 500 
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] SELECT SQL_CALC_FOUND_ROWS * FROM ucenter_admin_user_base WHERE 1   AND user_id=10001 LIMIT 500 

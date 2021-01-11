@@ -1,0 +1,14 @@
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] INSERT INTO ucenter_admin_log_action SET user_id='10001', user_account='admin', user_name='', action_id='34058', log_param='{\"ctl\":\"Index\",\"met\":\"index\",\"typ\":\"e\"}', log_ip='101.87.77.193'
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] effect_rows=1
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] INSERT INTO ucenter_admin_log_action SET user_id='10001', user_account='admin', user_name='', action_id='34058', log_param='{\"ctl\":\"Index\",\"met\":\"index\",\"typ\":\"e\"}', log_ip='101.87.77.193'
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] effect_rows=1
+14:10:30 01/11/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] INSERT INTO ucenter_admin_log_action SET action_id='3180', log_param='{\"ctl\":\"Login\",\"met\":\"index\",\"typ\":\"e\"}', log_ip='59.36.119.227'
+14:10:30 01/11/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] effect_rows=1
+14:10:32 01/11/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] INSERT INTO ucenter_admin_log_action SET action_id='3180', log_param='{\"ctl\":\"Login\",\"met\":\"index\",\"typ\":\"e\"}', log_ip='59.36.129.66'
+14:10:32 01/11/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] effect_rows=1
+14:10:32 01/11/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] INSERT INTO ucenter_admin_log_action SET action_id='3180', log_param='{\"ctl\":\"Login\",\"met\":\"index\",\"typ\":\"e\"}', log_ip='59.36.129.66'
+14:10:32 01/11/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] effect_rows=1
+14:10:33 01/11/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] INSERT INTO ucenter_admin_log_action SET action_id='3180', log_param='{\"ctl\":\"Login\",\"met\":\"index\",\"typ\":\"e\"}', log_ip='59.36.129.40'
+14:10:33 01/11/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] effect_rows=1
+15:52:02 01/11/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] INSERT INTO ucenter_admin_log_action SET action_id='3180', log_param='{\"ctl\":\"Login\",\"met\":\"index\",\"typ\":\"e\"}', log_ip='47.101.60.187'
+15:52:02 01/11/21 FILE=/var/www/html/bbctwo/ucenter_admin/index.php [debug] effect_rows=1

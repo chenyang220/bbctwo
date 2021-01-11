@@ -4,14 +4,6 @@ $plugin_rows = array (
   array (
     'name' => 'Plugin_Analytics',
   ),
-  'Plugin_Cron' => 
-  array (
-    'name' => 'Plugin_Cron',
-  ),
-  'Plugin_Delivery' => 
-  array (
-    'name' => 'Plugin_Delivery',
-  ),
   'Plugin_Directseller' => 
   array (
     'name' => 'Plugin_Directseller',
@@ -20,13 +12,13 @@ $plugin_rows = array (
   array (
     'name' => 'Plugin_Distribution',
   ),
+  'Plugin_Log' => 
+  array (
+    'name' => 'Plugin_Log',
+  ),
   'Plugin_Perm' => 
   array (
     'name' => 'Plugin_Perm',
-  ),
-  'Plugin_Xhprof' => 
-  array (
-    'name' => 'Plugin_Xhprof',
   ),
 ); 
 ?>

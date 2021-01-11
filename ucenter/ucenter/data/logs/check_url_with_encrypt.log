@@ -1,0 +1,826 @@
+11:56:21 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10033',
+  'u' => '10033',
+  'k' => 'BidYcAZjW3NRCQBoUDVWMABiUmZXZAI1UDZWJgRjCGFUYQ89UD4FAANtA2YCPlY9AncDdFY9DmUGIwEIB2oMaQZvWDM=',
+  'app_id' => '104',
+  'rtime' => '1610078181',
+  'token' => '0229ee72d5b60fe1369f84dd6281605d',
+)
+11:56:21 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=BidYcAZjW3NRCQBoUDVWMABiUmZXZAI1UDZWJgRjCGFUYQ89UD4FAANtA2YCPlY9AncDdFY9DmUGIwEIB2oMaQZvWDM%3D&rtime=1610078181&u=10033&user_id=10033&key=gWp180wX
+11:56:21 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:0229ee72d5b60fe1369f84dd6281605d
+11:57:43 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '10002',
+  'k' => 'AiEDdFdmVHUNAgQ9CGMINAk/UmICZwRiATcBJgJmVDNTZFU4AzkADFBpBTEOPFVkU3ILeAA9DTRXI1IMAG4EbwILA3VXbFRwDXgEYQhFCDkJK1JnAhMEbwE0ASYCdlQzU2pVIQMIADpQZAVoDjA=',
+  'app_id' => '104',
+  'rtime' => '1610078263',
+  'token' => 'b22aa89a02825020845bcc524d9c41a1',
+)
+11:57:43 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=AiEDdFdmVHUNAgQ9CGMINAk%2FUmICZwRiATcBJgJmVDNTZFU4AzkADFBpBTEOPFVkU3ILeAA9DTRXI1IMAG4EbwILA3VXbFRwDXgEYQhFCDkJK1JnAhMEbwE0ASYCdlQzU2pVIQMIADpQZAVoDjA%3D&rtime=1610078263&u=10002&user_id=10002&key=gWp180wX
+11:57:43 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:b22aa89a02825020845bcc524d9c41a1
+11:58:32 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '10002',
+  'k' => 'AiEDdFdmVHUNAgQ9CGMINAk/UmICZwRiATcBJgJmVDNTZFU4AzkADFBpBTEOPFVkU3ILeAA9DTRXI1IMAG4EbwILA3VXbFRwDXgEYQhFCDkJK1JnAhMEbwE0ASYCdlQzU2pVIQMIADpQZAVoDjA=',
+  'app_id' => '104',
+  'rtime' => '1610078312',
+  'token' => '1fe85b86c442b2f378b0567a02851159',
+)
+11:58:32 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=AiEDdFdmVHUNAgQ9CGMINAk%2FUmICZwRiATcBJgJmVDNTZFU4AzkADFBpBTEOPFVkU3ILeAA9DTRXI1IMAG4EbwILA3VXbFRwDXgEYQhFCDkJK1JnAhMEbwE0ASYCdlQzU2pVIQMIADpQZAVoDjA%3D&rtime=1610078312&u=10002&user_id=10002&key=gWp180wX
+11:58:32 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:1fe85b86c442b2f378b0567a02851159
+13:45:57 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '10002',
+  'k' => 'AiEDdFdmVHUNAgQ9CGMINAk/UmICZwRiATcBJgJmVDNTZFU4AzkADFBpBTEOPFVkU3ILeAA9DTRXI1IMAG4EbwILA3VXbFRwDXgEYQhFCDkJK1JnAhMEbwE0ASYCdlQzU2pVIQMIADpQZAVoDjA=',
+  'app_id' => '104',
+  'rtime' => '1610084757',
+  'token' => 'def287ae62bfc096fb6aac28f5747fc9',
+)
+13:45:57 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=AiEDdFdmVHUNAgQ9CGMINAk%2FUmICZwRiATcBJgJmVDNTZFU4AzkADFBpBTEOPFVkU3ILeAA9DTRXI1IMAG4EbwILA3VXbFRwDXgEYQhFCDkJK1JnAhMEbwE0ASYCdlQzU2pVIQMIADpQZAVoDjA%3D&rtime=1610084757&u=10002&user_id=10002&key=gWp180wX
+13:45:57 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:def287ae62bfc096fb6aac28f5747fc9
+14:38:29 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'user_id' => '10063',
+  'ctl' => 'Api',
+  'met' => 'getUserWxBindFlag',
+  'typ' => 'json',
+  'rtime' => '1610087908',
+  'token' => '0b78bad9df22b17aa26b3c226dbca152',
+)
+14:38:29 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserWxBindFlag&rtime=1610087908&typ=json&user_id=10063&key=gWp180wX
+14:38:29 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:0b78bad9df22b17aa26b3c226dbca152
+15:22:56 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610090575',
+  'token' => '3c4f96379a1a896704b356ca54bb52e9',
+)
+15:22:56 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610090575&u=0&user_id=10002&key=gWp180wX
+15:22:56 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:3c4f96379a1a896704b356ca54bb52e9
+15:22:59 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610090579',
+  'token' => '617c66d96cbdb586f00fc2e804b41088',
+)
+15:22:59 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610090579&u=0&user_id=10002&key=gWp180wX
+15:22:59 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:617c66d96cbdb586f00fc2e804b41088
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'ctl' => 'Api',
+  'met' => 'getBaseApp',
+  'typ' => 'json',
+  'rtime' => '1610091919',
+  'token' => '20364fd1651be64481927c4a49f85b15',
+)
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getBaseApp&rtime=1610091919&typ=json&key=gWp180wX
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:20364fd1651be64481927c4a49f85b15
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'ctl' => 'Api',
+  'met' => 'getBaseApp',
+  'typ' => 'json',
+  'rtime' => '1610091919',
+  'token' => '20364fd1651be64481927c4a49f85b15',
+)
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getBaseApp&rtime=1610091919&typ=json&key=gWp180wX
+15:45:19 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:20364fd1651be64481927c4a49f85b15
+15:58:24 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610092704',
+  'token' => '5e53c0aa1066e837e25fc8d5ce3ee006',
+)
+15:58:24 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610092704&u=0&user_id=10002&key=gWp180wX
+15:58:24 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:5e53c0aa1066e837e25fc8d5ce3ee006
+15:58:56 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610092736',
+  'token' => 'a899b85fbaaad9585c99cb06cbd9accc',
+)
+15:58:56 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610092736&u=0&user_id=10002&key=gWp180wX
+15:58:56 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:a899b85fbaaad9585c99cb06cbd9accc
+16:06:57 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610093217',
+  'token' => '30b6b37399924e38ab1ae17cf083ffd6',
+)
+16:06:57 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610093217&u=0&user_id=10002&key=gWp180wX
+16:06:57 01/08/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:30b6b37399924e38ab1ae17cf083ffd6
+02:11:52 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610129510',
+  'token' => 'dbdda3302d004583149e567a7b478319',
+)
+02:11:52 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610129510&u=0&user_id=10002&key=gWp180wX
+02:11:52 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:dbdda3302d004583149e567a7b478319
+09:49:56 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610156996',
+  'token' => 'a39f79ee8024705a75ab6b16fccd4b9c',
+)
+09:49:56 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610156996&u=0&user_id=10002&key=gWp180wX
+09:49:56 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:a39f79ee8024705a75ab6b16fccd4b9c
+10:36:05 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610159765',
+  'token' => '31c2b8211158270134cef02c7ceb891f',
+)
+10:36:05 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610159765&u=0&user_id=10002&key=gWp180wX
+10:36:05 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:31c2b8211158270134cef02c7ceb891f
+10:47:43 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610160463',
+  'token' => 'fe540effc567b67d10bc384e115ce854',
+)
+10:47:43 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610160463&u=0&user_id=10002&key=gWp180wX
+10:47:43 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:fe540effc567b67d10bc384e115ce854
+10:50:47 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610160647',
+  'token' => '2b5dbe9d6d7b9d1205125a5400c8df12',
+)
+10:50:47 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610160647&u=0&user_id=10002&key=gWp180wX
+10:50:47 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:2b5dbe9d6d7b9d1205125a5400c8df12
+12:47:44 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610167664',
+  'token' => '99183a7d6a8e689d1f02e8927d74f8b8',
+)
+12:47:44 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610167664&u=0&user_id=10002&key=gWp180wX
+12:47:44 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:99183a7d6a8e689d1f02e8927d74f8b8
+12:49:30 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610167770',
+  'token' => '7f1308d407d6ca38bc2a3d5d2761019e',
+)
+12:49:30 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610167770&u=0&user_id=10002&key=gWp180wX
+12:49:30 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:7f1308d407d6ca38bc2a3d5d2761019e
+13:05:26 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610168725',
+  'token' => 'eae94a14122cea4c98cb8eb10f1cda8c',
+)
+13:05:26 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610168725&u=0&user_id=10002&key=gWp180wX
+13:05:26 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:eae94a14122cea4c98cb8eb10f1cda8c
+13:33:16 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610170396',
+  'token' => 'aca7bf9ab46bfe3accd60aa85676ee51',
+)
+13:33:16 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610170396&u=0&user_id=10002&key=gWp180wX
+13:33:16 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:aca7bf9ab46bfe3accd60aa85676ee51
+18:54:59 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610189698',
+  'token' => '82126c7ff2d49a99ab77dd69a7e02427',
+)
+18:54:59 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610189698&u=0&user_id=10002&key=gWp180wX
+18:54:59 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:82126c7ff2d49a99ab77dd69a7e02427
+19:05:43 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610190342',
+  'token' => 'ec35f9c2d90082a9dcb8988352f10ace',
+)
+19:05:43 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610190342&u=0&user_id=10002&key=gWp180wX
+19:05:43 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:ec35f9c2d90082a9dcb8988352f10ace
+19:55:34 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610193334',
+  'token' => '05b4379e79d55c1a001ded2b8d6db0a2',
+)
+19:55:34 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610193334&u=0&user_id=10002&key=gWp180wX
+19:55:34 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:05b4379e79d55c1a001ded2b8d6db0a2
+20:16:48 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610194607',
+  'token' => 'c7507fdcb3daa2c918aac50036e3e6c2',
+)
+20:16:48 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610194607&u=0&user_id=10002&key=gWp180wX
+20:16:48 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:c7507fdcb3daa2c918aac50036e3e6c2
+20:38:25 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610195905',
+  'token' => 'b7e62ae3cc8450ba191a8d0a7c12d14c',
+)
+20:38:25 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610195905&u=0&user_id=10002&key=gWp180wX
+20:38:25 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:b7e62ae3cc8450ba191a8d0a7c12d14c
+22:47:58 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610203675',
+  'token' => '73b7966d351df7095efb6d8db8f45ab3',
+)
+22:47:58 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610203675&u=0&user_id=10002&key=gWp180wX
+22:47:58 01/09/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:73b7966d351df7095efb6d8db8f45ab3
+00:04:44 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610208284',
+  'token' => '7e07514947d722823e5edb1024c3fb56',
+)
+00:04:44 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610208284&u=0&user_id=10002&key=gWp180wX
+00:04:44 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:7e07514947d722823e5edb1024c3fb56
+00:26:46 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610209604',
+  'token' => 'cde881b93d6edbf7c7d96346c99f40b5',
+)
+00:26:46 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610209604&u=0&user_id=10002&key=gWp180wX
+00:26:46 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:cde881b93d6edbf7c7d96346c99f40b5
+00:51:29 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610211086',
+  'token' => '1d58448ef680ee0506c2c3177b5cc440',
+)
+00:51:29 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610211086&u=0&user_id=10002&key=gWp180wX
+00:51:29 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:1d58448ef680ee0506c2c3177b5cc440
+01:36:40 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610213799',
+  'token' => '5ec372a6dc883ee3a9855e0ac9cf95df',
+)
+01:36:40 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610213799&u=0&user_id=10002&key=gWp180wX
+01:36:40 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:5ec372a6dc883ee3a9855e0ac9cf95df
+04:28:27 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610224106',
+  'token' => 'a454bae46e21cadd8ab24c2fd060929a',
+)
+04:28:27 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610224106&u=0&user_id=10002&key=gWp180wX
+04:28:27 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:a454bae46e21cadd8ab24c2fd060929a
+04:48:06 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610225286',
+  'token' => '65354378f8be1e8215beed3e7463c59d',
+)
+04:48:06 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610225286&u=0&user_id=10002&key=gWp180wX
+04:48:06 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:65354378f8be1e8215beed3e7463c59d
+05:32:25 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610227944',
+  'token' => '816a945ef1a32eb2f658cc3625a68760',
+)
+05:32:25 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610227944&u=0&user_id=10002&key=gWp180wX
+05:32:25 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:816a945ef1a32eb2f658cc3625a68760
+09:22:56 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610241772',
+  'token' => 'edc86ee19eff7aab4f23178e793989e2',
+)
+09:22:56 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610241772&u=0&user_id=10002&key=gWp180wX
+09:22:56 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:edc86ee19eff7aab4f23178e793989e2
+10:00:16 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610244015',
+  'token' => '1672d0426d0545d7280cda8badbcf1cd',
+)
+10:00:16 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610244015&u=0&user_id=10002&key=gWp180wX
+10:00:16 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:1672d0426d0545d7280cda8badbcf1cd
+10:40:41 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610246441',
+  'token' => '568c451e1bb14cb57f19e54c96bd91f5',
+)
+10:40:41 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610246441&u=0&user_id=10002&key=gWp180wX
+10:40:41 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:568c451e1bb14cb57f19e54c96bd91f5
+10:42:15 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610246535',
+  'token' => 'a4dccf6b0bf98d7644703e5ae91c6fad',
+)
+10:42:15 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610246535&u=0&user_id=10002&key=gWp180wX
+10:42:15 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:a4dccf6b0bf98d7644703e5ae91c6fad
+10:42:16 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610246536',
+  'token' => '8ff5161d423d8d1a029576db6f8562fd',
+)
+10:42:16 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610246536&u=0&user_id=10002&key=gWp180wX
+10:42:16 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:8ff5161d423d8d1a029576db6f8562fd
+10:42:20 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610246540',
+  'token' => '1a780964c2107968a7b879774aca80ec',
+)
+10:42:20 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610246540&u=0&user_id=10002&key=gWp180wX
+10:42:20 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:1a780964c2107968a7b879774aca80ec
+10:42:33 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610246553',
+  'token' => 'f5e1943930cfef3e1cabb27d7f4a1ac3',
+)
+10:42:33 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610246553&u=0&user_id=10002&key=gWp180wX
+10:42:33 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:f5e1943930cfef3e1cabb27d7f4a1ac3
+13:11:29 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610255487',
+  'token' => '26821d67972a6b1708ec854b697dd651',
+)
+13:11:29 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610255487&u=0&user_id=10002&key=gWp180wX
+13:11:29 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:26821d67972a6b1708ec854b697dd651
+18:12:04 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610273524',
+  'token' => 'cdfb0f52ce36fe0b76d2f3f5f94ad18e',
+)
+18:12:04 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610273524&u=0&user_id=10002&key=gWp180wX
+18:12:04 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:cdfb0f52ce36fe0b76d2f3f5f94ad18e
+19:24:00 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610277840',
+  'token' => '835ce0b3e713abce7718a7a698e0b497',
+)
+19:24:00 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610277840&u=0&user_id=10002&key=gWp180wX
+19:24:00 01/10/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:835ce0b3e713abce7718a7a698e0b497
+01:41:59 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610300518',
+  'token' => 'aff97a23f833445f14e6c4c2d128f1e9',
+)
+01:41:59 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610300518&u=0&user_id=10002&key=gWp180wX
+01:41:59 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:aff97a23f833445f14e6c4c2d128f1e9
+01:41:59 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610300519',
+  'token' => 'a1b8f1eaec99ead0279f353e2d67ea44',
+)
+01:41:59 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610300519&u=0&user_id=10002&key=gWp180wX
+01:41:59 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:a1b8f1eaec99ead0279f353e2d67ea44
+03:27:00 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610306820',
+  'token' => 'e863c70dd990013e59bf099771e3b287',
+)
+03:27:00 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610306820&u=0&user_id=10002&key=gWp180wX
+03:27:00 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:e863c70dd990013e59bf099771e3b287
+03:56:58 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610308618',
+  'token' => 'b25484d1735da193b5ba75665008a246',
+)
+03:56:58 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610308618&u=0&user_id=10002&key=gWp180wX
+03:56:58 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:b25484d1735da193b5ba75665008a246
+04:12:02 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610309521',
+  'token' => 'fe64aa4799fb09af29b38708135e8b0a',
+)
+04:12:02 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610309521&u=0&user_id=10002&key=gWp180wX
+04:12:02 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:fe64aa4799fb09af29b38708135e8b0a
+04:36:27 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610310986',
+  'token' => '97f3fbdd30450c00cdcc46d5411e5bc4',
+)
+04:36:27 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610310986&u=0&user_id=10002&key=gWp180wX
+04:36:27 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:97f3fbdd30450c00cdcc46d5411e5bc4
+04:46:37 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610311597',
+  'token' => 'bd655ba515d8077688d0a0a6afbd9215',
+)
+04:46:37 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610311597&u=0&user_id=10002&key=gWp180wX
+04:46:37 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:bd655ba515d8077688d0a0a6afbd9215
+08:37:32 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610325451',
+  'token' => '1c48114a9d52ed19f8bd1b38504c2544',
+)
+08:37:32 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610325451&u=0&user_id=10002&key=gWp180wX
+08:37:32 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:1c48114a9d52ed19f8bd1b38504c2544
+10:23:24 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'user_id' => '10002',
+  'ctl' => 'Api',
+  'met' => 'getUserWxBindFlag',
+  'typ' => 'json',
+  'rtime' => '1610331804',
+  'token' => 'ceb56c9b9f4c59f3bc57a244db2d8ebe',
+)
+10:23:24 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserWxBindFlag&rtime=1610331804&typ=json&user_id=10002&key=gWp180wX
+10:23:24 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:ceb56c9b9f4c59f3bc57a244db2d8ebe
+10:23:25 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'user_id' => '10054',
+  'ctl' => 'Api',
+  'met' => 'getUserWxBindFlag',
+  'typ' => 'json',
+  'rtime' => '1610331804',
+  'token' => '3a6c2e7d77f0bd6d98f91a20bd13b9e0',
+)
+10:23:25 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserWxBindFlag&rtime=1610331804&typ=json&user_id=10054&key=gWp180wX
+10:23:25 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:3a6c2e7d77f0bd6d98f91a20bd13b9e0
+11:42:02 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610336521',
+  'token' => '20e56b5266f3ce1532b79656677b7e54',
+)
+11:42:02 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610336521&u=0&user_id=10002&key=gWp180wX
+11:42:02 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:20e56b5266f3ce1532b79656677b7e54
+13:27:05 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610342825',
+  'token' => '8d442360e76766978988e872f32c10ff',
+)
+13:27:05 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610342825&u=0&user_id=10002&key=gWp180wX
+13:27:05 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:8d442360e76766978988e872f32c10ff
+13:29:05 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610342945',
+  'token' => 'e638abbdd90a1e8ee74ab3c479d08902',
+)
+13:29:05 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610342945&u=0&user_id=10002&key=gWp180wX
+13:29:05 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:e638abbdd90a1e8ee74ab3c479d08902
+13:57:03 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610344623',
+  'token' => '796595e496ce9d37247ff8569eaddb86',
+)
+13:57:03 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610344623&u=0&user_id=10002&key=gWp180wX
+13:57:03 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:796595e496ce9d37247ff8569eaddb86
+14:10:42 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_account' => 'admin',
+  'user_password' => '111111',
+  'app_id' => '104',
+  'ctl' => 'Api',
+  'met' => 'login',
+  'typ' => 'json',
+  'rtime' => '1610345442',
+  'token' => 'd436abd87fbe23fda9ace6e37e8698aa',
+)
+14:10:42 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=login&rtime=1610345442&typ=json&user_account=admin&user_password=111111&key=gWp180wX
+14:10:42 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:d436abd87fbe23fda9ace6e37e8698aa
+14:12:31 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'user_id' => '10109',
+  'ctl' => 'Api',
+  'met' => 'getUserWxBindFlag',
+  'typ' => 'json',
+  'rtime' => '1610345551',
+  'token' => '2c25e68b88d16cab282c1aa0e6dfdf7f',
+)
+14:12:31 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserWxBindFlag&rtime=1610345551&typ=json&user_id=10109&key=gWp180wX
+14:12:31 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:2c25e68b88d16cab282c1aa0e6dfdf7f
+14:15:38 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'ctl' => 'Api',
+  'met' => 'getUserInfo',
+  'typ' => 'json',
+  'user_id' => '10109',
+  'rtime' => '1610345738',
+  'token' => '1cff0e9bd7bb4d4d47aa1e6b1a4e6ee0',
+)
+14:15:38 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserInfo&rtime=1610345738&typ=json&user_id=10109&key=gWp180wX
+14:15:38 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:1cff0e9bd7bb4d4d47aa1e6b1a4e6ee0
+14:16:19 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'ctl' => 'Api',
+  'met' => 'getUserInfo',
+  'typ' => 'json',
+  'user_id' => '10109',
+  'rtime' => '1610345779',
+  'token' => '5c85839e91c45fef9d9a8dfcf8804c6b',
+)
+14:16:19 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserInfo&rtime=1610345779&typ=json&user_id=10109&key=gWp180wX
+14:16:19 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:5c85839e91c45fef9d9a8dfcf8804c6b
+14:16:41 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_account' => 'admin',
+  'user_password' => '111111',
+  'app_id' => '104',
+  'ctl' => 'Api',
+  'met' => 'login',
+  'typ' => 'json',
+  'rtime' => '1610345801',
+  'token' => 'a7a8e30cb7925a0d086bc8b762eaacd2',
+)
+14:16:41 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=login&rtime=1610345801&typ=json&user_account=admin&user_password=111111&key=gWp180wX
+14:16:41 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:a7a8e30cb7925a0d086bc8b762eaacd2
+14:22:06 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_name' => 'gys001',
+  'password' => '111111',
+  'app_id' => '104',
+  'server_id' => 'b54a7238a221685616d4fe794fa43b0b',
+  'ctl' => 'Api',
+  'met' => 'addUserAndBindAppServer',
+  'typ' => 'json',
+  'rtime' => '1610346126',
+  'token' => 'cf6708e64c83e37d6c69de5aa147e04a',
+)
+14:22:06 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=addUserAndBindAppServer&password=111111&rtime=1610346126&server_id=b54a7238a221685616d4fe794fa43b0b&typ=json&user_name=gys001&key=gWp180wX
+14:22:06 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:cf6708e64c83e37d6c69de5aa147e04a
+14:27:01 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610346420',
+  'token' => 'eecf454fc9ed60f347ccb6a3ae0c56c3',
+)
+14:27:01 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610346420&u=0&user_id=10002&key=gWp180wX
+14:27:01 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:eecf454fc9ed60f347ccb6a3ae0c56c3
+14:33:06 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'user_id' => '10030',
+  'ctl' => 'Api',
+  'met' => 'getUserWxBindFlag',
+  'typ' => 'json',
+  'rtime' => '1610346786',
+  'token' => '2ec643fed2fb22d8271c0a5ba76a622d',
+)
+14:33:06 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserWxBindFlag&rtime=1610346786&typ=json&user_id=10030&key=gWp180wX
+14:33:06 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:2ec643fed2fb22d8271c0a5ba76a622d
+14:35:05 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'ctl' => 'Api',
+  'met' => 'getUserInfo',
+  'typ' => 'json',
+  'user_id' => '10109',
+  'rtime' => '1610346905',
+  'token' => '2a54f47a0d73f8d6214235513ef9f751',
+)
+14:35:05 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserInfo&rtime=1610346905&typ=json&user_id=10109&key=gWp180wX
+14:35:05 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:2a54f47a0d73f8d6214235513ef9f751
+14:37:32 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'ctl' => 'Api',
+  'met' => 'getUserInfo',
+  'typ' => 'json',
+  'user_id' => '10109',
+  'rtime' => '1610347052',
+  'token' => '757bb7764f878a63f10752456c2d466f',
+)
+14:37:32 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserInfo&rtime=1610347052&typ=json&user_id=10109&key=gWp180wX
+14:37:32 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:757bb7764f878a63f10752456c2d466f
+14:38:03 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'ctl' => 'Api',
+  'met' => 'getUserInfo',
+  'typ' => 'json',
+  'user_id' => '10002',
+  'rtime' => '1610347083',
+  'token' => 'cab1607170edbafe019f7a64a4664fe0',
+)
+14:38:03 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserInfo&rtime=1610347083&typ=json&user_id=10002&key=gWp180wX
+14:38:03 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:cab1607170edbafe019f7a64a4664fe0
+15:13:50 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'user_name' => 'test002',
+  'password' => '111111',
+  'rtime' => '1610349230',
+  'token' => '2a4da12b29ce701eaaa97c9739dd1361',
+)
+15:13:50 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&password=111111&rtime=1610349230&user_name=test002&key=gWp180wX
+15:13:50 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:2a4da12b29ce701eaaa97c9739dd1361
+15:14:01 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'user_name' => 'test002',
+  'password' => '111111',
+  'rtime' => '1610349241',
+  'token' => '15bc2559183a8c3a7c9c7455e94df36c',
+)
+15:14:01 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&password=111111&rtime=1610349241&user_name=test002&key=gWp180wX
+15:14:01 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:15bc2559183a8c3a7c9c7455e94df36c
+15:14:02 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'user_id' => '10111',
+  'ctl' => 'Api',
+  'met' => 'getUserWxBindFlag',
+  'typ' => 'json',
+  'rtime' => '1610349241',
+  'token' => '04e44a3de7a761c2a8334ee2cd045af0',
+)
+15:14:02 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserWxBindFlag&rtime=1610349241&typ=json&user_id=10111&key=gWp180wX
+15:14:02 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:04e44a3de7a761c2a8334ee2cd045af0
+15:14:25 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'user_name' => '18916922723',
+  'password' => '111111',
+  'rtime' => '1610349264',
+  'token' => '88f32a85cecded2760e19085254298fc',
+)
+15:14:25 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&password=111111&rtime=1610349264&user_name=18916922723&key=gWp180wX
+15:14:25 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:88f32a85cecded2760e19085254298fc
+15:14:47 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'rtime' => '1610349287',
+  'token' => 'f01d778ddd73004f3926b369780ec007',
+)
+15:14:47 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&rtime=1610349287&key=gWp180wX
+15:14:47 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:f01d778ddd73004f3926b369780ec007
+15:14:50 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'rtime' => '1610349290',
+  'token' => 'a4f31574d97c895ddbfe3e4a38c848ae',
+)
+15:14:50 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&rtime=1610349290&key=gWp180wX
+15:14:50 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:a4f31574d97c895ddbfe3e4a38c848ae
+15:16:00 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'user_id' => '10112',
+  'ctl' => 'Api',
+  'met' => 'getUserWxBindFlag',
+  'typ' => 'json',
+  'rtime' => '1610349360',
+  'token' => 'ab5acb14fd3bfb0a08436dafc57b6ec4',
+)
+15:16:00 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&ctl=Api&met=getUserWxBindFlag&rtime=1610349360&typ=json&user_id=10112&key=gWp180wX
+15:16:00 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:ab5acb14fd3bfb0a08436dafc57b6ec4
+15:16:03 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'rtime' => '1610349363',
+  'token' => '53abd2339e650bebe8c7bf82d6e35916',
+)
+15:16:03 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&rtime=1610349363&key=gWp180wX
+15:16:03 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:53abd2339e650bebe8c7bf82d6e35916
+15:24:37 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'app_id' => '104',
+  'user_name' => 'test002',
+  'password' => '111111',
+  'rtime' => '1610349877',
+  'token' => 'b55f4421f61908f9b5b240f30f9b3fdc',
+)
+15:24:37 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&password=111111&rtime=1610349877&user_name=test002&key=gWp180wX
+15:24:37 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:b55f4421f61908f9b5b240f30f9b3fdc
+15:52:50 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10065',
+  'u' => '10065',
+  'k' => 'AiEOKV05Di0FW1ZqD2sPM1sxBjVdPFUzUGMGcgo1C2wEMw4zUj0BD1Q8ATBQbQc2VitSIlJrVmkEclFcCTwIYwJpDmo=',
+  'app_id' => '104',
+  'rtime' => '1610351569',
+  'token' => '1706afb0171fa217a59c87c191770816',
+)
+15:52:50 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=AiEOKV05Di0FW1ZqD2sPM1sxBjVdPFUzUGMGcgo1C2wEMw4zUj0BD1Q8ATBQbQc2VitSIlJrVmkEclFcCTwIYwJpDmo%3D&rtime=1610351569&u=10065&user_id=10065&key=gWp180wX
+15:52:50 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:1706afb0171fa217a59c87c191770816
+15:57:01 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610351821',
+  'token' => 'f08dc478bafd938f0e9ca71bf056dc6c',
+)
+15:57:01 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610351821&u=0&user_id=10002&key=gWp180wX
+15:57:01 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:f08dc478bafd938f0e9ca71bf056dc6c
+16:57:04 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610355424',
+  'token' => '741994bd1ec498e5c7f862c430e96638',
+)
+16:57:04 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610355424&u=0&user_id=10002&key=gWp180wX
+16:57:04 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:741994bd1ec498e5c7f862c430e96638
+16:57:07 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] array (
+  'user_id' => '10002',
+  'u' => '0',
+  'k' => '',
+  'app_id' => '104',
+  'rtime' => '1610355427',
+  'token' => 'c59add2ca6aa0e9a4d3dddec6dde0d23',
+)
+16:57:07 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] $tmp_str:app_id=104&k=&rtime=1610355427&u=0&user_id=10002&key=gWp180wX
+16:57:07 01/11/21 FILE=/var/www/html/bbctwo/ucenter/index.php [info] md5-key:c59add2ca6aa0e9a4d3dddec6dde0d23

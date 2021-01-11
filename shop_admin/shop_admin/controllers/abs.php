@@ -43306,3 +43306,12033 @@ Array
         )
 
 )
+Array
+(
+    [cmd_id] => -140
+    [status] => 200
+    [msg] => success
+    [data] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [cat_id] => 9003
+                            [cat_name] => 购物
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9003
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [1] => Array
+                        (
+                            [cat_id] => 9043
+                            [cat_name] => 购物
+                            [cat_parent_id] => 9003
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9043
+                            [parent_id] => 9003
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [2] => Array
+                        (
+                            [cat_id] => 9046
+                            [cat_name] => 便利店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                            [type_id] => -1
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9046
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 便利店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                        )
+
+                    [3] => Array
+                        (
+                            [cat_id] => 9047
+                            [cat_name] => 超商
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9047
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 超商
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                        )
+
+                    [4] => Array
+                        (
+                            [cat_id] => 9048
+                            [cat_name] => 商城商圈
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9048
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 商城商圈
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                        )
+
+                    [5] => Array
+                        (
+                            [cat_id] => 9049
+                            [cat_name] => 步行街
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9049
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 步行街
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                        )
+
+                    [6] => Array
+                        (
+                            [cat_id] => 9050
+                            [cat_name] => 市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9050
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                        )
+
+                    [7] => Array
+                        (
+                            [cat_id] => 9051
+                            [cat_name] => 药店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9051
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 药店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                        )
+
+                    [8] => Array
+                        (
+                            [cat_id] => 9052
+                            [cat_name] => 菜市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9052
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 菜市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                        )
+
+                    [9] => Array
+                        (
+                            [cat_id] => 9053
+                            [cat_name] => 花店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9053
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 花店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                        )
+
+                    [10] => Array
+                        (
+                            [cat_id] => 9054
+                            [cat_name] => 书店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9054
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 书店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                        )
+
+                    [11] => Array
+                        (
+                            [cat_id] => 9055
+                            [cat_name] => 专卖店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9055
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 专卖店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                        )
+
+                    [12] => Array
+                        (
+                            [cat_id] => 9004
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9004
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [13] => Array
+                        (
+                            [cat_id] => 9044
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 9004
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9044
+                            [parent_id] => 9004
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [14] => Array
+                        (
+                            [cat_id] => 9057
+                            [cat_name] => 电影院
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9057
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 电影院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                        )
+
+                    [15] => Array
+                        (
+                            [cat_id] => 9066
+                            [cat_name] => 游乐场
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9066
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 游乐场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                        )
+
+                    [16] => Array
+                        (
+                            [cat_id] => 9065
+                            [cat_name] => 足疗按摩
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9065
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 足疗按摩
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                        )
+
+                    [17] => Array
+                        (
+                            [cat_id] => 9064
+                            [cat_name] => 洗浴
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9064
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 洗浴
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                        )
+
+                    [18] => Array
+                        (
+                            [cat_id] => 9063
+                            [cat_name] => 美容美发
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9063
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 美容美发
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                        )
+
+                    [19] => Array
+                        (
+                            [cat_id] => 9062
+                            [cat_name] => 网吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9062
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 网吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                        )
+
+                    [20] => Array
+                        (
+                            [cat_id] => 9061
+                            [cat_name] => 酒吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9061
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 酒吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                        )
+
+                    [21] => Array
+                        (
+                            [cat_id] => 9060
+                            [cat_name] => KTV
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9060
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => KTV
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                        )
+
+                    [22] => Array
+                        (
+                            [cat_id] => 9059
+                            [cat_name] => 体育场馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9059
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 体育场馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                        )
+
+                    [23] => Array
+                        (
+                            [cat_id] => 9058
+                            [cat_name] => 棋牌室
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9058
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 棋牌室
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                        )
+
+                    [24] => Array
+                        (
+                            [cat_id] => 9067
+                            [cat_name] => 展馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9067
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 展馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                        )
+
+                    [25] => Array
+                        (
+                            [cat_id] => 9005
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9005
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [26] => Array
+                        (
+                            [cat_id] => 9045
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 9005
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9045
+                            [parent_id] => 9005
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [27] => Array
+                        (
+                            [cat_id] => 9068
+                            [cat_name] => 医院
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9068
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 医院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                        )
+
+                    [28] => Array
+                        (
+                            [cat_id] => 9080
+                            [cat_name] => 派出所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9080
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 派出所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                        )
+
+                    [29] => Array
+                        (
+                            [cat_id] => 9079
+                            [cat_name] => 社区
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9079
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 社区
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                        )
+
+                    [30] => Array
+                        (
+                            [cat_id] => 9078
+                            [cat_name] => 车管所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9078
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 车管所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                        )
+
+                    [31] => Array
+                        (
+                            [cat_id] => 9077
+                            [cat_name] => 营业厅
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9077
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 营业厅
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                        )
+
+                    [32] => Array
+                        (
+                            [cat_id] => 9076
+                            [cat_name] => 银行
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9076
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 银行
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                        )
+
+                    [33] => Array
+                        (
+                            [cat_id] => 9075
+                            [cat_name] => ATM
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9075
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => ATM
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                        )
+
+                    [34] => Array
+                        (
+                            [cat_id] => 9074
+                            [cat_name] => 文印照相
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9074
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 文印照相
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                        )
+
+                    [35] => Array
+                        (
+                            [cat_id] => 9073
+                            [cat_name] => 裁缝
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9073
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 裁缝
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                        )
+
+                    [36] => Array
+                        (
+                            [cat_id] => 9072
+                            [cat_name] => 修理站
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9072
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 修理站
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                        )
+
+                    [37] => Array
+                        (
+                            [cat_id] => 9071
+                            [cat_name] => 洗车修车
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9071
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 洗车修车
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                        )
+
+                    [38] => Array
+                        (
+                            [cat_id] => 9070
+                            [cat_name] => 停车场
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 11
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9070
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 停车场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                        )
+
+                    [39] => Array
+                        (
+                            [cat_id] => 9069
+                            [cat_name] => 开锁配锁
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 12
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9069
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 开锁配锁
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                        )
+
+                    [40] => Array
+                        (
+                            [cat_id] => 9082
+                            [cat_name] => 站点
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 13
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9082
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 站点
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [cmd_id] => -140
+    [status] => 200
+    [msg] => success
+    [data] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [cat_id] => 9003
+                            [cat_name] => 购物
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9003
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [1] => Array
+                        (
+                            [cat_id] => 9043
+                            [cat_name] => 购物
+                            [cat_parent_id] => 9003
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9043
+                            [parent_id] => 9003
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [2] => Array
+                        (
+                            [cat_id] => 9046
+                            [cat_name] => 便利店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                            [type_id] => -1
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9046
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 便利店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                        )
+
+                    [3] => Array
+                        (
+                            [cat_id] => 9047
+                            [cat_name] => 超商
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9047
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 超商
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                        )
+
+                    [4] => Array
+                        (
+                            [cat_id] => 9048
+                            [cat_name] => 商城商圈
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9048
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 商城商圈
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                        )
+
+                    [5] => Array
+                        (
+                            [cat_id] => 9049
+                            [cat_name] => 步行街
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9049
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 步行街
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                        )
+
+                    [6] => Array
+                        (
+                            [cat_id] => 9050
+                            [cat_name] => 市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9050
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                        )
+
+                    [7] => Array
+                        (
+                            [cat_id] => 9051
+                            [cat_name] => 药店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9051
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 药店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                        )
+
+                    [8] => Array
+                        (
+                            [cat_id] => 9052
+                            [cat_name] => 菜市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9052
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 菜市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                        )
+
+                    [9] => Array
+                        (
+                            [cat_id] => 9053
+                            [cat_name] => 花店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9053
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 花店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                        )
+
+                    [10] => Array
+                        (
+                            [cat_id] => 9054
+                            [cat_name] => 书店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9054
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 书店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                        )
+
+                    [11] => Array
+                        (
+                            [cat_id] => 9055
+                            [cat_name] => 专卖店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9055
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 专卖店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                        )
+
+                    [12] => Array
+                        (
+                            [cat_id] => 9004
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9004
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [13] => Array
+                        (
+                            [cat_id] => 9044
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 9004
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9044
+                            [parent_id] => 9004
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [14] => Array
+                        (
+                            [cat_id] => 9057
+                            [cat_name] => 电影院
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9057
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 电影院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                        )
+
+                    [15] => Array
+                        (
+                            [cat_id] => 9066
+                            [cat_name] => 游乐场
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9066
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 游乐场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                        )
+
+                    [16] => Array
+                        (
+                            [cat_id] => 9065
+                            [cat_name] => 足疗按摩
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9065
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 足疗按摩
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                        )
+
+                    [17] => Array
+                        (
+                            [cat_id] => 9064
+                            [cat_name] => 洗浴
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9064
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 洗浴
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                        )
+
+                    [18] => Array
+                        (
+                            [cat_id] => 9063
+                            [cat_name] => 美容美发
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9063
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 美容美发
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                        )
+
+                    [19] => Array
+                        (
+                            [cat_id] => 9062
+                            [cat_name] => 网吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9062
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 网吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                        )
+
+                    [20] => Array
+                        (
+                            [cat_id] => 9061
+                            [cat_name] => 酒吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9061
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 酒吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                        )
+
+                    [21] => Array
+                        (
+                            [cat_id] => 9060
+                            [cat_name] => KTV
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9060
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => KTV
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                        )
+
+                    [22] => Array
+                        (
+                            [cat_id] => 9059
+                            [cat_name] => 体育场馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9059
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 体育场馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                        )
+
+                    [23] => Array
+                        (
+                            [cat_id] => 9058
+                            [cat_name] => 棋牌室
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9058
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 棋牌室
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                        )
+
+                    [24] => Array
+                        (
+                            [cat_id] => 9067
+                            [cat_name] => 展馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9067
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 展馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                        )
+
+                    [25] => Array
+                        (
+                            [cat_id] => 9005
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9005
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [26] => Array
+                        (
+                            [cat_id] => 9045
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 9005
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9045
+                            [parent_id] => 9005
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [27] => Array
+                        (
+                            [cat_id] => 9068
+                            [cat_name] => 医院
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9068
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 医院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                        )
+
+                    [28] => Array
+                        (
+                            [cat_id] => 9080
+                            [cat_name] => 派出所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9080
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 派出所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                        )
+
+                    [29] => Array
+                        (
+                            [cat_id] => 9079
+                            [cat_name] => 社区
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9079
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 社区
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                        )
+
+                    [30] => Array
+                        (
+                            [cat_id] => 9078
+                            [cat_name] => 车管所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9078
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 车管所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                        )
+
+                    [31] => Array
+                        (
+                            [cat_id] => 9077
+                            [cat_name] => 营业厅
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9077
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 营业厅
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                        )
+
+                    [32] => Array
+                        (
+                            [cat_id] => 9076
+                            [cat_name] => 银行
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9076
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 银行
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                        )
+
+                    [33] => Array
+                        (
+                            [cat_id] => 9075
+                            [cat_name] => ATM
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9075
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => ATM
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                        )
+
+                    [34] => Array
+                        (
+                            [cat_id] => 9074
+                            [cat_name] => 文印照相
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9074
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 文印照相
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                        )
+
+                    [35] => Array
+                        (
+                            [cat_id] => 9073
+                            [cat_name] => 裁缝
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9073
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 裁缝
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                        )
+
+                    [36] => Array
+                        (
+                            [cat_id] => 9072
+                            [cat_name] => 修理站
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9072
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 修理站
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                        )
+
+                    [37] => Array
+                        (
+                            [cat_id] => 9071
+                            [cat_name] => 洗车修车
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9071
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 洗车修车
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                        )
+
+                    [38] => Array
+                        (
+                            [cat_id] => 9070
+                            [cat_name] => 停车场
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 11
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9070
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 停车场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                        )
+
+                    [39] => Array
+                        (
+                            [cat_id] => 9069
+                            [cat_name] => 开锁配锁
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 12
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9069
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 开锁配锁
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                        )
+
+                    [40] => Array
+                        (
+                            [cat_id] => 9082
+                            [cat_name] => 站点
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 13
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9082
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 站点
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [cmd_id] => -140
+    [status] => 200
+    [msg] => success
+    [data] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [cat_id] => 9003
+                            [cat_name] => 购物
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9003
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [1] => Array
+                        (
+                            [cat_id] => 9043
+                            [cat_name] => 购物
+                            [cat_parent_id] => 9003
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9043
+                            [parent_id] => 9003
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [2] => Array
+                        (
+                            [cat_id] => 9046
+                            [cat_name] => 便利店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                            [type_id] => -1
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9046
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 便利店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                        )
+
+                    [3] => Array
+                        (
+                            [cat_id] => 9047
+                            [cat_name] => 超商
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9047
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 超商
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                        )
+
+                    [4] => Array
+                        (
+                            [cat_id] => 9048
+                            [cat_name] => 商城商圈
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9048
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 商城商圈
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                        )
+
+                    [5] => Array
+                        (
+                            [cat_id] => 9049
+                            [cat_name] => 步行街
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9049
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 步行街
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                        )
+
+                    [6] => Array
+                        (
+                            [cat_id] => 9050
+                            [cat_name] => 市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9050
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                        )
+
+                    [7] => Array
+                        (
+                            [cat_id] => 9051
+                            [cat_name] => 药店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9051
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 药店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                        )
+
+                    [8] => Array
+                        (
+                            [cat_id] => 9052
+                            [cat_name] => 菜市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9052
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 菜市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                        )
+
+                    [9] => Array
+                        (
+                            [cat_id] => 9053
+                            [cat_name] => 花店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9053
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 花店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                        )
+
+                    [10] => Array
+                        (
+                            [cat_id] => 9054
+                            [cat_name] => 书店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9054
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 书店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                        )
+
+                    [11] => Array
+                        (
+                            [cat_id] => 9055
+                            [cat_name] => 专卖店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9055
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 专卖店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                        )
+
+                    [12] => Array
+                        (
+                            [cat_id] => 9004
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9004
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [13] => Array
+                        (
+                            [cat_id] => 9044
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 9004
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9044
+                            [parent_id] => 9004
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [14] => Array
+                        (
+                            [cat_id] => 9057
+                            [cat_name] => 电影院
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9057
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 电影院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                        )
+
+                    [15] => Array
+                        (
+                            [cat_id] => 9066
+                            [cat_name] => 游乐场
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9066
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 游乐场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                        )
+
+                    [16] => Array
+                        (
+                            [cat_id] => 9065
+                            [cat_name] => 足疗按摩
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9065
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 足疗按摩
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                        )
+
+                    [17] => Array
+                        (
+                            [cat_id] => 9064
+                            [cat_name] => 洗浴
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9064
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 洗浴
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                        )
+
+                    [18] => Array
+                        (
+                            [cat_id] => 9063
+                            [cat_name] => 美容美发
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9063
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 美容美发
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                        )
+
+                    [19] => Array
+                        (
+                            [cat_id] => 9062
+                            [cat_name] => 网吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9062
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 网吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                        )
+
+                    [20] => Array
+                        (
+                            [cat_id] => 9061
+                            [cat_name] => 酒吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9061
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 酒吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                        )
+
+                    [21] => Array
+                        (
+                            [cat_id] => 9060
+                            [cat_name] => KTV
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9060
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => KTV
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                        )
+
+                    [22] => Array
+                        (
+                            [cat_id] => 9059
+                            [cat_name] => 体育场馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9059
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 体育场馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                        )
+
+                    [23] => Array
+                        (
+                            [cat_id] => 9058
+                            [cat_name] => 棋牌室
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9058
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 棋牌室
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                        )
+
+                    [24] => Array
+                        (
+                            [cat_id] => 9067
+                            [cat_name] => 展馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9067
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 展馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                        )
+
+                    [25] => Array
+                        (
+                            [cat_id] => 9005
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9005
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [26] => Array
+                        (
+                            [cat_id] => 9045
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 9005
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9045
+                            [parent_id] => 9005
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [27] => Array
+                        (
+                            [cat_id] => 9068
+                            [cat_name] => 医院
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9068
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 医院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                        )
+
+                    [28] => Array
+                        (
+                            [cat_id] => 9080
+                            [cat_name] => 派出所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9080
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 派出所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                        )
+
+                    [29] => Array
+                        (
+                            [cat_id] => 9079
+                            [cat_name] => 社区
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9079
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 社区
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                        )
+
+                    [30] => Array
+                        (
+                            [cat_id] => 9078
+                            [cat_name] => 车管所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9078
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 车管所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                        )
+
+                    [31] => Array
+                        (
+                            [cat_id] => 9077
+                            [cat_name] => 营业厅
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9077
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 营业厅
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                        )
+
+                    [32] => Array
+                        (
+                            [cat_id] => 9076
+                            [cat_name] => 银行
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9076
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 银行
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                        )
+
+                    [33] => Array
+                        (
+                            [cat_id] => 9075
+                            [cat_name] => ATM
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9075
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => ATM
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                        )
+
+                    [34] => Array
+                        (
+                            [cat_id] => 9074
+                            [cat_name] => 文印照相
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9074
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 文印照相
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                        )
+
+                    [35] => Array
+                        (
+                            [cat_id] => 9073
+                            [cat_name] => 裁缝
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9073
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 裁缝
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                        )
+
+                    [36] => Array
+                        (
+                            [cat_id] => 9072
+                            [cat_name] => 修理站
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9072
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 修理站
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                        )
+
+                    [37] => Array
+                        (
+                            [cat_id] => 9071
+                            [cat_name] => 洗车修车
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9071
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 洗车修车
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                        )
+
+                    [38] => Array
+                        (
+                            [cat_id] => 9070
+                            [cat_name] => 停车场
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 11
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9070
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 停车场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                        )
+
+                    [39] => Array
+                        (
+                            [cat_id] => 9069
+                            [cat_name] => 开锁配锁
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 12
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9069
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 开锁配锁
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                        )
+
+                    [40] => Array
+                        (
+                            [cat_id] => 9082
+                            [cat_name] => 站点
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 13
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9082
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 站点
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [cmd_id] => -140
+    [status] => 200
+    [msg] => success
+    [data] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [cat_id] => 9003
+                            [cat_name] => 购物
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9003
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [1] => Array
+                        (
+                            [cat_id] => 9043
+                            [cat_name] => 购物
+                            [cat_parent_id] => 9003
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9043
+                            [parent_id] => 9003
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [2] => Array
+                        (
+                            [cat_id] => 9046
+                            [cat_name] => 便利店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                            [type_id] => -1
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9046
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 便利店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                        )
+
+                    [3] => Array
+                        (
+                            [cat_id] => 9047
+                            [cat_name] => 超商
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9047
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 超商
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                        )
+
+                    [4] => Array
+                        (
+                            [cat_id] => 9048
+                            [cat_name] => 商城商圈
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9048
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 商城商圈
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                        )
+
+                    [5] => Array
+                        (
+                            [cat_id] => 9049
+                            [cat_name] => 步行街
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9049
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 步行街
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                        )
+
+                    [6] => Array
+                        (
+                            [cat_id] => 9050
+                            [cat_name] => 市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9050
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                        )
+
+                    [7] => Array
+                        (
+                            [cat_id] => 9051
+                            [cat_name] => 药店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9051
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 药店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                        )
+
+                    [8] => Array
+                        (
+                            [cat_id] => 9052
+                            [cat_name] => 菜市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9052
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 菜市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                        )
+
+                    [9] => Array
+                        (
+                            [cat_id] => 9053
+                            [cat_name] => 花店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9053
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 花店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                        )
+
+                    [10] => Array
+                        (
+                            [cat_id] => 9054
+                            [cat_name] => 书店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9054
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 书店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                        )
+
+                    [11] => Array
+                        (
+                            [cat_id] => 9055
+                            [cat_name] => 专卖店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9055
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 专卖店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                        )
+
+                    [12] => Array
+                        (
+                            [cat_id] => 9004
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9004
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [13] => Array
+                        (
+                            [cat_id] => 9044
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 9004
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9044
+                            [parent_id] => 9004
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [14] => Array
+                        (
+                            [cat_id] => 9057
+                            [cat_name] => 电影院
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9057
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 电影院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                        )
+
+                    [15] => Array
+                        (
+                            [cat_id] => 9066
+                            [cat_name] => 游乐场
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9066
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 游乐场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                        )
+
+                    [16] => Array
+                        (
+                            [cat_id] => 9065
+                            [cat_name] => 足疗按摩
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9065
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 足疗按摩
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                        )
+
+                    [17] => Array
+                        (
+                            [cat_id] => 9064
+                            [cat_name] => 洗浴
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9064
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 洗浴
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                        )
+
+                    [18] => Array
+                        (
+                            [cat_id] => 9063
+                            [cat_name] => 美容美发
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9063
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 美容美发
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                        )
+
+                    [19] => Array
+                        (
+                            [cat_id] => 9062
+                            [cat_name] => 网吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9062
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 网吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                        )
+
+                    [20] => Array
+                        (
+                            [cat_id] => 9061
+                            [cat_name] => 酒吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9061
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 酒吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                        )
+
+                    [21] => Array
+                        (
+                            [cat_id] => 9060
+                            [cat_name] => KTV
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9060
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => KTV
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                        )
+
+                    [22] => Array
+                        (
+                            [cat_id] => 9059
+                            [cat_name] => 体育场馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9059
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 体育场馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                        )
+
+                    [23] => Array
+                        (
+                            [cat_id] => 9058
+                            [cat_name] => 棋牌室
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9058
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 棋牌室
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                        )
+
+                    [24] => Array
+                        (
+                            [cat_id] => 9067
+                            [cat_name] => 展馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9067
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 展馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                        )
+
+                    [25] => Array
+                        (
+                            [cat_id] => 9005
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9005
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [26] => Array
+                        (
+                            [cat_id] => 9045
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 9005
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9045
+                            [parent_id] => 9005
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [27] => Array
+                        (
+                            [cat_id] => 9068
+                            [cat_name] => 医院
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9068
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 医院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                        )
+
+                    [28] => Array
+                        (
+                            [cat_id] => 9080
+                            [cat_name] => 派出所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9080
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 派出所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                        )
+
+                    [29] => Array
+                        (
+                            [cat_id] => 9079
+                            [cat_name] => 社区
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9079
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 社区
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                        )
+
+                    [30] => Array
+                        (
+                            [cat_id] => 9078
+                            [cat_name] => 车管所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9078
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 车管所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                        )
+
+                    [31] => Array
+                        (
+                            [cat_id] => 9077
+                            [cat_name] => 营业厅
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9077
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 营业厅
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                        )
+
+                    [32] => Array
+                        (
+                            [cat_id] => 9076
+                            [cat_name] => 银行
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9076
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 银行
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                        )
+
+                    [33] => Array
+                        (
+                            [cat_id] => 9075
+                            [cat_name] => ATM
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9075
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => ATM
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                        )
+
+                    [34] => Array
+                        (
+                            [cat_id] => 9074
+                            [cat_name] => 文印照相
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9074
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 文印照相
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                        )
+
+                    [35] => Array
+                        (
+                            [cat_id] => 9073
+                            [cat_name] => 裁缝
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9073
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 裁缝
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                        )
+
+                    [36] => Array
+                        (
+                            [cat_id] => 9072
+                            [cat_name] => 修理站
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9072
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 修理站
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                        )
+
+                    [37] => Array
+                        (
+                            [cat_id] => 9071
+                            [cat_name] => 洗车修车
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9071
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 洗车修车
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                        )
+
+                    [38] => Array
+                        (
+                            [cat_id] => 9070
+                            [cat_name] => 停车场
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 11
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9070
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 停车场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                        )
+
+                    [39] => Array
+                        (
+                            [cat_id] => 9069
+                            [cat_name] => 开锁配锁
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 12
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9069
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 开锁配锁
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                        )
+
+                    [40] => Array
+                        (
+                            [cat_id] => 9082
+                            [cat_name] => 站点
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 13
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9082
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 站点
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [cmd_id] => -140
+    [status] => 200
+    [msg] => success
+    [data] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [cat_id] => 9003
+                            [cat_name] => 购物
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9003
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [1] => Array
+                        (
+                            [cat_id] => 9043
+                            [cat_name] => 购物
+                            [cat_parent_id] => 9003
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9043
+                            [parent_id] => 9003
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [2] => Array
+                        (
+                            [cat_id] => 9046
+                            [cat_name] => 便利店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                            [type_id] => -1
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9046
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 便利店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                        )
+
+                    [3] => Array
+                        (
+                            [cat_id] => 9047
+                            [cat_name] => 超商
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9047
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 超商
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                        )
+
+                    [4] => Array
+                        (
+                            [cat_id] => 9048
+                            [cat_name] => 商城商圈
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9048
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 商城商圈
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                        )
+
+                    [5] => Array
+                        (
+                            [cat_id] => 9049
+                            [cat_name] => 步行街
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9049
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 步行街
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                        )
+
+                    [6] => Array
+                        (
+                            [cat_id] => 9050
+                            [cat_name] => 市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9050
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                        )
+
+                    [7] => Array
+                        (
+                            [cat_id] => 9051
+                            [cat_name] => 药店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9051
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 药店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                        )
+
+                    [8] => Array
+                        (
+                            [cat_id] => 9052
+                            [cat_name] => 菜市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9052
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 菜市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                        )
+
+                    [9] => Array
+                        (
+                            [cat_id] => 9053
+                            [cat_name] => 花店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9053
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 花店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                        )
+
+                    [10] => Array
+                        (
+                            [cat_id] => 9054
+                            [cat_name] => 书店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9054
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 书店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                        )
+
+                    [11] => Array
+                        (
+                            [cat_id] => 9055
+                            [cat_name] => 专卖店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9055
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 专卖店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                        )
+
+                    [12] => Array
+                        (
+                            [cat_id] => 9004
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9004
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [13] => Array
+                        (
+                            [cat_id] => 9044
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 9004
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9044
+                            [parent_id] => 9004
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [14] => Array
+                        (
+                            [cat_id] => 9057
+                            [cat_name] => 电影院
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9057
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 电影院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                        )
+
+                    [15] => Array
+                        (
+                            [cat_id] => 9066
+                            [cat_name] => 游乐场
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9066
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 游乐场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                        )
+
+                    [16] => Array
+                        (
+                            [cat_id] => 9065
+                            [cat_name] => 足疗按摩
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9065
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 足疗按摩
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                        )
+
+                    [17] => Array
+                        (
+                            [cat_id] => 9064
+                            [cat_name] => 洗浴
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9064
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 洗浴
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                        )
+
+                    [18] => Array
+                        (
+                            [cat_id] => 9063
+                            [cat_name] => 美容美发
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9063
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 美容美发
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                        )
+
+                    [19] => Array
+                        (
+                            [cat_id] => 9062
+                            [cat_name] => 网吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9062
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 网吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                        )
+
+                    [20] => Array
+                        (
+                            [cat_id] => 9061
+                            [cat_name] => 酒吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9061
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 酒吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                        )
+
+                    [21] => Array
+                        (
+                            [cat_id] => 9060
+                            [cat_name] => KTV
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9060
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => KTV
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                        )
+
+                    [22] => Array
+                        (
+                            [cat_id] => 9059
+                            [cat_name] => 体育场馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9059
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 体育场馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                        )
+
+                    [23] => Array
+                        (
+                            [cat_id] => 9058
+                            [cat_name] => 棋牌室
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9058
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 棋牌室
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                        )
+
+                    [24] => Array
+                        (
+                            [cat_id] => 9067
+                            [cat_name] => 展馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9067
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 展馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                        )
+
+                    [25] => Array
+                        (
+                            [cat_id] => 9005
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9005
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [26] => Array
+                        (
+                            [cat_id] => 9045
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 9005
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9045
+                            [parent_id] => 9005
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [27] => Array
+                        (
+                            [cat_id] => 9068
+                            [cat_name] => 医院
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9068
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 医院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                        )
+
+                    [28] => Array
+                        (
+                            [cat_id] => 9080
+                            [cat_name] => 派出所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9080
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 派出所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                        )
+
+                    [29] => Array
+                        (
+                            [cat_id] => 9079
+                            [cat_name] => 社区
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9079
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 社区
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                        )
+
+                    [30] => Array
+                        (
+                            [cat_id] => 9078
+                            [cat_name] => 车管所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9078
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 车管所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                        )
+
+                    [31] => Array
+                        (
+                            [cat_id] => 9077
+                            [cat_name] => 营业厅
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9077
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 营业厅
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                        )
+
+                    [32] => Array
+                        (
+                            [cat_id] => 9076
+                            [cat_name] => 银行
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9076
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 银行
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                        )
+
+                    [33] => Array
+                        (
+                            [cat_id] => 9075
+                            [cat_name] => ATM
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9075
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => ATM
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                        )
+
+                    [34] => Array
+                        (
+                            [cat_id] => 9074
+                            [cat_name] => 文印照相
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9074
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 文印照相
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                        )
+
+                    [35] => Array
+                        (
+                            [cat_id] => 9073
+                            [cat_name] => 裁缝
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9073
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 裁缝
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                        )
+
+                    [36] => Array
+                        (
+                            [cat_id] => 9072
+                            [cat_name] => 修理站
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9072
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 修理站
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                        )
+
+                    [37] => Array
+                        (
+                            [cat_id] => 9071
+                            [cat_name] => 洗车修车
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9071
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 洗车修车
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                        )
+
+                    [38] => Array
+                        (
+                            [cat_id] => 9070
+                            [cat_name] => 停车场
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 11
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9070
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 停车场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                        )
+
+                    [39] => Array
+                        (
+                            [cat_id] => 9069
+                            [cat_name] => 开锁配锁
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 12
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9069
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 开锁配锁
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                        )
+
+                    [40] => Array
+                        (
+                            [cat_id] => 9082
+                            [cat_name] => 站点
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 13
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9082
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 站点
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [cmd_id] => -140
+    [status] => 200
+    [msg] => success
+    [data] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [cat_id] => 9003
+                            [cat_name] => 购物
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9003
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [1] => Array
+                        (
+                            [cat_id] => 9043
+                            [cat_name] => 购物
+                            [cat_parent_id] => 9003
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9043
+                            [parent_id] => 9003
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [2] => Array
+                        (
+                            [cat_id] => 9046
+                            [cat_name] => 便利店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                            [type_id] => -1
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9046
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 便利店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                        )
+
+                    [3] => Array
+                        (
+                            [cat_id] => 9047
+                            [cat_name] => 超商
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9047
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 超商
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                        )
+
+                    [4] => Array
+                        (
+                            [cat_id] => 9048
+                            [cat_name] => 商城商圈
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9048
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 商城商圈
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                        )
+
+                    [5] => Array
+                        (
+                            [cat_id] => 9049
+                            [cat_name] => 步行街
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9049
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 步行街
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                        )
+
+                    [6] => Array
+                        (
+                            [cat_id] => 9050
+                            [cat_name] => 市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9050
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                        )
+
+                    [7] => Array
+                        (
+                            [cat_id] => 9051
+                            [cat_name] => 药店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9051
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 药店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                        )
+
+                    [8] => Array
+                        (
+                            [cat_id] => 9052
+                            [cat_name] => 菜市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9052
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 菜市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                        )
+
+                    [9] => Array
+                        (
+                            [cat_id] => 9053
+                            [cat_name] => 花店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9053
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 花店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                        )
+
+                    [10] => Array
+                        (
+                            [cat_id] => 9054
+                            [cat_name] => 书店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9054
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 书店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                        )
+
+                    [11] => Array
+                        (
+                            [cat_id] => 9055
+                            [cat_name] => 专卖店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9055
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 专卖店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                        )
+
+                    [12] => Array
+                        (
+                            [cat_id] => 9004
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9004
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [13] => Array
+                        (
+                            [cat_id] => 9044
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 9004
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9044
+                            [parent_id] => 9004
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [14] => Array
+                        (
+                            [cat_id] => 9057
+                            [cat_name] => 电影院
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9057
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 电影院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                        )
+
+                    [15] => Array
+                        (
+                            [cat_id] => 9066
+                            [cat_name] => 游乐场
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9066
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 游乐场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                        )
+
+                    [16] => Array
+                        (
+                            [cat_id] => 9065
+                            [cat_name] => 足疗按摩
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9065
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 足疗按摩
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                        )
+
+                    [17] => Array
+                        (
+                            [cat_id] => 9064
+                            [cat_name] => 洗浴
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9064
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 洗浴
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                        )
+
+                    [18] => Array
+                        (
+                            [cat_id] => 9063
+                            [cat_name] => 美容美发
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9063
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 美容美发
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                        )
+
+                    [19] => Array
+                        (
+                            [cat_id] => 9062
+                            [cat_name] => 网吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9062
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 网吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                        )
+
+                    [20] => Array
+                        (
+                            [cat_id] => 9061
+                            [cat_name] => 酒吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9061
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 酒吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                        )
+
+                    [21] => Array
+                        (
+                            [cat_id] => 9060
+                            [cat_name] => KTV
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9060
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => KTV
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                        )
+
+                    [22] => Array
+                        (
+                            [cat_id] => 9059
+                            [cat_name] => 体育场馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9059
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 体育场馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                        )
+
+                    [23] => Array
+                        (
+                            [cat_id] => 9058
+                            [cat_name] => 棋牌室
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9058
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 棋牌室
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                        )
+
+                    [24] => Array
+                        (
+                            [cat_id] => 9067
+                            [cat_name] => 展馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9067
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 展馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                        )
+
+                    [25] => Array
+                        (
+                            [cat_id] => 9005
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9005
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [26] => Array
+                        (
+                            [cat_id] => 9045
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 9005
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9045
+                            [parent_id] => 9005
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [27] => Array
+                        (
+                            [cat_id] => 9068
+                            [cat_name] => 医院
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9068
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 医院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                        )
+
+                    [28] => Array
+                        (
+                            [cat_id] => 9080
+                            [cat_name] => 派出所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9080
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 派出所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                        )
+
+                    [29] => Array
+                        (
+                            [cat_id] => 9079
+                            [cat_name] => 社区
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9079
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 社区
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                        )
+
+                    [30] => Array
+                        (
+                            [cat_id] => 9078
+                            [cat_name] => 车管所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9078
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 车管所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                        )
+
+                    [31] => Array
+                        (
+                            [cat_id] => 9077
+                            [cat_name] => 营业厅
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9077
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 营业厅
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                        )
+
+                    [32] => Array
+                        (
+                            [cat_id] => 9076
+                            [cat_name] => 银行
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9076
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 银行
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                        )
+
+                    [33] => Array
+                        (
+                            [cat_id] => 9075
+                            [cat_name] => ATM
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9075
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => ATM
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                        )
+
+                    [34] => Array
+                        (
+                            [cat_id] => 9074
+                            [cat_name] => 文印照相
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9074
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 文印照相
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                        )
+
+                    [35] => Array
+                        (
+                            [cat_id] => 9073
+                            [cat_name] => 裁缝
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9073
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 裁缝
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                        )
+
+                    [36] => Array
+                        (
+                            [cat_id] => 9072
+                            [cat_name] => 修理站
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9072
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 修理站
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                        )
+
+                    [37] => Array
+                        (
+                            [cat_id] => 9071
+                            [cat_name] => 洗车修车
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9071
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 洗车修车
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                        )
+
+                    [38] => Array
+                        (
+                            [cat_id] => 9070
+                            [cat_name] => 停车场
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 11
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9070
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 停车场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                        )
+
+                    [39] => Array
+                        (
+                            [cat_id] => 9069
+                            [cat_name] => 开锁配锁
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 12
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9069
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 开锁配锁
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                        )
+
+                    [40] => Array
+                        (
+                            [cat_id] => 9082
+                            [cat_name] => 站点
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 13
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9082
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 站点
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [cmd_id] => -140
+    [status] => 200
+    [msg] => success
+    [data] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [cat_id] => 9003
+                            [cat_name] => 购物
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9003
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [1] => Array
+                        (
+                            [cat_id] => 9043
+                            [cat_name] => 购物
+                            [cat_parent_id] => 9003
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9043
+                            [parent_id] => 9003
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [2] => Array
+                        (
+                            [cat_id] => 9046
+                            [cat_name] => 便利店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                            [type_id] => -1
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9046
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 便利店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                        )
+
+                    [3] => Array
+                        (
+                            [cat_id] => 9047
+                            [cat_name] => 超商
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9047
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 超商
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                        )
+
+                    [4] => Array
+                        (
+                            [cat_id] => 9048
+                            [cat_name] => 商城商圈
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9048
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 商城商圈
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                        )
+
+                    [5] => Array
+                        (
+                            [cat_id] => 9049
+                            [cat_name] => 步行街
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9049
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 步行街
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                        )
+
+                    [6] => Array
+                        (
+                            [cat_id] => 9050
+                            [cat_name] => 市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9050
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                        )
+
+                    [7] => Array
+                        (
+                            [cat_id] => 9051
+                            [cat_name] => 药店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9051
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 药店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                        )
+
+                    [8] => Array
+                        (
+                            [cat_id] => 9052
+                            [cat_name] => 菜市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9052
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 菜市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                        )
+
+                    [9] => Array
+                        (
+                            [cat_id] => 9053
+                            [cat_name] => 花店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9053
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 花店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                        )
+
+                    [10] => Array
+                        (
+                            [cat_id] => 9054
+                            [cat_name] => 书店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9054
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 书店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                        )
+
+                    [11] => Array
+                        (
+                            [cat_id] => 9055
+                            [cat_name] => 专卖店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9055
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 专卖店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                        )
+
+                    [12] => Array
+                        (
+                            [cat_id] => 9004
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9004
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [13] => Array
+                        (
+                            [cat_id] => 9044
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 9004
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9044
+                            [parent_id] => 9004
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [14] => Array
+                        (
+                            [cat_id] => 9057
+                            [cat_name] => 电影院
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9057
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 电影院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                        )
+
+                    [15] => Array
+                        (
+                            [cat_id] => 9066
+                            [cat_name] => 游乐场
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9066
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 游乐场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                        )
+
+                    [16] => Array
+                        (
+                            [cat_id] => 9065
+                            [cat_name] => 足疗按摩
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9065
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 足疗按摩
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                        )
+
+                    [17] => Array
+                        (
+                            [cat_id] => 9064
+                            [cat_name] => 洗浴
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9064
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 洗浴
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                        )
+
+                    [18] => Array
+                        (
+                            [cat_id] => 9063
+                            [cat_name] => 美容美发
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9063
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 美容美发
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                        )
+
+                    [19] => Array
+                        (
+                            [cat_id] => 9062
+                            [cat_name] => 网吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9062
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 网吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                        )
+
+                    [20] => Array
+                        (
+                            [cat_id] => 9061
+                            [cat_name] => 酒吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9061
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 酒吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                        )
+
+                    [21] => Array
+                        (
+                            [cat_id] => 9060
+                            [cat_name] => KTV
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9060
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => KTV
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                        )
+
+                    [22] => Array
+                        (
+                            [cat_id] => 9059
+                            [cat_name] => 体育场馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9059
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 体育场馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                        )
+
+                    [23] => Array
+                        (
+                            [cat_id] => 9058
+                            [cat_name] => 棋牌室
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9058
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 棋牌室
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                        )
+
+                    [24] => Array
+                        (
+                            [cat_id] => 9067
+                            [cat_name] => 展馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9067
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 展馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                        )
+
+                    [25] => Array
+                        (
+                            [cat_id] => 9005
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9005
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [26] => Array
+                        (
+                            [cat_id] => 9045
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 9005
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9045
+                            [parent_id] => 9005
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [27] => Array
+                        (
+                            [cat_id] => 9068
+                            [cat_name] => 医院
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9068
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 医院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                        )
+
+                    [28] => Array
+                        (
+                            [cat_id] => 9080
+                            [cat_name] => 派出所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9080
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 派出所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                        )
+
+                    [29] => Array
+                        (
+                            [cat_id] => 9079
+                            [cat_name] => 社区
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9079
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 社区
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                        )
+
+                    [30] => Array
+                        (
+                            [cat_id] => 9078
+                            [cat_name] => 车管所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9078
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 车管所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                        )
+
+                    [31] => Array
+                        (
+                            [cat_id] => 9077
+                            [cat_name] => 营业厅
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9077
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 营业厅
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                        )
+
+                    [32] => Array
+                        (
+                            [cat_id] => 9076
+                            [cat_name] => 银行
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9076
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 银行
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                        )
+
+                    [33] => Array
+                        (
+                            [cat_id] => 9075
+                            [cat_name] => ATM
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9075
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => ATM
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                        )
+
+                    [34] => Array
+                        (
+                            [cat_id] => 9074
+                            [cat_name] => 文印照相
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9074
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 文印照相
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                        )
+
+                    [35] => Array
+                        (
+                            [cat_id] => 9073
+                            [cat_name] => 裁缝
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9073
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 裁缝
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                        )
+
+                    [36] => Array
+                        (
+                            [cat_id] => 9072
+                            [cat_name] => 修理站
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9072
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 修理站
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                        )
+
+                    [37] => Array
+                        (
+                            [cat_id] => 9071
+                            [cat_name] => 洗车修车
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9071
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 洗车修车
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                        )
+
+                    [38] => Array
+                        (
+                            [cat_id] => 9070
+                            [cat_name] => 停车场
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 11
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9070
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 停车场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                        )
+
+                    [39] => Array
+                        (
+                            [cat_id] => 9069
+                            [cat_name] => 开锁配锁
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 12
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9069
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 开锁配锁
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                        )
+
+                    [40] => Array
+                        (
+                            [cat_id] => 9082
+                            [cat_name] => 站点
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 13
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9082
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 站点
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [cmd_id] => -140
+    [status] => 200
+    [msg] => success
+    [data] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [cat_id] => 9003
+                            [cat_name] => 购物
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9003
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [1] => Array
+                        (
+                            [cat_id] => 9043
+                            [cat_name] => 购物
+                            [cat_parent_id] => 9003
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9043
+                            [parent_id] => 9003
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [2] => Array
+                        (
+                            [cat_id] => 9046
+                            [cat_name] => 便利店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                            [type_id] => -1
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9046
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 便利店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                        )
+
+                    [3] => Array
+                        (
+                            [cat_id] => 9047
+                            [cat_name] => 超商
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9047
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 超商
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                        )
+
+                    [4] => Array
+                        (
+                            [cat_id] => 9048
+                            [cat_name] => 商城商圈
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9048
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 商城商圈
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                        )
+
+                    [5] => Array
+                        (
+                            [cat_id] => 9049
+                            [cat_name] => 步行街
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9049
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 步行街
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                        )
+
+                    [6] => Array
+                        (
+                            [cat_id] => 9050
+                            [cat_name] => 市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9050
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                        )
+
+                    [7] => Array
+                        (
+                            [cat_id] => 9051
+                            [cat_name] => 药店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9051
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 药店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                        )
+
+                    [8] => Array
+                        (
+                            [cat_id] => 9052
+                            [cat_name] => 菜市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9052
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 菜市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                        )
+
+                    [9] => Array
+                        (
+                            [cat_id] => 9053
+                            [cat_name] => 花店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9053
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 花店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                        )
+
+                    [10] => Array
+                        (
+                            [cat_id] => 9054
+                            [cat_name] => 书店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9054
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 书店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                        )
+
+                    [11] => Array
+                        (
+                            [cat_id] => 9055
+                            [cat_name] => 专卖店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9055
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 专卖店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                        )
+
+                    [12] => Array
+                        (
+                            [cat_id] => 9004
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9004
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [13] => Array
+                        (
+                            [cat_id] => 9044
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 9004
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9044
+                            [parent_id] => 9004
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [14] => Array
+                        (
+                            [cat_id] => 9057
+                            [cat_name] => 电影院
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9057
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 电影院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                        )
+
+                    [15] => Array
+                        (
+                            [cat_id] => 9066
+                            [cat_name] => 游乐场
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9066
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 游乐场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                        )
+
+                    [16] => Array
+                        (
+                            [cat_id] => 9065
+                            [cat_name] => 足疗按摩
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9065
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 足疗按摩
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                        )
+
+                    [17] => Array
+                        (
+                            [cat_id] => 9064
+                            [cat_name] => 洗浴
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9064
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 洗浴
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                        )
+
+                    [18] => Array
+                        (
+                            [cat_id] => 9063
+                            [cat_name] => 美容美发
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9063
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 美容美发
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                        )
+
+                    [19] => Array
+                        (
+                            [cat_id] => 9062
+                            [cat_name] => 网吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9062
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 网吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                        )
+
+                    [20] => Array
+                        (
+                            [cat_id] => 9061
+                            [cat_name] => 酒吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9061
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 酒吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                        )
+
+                    [21] => Array
+                        (
+                            [cat_id] => 9060
+                            [cat_name] => KTV
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9060
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => KTV
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                        )
+
+                    [22] => Array
+                        (
+                            [cat_id] => 9059
+                            [cat_name] => 体育场馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9059
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 体育场馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                        )
+
+                    [23] => Array
+                        (
+                            [cat_id] => 9058
+                            [cat_name] => 棋牌室
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9058
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 棋牌室
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                        )
+
+                    [24] => Array
+                        (
+                            [cat_id] => 9067
+                            [cat_name] => 展馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9067
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 展馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                        )
+
+                    [25] => Array
+                        (
+                            [cat_id] => 9005
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9005
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [26] => Array
+                        (
+                            [cat_id] => 9045
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 9005
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9045
+                            [parent_id] => 9005
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [27] => Array
+                        (
+                            [cat_id] => 9068
+                            [cat_name] => 医院
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9068
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 医院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                        )
+
+                    [28] => Array
+                        (
+                            [cat_id] => 9080
+                            [cat_name] => 派出所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9080
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 派出所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                        )
+
+                    [29] => Array
+                        (
+                            [cat_id] => 9079
+                            [cat_name] => 社区
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9079
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 社区
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                        )
+
+                    [30] => Array
+                        (
+                            [cat_id] => 9078
+                            [cat_name] => 车管所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9078
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 车管所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                        )
+
+                    [31] => Array
+                        (
+                            [cat_id] => 9077
+                            [cat_name] => 营业厅
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9077
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 营业厅
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                        )
+
+                    [32] => Array
+                        (
+                            [cat_id] => 9076
+                            [cat_name] => 银行
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9076
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 银行
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                        )
+
+                    [33] => Array
+                        (
+                            [cat_id] => 9075
+                            [cat_name] => ATM
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9075
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => ATM
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                        )
+
+                    [34] => Array
+                        (
+                            [cat_id] => 9074
+                            [cat_name] => 文印照相
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9074
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 文印照相
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                        )
+
+                    [35] => Array
+                        (
+                            [cat_id] => 9073
+                            [cat_name] => 裁缝
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9073
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 裁缝
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                        )
+
+                    [36] => Array
+                        (
+                            [cat_id] => 9072
+                            [cat_name] => 修理站
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9072
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 修理站
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                        )
+
+                    [37] => Array
+                        (
+                            [cat_id] => 9071
+                            [cat_name] => 洗车修车
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9071
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 洗车修车
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                        )
+
+                    [38] => Array
+                        (
+                            [cat_id] => 9070
+                            [cat_name] => 停车场
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 11
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9070
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 停车场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                        )
+
+                    [39] => Array
+                        (
+                            [cat_id] => 9069
+                            [cat_name] => 开锁配锁
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 12
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9069
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 开锁配锁
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                        )
+
+                    [40] => Array
+                        (
+                            [cat_id] => 9082
+                            [cat_name] => 站点
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 13
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9082
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 站点
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [cmd_id] => -140
+    [status] => 200
+    [msg] => success
+    [data] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [cat_id] => 9003
+                            [cat_name] => 购物
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9003
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [1] => Array
+                        (
+                            [cat_id] => 9043
+                            [cat_name] => 购物
+                            [cat_parent_id] => 9003
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9043
+                            [parent_id] => 9003
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [2] => Array
+                        (
+                            [cat_id] => 9046
+                            [cat_name] => 便利店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                            [type_id] => -1
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9046
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 便利店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                        )
+
+                    [3] => Array
+                        (
+                            [cat_id] => 9047
+                            [cat_name] => 超商
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9047
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 超商
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                        )
+
+                    [4] => Array
+                        (
+                            [cat_id] => 9048
+                            [cat_name] => 商城商圈
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9048
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 商城商圈
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                        )
+
+                    [5] => Array
+                        (
+                            [cat_id] => 9049
+                            [cat_name] => 步行街
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9049
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 步行街
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                        )
+
+                    [6] => Array
+                        (
+                            [cat_id] => 9050
+                            [cat_name] => 市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9050
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                        )
+
+                    [7] => Array
+                        (
+                            [cat_id] => 9051
+                            [cat_name] => 药店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9051
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 药店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                        )
+
+                    [8] => Array
+                        (
+                            [cat_id] => 9052
+                            [cat_name] => 菜市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9052
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 菜市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                        )
+
+                    [9] => Array
+                        (
+                            [cat_id] => 9053
+                            [cat_name] => 花店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9053
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 花店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                        )
+
+                    [10] => Array
+                        (
+                            [cat_id] => 9054
+                            [cat_name] => 书店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9054
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 书店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                        )
+
+                    [11] => Array
+                        (
+                            [cat_id] => 9055
+                            [cat_name] => 专卖店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9055
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 专卖店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                        )
+
+                    [12] => Array
+                        (
+                            [cat_id] => 9004
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9004
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [13] => Array
+                        (
+                            [cat_id] => 9044
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 9004
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9044
+                            [parent_id] => 9004
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [14] => Array
+                        (
+                            [cat_id] => 9057
+                            [cat_name] => 电影院
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9057
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 电影院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                        )
+
+                    [15] => Array
+                        (
+                            [cat_id] => 9066
+                            [cat_name] => 游乐场
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9066
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 游乐场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                        )
+
+                    [16] => Array
+                        (
+                            [cat_id] => 9065
+                            [cat_name] => 足疗按摩
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9065
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 足疗按摩
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                        )
+
+                    [17] => Array
+                        (
+                            [cat_id] => 9064
+                            [cat_name] => 洗浴
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9064
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 洗浴
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                        )
+
+                    [18] => Array
+                        (
+                            [cat_id] => 9063
+                            [cat_name] => 美容美发
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9063
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 美容美发
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                        )
+
+                    [19] => Array
+                        (
+                            [cat_id] => 9062
+                            [cat_name] => 网吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9062
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 网吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                        )
+
+                    [20] => Array
+                        (
+                            [cat_id] => 9061
+                            [cat_name] => 酒吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9061
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 酒吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                        )
+
+                    [21] => Array
+                        (
+                            [cat_id] => 9060
+                            [cat_name] => KTV
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9060
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => KTV
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                        )
+
+                    [22] => Array
+                        (
+                            [cat_id] => 9059
+                            [cat_name] => 体育场馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9059
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 体育场馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                        )
+
+                    [23] => Array
+                        (
+                            [cat_id] => 9058
+                            [cat_name] => 棋牌室
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9058
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 棋牌室
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                        )
+
+                    [24] => Array
+                        (
+                            [cat_id] => 9067
+                            [cat_name] => 展馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9067
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 展馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                        )
+
+                    [25] => Array
+                        (
+                            [cat_id] => 9005
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9005
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [26] => Array
+                        (
+                            [cat_id] => 9045
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 9005
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9045
+                            [parent_id] => 9005
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [27] => Array
+                        (
+                            [cat_id] => 9068
+                            [cat_name] => 医院
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9068
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 医院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                        )
+
+                    [28] => Array
+                        (
+                            [cat_id] => 9080
+                            [cat_name] => 派出所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9080
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 派出所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                        )
+
+                    [29] => Array
+                        (
+                            [cat_id] => 9079
+                            [cat_name] => 社区
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9079
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 社区
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                        )
+
+                    [30] => Array
+                        (
+                            [cat_id] => 9078
+                            [cat_name] => 车管所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9078
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 车管所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                        )
+
+                    [31] => Array
+                        (
+                            [cat_id] => 9077
+                            [cat_name] => 营业厅
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9077
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 营业厅
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                        )
+
+                    [32] => Array
+                        (
+                            [cat_id] => 9076
+                            [cat_name] => 银行
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9076
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 银行
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                        )
+
+                    [33] => Array
+                        (
+                            [cat_id] => 9075
+                            [cat_name] => ATM
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9075
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => ATM
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                        )
+
+                    [34] => Array
+                        (
+                            [cat_id] => 9074
+                            [cat_name] => 文印照相
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9074
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 文印照相
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                        )
+
+                    [35] => Array
+                        (
+                            [cat_id] => 9073
+                            [cat_name] => 裁缝
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9073
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 裁缝
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                        )
+
+                    [36] => Array
+                        (
+                            [cat_id] => 9072
+                            [cat_name] => 修理站
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9072
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 修理站
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                        )
+
+                    [37] => Array
+                        (
+                            [cat_id] => 9071
+                            [cat_name] => 洗车修车
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9071
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 洗车修车
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                        )
+
+                    [38] => Array
+                        (
+                            [cat_id] => 9070
+                            [cat_name] => 停车场
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 11
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9070
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 停车场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                        )
+
+                    [39] => Array
+                        (
+                            [cat_id] => 9069
+                            [cat_name] => 开锁配锁
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 12
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9069
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 开锁配锁
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                        )
+
+                    [40] => Array
+                        (
+                            [cat_id] => 9082
+                            [cat_name] => 站点
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 13
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9082
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 站点
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [cmd_id] => -140
+    [status] => 200
+    [msg] => success
+    [data] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [cat_id] => 9003
+                            [cat_name] => 购物
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9003
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [1] => Array
+                        (
+                            [cat_id] => 9043
+                            [cat_name] => 购物
+                            [cat_parent_id] => 9003
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9043
+                            [parent_id] => 9003
+                            [type_number] => trade
+                            [name] => 购物
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [2] => Array
+                        (
+                            [cat_id] => 9046
+                            [cat_name] => 便利店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                            [type_id] => -1
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9046
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 便利店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489975833821224341747499.png
+                        )
+
+                    [3] => Array
+                        (
+                            [cat_id] => 9047
+                            [cat_name] => 超商
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9047
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 超商
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041472176882173943854043323.png
+                        )
+
+                    [4] => Array
+                        (
+                            [cat_id] => 9048
+                            [cat_name] => 商城商圈
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9048
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 商城商圈
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041473281240244264029241583.png
+                        )
+
+                    [5] => Array
+                        (
+                            [cat_id] => 9049
+                            [cat_name] => 步行街
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9049
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 步行街
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041474677820828253000254615.png
+                        )
+
+                    [6] => Array
+                        (
+                            [cat_id] => 9050
+                            [cat_name] => 市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9050
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041484255414285148058079159.png
+                        )
+
+                    [7] => Array
+                        (
+                            [cat_id] => 9051
+                            [cat_name] => 药店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9051
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 药店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041485181712244543127299859.png
+                        )
+
+                    [8] => Array
+                        (
+                            [cat_id] => 9052
+                            [cat_name] => 菜市场
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9052
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 菜市场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041486277799277654833600553.png
+                        )
+
+                    [9] => Array
+                        (
+                            [cat_id] => 9053
+                            [cat_name] => 花店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9053
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 花店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041489090140233226800637718.png
+                        )
+
+                    [10] => Array
+                        (
+                            [cat_id] => 9054
+                            [cat_name] => 书店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9054
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 书店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041488436775484023448786755.png
+                        )
+
+                    [11] => Array
+                        (
+                            [cat_id] => 9055
+                            [cat_name] => 专卖店
+                            [cat_parent_id] => 9043
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9055
+                            [parent_id] => 9043
+                            [type_number] => trade
+                            [name] => 专卖店
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041482739599788827558885943.png
+                        )
+
+                    [12] => Array
+                        (
+                            [cat_id] => 9004
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9004
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [13] => Array
+                        (
+                            [cat_id] => 9044
+                            [cat_name] => 休闲娱乐
+                            [cat_parent_id] => 9004
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9044
+                            [parent_id] => 9004
+                            [type_number] => trade
+                            [name] => 休闲娱乐
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [14] => Array
+                        (
+                            [cat_id] => 9057
+                            [cat_name] => 电影院
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9057
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 电影院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004149859831322266631970495.png
+                        )
+
+                    [15] => Array
+                        (
+                            [cat_id] => 9066
+                            [cat_name] => 游乐场
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9066
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 游乐场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041499545214613555318300347.png
+                        )
+
+                    [16] => Array
+                        (
+                            [cat_id] => 9065
+                            [cat_name] => 足疗按摩
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 1
+                            [cat_is_virtual] => 0
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9065
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 足疗按摩
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041500359920686804167777712.png
+                        )
+
+                    [17] => Array
+                        (
+                            [cat_id] => 9064
+                            [cat_name] => 洗浴
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9064
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 洗浴
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041501582345493580645126072.png
+                        )
+
+                    [18] => Array
+                        (
+                            [cat_id] => 9063
+                            [cat_name] => 美容美发
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9063
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 美容美发
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041502941354599278749530695.png
+                        )
+
+                    [19] => Array
+                        (
+                            [cat_id] => 9062
+                            [cat_name] => 网吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9062
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 网吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041504266238680659889113737.png
+                        )
+
+                    [20] => Array
+                        (
+                            [cat_id] => 9061
+                            [cat_name] => 酒吧
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9061
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 酒吧
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041518258563353629443114194.png
+                        )
+
+                    [21] => Array
+                        (
+                            [cat_id] => 9060
+                            [cat_name] => KTV
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9060
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => KTV
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041519140342627018207815219.png
+                        )
+
+                    [22] => Array
+                        (
+                            [cat_id] => 9059
+                            [cat_name] => 体育场馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9059
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 体育场馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041520921957881985851004186.png
+                        )
+
+                    [23] => Array
+                        (
+                            [cat_id] => 9058
+                            [cat_name] => 棋牌室
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9058
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 棋牌室
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/16004152306611903349338232561.png
+                        )
+
+                    [24] => Array
+                        (
+                            [cat_id] => 9067
+                            [cat_name] => 展馆
+                            [cat_parent_id] => 9044
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9067
+                            [parent_id] => 9044
+                            [type_number] => trade
+                            [name] => 展馆
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041524550419072468141252993.png
+                        )
+
+                    [25] => Array
+                        (
+                            [cat_id] => 9005
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 0
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 1
+                            [cat_show_type] => 0
+                            [return_goods_limit] => 7
+                            [id] => 9005
+                            [parent_id] => 0
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 1
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [26] => Array
+                        (
+                            [cat_id] => 9045
+                            [cat_name] => 生活服务
+                            [cat_parent_id] => 9005
+                            [cat_pic] => 
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 2
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9045
+                            [parent_id] => 9005
+                            [type_number] => trade
+                            [name] => 生活服务
+                            [type_name] => 无
+                            [level] => 2
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 
+                            [cat_pics] => 
+                        )
+
+                    [27] => Array
+                        (
+                            [cat_id] => 9068
+                            [cat_name] => 医院
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 0
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9068
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 医院
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041531324906953146368270182.png
+                        )
+
+                    [28] => Array
+                        (
+                            [cat_id] => 9080
+                            [cat_name] => 派出所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 1
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9080
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 派出所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041533765705758047287863524.png
+                        )
+
+                    [29] => Array
+                        (
+                            [cat_id] => 9079
+                            [cat_name] => 社区
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 2
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9079
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 社区
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041534960716362166237430069.png
+                        )
+
+                    [30] => Array
+                        (
+                            [cat_id] => 9078
+                            [cat_name] => 车管所
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 3
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9078
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 车管所
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536060212878071869709417.png
+                        )
+
+                    [31] => Array
+                        (
+                            [cat_id] => 9077
+                            [cat_name] => 营业厅
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 4
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9077
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 营业厅
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041536785396926900116854597.png
+                        )
+
+                    [32] => Array
+                        (
+                            [cat_id] => 9076
+                            [cat_name] => 银行
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 5
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9076
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 银行
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041537823381055921341093829.png
+                        )
+
+                    [33] => Array
+                        (
+                            [cat_id] => 9075
+                            [cat_name] => ATM
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 6
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9075
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => ATM
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041539275396159064938899703.png
+                        )
+
+                    [34] => Array
+                        (
+                            [cat_id] => 9074
+                            [cat_name] => 文印照相
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 7
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9074
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 文印照相
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041540516664383156746517583.png
+                        )
+
+                    [35] => Array
+                        (
+                            [cat_id] => 9073
+                            [cat_name] => 裁缝
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 8
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9073
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 裁缝
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041541397197998622662887281.png
+                        )
+
+                    [36] => Array
+                        (
+                            [cat_id] => 9072
+                            [cat_name] => 修理站
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 9
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9072
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 修理站
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041542179816524449947164916.png
+                        )
+
+                    [37] => Array
+                        (
+                            [cat_id] => 9071
+                            [cat_name] => 洗车修车
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 10
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9071
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 洗车修车
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543011439263632174732426.png
+                        )
+
+                    [38] => Array
+                        (
+                            [cat_id] => 9070
+                            [cat_name] => 停车场
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 11
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9070
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 停车场
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041543994354828048711662072.png
+                        )
+
+                    [39] => Array
+                        (
+                            [cat_id] => 9069
+                            [cat_name] => 开锁配锁
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 12
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9069
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 开锁配锁
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545230221940690505822062.png
+                        )
+
+                    [40] => Array
+                        (
+                            [cat_id] => 9082
+                            [cat_name] => 站点
+                            [cat_parent_id] => 9045
+                            [cat_pic] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                            [type_id] => 0
+                            [cat_commission] => 0
+                            [cat_is_wholesale] => 0
+                            [cat_is_index] => 0
+                            [cat_is_virtual] => 1
+                            [cat_templates] => 0
+                            [cat_displayorder] => 13
+                            [cat_level] => 3
+                            [cat_show_type] => 0
+                            [return_goods_limit] => -1
+                            [id] => 9082
+                            [parent_id] => 9045
+                            [type_number] => trade
+                            [name] => 站点
+                            [type_name] => 无
+                            [level] => 3
+                            [cat_icon] => ui-icon-star
+                            [expanded] => 
+                            [loaded] => 1
+                            [is_leaf] => 1
+                            [cat_pics] => https://shops.look56.com/image.php/shop/data/upload/media/plantform/b54a7238a221685616d4fe794fa43b0b/image/20200918/160041545940175538299078234355.png
+                        )
+
+                )
+
+        )
+
+)
