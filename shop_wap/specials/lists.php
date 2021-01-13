@@ -13,7 +13,7 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit:cover">
 	<title>特色旅游</title>
 	<link rel="stylesheet" href="../css/base.css">
-	<link rel="stylesheet" href="../css/customize.css?v=881112">
+	<link rel="stylesheet" href="../css/customize.css?v=88111211">
 	<link rel="stylesheet" href="../css/iconfont.css">
 	<link rel="stylesheet" href="../css/nctouch_common.css">
 	<link rel="stylesheet" href="../css/nctouch_products_list.css">

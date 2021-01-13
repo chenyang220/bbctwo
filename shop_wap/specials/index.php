@@ -176,7 +176,7 @@
 		
 		// html为测试数据
 		var html='<li class="item"><a class="pad" href="details1.html"><em class="img-box"><img src="../images/spec/demo1.png" alt="goods"><b>景点·3.2km</b></em><div class="cont"><h6>吐鲁番火焰山 —— 位于新建吐鲁番市东北区是全国最热的地方</h6><p><label>炎热</label><label>孙悟空</label></p>'+
-		'<div class="rel"><b class="rmb">￥</b><strong>159.00</strong><em>330人付款</em></div></div></div></li><li class="item"><div class="pad"><em class="img-box"><img src="../images/spec/demo2.png" alt="goods"><b>景点·3.2km</b></em><div class="cont"><h6>吐鲁番火焰山 —— 位于新建吐鲁番市东北区是全国最热的地方</h6><p><label>炎热</label><label>孙悟空</label></p>'+
+		'<div class="rel"><b class="rmb">￥</b><strong>159.00</strong><em>330人付款</em></div></div></a></li><li class="item"><a class="pad"><em class="img-box"><img src="../images/spec/demo2.png" alt="goods"><b>景点·3.2km</b></em><div class="cont"><h6>吐鲁番火焰山 —— 位于新建吐鲁番市东北区是全国最热的地方</h6><p><label>炎热</label><label>孙悟空</label></p>'+
 		'<div class="rel"><b class="rmb">￥</b><strong>159.00</strong><em>330人付款</em></div></div></a></li>';				
 		window.onscroll=function(){
 			 if ($(window).scrollTop() + $(window).height() == $(document).height()) {

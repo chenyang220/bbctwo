@@ -316,6 +316,8 @@
 }
 .customize-goods-lists .list li{
 	min-height: 5.636rem;
+	padding-right:0.681rem;
+	box-sizing:border-box;
 }
 .customize-goods-lists ul li{
 	position:absolute;
