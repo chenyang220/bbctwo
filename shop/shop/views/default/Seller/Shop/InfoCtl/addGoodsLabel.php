@@ -89,11 +89,6 @@
       //         $('#cat_id').val(cat_id_arr);
       //       } else {
       //         parent.Public.tips.error("<?=__('最多一次性申请9个')?>");
-      //       }
-      //   } else {
-      //      parent.Public.tips.error(data.msg);
-      //   }
-      // });
 		});
 	});
 
