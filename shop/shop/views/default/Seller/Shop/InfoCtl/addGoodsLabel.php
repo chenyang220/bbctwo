@@ -73,7 +73,7 @@
 
 <script>
   var categoryTree;
-  var label_id = {};
+  var label_id_arr = {};
 	$(function() {
     $('#label_id_select').css('height','30px');
 		$('#label_id_select').change(function(){
@@ -93,7 +93,7 @@
       //         }
               $("#select_label_name").html(html);
 
-              label_id[id] = name;
+              label_id_arr[id] = name;
       //         $('#cat_id').val(cat_id_arr);
       //       } else {
       //         parent.Public.tips.error("<?=__('最多一次性申请9个')?>");
@@ -105,17 +105,16 @@
 		});
 	});
 
-  function del_label_name (label_id) {
+  function del_label_name (id) {
      var html = '';
-     delete cat_name_select[cat_id];
-     console.log(cat_name_select);
-     var cat_id_arr = '';
-     for (cat_id in cat_name_select) {
-        cat_id_arr = cat_id_arr + cat_id + ',';
-        html += "<span>"+ cat_name_select[cat_id] + "<a href='javascript:void(0)' onclick=del_cat("+cat_id+")>X</a></span>";
+     delete label_id_arr[id];
+     console.log(label_id_arr);
+     for (label_id in label_id_arr) {
+        html += "<span>"+ label_id_arr[label_id] + "<a href='javascript:void(0)' onclick=del_label_name("+label_id+")>X</a></span>";
      }
-    $("#select_cat_name").html(html);
-    $('#cat_id').val(cat_id_arr);
+    $("#select_label_name").html(html);
+    
+    // $('#cat_id').val(cat_id_arr);
   }
 
 
