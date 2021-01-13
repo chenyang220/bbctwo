@@ -190,6 +190,10 @@ include __DIR__ . '/includes/header.php';
 </script>
 <script type="text/html" id="enterance">
     <ul class="classify clearfix">
+		<li class="jf">
+			<span><a href="specials/index.html"><img src=""/></a></span>
+			<p>特色商城</p>
+		</li>
         <% for (var i in item) { %>
         <li class="jf">
             <span><a href="<%= item[i].url %>"><img src="<%= item[i].icons %>"/></a></span>

@@ -4,7 +4,7 @@
 <?php
 include $this->view->getTplPath() . '/' . 'header.php';
 ?>
-<link rel="stylesheet" type="text/css" href="<?= $this->view->css ?>/personalstores.css">
+<link rel="stylesheet" type="text/css" href="<?= $this->view->css ?>/personalstores.css?v=8">
 <link rel="stylesheet" type="text/css" href="<?= $this->view->css ?>/goods-detail.css"/>
 <link rel="stylesheet" type="text/css" href="<?= $this->view->css ?>/Group-integral.css"/>
 <script type="text/javascript" src="<?= $this->view->js ?>/tuangou-index.js"></script>
@@ -360,7 +360,7 @@ if (!empty($shop_base['is_renovation'])) {
                                 <li>
                                     <dl>
                                         <dt><a href="index.php?ctl=Supplier_Goods&met=goods&gid=<?= $value['goods_id'] ?>"><?= $value['common_name'] ?></a></dt>
-                                        <dd class="goods-pic"><a href="index.php?ctl=Supplier_Goods&met=goods&gid=<?= $value['goods_id'] ?>"><span class="thumb size40"><i></i><img src="<?= $value['common_image'] ?>" style="width:40px;height: 40px;"></span></a>
+                                        <dd class="goods-pic"><a href="index.php?ctl=Supplier_Goods&met=goods&gid=<?= $value['goods_id'] ?>"><span class="thumb size40"><i></i><img src="<?= $value['common_image'] ?>" style="width:40px;"></span></a>
                                             <p><span class="thumb size100"><i></i><img src="<?= $value['common_image'] ?>" style="width:100px;height: 100px;" title="<?= $value['common_name'] ?>"><big></big><small></small></span></p>
                                         </dd>
                                         <dd class="price pngFix bbc_color"><?= format_money($value['common_price']) ?></dd>
@@ -374,7 +374,7 @@ if (!empty($shop_base['is_renovation'])) {
                                 <li>
                                     <dl>
                                         <dt><a href="index.php?ctl=Goods_Goods&met=goods&gid=<?= $value['goods_id'] ?>"><?= $value['common_name'] ?></a></dt>
-                                        <dd class="goods-pic"><a href="index.php?ctl=Goods_Goods&met=goods&gid=<?= $value['goods_id'] ?>"><span class="thumb size40"><i></i><img src="<?= $value['common_image'] ?>" style="width:40px;height: 40px;"></span></a>
+                                        <dd class="goods-pic"><a href="index.php?ctl=Goods_Goods&met=goods&gid=<?= $value['goods_id'] ?>"><span class="thumb size40"><i></i><img src="<?= $value['common_image'] ?>" style="width:40px;"></span></a>
                                             <p><span class="thumb size100"><i></i><img src="<?= $value['common_image'] ?>" style="width:100px;height: 100px;" title="<?= $value['common_name'] ?>"><big></big><small></small></span></p>
                                         </dd>
                                         <dd class="price pngFix bbc_color"><?= format_money($value['common_price']) ?></dd>
@@ -394,7 +394,7 @@ if (!empty($shop_base['is_renovation'])) {
                                 <li>
                                     <dl>
                                         <dt><a href="index.php?ctl=Supplier_Goods&met=goods&gid=<?= $value['goods_id'] ?>"><?= $value['common_name'] ?></a></dt>
-                                        <dd class="goods-pic"><a href="index.php?ctl=Supplier_Goods&met=goods&gid=<?= $value['goods_id'] ?>"><span class="thumb size40"><i></i><img src="<?= $value['common_image'] ?>" style="width:40px;height: 40px;"></span></a>
+                                        <dd class="goods-pic"><a href="index.php?ctl=Supplier_Goods&met=goods&gid=<?= $value['goods_id'] ?>"><span class="thumb size40"><i></i><img src="<?= $value['common_image'] ?>" style="width:40px;"></span></a>
                                             <p><span class="thumb size100"><i></i><img src="<?= $value['common_image'] ?>" style="
 
               width:100px;height: 100px;" title="<?= $value['common_name'] ?>"><big></big><small></small></span></p>
