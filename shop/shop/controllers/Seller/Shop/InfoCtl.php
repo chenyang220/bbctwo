@@ -306,7 +306,13 @@ class Seller_Shop_InfoCtl extends Seller_Controller
 	{
 		include $this->view->getView();
 	}
-
+	//加载添加商品标签
+	public function addGoodsLabel()
+	{
+	    $Label_BaseModel = new  Label_BaseModel();
+        $Label_Base = $Label_BaseModel->getByWhere("*");
+		include $this->view->getView();
+	}
 	public function addcategoryrow()
 	{
 		$cat_id_str = trim(request_string('cat_id'), ',');

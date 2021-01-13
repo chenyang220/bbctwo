@@ -360,18 +360,22 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
             <p class="hint"><?= __('副标题最长32个字符') ?></dd>
         </dd>
     </dl>
-
     <dl>
         <dt><i>*</i><?= __('商品标签') ?>：</dt>
         <dd>
-           <select name="label_id">
-                <option value=""><?= __('请选择') ?></option>
-                <?php if (!empty($data['label_Base'])) { ?>
-                    <?php foreach ($data['label_Base'] as $key => $val) { ?>
-                        <option value="<?= $val['id']; ?>" <?=$common_data['label_id'] == $val['id'] ? "selected" : '';?>><?= $val['label_name']; ?></option>
-                    <?php } ?>
+            <div class="service-set-items">
+                <a href="javascript:void(0)" class="bbc_seller_btns ncbtn" id="add_goods_label"><?= __('添加商品标签') ?></a>
+                <?php
+                foreach ($dataes['items'] as $key => $val) {
+                    ?>
+                    <label title="<?php echo $val['contract_type_desc'] ?>">
+                        <input type="checkbox" id="content-input" name="contract_type_id[]" value="<?php echo $val['contract_type_id'] ?>"/>
+                        <span>
+                            <?php echo $val['contract_type_name'] ?>
+                        </span>
+                    </label>
                 <?php } ?>
-            </select>
+            </div>
         </dd>
     </dl>
     <dl>
@@ -1026,6 +1030,23 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
 
 
 <script>
+
+    $('#add_goods_label').click(function ()
+        {
+            $.dialog({
+                title: "<?=__('添加商品标签')?>",
+                content: 'url: ' + SITE_URL + '?ctl=Seller_Shop_Info&met=addGoodsLabel&typ=e',
+                width: 450,
+                height: 350,
+                max: !1,
+                min: !1,
+                cache: !1,
+                lock: !0
+            });
+
+        });
+
+
     $(document).ready(function () {
         var namevue = $('input[name="name"]').val();
         $('#wordcounts').text(namevue.length);
