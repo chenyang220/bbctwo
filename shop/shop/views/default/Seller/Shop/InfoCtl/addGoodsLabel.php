@@ -79,16 +79,8 @@
 		$('#label_id_select').change(function(){
       var id = $("select[name='label_id']").val();
       var name = $("select[name='label_id']  option:selected").html();
-      // $.post(SITE_URL + '?ctl=Goods_Cat&met=getCat&typ=json', {cat_id:i}, function (data) {
-      //   if ( data.status == 200 )
-      //   {
-      //      cat_name_select[i] = data.data.cat_name;
-      //      var cat_name_keys = Object.keys(cat_name_select);
-      //      if (cat_name_keys.length < 10) {
+
               var html =  $("#select_label_name").html();
-      //         var cat_id_arr = '';
-      //         for (cat_id in cat_name_select) {
-      //           cat_id_arr = cat_id_arr + cat_id + ',';
                 html += "<span>"+ name + "<a href='javascript:void(0)' onclick=del_label_name("+id+")>X</a></span>";
       //         }
               $("#select_label_name").html(html);
@@ -113,7 +105,7 @@
         html += "<span>"+ label_id_arr[label_id] + "<a href='javascript:void(0)' onclick=del_label_name("+label_id+")>X</a></span>";
      }
     $("#select_label_name").html(html);
-    
+
     // $('#cat_id').val(cat_id_arr);
   }
 
