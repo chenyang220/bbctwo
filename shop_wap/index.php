@@ -107,8 +107,7 @@ include __DIR__ . '/includes/header.php';
             <div class="swiper-wrapper">
                 <% for (var i in item) { %>
                 <div class="swiper-slide">
-<!--                    <a href="<%= item[i].url %>"> <img src="<%= item[i].image %>" class="main-img"> </a> -->
-                    <a href="<%= item[i].url %>"> <img src="https://www.yuanfengtest.com/image.php/shop/data/upload/media/plantform/6fc0625bf097e245fa1c1007bf528b2d/image/20200802/159634807696517043923807736011.jpg" class="main-img"> </a>
+					<a href="<%= item[i].url %>"> <img src="<%= item[i].image %>" class="main-img"> </a>
                 </div>
                 <% } %>
             </div>
