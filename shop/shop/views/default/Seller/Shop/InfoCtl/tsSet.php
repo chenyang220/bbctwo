@@ -12,16 +12,31 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
             <dl class="dl">
                 <dt><i>*</i><?=__('店铺标签：')?></dt>
                 <dd >
-                     <select name="label_id">
-                        <option value=""><?= __('请选择') ?></option>
-                        <?php if (!empty($Label_Base)) { ?>
-                            <?php foreach ($Label_Base as $key => $val) { ?>
-                                <option value="<?= $val['id']; ?>" <?=$Shop_Base['label_id'] == $val['id'] ? "selected" : '';?>><?= $val['label_name']; ?></option>
-                            <?php } ?>
-                        <?php } ?>
-                    </select>
+                      <select name="label_id" id="label_id_select">
+                          <option value=""><?= __('请选择') ?></option>
+                          <?php if (!empty($Label_Base)) { ?>
+                              <?php foreach ($Label_Base as $key => $val) { ?>
+                                  <option value="<?= $val['id']; ?>" date-name="<?= $val['label_name']; ?>"><?= $val['label_name']; ?></option>
+                              <?php } ?>
+                          <?php } ?>
+                      </select>
                 </dd>
-            </dl>   
+            </dl>  
+            <dl class="dl">
+                <dt><?=__('已选商品标签：')?></dt>
+                <dd id="select_label_name" class="select_cat_name">
+                    <?php 
+                        if (!empty($label_id_arr)) {
+                            foreach ($label_id_arr as $key => $label_id) {
+                                ?>
+                                    <span><?=$label_name_arr[$label_id]?></span>
+                                <?php
+                            }
+                        }
+                    ?>
+                </dd>
+            </dl>
+
             <dl class="dl">
                 <dt><?=__('申请原因：')?></dt>
                 <dd><textarea name="label_remarks" id="detail" style="width:300px;height:100px;"><?=$Shop_Base['label_remarks']?></textarea></dd>
@@ -40,6 +55,32 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
         </div>
     </form>
 <script>
+        var label_id_arr = [];
+        $('#label_id_select').change(function(){
+            if (label_id_arr.length == 0) {
+                $("#select_label_name").html('');
+            }
+              var id = $("select[name='label_id']").val();
+              var name = $("select[name='label_id']  option:selected").html();
+              var html =  $("#select_label_name").html();
+              if (!label_id_arr[id]) {
+                  html += "<span>"+ name + "<a href='javascript:void(0)' onclick=del_label_name("+id+")>X</a></span>";
+                  $("#select_label_name").html(html);
+                  label_id_arr[id] = name;
+              }        
+        });
+        function del_label_name (id) {
+             var html = '';
+             if (id) {
+              delete label_id_arr[id];
+             }
+             
+             for (label_id in label_id_arr) {
+                html += "<span>"+ label_id_arr[label_id] + "<a href='javascript:void(0)' onclick=del_label_name("+label_id+")>X</a></span>";
+             }
+            $("#select_label_name").html(html);
+        }
+
        $(document).ready(function(){
     
         var ajax_url = './index.php?ctl=Seller_Shop_Info&met=addTsSet&typ=json';
@@ -57,14 +98,20 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
                 'label_remarks':'required',
             },
            valid:function(form){
-               
+                var label_id_str = '';
+                for (label_id in label_id_arr) {
+                    label_id_str = label_id_str + "," + label_id;
+                }
+
+                var label_remarks = $("#detail").val();
+
                var me = this;
                 // 提交表单之前，hold住表单，防止重复提交
                 me.holdSubmit();
                 //表单验证通过，提交表单
                 $.ajax({
                     url: ajax_url,
-                    data:$("#form").serialize(),
+                    data:{label_id:label_id_str,label_remarks:label_remarks},
                     success:function(a){
                         if(a.status == 200)
                         {

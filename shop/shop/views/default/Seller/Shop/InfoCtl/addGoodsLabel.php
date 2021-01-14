@@ -43,6 +43,7 @@
     <dl>
        <dt><?=__('已选商品标签：')?></dt>
        <dd id="select_label_name" class="select_cat_name">
+          
        </dd>
     </dl>
 </div>

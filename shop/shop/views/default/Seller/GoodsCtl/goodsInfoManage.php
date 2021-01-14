@@ -1047,6 +1047,7 @@ var label_id_arr = [];
                 lock: !0,
                 data: {
                     label_id_arr:label_id_arr,
+                    
                     callback: function (label_id_arr) {
                         
                         var html = '';

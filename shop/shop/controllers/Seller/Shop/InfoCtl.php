@@ -186,14 +186,13 @@ class Seller_Shop_InfoCtl extends Seller_Controller
 	{
 		$Label_BaseModel = new  Label_BaseModel();
         $Label_Base = $Label_BaseModel->getByWhere("*");
-
+        $label_name_arr = array_column($Label_Base, "label_name", "id");
 		$shop_id            = Perm::$shopId;
 		$Shop_BaseModel = new  Shop_BaseModel();
-
 		$Shop_Base = $Shop_BaseModel->getOne($shop_id);
+		$label_id_arr  = explode(",", $Shop_Base['label_id']);
 		include $this->view->getView();
 	}
-
 
 	/**
 	 * 首页
@@ -202,7 +201,7 @@ class Seller_Shop_InfoCtl extends Seller_Controller
 	 */
 	public function addTsSet()
 	{
-		$label_id           = request_int('label_id');
+		$label_id           = trim(request_string('label_id',0),",");
 		$label_remarks 		= request_string('label_remarks');
 		$shop_id            = Perm::$shopId;
 		$Shop_BaseModel = new  Shop_BaseModel();

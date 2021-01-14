@@ -85,3 +85,8 @@ ADD COLUMN `user_sign_day`  int(10) NOT NULL DEFAULT 0 COMMENT '用户连续签�
 
 ALTER TABLE `yf_goods_common`
 MODIFY COLUMN `label_id`  varchar(255) NULL COMMENT '商品标签ID' AFTER `common_is_delivery`;
+
+
+
+ALTER TABLE `yf_shop_base`
+MODIFY COLUMN `label_id`  varchar(255) NULL DEFAULT NULL COMMENT '标签ID' AFTER `shop_wap_index`;

@@ -100,7 +100,14 @@ class Shop_BaseModel extends Shop_Base
 			{
 				$data["items"][$key]['is_collect'] = 0;
 			}
-            $data["items"][$key]["label_name"]  =    $label_name_rows[$value['label_id']];       
+
+
+			$label_id_arr = explode(",",$value['label_id']);
+			$label_name  = '';
+			foreach ($label_id_arr as $key => $label_id) {
+				$label_name = $label_name . $label_name_rows[$label_id] . "/";
+			}
+            $data["items"][$key]["label_name"]  =   $label_name;       
             $company            = $shopCompanyModel->getOne($value['shop_id']);
             $data['items'][$key] = array_merge($data['items'][$key], $company);
 

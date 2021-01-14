@@ -30,10 +30,10 @@ var THISPAGE = {
             {name:'shop_status_cha', label:'当前状态',  width:100, align:"center"},
             {name:'shop_company_address', label:'所在区域',  width:200, align:"center"},
             {name:'company_address_detail', label:'详细地址',  width:300, align:"left"},
-            {name:'label_name', label:'标签',  width:150,fixed:true,  align:"center"},
-            {name:'shop_id', label:'标签',  width:150,fixed:true,  align:"center",data:"shop_id" ,hidden:true},
-            {name:'label_remarks', label:'标签',  width:150,fixed:true,  align:"center",data:"label_remarks"},
-            {name:'label_is_check', label:'标签',  width:150,fixed:true,  align:"center",data:"label_is_check",hidden:true}
+            {name:'label_name', label:'标签',  width:250,fixed:true,  align:"center"},
+            {name:'shop_id', label:'店铺ID',  width:150,fixed:true,  align:"center",data:"shop_id" ,hidden:true},
+            {name:'label_remarks', label:'标签申请原因',  width:150,fixed:true,  align:"center",data:"label_remarks"},
+            {name:'label_is_check', label:'标签审核状态',  width:150,fixed:true,  align:"center",data:"label_is_check",hidden:true}
         ];
         this.mod_PageConfig.gridReg('grid', colModel);
         colModel = this.mod_PageConfig.conf.grids['grid'].colModel;
