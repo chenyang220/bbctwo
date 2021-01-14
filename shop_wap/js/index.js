@@ -8,19 +8,19 @@ $.ajax({
         } else {
             $(function() {
                 var headerClone = $('#header').clone();
-                $(window).scroll(function(){
-                    if ($(window).scrollTop() <= $('#main-container1').height()) {
-                        headerClone = $('#header').clone();
-                        $('#header').remove();
-                        headerClone.addClass('transparent').removeClass('');
-                        headerClone.prependTo('.nctouch-home-top');
-                    } else {
-                        headerClone = $('#header').clone();
-                        $('#header').remove();
-                        headerClone.addClass('').removeClass('transparent');
-                        headerClone.prependTo('body');
-                    }
-                });
+                // $(window).scroll(function(){
+                //     if ($(window).scrollTop() <= $('#main-container1').height()) {
+                //         headerClone = $('#header').clone();
+                //         $('#header').remove();
+                //         headerClone.addClass('transparent').removeClass('');
+                //         headerClone.prependTo('.nctouch-home-top');
+                //     } else {
+                //         headerClone = $('#header').clone();
+                //         $('#header').remove();
+                //         headerClone.addClass('').removeClass('transparent');
+                //         headerClone.prependTo('body');
+                //     }
+                // });
                 if(getCookie('sub_site_id') === '' || getCookie('sub_site_id') === 'undefined' || getCookie('sub_site_id') === null){
                         loadScriptSubsite();
                 }
@@ -55,7 +55,7 @@ $.ajax({
                                 if(k == 0 && kk != 'slider_list'){
                                     $('#serch_down').show();
                                 }
-                                if(data.module_data[k][kk].title){
+                                if(kk !='home2'&& data.module_data[k][kk].title){
                                     var title = '';
                                     for(var i=0;i<data.module_data[k][kk].title.length;i++){
                                         if(i < data.module_data[k][kk].title.length-1){
@@ -107,8 +107,9 @@ $.ajax({
                         $("#main-container2").html(html);
                         var bannerSwipers= new Swiper(".swiper-container-index", {
                             autoplay:true,
-                            pagination: '#pagination',
-                            paginationClickable: true
+                            pagination: {
+                                el: "#pagination"
+                            },
 
                         });
 

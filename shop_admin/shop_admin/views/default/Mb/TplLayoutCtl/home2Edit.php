@@ -41,6 +41,24 @@ include TPL_PATH . '/' . 'header.php';
                     </div>
                 </div>
             </div>
+			<div class="home3_2">
+			    <div class="home3_2_1 iblock wp50">
+			        <div nctype="item_image" class="item"> <img class="wp100" nctype="image" name="item_data[rectangle1_image]" src="<?= $this->view->img_com ?>/image.png" alt="">
+			            <input nctype="image_name" name="item_data[rectangle1_image]" type="hidden" value="s0_04953036568877399.jpg">
+			            <input nctype="image_type" name="item_data[rectangle1_type]" type="hidden" value="goods">
+			            <input nctype="image_data" name="item_data[rectangle1_data]" type="hidden" value="100374">
+			            <a nctype="btn_edit_item_image" data-name="rectangle1" data-desc="320*130" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑'); ?></a>
+			        </div>
+			    </div>
+			    <div class="home3_2_2 iblock wp50">
+			        <div nctype="item_image" class="item"> <img class="wp100" nctype="image" name="item_data[rectangle2_image]" src="<?= $this->view->img_com ?>/image.png" alt="">
+			            <input nctype="image_name" name="item_data[rectangle2_image]" type="hidden" value="s0_04953036851456664.jpg">
+			            <input nctype="image_type" name="item_data[rectangle2_type]" type="hidden" value="goods">
+			            <input nctype="image_data" name="item_data[rectangle2_data]" type="hidden" value="100028">
+			            <a nctype="btn_edit_item_image" data-name="rectangle2" data-desc="320*130" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑'); ?></a>
+			        </div>
+			    </div>
+			</div>
         </div>
     </div>
 </div>

@@ -289,7 +289,7 @@ sub { vertical-align: text-bottom }
 .ml-20{margin-left:0.434rem !important;}
 .ml-40{margin-left: 0.909rem !important;}
 .ml-60{margin-left: 1.363rem !important;}
-.mrb22{margin-bottom:0.227rem;}
+.mrb22{margin-bottom:0.204rem;}
 .mrb30{margin-bottom:3rem;}
 .mrb150{margin-bottom:1.5rem !important;}
 .mrb300{margin-bottom:3rem !important;}
@@ -393,7 +393,7 @@ sub { vertical-align: text-bottom }
 }
 
 .header-title { display: inline-block; margin: 0 auto; }
-.header-title h1 { font-size:0.818rem; line-height:2rem; height:2rem; }
+.header-title h1 { font-size:0.818rem; line-height:2rem; height:2rem;color:#fff; }
 /*模拟输入框*/
 .header-inp { position: relative; display: block;border: solid 0.05rem #DEDEDE; border-radius: 0.7rem;flex:1; margin:0.227rem 0 0.227rem 0.454rem;     /* margin: 0.227rem 2.113rem 0 2.113rem; */ background-color: #f6f6f6; text-align: left;padding:0.3rem 0.1rem;}
 .header-inp .icon { float: left; vertical-align: top; width:0.8rem; height:0.8rem; margin: 0 0.1rem 0 0.5rem; background-image: url(../images/new/search.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 70%;}
@@ -528,13 +528,13 @@ footer.bottom .nctouch-footer-wrap { background-color: transparent; border: none
 .nctouch-tag-nav ul li a { display: block;padding: 0.1rem 0.5rem; font-size: 0.6rem; line-height: 0.9rem; color: #FE244B;}
 /*默认顶部*/
 header, 
-.header { background: #fff; height: 2rem; position: fixed; z-index: 8; top: 0; left: 0; right: 0; bottom: auto;/* border-bottom: solid 1px #e7e7e7; */}
+.header { background: #F34664; height: 2rem; position: fixed; z-index: 8; top: 0; left: 0; right: 0; bottom: auto;/* border-bottom: solid 1px #e7e7e7; */}
 header.fixed { position: fixed;/* background: rgba(248,248,248,0.95);*/ z-index: 10;border-bottom:1px solid #e3e3e3;}
 #header .tit{flex:1; font-size:0.727rem;line-height:1.95rem;color:#4a4a4a;display:inline-block;}
 .header-wrap { display:flex;justify-content:space-between; max-width: 320px; max-width: 640px; margin: 0 auto; text-align: center; }
 .header-l { display: block;height: 1.95rem;/* position: absolute; top: 0; left: 0.454rem; */padding-left:0.454rem;}
 .header-l a { position: relative; z-index: 1; display: inline-block; width: 0.409rem; height: 1.95rem;line-height:1.95rem;}
-.header-l a i {display:inline-block; width:0.409rem; height:0.75rem;background: url(../images/bbc-bg45.png) no-repeat center;background-size:cover;opacity:.5;}
+.header-l a i {display:inline-block; width:0.409rem; height:0.75rem;background: url(../images/spec/zk/back.png) no-repeat center;background-size:cover;vertical-align: middle;}
 .header-l a i.close { width: 80%; height: 80%; margin: 10%; background-image: url(../images/close_window.png); background-position: 50% 50%; background-repeat: no-repeat; background-size: 100%; opacity: 0.75; }
 .header-l a i.set { background-image: url(../images/bbc-bg50.png); background-position: 50% 50%; background-repeat: no-repeat; background-size: 100%; opacity: 0.35; }
 .header-l a i.home { width: 80%; height: 80%; margin: 10%; background-image: url(../images/home_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 90%; opacity: 0.7; }
@@ -2135,4 +2135,11 @@ header .tit-nav2 a{
     font-size:0.545rem;
     color:#FF4242;
     text-align:center;
+}
+.zk-head-more {
+    display: inline-block;
+    width: 1.02rem;
+    height: 0.204rem;
+    background: url(../images/spec/zk/more.png) no-repeat center;
+    background-size: contain;
 }

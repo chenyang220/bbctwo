@@ -16,8 +16,8 @@ include __DIR__ . '/includes/header.php';
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit:cover">
     <title><?php echo __('首页'); ?></title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/index-new.css?v=881">
+    <link rel="stylesheet" href="css/base.css?v=9">
+    <link rel="stylesheet" href="css/index-new.css?v=88112">
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
     <script src="js/jquery.js"></script>
@@ -46,17 +46,32 @@ include __DIR__ . '/includes/header.php';
        window.location.href = UCenterApiUrl + '/?ctl=Login&met=oauth&typ=e&u_id=' + u_id + "&token=" + getCookie("token") + "&enterId=" + getCookie("enterId") + "&type=wap";
     }
 </script>
-<body class="fz-0">
+<body class="fz-0 bgf">
+	<header id="header" class="fixed borb0">
+	    <div class="header-wrap">
+	        <div class="header-l">
+	            <a href="javascript:history.go(-1)"> <i class="back"></i> </a>
+	        </div>
+	        <div class="header-title">
+	            <h1>黄页商城</h1>
+	        </div>
+	       <div class="right fz0 hy-head-more">
+			   <a class="iblock" href="javascript:void(0);"><i class="zk-head-more"></i></a>
+		   </div>
+	    </div>
+	</header>
 <!-- 搜索 -->
 <div class="head-fixed">
     <div class="head-ser">
-        <div class="cohesive " id="cohesive_dev"><a href="./tmpl/changecity.html" class="colf"><span class="city-text sub_site_name_span"><?php echo __('全部'); ?></span>
-                <i class="icon-drapdown"></i></a></div>
+      <!--  <div class="cohesive " id="cohesive_dev"><a href="./tmpl/changecity.html" class="colf"><span class="city-text sub_site_name_span"><?php echo __('全部'); ?></span>
+                <i class="icon-drapdown"></i></a></div> -->
         <a href="tmpl/search.html" class="index-header-inps header-inps <?php if ($_COOKIE['is_app_guest']) { ?> isApp  <?php } ?>"> <b
-                    class="iconfont icon-search"></b><span class="search-input" id="keyword"><?php echo __('请输入关键词'); ?></span>
+                    class="iconfont icon-search"></b><span class="search-input" id="keyword"><?php echo __('搜你想搜的'); ?></span>
+					<em class="zk-index-search fr">搜索</em>
         </a> <?php if ($_COOKIE['is_app_guest']) { ?> <a class="qrcode_open scan ml-20 iblock tc" href="/qrcode_open"><i class="iconfont icon-scan colf"></i><span class="fz-20 colf ml20 block">扫一扫</span></a>
 
-        <?php } ?> <a id="header-nav" class="message colf" href="tmpl/message.html"><i></i><b id="is_look"></b></a>
+        <?php } ?> 
+		<!-- <a id="header-nav" class="message colf" href="tmpl/message.html"><i></i><b id="is_look"></b></a> -->
 
     </div>
      <div class="clearfix index-head-top-nav">
@@ -70,8 +85,7 @@ include __DIR__ . '/includes/header.php';
 
 </div>
 <p class="index-head-height"></p>
-<div class="bgf bgf_bannr">
-	
+<div class="bgf">
     <div id="main-container1" class="fz0"></div>
 </div>
 <div class="nctouch-home-layout" id="main-container2"></div>
@@ -81,7 +95,7 @@ include __DIR__ . '/includes/header.php';
 <!-- 底部 -->
 <?php include __DIR__ . '/includes/footer_menu.php'; ?>
 <script type="text/html" id="category-one">
-     <li class="flex"><a>首页</a></li>
+     <li class="flex"><a class="cur">首页</a></li>
      <% for(var i = 0;i<items.length;i++){ %>
     <li class="flex"><a href="<%= WapSiteUrl %>/tmpl/product_list.html?cat_id=<%= items[i].cat_id %>"><%= items[i].cat_name %></a></li>
     <% } %>
@@ -93,14 +107,16 @@ include __DIR__ . '/includes/header.php';
             <div class="swiper-wrapper">
                 <% for (var i in item) { %>
                 <div class="swiper-slide">
-                    <a href="<%= item[i].url %>"> <img src="<%= item[i].image %>" class="main-img"> </a>
+<!--                    <a href="<%= item[i].url %>"> <img src="<%= item[i].image %>" class="main-img"> </a> -->
+                    <a href="<%= item[i].url %>"> <img src="https://www.yuanfengtest.com/image.php/shop/data/upload/media/plantform/6fc0625bf097e245fa1c1007bf528b2d/image/20200802/159634807696517043923807736011.jpg" class="main-img"> </a>
                 </div>
                 <% } %>
             </div>
+			<% if(item.length>=2){ %>
+			<div class="swiper-pagination swiper-paginations" id="pagination"></div>
+			<%}%>
         </div>
-        <% if(item.length>=2){ %>
-        <div class="swiper-pagination swiper-paginations" id="pagination"></div>
-        <%}%>
+       
     </div>
 </script>
 <script type="text/html" id="home1">
@@ -114,20 +130,22 @@ include __DIR__ . '/includes/header.php';
 </script>
 <script type="text/html" id="home2">
     <div class="">
-        <div class="module1">
+        <div class="module1 bgf">
             <% if (title) { %>
-            <div class="common-tit tc">
-                <h4 class="fz-32"><%= title %></h4>
+            <div class="custom-home2-module custom-home2-tit">
+                <h4><%= title %></h4>
             </div>
             <% } %>
             <!-- 布局一（1/3） -->
-            <div class="layout1 layout-1 clearfix">
+            <div class="layout1 layout-1 clearfix custom-index-module mrb22">
                 <div class="big fl"><a href="<%= square_url %>"><img src="<%= square_image %>" alt=""></a></div>
                 <div class="small clearfix fr">
-                    <a href="<%= rectangle1_url %>" class="mrb22 fr"><img src="<%= rectangle1_image %>" alt=""></a><a
-                            href="<%= rectangle2_url %>" class="fr"><img src="<%= rectangle2_image %>" alt=""></a>
+                    <a href="<%= rectangle1_url %>" class="mrb22 fr"><img src="<%= rectangle1_image %>" alt=""></a><a href="<%= rectangle2_url %>" class="fr"><img src="<%= rectangle2_image %>" alt=""></a>
                 </div>
             </div>
+			<div class="custom-index-module custom-module-2 layout1 clearfix">
+				<a class="fl small" href=""><img class="wp100" src="<%= rectangle1_image %>" alt=""></a><a class="fr small" href=""><img class="wp100" src="<%= rectangle2_image %>" alt=""></a>
+			</div>
         </div>
     </div>
 </script>
@@ -189,17 +207,17 @@ include __DIR__ . '/includes/header.php';
     </div>
 </script>
 <script type="text/html" id="enterance">
-    <ul class="classify clearfix">
-		<li class="jf">
-			<span><a href="specials/index.html"><img src=""/></a></span>
-			<p>特色商城</p>
-		</li>
+    <ul class="classify clearfix pl-20 pr-20">
         <% for (var i in item) { %>
         <li class="jf">
             <span><a href="<%= item[i].url %>"><img src="<%= item[i].icons %>"/></a></span>
             <p><%= item[i].navName %></p>
         </li>
         <% } %>
+		<li class="jf">
+			<span><a href="specials/index.html"><img src=""/></a></span>
+			<p>特色商城</p>
+		</li>
     </ul>
 </script>
 <script type="text/html" id="activityA">
@@ -719,7 +737,7 @@ background: url(../../img/bg4.png) no-repeat;
           $(this).removeClass('cur');
         }
       });
-      if (!urlstatus) {$("#category-head a").eq(0).addClass('cur'); };
+      if (!urlstatus) {console.log($("#category-head a").eq(0));$("#category-head a").eq(0).addClass('cur'); }
 
     $.getJSON(ApiUrl + "/index.php?ctl=Goods_Cat&met=cat&typ=json",{cat_is_index:"1"},function (t)
     {

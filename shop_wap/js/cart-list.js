@@ -128,6 +128,7 @@ $(function () {
         });
         //购买数量加
         $(".add").click(function () {
+			alert('11111')
             var sPrents = $(this).parents(".cart-litemw-cnt");
             var goods_id = sPrents.attr('cart_id');
             //查询当前购物车商品是否是限购商品 2017.5.3

@@ -158,9 +158,10 @@ include TPL_PATH . '/' . 'footer.php';
                                 '<div class="content">' +
                                 '<div class="home2_1"><div nctype="item_image" class="item"><img nctype="image" src="' + f_img + '" alt=""></div></div>' +
                                 '<div class="home2_2"><div class="home2_2_1"><div nctype="item_image" class="item"><img nctype="image" src="' + s_img + '" alt=""></div></div>' +
-                                '<div class="home2_2_2">' +
-                                '<div nctype="item_image" class="item"> <img nctype="image" src="' + t_img + '" alt="">' +
-                                '</div></div></div></div></div></div>' +
+                                '<div class="home2_2_2"><div nctype="item_image" class="item"> <img nctype="image" src="' + t_img + '" alt=""></div></div></div>'+
+								'<div class="home3_2"><div class="home3_2_1 iblock wp50"><div nctype="item_image" class="item"><img class="wp100" nctype="image" src="' + s_img + '" alt=""></div></div>' +
+								'<div class="home3_2_2 iblock wp50"><div nctype="item_image" class="item"> <img class="wp100" nctype="image" src="' + t_img + '" alt=""></div></div></div>'+
+                                '</div></div></div>' +
                                 '<div class="handle"><a nctype="btn_move_up" href="javascript:;">' +
                                     '<i class="fa fa-arrow-up"></i>上移</a> <a nctype="btn_move_down" href="javascript:;">' +
                                     '<i class="fa fa-arrow-down"></i>下移</a> <a nctype="btn_usable" data-item-id="' + item_data.mb_tpl_layout_id + '" href="javascript:;">' +

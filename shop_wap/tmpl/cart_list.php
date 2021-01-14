@@ -17,64 +17,38 @@ include __DIR__ . '/../includes/header.php';
         <title><?= __('购物车'); ?></title>
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/nctouch_common.css">
-        <link rel="stylesheet" type="text/css" href="../css/nctouch_cart.css">
+        <link rel="stylesheet" type="text/css" href="../css/nctouch_cart.css?v=81">
         <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
     </head>
-    <script type="text/javascript">
-    //用app电话号码登录
-    var u_id = '<?php echo $u_id;?>';
-    if (u_id) {
-       window.location.href = UCenterApiUrl + '/?ctl=Login&met=oauth&typ=e&u_id=' + u_id + "&return_url=" + WapSiteUrl + "/tmpl/cart_list.html";
-    }
-</script>
-    <style type="text/css">
-    .nctouch-single-nav {
-        background: #f8f8f8;
-    }
-    </style>
     <body>
-    <header id="header" class="fixed">
+    <header id="header" class="fixed borb0">
         <div class="header-wrap">
             <div class="header-l">
-                <!-- <a href="javascript:history.go(-1)"> <i class="back"></i> </a> -->
+                <a href="javascript:history.go(-1)"> <i class="back"></i> </a>
             </div>
             <div class="header-title">
                 <h1><?= __('购物车'); ?></h1>
             </div>
             <div class="JS-header-edit fz-26 col6">
-                <?= __('编辑'); ?>
-            </div>
-                <!-- <a id="header-nav" href="javascript:void(0);"><i class="more"></i><sup></sup></a> -->
-            </div>
-        </div>
-        <div  class="nctouch-single-nav">
-              <ul id="filtrate_ul" class="w20h">
-                <li><a href="member/order_list.html?data-state=wait_pay"><i class="iconfont icon-daifukuan"></i><p>待付款</p></a></li>
-                <li><a href="member/order_list.html?data-state=order_payed"><i class="iconfont icon-daifahuo"></i><p>待发货</p></a></li>
-                <li><a href="member/order_list.html?data-state=wait_confirm_goods"><i class="iconfont icon-daishouhuo"></i><p>待收货</p></a></li>
-                <li><a href="member/order_list.html?data-state=finish"><i class="iconfont icon-daipingjia"></i><p>待评价</p></a></li>
-                <li><a href="member/member_refund.html" data-state=""><i class="iconfont icon-tuikuan"></i><p><?= __('退款/退货'); ?></p></a></li>
-            </ul>
-        </div>
-        <div class="nctouch-nav-layout">
-            <div class="nctouch-nav-menu">
-                <span class="arrow"></span>
-                <ul>
-                    <?php if($_COOKIE['SHOP_ID_WAP']){ ?>
-                        <li><a href="../tmpl/store.html?shop_id=<?=$_COOKIE['SHOP_ID_WAP']?>"><i class="home"></i><?= __('首页'); ?></a></li>
-                        <li><a href="../tmpl/store_search.html?shop_id=<?=$_COOKIE['SHOP_ID_WAP']?>"><i class="search"></i><?= __('搜索'); ?></a></li>
-                    <?php }else{ ?>
-                        <li><a href="../index.html"><i class="home"></i><?= __('首页'); ?></a></li>
-                        <li><a href="../tmpl/search.html"><i class="search"></i><?= __('搜索'); ?></a></li>
-                    <?php }?>
-                    <!-- <li><a href="../tmpl/member/member.html"><i class="member"></i><?= __('我的商城'); ?></a></li> -->
-                    <li><a href="javascript:void(0);"><i class="message"></i><?= __('消息'); ?><sup></sup></a></li>
-                </ul>
+                <?= __('管理'); ?>
             </div>
         </div>
     </header>
+	
     <div class="nctouch-main-layout">
-        <div id="cart-list-wp" class="mb50"  style="margin-top: 120px;"></div>
+		<div class="zk-cart-orders bgf">
+			<div class="zk-cart-orders-content">
+				<p><span>我的订单</span><a class="fr" href="">查看全部</a></p>
+				<ul class="clearfix">
+					<li><a href=""><em class="img-box"><img src="../images/zk/c-dfk.png" alt="icon"></em><span>待付款</span></a></li>
+					<li><a href=""><em class="img-box"><img src="../images/zk/c-dfh.png" alt="icon"></em><span>待发货</span></a></li>
+					<li><a href=""><em class="img-box"><img src="../images/zk/c-dsh.png" alt="icon"></em><span>待收货</span></a></li>
+					<li><a href=""><em class="img-box"><img src="../images/zk/c-dpj.png" alt="icon"></em><span>待评价</span></a></li>
+					<li><a href=""><em class="img-box"><img src="../images/zk/c-dsh.png" alt="icon"></em><span>退款售后</span></a></li>
+				</ul>
+			</div>
+		</div>
+        <div id="cart-list-wp" class="mb50 zk-cart-content"></div>
     </div>
     <footer id="footer" class="bottom"></footer>
    <!--  <div class="pre-loading hide">
@@ -87,21 +61,21 @@ include __DIR__ . '/../includes/header.php';
         <% if(cart_list.length >0){%>
         <% for (var i = 0;i
         <cart_list.length;i++){%>
-        <div class="nctouch-cart-container bort1 borb1">
-            <dl class="nctouch-cart-store bgf borb1">
+        <div class="nctouch-cart-container">
+            <dl class="nctouch-cart-store bgf">
                 <dt><span class="store-check">
 							<input class="store_checkbox" type="checkbox" checked>
 						</span>
-                    <i class="iconfont icon-stores align-middle"></i><strong class="iblock align-middle ml-10"><%=
+                    <strong class="iblock align-middle ml-10"><%=
                         cart_list[i].shop_name%></strong>
                     <% if (cart_list[i].shop_self_support == 'true') { %>
 						<span>
                             <?= __('自营店铺'); ?>
 						</span> <% } %>
                     <a href="<%=WapSiteUrl%>/tmpl/store.html?shop_id=<%=cart_list[i].shop_id%>">
-                    <i class="iconfont icon-arrow-right align-middle ml-20 fz-28 col9"></i></a>
+                   </a>
 
-                    <span class="JS-edit fr"><?= __('编辑'); ?></span>
+                    <!-- <span class="JS-edit fr"><?= __('编辑'); ?></span> -->
                 </dt>
             </dl>
             <ul class="nctouch-cart-item nctouch-cart-item-new">
@@ -122,27 +96,47 @@ include __DIR__ . '/../includes/header.php';
                                 <img src="<%=goods.common_base.common_image%>"/> </a>
                         </div>
                         <dl class="goods-info fl ml-20">
-                            <dt class="goods-name  word-wrap w7">
+                            <dt class="goods-name  word-wrap">
                                 <a class="z-dhwz iblock" href="<%=WapSiteUrl%>/tmpl/product_detail.html?goods_id=<%=goods.goods_id%>">
                                     <%=goods.common_base.common_name%> </a>
                             </dt>
-                            <dd class="goods-type"><%=goods.goods_base.spec_val_str%></dd>
-                            <dd class="iblock"><span class="goods-price" style="position: relative;"><?= __('￥'); ?>
-                            <%if(goods.isPlus){%>
-                            <em><%=goods.plus_price%></em><b class="plus-logo"></b>
-                            <%}else{%>
-                            <em><%=goods.now_price%></em>
-                            <%}%>
-                            </span></dd>
+							<%if(goods.goods_base.spec_val_str){%>
+                            <dd class="goods-type">
+								<span class="zk-cart-type-sel"><em><%=goods.goods_base.spec_val_str%></em><i class="iconfont icon-xiala align-top"></i></span>
+							</dd>
+							<%}%>
+                            <dd class="iblock">
+								<span class="goods-price"><b class="rmb"><?= __('￥'); ?></b>
+									<%if(goods.isPlus){%>
+									<em><%=goods.plus_price%></em><b class="plus-logo"></b>
+									<%}else{%>
+									<em><%=goods.now_price%></em>
+									<%}%>
+								</span>
+								<!-- <span class="fr nums">x<%=goods.goods_num%></span> -->
+								<div class="value-box cart">
+								    <span class="minus">
+								        <a href="javascript:void(0);">&nbsp;</a>
+								    </span>
+								    <span>
+								        <input type="number" min="1" class="buy-num buynum"
+								               value="<%=goods.goods_num%>"/>
+								    </span>
+								    <span class="add">
+								        <a href="javascript:void(0);">&nbsp;</a>
+								    </span>
+								</div>
+							</dd>
                             <!--  <% if(goods.old_price > 0){ %>
                              <span class="old-price"><?= __('￥'); ?><s><%=goods.old_price%></s></span>
                              <% } %> -->
-                            <span class="fr nums">x<%=goods.goods_num%></span>
-                            <span class="old-price">
+                            
                                 <% if(goods.goods_base.is_del ==2){ %>
-                                <p style="color: red"><?= __('商品已被商家删除'); ?></p>
+								<span class="old-price">
+									<p style="color: red"><?= __('商品已被商家删除'); ?></p>
+								</span>
                                 <% } %>
-                            </span>
+							<% if (!isEmpty(goods.groupbuy_info) || !isEmpty(goods.xianshi_info) || !isEmpty(goods.sole_info)){ %>
                             <span class="goods-sale">
                             <% if (!isEmpty(goods.groupbuy_info))
                                 {%><em><?= __('团购'); ?></em><% }
@@ -151,6 +145,7 @@ include __DIR__ . '/../includes/header.php';
                             else if (!isEmpty(goods.sole_info))
                                 { %><em><i></i><?= __('手机专享'); ?></em><% } %>
                             </span>
+							<% } %>
                         </dl>
                         <div class="edit-area">
                             <div class="goods-del" cart_id="<%=goods.cart_id%>">
@@ -160,7 +155,7 @@ include __DIR__ . '/../includes/header.php';
 
                                 <div class="value-box">
                                     <span class="minus">
-                                        <a href="javascript:void(0);">&nbsp;</a>
+                                        <a href="javascript:void(0);">-</a>
                                     </span>
                                     <!-- s <?= __('获取并设置限购数量'); ?> 2017.5.2 -->
                                     <span>
@@ -244,20 +239,23 @@ include __DIR__ . '/../includes/header.php';
             <% } %>
         </div><%}%>
         <% if (check_out === true) {%>
-        <div class="nctouch-cart-bottom bot-2">
+        <div class="nctouch-cart-bottom bot-2 clearfix">
             <div class="all-check fl pl-20">
-                <input class="all_checkbox" type="checkbox" checked> <span class="selected-all fz-30 col2"><?= __('全选'); ?></span>
+                <input class="all_checkbox" type="checkbox" checked> <span class="selected-all fz-30 col6"><?= __('全选'); ?></span>
             </div>
-            <div class="total">
-                <dl class="total-money">
-                    <dt class="fz-32 col2"><?= __('合计：'); ?></dt>
-                    <dd><?= __('￥'); ?><em><%=sum%></em></dd>
-                </dl>
-            </div>
-            <div id="batchRemove"><?= __('删除'); ?></div>
-            <div class="check-out ok">
-                <a href="javascript:void(0)" id="productNumber"><?= __('去付款'); ?>(<em><%=number%></em>)</a>
-            </div>
+			<div class="fr">
+				<div class="total">
+				    <dl class="total-money">
+				        <dt class="fz-28 col3"><?= __('合计：'); ?></dt>
+				        <dd><?= __('￥'); ?><em><%=sum%></em></dd>
+				    </dl>
+				</div>
+				<div id="batchRemove"><?= __('删除'); ?></div>
+				<div class="check-out ok">
+				    <a href="javascript:void(0)" id="productNumber"><?= __('结算'); ?></a>
+				</div>
+			</div>
+            
         </div><% } else { %>
         <div class="nctouch-cart-bottom no-login">
             <div class="cart-nologin-tip"><?= __('为了您的购物有更好的体验请优先登录'); ?></div>
@@ -279,14 +277,14 @@ include __DIR__ . '/../includes/header.php';
     <script id="cart-list1" type="text/html">
         <% if(cart_list.length >0){%><% for (var i = 0;i
         <cart_list.length;i++){%>
-        <div class="nctouch-cart-container bort1 borb1">
+        <div class="nctouch-cart-container">
             <dl class="nctouch-cart-store bgf borb1">
                 <dt>
                     <span class="store-check">
 					    <input class="store_checkbox" type="checkbox" checked>
 					</span>
                     <i class="iconfont icon-stores"></i> <%=cart_list[i].store_name%>
-                    <span class="JS-edit fr"><?= __('编辑'); ?></span>
+                   <!-- <span class="JS-edit fr"><?= __('编辑'); ?></span> -->
                 </dt>
             </dl>
             <ul class="nctouch-cart-item nctouch-cart-item-new">
@@ -308,28 +306,47 @@ include __DIR__ . '/../includes/header.php';
                                     <a class="z-dhwz iblock" href="<%=WapSiteUrl%>/tmpl/product_detail.html?goods_id=<%=goods.goods_id%>">
                                         <%=goods.goods_name%> </a>
                                 </dt>
-                                <dd class="goods-type"><%=goods.goods_spec%></dd>
-                                <dd class="iblock"><span class="goods-price"><?= __('￥'); ?><em><%=goods.goods_price%></em></span></dd>
-                                 <span class="fr nums">x<%=goods.goods_num%></span>
+                               <!-- <dd class="goods-type"><%=goods.goods_spec%></dd> -->
+								<%if(goods.goods_spec){%>
+								<dd class="goods-type">
+									<span class="zk-cart-type-sel"><em><%=goods.goods_spec%></em><i class="iconfont icon-xiala align-top"></i></span>
+								</dd>
+								<%}%>
+                                <dd class="iblock">
+									<span class="goods-price"><b class="rmb"><?= __('￥'); ?></b><em><%=goods.goods_price%></em></span>
+									<!-- <span class="fr nums">x<%=goods.goods_num%></span> -->
+									<div class="value-box">
+									    <span class="minus">
+									        <a href="javascript:void(0);">-</a>
+									    </span>
+									    <span>
+									        <input type="number" min="1" class="buy-num buynum"
+									               value="<%=goods.goods_num%>"/>
+									    </span>
+									    <span class="add">
+									        <a href="javascript:void(0);">&nbsp;</a>
+									    </span>
+									</div>
+								</dd>
                             </dl>
                             <div class="edit-area">
                                 <div class="goods-del" cart_id="<%=goods.cart_id%>">
                                     <?= __('删除'); ?>
                                 </div>
                                 <div class="goods-subtotal">
-
-                                    <div class="value-box">
-                                        <span class="minus">
-                                            <a href="javascript:void(0);">&nbsp;</a>
-                                        </span>
-                                        <span>
-                                            <input type="number" min="1" class="buy-num buynum"
-                                                   value="<%=goods.goods_num%>"/>
-                                        </span>
-                                        <span class="add">
-                                            <a href="javascript:void(0);">&nbsp;</a>
-                                        </span>
-                                    </div>
+									<div class="value-box">
+									    <span class="minus">
+									        <a href="javascript:void(0);">&nbsp;</a>
+									    </span>
+									    <span>
+									        <input type="number" min="1" class="buy-num buynum"
+									               value="<%=goods.goods_num%>"/>
+									    </span>
+									    <span class="add">
+									        <a href="javascript:void(0);">&nbsp;</a>
+									    </span>
+									</div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -343,12 +360,12 @@ include __DIR__ . '/../includes/header.php';
             </div>
             <div class="total">
                 <dl class="total-money">
-                    <dt class="fz-32 col2"><?= __('合计：'); ?></dt>
+                    <dt class="fz-28 col3"><?= __('合计：'); ?></dt>
                     <dd><?= __('￥'); ?><em><%=sum%></em></dd>
                 </dl>
             </div>
             <div class="check-out ok">
-                <a href="javascript:void(0)"><?= __('去付款'); ?>(<em><%=number%></em>)</a>
+                <a href="javascript:void(0)"><?= __('结算'); ?></a>
             </div>
         </div><% } else { %>
         <div class="nctouch-cart-bottom no-login">
@@ -368,12 +385,10 @@ include __DIR__ . '/../includes/header.php';
 
     <!-- <?= __('底部'); ?> -->
     <?php
-    // include __DIR__ . '/../includes/footer_menu.php';
+    include __DIR__ . '/../includes/footer_menu.php';
     ?>
 
-    <script type="text/javascript" src="../../js/zepto.min.js"></script>
-    <!-- <script type="text/javascript" src="../../js/template.js"></script> -->
-    
+
     <script type="text/javascript" src="../js/template.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../js/tmpl/footer.js"></script>
