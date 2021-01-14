@@ -363,17 +363,18 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
     <dl>
         <dt><i>*</i><?= __('商品标签') ?>：</dt>
         <dd>
+            <input  type="hidden" name="label_id" class="text w450"  value="
+            <?php if (!empty($common_data)) {
+                echo $common_data['label_id'];
+            } ?>"/ >
             <div class="service-set-items">
                 <a href="javascript:void(0)" class="bbc_seller_btns ncbtn" id="add_goods_label"><?= __('添加商品标签') ?></a>
                 <span id="label_content">
                     <?php
-                    foreach ($dataes['items'] as $key => $val) {
+                    foreach ($data['label_Base'] as $key => $val) {
                         ?>
                         <label>
-    <!--                         <input type="checkbox" id="content-input" name="contract_type_id[]" value="<?php echo $val['contract_type_id'] ?>"/> -->
-                            <!-- <span> -->
-                             
-                            <!-- </span> -->
+                            <?php echo $val['label_name'] ?>
                         </label>
                     <?php } ?>
                 </span>
@@ -1032,7 +1033,7 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
 
 
 <script>
-
+var label_id_arr = [];
     $('#add_goods_label').click(function ()
         {
             $.dialog({
@@ -1045,14 +1046,18 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
                 cache: !1,
                 lock: !0,
                 data: {
+                    label_id_arr:label_id_arr,
                     callback: function (label_id_arr) {
-                        console.log(label_id_arr);
+                        
                         var html = '';
+                        var label_id_str = '';
                         for (label_id in label_id_arr) {
-                            html += "<span>"+ label_id_arr[label_id] + "<a href='javascript:void(0)' onclick=del_label_name("+label_id+")>X</a></span>";
+                            label_id_str = label_id_str + "," + label_id;
+                            html += "<label>"+ label_id_arr[label_id] + "</label>";
                         }
-
                         $("#label_content").html(html);
+                        label_id_arr = label_id_arr;
+                        $("input[name='label_id']").val(label_id_str);
                     }
                 }
             });

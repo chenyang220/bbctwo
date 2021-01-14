@@ -630,7 +630,7 @@
             $common_data['common_length'] = request_string('glength');
             $common_data['common_width'] = request_string('width');
             $common_data['common_height'] = request_string('height');
-            $label_id = request_string('label_id',0);
+            $label_id = trim(request_string('label_id',0),",");
 
 
 

@@ -73,10 +73,12 @@
       return newArr;
   }
   var categoryTree;
-  var label_id_arr = [];
   var api = frameElement.api;
   var callback = api.data.callback;
+  // var label_id_arr = [];
+  var label_id_arr = api.data.label_id_arr;
 	$(function() {
+      del_label_name();
       $('#label_id_select').css('height','30px');
   		$('#label_id_select').change(function(){
           var id = $("select[name='label_id']").val();
@@ -92,7 +94,10 @@
 
   function del_label_name (id) {
      var html = '';
-     delete label_id_arr[id];
+     if (id) {
+      delete label_id_arr[id];
+     }
+     
      for (label_id in label_id_arr) {
         html += "<span>"+ label_id_arr[label_id] + "<a href='javascript:void(0)' onclick=del_label_name("+label_id+")>X</a></span>";
      }
