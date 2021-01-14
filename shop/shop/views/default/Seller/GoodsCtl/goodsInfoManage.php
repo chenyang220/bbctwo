@@ -365,16 +365,18 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
         <dd>
             <div class="service-set-items">
                 <a href="javascript:void(0)" class="bbc_seller_btns ncbtn" id="add_goods_label"><?= __('添加商品标签') ?></a>
-                <?php
-                foreach ($dataes['items'] as $key => $val) {
-                    ?>
-                    <label title="<?php echo $val['contract_type_desc'] ?>">
-                        <input type="checkbox" id="content-input" name="contract_type_id[]" value="<?php echo $val['contract_type_id'] ?>"/>
-                        <span>
-                            <?php echo $val['contract_type_name'] ?>
-                        </span>
-                    </label>
-                <?php } ?>
+                <span id="label_content">
+                    <?php
+                    foreach ($dataes['items'] as $key => $val) {
+                        ?>
+                        <label>
+    <!--                         <input type="checkbox" id="content-input" name="contract_type_id[]" value="<?php echo $val['contract_type_id'] ?>"/> -->
+                            <!-- <span> -->
+                             
+                            <!-- </span> -->
+                        </label>
+                    <?php } ?>
+                </span>
             </div>
         </dd>
     </dl>
@@ -1041,7 +1043,18 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
                 max: !1,
                 min: !1,
                 cache: !1,
-                lock: !0
+                lock: !0,
+                data: {
+                    callback: function (label_id_arr) {
+                        console.log(label_id_arr);
+                        var html = '';
+                        for (label_id in label_id_arr) {
+                            html += "<span>"+ label_id_arr[label_id] + "<a href='javascript:void(0)' onclick=del_label_name("+label_id+")>X</a></span>";
+                        }
+
+                        $("#label_content").html(html);
+                    }
+                }
             });
 
         });

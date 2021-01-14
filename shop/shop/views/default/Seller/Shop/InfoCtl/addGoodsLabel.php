@@ -27,7 +27,6 @@
 	</script>
 <link href="<?= $this->view->css ?>/seller_center.css?ver=<?=VER?>" rel="stylesheet">
 <div class="eject_con" id="eject_con">
-  <form id="form" method="post" action="#" >
     <dl>
       <dt><?=__('商品标签：')?></dt>
       <dd>
@@ -46,10 +45,6 @@
        <dd id="select_label_name" class="select_cat_name">
        </dd>
     </dl>
-    <div class="bottom">
-          <label class="submit-border"><input type="submit" class="bbc_seller_submit_btns" value="<?=__('确定')?>" /></label>
-    </div>
-  </form>
 </div>
 <script type="text/javascript" src="<?=$this->view->js_com?>/plugins/jquery.ui.js"></script>
 <script type="text/javascript" src="<?=$this->view->js?>/seller.js"></script>
@@ -69,116 +64,47 @@
 <script type="text/javascript" src="<?=$this->view->js_com?>/plugins/jquery.ztree.all.js"></script>
 <script type="text/javascript" src="<?=$this->view->js_com?>/plugins/jquery.ztree.exhide.js"></script>
 <script type="text/javascript" src="<?= $this->view->js_com?>/plugins/jquery.cookie.js"></script>
-
-
 <script>
+  function unique(arr) {
+      let newArr = [];
+      arr.forEach(item => {
+          return newArr.includes(item) ? '' : newArr.push(item);
+      });
+      return newArr;
+  }
   var categoryTree;
-  var label_id_arr = {};
+  var label_id_arr = [];
+  var api = frameElement.api;
+  var callback = api.data.callback;
 	$(function() {
-    $('#label_id_select').css('height','30px');
-		$('#label_id_select').change(function(){
-      var id = $("select[name='label_id']").val();
-      var name = $("select[name='label_id']  option:selected").html();
-
-              var html =  $("#select_label_name").html();
-                html += "<span>"+ name + "<a href='javascript:void(0)' onclick=del_label_name("+id+")>X</a></span>";
-      //         }
+      $('#label_id_select').css('height','30px');
+  		$('#label_id_select').change(function(){
+          var id = $("select[name='label_id']").val();
+          var name = $("select[name='label_id']  option:selected").html();
+          var html =  $("#select_label_name").html();
+          if (!label_id_arr[id]) {
+              html += "<span>"+ name + "<a href='javascript:void(0)' onclick=del_label_name("+id+")>X</a></span>";
               $("#select_label_name").html(html);
-
               label_id_arr[id] = name;
-      //         $('#cat_id').val(cat_id_arr);
-      //       } else {
-      //         parent.Public.tips.error("<?=__('最多一次性申请9个')?>");
-		});
+          }        
+  		});
 	});
 
   function del_label_name (id) {
      var html = '';
      delete label_id_arr[id];
-     console.log(label_id_arr);
      for (label_id in label_id_arr) {
         html += "<span>"+ label_id_arr[label_id] + "<a href='javascript:void(0)' onclick=del_label_name("+label_id+")>X</a></span>";
      }
     $("#select_label_name").html(html);
-
-    // $('#cat_id').val(cat_id_arr);
   }
 
-
-  ///根据文本框的关键词输入情况自动匹配树内节点 进行模糊查找
-    function AutoMatch(txtObj) {
-                if (txtObj.value.length > 0) { 
-                    var zTree = categoryTree.zTree;
-                    console.log(zTree);
-                    var nodeList = zTree.getNodesByParamFuzzy("name", txtObj.value); 
-                    $.fn.zTree.init($("#cat_name"), setting, nodeList);
-                    
-                } else {
-                      
-                               
-                }              
-    }
-
-
+api.button({
+        id: "confirm", name: '<?= __('确定'); ?>', focus: !0, callback: function ()
+        {
+            
+            callback(label_id_arr);
+        }
+    }, {id: "cancel", name: '<?= __('取消'); ?>'});
 </script>
-<script type="text/javascript">
-function refreshPage() 
-{ 
-    parent.location.reload();
-} 
 
-    
- $(document).ready(function(){
-         var ajax_url = './index.php?ctl=Seller_Shop_Info&met=addcategoryrow&typ=json';
-        $('#form').validator({
-            ignore: ':hidden',
-            theme: 'yellow_right',
-            timely: 1,
-            stopOnError: false,
-            rules: {
-              
-            },
-            fields: {
-                 'entity[entity_name]': 'required',
-                'entity[entity_xxaddr]':'required',
-                'entity[entity_tel]':'tel'
-            },
-           valid:function(form){
-                 var me = this;
-                // 提交表单之前，hold住表单，防止重复提交
-                me.holdSubmit();
-                //表单验证通过，提交表单
-                $.ajax({
-                    url: ajax_url,
-                    data:$("#form").serialize(),
-                    success:function(a){
-                        if(a.status == 200)
-                        {
-                           parent.Public.tips.success("<?=__('操作成功！')?>");
-                            refreshPage();
-                        }
-                        else
-                        {
-                            if(a.msg !== 'failure')
-                            {
-                                parent.Public.tips.error(a.msg);
-                            }else{
-                                parent.Public.tips.error("<?=__('操作失败！')?>");
-                            }
-
-                            me.holdSubmit(false);
-                        }
-                    }
-                });
-            }
-
-        });
-    });
-
-
-
-    
-
- 
-</script>
-</script>
