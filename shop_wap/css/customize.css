@@ -673,6 +673,7 @@
 	margin-bottom:0.227rem;
 	padding-left:0.681rem;
 	background:#fff;
+	box-sizing:border-box;
 }
 .special-goods-top{
 	position:relative;

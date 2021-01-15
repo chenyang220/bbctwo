@@ -57,7 +57,7 @@
 	    <div class="custom-product-det-content">
 	    	<div class="custom-det-module">
 				<div class="special-goods-top">
-					<p><b class="rmb">￥</b><strong class="money">89</strong><em class="origin-pri">价格￥168</em></p>
+					<p><b class="rmb">￥</b><strong class="money">89</strong><em class="origin-pri">价格￥<i class="through">168</i></em></p>
 					<p class="label-p"><label class="label-item">西游记</label><label class="label-item">火焰山</label></p>
 					<h4>吐鲁番火焰山 —— 位于新建吐鲁番市东北区，是全国最热的地方</h4>
 					<a class="share" href=""><i></i><em>分享</em></a>

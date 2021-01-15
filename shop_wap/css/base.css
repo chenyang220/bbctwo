@@ -426,7 +426,7 @@ sub { vertical-align: text-bottom }
 .header-nav { display: inline-block; margin: 0 auto; vertical-align: top; font-size: 0; white-space: nowrap; }
 .header-nav li { display: inline-block; vertical-align: top; text-align: center; height: 1.95rem; }
 .header-nav li a { display: inline-block; padding: 0.1rem 0.25rem; margin: 0 0.5rem; font-size: 0.818rem; line-height: 1.825rem; color: #222; }
-.header-nav li.cur a { padding: 0.1rem 0.05rem 0 0.05rem; color: #fe244b;border-bottom: 1px solid #fe244b;}
+.header-nav li.cur a { padding: 0.1rem 0.05rem 0 0.05rem; color: #fe244b;border-bottom: 1px solid #F5626B;}
 .header-r {/* position: absolute; z-index: 1; top: 0; right: 0; */ font-size: 0; text-align: right; }
 .header-r a.text { position: relative; z-index: 1; display: inline-block; white-space: nowrap; width: 1.6rem; height: 0.95rem; padding: 0.6rem 0.7rem 0.4rem 0; font-size: 0.7rem; line-height: 0.975rem; color: #ED5564;}
 .header-r a { position: relative; z-index: 1; display: inline-block; vertical-align: top; width: 0.95rem; height: 0.95rem; padding: 0.5rem 0.5rem; }

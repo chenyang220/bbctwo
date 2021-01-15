@@ -435,7 +435,7 @@ $(function () {
                         }
 
                         var windowWidth=$(window).width();
-                        $("#mySwipe").css("height",windowWidth);
+                        // $("#mySwipe").css("height",windowWidth);
     
                         // var userAgentInfos = /iphone/gi.test(navigator.userAgent) && (screen.height == 812 && screen.width == 375);
                         // if (userAgentInfos == true) {
@@ -1372,7 +1372,7 @@ $(function () {
             }
         });
     }
-    $.scrollTransparent();
+    // $.scrollTransparent();
     $("#product_detail_html").on("click", "#get_area_selected", function () {
         var common_id = $(this).data("common_id");
         var transport_type_id = $(this).data("transport_type_id");
@@ -1688,22 +1688,35 @@ $(function(){
         }
     });
      $.ajax({
-            url: ApiUrl + "/index.php?ctl=Goods_Goods&met=goods&typ=json",
-            type: "get",
-            data: { goods_id: goods_id,
-                    k: getCookie('key'),
-                    u: getCookie('id')
-            },
-            dataType: "json",
-            success: function (result) {
-                if (result.status == 200) {
-                    var html = template.render('productRecommendation', result.data);
-                                    contentList['recommend']='true';
-                    $("#recommendation").append(html);
+		url: ApiUrl + "/index.php?ctl=Goods_Goods&met=goods&typ=json",
+		type: "get",
+		data: { goods_id: goods_id,
+				k: getCookie('key'),
+				u: getCookie('id')
+		},
+		dataType: "json",
+		success: function (result) {
+			if (result.status == 200) {
+				var html = template.render('productRecommendation', result.data);
+								contentList['recommend']='true';
+				$("#recommendation").append(html);
 
-                } else {
-                    $.sDialog({skin: "red", content: "<?= __('网络异常'); ?>", okBtn: false, cancelBtn: false});
-                }
-            }
-        });
+			} else {
+				$.sDialog({skin: "red", content: "<?= __('网络异常'); ?>", okBtn: false, cancelBtn: false});
+			}
+		}
+	});
+	
+	$(window).scroll(function() { 
+		var domHeight=$('#header').height();
+		console.log(domHeight,$(window).scrollTop());
+		if($(window).scrollTop()>domHeight){
+			$('.customize-detail-head-nav').css('display','flex');
+			$('.customize-detail-main').addClass('active');
+		}else{
+			$('.customize-detail-head-nav').css('display','none');
+			$('.customize-detail-main').removeClass('active');
+		}
+		
+	})  
 })
