@@ -45,11 +45,13 @@ function initEvent()
 function initGrid()
 {
      var gridWH = Public.setGrid(), _self = this;
-     var t = ["id","操作","标签名称", "添加时间"], e = [
+     var t = ["id","操作","标签名称","标签排序", "添加时间","标签logo"], e = [
         {name: "id", index: "id",  align: "center",width: 200,hidden:true},
         {name: "operate",width: 70,fixed: !0,align: "center",formatter: operFmattershop}, 
         {name: "label_name", index: "label_name",  align: "center",width: 200},
-        {name: "create_time", index: "create_time", align: "center",width: 200}
+        {name: "label_tag_sort", index: "label_tag_sort", align: "center",width: 100},
+        {name: "create_time", index: "create_time", align: "center",width: 200},
+        {name: "label_logo", index: "label_logo", align: "center",width: 100,formatter: img_logo}
         ];
 	$("#grid").jqGrid({
         url: SITE_URL + "?ctl=Shop_Label&met=getLabelList&typ=json",
@@ -108,8 +110,8 @@ var handle = {
             title: i,
             content: "url:"+ SITE_URL + "?ctl=Shop_Label&met="+t+"ShopLabel&label_id="+e,
             data: a,
-            width: 500,
-            height: 300,
+            width: 700,
+            height: 800,
             max: !1,
             min: !1,
             cache: !1,
@@ -148,6 +150,13 @@ function operFmattershop(val, opt, row) {
     return html_con;
 };
 
+function img_logo (val, opt, row) {
+    var html_con = '';
+    if (row.label_logo) {
+         html_con = '<img style="width:60px;height:60px" src="' + row.label_logo + '">';
+    } 
+    return html_con;
+}
 
 initEvent();
 initGrid();

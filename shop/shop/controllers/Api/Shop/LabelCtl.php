@@ -8,6 +8,8 @@ class Api_Shop_LabelCtl extends Api_Controller
     public function addLabelset ()
     {
         $label_name = trim(request_string("label_name"));
+        $label_tag_sort = request_string("label_tag_sort");
+        $label_logo = request_string("label_logo");
         $Label_BaseModel = new Label_BaseModel();
         $Label_Base = $Label_BaseModel->getOneByWhere(array("label_name"=>$label_name));
 
@@ -16,6 +18,8 @@ class Api_Shop_LabelCtl extends Api_Controller
         }
  		$rows['label_name'] = $label_name;
 		$rows['create_time'] = get_date_time();
+        $rows['label_tag_sort'] = $label_tag_sort;
+        $rows['label_logo'] = $label_logo;
         $flag = $Label_BaseModel->addLabelBase($rows);
         if ($flag) {
         	$msg = "添加标签成功";
@@ -63,8 +67,12 @@ class Api_Shop_LabelCtl extends Api_Controller
     {
         $id = request_int("id");
         $label_name = trim(request_string("label_name"));
+        $label_tag_sort = request_string("label_tag_sort");
+        $label_logo = request_string("label_logo");
         $Label_BaseModel = new Label_BaseModel();
         $edit['label_name'] = $label_name;
+        $edit['label_tag_sort'] = $label_tag_sort;
+        $edit['label_logo'] = $label_logo;
         $Label_Base = $Label_BaseModel->editLabelBase($id,$edit);
         if ($Label_Base) {
             $msg = "标签修改成功";
