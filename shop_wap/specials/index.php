@@ -1,3 +1,7 @@
+<?php
+include   '../includes/header.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en" class="bgf">
 <head>
@@ -46,7 +50,8 @@
     	</div>
     </div>
    <div class="customize-feature-page-contents">
-    	<ul class="customize-feature-page-navs clearfix bgf">
+   		<div id="ts_logo"></div>
+    	<!-- <ul class="customize-feature-page-navs clearfix bgf">
     		<li>
     			<a href="details2.html">
     				<img src="../images/spec/zk/nav1.png" alt="nav">
@@ -95,7 +100,7 @@
     				<span>非遗</span>
     			</a>
     		</li>
-    	</ul>
+    	</ul> -->
 		<div class="pl15 pr30 bgf">
 			<div class="pl15">
 				<div class="swiper-container swiper-custom-index">
@@ -170,8 +175,31 @@
 			</ul>
 		</div>
     </div>
+
+
+    <script type="text/html" id="ts_logo_template">
+	  	<ul class="customize-feature-page-navs clearfix bgf" style="margin-top:15px">
+	  		<% if (data.label_tag_sort) {  %>
+	  			<% for (var i in data.label_tag_sort) { %>
+		    		<li>
+		    			<a href="lists.html?label_id=<%=data.label_tag_sort[i].id%>">
+		    				<img src="<%=data.label_tag_sort[i].label_logo%>" alt="nav">
+		    				<span><%=data.label_tag_sort[i].label_name%></span>
+		    			</a>
+		    		</li>
+		    	<% } %>
+    		<% } %>
+    	</u>
+	</script>
 	<script src="../js/special-common.js?v=8"></script>
 	<script src="../js/waterfall.js?v=8"></script>
+	<script type="text/javascript" src="../js/cookie.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js" ></script>
+    <script type="text/javascript" src="../js/animation.js"></script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/specials/index.js"></script>
+	<script type="text/javascript" src="../js/tmpl/footer.js"></script>
 	<script>
 		
 		// html为测试数据
@@ -201,3 +229,7 @@
 	</script>
 </body>
 </html>
+
+<?php
+include '../includes/footer.php';
+?>

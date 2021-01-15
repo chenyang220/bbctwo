@@ -39,6 +39,16 @@ class IndexCtl extends Controller
         }
     }
 
+
+
+    public function tsIndex () {
+        $Label_BaseModel = new Label_BaseModel();
+        $Label_Base = $Label_BaseModel->getByWhere(array("label_tag_sort:>"=>0,"label_tag_sort:<="=>8));
+        $label_tag_sort_arr = array_column($Label_Base, NULL,"label_tag_sort");
+        $data['label_tag_sort'] = $label_tag_sort_arr;
+        return $this->data->addBody(-140,$data, "uuu", 200);
+    }
+
     public function index()
     {
         if ('json' == $this->typ) {
