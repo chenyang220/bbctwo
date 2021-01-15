@@ -436,7 +436,7 @@ sub { vertical-align: text-bottom }
 .header-r a i.refresh { background-image: url(../images/reload_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 85%; opacity: 0.60;}
 .header-r a i.icon-add { background-image: url(../images/value_add.png); background-repeat: no-repeat; background-position:50% 50%; background-size: 80%; opacity: 0.65; }
 .header-r a i.save { background-image: url(../images/save_b.png); background-repeat: no-repeat; background-position:50% 50%; background-size: 80%; opacity: 0.65; }
-.header-r a.search-btn { width: 2.113rem; height: 1.95rem; text-align: center; padding: 0; font-size: 0.636rem; line-height: 1.95rem; color: #666; }
+.header-r a.search-btn { width: 2.113rem; height: 1.95rem; text-align: center; padding: 0; font-size: 0.636rem; line-height: 1.95rem; color:#fff; }
 .header-r a.msg-log { width: 2.45rem; height: 1.95rem;  padding: 0;}
 .header-r a.msg-log i { background-image: url(../images/msg_log_b.png); background-repeat: no-repeat; background-position:50% 50%; background-size:70%; opacity: 0.7;}
 .dpm{display: block; width: 7rem; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;}

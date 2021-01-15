@@ -26,7 +26,7 @@ var myDate = new Date;
 var searchTimes = myDate.getTime();
 var brandsHtml="";
 var brandHtml2="";
-
+var columns=1;
 var mb = getQueryString("mb");
 if (!getCookie('sub_site_id')) {
     addCookie('sub_site_id', 0, 0);
@@ -62,7 +62,7 @@ $(function () {
     $('#ldg_lockmask').bind("touchmove", function (e) {
         e.preventDefault();
     });
-    $("#header").on("click", ".header-inp", function () {
+    $("body").on("click", ".header-inp,.to-search", function () {
         location.href = WapSiteUrl + "/tmpl/search.html?keyword=" + keyword + "&mb=" + mb;
     });
     if (keyword != "") {
@@ -201,7 +201,8 @@ function get_list() {
         e['pagesize'] = pagesize;
 
         var r = template.render("home_body", e);
-        $("#product_list .goods-secrch-list").append(r);
+        $("#product_list .goods-search-list").append(r);
+		 waterFall(columns);
         if (e.data.page < e.data.total) {
             firstRow = e.data.records;
             hasmore = true;
@@ -560,7 +561,7 @@ function init_get_list(e, r) {
     curpage = 1;
     firstRow = 0;
     hasmore = true;
-    $("#product_list .goods-secrch-list").html("");
+    $("#product_list .goods-search-list").html("");
     $("#footer").removeClass("posa");
     get_list();
 }
@@ -594,4 +595,15 @@ $(function () {
             }
         }, 1);
     }
+	
+	$("#menuChange").click(function(){
+		if($('.style-change').hasClass('list')){
+			$('.style-change').removeClass('list').addClass('grid');
+			columns=2;
+		}else{
+			$('.style-change').removeClass('grid').addClass('list');
+			columns=1;
+		}
+		waterFall(columns);
+	})
 })
