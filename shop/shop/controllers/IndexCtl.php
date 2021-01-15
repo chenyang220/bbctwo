@@ -35,6 +35,10 @@ class IndexCtl extends Controller
              } else {
                 $data[0] = Web_ConfigModel::value("tpl_layout_style");
              }
+
+
+
+
              return $this->data->addBody(-140, $data, 'success', 200);
         }
     }
@@ -43,9 +47,46 @@ class IndexCtl extends Controller
 
     public function tsIndex () {
         $Label_BaseModel = new Label_BaseModel();
-        $Label_Base = $Label_BaseModel->getByWhere(array("label_tag_sort:>"=>0,"label_tag_sort:<="=>8));
+        $Label_Base = $Label_BaseModel->getByWhere(array("label_tag_sort:>"=>0,"label_tag_sort:<="=>8));    
         $label_tag_sort_arr = array_column($Label_Base, NULL,"label_tag_sort");
         $data['label_tag_sort'] = $label_tag_sort_arr;
+
+        $layout_list = $this->mbTplLayoutModel->getByWhere(array('tpl_layout_style'=>4));
+        $mb_tpl_layout_type_arr = array_column($layout_list, NULL,'mb_tpl_layout_type');
+      
+        $Label_Base_arr = $Label_BaseModel->getByWhere("*");
+        $label_name_arr = array_column($Label_Base_arr, "label_name","id");
+
+        $goods_arr = array();
+        $Goods_BaseModel = new  Goods_BaseModel();
+        $Goods_CommonModel = new Goods_CommonModel();
+        if ($mb_tpl_layout_type_arr['goods']['mb_tpl_layout_data']) {
+            foreach ($mb_tpl_layout_type_arr['goods']['mb_tpl_layout_data'] as $key => $goods_id) {
+               $Goods_Base = $Goods_BaseModel->getOne($goods_id);
+               $goods_arr[$key]['goods_name'] = $Goods_Base['goods_name'];
+               $goods_arr[$key]['goods_image'] = $Goods_Base['goods_image'];
+               $goods_arr[$key]['goods_id'] = $Goods_Base['goods_id'];
+               $goods_arr[$key]['goods_price'] = $Goods_Base['goods_price'];
+               $goods_arr[$key]['goods_salenum'] = $Goods_Base['goods_salenum'];
+               $Goods_Common = $Goods_CommonModel->getOne($Goods_Base['common_id']);
+
+                if ($Goods_Common['label_id']) {
+                   $label_id_arr = explode(",", $Goods_Common['label_id']);
+                   $label_name = [];
+                   foreach ($label_id_arr as $keys => $label_id) {
+                       $label_name[] = $label_name_arr[$label_id];
+                   }
+                } else {
+                    $label_name = '';
+                }
+                              
+
+               $goods_arr[$key]['label_name']  = $label_name;
+               $goods_arr[$key]['goods_id'] = $Goods_Base['goods_id'];
+            }
+        }
+        $mb_tpl_layout_type_arr['goods'] = $goods_arr;
+        $data['layout_list'] = $mb_tpl_layout_type_arr;
         return $this->data->addBody(-140,$data, "uuu", 200);
     }
 
