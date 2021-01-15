@@ -90,3 +90,9 @@ MODIFY COLUMN `label_id`  varchar(255) NULL COMMENT '商品标签ID' AFTER `comm
 
 ALTER TABLE `yf_shop_base`
 MODIFY COLUMN `label_id`  varchar(255) NULL DEFAULT NULL COMMENT '标签ID' AFTER `shop_wap_index`;
+
+
+INSERT INTO `yf_admin_menu` 
+(`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) 
+VALUES 
+('', '19001', '特色首页模板', '', '0', 'Config', 'tsIndex', 'config_type%5B%5D=mobile', '<li>该模板为特色商城模板,点击右侧组件的“添加”按钮，增加对应类型版块到页面，其中“广告条版块”只能添加一个。</li>\n            <li>鼠标触及左侧页面对应版块，出现操作类链接，可以对该区域块进行“移动”、“启用/禁用”、“编辑”、“删除”操作。</li>\n            <li>新增加的版块内容默认为“禁用”状态，编辑内容并“启用”该块后将在手机端即时显示。</li>', '0', '0000-00-00 00:00:00');
