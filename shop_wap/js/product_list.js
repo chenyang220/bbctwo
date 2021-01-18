@@ -22,6 +22,7 @@ var brand_ids = getQueryString("brand_ids");
 var goods_brand_alls = getQueryString("goods_brand_alls");
 var goods_brands_alls = getQueryString("goods_brands_alls");
 var ci = getQueryString("ci");
+var label_id = getQueryString("label_id");
 var myDate = new Date;
 var searchTimes = myDate.getTime();
 var brandsHtml="";
@@ -182,6 +183,7 @@ function get_list() {
     param.pos = goods_pos
     param.k = key
     param.u = u
+    param.label_id = label_id
     param.mb = mb;
     param.shop_id_search = getCookie("shop_search");
     $.getJSON(ApiUrl + "/index.php?ctl=Goods_Goods&met=goodslist&typ=json&ua=wap&sub_site_id=" + sub_site_id + window.location.search.replace("?", "&"), param, function (e) {

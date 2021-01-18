@@ -300,7 +300,11 @@
             if ($act === 'evaluate') {
                 $order_row['common_evaluate'] = $actorder;
             }
-            
+            $label_id = request_string('label_id');
+            //评论数
+            if ($label_id > 0) {
+                $cond_row['label_id:like'] = '%'.$label_id.'%';
+            }
             $op1 = request_string('op1');
             $op2 = request_string('op2');
             $op3 = request_string('op3');
@@ -360,7 +364,10 @@
             if (request_string('mb') == "shop") {
                 $cond_row['shop_id'] = request_string('shop_id_search');
             }
+
+
             $data = $Goods_CommonModel->getGoodsList($cond_row, $order_row, $page, $rows, $property_value_row);
+
             //店铺分类
             $shop_goods_cat_id = request_int('shop_goods_cat_id');
             if($shop_goods_cat_id){
@@ -370,7 +377,6 @@
                     $shop_goods_cat_ids = array_column($child,'shop_goods_cat_id');
                 }
                 $shop_goods_cat_ids[] = $shop_goods_cat_id;
-
                 foreach ($data['items'] as $key => $value) {
                     if(!array_intersect($shop_goods_cat_ids,$value['shop_goods_cat_id'])){
 
@@ -382,12 +388,19 @@
 
             }
 
+            $Label_BaseModel = new Label_BaseModel();
+            $Label_Base = $Label_BaseModel->getByWhere("*");
+            $label_name_arr = array_column($Label_Base, "label_name","id");
             // 商品参加促销活动，即显示促销价，取消原价显示
             $Goods_BaseModel = new Goods_BaseModel();
             if (!empty($data['items'])) {
-                //$goods_base['goods_is_shelves'] != Goods_BaseModel::GOODS_UP
-                //
                foreach ($data['items'] as $k=>$v) {
+                    $label_name = array();
+                    $label_id_arr = explode(",", $v['label_id']);
+                    foreach ($label_id_arr as $key => $label_id) {
+                        $label_name[] = $label_name_arr[$label_id];
+                    }
+                    $data['items'][$k]['label_name'] = $label_name;
                     $goods_detail = $Goods_BaseModel->getGoodsDetailInfoByGoodId($v['goods_id']);
                     if ($goods_detail['goods_base']['promotion_price']) {
                         $data['items'][$k]['g_price'] =  $goods_detail['goods_base']['promotion_price'];

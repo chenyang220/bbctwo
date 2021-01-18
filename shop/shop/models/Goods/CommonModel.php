@@ -349,6 +349,7 @@
             foreach ($common_rows as $key => $val) {
                 $shop_base = $shop_base_model -> getOne($val['shop_id']);
                 $common_rows[$key]['shop_name'] = $shop_base['shop_name'];
+                $common_rows[$key]['shop_wap_index'] = $shop_base['shop_wap_index'];
             }
             
             if ('SKU' == $type) {

@@ -189,9 +189,12 @@
 				<dd class="goods-sale">
 					<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
 					<p class="label">
-						<label class="label-item">辣椒</label>
-						<label class="label-item">干辣线椒</label>
-					</p>
+                        <% if(common_list[j].label_name){%>
+                            <%for(label_id in common_list[j].label_name){%>
+                            <label class="label-item"><%=common_list[j].label_name[label_id]%></label>
+                            <% } %>
+                        <% } %>
+                    </p>
 					<p>
 						<span class="goods-price"><b><?= __('￥'); ?></b><em><%=goods_list[i].goods_price;%></em>
 							<%
@@ -202,7 +205,7 @@
 								}
 							%>
 						</span>
-						<b class="had-sale">330人付款</b>
+						<b class="had-sale"><%=common_list[j].common_salenum;%>人付款</b>
 					</p>
 								
 						
@@ -215,8 +218,8 @@
 						<%}%>
 				</dd>
 				<dd class="goods-assist fz0">
-					<a href="javascript:;">
-						<span>辣妹子店</span><i class="iconfont icon-arrow-right"></i>
+					 <a href="store<%= common_list[j].shop_wap_index == 1 ? '' :common_list[j].shop_wap_index %>.html?shop_id=<%=common_list[j].shop_id %>">
+						<span><%=common_list[j].shop_name;%></span><i class="iconfont icon-arrow-right"></i>
 					</a>
 					<!-- <a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
 						<span class="goods-sold"><?= __('销量'); ?>
