@@ -788,7 +788,7 @@ if ($_GET['qr']) {
            <!-- <div  class="contentB bg-ff mt-20"><section id="s-rate" data-spm=""></section></div> -->
 			<!-- 新版评价2021 -->
 			<div class="custom-det-module">
-				<div class="special-goods-evaluate" id="s-rate">
+				<div class="contentB special-goods-evaluate" id="s-rate">
 					
 				</div>
 			</div>
@@ -1360,7 +1360,7 @@ if ($_GET['qr']) {
 //        console.log(ModuleArray[i])
        console.log(i)
                 var name = ModuleArray[i];
-                var padding = -45;
+                var padding = -90;
                 var altitude = $("." + name + "").offset().top + padding;
                 ModuleDistance.push(altitude);
 //        console.log(ModuleDistance)

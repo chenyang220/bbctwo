@@ -1372,7 +1372,7 @@ $(function () {
             }
         });
     }
-    // $.scrollTransparent();
+    //$.scrollTransparent();
     $("#product_detail_html").on("click", "#get_area_selected", function () {
         var common_id = $(this).data("common_id");
         var transport_type_id = $(this).data("transport_type_id");
@@ -1709,7 +1709,6 @@ $(function(){
 	
 	$(window).scroll(function() { 
 		var domHeight=$('#header').height();
-		console.log(domHeight,$(window).scrollTop());
 		if($(window).scrollTop()>domHeight){
 			$('.customize-detail-head-nav').css('display','flex');
 			$('.customize-detail-main').addClass('active');
