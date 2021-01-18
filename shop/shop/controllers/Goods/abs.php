@@ -1,241 +1,148 @@
 Array
 (
-    [client] => PC
-    [ready] => 
-    [config] => Array
+    [shop_id] => 1
+    [user_id] => 10002
+    [user_name] => 13311767111
+    [shop_name] => 订来订趣 新疆礼物
+    [shop_grade_id] => 1
+    [shop_class_id] => 1
+    [shop_all_class] => 0
+    [shop_self_support] => false
+    [shop_business] => 1
+    [shop_create_time] => 2020-11-06 10:09:07
+    [shop_end_time] => 2021-11-06 10:09:07
+    [shop_latitude] => 
+    [shop_longitude] => 
+    [shop_settlement_cycle] => 30
+    [shop_settlement_last_time] => 2020-11-06 10:09:07
+    [shop_points] => 0
+    [shop_logo] => https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200924/160092835926525526334176278399.png!200x60.png
+    [wap_shop_logo] => https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200928/160126733562579976301346610359.png!64x64.png
+    [shop_banner] => https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200924/160093636364520163496742265596.jpg!1200x150.jpg
+    [shop_wap_banner] => https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200927/160118722550096737897429204657.jpg!1200x150.jpg
+    [shop_status] => 3
+    [shop_close_reason] => 
+    [shop_praise_rate] => 0.00
+    [shop_desccredit] => 0.00
+    [shop_servicecredit] => 0.00
+    [shop_deliverycredit] => 0.00
+    [shop_collect] => 1
+    [shop_template] => default
+    [shop_workingtime] => 
+    [shop_slide] => 
+    [shop_slideurl] => 
+    [shop_domain] => dldqds.look56.com
+    [shop_region] => 
+    [shop_address] => 
+    [shop_qq] => 
+    [shop_ww] => 
+    [shop_tel] => 
+    [area_code] => 86
+    [shop_free_shipping] => 0
+    [shop_account] => 
+    [shop_payment] => 1
+    [joinin_year] => 1
+    [is_renovation] => 0
+    [is_only_renovation] => 0
+    [is_index_left] => 0
+    [shop_print_desc] => 
+    [shop_stamp] => 
+    [shop_parent_id] => 0
+    [shop_type] => 1
+    [district_id] => 145
+    [shop_verify_reason] => 1
+    [shop_common_service] => 
+    [shop_wap_index] => 1
+    [label_id] => 4,5,6,7
+    [label_remarks] => 旅游好啊
+    [label_is_check] => 0
+    [id] => 1
+    [shop_status_cha] => 开店成功
+    [shop_all_class_cha] => 否
+    [shop_grade] => 普通店铺
+    [shop_company_address] => 上海 徐汇区
+    [shop_desc_scores] => 5
+    [shop_service_scores] => 5
+    [shop_send_scores] => 5
+    [com_desc_scores] => 5
+    [com_service_scores] => 5
+    [com_send_scores] => 5
+    [contract] => Array
         (
-            [debug] => false
-            [token] => 
-            [enterId] => 
-            [appId] => 
-            [appSecurity] => 
-            [signature] => 
-            [redirectUri] => 
         )
 
-    [error] => 
-    [call] => 
-    [debug] => Array
-        (
-            [log] => 
-            [error] => 
-            [_req] => 
-            [_res] => 
-        )
-
-    [getUrlParamt] => 
 )
 Array
 (
-    [client] => PC
-    [ready] => 
-    [config] => Array
+    [shop_id] => 1
+    [user_id] => 10002
+    [user_name] => 13311767111
+    [shop_name] => 订来订趣 新疆礼物
+    [shop_grade_id] => 1
+    [shop_class_id] => 1
+    [shop_all_class] => 0
+    [shop_self_support] => false
+    [shop_business] => 1
+    [shop_create_time] => 2020-11-06 10:09:07
+    [shop_end_time] => 2021-11-06 10:09:07
+    [shop_latitude] => 
+    [shop_longitude] => 
+    [shop_settlement_cycle] => 30
+    [shop_settlement_last_time] => 2020-11-06 10:09:07
+    [shop_points] => 0
+    [shop_logo] => https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200924/160092835926525526334176278399.png!200x60.png
+    [wap_shop_logo] => https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200928/160126733562579976301346610359.png!64x64.png
+    [shop_banner] => https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200924/160093636364520163496742265596.jpg!1200x150.jpg
+    [shop_wap_banner] => https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200927/160118722550096737897429204657.jpg!1200x150.jpg
+    [shop_status] => 3
+    [shop_close_reason] => 
+    [shop_praise_rate] => 0.00
+    [shop_desccredit] => 0.00
+    [shop_servicecredit] => 0.00
+    [shop_deliverycredit] => 0.00
+    [shop_collect] => 1
+    [shop_template] => default
+    [shop_workingtime] => 
+    [shop_slide] => 
+    [shop_slideurl] => 
+    [shop_domain] => dldqds.look56.com
+    [shop_region] => 
+    [shop_address] => 
+    [shop_qq] => 
+    [shop_ww] => 
+    [shop_tel] => 
+    [area_code] => 86
+    [shop_free_shipping] => 0
+    [shop_account] => 
+    [shop_payment] => 1
+    [joinin_year] => 1
+    [is_renovation] => 0
+    [is_only_renovation] => 0
+    [is_index_left] => 0
+    [shop_print_desc] => 
+    [shop_stamp] => 
+    [shop_parent_id] => 0
+    [shop_type] => 1
+    [district_id] => 145
+    [shop_verify_reason] => 1
+    [shop_common_service] => 
+    [shop_wap_index] => 1
+    [label_id] => 4,5,6,7
+    [label_remarks] => 旅游好啊
+    [label_is_check] => 0
+    [id] => 1
+    [shop_status_cha] => 开店成功
+    [shop_all_class_cha] => 否
+    [shop_grade] => 普通店铺
+    [shop_company_address] => 上海 徐汇区
+    [shop_desc_scores] => 5
+    [shop_service_scores] => 5
+    [shop_send_scores] => 5
+    [com_desc_scores] => 5
+    [com_service_scores] => 5
+    [com_send_scores] => 5
+    [contract] => Array
         (
-            [debug] => false
-            [token] => 
-            [enterId] => 
-            [appId] => 
-            [appSecurity] => 
-            [signature] => 
-            [redirectUri] => 
         )
 
-    [error] => 
-    [call] => 
-    [debug] => Array
-        (
-            [log] => 
-            [error] => 
-            [_req] => 
-            [_res] => 
-        )
-
-    [getUrlParamt] => 
-)
-Array
-(
-    [client] => PC
-    [ready] => 
-    [config] => Array
-        (
-            [debug] => false
-            [token] => 
-            [enterId] => 
-            [appId] => 
-            [appSecurity] => 
-            [signature] => 
-            [redirectUri] => 
-        )
-
-    [error] => 
-    [call] => 
-    [debug] => Array
-        (
-            [log] => 
-            [error] => 
-            [_req] => 
-            [_res] => 
-        )
-
-    [getUrlParamt] => 
-)
-Array
-(
-    [client] => PC
-    [ready] => 
-    [config] => Array
-        (
-            [debug] => false
-            [token] => 
-            [enterId] => 
-            [appId] => 
-            [appSecurity] => 
-            [signature] => 
-            [redirectUri] => 
-        )
-
-    [error] => 
-    [call] => 
-    [debug] => Array
-        (
-            [log] => 
-            [error] => 
-            [_req] => 
-            [_res] => 
-        )
-
-    [getUrlParamt] => 
-)
-Array
-(
-    [client] => PC
-    [ready] => 
-    [config] => Array
-        (
-            [debug] => false
-            [token] => 
-            [enterId] => 
-            [appId] => 
-            [appSecurity] => 
-            [signature] => 
-            [redirectUri] => 
-        )
-
-    [error] => 
-    [call] => 
-    [debug] => Array
-        (
-            [log] => 
-            [error] => 
-            [_req] => 
-            [_res] => 
-        )
-
-    [getUrlParamt] => 
-)
-Array
-(
-    [client] => PC
-    [ready] => 
-    [config] => Array
-        (
-            [debug] => false
-            [token] => 
-            [enterId] => 
-            [appId] => 
-            [appSecurity] => 
-            [signature] => 
-            [redirectUri] => 
-        )
-
-    [error] => 
-    [call] => 
-    [debug] => Array
-        (
-            [log] => 
-            [error] => 
-            [_req] => 
-            [_res] => 
-        )
-
-    [getUrlParamt] => 
-)
-Array
-(
-    [client] => PC
-    [ready] => 
-    [config] => Array
-        (
-            [debug] => false
-            [token] => 
-            [enterId] => 
-            [appId] => 
-            [appSecurity] => 
-            [signature] => 
-            [redirectUri] => 
-        )
-
-    [error] => 
-    [call] => 
-    [debug] => Array
-        (
-            [log] => 
-            [error] => 
-            [_req] => 
-            [_res] => 
-        )
-
-    [getUrlParamt] => 
-)
-Array
-(
-    [client] => PC
-    [ready] => 
-    [config] => Array
-        (
-            [debug] => true
-            [token] => a0ftbdstu7aekih0
-            [enterId] => 0
-            [appId] => 172d1c69e247207db52b54081255e450
-            [appSecurity] => 896f886913826082f52a49a63aef4cff
-            [redirectUri] => https://ms.look56.com/tmpl/product_detail.html?goods_id=9
-        )
-
-    [error] => 
-    [call] => 
-    [debug] => Array
-        (
-            [log] => 
-            [error] => 
-            [_req] => 
-            [_res] => 
-        )
-
-    [getUrlParamt] => 
-)
-Array
-(
-    [client] => PC
-    [ready] => 
-    [config] => Array
-        (
-            [debug] => true
-            [token] => a0ftbdstu7aekih0
-            [enterId] => 0
-            [appId] => 172d1c69e247207db52b54081255e450
-            [appSecurity] => 896f886913826082f52a49a63aef4cff
-            [redirectUri] => https://ms.look56.com/tmpl/product_detail.html?goods_id=9
-        )
-
-    [error] => 
-    [call] => 
-    [debug] => Array
-        (
-            [log] => 
-            [error] => 
-            [_req] => 
-            [_res] => 
-        )
-
-    [getUrlParamt] => 
 )

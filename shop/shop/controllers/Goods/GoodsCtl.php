@@ -1546,14 +1546,30 @@
                     }
                 }
                 
+
+
+                $Goods_CommonModel = new Goods_CommonModel();
+                $Goods_Common_lab = $Goods_CommonModel->getOne($common_id);
+
+ 
+                $label_id_arr = explode(",", $Goods_Common_lab['label_id']);
+
+                $Label_BaseModel = new Label_BaseModel();
+                $Label_Base = $Label_BaseModel->getByWhere(array("id:IN"=>$label_id_arr));
+                $label_name_arr = array_column($Label_Base, "label_name","id");
                 //商品详情
                 $goods_info = array_merge($goods_detail['common_base'], $goods_detail['goods_base']);
-                
+                $goods_info['label_name_arr'] = $label_name_arr;
                 if (empty($goods_info['common_spec_name'])) {
                     $goods_info['common_spec_name'] = "";
                     $goods_info['common_spec_value'] = "";
                 }
-                
+                $goods_info['shop_company_address'] = $shop_detail['shop_company_address'];
+                $shop_label_id_arr = explode(",", $shop_detail['label_id']);
+                $Label_Base_Shop = $Label_BaseModel->getByWhere(array("id:IN"=>$shop_label_id_arr));
+                $shop_label_name_arr = array_column($Label_Base_Shop, "label_name","id");
+                $goods_info['shop_label_name_arr'] = $shop_label_name_arr;
+                $goods_info['wap_shop_logo'] = $shop_detail['wap_shop_logo'];
                 //好评率
                 $Goods_EvaluationModel = new Goods_EvaluationModel();
                 $all_count = $Goods_EvaluationModel->countEvaluation($common_id, 'all');
@@ -1635,7 +1651,6 @@
                         $spec_image = $goods_detail['common_base']['common_spec_value_color'];
                     }
                 }
-                
                 $stock_list = $Goods_BaseModel->getGoodsStockList($goods_detail['common_base']['common_id']);
                 $price_list = $Goods_BaseModel->getGoodsPriceList($goods_detail['common_base']['common_id']);
                 //店铺信息

@@ -96,7 +96,7 @@ include   '../includes/header.php';
   		<% if (goods) { %>
   			<% for (var i in goods) { %>
 	    		<li class="item">
-					<a class="pad" href="details1.html">
+					<a class="pad" href="details1.html?goods_id=<%=goods[i].goods_id%>">
 						<em class="img-box"><img src="<%=goods[i].goods_image%>" alt="goods">
 							<!-- <b>景点·3.2km</b> -->
 						</em>

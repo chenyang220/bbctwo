@@ -543,7 +543,13 @@ if ($_GET['qr']) {
 								<% }%>
 							</div>
 							<% } %>
-							<p class="label-p"><label class="label-item">西游记</label><label class="label-item">火焰山</label></p>
+							<p class="label-p">
+                                <% if(goods_info.label_name_arr){ %>
+                                    <% for(label_id in goods_info.label_name_arr){ %>
+                                        <label class="label-item"><%=goods_info.label_name_arr[label_id]%></label>
+                                    <% }%>
+                                <% }%>
+                            </p>
 							<div class="goods-detail-name bg-ff clearfix pl-0 pt-0 pb-0">
 								<dl>
 									<dt class="fz-28 z-dhwz">
@@ -608,7 +614,10 @@ if ($_GET['qr']) {
 			 			<%}%>
 			 			<%}%> <%}} else { %><?= __('默认'); ?> <% } %>
 			 		</p>
-			 		<p><span>发货：吐鲁番</span><span class="ml-20">快递：快递包邮</span></p>
+			 		<p>
+                        <span>发货：<%=goods_info.shop_company_address%></span>
+                    <!--     <span class="ml-20">快递：快递包邮</span> -->
+                    </p>
 			 		<% if (!isEmpty(rgl_str)) { %>
 			 			<p>服务：<%= rgl_str %></p>
 			 		 <% } %>
@@ -795,14 +804,32 @@ if ($_GET['qr']) {
             <% if (store_info.shop_self_support != "true") {%>
             <div class="goods-detail-store">
                 <a href="store<%= store_info.shop_wap_index == 1 ? '' :store_info.shop_wap_index %>.html?shop_id=<%= store_info.store_id %>">
-                    <div class="store-name flex">
-						<i class="icon-store"></i>
-						<div class="flex1">
-							<p class="top"><span class="name"><%= store_info.store_name %></span><b class="fans">粉丝数 56435</b></p>
-							<p><em>综合评分</em><span class="star-span"><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i></span><label class="label-item">人气</label><label class="label-item">销量</label></p>
-						</div>
-						<button>进店逛逛</button>
-					</div>
+                     <div class="store-name flex">
+                        <% if(goods_info.wap_shop_logo){ %>
+                        <!-- <i class="icon-store"></i> -->
+                            <img src="<%= goods_info.wap_shop_logo%>" style="width: 36px;height: 36px;">
+                        <% } else {%>
+                            <i class="icon-store"></i>
+                        <% }%>
+                        <div class="flex1">
+                            <p class="top"><span class="name"><%= store_info.store_name %></span>
+                                <!-- <b class="fans">粉丝数 56435</b> -->
+                            </p>
+                            <p><em>综合评分</em>
+                            <span class="star-span">
+                                <%for(i=0;i< store_info.store_credit.store_desccredit.credit;i++){%>
+                                    <i class="star"></i>
+                                <%}%>
+                            </span>
+                            <% if(goods_info.shop_label_name_arr){ %>
+                                <% for(label_id in goods_info.shop_label_name_arr){ %>
+                                    <label class="label-item"><%=goods_info.shop_label_name_arr[label_id]%></label>
+                                <% }%>
+                            <% }%>
+                            </p>
+                        </div>
+                        <button>进店逛逛</button>
+                    </div>
                     <div class="store-rate">
                 <span class="<%= store_info.store_credit.store_desccredit.percent_class %>">
                     <b class="icon1"></b>
