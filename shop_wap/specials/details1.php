@@ -595,14 +595,9 @@ include   '../includes/header.php';
 							</p>
 							<p><em>综合评分</em>
 							<span class="star-span">
-
 								<%for(i=0;i< store_info.store_credit.store_desccredit.credit;i++){%>
 									<i class="star"></i>
 								<%}%>
-					<!-- 			<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i> -->
 							</span>
 							<% if(goods_info.shop_label_name_arr){ %>
                                 <% for(label_id in goods_info.shop_label_name_arr){ %>
