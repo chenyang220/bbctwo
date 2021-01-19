@@ -188,13 +188,15 @@
 				</dt>
 				<dd class="goods-sale">
 					<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
-					<p class="label">
-                        <% if(common_list[j].label_name){%>
-                            <%for(label_id in common_list[j].label_name){%>
-                            <label class="label-item"><%=common_list[j].label_name[label_id]%></label>
-                            <% } %>
+					
+                    <% if(common_list[j].label_name){%>
+                        <p class="label"> <%= common_list[j].label_name%>
+                        <%for(label_id in common_list[j].label_name){%>
+                        <label class="label-item"><%=common_list[j].label_name[label_id]%></label>
                         <% } %>
-                    </p>
+                          </p>
+                    <% } %>
+                  
 					<p>
 						<span class="goods-price"><b><?= __('￥'); ?></b><em><%=goods_list[i].goods_price;%></em>
 							<%

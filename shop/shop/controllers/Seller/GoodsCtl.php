@@ -119,9 +119,7 @@
         }
         
         public function editGoods()
-        {
-            $Label_BaseModel = new  Label_BaseModel();
-            $Label_Base = $Label_BaseModel->getByWhere("*");
+        { 
             $common_id = request_int('common_id');
             $common_data = $this -> goodsCommonModel -> listByWhere(array('shop_id' => Perm::$shopId, 'common_id' => $common_id));
             if (empty($common_data)) {
@@ -144,6 +142,8 @@
             }
             $cat_id = $common_data['cat_id'];
             $cat_base = $this -> goodsCatModel -> getCat($cat_id);
+            $Label_BaseModel = new  Label_BaseModel();
+            $Label_Base = $Label_BaseModel->getByWhere("*");
             if (empty($cat_base)) {
                 include $this -> view -> getTplPath() . '/' . 'error.php';
             } else {
@@ -231,6 +231,8 @@
                 $bind_info = $Shop_ClassBindModel->getOneByWhere($bind_row);
                 $data['delivery'] = $bind_info['delivery_status'];
                 $data['label_Base'] = $Label_Base;
+                $label_id_arr = explode(",", $common_data['label_id']);
+                $data['label_Base_edit'] = $label_id_arr;
                 $this -> view -> setMet('goodsInfoManage');
                 include $this -> view -> getView();
             }

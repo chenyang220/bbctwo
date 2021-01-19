@@ -181,20 +181,20 @@
 				</span>
 			<dl class="goods-info relative">
 				<dt class="goods-name">
-					<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
+					<a href="<%=data.label_url%>.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
 						<h4><%=goods_list[i].goods_name;%></h4>
 						<h6><%=goods_list[i].goods_jingle;%></h6>
 					</a>
 				</dt>
 				<dd class="goods-sale">
-					<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
+					<a href="<%=data.label_url%>.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
+					<% if(common_list[j].label_name){%>
 					<p class="label">
-						<% if(common_list[j].label_name){%>
-							<%for(label_id in common_list[j].label_name){%>
-                        	<label class="label-item"><%=common_list[j].label_name[label_id]%></label>
-                        	<% } %>
-                        <% } %>
-					</p>
+						<%for(label_id in common_list[j].label_name){%>
+                    	<label class="label-item"><%=common_list[j].label_name[label_id]%></label>
+                    	<% } %>
+				    </p>                    	
+                    <% } %>
 					<p>
 						<span class="goods-price"><b><?= __('￥'); ?></b><em><%=goods_list[i].goods_price;%></em>
 							<%

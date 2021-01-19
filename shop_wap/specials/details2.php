@@ -68,6 +68,7 @@
 </body>
 <script src="../js/jquery.js"></script>
 <script src="../js/swiper.min.js"></script>
+<script src="../js/details2.js"></script>
 <script>
 	$(function(){
 		var windowWidth=$(window).width();

@@ -253,7 +253,11 @@ function get_list() {
         $(".loading").remove();
         curpage++;
         e['pagesize'] = pagesize;
-
+        if (e.data.label_name_arr[label_id] == '民风民俗' || e.data.label_name_arr[label_id] == "非遗"|| e.data.label_name_arr[label_id] == "购物") {
+            e.data.label_url = "details2";
+        } else {
+            e.data.label_url = "details1";
+        }
         var r = template.render("home_body", e);
         $("#product_list .goods-search-list").append(r);
 		 waterFall(columns);

@@ -412,14 +412,19 @@
             $Label_BaseModel = new Label_BaseModel();
             $Label_Base = $Label_BaseModel->getByWhere("*");
             $label_name_arr = array_column($Label_Base, "label_name","id");
+            $data['label_name_arr'] = $label_name_arr;
             // 商品参加促销活动，即显示促销价，取消原价显示
             $Goods_BaseModel = new Goods_BaseModel();
             if (!empty($data['items'])) {
                foreach ($data['items'] as $k=>$v) {
-                    $label_name = array();
-                    $label_id_arr = explode(",", $v['label_id']);
-                    foreach ($label_id_arr as $key => $label_id) {
-                        $label_name[] = $label_name_arr[$label_id];
+                    $label_name = [];
+                    if (trim($v['label_id'])) {
+                        $label_id_arr = explode(",", trim($v['label_id']));
+                        foreach ($label_id_arr as $key => $label_id) {
+                            $label_name[] = $label_name_arr[$label_id];
+                        }
+                    } else {
+                        $label_name = '';
                     }
                     $data['items'][$k]['label_name'] = $label_name;
                     $goods_detail = $Goods_BaseModel->getGoodsDetailInfoByGoodId($v['goods_id']);

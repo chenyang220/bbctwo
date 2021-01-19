@@ -371,12 +371,15 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
                 <a href="javascript:void(0)" class="bbc_seller_btns ncbtn" id="add_goods_label"><?= __('添加商品标签') ?></a>
                 <span id="label_content">
                     <?php
-                    foreach ($data['label_Base'] as $key => $val) {
+                    if ($data['label_Base_edit']) {
+
+
+                    foreach ($data['label_Base_edit'] as $key => $val) {
                         ?>
                         <label>
-                            <?php echo $val['label_name'] ?>
+                            <?php print_r($data['label_Base'][$val]['label_name'])  ?>
                         </label>
-                    <?php } ?>
+                    <?php }} ?>
                 </span>
             </div>
         </dd>

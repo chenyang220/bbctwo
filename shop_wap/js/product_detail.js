@@ -1684,6 +1684,9 @@ $(function(){
             {
                 html += data.data.goods_format_bottom;
             }
+
+
+            console.log(html);
             $(".fixed-tab-pannel").html(html);
         }
     });
