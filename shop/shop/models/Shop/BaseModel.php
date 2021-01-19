@@ -780,8 +780,34 @@ class Shop_BaseModel extends Shop_Base
 		return $data;
 	}
     
-    
-    
+    /**
+     * 取的附近的店铺  单位米
+     *
+     * @param  float $lat
+     * @param  float $lng
+     * @param  int $distance 小于范围
+     * @return array $rows 返回的查询内容
+     * @access public
+     */
+    public function getNearShopNew($lat, $lng, $distance = 20000, $page = 1, $rows=10)
+    {
+        $offset = max(0, $rows * ($page-1));
+		$a = "(SELECT  s.*, (round(6378.138*2*asin(sqrt(pow(sin( (s.shop_latitude*pi()/180-$lat*pi()/180)/2),2)+cos(s.shop_latitude*pi()/180)*cos($lat*pi()/180)* pow(sin( (s.shop_longitude*pi()/180-$lng*pi()/180)/2),2)))*1000)) as distance FROM " . $this->_tableName . " s  ORDER BY distance ASC limit 200) ";
+		$sql = "SELECT * FROM " . $a . $this->_tableName ." WHERE
+			distance < $distance
+		ORDER BY distance ASC
+		limit $offset, $rows
+		";
+        $shop_rows = $this->sql->getAll($sql);
+        $total = $this->getFoundRows();
+        $data = array();
+        $data['page'] = $page;
+        $data['total'] = ceil_r($total / $rows);  //total page
+        $data['totalsize'] = $total;
+        $data['records'] = $total;
+        $data['items'] = array_values($shop_rows);   
+        return $data;
+    }
     /**
      * 取的附近的店铺  单位米
      *

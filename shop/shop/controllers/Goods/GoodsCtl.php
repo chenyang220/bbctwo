@@ -130,7 +130,22 @@
             //不显示供货商商品
             $shopBaseModel = new Shop_BaseModel();
             //shop_type 1.商家2.供应商
-            $shop_list = $shopBaseModel->getByWhere(array('shop_type' => 1)); 
+
+            $op4 = request_string('op4');
+            if ($op4 && $op4 === 'distance') {
+                //仅显示有货
+                $lat = request_string('lat');
+                $lng = request_string('lng');
+                $shop_id_distance = $shopBaseModel->getNearShopNew($lat, $lng);
+                $shop_id_distance_arr = array_column($shop_id_distance['items'],NULL, "shop_id");
+                foreach ($shop_id_distance_arr as $key => $shop_id_distance) {
+                    if ($shop_id_distance['shop_type'] == 1) {
+                        $shop_list[] = $shop_id_distance;
+                    }
+                }
+            } else {
+                $shop_list = $shopBaseModel->getByWhere(array('shop_type' => 1));
+            }
             $shop_ids = array_column($shop_list, 'shop_id');
             $cond_row['shop_id:IN'] = $shop_ids;
             //商品品牌
@@ -308,13 +323,19 @@
             $op1 = request_string('op1');
             $op2 = request_string('op2');
             $op3 = request_string('op3');
-            
+
             if ($op1) {
                 //仅显示有货
                 if ($op1 === 'havestock') {
                     $cond_row['common_stock:>'] = 0;
                 }
             }
+            
+
+            
+
+
+
             $actgoods = request_int('actgoods',0);
             if ($actgoods) {
                 //仅显示促销商品
@@ -416,10 +437,7 @@
                    // }
                }
            }
-        
-           // echo "<pre>";
-           //  print_r($data);
-           //  die;
+    
             $data['transport_area'] = $transport_area;
 
             $Yf_Page->totalRows = $data['totalsize'];

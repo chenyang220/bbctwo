@@ -40,7 +40,7 @@
 	            <a class="iblock" href="javascript:history.go(-1)"><i class="zk-head-back"></i></a>
 	        </div>
 	        <div class="header-title">
-	            <h1>黄页商城</h1>
+	            <h1>特色商城</h1>
 	        </div>
 	        <div class="right fz0">
 	            <a class="iblock" href="javascript:void(0);"><i class="zk-head-more"></i></a>
@@ -126,7 +126,7 @@
 		<dl>
 			<dt>距离</dt>
 			<dd>
-				<a href="javascript:void(0);" nctype="items" id="priority">近距优先</a>
+				<a href="javascript:void(0);" nctype="items" id="distance">近距优先</a>
 			</dd>
 		</dl>
         <dl>
