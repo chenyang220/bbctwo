@@ -1062,10 +1062,43 @@
          *
          */
         public function addZan () {
-            $goods_id = request_int('gid');
-            $Goods_CommonDetailModel = new Goods_CommonDetailModel();
+            $common_id = request_int('common_id');
+            $userId = Perm::$userId;
+            if ($userId == 0) {
+                return $this->data->addBody(140, array(), "未登录，无法点赞！", 250);
+            }
+            $Goods_ZanLogModel = new Goods_ZanLogModel();
+            $Goods_ZanLog = $Goods_ZanLogModel->getOneByWhere(array("common_id"=>$common_id,"user_id"=>$userId));
 
-            $Goods_CommonDetailModel->getOne();
+            $Goods_CommonModel = new Goods_CommonModel();
+            $Goods_Common = $Goods_CommonModel->getOne($common_id);
+            $editCommon = array();
+            if ($Goods_ZanLog && $Goods_ZanLog['status'] == 1) {
+                //取消点赞
+                $msg = "已取消点赞！";
+                $editCommon['zan_sum'] = $Goods_Common['zan_sum'] - 1;
+                $Goods_ZanLog_Status = $Goods_ZanLogModel->editZanLog($Goods_ZanLog['id'],array("status"=>2));
+            } elseif ($Goods_ZanLog && $Goods_ZanLog['status'] == 2) {
+                //点赞
+                $msg = "点赞成功";
+                $editCommon['zan_sum'] = $Goods_Common['zan_sum'] + 1;
+                $Goods_ZanLog_Status = $Goods_ZanLogModel->editZanLog($Goods_ZanLog['id'],array("status"=>1));
+            } else {
+                $msg = "点赞成功";
+                $editCommon['zan_sum'] = $Goods_Common['zan_sum'] + 1;
+                $addZanLog["common_id"] = $common_id;
+                $addZanLog["user_id"] = $userId;
+                $addZanLog["status"] = 1;
+                $Goods_ZanLog_Status = $Goods_ZanLogModel->addZanLog($addZanLog);
+            }
+            $data['zan_sum'] = $editCommon['zan_sum'];
+            $Goods_Common_edit = $Goods_CommonModel->editCommon($common_id,array("zan_sum"=>$editCommon['zan_sum']));
+            if ($Goods_ZanLog_Status && $Goods_Common_edit) {
+                $status = 200;
+            } else {
+                $status = 250;
+            }
+            $this->data->addBody(140, $data, $msg, $status);
         }
 
         /**

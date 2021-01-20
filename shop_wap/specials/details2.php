@@ -64,7 +64,7 @@ include   '../includes/header.php';
 	    	</div>
 	    	<div class="custom-product-det-btn fz0">
 	    <!-- 		 <span class="btn-save"><i class="custom-like"></i><em>222</em></span> -->
-	    		 <span class="btn-zan" style="width:100%;"><i class="custom-zan"></i><em>0</em></span>
+	    		 <span class="btn-zan" style="width:100%;"><i class="custom-zan"></i><em id="zan_sum">0</em></span>
 	    	</div>
 	    </div>
     </div>

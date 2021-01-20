@@ -96,3 +96,25 @@ INSERT INTO `yf_admin_menu`
 (`menu_id`, `menu_parent_id`, `menu_name`, `menu_icon`, `rights_id`, `menu_url_ctl`, `menu_url_met`, `menu_url_parem`, `menu_url_note`, `menu_order`, `menu_time`) 
 VALUES 
 ('', '19001', '特色首页模板', '', '0', 'Config', 'tsIndex', 'config_type%5B%5D=mobile', '<li>该模板为特色商城模板,点击右侧组件的“添加”按钮，增加对应类型版块到页面，其中“广告条版块”只能添加一个。</li>\n            <li>鼠标触及左侧页面对应版块，出现操作类链接，可以对该区域块进行“移动”、“启用/禁用”、“编辑”、“删除”操作。</li>\n            <li>新增加的版块内容默认为“禁用”状态，编辑内容并“启用”该块后将在手机端即时显示。</li>', '0', '0000-00-00 00:00:00');
+
+
+
+CREATE TABLE `yf_zan_log` (
+`id`  int(11) NOT NULL ,
+`common_id`  int(11) NOT NULL COMMENT '商品的common_id' ,
+`user_id`  int(11) NOT NULL COMMENT '用户id' ,
+`status`  int(2) NOT NULL DEFAULT 1 COMMENT '1、已点赞 2、点赞取消' ,
+PRIMARY KEY (`id`)
+)
+;
+
+
+ALTER TABLE `yf_goods_common`
+ADD COLUMN `zan_sum`  int(11) NOT NULL DEFAULT 0 COMMENT '点赞数量';
+
+
+ALTER TABLE `yf_zan_log`
+MODIFY COLUMN `id`  int(11) UNSIGNED NOT NULL AUTO_INCREMENT FIRST ;
+
+
+
