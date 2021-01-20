@@ -22,21 +22,7 @@ include   '../includes/header.php';
 	<link rel="stylesheet" href="../css/iconfont.css">
 </head>
 <body class="bgf">
-	<header id="header" class="fixed customize-index-header">
-        <div class="header-wrap">
-           <div class="left">
-			   <a class="iblock" href="javascript:history.go(-1)"><i class="zk-head-back"></i></a>
-		   </div>
-            <div class="header-title">
-                <h1>剪纸</h1>
-            </div>
-           <div class="right fz0">
-               <a class="iblock" href="javascript:void(0);"><i class="zk-head-more"></i></a>
-           </div>
-        </div>
-        
-    </header>
-    <div class="nctouch-main-layout">
+    <div class="">
 	    <div class="swiper-container custom-product-det-swiper">
 	    	<ul class="swiper-wrapper">
 	    		<li class="swiper-slide">
