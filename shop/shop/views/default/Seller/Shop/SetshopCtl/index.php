@@ -4,7 +4,15 @@
 include $this->view->getTplPath() . '/' . 'seller_header.php';
 ?>
 
- 
+     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5At3anZe83x8oOpFap42Gt8eHYpy3wm9&callback=baidu_lbs_geo"></script>
+    <style>
+        .query{
+            background: #ddd;
+            padding: 6px 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
     <form  method="post" id="form" >
         <input type='hidden' name='shop_id' value="<?=$re['shop_id']?>">
     <div class="form-style">
@@ -12,21 +20,49 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
             <dt><?=__('店铺名称：')?></dt>
             <dd><?=$re['shop_name']?></dd>
         </dl>
-<!--        <dl>
-            <dt>店铺分类：</dt>
-            <dd></dd>
-        </dl>-->
         <dl>
             <dt><?=__('店铺等级：')?></dt>
             <dd><?=$re['shop_grade']?></dd>
         </dl>
-<!--        <dl>
-            <dt>主营商品：</dt>
-            <dd>
-                <textarea style="width:300px;height:100px;"></textarea>
-              <p class="hint">此处理店铺页logo；<br />建议使用宽200像素-高60像素内的GIF或PNG透明图片；点击下方"确认提交"按钮后生效。</p>
-            </dd>
-        </dl>-->
+                <dl class="dl">
+                    <dt><i class="required">*</i><?=__('所在地区')?>：</dt>
+                    <dd>
+                        <input type="hidden" name="address_area" id="t" value="" />
+                        <input type="hidden" name="province_id" id="id_1" value="" />
+                        <input type="hidden" name="city_id" id="id_2" value="" />
+                        <input type="hidden" name="area_id" id="id_3" value="" />
+                        <div id="d_2">
+                            <select id="select_1" name="select_1" onChange="district(this);">
+                                <option value="">--<?=__('请选择')?>--</option>
+                                <?php foreach($district['items'] as $key=>$val){ ?>
+                                    <option value="<?=$val['district_id']?>|1"><?=$val['district_name']?></option>
+                                <?php } ?>
+                            </select>
+                            <select id="select_2" name="select_2" onChange="district(this);" class="hidden"></select>
+                            <select id="select_3" name="select_3" onChange="district(this);" class="hidden"></select>
+                        </div>
+                        <p class="hint"><?=__('所在地区将直接影响购买者在选择线下自提时的地区筛选，因此请如实认真选择全部地区级。')?></p>
+                    </dd>
+                </dl>
+                <dl class="dl">
+                    <dt><i class="required">*</i><?=__('详细地址')?>：</dt>
+                    <dd>
+                        <input type="text" class="text w400" name="shop_address" id="shop_address" value="">
+                        <span class="query"><?= __('查询') ?></span><span style="color: #fd3d53"><?= __('查询后地图上拾取坐标') ?></span>
+                        <p class="hint"><?=__('请认真填写详细地址，以确保用户（购物者）线下到店自提时能最准确的到达您的门店。')?></p>
+                    </dd>
+                </dl>
+
+                <dl class="dl">
+                    <dt><i class="required">*</i><?=__('地图显示')?>：</dt>
+                    <dd>
+                        <div id="allmap" style="height:600px;border:1px solid gray"></div>
+                        <div id="r-result">
+                            <i class="required" style="color: red;">* </i>经度: <input id="longitude"  name="shop[shop_longitude] type="text"  class="text w400" value="<?=$re['shop_longitude']?>" />
+                            <i class="required" style="color: red;">* </i>纬度: <input id="latitude" name=shop[shop_latitude] type="text" class="text w400"  value="<?=$re['shop_latitude']?>"/>
+                        </div>
+                    </dd>
+                </dl>
         <dl>
             <dt><?=__('PC店铺logo：')?></dt>
             <dd>
@@ -43,14 +79,6 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
                 <p class="hint"><?=__('此处为APP/WAP店铺页logo；')?><br /><?=__('建议使用宽64像素*高64像素内的GIF或PNG透明图片；点击下方"确认提交"按钮后生效。')?></p>
             </dd>
         </dl>
-        <!--<dl>
-            <dt>店铺头像：</dt>
-            <dd>
-           		<p class="pic" style="width:200px;height:60px;"><img id="logo_img" src="<{if $de.logo}><{$de.logo}><{else}>image/default/seller/default_logo.png<{/if}>" height="60" width="200" /></p>
-                <p class="upload-button"><input type="hidden" id="logo" name="shop[banner]" value="<{$de.logo}>" /><a class="button button_black" href="javascript:uploadfile('图片上传','logo',200,60,'shop');"><i class="iconfont icon-upload-alt"></i>图片上传</a></p>                
-                <p class="hint">此处为店铺方形头像；<br/> 建议使用宽100像素*高100像素内的方型图片；点击下方"确认提交"按钮后生效。</p>
-            </dd>
-        </dl>-->
         <dl>
             <dt><?=__('PC店铺条幅：')?></dt>
             <dd>
@@ -119,13 +147,38 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
         </dl>
     </div>
     </form>
+        <script type="text/javascript" src="<?=$this->view->js?>/district.js"></script>
 <script type="text/javascript" src="<?=$this->view->js_com?>/webuploader.js" charset="utf-8"></script>
 <script type="text/javascript" src="<?=$this->view->js_com?>/upload/upload_image.js" charset="utf-8"></script>
 <link href="<?= $this->view->css_com ?>/webuploader.css" rel="stylesheet" type="text/css">
-
-<script>
-    $("#re_user_mobile").intlTelInput({
-//        utilsScript: "<?//= $this->view->js ?>///utils.js"
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=5At3anZe83x8oOpFap42Gt8eHYpy3wm9"></script>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap"); 
+    var shop_latitude = "<?=$re['shop_latitude']?>";
+    var shop_longitude = "<?=$re['shop_longitude']?>";
+    if (!shop_latitude && !shop_longitude) {
+        shop_longitude = 116.331398;
+        shop_latitude = 39.897445;
+    }           
+    var point = new BMap.Point(shop_longitude,shop_latitude);
+        map.centerAndZoom(point,11);  
+        map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+        map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用      
+    //单击获取点击的经纬度
+    map.addEventListener("click",function(e){
+        $("#longitude").val(e.point.lng);
+        $("#latitude").val(e.point.lat);
+    });
+    map.addControl(new BMap.NavigationControl());
+    var local = new BMap.LocalSearch(map, {
+        renderOptions: {map: map}
+    });
+    $(".query").click(function () {
+        var address = $("input[name='address_area']").val() + $("input[name='shop_address']").val();
+        if (address != "") {
+            local.search(address);
+        }
     });
     $(document).ready(function(){
          var ajax_url = './index.php?ctl=Seller_Shop_Setshop&met=editShop&typ=json';
@@ -150,6 +203,8 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
             fields: {
                 'shop[shop_qq]': 'qq',
                 'shop[shop_tel]':'tel',
+                'longitude':'required',
+                'latitude':'required',
             },
            valid:function(form){
                 //表单验证通过，提交表单
@@ -159,8 +214,7 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
                     success:function(a){
                         if(a.status == 200)
                         {
-                           Public.tips.success("<?=__('操作成功！')?>");
-                          // setTimeout(' location.href="./index.php?ctl=Seller_Shop_Setshop&met=index&typ=e"',3000); //成功后跳转
+                           Public.tips.success("<?=__('操作成功！')?>");//成功后跳转
 
                         }
                         else

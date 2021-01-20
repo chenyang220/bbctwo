@@ -157,7 +157,6 @@ class Seller_Shop_ChainCtl extends Seller_Controller
             $chain_area[] = $data['chain_city'];
             $chain_area[] = $data['chain_county'];
             $data['chain_area'] = implode(' ', $chain_area);
-//            fb($date);exit;
             $this->view->setMet('setChain');
         } elseif ($act == 'add') {
             $this->view->setMet('setChain');

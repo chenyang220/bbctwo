@@ -38,7 +38,9 @@ class Seller_Shop_SetshopCtl extends Seller_Controller {
      */
     public function index()
     {
-        
+        $district_parent_id = request_int('pid', 0);
+        $Base_DistrictModel = new Base_DistrictModel();
+        $district = $Base_DistrictModel->getDistrictTree($district_parent_id);
         //判断是否开启店铺二级域名
         $Web_ConfigModel = new Web_ConfigModel();
         $shop_domain     = $Web_ConfigModel->getByWhere(array('config_type' => 'domain'));
@@ -91,7 +93,6 @@ class Seller_Shop_SetshopCtl extends Seller_Controller {
     public function editShop()
     {
         $edit_shop_row = request_row("shop");
-        
         //判断是否开启店铺二级域名
         $Web_ConfigModel = new Web_ConfigModel();
         $shop_domain     = $Web_ConfigModel->getByWhere(array('config_type' => 'domain'));
