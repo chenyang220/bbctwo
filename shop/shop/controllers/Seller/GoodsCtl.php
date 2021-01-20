@@ -119,9 +119,7 @@
         }
         
         public function editGoods()
-        {
-            $Label_BaseModel = new  Label_BaseModel();
-            $Label_Base = $Label_BaseModel->getByWhere("*");
+        { 
             $common_id = request_int('common_id');
             $common_data = $this -> goodsCommonModel -> listByWhere(array('shop_id' => Perm::$shopId, 'common_id' => $common_id));
             if (empty($common_data)) {
@@ -144,6 +142,8 @@
             }
             $cat_id = $common_data['cat_id'];
             $cat_base = $this -> goodsCatModel -> getCat($cat_id);
+            $Label_BaseModel = new  Label_BaseModel();
+            $Label_Base = $Label_BaseModel->getByWhere("*");
             if (empty($cat_base)) {
                 include $this -> view -> getTplPath() . '/' . 'error.php';
             } else {
@@ -231,6 +231,8 @@
                 $bind_info = $Shop_ClassBindModel->getOneByWhere($bind_row);
                 $data['delivery'] = $bind_info['delivery_status'];
                 $data['label_Base'] = $Label_Base;
+                $label_id_arr = explode(",", $common_data['label_id']);
+                $data['label_Base_edit'] = $label_id_arr;
                 $this -> view -> setMet('goodsInfoManage');
                 include $this -> view -> getView();
             }
@@ -740,7 +742,9 @@
             $common_data['shop_self_support'] = $shop_base['shop_self_support'] == Shop_BaseModel::SELF_SUPPORT_TRUE ? 1 : 0;     //是否自营
             $common_data['cat_id'] = request_string('cat_id');                    //商品分类id
             $common_data['cat_name'] = request_string('cat_name');                    //商品分类
-            $common_data['common_name'] = Text_Filter::filterWords(request_string('name'));                        //商品名称
+            $common_data['common_name'] = Text_Filter::filterWords(request_string('name'));    
+            $common_data['third_url'] = request_string('third_url');                    //商品第三方链接
+            //商品名称
             //消费者保障
             $checkbox = '';
             /*$shop_goods_cat_base = $this->shopGoodsCat->getByWhere(array('shop_id' => $shop_base['shop_id']));*/

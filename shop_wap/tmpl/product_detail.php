@@ -819,7 +819,7 @@ if ($_GET['qr']) {
                     <span onclick="openChat();"  class="operate btn-customer"><i></i><p><?= __('客服'); ?></p></span>
                     <!-- <a href="javascript:void(0);" class="kefu wp30" onclick="openChat();"><i></i><p><?= __('客服'); ?></p></a> -->
                     <!--YF_IM <?= __('联系客服'); ?> END -->
-                    <a href="javascript:void(0);" class="operate btn-save active <% if (is_favorate) { %>favorate<% } %>"><i></i><p><?= __('收藏'); ?></p></a>
+                    <a href="javascript:void(0);" class="operate btn-save collect pd-collect <% if (is_favorate) { %>favorate<% } %>"><i></i><p><?= __('收藏'); ?></p></a>
                     <!-- <a href="../tmpl/cart_list.html" class="operate cart"><i></i><p><?= __('购物车'); ?></p><span id="cart_count"></span></a> -->
                 </div>
                 <div class="fz0 special-bottom-btn-module <%if(!goods_hair_info.if_store || goods_info.goods_storage == 0){%>no-buy<%}%>">

@@ -112,9 +112,9 @@
             </dd>
         </dl>
 		<dl>
-			<dt>距离</dt>
+			<dt><?= __('距离'); ?></dt>
 			<dd>
-				<a href="javascript:void(0);" nctype="items" id="priority">近距优先</a>
+				<a href="javascript:void(0);" nctype="items" id="distance"><?= __('近距优先'); ?></a>
 			</dd>
 		</dl>
         <dl>
@@ -124,7 +124,7 @@
                         <input type="text" id="price_from" nctype="price" pattern="[0-9]*"
                                class="inp" placeholder="<?= __('最低价'); ?>"/></span> <span class="line"></span>
                 <span class="inp-balck"><input nctype="price" type="text" id="price_to" pattern="[0-9]*" class="inp"
-                                                                                                                                placeholder="<?= __('最高价'); ?>"/></span>
+                                                                                                                                placeholder="<?= __('最高价'); ?>">
             </dd>
         </dl>
         <dl class="borb0">
@@ -176,13 +176,15 @@
 				</dt>
 				<dd class="goods-sale">
 					<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
-					<p class="label">
-                        <% if(common_list[j].label_name){%>
-                            <%for(label_id in common_list[j].label_name){%>
-                            <label class="label-item"><%=common_list[j].label_name[label_id]%></label>
-                            <% } %>
+					
+                    <% if(common_list[j].label_name){%>
+                        <p class="label"> <%= common_list[j].label_name%>
+                        <%for(label_id in common_list[j].label_name){%>
+                        <label class="label-item"><%=common_list[j].label_name[label_id]%></label>
                         <% } %>
-                    </p>
+                          </p>
+                    <% } %>
+                  
 					<p>
 						<span class="goods-price"><b><?= __('￥'); ?></b><em><%=goods_list[i].goods_price;%></em>
 							<%
@@ -328,6 +330,8 @@
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/product_list.js?v=9"></script>
 <!--<script type="text/javascript" src="../js/footer.js"></script>-->
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=5At3anZe83x8oOpFap42Gt8eHYpy3wm9&callback=baidu_lbs_geo"></script>
 <script type="text/javascript" src="../js/animation.js?v=8"></script>
 </html>
 <?php

@@ -138,7 +138,6 @@ class Seller_Shop_ChainCtl extends Seller_Controller
         $key = Yf_Registry::get('ucenter_api_key');;
         $url = Yf_Registry::get('ucenter_api_url');
         $app_id = Yf_Registry::get('ucenter_app_id');
-
         $formvars = array();
         $formvars['app_id'] = $app_id;
         $url = $url.'?ctl=Api_Config&met=getRegisterConfig&typ=json';
@@ -157,7 +156,6 @@ class Seller_Shop_ChainCtl extends Seller_Controller
             $chain_area[] = $data['chain_city'];
             $chain_area[] = $data['chain_county'];
             $data['chain_area'] = implode(' ', $chain_area);
-//            fb($date);exit;
             $this->view->setMet('setChain');
         } elseif ($act == 'add') {
             $this->view->setMet('setChain');

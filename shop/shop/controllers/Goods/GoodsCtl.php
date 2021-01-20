@@ -130,7 +130,22 @@
             //不显示供货商商品
             $shopBaseModel = new Shop_BaseModel();
             //shop_type 1.商家2.供应商
-            $shop_list = $shopBaseModel->getByWhere(array('shop_type' => 1)); 
+
+            $op4 = request_string('op4');
+            if ($op4 && $op4 === 'distance') {
+                //仅显示有货
+                $lat = request_string('lat');
+                $lng = request_string('lng');
+                $shop_id_distance = $shopBaseModel->getNearShopNew($lat, $lng);
+                $shop_id_distance_arr = array_column($shop_id_distance['items'],NULL, "shop_id");
+                foreach ($shop_id_distance_arr as $key => $shop_id_distance) {
+                    if ($shop_id_distance['shop_type'] == 1) {
+                        $shop_list[] = $shop_id_distance;
+                    }
+                }
+            } else {
+                $shop_list = $shopBaseModel->getByWhere(array('shop_type' => 1));
+            }
             $shop_ids = array_column($shop_list, 'shop_id');
             $cond_row['shop_id:IN'] = $shop_ids;
             //商品品牌
@@ -308,13 +323,19 @@
             $op1 = request_string('op1');
             $op2 = request_string('op2');
             $op3 = request_string('op3');
-            
+
             if ($op1) {
                 //仅显示有货
                 if ($op1 === 'havestock') {
                     $cond_row['common_stock:>'] = 0;
                 }
             }
+            
+
+            
+
+
+
             $actgoods = request_int('actgoods',0);
             if ($actgoods) {
                 //仅显示促销商品
@@ -391,14 +412,19 @@
             $Label_BaseModel = new Label_BaseModel();
             $Label_Base = $Label_BaseModel->getByWhere("*");
             $label_name_arr = array_column($Label_Base, "label_name","id");
+            $data['label_name_arr'] = $label_name_arr;
             // 商品参加促销活动，即显示促销价，取消原价显示
             $Goods_BaseModel = new Goods_BaseModel();
             if (!empty($data['items'])) {
                foreach ($data['items'] as $k=>$v) {
-                    $label_name = array();
-                    $label_id_arr = explode(",", $v['label_id']);
-                    foreach ($label_id_arr as $key => $label_id) {
-                        $label_name[] = $label_name_arr[$label_id];
+                    $label_name = [];
+                    if (trim($v['label_id'])) {
+                        $label_id_arr = explode(",", trim($v['label_id']));
+                        foreach ($label_id_arr as $key => $label_id) {
+                            $label_name[] = $label_name_arr[$label_id];
+                        }
+                    } else {
+                        $label_name = '';
                     }
                     $data['items'][$k]['label_name'] = $label_name;
                     $goods_detail = $Goods_BaseModel->getGoodsDetailInfoByGoodId($v['goods_id']);
@@ -416,10 +442,7 @@
                    // }
                }
            }
-        
-           // echo "<pre>";
-           //  print_r($data);
-           //  die;
+    
             $data['transport_area'] = $transport_area;
 
             $Yf_Page->totalRows = $data['totalsize'];
@@ -1033,6 +1056,51 @@
             
         }
         
+
+        /**
+         * 点赞
+         *
+         */
+        public function addZan () {
+            $common_id = request_int('common_id');
+            $userId = Perm::$userId;
+            if ($userId == 0) {
+                return $this->data->addBody(140, array(), "未登录，无法点赞！", 250);
+            }
+            $Goods_ZanLogModel = new Goods_ZanLogModel();
+            $Goods_ZanLog = $Goods_ZanLogModel->getOneByWhere(array("common_id"=>$common_id,"user_id"=>$userId));
+
+            $Goods_CommonModel = new Goods_CommonModel();
+            $Goods_Common = $Goods_CommonModel->getOne($common_id);
+            $editCommon = array();
+            if ($Goods_ZanLog && $Goods_ZanLog['status'] == 1) {
+                //取消点赞
+                $msg = "已取消点赞！";
+                $editCommon['zan_sum'] = $Goods_Common['zan_sum'] - 1;
+                $Goods_ZanLog_Status = $Goods_ZanLogModel->editZanLog($Goods_ZanLog['id'],array("status"=>2));
+            } elseif ($Goods_ZanLog && $Goods_ZanLog['status'] == 2) {
+                //点赞
+                $msg = "点赞成功";
+                $editCommon['zan_sum'] = $Goods_Common['zan_sum'] + 1;
+                $Goods_ZanLog_Status = $Goods_ZanLogModel->editZanLog($Goods_ZanLog['id'],array("status"=>1));
+            } else {
+                $msg = "点赞成功";
+                $editCommon['zan_sum'] = $Goods_Common['zan_sum'] + 1;
+                $addZanLog["common_id"] = $common_id;
+                $addZanLog["user_id"] = $userId;
+                $addZanLog["status"] = 1;
+                $Goods_ZanLog_Status = $Goods_ZanLogModel->addZanLog($addZanLog);
+            }
+            $data['zan_sum'] = $editCommon['zan_sum'];
+            $Goods_Common_edit = $Goods_CommonModel->editCommon($common_id,array("zan_sum"=>$editCommon['zan_sum']));
+            if ($Goods_ZanLog_Status && $Goods_Common_edit) {
+                $status = 200;
+            } else {
+                $status = 250;
+            }
+            $this->data->addBody(140, $data, $msg, $status);
+        }
+
         /**
          * 获取商品详情页面商品详情
          *
@@ -1088,11 +1156,9 @@
                     } else {
                         $data['brand_name'] = '';
                     }
+                    $data['common_id'] =  $common_data['common_id'];
                     //商品详情
-                    $data['common_detail'] = cdn_content_url($goods_detail['common_base']['common_detail']);
-                    //jquery img lazyload
-//              $data['common_detail_lazy'] =  str_replace("src=","class='lazy' width=800 data-original=",$data['common_detail']);
-                    
+                    $data['common_detail'] = cdn_content_url($goods_detail['common_base']['common_detail']);  
                     //商品属性
                     $data['common_property_row'] = $goods_detail['common_base']['common_property_row'];
                 }

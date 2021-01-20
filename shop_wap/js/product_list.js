@@ -18,6 +18,7 @@ var actgoods = getQueryString("actgoods");
 var virtual = getQueryString("virtual");
 var plus = getQueryString("plus");
 var priority = getQueryString("priority");
+var distance = getQueryString("distance");
 var brand_ids = getQueryString("brand_ids");
 var goods_brand_alls = getQueryString("goods_brand_alls");
 var goods_brands_alls = getQueryString("goods_brands_alls");
@@ -32,6 +33,50 @@ var mb = getQueryString("mb");
 if (!getCookie('sub_site_id')) {
     addCookie('sub_site_id', 0, 0);
 }
+
+
+
+// var lng = '';
+// var lat = '';
+
+////百度定位,需要使用默认位置时从cookie获取
+function baidu_lbs_geo() {
+    document.write(returnCitySN["cip"]+','+returnCitySN["cname"]) 
+
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    // 创建地址解析器实例
+    var myGeo = new BMap.Geocoder();
+    // 将地址解析结果显示在地图上,并调整地图视野
+    myGeo.getPoint(returnCitySN["cname"], function(point){
+        console.log(point.lng);
+            ip_lng = point.lng;
+            ip_lat = point.lat;
+    }, "上海市");
+
+
+    // 百度地图API功能
+    var geolocation = new BMap.Geolocation();
+    var geoc = new BMap.Geocoder();
+    geolocation.getCurrentPosition(function(r){
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            var mk = new BMap.Marker(r.point);
+            // if (ip_lng) {
+            //     lng = ip_lng;
+            // }
+
+            //  if (ip_lat) {
+            //     lat = ip_lat;
+            // }
+            addCookie('lng', ip_lng);
+            addCookie('lat', ip_lat);
+        } else {
+            alert('failed'+this.getStatus());
+        }
+    },{enableHighAccuracy: true})
+}
+
+// alert(lng)
 var sub_site_id = getCookie('sub_site_id');
 $(function () {
     var handler = function () {
@@ -119,7 +164,6 @@ $(function () {
 });
 
 function get_list() {
-    // $(".loading").remove();
     if (!hasmore) {
         return false
     }
@@ -167,6 +211,14 @@ function get_list() {
     if(priority !=''){
         param.op1 = 'priority'
     }
+
+    if(distance !=''){
+        param.op4 = 'distance'
+        param.lng = getCookie('lng');
+        param.lat = getCookie('lat');
+    }
+
+
     if(brand_ids != ''){
         param.op3 = 'brand_ids'
     }
@@ -201,7 +253,11 @@ function get_list() {
         $(".loading").remove();
         curpage++;
         e['pagesize'] = pagesize;
-
+        if (e.data.label_name_arr[label_id] == '民风民俗' || e.data.label_name_arr[label_id] == "非遗"|| e.data.label_name_arr[label_id] == "购物") {
+            e.data.label_url = "details2";
+        } else {
+            e.data.label_url = "details1";
+        }
         var r = template.render("home_body", e);
         $("#product_list .goods-search-list").append(r);
 		 waterFall(columns);
@@ -270,6 +326,9 @@ function search_adv() {
         if(priority){
             $("#priority").addClass("current")
         }
+        if(distance){
+            $("#distance").addClass("current")
+        }
         if(brand_ids){
             $("#brand_ids").addClass("brand_ids")
         }
@@ -334,6 +393,9 @@ function search_adv() {
             if($("#priority")[0].className == "current"){
                 e += "&priority=1"
             }
+            if($("#distance")[0].className == "current"){
+                e += "&distance=1"
+            }
             var brand_ids_str = '';
             $.each($(".brand_ids"),function(){
                 if ($(this).hasClass("current")){
@@ -356,6 +418,8 @@ function search_adv() {
             if (brand_ids_str != '') {
                 e += '&brand_id='+ brand_ids_str;
             }
+
+
             // if($("#goods_brand_alls")[0].className == "current"){
             //     e += "&goods_brand_alls=1"
             // }
@@ -373,7 +437,13 @@ function search_adv() {
             if (r != "") {
                 e += "&ci=" + r
             }
-            window.location.href = WapSiteUrl + "/tmpl/product_list.html" + e
+
+            if (label_id) {
+                window.location.href = WapSiteUrl + "/specials/lists.html" + e + "&label_id=" + label_id
+            } else {
+                window.location.href = WapSiteUrl + "/tmpl/product_list.html" + e
+            }
+            
         });
         $('a[nctype="items"]').click(function () {
             var e = new Date;
@@ -395,161 +465,6 @@ function search_adv() {
         })
         }
     })
-
-    // $.getJSON(
-    //     ApiUrl + "/index.php?ctl=Index&met=getSearchAdv&typ=json", 
-    //     function (e) {
-    //     var r = e.data;
-    //     $("#list-items-scroll").html(template.render("search_items", r));
-    //     // $("#list-items-scroll").html(template.render("brands_more"));
-    //     if (area_id) {
-    //         $("#area_id").val(area_id)
-    //     }
-    //     if (price_from) {
-    //         $("#price_from").val(price_from)
-    //     }
-    //     if (price_to) {
-    //         $("#price_to").val(price_to)
-    //     }
-    //     if (own_shop) {
-    //         $("#own_shop").addClass("current")
-    //     }
-    //     if (other_shop) {
-    //         $("#other_shop").addClass("current")
-    //     }
-    //     if (actgoods) {
-    //         $("#actgoods").addClass("current")
-    //     }
-    //     if (virtual) {
-    //         $("#virtual").addClass("current")
-    //     }
-    //     if(plus){
-    //         $("#plus").addClass("current")
-    //     }
-    //     if(priority){
-    //         $("#priority").addClass("current")
-    //     }
-    //     if(brand_ids){
-    //         $("#brand_ids").addClass("brand_ids")
-    //     }
-    //     if(goods_brand_alls){
-    //         $("#goods_brand_alls").addClass("current")
-    //     }
-    //     if(goods_brands_alls){
-    //         $("#goods_brands_alls").addClass("current")
-    //     }
-    //     if (ci) {
-    //         var i = ci.split("_");
-    //         for (var t in i) {
-    //             $('a[name="ci"]').each(function () {
-    //                 if ($(this).attr("value") == i[t]) {
-    //                     $(this).addClass("current")
-    //                 }
-    //             })
-    //         }
-    //     }
-    //     // 品牌查看全部
-    //     $(".brands_more").click(function () {
-    //         $('.search_items').hide();
-    //         $("#list-items-scroll").append(template.render("brands_more"));
-    //         $(".sort-item-li-zm").html(brandsHtml);
-    //         $(".sort-item-li-tj").html(brandsHtml2);
-    //         //排序切换
-    //         $(".goods-brands-sort li").click(function(){
-    //             var index=$(this).index();
-    //             $(".goods-brands-sort li,.sorts-items .sort-item-li").removeClass("active");
-    //             $(this).addClass("active");
-    //             $(".sorts-items .sort-item-li").eq(index).addClass("active");
-    //         })
-
-    //     });
-    //     $(document).on('click','.search_submit',function () {
-    //         var e = "?keyword=" + keyword, r = "";
-    //         if (typeof($("#area_id").val()) !== 'undefined' && $("#area_id").val() !== '') {
-    //             e += "&transport_id=" + $("#area_id").val();
-    //         }
-
-    //         if ($("#price_from").val() != "") {
-    //             e += "&price_from=" + $("#price_from").val()
-    //         }
-    //         if ($("#price_to").val() != "") {
-    //             e += "&price_to=" + $("#price_to").val()
-    //         }
-    //         if ($("#own_shop")[0].className == "current") {
-    //             e += "&own_shop=1"
-    //         }
-    //         if ($("#other_shop")[0].className == "current") {
-    //             e += "&other_shop=1"
-    //         }
-    //         if ($("#actgoods")[0].className == "current") {
-    //             e += "&actgoods=1"
-    //         }
-    //         if ($("#virtual")[0].className == "current") {
-    //             e += "&virtual=1"
-    //         }
-    //         if($("#priority")[0].className == "current"){
-    //             e += "&priority=1"
-    //         }
-    //         var brand_ids_str = '';
-    //         $.each($(".brand_ids"),function(){
-    //             if ($(this).hasClass("current")){
-    //                 if (brand_ids_str =='') {
-    //                    brand_ids_str += $(this).attr('value');
-    //                 }else{
-    //                    brand_ids_str += ',' + $(this).attr('value');
-    //                 }
-    //              }
-    //         })
-    //         $.each($(".brand_name_id"),function(){
-    //             if ($(this).prop("checked")){
-    //                 if (brand_ids_str =='') {
-    //                    brand_ids_str += $(this).val();
-    //                 }else{
-    //                    brand_ids_str += ',' + $(this).val();
-    //                 }
-    //              }
-    //         })
-    //         if (brand_ids_str != '') {
-    //             e += '&brand_id='+ brand_ids_str;
-    //         }
-    //         // if($("#goods_brand_alls")[0].className == "current"){
-    //         //     e += "&goods_brand_alls=1"
-    //         // }
-    //         // if($("#goods_brands_alls")[0].className == "current"){
-    //         //     e += '&goods_brands_alls =1'
-    //         // }
-    //         if (typeof(cat_id) !== 'undefined' && cat_id !== '') {
-    //             e += "&cat_id=" + cat_id
-    //         }
-    //         $('a[name="ci"]').each(function () {
-    //             if ($(this)[0].className == "current") {
-    //                 r += $(this).attr("value") + "_"
-    //             }
-    //         });
-    //         if (r != "") {
-    //             e += "&ci=" + r
-    //         }
-    //         window.location.href = WapSiteUrl + "/tmpl/product_list.html" + e
-    //     });
-    //     $('a[nctype="items"]').click(function () {
-    //         var e = new Date;
-    //         if (e.getTime() - searchTimes > 300) {
-    //             $(this).toggleClass("current");
-    //             searchTimes = e.getTime()
-    //         }
-    //     });
-    //     $('input[nctype="price"]').on("blur", function () {
-    //         if ($(this).val() != "" && !/^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$/.test($(this).val())) {
-    //             $(this).val("")
-    //         }
-    //     });
-    //     $(document).on('click','.reset',function(){
-    //         $('a[nctype="items"]').removeClass("current");
-    //         $('input[nctype="price"]').val("");
-    //         $('.sort-item-li-zm .brand_name_id').prop('checked',false);
-    //         $("#area_id").val("");
-    //     })
-    // })
 }
 
 

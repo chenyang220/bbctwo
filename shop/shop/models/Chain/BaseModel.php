@@ -36,13 +36,11 @@ class Chain_BaseModel extends Chain_Base
     {
         $offset = max(0, $rows * ($page-1));
 		$a = "(SELECT  s.*, (round(6378.138*2*asin(sqrt(pow(sin( (s.latitude*pi()/180-$lat*pi()/180)/2),2)+cos(s.latitude*pi()/180)*cos($lat*pi()/180)* pow(sin( (s.longitude*pi()/180-$lng*pi()/180)/2),2)))*1000)) as distance FROM " . $this->_tableName . " s  ORDER BY distance ASC limit 200) ";
-
 		$sql = "SELECT * FROM " . $a . $this->_tableName ." WHERE
 			distance < $distance
 		ORDER BY distance ASC
 		limit $offset, $rows
 		";
-
         $shop_rows = $this->sql->getAll($sql);
         $total = $this->getFoundRows();
         $data = array();
