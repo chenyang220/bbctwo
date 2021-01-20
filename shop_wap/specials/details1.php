@@ -636,7 +636,7 @@ include   '../includes/header.php';
 					</a>
                     <!--YF_IM <?= __('联系客服'); ?> kefu START -->
                     <span onclick="openChat();"  class="operate btn-customer"><i></i><p><?= __('客服'); ?></p></span>
-                    <a href="javascript:void(0);" class="operate btn-save active <% if (is_favorate) { %>favorate<% } %>"><i></i><p><?= __('收藏'); ?></p></a>
+                    <a href="javascript:void(0);" class="operate btn-save collect pd-collect <% if (is_favorate) { %>favorate<% } %>"><i></i><p><?= __('收藏'); ?></p></a>
                 </div>
                 <div class="fz0 special-bottom-btn-module <%if(!goods_hair_info.if_store || goods_info.goods_storage == 0){%>no-buy<%}%>">
                     <% if (goods_info.cart == '1'&&goods_info.promotion_type!='seckill'&&goods_info.promotion_type!='presale') { %>

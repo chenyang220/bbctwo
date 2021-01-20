@@ -1,3 +1,6 @@
+<?php
+include   '../includes/header.php';
+?>
 <!DOCTYPE html>
 <html lang="en" class="bgf">
 <head>
@@ -50,7 +53,7 @@
 	    		<div class="custom-product-det-texts-head clearfix">
 	    			<em class="img-box fl" style="background:url(../images/spec/img4.png) no-repeat center;background-size:contain"></em>
 	    			<span class="fl"><em class="block">剪纸艺人</em><time class="block">2019-05-28 16:10</time></span>
-	    			<button class="fr custom-product-det-follow">关注</button>
+	    			<button class="fr custom-product-det-follow pd-collect <% if (is_favorate) { %>favorate<% } %>">收藏</button>
 	    		</div>
 	    		<h4 class="clearfix tc fz0">
 	    			<span>剪纸</span>
@@ -60,15 +63,23 @@
   				<p>关于剪纸的由来，其实很早以前就开始了。那时候的人尝试着用一些图形来记事和内容呈现，但那时纸张还并没有出现，人们只能将一些资料记载在青铜器、竹简、兽皮等载体之上。而随着纸张的出现，这些创造性的图案便开始往纸张上转移。通过这样的前后对比，我们就能够看出，剪纸的由来就是来自于先民的图案记录方式。</p>     
 	    	</div>
 	    	<div class="custom-product-det-btn fz0">
-	    		 <span class="btn-save"><i class="custom-like"></i><em>222</em></span>
-	    		 <span class="btn-zan"><i class="custom-zan"></i><em>120</em></span>
+	    <!-- 		 <span class="btn-save"><i class="custom-like"></i><em>222</em></span> -->
+	    		 <span class="btn-zan" style="width:100%;"><i class="custom-zan"></i><em>0</em></span>
 	    	</div>
 	    </div>
     </div>
 </body>
-<script src="../js/jquery.js"></script>
-<script src="../js/swiper.min.js"></script>
-<script src="../js/details2.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/swipe.js"></script>
+<script type="text/javascript" src="../js/common.js?v=9"></script>
+<script type="text/javascript" src="../js/zepto.cookie.js"></script>
+<script type="text/javascript" src="../js/iscroll.js"></script>
+<script type="text/javascript" src="../js/simple-plugin.js"></script>
+<script type="text/javascript" src="../js/tmpl/footer.js"></script>
+<script type="text/javascript" src="../js/fly/requestAnimationFrame.js"></script>
+<script type="text/javascript" src="../js/details2.js"></script>
+<script type="text/javascript" src="../js/jquery.timeCountDown.js"></script>
 <script>
 	$(function(){
 		var windowWidth=$(window).width();
@@ -80,4 +91,19 @@
 	    });
 	})
 </script>
+
+<?php
+include '../includes/footer.php';
+?>
+<!-- <p>       
+	<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200918/160041193324045019836168904353.jpg" alt="5919c3cbaff2bf8bec236c79e4b9ad39.jpg" />
+	<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200918/160041223120727948548836746111.jpeg" alt="9f47b0f2fba713e208e9f478d0bb0e19.jpeg" />
+	<span style="color:rgb(34,34,34);font-family:Consolas, 'Lucida Console', 'Courier New', monospace;font-size:12px;white-space:pre-wrap;background-color:rgb(255,255,255);">关于剪纸的由来，其实很早以前就开始了。那时候的人尝试着用一些图形来记事和内容呈现，但那时纸张还并没有出现，人们只能将一些资料记载在青铜器、竹简、兽皮等载体之上。而随着纸张的出现，这些创造性的图案便开始往纸张上转移。通过这样的前后对比，我们就能够看出，剪纸的由来就是来自于先民的图案记录方式。 
+  				</span>
+</p>
+
+<p>					
+</p> -->
+
+
 </html>

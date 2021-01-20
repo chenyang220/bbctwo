@@ -679,13 +679,13 @@ $(function () {
                         }
                         //收藏
                         $(".pd-collect").click(function () {
-                            if ($(this).hasClass("favorate")) {
+                            if ($(".pd-collect").hasClass("favorate")) {
                                 if (dropFavoriteGoods(goods_id)) {
-                                    $(this).removeClass("favorate");
+                                    $(".pd-collect").removeClass("favorate");
                                 }
                             } else {
                                 if (favoriteGoods(goods_id)) {
-                                    $(this).addClass("favorate");
+                                    $(".pd-collect").addClass("favorate");
                                 }
                             }
                         });
@@ -1684,9 +1684,6 @@ $(function(){
             {
                 html += data.data.goods_format_bottom;
             }
-
-
-            console.log(html);
             $(".fixed-tab-pannel").html(html);
         }
     });

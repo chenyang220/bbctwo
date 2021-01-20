@@ -1056,6 +1056,18 @@
             
         }
         
+
+        /**
+         * 点赞
+         *
+         */
+        public function addZan () {
+            $goods_id = request_int('gid');
+            $Goods_CommonDetailModel = new Goods_CommonDetailModel();
+
+            $Goods_CommonDetailModel->getOne();
+        }
+
         /**
          * 获取商品详情页面商品详情
          *
@@ -1111,11 +1123,9 @@
                     } else {
                         $data['brand_name'] = '';
                     }
+                    $data['common_id'] =  $common_data['common_id'];
                     //商品详情
-                    $data['common_detail'] = cdn_content_url($goods_detail['common_base']['common_detail']);
-                    //jquery img lazyload
-//              $data['common_detail_lazy'] =  str_replace("src=","class='lazy' width=800 data-original=",$data['common_detail']);
-                    
+                    $data['common_detail'] = cdn_content_url($goods_detail['common_base']['common_detail']);  
                     //商品属性
                     $data['common_property_row'] = $goods_detail['common_base']['common_property_row'];
                 }
