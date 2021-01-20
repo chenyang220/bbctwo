@@ -742,7 +742,9 @@
             $common_data['shop_self_support'] = $shop_base['shop_self_support'] == Shop_BaseModel::SELF_SUPPORT_TRUE ? 1 : 0;     //是否自营
             $common_data['cat_id'] = request_string('cat_id');                    //商品分类id
             $common_data['cat_name'] = request_string('cat_name');                    //商品分类
-            $common_data['common_name'] = Text_Filter::filterWords(request_string('name'));                        //商品名称
+            $common_data['common_name'] = Text_Filter::filterWords(request_string('name'));    
+            $common_data['third_url'] = request_string('third_url');                    //商品第三方链接
+            //商品名称
             //消费者保障
             $checkbox = '';
             /*$shop_goods_cat_base = $this->shopGoodsCat->getByWhere(array('shop_id' => $shop_base['shop_id']));*/

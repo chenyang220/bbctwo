@@ -208,44 +208,6 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
                     <input type="hidden" name="cat_id" value="<?php echo $cat_id ?>"/>
                     <input type="hidden" name="cat_name" value="<?php echo $data['cat_directory']; ?>"/>
                     <a class="bbc_seller_btns js-edit-goods button button_blue" href="<?php echo Yf_Registry::get('url') . '?ctl=Seller_Goods&met=add&typ=e&'; ?>"><?= __('编辑') ?></a>
-
-                    <?php //if (Web_ConfigModel::value('Plugin_Fenxiao') == 1 && @$this -> shopBaseInfo['shop_type'] != 2) { ?>
-                    <!-- <div style="float: right;width: auto;" id="xiao">
-                            <? //=__('佣金比例:')?>
-                            <? //=__('一级:')?><input type="text" name="fenxiao[]" style="width: 30px;" class="text" value=""/>%
-                            <? //=__('二级:')?><input type="text" name="fenxiao[]" style="width: 30px;" class="text" value=""/>%
-                            <? //=__('三级:')?><input type="text" name="fenxiao[]" style="width: 30px;" class="text" value=""/>%
-                        </div> -->
-                    <?php //} ?>
-                    <!-- <script type="text/javascript">
-                        $(function () {
-                            var param = {
-                                'cat_id': '<?= $cat_id ?>',
-                                'common_id': '<? //= $common_data['common_id']; ?>',
-                            };
-                            Public.ajaxPost(SITE_URL + "?ctl=Fenxiao&met=getGoodsValues&typ=json", param, function (res) {
-                                if (res.status == 200) {
-                                    $('input[name="fenxiao[]"]').each(function (i, e) {
-                                        e.value = res.data.values[i];
-                                    });
-                                }
-                            });
-                        })
-                        
-                        var fenxiao = '<? //= Web_ConfigModel::value('Plugin_Fenxiao'); ?>';
-                        var fenxiao_lowest = '<? //= Web_ConfigModel::value('fenxiao_lowest'); ?>';
-                        
-                        $('#form').on('submit', function () {
-                            $('input[name="feixiao[]"]').each(function (i, e) {
-                                var value = e.value;
-                                if (value < fenxiao_lowest) {
-                                    Public.tips.warning('分销比例不能低于平台设置最低值');
-                                    return false;
-                                }
-                            })
-                        })
-                    
-                    </script> -->
                 </dd>
             </dl>
             <?php if (!empty($data['brand']) || !empty($data['property'])) { ?>
@@ -759,6 +721,16 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
                 </dd>
             </dl>
             <!-- 只有可发布虚拟商品才会显示 E -->
+            <dl>
+        <dt><?= __('商品第三方跳转链接') ?>：</dt>
+        <dd>
+            <input type="text" class="text w450" name="third_url" id="third_url" maxlength="200" value="<?php if (!empty($common_data)) {
+                echo $common_data['common_code'];
+            } ?>"/>
+
+            <p class="hint"><?= __('此链接为特殊商品跳转到第三方详情的链接') ?></p>
+        </dd>
+    </dl>
         <?php } ?>
     <?php } ?>
 

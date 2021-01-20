@@ -116,5 +116,6 @@ ADD COLUMN `zan_sum`  int(11) NOT NULL DEFAULT 0 COMMENT '点赞数量';
 ALTER TABLE `yf_zan_log`
 MODIFY COLUMN `id`  int(11) UNSIGNED NOT NULL AUTO_INCREMENT FIRST ;
 
-
+ALTER TABLE `yf_goods_common`
+ADD COLUMN `third_url`  varchar(255) NULL COMMENT '第三方跳转链接';
 
