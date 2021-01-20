@@ -16,13 +16,13 @@
 <?php
 include __DIR__ . '/../includes/header.php';
 ?>
-<div class="goods-search-list-nav bort1">
+<div class="customize-feature-goods-list-nav store-goods-list-nav">
     <ul id="nav_ul">
-        <li><a href="javascript:void(0);" class="current" id="sort_default"><?= __('综合排序'); ?><i></i></a></li>
-        <li><a href="javascript:void(0);" id="sort_salesnum"><?= __('销量优先'); ?></a></li>
-        <li><a href="javascript:void(0);" id="search_adv"><?= __('筛选'); ?><i></i></a></li>
+        <li><a href="javascript:void(0);" class="current" id="sort_default"><?= __('综合'); ?><i></i></a></li>
+        <li><a href="javascript:void(0);" id="sort_salesnum"><?= __('销量'); ?></a></li>
+		<li><a href="javascript:void(0);" class="">价格</a></li>
     </ul>
-    <div class="browse-mode"><a href="javascript:void(0);" id="show_style"><span class="browse-list"></span></a></div>
+    <div class="ser-adv flex1"><a href="javascript:void(0);" id="search_adv">筛选<i></i></a></div>
 </div>
 <div id="sort_inner" class="goods-sort-inner hide borb1">
     <span><a href="javascript:void(0);" class="cur" id="default"><?= __('综合排序'); ?><i></i></a></span>
@@ -30,10 +30,11 @@ include __DIR__ . '/../includes/header.php';
     <span><a href="javascript:void(0);" id="priceup"><?= __('价格从低到高'); ?><i></i></a></span>
     <span><a href="javascript:void(0);" id="collect"><?= __('人气排序'); ?><i></i></a></span>
 </div>
-<div class="list" nc_type="product_content">
-    <ul class="goods-secrch-list" id="product_list"></ul>
+<div class="customize-goods-lists">
+	<div class="grid pt-0 style-change" nc_type="product_content">
+	    <ul class="masonry" id="product_list"></ul>
+	</div>
 </div>
-
 <div class="nctouch-full-mask hide">
     <div class="nctouch-full-mask-bg"></div>
     <div class="nctouch-full-mask-block">
@@ -62,47 +63,50 @@ include __DIR__ . '/../includes/header.php';
     <% var goods_list = data.items; %>
     <% if(typeof(goods_list)!=='undefined' && goods_list.length >0){%>
         <% for (var k in goods_list) { var v = goods_list[k];%>
-        <li class="goods-item" goods_id="<%=v.goods_id[0].goods_id;%>">
-    				<span class="goods-pic">
-    					<a href="product_detail.html?goods_id=<%=v.goods_id[0].goods_id;%>">
-    						<img src="<%=v.common_image;%>"/>
-    					</a>
-    				</span>
-            <dl class="goods-info">
-                <dt class="goods-name">
-                    <a href="product_detail.html?goods_id=<%=v.goods_id[0].goods_id;%>">
-                        <h4><%=v.common_name;%></h4><h6></h6>
-                    </a>
-                </dt>
-                <dd class="goods-sale">
-                    <a href="product_detail.html?goods_id=<%=v.goods_id[0].goods_id;%>">
-    					<span class="goods-price"><?= __('￥'); ?><em><%=v.common_price;%></em>
-    						<% if (v.sole_flag) {%>
-    							<span class="phone-sale"><i></i><?= __('手机专享'); ?></span>
-    						<% } %>
-    					</span>
-                        <% if (v.common_is_virtual == '1') { %>
-                            <span class="sale-type"><?= __('虚'); ?></span>
-                        <% } else { %>
-                            <% if (v.is_presell == '1') { %>
-                                <span class="sale-type"><?= __('预'); ?></span>
-                            <% } %>
-                            <% if (v.is_fcode == '1') { %>
-                                <span class="sale-type">F</span>
-                            <% } %>
-                        <% } %>
-
-                        <% if(v.group_flag || v.xianshi_flag){ %>
-                        <span class="sale-type"><?= __('降'); ?></span>
-                        <% } %>
-                    </a>
-                </dd>
-                <dd class="goods-assist">
-                    <a href="product_detail.html?goods_id=<%=v.goods_id[0].goods_id;%>">
-                        <span class="goods-sold"><?= __('销量:'); ?>&nbsp;<em><%=v.common_salenum;%></em></span>
-                    </a>
-                </dd>
-            </dl>
+        <li class="item" goods_id="<%=v.goods_id[0].goods_id;%>">
+			<div class="pad">
+				<span class="goods-pic">
+					<a href="product_detail.html?goods_id=<%=v.goods_id[0].goods_id;%>">
+						<img src="<%=v.common_image;%>"/>
+					</a>
+				</span>
+				<dl class="goods-info">
+					<dt class="goods-name">
+						<a href="product_detail.html?goods_id=<%=v.goods_id[0].goods_id;%>">
+							<h4><%=v.common_name;%></h4><h6></h6>
+						</a>
+					</dt>
+					<dd class="goods-sale">
+						<a href="product_detail.html?goods_id=<%=v.goods_id[0].goods_id;%>">
+							<p class="label"><label class="label-item">舒适</label><label class="label-item">干练</label></p>
+							<p>
+								<span class="goods-price"><?= __('￥'); ?><em><%=v.common_price;%></em>
+									<% if (v.sole_flag) {%>
+										<span class="phone-sale"><i></i><?= __('手机专享'); ?></span>
+									<% } %>
+								</span>
+								<b class="had-sale"><%=v.common_salenum;%>人付款</b>
+								<% if (v.common_is_virtual == '1') { %>
+									<span class="sale-type"><?= __('虚'); ?></span>
+								<% } else { %>
+									<% if (v.is_presell == '1') { %>
+										<span class="sale-type"><?= __('预'); ?></span>
+									<% } %>
+									<% if (v.is_fcode == '1') { %>
+										<span class="sale-type">F</span>
+									<% } %>
+								<% } %>
+								
+								<% if(v.group_flag || v.xianshi_flag){ %>
+								<span class="sale-type"><?= __('降'); ?></span>
+								<% } %>
+							</p>
+							
+						</a>
+					</dd>
+					
+				</dl>
+			</div>
         </li>
         <%}%>
     <% }else { %>

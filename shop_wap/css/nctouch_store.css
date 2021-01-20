@@ -99,7 +99,7 @@
 .nctouch-store-ranking .top-list dl:nth-child(3) span:last-child { display: none;}
 
 .nctouch-store-goods-list {}
-.nctouch-store-goods-list ul { font-size: 0; padding: 0 0.454rem;}
+.nctouch-store-goods-list ul { font-size: 0;}
 .nctouch-store-goods-list .goods-item { display: inline-block;margin-bottom:0.454rem; width: 48.7%; padding:0; background-color: #FFF; overflow: hidden;border-radius:0.227rem;vertical-align:top;box-shadow:0px 2px 3px 0px rgba(29,29,29,0.03);}
 .nctouch-store-goods-list .goods-item:nth-child(odd){margin-right:2%;}
 .nctouch-store-goods-list .goods-item a {padding-bottom:0.363rem; color: #555; display: block; width: 100%;}
@@ -115,36 +115,17 @@
     line-height: 1.954rem;
     margin: 0;
     border: none 0;
-    text-align: center;}
-.nctouch-store-goods-list .addtime time {
-	font-size: 0.681rem;
-    line-height: 1.954rem;
-    color: #9D9D9D;}
-.nctouch-store-goods-list .addtime .iconfont{
-	display: inline-block;
-	margin-right: 0.2rem;
-	font-size: 0.818rem;
-	color: #9D9D9D;
-	vertical-align: middle;
 }
+.nctouch-store-goods-list .addtime time {
+	font-size: 0.636rem;
+    line-height: 1.954rem;
+    color: #555;}
+
 .nctouch-store-goods-list .addtime span{
 	display:inline-block;
 	position:relative;
 }
-.nctouch-store-goods-list .addtime span:before,.nctouch-store-goods-list .addtime span:after{
-	content:"";
-	width:2.727rem;
-	height:1px;
-	background:#E3E3E3;
-	position:absolute;
-	top:1rem;
-}
-.nctouch-store-goods-list .addtime span:before{
-	left:-3rem;
-}
-.nctouch-store-goods-list .addtime span:after{
-	right:-3rem;
-}
+
 .nctouch-store-bottom { position: fixed; z-index: 10; right: 0; bottom: 0; left: 0; display: block; height: 2rem; background-color: #F5F5F5; border-top: solid 0.05rem #CCC;}
 .nctouch-store-bottom ul { font-size: 0;}
 .nctouch-store-bottom li { display: inline-block;vertical-align:top; width: 33%; height: 2rem; text-align: center; font-size: 0.7rem; line-height: 2rem; border-left: solid #CCC 0.05rem;background:#fff;}
@@ -296,4 +277,110 @@
 }
 .zizhi-tips-text{
 
+}
+.store-head-oper button{
+	width:auto !important;
+	padding:0 0.4rem;
+	margin:0 0.136rem;
+}
+.custom-store-nav{
+	display:flex;
+	justify-content:space-between;
+	padding:0.613rem 0 0.818rem;
+}
+.custom-store-nav li a{
+	font-size:0.636rem;
+	color:#555;
+}
+.custom-store-nav li.selected a{
+	color:#FF7800;
+}
+.custom-store-top{
+	margin-top:2.227rem;
+	margin-bottom: 3rem;
+}
+.custom-store-module-tit span{
+	display:inline-block;
+	width:7.454rem;
+	height:1.431rem;
+	line-height:1.431rem;
+	background:#F22E39;
+	font-size:0.681rem;
+	color:#fff;
+	text-align:center;
+}
+.custom-store-module-tit{
+	margin:0.4rem 0 0.909rem;
+}
+.custom-store-goods-list li{
+	position:relative !important;
+}
+.grid .custom-store-goods-list li{
+	 width:49.2%;
+}
+.store-goods-list-nav{
+	position: relative !important;
+	top: 0 !important;
+	z-index: 1 !important;
+	box-shadow: inherit !important;
+}
+.store-goods-list-nav li a{
+	font-size:0.636rem !important;
+}
+.custom-btn-store-activity{
+	display:inline-block;
+	width:12.818rem;
+	height:2rem;
+	line-height:2rem;
+	background:#F22E39;
+	border-radius:1rem;
+	font-size:0.818rem;
+	color:#fff;
+	text-align:center;
+}
+.custom-store-goods-special .goods-price{
+	display:inline-block;
+	padding:0 0.4rem;
+	background:#F22E39;
+	color:#fff;
+	border-radius:0.5rem;
+}
+.custom-store-goods-special .goods-price b,.custom-store-goods-special .goods-price em{
+	color:#fff !important;
+}
+.custom-store-goods-special .goods-price b{
+	font-size:0.386rem;
+}
+.custom-store-goods-special .goods-price em{
+	font-size:0.613rem !important;
+}
+.custom-store-activity-pri{
+	margin-top:0.34rem;
+}
+.custom-store-activity-time{
+	margin-top:0.386rem;
+	font-size:0.409rem;
+	color:#9A9A9A;
+}
+.custom-store-button{
+	display:inline-block;
+	font-size:0.454rem;
+	color:#fff;
+	background:#F22E39;
+	border-radius:1rem;
+	width:2.886rem;
+	line-height:1.181rem;
+	height:1.181rem;
+	border:0;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+.customize-goods-lists .grid .had-sale{
+	display:block;
+	margin-top:0.2rem;
+	margin-left:0;
+}
+.customize-goods-lists .grid .custom-store-button{
+	bottom:1.2rem;
 }

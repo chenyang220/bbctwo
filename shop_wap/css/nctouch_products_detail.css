@@ -927,7 +927,7 @@ b.swiper-pagination-customs-active{
 .goods-detail-store .store-name .fans{
 	margin-left:0.113rem;
 }
-.goods-detail-store .store-name i{
+.goods-detail-store .store-name i.star{
 	display:inline-block;
 	width:0.363rem;
 	height:0.363rem;
@@ -964,7 +964,7 @@ b.swiper-pagination-customs-active{
 	background-image: url(../images/bbc-bg7.png);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	background-size: 100%;
+	background-size: contain;
 }
 
 .goods-detail-store .store-rate {
@@ -2398,7 +2398,7 @@ b.swiper-pagination-customs-active{
 .customize-detail-head-nav{
 	position:fixed;
 	left:0;
-	top:2rem;
+	top:0;
 	z-index:5;
 	width:100%;
 }
@@ -2409,19 +2409,22 @@ b.swiper-pagination-customs-active{
 	display:block !important;
 }
 .customize-detail-main{
-	padding-top:2rem;
+	padding-top:0;
 }
 .customize-detail-main.active{
 	padding-top:3.295rem;
 }
 .customize-goods-attr{
 	display:inline-block;
+	margin-top:0.5rem;
 	padding:0 0.477rem;
 	line-height:0.681rem;
 	font-size:0.545rem;
 	color:#fff;
 	background:#9867CE;
 	border-radius:0.4rem;
+	vertical-align:top;
+	max-width:72%;
 }
 .customize-detail-tip{
 	margin-left:-0.2rem;

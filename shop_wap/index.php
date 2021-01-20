@@ -47,19 +47,7 @@ include __DIR__ . '/includes/header.php';
     }
 </script>
 <body class="fz-0 bgf">
-	<header id="header" class="fixed borb0">
-	    <div class="header-wrap">
-	        <div class="header-l">
-	            <a href="javascript:history.go(-1)"> <i class="back"></i> </a>
-	        </div>
-	        <div class="header-title">
-	            <h1>黄页商城</h1>
-	        </div>
-	       <div class="right fz0 hy-head-more">
-			   <a class="iblock" href="javascript:void(0);"><i class="zk-head-more"></i></a>
-		   </div>
-	    </div>
-	</header>
+	
 <!-- 搜索 -->
 <div class="head-fixed">
     <div class="head-ser">

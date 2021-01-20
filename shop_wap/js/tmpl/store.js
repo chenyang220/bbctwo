@@ -1,5 +1,11 @@
 var t = getCookie("key");
 var e = getQueryString("shop_id");
+var columns=2;
+if($('.style-change').hasClass('list')){
+	columns=1;
+}else{
+	columns=2;
+}
 function tidyStoreNewGoodsData(t) {
     if (t.items.length <= 0) {
         return t;
@@ -16,11 +22,12 @@ function tidyStoreNewGoodsData(t) {
 }
 $("#goods_search").on("click", ".header-inp", function ()
     {
-
-        alert(111);
         location.href = WapSiteUrl + "/tmpl/search.html?mb=shop";
     });
 $(function () {
+	var indexTem = template.render("store_index_tpl");
+	$("#storeindex_con").html(indexTem);
+	 waterFall(columns);
     if (!e) {
         window.location.href = WapSiteUrl + "/index.html";
     }
@@ -217,15 +224,15 @@ $(function () {
     if (nav_hash) {
         $(nav_hash).click();
     }
-    $(window).scroll(function(){
-        var hig=$(".store-head-bg").height();
-        if($(this).scrollTop()>=hig){
-            $(".nctouch-store-nav,.goods-search-list-nav").addClass("fixed");
-        }else{
-            $(".nctouch-store-nav,.goods-search-list-nav").removeClass("fixed");
+    // $(window).scroll(function(){
+    //     var hig=$(".store-head-bg").height();
+    //     if($(this).scrollTop()>=hig){
+    //         $(".nctouch-store-nav,.goods-search-list-nav").addClass("fixed");
+    //     }else{
+    //         $(".nctouch-store-nav,.goods-search-list-nav").removeClass("fixed");
             
-        }
-    })
+    //     }
+    // })
 
     $(".shop_footer_dh").click(function () {
         $(".shop_footer_dh").each(function (e,a) {
@@ -242,43 +249,64 @@ $(function () {
     });
 });
 
+function toColumns(){
+	if($('.style-change').hasClass('list')){
+		$('.style-change').removeClass('list').addClass('grid');
+		columns=2;
+	}else{
+		$('.style-change').removeClass('grid').addClass('list');
+		columns=1;
+	}
+	waterFall(columns);
+}
 
-
+$("#menuChange").click(function(){
+	toColumns();
+})
 
 function nav_click(nav_type) {
     $("#nav_tab").find("li").removeClass("selected");
     $("#" + nav_type).parent().addClass("selected").siblings().removeClass("selected");
-    $("#storeindex_con,#allgoods_con,#newgoods_con,#storeactivity_con").hide();
+    $("#storeindex_con,#allgoods_con,#newgoods_con,#storeactivity_con").html(' ');
     window.scrollTo(0, 0);
     window.location.hash = nav_type;
     switch (nav_type) {
     case "storeindex":
-        $("#storeindex_con").show();
+		columns=2;
+		var indexTem = template.render("store_index_tpl");
+        $("#storeindex_con").html(indexTem);
         o();
         break;
     case "allgoods":
-        if (!$("#allgoods_con").html()) {
+		columns=2;
+        if ($("#allgoods_con").html() !='') {
             $("#allgoods_con").load("store_goods_list.html", function () {
                 $(".goods-search-list-nav").addClass("posr");
                 $(".goods-search-list-nav").css("top", "0");
                 $("#sort_inner").css("position", "static");
             });
         }
-        $("#allgoods_con").show();
+        // $("#allgoods_con").show();
+		
         break;
     case "newgoods":
-        if (!$("#newgoods_con .addtime").html()) {
+		columns=2;
+        if ($("#newgoods_con .addtime").html() !='') {
             s();
         }
-        $("#newgoods_con").show();
+        // $("#newgoods_con").show();
+		
         break;
     case "storeactivity":
-        if (!$("#storeactivity_con").html()) {
+		columns=1;
+		 // $("#storeactivity_con").show();
+        if ($("#storeactivity_con").html() !='') {
             r();
         }
-        $("#storeactivity_con").show();
+       
         break;
     }
+	
 }
 
 function s() {
@@ -289,10 +317,11 @@ function s() {
         url: ApiUrl + "/index.php?ctl=Shop&met=goodsList&order=common_sell_time&sort=desc&typ=json",
         getparam: t,
         tmplid: "newgoods_tpl",
-        containerobj: $("#newgoods_next"),
+        containerobj: $("#newgoods_con"),
         iIntervalId: true,
         resulthandle: "tidyStoreNewGoodsData"
     });
+	waterFall(columns);
 }
 
 function r() {
@@ -304,9 +333,9 @@ function r() {
         success: function (t) {
             t.data.shop_id = e;
             var o = template.render("storeactivity_tpl", t.data);
-            
             if ($.trim(o)) {
                 $("#storeactivity_con").html(o);
+				waterFall(columns);
             }
         }
     });

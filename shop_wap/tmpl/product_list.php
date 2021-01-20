@@ -34,19 +34,7 @@
     </style>
 </head>
 <body class="bgf">
-	<header id="header" class="customize-index-header">
-	    <div class="header-wrap">
-	        <div class="left">
-	            <a class="iblock" href="javascript:history.go(-1)"><i class="zk-head-back"></i></a>
-	        </div>
-	        <div class="header-title">
-	            <h1>黄页商城</h1>
-	        </div>
-	        <div class="right fz0">
-	            <a class="iblock" href="javascript:void(0);"><i class="zk-head-more"></i></a>
-	        </div>
-	    </div>
-	</header>
+	
     <div class="customize-feature-page-head clearfix lists">
     	<div class="customize-feature-page-input to-search">
     		<i class="iconfont icon-search"></i>

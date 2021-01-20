@@ -62,47 +62,7 @@ if ($_GET['qr']) {
     <!--<script type="text/javascript" src="../js/soshm.js"></script>-->
     <script type="text/javascript" src="../js/soshm.min.js"></script>
     <body>
-	<header id="header" class="customize-index-header">
-		<div class="header-wrap">
-			<div class="left">
-				<a class="iblock" href="javascript:history.go(-1)"><i class="zk-head-back"></i></a>
-			</div>
-			<div class="header-title">
-				<h1>黄页商城</h1>
-			</div>
-			<div class="right fz0">
-				<a class="iblock" id="header-nav" href="javascript:void(0);"><i class="zk-head-more"></i></a>
-			</div>
-			<div class="nctouch-nav-layout">
-				<div class="nctouch-nav-menu">
-				    <ul>
-				        <?php if($_COOKIE['SHOP_ID_WAP']){ ?>
-				            <li><a href="../tmpl/store.html?shop_id=<?=$_COOKIE['SHOP_ID_WAP']?>"><i class="home"></i><?= __('首页'); ?></a></li>
-				            <li><a href="../tmpl/store_search.html?shop_id=<?=$_COOKIE['SHOP_ID_WAP']?>"><i class="search"></i><?= __('搜索'); ?></a></li>
-				        <?php }else{ ?>
-				            <li><a href="../index.html"><i class="home"></i><?= __('首页'); ?></a></li>
-				            <li><a href="../tmpl/search.html"><i class="search"></i><?= __('搜索'); ?></a></li>
-				        <?php }?>
-				        <li><a href="../tmpl/member/member.html"><i class="member"></i><?= __('我的商城'); ?></a></li>
-				        <li><a href="javascript:void(0);"><i class="message" style="float: left;"></i><?= __('消息'); ?><sup></sup></a></li>
-				        <?php if ($_COOKIE['is_app_guest']) { ?>
-				            <li>
-				                <a href="" id='shareit'> <i class="share"></i><?= __('分享'); ?><sup></sup> </a>
-				            </li>
-				        <?php }elseif (substr_count($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') == 0){ ?>
-				            <?php if(substr_count($_SERVER['HTTP_USER_AGENT'],'UCBrowser') >= 1 || substr_count($_SERVER['HTTP_USER_AGENT'],'UCWEB') >= 1 || substr_count($_SERVER['HTTP_USER_AGENT'],'MQQBrowser') >= 1){ ?>
-				                <li>
-				                    <a id='share_wap'> <i class="share"></i><?= __('分享'); ?><sup></sup></a>
-				                </li>
-				            <?php }?>
-				        <?php }?>
-				
-				    </ul>
-				</div>
-			</div>
-			
-		</div>
-	</header>
+	
 	<ul class="header-nav customize-detail-head-nav">
 		<li class="cur"><a href="javascript:void(0);"><?= __('商品'); ?></a></li>
 		<li><a href="javascript:void(0);"><?= __('评价'); ?></a></li>
@@ -806,8 +766,7 @@ if ($_GET['qr']) {
                 <a href="store<%= store_info.shop_wap_index == 1 ? '' :store_info.shop_wap_index %>.html?shop_id=<%= store_info.store_id %>">
                      <div class="store-name flex">
                         <% if(goods_info.wap_shop_logo){ %>
-                        <!-- <i class="icon-store"></i> -->
-                            <img src="<%= goods_info.wap_shop_logo%>" style="width: 36px;height: 36px;">
+                        <i class="icon-store" style="background-image:url(<%= goods_info.wap_shop_logo%>);"></i>
                         <% } else {%>
                             <i class="icon-store"></i>
                         <% }%>

@@ -21,7 +21,7 @@ include __DIR__ . '/../includes/header.php';
         <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
     </head>
     <body>
-    <header id="header" class="fixed borb0">
+    <!-- <header id="header" class="fixed borb0">
         <div class="header-wrap">
             <div class="header-l">
                 <a href="javascript:history.go(-1)"> <i class="back"></i> </a>
@@ -34,8 +34,8 @@ include __DIR__ . '/../includes/header.php';
             </div>
         </div>
     </header>
-	
-    <div class="nctouch-main-layout">
+	 -->
+    <div class="">
 		<div class="zk-cart-orders bgf">
 			<div class="zk-cart-orders-content">
 				<p><span>我的订单</span><a class="fr" href="">查看全部</a></p>

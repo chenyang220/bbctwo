@@ -13,6 +13,7 @@ var curpage = 1;
 var firstRow = 0;
 var hasmore = true;
 var footer = false;
+var columns=2;
 $(function () {
     $("#show_style").click(function () {
         var e = $('[nc_type="product_content"]');
@@ -178,12 +179,14 @@ $(function () {
     $("#reset").click(function () {
         $('input[nctype="price"]').val("")
     });
-    get_list()
+    get_list();
+	
     $(window).scroll(function ()
     {
         if ($(window).scrollTop() + $(window).height() > $(document).height() - 1)
         {
             get_list()
+			waterFall(columns);
         }
     });
 });
@@ -246,6 +249,7 @@ function get_list()
         var r = template.render("goods_list_tpl", e);
 
         $("#product_list").append(r);
+		 waterFall(columns);
        if(e.data.page < e.data.total)
        {
            firstRow = e.data.records;

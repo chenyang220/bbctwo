@@ -2,7 +2,7 @@
     include __DIR__ . '/../includes/header.php';
 ?>
     <!doctype html>
-    <html>
+    <html class="bgf">
     
     <head>
         <meta charset="UTF-8">
@@ -17,10 +17,12 @@
         <title><?= __('店铺首页'); ?></title>
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/nctouch_common.css">
-        <link rel="stylesheet" type="text/css" href="../css/nctouch_store.css">
+        <link rel="stylesheet" type="text/css" href="../css/nctouch_store.css?v=91">
 		<link rel="stylesheet" href="../css/nctouch_products_list.css?v=911">
+		<link rel="stylesheet" href="../css/nctouch_products_detail.css?v=911">
 		<link rel="stylesheet" href="../css/swiper.min.css">
         <link rel="stylesheet" href="../css/iconfont.css">
+		<link rel="stylesheet" href="../css/customize.css">
     </head>
     <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
     <script type="text/javascript">
@@ -28,68 +30,63 @@
         wx.miniProgram.redirectTo({url:url})
     </script>
     <body>
-    <header id="header" class="transparent absolute" style="background-color:#e3e3e3">
-        <div class="header-wrap wap-store-index-head">
-            <?php if(!$_COOKIE['SHOP_ID_WAP']){ ?>
-            <div class="header-l">
-            <a href="../index.html"><b class="iconfont icon-arrow-left colf"></b></a></div>
-            <?php }?>
-            <?php if($_COOKIE['SHOP_ID_WAP']){ ?>
-            <a style="font-size: 0.545rem; float: left; color:#999;margin-left: 10px;
-    margin-top: 7px;" href="javascript:void(0); " class="logbtn">登录</a>
-            <?php }?>    
-            <a class="header-inp clearfix" href="/tmpl/search.html?mb=shop">
-                <i class="icon"></i>
-                <span class="search-input colbc"><?= __('搜索店铺内商品'); ?></span>
-            </a>
-
-                <a class="fr mr-10 ml-20 mt-20" href="./shop_goods_cat.html?shop_id=<?php echo $_GET['shop_id']?>" >
-                   <i class="iconfont icon-menu1 colf fz-50"></i>
-                </a>
-
-            <div class="header-r">
-                <a id="header-nav" href="javascript:void(0);">
-                    <b class="iblock iconfont icon-more fz-50 colf align-middle mt-10"></b>
-                    <sup></sup>
-                </a>
-            </div>
-        </div>
-        <div class="nctouch-nav-layout">
-            <div class="nctouch-nav-menu"><span class="arrow"></span>
-                <ul>
-                    <?php if($_COOKIE['SHOP_ID_WAP']){ ?>
-                        <li><a href="../tmpl/store.html?shop_id=<?=$_COOKIE['SHOP_ID_WAP']?>"><i class="home"></i><?= __('首页'); ?></a></li>
-                        <li><a href="../tmpl/store_search.html?shop_id=<?=$_COOKIE['SHOP_ID_WAP']?>"><i class="search"></i><?= __('搜索'); ?></a></li>
-                    <?php }else{ ?>
-                        <li><a href="../index.html"><i class="home"></i><?= __('首页'); ?></a></li>
-                        <li><a href="../tmpl/search.html"><i class="search"></i><?= __('搜索'); ?></a></li>
-                    <?php }?>
-                    <li><a href="../tmpl/cart_list.html"><i class="cart"></i><?= __('购物车'); ?><sup></sup></a></li>
-                    <li><a href="javascript:void(0);"><i class="message"></i><?= __('消息'); ?><sup></sup></a></li>
-                    <?php if ($_COOKIE['is_app_guest']) { ?>
-                        <li><a href="" id="shareit_store"><i class="share"></i><?= __('分享'); ?><sup></sup></a></li>
-                    <?php } ?>
-                </ul>
-            </div>
-        </div>
-    </header>
-    
-    <div class=" mb25">
+	
+	<div class="customize-feature-page-head clearfix lists">
+		<a href="/tmpl/search.html?mb=shop" class="customize-feature-page-input to-search">
+			<i class="iconfont icon-search"></i>
+			<input class="placeholder-c1" type="text" placeholder="搜你想搜的" readonly>
+		</a>
+		<!-- <a href="./shop_goods_cat.html?shop_id=<?php echo $_GET['shop_id']?>" class="zk-menu"></a> -->
+		<b class="zk-menu" id="menuChange"></b>
+	</div>
+	<div class="custom-store-top bgf">
+		<div class="custom-store-info goods-detail-store">
+			<div class="store-name flex">
+			    <i class="icon-store" style="background-image:url(https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200928/160126733562579976301346610359.png!64x64.png);"></i>
+				<div class="flex1">
+					<p class="top"><span class="name">订来订趣 新疆礼物</span>
+					<!-- <b class="fans">粉丝数 56435</b> -->
+					</p>
+					<p><em>综合评分</em>
+					<span class="star-span"><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i></span>
+					<label class="label-item">人气</label><label class="label-item">销量</label>
+					</p>
+				</div>
+				<div class="store-head-oper">
+					<button>关注</button><button>签到</button>
+				</div>
+			</div>
+			<ul class="custom-store-nav flex" id="nav_tab">
+				<li class="selected"><a href="javascript: void(0);" data-type="storeindex" id="storeindex" onclick="nav_click('storeindex')"><?= __('店铺首页'); ?></a></li>
+				<li><a href="javascript: void(0);" data-type="allgoods" id="allgoods" onclick="nav_click('allgoods')"><?= __('全部商品'); ?></a></li>
+				<li><a href="javascript: void(0);" data-type="newgoods" id="newgoods" onclick="nav_click('newgoods')"><?= __('商品上新'); ?></a></li>
+				<li><a href="javascript: void(0);" data-type="storeactivity" id="storeactivity" onclick="nav_click('storeactivity')"><?= __('店铺活动'); ?></a></li>
+			</ul>
+		</div>
+		<!-- 首页 -->
+		<div id="storeindex_con"></div>
+		<!-- 所有商品 -->
+		<div id="allgoods_con"></div>
+		<!-- 商品上新 -->
+		<div id="newgoods_con" class="nctouch-store-goods-list customize-goods-lists"></div>
+		<!-- 店铺活动 -->
+		<div id="storeactivity_con"></div>
+	</div>
+	
+	
+	
+	
+   <!-- <div class="mb25">
         <div id="store-wrapper" class="nctouch-store-con">
 			<div class="store-head-bg fz0" style="background:url() no-repeat center;background-size:cover;">
 				<div class="nctouch-store-top iblock fz0" id="store_banner"></div>
 				<div id="nav_tab_con" class="nctouch-single-nav nctouch-store-nav">
-					<ul id="nav_tab">
-						<li class="selected"><a href="javascript: void(0);" data-type="storeindex" id="storeindex" onclick="nav_click('storeindex')"><?= __('店铺精选'); ?></a></li>
-						<li><a href="javascript: void(0);" data-type="allgoods" id="allgoods" onclick="nav_click('allgoods')"><?= __('全部商品'); ?></a></li>
-						<li><a href="javascript: void(0);" data-type="newgoods" id="newgoods" onclick="nav_click('newgoods')"><?= __('商品上新'); ?></a></li>
-						<li><a href="javascript: void(0);" data-type="storeactivity" id="storeactivity" onclick="nav_click('storeactivity')"><?= __('店铺活动'); ?></a></li>
-					</ul>
+					
 				</div>
 			</div>
             <div id="storeindex_con" class="relative wp100 fz0">
 				<div class="bgf iblock wp100 pl-20 pr-20 box-size mt-20">
-					<div id="store_sliders" class="nctouch-store-wapper swiper-container"></div>
+					
 					<div class="store-vou bort1 borb1" id="voucher_list_div"></div>
 					<div class="nctouch-store-block nctouch-store-ranking">
 						<div class="title"><i class="icon icon-rank"></i><span><?= __('商品排行榜'); ?></span></div>
@@ -111,13 +108,10 @@
                     <div class="nctouch-store-goods-list" id="goods_recommend"></div>
                 </div>
             </div>
-            <div id="allgoods_con"></div>
-            <div id="newgoods_con" class="nctouch-store-goods-list">
-                <div id="newgoods_next"></div>
-            </div>
-            <div id="storeactivity_con"></div>
+            
+            
         </div>
-    </div>
+    </div> -->
     
     <div class="fix-block-r">
         <a href="javascript:void(0);" class="gotop-btn gotop hide" id="goTopBtn"><i></i></a>
@@ -139,6 +133,144 @@
             <li><a href="member/member.html?shop_id_wap=1"><?= __('个人中心'); ?></a></li>
         </ul> 
   </div> --> 
+	<!-- 首页 -->
+	<script type="text/html" id="store_index_tpl">
+	    <!-- 首页-图片 -->
+	    <a class="iblock wp100 custom-img-module" href="javascript: void(0);"><img class="wp100" src="https://www.yuanfengtest.com/image.php/shop/data/upload/media/plantform/6fc0625bf097e245fa1c1007bf528b2d/image/20200813/159730607675136588586586241244.png" alt=""></a>
+	    <!-- 首页-轮播图 -->
+	    <div id="store_sliders" class="swiper-container nctouch-store-wapper pl-30 pr-30"></div>
+	    <div class="customize-goods-lists">
+	    	<div class="grid pt-0 style-change">
+	    		<h3 class="custom-store-module-tit tc"><span>热销爆款</span></h3>
+	    		<ul class="custom-store-goods-list fz0">
+	    			<li class="item">
+	    				<div class="pad">
+	    					<span class="goods-pic">
+	    						<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    							<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
+	    						</a>
+	    					</span>
+	    					<dl class="goods-info relative">
+	    						<dt class="goods-name">
+	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    								<h4 class="more-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
+	    							</a>
+	    						</dt>
+	    						<dd class="goods-sale">
+	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    								<p class="label">
+	    										<label class="label-item">舒适</label>
+	    										<label class="label-item">干练</label>
+	    								</p>
+	    								<p>
+	    									<span class="goods-price"><b>￥</b><em>34.80</em>
+	    									</span>
+	    									<b class="had-sale">0人付款</b>
+	    								</p>
+	    							</a>
+	    						</dd>
+	    						
+	    					</dl>
+	    			   </div>
+	    			</li>
+	    			<li class="item">
+	    				<div class="pad">
+	    					<span class="goods-pic">
+	    						<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    							<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
+	    						</a>
+	    					</span>
+	    					<dl class="goods-info relative">
+	    						<dt class="goods-name">
+	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    								<h4 class="more-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
+	    								<h6></h6>
+	    							</a>
+	    						</dt>
+	    						<dd class="goods-sale">
+	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    								<p class="label">
+	    										<label class="label-item">舒适</label>
+	    										<label class="label-item">干练</label>
+	    								</p>
+	    								<p>
+	    									<span class="goods-price"><b>￥</b><em>34.80</em>
+	    									</span>
+	    									<b class="had-sale">0人付款</b>
+	    								</p>
+	    							</a>
+	    						</dd>
+	    						
+	    					</dl>
+	    			   </div>
+	    			</li>
+	    		</ul>
+	    		<h3 class="custom-store-module-tit tc"><span>新品主推</span></h3>
+	    			<ul class="custom-store-goods-list fz0">
+	    				<li class="item">
+	    					<div class="pad">
+	    						<span class="goods-pic">
+	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    								<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
+	    							</a>
+	    						</span>
+	    						<dl class="goods-info relative">
+	    							<dt class="goods-name">
+	    								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    									<h4 class="more-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
+	    								</a>
+	    							</dt>
+	    							<dd class="goods-sale">
+	    								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    									<p class="label">
+	    											<label class="label-item">舒适</label>
+	    											<label class="label-item">干练</label>
+	    									</p>
+	    									<p>
+	    										<span class="goods-price"><b>￥</b><em>34.80</em>
+	    										</span>
+	    										<b class="had-sale">0人付款</b>
+	    									</p>
+	    								</a>
+	    							</dd>
+	    							
+	    						</dl>
+	    				   </div>
+	    				</li>
+	    				<li class="item">
+	    					<div class="pad">
+	    						<span class="goods-pic">
+	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    								<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
+	    							</a>
+	    						</span>
+	    						<dl class="goods-info relative">
+	    							<dt class="goods-name">
+	    								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    									<h4 class="more-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
+	    								</a>
+	    							</dt>
+	    							<dd class="goods-sale">
+	    								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    									<p class="label">
+	    											<label class="label-item">舒适</label>
+	    											<label class="label-item">干练</label>
+	    									</p>
+	    									<p>
+	    										<span class="goods-price"><b>￥</b><em>34.80</em>
+	    										</span>
+	    										<b class="had-sale">0人付款</b>
+	    									</p>
+	    								</a>
+	    							</dd>
+	    							
+	    						</dl>
+	    				   </div>
+	    				</li>
+	    			</ul>
+	    	</div>
+	    </div>
+	</script>
     <!-- banner tpl -->
     <script type="text/html" id="store_banner_tpl">
         <div class="store-top-bg"><span class="img" nc_type="store_banner_img"><img src="" alt="store-bg"></span></div>
@@ -170,6 +302,7 @@
             </li>
             <% } %> <% } %>
         </ul>
+		<div class="swiper-pagination"></div>
     </script>
     <script type="text/html" id="voucher_list_tpl">
         <ul class="inline">
@@ -242,44 +375,190 @@
         </ul>
     </script>
     <script type="text/html" id="newgoods_tpl">
-        <% var goods_list = items; %>
-        <% if(goods_list.length >0){%>
-        <% for (var i in goods_list) {
-                var v = goods_list[i];
-        %>
-        <% if(v.goods_addtime_text_show){ %>
-        </ul><p class="addtime" addtimetext='<%=v.common_add_time %>'>
-            <span><i class="iconfont icon-shijian"></i><time><%= v.goods_addtime_text_show %></time></span>
-        </p><ul>
-        <% } %>
-        <li class="goods-item">
-            <a href="product_detail.html?goods_id=<%= v.goods_id[0].goods_id %>">
-                <div class="goods-item-pic">
-                    <img alt="" src="<%= v.common_image %>"/>
-                </div>
-                <div class="goods-item-name one-overflow">
-                    <%= v.common_name %>
-                </div>
-                <div class="goods-item-price"><?= __('￥'); ?><em><%= v.common_price %></em></div>
-            </a>
-        </li>
-        <% } %>
-        <li class="loading">
-            <div class="spinner"><i></i></div>
-            <?= __('商品数据读取中'); ?>...
-        </li>
-		
-        <% } else { %>
-        <div class="nctouch-norecord search">
-            <div class="norecord-ico"><i></i></div>
-            <dl>
-                <dt><?= __('商铺最近没有新品上架'); ?></dt>
-                <dd><?= __('收藏店铺经常来逛一逛'); ?></dd>
-            </dl>
-        </div>
-        <% } %>
+		<div id="newgoods_next" class="customize-goods-lists grid pt-0">
+			<% var goods_list = items; %>
+			<% if(goods_list.length >0){%>
+			<% for (var i in goods_list) {
+					var v = goods_list[i];
+			%>
+			<% if(v.goods_addtime_text_show){ %>
+			</ul><p class="addtime" addtimetext='<%=v.common_add_time %>'>
+				<span><time><%= v.goods_addtime_text_show %></time></span>
+			</p><ul class="custom-store-goods-list fz0">
+			<% } %>
+			<li class="item">
+				<a class="pad iblock" href="product_detail.html?goods_id=<%= v.goods_id[0].goods_id %>">
+					<div class="goods-pic">
+						<img alt="" src="<%= v.common_image %>"/>
+					</div>
+					<dl class="goods-info relative">
+						<dt class="goods-name">
+								<h4> <%= v.common_name %></h4>
+						</dt>
+						<dd class="goods-sale">
+							<p class="label"><label class="label-item">舒适</label></p>
+							<p>
+								<span class="goods-price"><b>￥</b><em><%= v.common_price %></em>
+								</span>
+								<b class="had-sale">0人付款</b>
+							</p>
+						</dd>		   
+					</dl>
+				</a>
+			</li>
+			<% } %>
+		   <!-- <li class="loading">
+				<div class="spinner"><i></i></div>
+				<?= __('商品数据读取中'); ?>...
+			</li> -->
+			
+			<% } else { %>
+			<div class="nctouch-norecord search">
+				<div class="norecord-ico"><i></i></div>
+				<dl>
+					<dt><?= __('商铺最近没有新品上架'); ?></dt>
+					<dd><?= __('收藏店铺经常来逛一逛'); ?></dd>
+				</dl>
+			</div>
+			<% } %>
+		</div>
     </script>
     <script type="text/html" id="storeactivity_tpl">
+		<div class="tc"><a class="custom-btn-store-activity" href="javascript:;">活动最低价</a></div>
+		<div class="customize-goods-lists">
+			<div class="list style-change">
+				<ul class="fz0 custom-store-goods-special masonry">
+					<li class="item">
+						<div class="pad">
+							<span class="goods-pic">
+								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+									<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
+								</a>
+							</span>
+							<dl class="goods-info relative">
+								<dt class="goods-name">
+									<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+										<h4 class="one-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
+									</a>
+								</dt>
+								<dd class="goods-sale">
+									<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+										<p class="label">
+												<label class="label-item">舒适</label>
+												<label class="label-item">干练</label>
+										</p>
+										<p class="custom-store-activity-pri">
+											<span class="goods-price"><b>折扣价￥</b><em>34.80</em>
+											</span>
+											<b class="had-sale">原价￥<i class="through">168</i></b>
+										</p>
+										<p class="custom-store-activity-time"><em class="time">活动时间：9月1号—9月8号</em></p>
+										<button class="custom-store-button">立即抢购</button>
+									</a>
+								</dd>
+								
+							</dl>
+					   </div>
+					</li>
+					<li class="item">
+						<div class="pad">
+							<span class="goods-pic">
+								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+									<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
+								</a>
+							</span>
+							<dl class="goods-info relative">
+								<dt class="goods-name">
+									<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+										<h4 class="one-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
+									</a>
+								</dt>
+								<dd class="goods-sale">
+									<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+										<p class="label">
+												<label class="label-item">舒适</label>
+												<label class="label-item">干练</label>
+										</p>
+										<p class="custom-store-activity-pri">
+											<span class="goods-price"><b>折扣价￥</b><em>34.80</em>
+											</span>
+											<b class="had-sale">原价￥<i class="through">168</i></b>
+										</p>
+										<p class="custom-store-activity-time"><em class="time">活动时间：9月1号—9月8号</em></p>
+										<button class="custom-store-button">立即抢购</button>
+									</a>
+								</dd>
+								
+							</dl>
+					   </div>
+					</li>
+					<li class="item">
+						<div class="pad">
+							<span class="goods-pic">
+								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+									<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
+								</a>
+							</span>
+							<dl class="goods-info relative">
+								<dt class="goods-name">
+									<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+										<h4 class="one-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
+									</a>
+								</dt>
+								<dd class="goods-sale">
+									<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+										<p class="label">
+												<label class="label-item">舒适</label>
+												<label class="label-item">干练</label>
+										</p>
+										<p class="custom-store-activity-pri">
+											<span class="goods-price"><b>折扣价￥</b><em>34.80</em>
+											</span>
+											<b class="had-sale">原价￥<i class="through">168</i></b>
+										</p>
+										<p class="custom-store-activity-time"><em class="time">活动时间：9月1号—9月8号</em></p>
+										<button class="custom-store-button">立即抢购</button>
+									</a>
+								</dd>
+								
+							</dl>
+					   </div>
+					</li>
+					<li class="item">
+						<div class="pad">
+							<span class="goods-pic">
+								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+									<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
+								</a>
+							</span>
+							<dl class="goods-info relative">
+								<dt class="goods-name">
+									<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+										<h4 class="one-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
+									</a>
+								</dt>
+								<dd class="goods-sale">
+									<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+										<p class="label">
+												<label class="label-item">舒适</label>
+												<label class="label-item">干练</label>
+										</p>
+										<p class="custom-store-activity-pri">
+											<span class="goods-price"><b>折扣价￥</b><em>34.80</em>
+											</span>
+											<b class="had-sale">原价￥<i class="through">168</i></b>
+										</p>
+										<p class="custom-store-activity-time"><em class="time">活动时间：9月1号—9月8号</em></p>
+										<button class="custom-store-button">立即抢购</button>
+									</a>
+								</dd>
+								
+							</dl>
+					   </div>
+					</li>
+				</ul>
+			</div>
+		</div>
         <% if(promotion.count){ %>
         <% if(promotion.mansong){ for(var k=0; k < promotion.mansong.length; k++){ var mansong = promotion.mansong[k];if(mansong.shop_id != 0){ %>
         <div class="store-sale-block">
@@ -326,13 +605,13 @@
         <% }}} %>
         
         <% }else{ %>
-        <div class="nctouch-norecord search">
+       <!-- <div class="nctouch-norecord search">
             <div class="norecord-ico"><i></i></div>
             <dl>
                 <dt><?= __('商铺最近没有促销活动'); ?></dt>
                 <dd><?= __('收藏店铺经常来逛一逛'); ?></dd>
             </dl>
-        </div>
+        </div> -->
         <% } %>
     </script>
     <script type="text/html" id="store_voucher_con_tpl">
@@ -381,6 +660,7 @@
 	<script type="text/javascript" src="../js/swiper.min.js"></script>
     <script type="text/javascript" src="../js/tmpl/store.js"></script>
     <script type="text/javascript" src="../js/tmpl/footer.js"></script>
+	<script src="../js/waterfall.js?v=8"></script>
     <script type="text/javascript">
         var level = getQueryString('level');
         var shop_id = getQueryString('shop_id');
