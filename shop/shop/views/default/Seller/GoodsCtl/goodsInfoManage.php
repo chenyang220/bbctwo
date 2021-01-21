@@ -334,8 +334,6 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
                 <span id="label_content">
                     <?php
                     if ($data['label_Base_edit']) {
-
-
                     foreach ($data['label_Base_edit'] as $key => $val) {
                         ?>
                         <label>
@@ -451,7 +449,7 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
             <p class="hint"><?= __('商品规格的价格，必须在供应商设置的最低零售价和最高零售价之间。') ?><br/><?= __('若分销商填写的价格高于最高零售价，系统会自动调整为最高零售价') ?></p>
         </dd>
     </dl>
-
+    
     <dl>
         <dt><i>*</i><?= __('商品库存') ?>：</dt>
         <dd>
@@ -473,7 +471,16 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
             <p class="hint"><?= __('设置最低库存预警值。当库存低于预警值时商家中心商品列表页库存列红字提醒。') ?><br/><?= __('请填写0~999的数字，0为不预警。') ?></p>
         </dd>
     </dl>
+<dl>
+        <dt><?= __('商品第三方跳转链接') ?>：</dt>
+        <dd>
+            <input type="text" class="text w450" name="third_url" id="third_url" maxlength="200" value="<?php if (!empty($common_data)) {
+                echo $common_data['third_url'];
+            } ?>"/>
 
+            <p class="hint"><?= __('此链接为特殊商品跳转到第三方详情的链接例如 http://ms.look56.com/?index.php') ?></p>
+        </dd>
+    </dl>
     <?php
     //供应商店铺
     if (@$this->shopBaseInfo['shop_type'] == 2) {
@@ -722,14 +729,6 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
             </dl>
             <!-- 只有可发布虚拟商品才会显示 E -->
             <dl>
-        <dt><?= __('商品第三方跳转链接') ?>：</dt>
-        <dd>
-            <input type="text" class="text w450" name="third_url" id="third_url" maxlength="200" value="<?php if (!empty($common_data)) {
-                echo $common_data['third_url'];
-            } ?>"/>
-
-            <p class="hint"><?= __('此链接为特殊商品跳转到第三方详情的链接例如 http://ms.look56.com/?index.php') ?></p>
-        </dd>
     </dl>
         <?php } ?>
     <?php } ?>
