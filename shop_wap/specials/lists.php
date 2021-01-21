@@ -1,5 +1,5 @@
 <?php
-    include '/../includes/header.php';
+    include '../includes/header.php';
 ?>
 <!DOCTYPE html>
 <html class="bgf">
