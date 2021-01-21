@@ -119,3 +119,6 @@ MODIFY COLUMN `id`  int(11) UNSIGNED NOT NULL AUTO_INCREMENT FIRST ;
 ALTER TABLE `yf_goods_common`
 ADD COLUMN `third_url`  varchar(255) NULL COMMENT '第三方跳转链接';
 
+ALTER TABLE `yf_label_base`
+MODIFY COLUMN `label_tag_sort`  int(5) NULL DEFAULT NULL COMMENT '标签排序',
+MODIFY COLUMN `label_logo`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '标签logo';

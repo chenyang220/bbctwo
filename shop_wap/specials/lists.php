@@ -347,7 +347,6 @@
 ?>
 <script type="text/javascript">
     function urlu(url1) {
-        alert(url1);
        window.location.href=url1;
     }
     var arrylist = [];
