@@ -30,7 +30,7 @@ $(function() {
                 if (result.data.layout_list.goods) {
                     var b = template.render("goods_list_template", result.data.layout_list);
                     $("#goods_list").html(b);
-
+					waterFall(2);
                     window.onscroll=function(){
                          if ($(window).scrollTop() + $(window).height() == $(document).height()) {
                              $(".masonry").append(html);
