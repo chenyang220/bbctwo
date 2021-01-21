@@ -725,10 +725,10 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
         <dt><?= __('商品第三方跳转链接') ?>：</dt>
         <dd>
             <input type="text" class="text w450" name="third_url" id="third_url" maxlength="200" value="<?php if (!empty($common_data)) {
-                echo $common_data['common_code'];
+                echo $common_data['third_url'];
             } ?>"/>
 
-            <p class="hint"><?= __('此链接为特殊商品跳转到第三方详情的链接') ?></p>
+            <p class="hint"><?= __('此链接为特殊商品跳转到第三方详情的链接例如 http://ms.look56.com/?index.php') ?></p>
         </dd>
     </dl>
         <?php } ?>

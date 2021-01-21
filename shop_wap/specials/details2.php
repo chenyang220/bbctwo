@@ -14,7 +14,7 @@ include   '../includes/header.php';
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit:cover">
-	<title>剪纸</title>
+	<title>特色商城</title>
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/customize.css">
 	<link rel="stylesheet" href="../css/swiper.min.css">
@@ -28,7 +28,7 @@ include   '../includes/header.php';
 			   <a class="iblock" href="javascript:history.go(-1)"><i class="zk-head-back"></i></a>
 		   </div>
             <div class="header-title">
-                <h1>剪纸</h1>
+                <h1>特色商城</h1>
             </div>
            <div class="right fz0">
                <a class="iblock" href="javascript:void(0);"><i class="zk-head-more"></i></a>

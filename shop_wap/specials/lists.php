@@ -168,15 +168,28 @@
 				</span>
 			<dl class="goods-info relative">
 				<dt class="goods-name">
-					<a href="<%=data.label_url%>.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
+                    <% if(common_list[j].third_url){%>
+<a href="javascript:void(0);"  onClick="urlu('<%=common_list[j].third_url%>');">
+                    <% } else {%>
+                    <a href="<%=data.label_url%>.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
+                    <% } %>
+					
+
 						<h4><%=goods_list[i].goods_name;%></h4>
 						<h6><%=goods_list[i].goods_jingle;%></h6>
 					</a>
 				</dt>
+
 				<dd class="goods-sale">
-					<a href="<%=data.label_url%>.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
+                               <% if(common_list[j].third_url){%>
+<a href="javascript:void(0);"  onClick="urlu('<%=common_list[j].third_url%>');">
+                    <% } else {%>
+                                <a href="<%=data.label_url%>.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
+                    <% } %>
+	
 					<% if(common_list[j].label_name){%>
 					<p class="label">
+
 						<%for(label_id in common_list[j].label_name){%>
                     	<label class="label-item"><%=common_list[j].label_name[label_id]%></label>
                     	<% } %>
@@ -333,6 +346,10 @@
     include  '/../includes/footer.php';
 ?>
 <script type="text/javascript">
+    function urlu(url1) {
+        alert(url1);
+       window.location.href=url1;
+    }
     var arrylist = [];
     var brandStr = '';
    $(document).on('click','.brand_name_id',function(){
@@ -359,5 +376,7 @@
             break;
         }
     }
+
+  
 }
 </script>

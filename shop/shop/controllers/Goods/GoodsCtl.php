@@ -542,7 +542,17 @@
             //计算plus商品
             $Plus_GoodsModel = new Plus_GoodsModel();
             $data['items'] = $Plus_GoodsModel->reformPlusGoods($data['items']);
+
+            $db = new YFSQL();
+            $sql = "SELECT * from ucenter_user_info where user_id=" . Perm::$userId;
+            $ucenter_user_info_select = $db->find($sql);
+            $ucenter_user_info = current($ucenter_user_info_select);
+
+
             foreach ($data['items'] as $k => $goods_common_c) {
+                if ($goods_common_c['third_url'] != NULL) {
+                    $data['items'][$k]['third_url'] = $goods_common_c['third_url'] . "&token=" . $ucenter_user_info['token'] . "&enterId=" . $ucenter_user_info['enterId'] ;
+                }
                 if(Web_ConfigModel::value('Plugin_Directseller') ==1 && $goods_common_c['common_is_directseller'] == 1){
                     $data['items'][$k]['common_a_first'] = number_format($goods_common_c['common_a_first'] * $goods_common_c['common_price'] / 100, 2);
                     $data['items'][$k]['common_c_first'] = number_format($goods_common_c['common_c_first'] * $goods_common_c['common_price'] / 100, 2);

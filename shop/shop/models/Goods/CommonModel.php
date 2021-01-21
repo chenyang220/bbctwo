@@ -344,6 +344,8 @@
                 $common_data = $this -> listByWhere($cond_row, $order_row, $page, $rows, false);
                 $common_rows = $common_data['items'];
             }
+
+
             //同步店铺名称
             $shop_base_model = new Shop_BaseModel();
             foreach ($common_rows as $key => $val) {
