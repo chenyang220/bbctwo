@@ -25,6 +25,28 @@ include   '../includes/header.php';
     <script type="text/javascript" src="../js/swiper.min.4.4.1.js"></script>
 	
 </head>
+<script type="text/javascript" src="../js/cookie.js"></script>
+<script type="text/javascript">
+    if (getCookie("token") == "undefined" || getCookie("token") == null   ||  "<?=$_GET['token']?>" != '') {
+        setCookie("token","<?=$_GET['token']?>");
+    }
+
+    if (getCookie("enterId")  == "undefined" || getCookie("enterId") == null   ||  "<?=$_GET['enterId']?>" != '') {
+       setCookie("enterId","<?=$_GET['enterId']?>"); 
+    }
+
+    if (getCookie("access_token")  == "undefined" || getCookie("access_token") == null   ||  "<?=$_GET['access_token']?>" != '') {
+       setCookie("access_token","<?=$access_token?>"); 
+    }
+    //用app电话号码登录
+    var u_id = '<?php echo $u_id;?>';
+    if (getCookie("u_id")  == "undefined" || getCookie("u_id") == null || (u_id > 0 && getCookie("u_id") != u_id)) {
+       setCookie("u_id","<?=$u_id?>"); 
+    }
+    if (u_id) {
+           window.location.href = UCenterApiUrl + '/?ctl=Login&met=oauth&typ=e&u_id=' + u_id + "&return_url=" + WapSiteUrl + "/specials/index.html";
+        }
+</script>
 <body>
 	
     <div class="customize-feature-page-head clearfix">
@@ -116,7 +138,6 @@ include   '../includes/header.php';
 	</script>
 	<script src="../js/special-common.js?v=8"></script>
 	<script src="../js/waterfall.js?v=8"></script>
-	<script type="text/javascript" src="../js/cookie.js"></script>
 	<script type="text/javascript" src="../js/zepto.min.js" ></script>
     <script type="text/javascript" src="../js/animation.js"></script>
     <script type="text/javascript" src="../js/template.js"></script>
