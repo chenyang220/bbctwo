@@ -6,7 +6,7 @@ var rec = getQueryString("rec");
 var mydate = new Date();
 var goodsInformation;
 var goods_detail = [];
- var shop_u_id = '';
+var shop_u_id = '';
  if(!document.referrer){
     $('.header-wrap-back').hide();
 }

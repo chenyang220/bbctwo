@@ -74,13 +74,14 @@ class IndexCtl extends Controller
                    $label_id_arr = explode(",", $Goods_Common['label_id']);
                    $label_name = [];
                    foreach ($label_id_arr as $keys => $label_id) {
-                       $label_name[] = $label_name_arr[$label_id];
+                        if ($label_name_arr[$label_id] == "民风民俗" || $label_name_arr[$label_id] == "非遗") {
+                           $goods_arr[$key]['detail'] = "detail2";
+                        }
+                        $label_name[] = $label_name_arr[$label_id];
                    }
                 } else {
                     $label_name = '';
                 }
-                              
-
                $goods_arr[$key]['label_name']  = $label_name;
                $goods_arr[$key]['goods_id'] = $Goods_Base['goods_id'];
             }
