@@ -1,5 +1,9 @@
 <?php
     include '/../includes/header.php';
+
+
+    echo 888;
+    exit;
 ?>
 <!DOCTYPE html>
 <html class="bgf">
@@ -207,8 +211,7 @@
 						</span>
 						<b class="had-sale"><%=common_list[j].common_salenum;%>人付款</b>
 					</p>
-								
-						
+				
 						<% if (goods_list[i].is_virtual == '1') { %> <span class="sale-type"><?= __('虚拟'); ?></span> <% } else { %> <% if (goods_list[i].is_presell == '1') { %> <span class="sale-type"><?= __('预'); ?></span> <% } %> <% if (goods_list[i].is_fcode == '1') { %> <span class="sale-type">F</span> <% } %> <% } %>
 						
 						<% if(goods_list[i].group_flag || goods_list[i].xianshi_flag){ %> <span class="sale-type"><?= __('降'); ?></span> <% } %> <% if(goods_list[i].have_gift == '1'){ %> <span class="sale-type"><?= __('赠'); ?></span> <% } %> </a>
