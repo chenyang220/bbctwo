@@ -344,7 +344,7 @@
 <script type="text/javascript" src="../js/animation.js?v=8"></script>
 </html>
 <?php
-    include  '/../includes/footer.php';
+    include  '../includes/footer.php';
 ?>
 <script type="text/javascript">
     function urlu(url1) {
