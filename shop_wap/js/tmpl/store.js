@@ -315,15 +315,26 @@ function s() {
     var t = {};
     t.id = e;
     var o = new ncScrollLoad;
-    o.loadInit({
-        url: ApiUrl + "/index.php?ctl=Shop&met=goodsList&order=common_sell_time&sort=desc&typ=json",
-        getparam: t,
-        tmplid: "newgoods_tpl",
-        containerobj: $("#newgoods_con"),
-        iIntervalId: true,
-        resulthandle: "tidyStoreNewGoodsData"
-    });
-	waterFall(columns);
+  //   o.loadInit({
+  //       url: ApiUrl + "/index.php?ctl=Shop&met=goodsList&order=common_sell_time&sort=desc&typ=json",
+  //       getparam: t,
+  //       tmplid: "newgoods_tpl",
+  //       containerobj: $("#newgoods_con"),
+  //       iIntervalId: true,
+  //       resulthandle: "tidyStoreNewGoodsData",
+		// callback:waterFall(columns)
+  //   });
+	$.ajax({
+	    type: "post",
+	    url:ApiUrl + "/index.php?ctl=Shop&met=goodsList&order=common_sell_time&sort=desc&typ=json",
+	    data: t,
+	    dataType: "json",
+	    success: function (res) {
+	        var n = template.render("newgoods_tpl", res.data);
+			$("#newgoods_con").html(n);
+			waterFall(columns);
+	    }
+	});
 }
 
 function r() {

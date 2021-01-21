@@ -380,33 +380,39 @@
 			<% var goods_list = items; %>
 			<% if(goods_list.length >0){%>
 			<% for (var i in goods_list) {
-					var v = goods_list[i];
+				var v = goods_list[i];
 			%>
-			<% if(v.goods_addtime_text_show){ %>
-			</ul><p class="addtime" addtimetext='<%=v.common_add_time %>'>
-				<span><time><%= v.goods_addtime_text_show %></time></span>
-			</p><ul class="custom-store-goods-list fz0 masonry">
-			<% } %>
-			<li class="item">
-				<a class="pad iblock" href="product_detail.html?goods_id=<%= v.goods_id[0].goods_id %>">
-					<div class="goods-pic">
-						<img alt="" src="<%= v.common_image %>"/>
-					</div>
-					<dl class="goods-info relative">
-						<dt class="goods-name">
-								<h4> <%= v.common_name %></h4>
-						</dt>
-						<dd class="goods-sale">
-							<p class="label"><label class="label-item">舒适</label></p>
-							<p>
-								<span class="goods-price"><b>￥</b><em><%= v.common_price %></em>
-								</span>
-								<b class="had-sale">0人付款</b>
-							</p>
-						</dd>		   
-					</dl>
-				</a>
-			</li>
+				<% if(v.goods_addtime_text){ %>
+					<p class="addtime" addtimetext='<%=v.common_add_time %>'>
+						<span><time><%= v.goods_addtime_text %></time></span>
+					</p>
+					<ul class="custom-store-goods-list fz0 masonry">
+						<%var y = v.good;%>
+						<% if(y.length >0){%>
+						<% for (var w in y) {%>
+							<li class="item">
+								<a class="pad iblock" href="product_detail.html?goods_id=<%= v.goods_id[0].goods_id %>">
+									<div class="goods-pic">
+										<img alt="" src="<%= v.common_image %>"/>
+									</div>
+									<dl class="goods-info relative">
+										<dt class="goods-name">
+												<h4> <%= v.common_name %></h4>
+										</dt>
+										<dd class="goods-sale">
+											<p class="label"><label class="label-item">舒适</label></p>
+											<p>
+												<span class="goods-price"><b>￥</b><em><%= v.common_price %></em>
+												</span>
+												<b class="had-sale">0人付款</b>
+											</p>
+										</dd>		   
+									</dl>
+								</a>
+							</li>
+						<% }} %>
+					</ul>
+				<% } %>
 			<% } %>
 		   <!-- <li class="loading">
 				<div class="spinner"><i></i></div>
