@@ -6,9 +6,9 @@ function waterFall(columns) {
     var columns = columns; //列数
     var itemWidth = parseInt(pageWidth/columns); //得到item的宽度
 	$(".masonry .item").css('width',itemWidth); //设置到item的宽度
-    var arr = [];
-	console.log($(".masonry").length);
 	for(var v=0;v<$(".masonry").length;v++){
+		var arr = "arr" + v;
+		arr=[];
 		$(".masonry").eq(v).find("li").each(function(i,e){
 			var height = $(this).height();
 			var width = $(this).width();

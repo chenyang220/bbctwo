@@ -143,7 +143,7 @@
 		<div class="customize-goods-lists">
 	    	<div class="grid pt-0 style-change">
 	    		<h3 class="custom-store-module-tit tc"><span>热销爆款</span></h3>
-	    		<ul class="custom-store-goods-list fz0 masonry">
+	    		<ul class="fz0 masonry">
 	    			<li class="item">
 	    				<div class="pad">
 	    					<span class="goods-pic">
@@ -207,7 +207,7 @@
 	    			</li>
 	    		</ul>
 	    		<h3 class="custom-store-module-tit tc"><span>新品主推</span></h3>
-	    			<ul class="custom-store-goods-list fz0 masonry">
+	    			<ul class="fz0 masonry">
 	    				<li class="item">
 	    					<div class="pad">
 	    						<span class="goods-pic">
@@ -376,7 +376,7 @@
         </ul>
     </script>
     <script type="text/html" id="newgoods_tpl">
-		<div id="newgoods_next" class="customize-goods-lists grid pt-0">
+		<div id="newgoods_next" class="grid pt-0 style-change">
 			<% var goods_list = items; %>
 			<% if(goods_list.length >0){%>
 			<% for (var i in goods_list) {
