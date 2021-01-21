@@ -34,7 +34,9 @@
 	<div class="customize-feature-page-head clearfix lists">
 		<a href="/tmpl/search.html?mb=shop" class="customize-feature-page-input to-search">
 			<i class="iconfont icon-search"></i>
-			<input class="placeholder-c1" type="text" placeholder="搜你想搜的" readonly>
+			<div class="flex1">
+				<input class="placeholder-c1" type="text" placeholder="搜你想搜的" readonly>
+			</div>
 		</a>
 		<!-- <a href="./shop_goods_cat.html?shop_id=<?php echo $_GET['shop_id']?>" class="zk-menu"></a> -->
 		<b class="zk-menu" id="menuChange"></b>

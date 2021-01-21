@@ -28,13 +28,15 @@ include   '../includes/header.php';
 <body>
 	
     <div class="customize-feature-page-head clearfix">
-    	<div class="iblock city fl">
+    	<div class="iblock city">
     		<em>乌鲁木齐</em><i class="zk-drap"></i>
     	</div>
-    	<div class="customize-feature-page-input fr">
-    		<i class="iconfont icon-search"></i>
-    		<input class="placeholder-c1" type="text" placeholder="搜你想搜的">
-			<label for="search" id="search">搜索</label>
+    	<div class="customize-feature-page-input">
+				<i class="iconfont icon-search"></i>
+				<div class="flex1">
+					<input class="placeholder-c1 wp100" type="text" placeholder="搜你想搜的">
+				</div>
+				<label for="search" id="search">搜索</label>
     	</div>
     </div>
    <div class="customize-feature-page-contents">

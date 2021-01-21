@@ -122,8 +122,9 @@
 }
 .customize-feature-page-input{
 	display:flex;
+	flex:1;
 	position:relative;
-	width:10.977rem;
+	/* width:10.977rem; */
 	height:1.363rem;
 	line-height:1.363rem;
 	background:#fff;
@@ -132,6 +133,9 @@
     box-sizing: border-box;
 }
 /* index */
+.customize-feature-page-head .city em{
+	white-space:nowrap;
+}
 .customize-feature-page-navs{
 	padding-top:1.25rem;
 }
@@ -179,6 +183,7 @@
 	margin-bottom: 0.681rem;
 	box-shadow: 0 5px 10px rgba(0,0,0,.1);
 	border-radius:0.3rem;
+	overflow:hidden;
 }
 .custom-spec-lists li .img-box{
 	display:inline-block;
@@ -240,10 +245,12 @@
 }
 /* lists */
 .zk-menu{
-	position:absolute;
+	/* position:absolute;
 	right:0.886rem;
-	top:0.613rem;
+	top:0.613rem; */
 	display:inline-block;
+	margin-left:1.09rem;
+	margin-top:0.2rem;
 	width:0.954rem;
 	height:1rem;
 	background:url(../images/spec/zk/menu.png) no-repeat center;
@@ -479,6 +486,7 @@
 
 
 .customize-feature-page-head .city{
+	display:flex;
 	margin-right:0.591rem;
 	font-size:0.772rem;
 	color:#fff;
@@ -492,21 +500,24 @@
 	vertical-align:top;
 }
 .customize-feature-page-input input{
-	flex:1;
 	padding-left:0.227rem;
 	border-color:transparent;
 	background:transparent;
 	height:1.363rem;
 	box-sizing:border-box;
+	vertical-align:top;
+	width:100%;
 }
 .customize-feature-page-input label{
 	position:relative;
 	display:inline-block;
-	width:2.568rem;
+	padding:0 0.6rem;
+	/* width:2.568rem; */
 	font-size:0.636rem;
 	color:#999;
 	vertical-align:top;
 	text-align:center;
+	/* white-space:nowrap; */
 
 }
 .customize-feature-page-input label:before{
