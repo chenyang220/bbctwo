@@ -95,7 +95,7 @@
 	vertical-align: top;
 }
 .customize-feature-page-contents{
-	padding-top:4.227rem;
+	padding-top:2.227rem;
 }
 .placeholder-c1::-webkit-input-placeholder {
  color:#c1c1c1 !important; 
@@ -708,6 +708,7 @@
 	color:#222;
 	max-width:13.409rem;
 	line-height:0.84rem;
+	width:72%;
 }
 .special-goods-top .share{
 	position:absolute;

@@ -22,6 +22,7 @@ include   '../includes/header.php';
 	<link rel="stylesheet" href="../css/iconfont.css">
 </head>
 <body class="bgf">
+<<<<<<< HEAD
 	<header id="header" class="fixed customize-index-header">
         <div class="header-wrap">
            <div class="left">
@@ -38,6 +39,20 @@ include   '../includes/header.php';
     <div id="product_detail_html" class="posr zIndex1"></div>
     <div class="nctouch-main-layout" >
 	    <div class="swiper-container custom-product-det-swiper" id="goods_image"></div>
+=======
+    <div class="">
+	    <div class="swiper-container custom-product-det-swiper">
+	    	<ul class="swiper-wrapper">
+	    		<li class="swiper-slide">
+	    			<img class="wp100" src="../images/spec/img5.png" alt="">
+	    		</li>
+	    		<li class="swiper-slide">
+	    			<img class="wp100" src="../images/spec/img5.png" alt="">
+	    		</li>
+	    	</ul>
+	    	<div class="swiper-pagination"></div>
+	    </div>
+>>>>>>> 698faebba7a0fcb7f5d092cc9d3aa8b56ab2ed7b
 	    <div class="custom-product-det-content">
 	    	<div class="custom-product-det-texts">
 	    		<div class="custom-product-det-texts-head clearfix">

@@ -26,19 +26,7 @@ include   '../includes/header.php';
 	
 </head>
 <body>
-	<header id="header" class="customize-index-header">
-        <div class="header-wrap">
-            <div class="left">
-                <a class="iblock" href="javascript:history.go(-1)"><i class="zk-head-back"></i></a>
-            </div>
-            <div class="header-title">
-                <h1>特色商城</h1>
-            </div>
-            <div class="right fz0">
-                <a class="iblock" href="javascript:void(0);"><i class="zk-head-more"></i></a>
-            </div>
-        </div>
-    </header>
+	
     <div class="customize-feature-page-head clearfix">
     	<div class="iblock city fl">
     		<em>乌鲁木齐</em><i class="zk-drap"></i>
