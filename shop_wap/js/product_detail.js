@@ -1324,7 +1324,6 @@ $(function () {
                  */
                 $(".kefu").click(function () {
                     // 商品参数:
-                    console.log(result.data);
                     //判断不是手机号时使用IM
                     if ($(this).attr("href").indexOf("tel:") == -1) {
                         if (!getCookie("user_account") && getCookie("user_account") == undefined) {
@@ -1655,12 +1654,12 @@ function backGoodsList() {
     window.location.href=preUrlget;    
 }
 $(function(){
-    // var goods_id = getQueryString("goods_id");
     $.ajax({
         url: ApiUrl + "/index.php?ctl=Goods_Goods&met=getGoodsDetailFormat&typ=json",
         data: {gid: goods_id},
         type: "get",
         success: function (data) {
+            console.log(data);
             var html = '';
             if(data.data.goods_format_top)
             {

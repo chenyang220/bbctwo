@@ -856,15 +856,6 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
 
     <h3><b><em>*</em><?= __('表示该项必填') ?></b><i class="iconfont icon-edit"></i><?= __('其他信息') ?></h3>
 
-    <!-- <dl>
-        <dt><?= __('每人限购') ?>：</dt>
-        <dd> -->
-    <!--<input type="text" class="text w60 n-valid" name="limit" value="<?php /*if ( !empty($common_data) ) { echo $common_data['common_limit']; }  */ ?>" aria-required="true">-->
-    <!--          <label class="radio"><input checked="checked" type="radio" name="is_limit" value="0"><?= __('否') ?></label>
-            <label class="radio"><input type="radio" name="is_limit" value="1"><?= __('是') ?></label>
-            <span style="display: none">每人限购<input class="text w60 n-valid" name="limit" value="0" /><?= __('件') ?></span><span class="msg-box" for="limit"></span>
-        </dd>
-    </dl>   -->
 
     <dl>
         <dt><?= __('包装清单') ?>：</dt>
