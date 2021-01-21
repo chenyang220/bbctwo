@@ -242,6 +242,7 @@ b.swiper-pagination-customs-active{
 	display: block;
 	line-height: 1.09rem;
 	color:#333;
+	width:85%;
 }
 
 .goods-detail-name dt span {
