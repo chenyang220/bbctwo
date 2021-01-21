@@ -294,7 +294,6 @@ function nav_click(nav_type) {
 		columns=2;
         if ($("#newgoods_con .addtime").html() !='') {
             s();
-			waterFall(columns);
         }
         // $("#newgoods_con").show();
 		
