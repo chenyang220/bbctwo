@@ -77,7 +77,7 @@ include   '../includes/header.php';
 
 
     <script type="text/html" id="ts_logo_template">
-	  	<ul class="customize-feature-page-navs clearfix bgf" style="margin-top:15px">
+	  	<ul class="customize-feature-page-navs clearfix bgf">
 	  		<% if (data.label_tag_sort) {  %>
 	  			<% for (var i in data.label_tag_sort) { %>
 		    		<li class="swiper-slide">
