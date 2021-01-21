@@ -1,9 +1,5 @@
 <?php
     include '/../includes/header.php';
-
-
-    echo 888;
-    exit;
 ?>
 <!DOCTYPE html>
 <html class="bgf">
