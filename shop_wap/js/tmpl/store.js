@@ -275,7 +275,8 @@ function nav_click(nav_type) {
 		columns=2;
 		var indexTem = template.render("store_index_tpl");
         $("#storeindex_con").html(indexTem);
-        o();
+		waterFall(columns);
+        // o();
         break;
     case "allgoods":
 		columns=2;
@@ -293,6 +294,7 @@ function nav_click(nav_type) {
 		columns=2;
         if ($("#newgoods_con .addtime").html() !='') {
             s();
+			waterFall(columns);
         }
         // $("#newgoods_con").show();
 		

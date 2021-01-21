@@ -15,7 +15,7 @@
 //	'我的'=>'/tmpl/member/member.html',
 //];
 ?>
-    <div class="footer bort1 " id="footer-template-bort1">
+   <div class="footer bort1 " id="footer-template-bort1">
 
     </div>
 

@@ -139,15 +139,16 @@
 	    <a class="iblock wp100 custom-img-module" href="javascript: void(0);"><img class="wp100" src="https://www.yuanfengtest.com/image.php/shop/data/upload/media/plantform/6fc0625bf097e245fa1c1007bf528b2d/image/20200813/159730607675136588586586241244.png" alt=""></a>
 	    <!-- 首页-轮播图 -->
 	    <div id="store_sliders" class="swiper-container nctouch-store-wapper pl-30 pr-30"></div>
-	    <div class="customize-goods-lists">
+	    
+		<div class="customize-goods-lists">
 	    	<div class="grid pt-0 style-change">
 	    		<h3 class="custom-store-module-tit tc"><span>热销爆款</span></h3>
-	    		<ul class="custom-store-goods-list fz0">
+	    		<ul class="custom-store-goods-list fz0 masonry">
 	    			<li class="item">
 	    				<div class="pad">
 	    					<span class="goods-pic">
 	    						<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    							<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
+	    							<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20201112/160516381857940798069770699502.jpg">
 	    						</a>
 	    					</span>
 	    					<dl class="goods-info relative">
@@ -206,7 +207,7 @@
 	    			</li>
 	    		</ul>
 	    		<h3 class="custom-store-module-tit tc"><span>新品主推</span></h3>
-	    			<ul class="custom-store-goods-list fz0">
+	    			<ul class="custom-store-goods-list fz0 masonry">
 	    				<li class="item">
 	    					<div class="pad">
 	    						<span class="goods-pic">
@@ -384,7 +385,7 @@
 			<% if(v.goods_addtime_text_show){ %>
 			</ul><p class="addtime" addtimetext='<%=v.common_add_time %>'>
 				<span><time><%= v.goods_addtime_text_show %></time></span>
-			</p><ul class="custom-store-goods-list fz0">
+			</p><ul class="custom-store-goods-list fz0 masonry">
 			<% } %>
 			<li class="item">
 				<a class="pad iblock" href="product_detail.html?goods_id=<%= v.goods_id[0].goods_id %>">
@@ -660,7 +661,7 @@
 	<script type="text/javascript" src="../js/swiper.min.js"></script>
     <script type="text/javascript" src="../js/tmpl/store.js"></script>
     <script type="text/javascript" src="../js/tmpl/footer.js"></script>
-	<script src="../js/waterfall.js?v=8"></script>
+	<script src="../js/waterfall-store.js?v=8"></script>
     <script type="text/javascript">
         var level = getQueryString('level');
         var shop_id = getQueryString('shop_id');

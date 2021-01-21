@@ -313,10 +313,10 @@
 	margin:0.4rem 0 0.909rem;
 }
 .custom-store-goods-list li{
-	position:relative !important;
+	/* position:relative !important; */
 }
 .grid .custom-store-goods-list li{
-	 width:49.2%;
+	/* width:49.2%; */
 }
 .store-goods-list-nav{
 	position: relative !important;

@@ -867,7 +867,7 @@
   }
 /*商品板块b+猜你喜欢*/
   .guess-like.guess-like-module {
-    margin-bottom:3rem;
+   /* margin-bottom:3rem; */
   }
 
   .guess-like li {
