@@ -231,8 +231,12 @@
                 $bind_info = $Shop_ClassBindModel->getOneByWhere($bind_row);
                 $data['delivery'] = $bind_info['delivery_status'];
                 $data['label_Base'] = $Label_Base;
-                $label_id_arr = explode(",", $common_data['label_id']);
-                $data['label_Base_edit'] = $label_id_arr;
+                if ($common_data['label_id']) {
+                    $label_id_arr = explode(",", $common_data['label_id']);
+                    $data['label_Base_edit'] = $label_id_arr;
+                } else {
+                    $data['label_Base_edit'] = '';
+                }
                 $this -> view -> setMet('goodsInfoManage');
                 include $this -> view -> getView();
             }

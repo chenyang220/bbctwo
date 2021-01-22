@@ -331,16 +331,17 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
             } ?>"/ >
             <div class="service-set-items">
                 <a href="javascript:void(0)" class="bbc_seller_btns ncbtn" id="add_goods_label"><?= __('添加商品标签') ?></a>
-                <span id="label_content">
-                    <?php
-                    if ($data['label_Base_edit']) {
-                    foreach ($data['label_Base_edit'] as $key => $val) {
+                <?php    if ($data['label_Base_edit']) {?>
+                    <span id="label_content">
+                        <?php
+                            foreach ($data['label_Base_edit'] as $key => $val) {
                         ?>
-                        <label>
-                            <?php print_r($data['label_Base'][$val]['label_name'])  ?>
-                        </label>
-                    <?php }} ?>
-                </span>
+                            <label><?php print_r($data['label_Base'][$val]['label_name'])  ?><?php print_r(count($data['label_Base_edit']))  ?></label>
+                        <?php 
+                            } 
+                        ?>
+                    </span>
+                <?php } ?>
             </div>
         </dd>
     </dl>
