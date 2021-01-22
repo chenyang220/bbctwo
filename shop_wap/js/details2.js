@@ -68,7 +68,10 @@ $(function(){
         data: {gid: goods_id},
         type: "get",
         success: function (data) {
-            $("#content").html(data.data.common_detail);
+
+            var html = data.data.common_detail;
+            $(".fixed-tab-pannel").html(html);
+            // $("#content").html(data.data.common_detail);
         }
     });
 });

@@ -20,6 +20,9 @@ include   '../includes/header.php';
 	<link rel="stylesheet" href="../css/swiper.min.css">
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1369976_bi587t54c07.css">
 	<link rel="stylesheet" href="../css/iconfont.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/nctouch_common.css">
+	<link rel="stylesheet" type="text/css" href="../css/nctouch_products_detail.css?v=311">
 </head>
 <body class="bgf">
 	<header id="header" class="fixed customize-index-header">
@@ -50,7 +53,17 @@ include   '../includes/header.php';
 	    <!-- 		<h4 class="clearfix tc fz0">
 	    			<span>剪纸66</span>
 	    		</h4> -->
-	    		<div id="content"></div>
+	    		<div class="contentC">
+			    <!-- <div class="goods-detail-bottom mt-20"><a href="javascript:void(0);"><?= __('商品详情'); ?></a></div> -->
+					<div class="special-goods-des">
+						<p class="special-goods-des-tit tc"><span>详情</span></p>
+					</div>
+			        <div class="nctouch-main-layout mt0" id="fixed-tab-pannel">
+			            <div class="fixed-tab-pannel mb-20" style="margin-left: -30px;"></div>
+			        </div>
+			    </div>
+
+	    		<!-- <div id="content"></div> -->
 	    	</div>
 	    	<div class="custom-product-det-btn fz0">
 	    		 <span class="btn-zan" style="width:100%;"><i class="custom-zan"></i><em id="zan_sum">0</em></span>
