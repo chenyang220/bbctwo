@@ -337,7 +337,7 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
                         <?php
                             foreach ($data['label_Base_edit'] as $key => $val) {
                         ?>
-                            <label><?php print_r($data['label_Base'][$val]['label_name'])  ?><?php print_r(count($data['label_Base_edit']))  ?></label>
+                            <label><?php print_r($data['label_Base'][$val]['label_name'])  ?></label>
                         <?php 
                             } 
                         ?>
