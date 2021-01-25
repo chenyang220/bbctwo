@@ -537,6 +537,9 @@ class ShopCtl extends Controller
         }
         //读取店铺详情
         $shop_base = $this->shopBaseModel->getShopDetail($shop_id);
+
+
+       
         if (!$shop_base) {
             return $this->data->addBody(-140, $data, __('数据有误'), 250);
         }
@@ -549,6 +552,25 @@ class ShopCtl extends Controller
         $condi_rec_goods['common_is_recommend'] = Goods_CommonModel::RECOMMEND_TRUE;
         $rec_goods_list = $this->goodsCommonModel->getGoodsList($condi_rec_goods);
 
+
+        $Label_BaseModel = new Label_BaseModel();
+        $Label_Base = $Label_BaseModel->getByWhere("*");
+        $label_name_arr = array_column($Label_Base, "label_name","id");
+
+
+        $cond_row_x['shop_id'] = $shop_id;
+        $cond_row_x['common_state'] = Goods_CommonModel::GOODS_STATE_NORMAL;
+
+        $order_row_x['common_salenum'] = 'asc';
+
+
+        $Goods_CommonModel = new Goods_CommonModel();
+        $common_salenum_list = $Goods_CommonModel->getGoodsList($cond_row_x, $order_row_x,1,2);
+
+
+        if ($common_salenum_list['items']) {
+            $data['common_salenum_list'] = $common_salenum_list['items'];
+        }
         //判断当前店铺是否为用户所收藏
         $condi_u_f = array();
         $condi_u_f['user_id'] = Perm::$userId;
@@ -577,9 +599,7 @@ class ShopCtl extends Controller
                 }
             }
         }
-        $Label_BaseModel = new Label_BaseModel();
-        $Label_Base = $Label_BaseModel->getByWhere("*");
-        $label_name_arr = array_column($Label_Base, "label_name","id");
+   
         $shop_label_name = array();
         if ($shop_base['label_id']) {
            $label_id_arr = explode(",", $shop_base['label_id']);
@@ -587,6 +607,7 @@ class ShopCtl extends Controller
                $shop_label_name[$label_id] = $label_name_arr[$label_id];
            }
         } 
+        $store_info['shop_desc_scores'] = $shop_base['shop_desc_scores'];
         $store_info['shop_label_name'] = $shop_label_name;
         $store_info['goods_count'] = count($goods_common_list);
         $store_info['is_favorate'] = $u_f_shop;

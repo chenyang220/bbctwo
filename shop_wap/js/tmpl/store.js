@@ -22,7 +22,6 @@ function tidyStoreNewGoodsData(t) {
 }
 // 收藏店铺变成已收藏
 function collectShop(shop_id) {
-    alert(shop_id);
     var k = getCookie("key");
     var u = getCookie("id");
     if (k && u) {
@@ -32,7 +31,10 @@ function collectShop(shop_id) {
             u: u
         }, function (data) {
             if (data.status == 200) {
+                $.sDialog({skin: "green", content: "收藏成功！", okBtn: false, cancelBtn: false});
                 $(".pd-collect").html("已收藏");
+            } else {
+                $.sDialog({skin: "red", content: "该店铺已收藏！", okBtn: false, cancelBtn: false});
             }
         });
     } else {
@@ -43,10 +45,11 @@ $("#goods_search").on("click", ".header-inp", function ()
     {
         location.href = WapSiteUrl + "/tmpl/search.html?mb=shop";
     });
+function dajinquan () {
+    location.href = WapSiteUrl + "/tmpl/voucher_list.html?shop=" + shop_id;
+}
+
 $(function () {
-	var indexTem = template.render("store_index_tpl");
-	$("#storeindex_con").html(indexTem);
-	 waterFall(columns);
     if (!e) {
         window.location.href = WapSiteUrl + "/index.html";
     }
@@ -64,6 +67,10 @@ $(function () {
             var s = e.store_info.store_name + " - 店铺首页";
             document.title = s;
             var r = template.render("store_banner_tpl", e);
+      
+            var indexTem = template.render("store_index_tpl",e);
+            $("#storeindex_con").html(indexTem);
+            waterFall(columns);
             if (getCookie("is_app_guest")) {
                 $("#shareit_store").attr("href", "/share_toall.html?shop_id=" + e.store_info.shop_id + "&title=" + encodeURIComponent(e.store_info.store_name) + "&img=" + e.store_info.store_avatar + "&url=" + WapSiteUrl + "/tmpl/store.html?shop_id=" + e.store_info.shop_id);
             }
@@ -113,7 +120,6 @@ $(function () {
             }
             $("#store_kefu").click(function () {
                 // 商品参数:
-                // console.log(result.data);
                 //判断不是手机号时使用IM
                 if ($(this).attr("href").indexOf("tel:") == -1) {
                     if (!getCookie("user_account") && getCookie("user_account") == undefined) {
@@ -152,7 +158,7 @@ $(function () {
                 }
             });
             var r = template.render("goods_recommend_tpl", e);
-            $("#goods_recommend").html(r);
+            $(".goods_recommend").html(r);
            
             /* 店铺首页刷新闪烁 */
             if (e.rec_goods_list_count == 0) {
@@ -285,7 +291,9 @@ function toColumns(){
 $("#menuChange").click(function(){
 	toColumns();
 })
-
+function nav_clicks(nav_type) {
+    window.location.reload();
+}
 function nav_click(nav_type) {
     $("#nav_tab").find("li").removeClass("selected");
     $("#" + nav_type).parent().addClass("selected").siblings().removeClass("selected");
@@ -294,11 +302,11 @@ function nav_click(nav_type) {
     window.location.hash = nav_type;
     switch (nav_type) {
     case "storeindex":
-		columns=2;
-		var indexTem = template.render("store_index_tpl");
-        $("#storeindex_con").html(indexTem);
-		waterFall(columns);
-        // o();
+		// columns=2;
+		// var indexTem = template.render("store_index_tpl");
+  //       $("#storeindex_con").html(indexTem);
+		// waterFall(columns);
+        window.location.href = ApiUrl + "/tmpl/store.html?shop_id=1";
         break;
     case "allgoods":
 		columns=2;

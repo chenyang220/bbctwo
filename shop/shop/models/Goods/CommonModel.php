@@ -346,14 +346,26 @@
             }
 
 
+            $Label_BaseModel = new Label_BaseModel();
+            $Label_Base = $Label_BaseModel->getByWhere("*");
+            $label_name_arr = array_column($Label_Base, "label_name","id");
             //同步店铺名称
             $shop_base_model = new Shop_BaseModel();
+   
+           
             foreach ($common_rows as $key => $val) {
                 $shop_base = $shop_base_model -> getOne($val['shop_id']);
                 $common_rows[$key]['shop_name'] = $shop_base['shop_name'];
-                $common_rows[$key]['shop_wap_index'] = $shop_base['shop_wap_index'];
+                $commom_label_name = array();
+                if ($val['label_id']) {
+                    $label_id_arr = explode(",", trim($val['label_id']));
+                    foreach ($label_id_arr as $lab_key => $label_id) {
+                        $common_rows[$key]['label_name_arr'][] = $label_name_arr[$label_id];
+                    }
+                } else {
+                    $common_rows[$key]['label_name_arr'] = $commom_label_name;
+                }
             }
-            
             if ('SKU' == $type) {
                 $common_ids = array_column($common_rows, 'common_id');
                 if ($common_ids) {

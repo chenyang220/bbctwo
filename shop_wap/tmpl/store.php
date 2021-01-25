@@ -49,15 +49,10 @@
 					<p class="top"><span class="name">订来订趣 新疆礼物</span>
 					<!-- <b class="fans">粉丝数 56435</b> -->
 					</p>
-					<p><em>综合评分</em>
-					
-
-					<span id="label_name">
-
-					</span>
-			
-
-
+					..
+					<p>
+						<em>综合评分</em>
+						<span id="label_name"></span>
 					</p>
 				</div>
 				<div class="store-head-oper">
@@ -66,7 +61,7 @@
 				</div>
 			</div>
 			<ul class="custom-store-nav flex" id="nav_tab">
-				<li class="selected"><a href="javascript: void(0);" data-type="storeindex" id="storeindex" onclick="nav_click('storeindex')"><?= __('店铺首页'); ?></a></li>
+				<li class="selected"><a href="javascript: void(0);" data-type="storeindex" id="storeindex" onclick="nav_clicks('storeindex')"><?= __('店铺首页'); ?></a></li>
 				<li><a href="javascript: void(0);" data-type="allgoods" id="allgoods" onclick="nav_click('allgoods')"><?= __('全部商品'); ?></a></li>
 				<li><a href="javascript: void(0);" data-type="newgoods" id="newgoods" onclick="nav_click('newgoods')"><?= __('商品上新'); ?></a></li>
 				<li><a href="javascript: void(0);" data-type="storeactivity" id="storeactivity" onclick="nav_click('storeactivity')"><?= __('店铺活动'); ?></a></li>
@@ -92,37 +87,49 @@
 	<!-- 首页 -->
 	<script type="text/html" id="store_index_tpl">
 	    <!-- 首页-图片 -->
-	    <a class="iblock wp100 custom-img-module" href="javascript: void(0);"><img class="wp100" src="https://www.yuanfengtest.com/image.php/shop/data/upload/media/plantform/6fc0625bf097e245fa1c1007bf528b2d/image/20200813/159730607675136588586586241244.png" alt=""></a>
+	    <a class="iblock wp100 custom-img-module" href="javascript: void(0);" onclick="dajinquan()"><img class="wp100" src="https://www.yuanfengtest.com/image.php/shop/data/upload/media/plantform/6fc0625bf097e245fa1c1007bf528b2d/image/20200813/159730607675136588586586241244.png" alt=""></a>
 	    <!-- 首页-轮播图 -->
 	    <div id="store_sliders" class="swiper-container nctouch-store-wapper pl-30 pr-30"></div>
-	    
 		<div class="customize-goods-lists">
 	    	<div class="grid pt-0 style-change">
 	    		<h3 class="custom-store-module-tit tc"><span>热销爆款</span></h3>
 	    		<ul class="fz0 masonry">
+	    			<% if (common_salenum_list) { %>
+	    			<% for (var j in common_salenum_list) { var s = common_salenum_list[j]; %>
 	    			<li class="item">
 	    				<div class="pad">
 	    					<span class="goods-pic">
-	    						<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    							<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20201112/160516381857940798069770699502.jpg">
+	    						<% if (s.third_url) { %>
+									<a href="<%= s.third_url %>">
+								<% } else {%>
+									<a href="product_detail.html?goods_id=<%= s.goods_id %>&amp;pos=1&amp;pos_page=product_list">
+								<% } %>
+	    							<img src="<%=s.common_image %>">
 	    						</a>
 	    					</span>
 	    					<dl class="goods-info relative">
 	    						<dt class="goods-name">
 	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    								<h4 class="more-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
+	    								<h4 class="more-overflow"><%= s.common_name %></h4>
 	    							</a>
 	    						</dt>
 	    						<dd class="goods-sale">
-	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
+	    							<% if (s.third_url) { %>
+										<a href="<%= s.third_url %>">
+									<% } else {%>
+										<a href="product_detail.html?goods_id=<%= s.goods_id %>&amp;pos=1&amp;pos_page=product_list">
+									<% } %>
 	    								<p class="label">
-	    										<label class="label-item">舒适</label>
-	    										<label class="label-item">干练</label>
+	    										<% if (s.label_name_arr) { %>
+													<% for (var l in s.label_name_arr) { %>
+			    											<label class="label-item"><%= s.label_name_arr[l]%></label>
+													<% } %>
+	    										<% } %>
 	    								</p>
 	    								<p>
-	    									<span class="goods-price"><b>￥</b><em>34.80</em>
+	    									<span class="goods-price"><b>￥</b><em><%= s.common_price %></em>
 	    									</span>
-	    									<b class="had-sale">0人付款</b>
+	    									<b class="had-sale"><%= s.common_salenum %>人付款</b>
 	    								</p>
 	    							</a>
 	    						</dd>
@@ -130,100 +137,59 @@
 	    					</dl>
 	    			   </div>
 	    			</li>
-	    			<li class="item">
-	    				<div class="pad">
-	    					<span class="goods-pic">
-	    						<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    							<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
-	    						</a>
-	    					</span>
-	    					<dl class="goods-info relative">
-	    						<dt class="goods-name">
-	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    								<h4 class="more-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
-	    								<h6></h6>
-	    							</a>
-	    						</dt>
-	    						<dd class="goods-sale">
-	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    								<p class="label">
-	    										<label class="label-item">舒适</label>
-	    										<label class="label-item">干练</label>
-	    								</p>
-	    								<p>
-	    									<span class="goods-price"><b>￥</b><em>34.80</em>
-	    									</span>
-	    									<b class="had-sale">0人付款</b>
-	    								</p>
-	    							</a>
-	    						</dd>
-	    						
-	    					</dl>
-	    			   </div>
-	    			</li>
+	    			<% } %>
+	    			<% } %>
 	    		</ul>
 	    		<h3 class="custom-store-module-tit tc"><span>新品主推</span></h3>
 	    			<ul class="fz0 masonry">
-	    				<li class="item">
-	    					<div class="pad">
-	    						<span class="goods-pic">
-	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    								<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
-	    							</a>
-	    						</span>
-	    						<dl class="goods-info relative">
-	    							<dt class="goods-name">
-	    								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    									<h4 class="more-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
-	    								</a>
-	    							</dt>
-	    							<dd class="goods-sale">
-	    								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    									<p class="label">
-	    											<label class="label-item">舒适</label>
-	    											<label class="label-item">干练</label>
-	    									</p>
-	    									<p>
-	    										<span class="goods-price"><b>￥</b><em>34.80</em>
-	    										</span>
-	    										<b class="had-sale">0人付款</b>
-	    									</p>
-	    								</a>
-	    							</dd>
-	    							
-	    						</dl>
-	    				   </div>
-	    				</li>
-	    				<li class="item">
-	    					<div class="pad">
-	    						<span class="goods-pic">
-	    							<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    								<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
-	    							</a>
-	    						</span>
-	    						<dl class="goods-info relative">
-	    							<dt class="goods-name">
-	    								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    									<h4 class="more-overflow">高昌贡2020新疆无核葡萄干500g吐鲁番特产玫瑰红香妃王</h4>
-	    								</a>
-	    							</dt>
-	    							<dd class="goods-sale">
-	    								<a href="product_detail.html?goods_id=7&amp;pos=1&amp;pos_page=product_list">
-	    									<p class="label">
-	    											<label class="label-item">舒适</label>
-	    											<label class="label-item">干练</label>
-	    									</p>
-	    									<p>
-	    										<span class="goods-price"><b>￥</b><em>34.80</em>
-	    										</span>
-	    										<b class="had-sale">0人付款</b>
-	    									</p>
-	    								</a>
-	    							</dd>
-	    							
-	    						</dl>
-	    				   </div>
-	    				</li>
+						<% if (rec_goods_list) { %>
+	    				<% for (var i in rec_goods_list) { var g = rec_goods_list[i]; %>
+		    				<li class="item">
+		    					<div class="pad">
+		    						<span class="goods-pic">
+		    								<% if (g.third_url) { %>
+		    									<a href="<%= g.third_url %>">
+		    								<% } else {%>
+		    									<a href="product_detail.html?goods_id=<%= g.goods_id %>&amp;pos=1&amp;pos_page=product_list">
+		    								<% } %>
+		    								<img src="<%= g.common_image %>">
+		    							</a>
+		    						</span>
+		    						<dl class="goods-info relative">
+		    							<dt class="goods-name">
+											<% if (g.third_url) { %>
+		    									<a href="<%= g.third_url %>">
+		    								<% } else {%>
+		    									<a href="product_detail.html?goods_id=<%= g.goods_id %>&amp;pos=1&amp;pos_page=product_list">
+		    								<% } %>
+		    									<h4 class="more-overflow"><%= g.common_name %></h4>
+		    								</a>
+		    							</dt>
+		    							<dd class="goods-sale">
+		    								<% if (g.third_url) { %>
+		    									<a href="<%= g.third_url %>">
+		    								<% } else {%>
+		    									<a href="product_detail.html?goods_id=<%= g.goods_id %>&amp;pos=1&amp;pos_page=product_list">
+		    								<% } %>
+		    									<p class="label">
+												<% if (g.label_name_arr) { %>
+													<% for (var j in g.label_name_arr) { %>
+			    											<label class="label-item"><%= g.label_name_arr[j]%></label>
+													<% } %>
+	    										<% } %>
+		    									</p>
+		    									<p>
+		    										<span class="goods-price"><b>￥</b><em><%= g.common_price %></em>
+		    										</span>
+		    										<b class="had-sale"><%= g.common_salenum %>人付款</b>
+		    									</p>
+		    								</a>
+		    							</dd>	
+		    						</dl>
+		    				   </div>
+		    				</li>
+	    				<% } %>
+	    				<% } %>
 	    			</ul>
 	    	</div>
 	    </div>
@@ -299,10 +265,13 @@
         </dl>
         <% } %> -->
     </script>
-
-    
     <script type="text/html" id="label_name_tmpl">
-		<span class="star-span"><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i></span>
+
+    	<% if(store_info.shop_desc_scores){%>
+			<%for(i=0;i< store_info.shop_desc_scores;i++){%>
+                <i class="star"></i>
+            <%}%>
+		<% } %>
 		<% if(store_info.shop_label_name){%>
 			<% for (var i in store_info.shop_label_name) {  %>
 				<label class="label-item"><%= store_info.shop_label_name[i] %><%=store_info.shop_label_name.length %></label>
