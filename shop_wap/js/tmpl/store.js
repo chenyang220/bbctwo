@@ -20,6 +20,25 @@ function tidyStoreNewGoodsData(t) {
     });
     return t;
 }
+// 收藏店铺变成已收藏
+function collectShop(shop_id) {
+    alert(shop_id);
+    var k = getCookie("key");
+    var u = getCookie("id");
+    if (k && u) {
+        $.getJSON(ApiUrl + '/index.php?ctl=Shop&met=addCollectShop&typ=json', {
+            shop_id: shop_id,
+            k: k,
+            u: u
+        }, function (data) {
+            if (data.status == 200) {
+                $(".pd-collect").html("已收藏");
+            }
+        });
+    } else {
+        $.sDialog({skin: "red", content: "请先登录！", okBtn: false, cancelBtn: false});
+    }
+}
 $("#goods_search").on("click", ".header-inp", function ()
     {
         location.href = WapSiteUrl + "/tmpl/search.html?mb=shop";
@@ -49,6 +68,9 @@ $(function () {
                 $("#shareit_store").attr("href", "/share_toall.html?shop_id=" + e.store_info.shop_id + "&title=" + encodeURIComponent(e.store_info.store_name) + "&img=" + e.store_info.store_avatar + "&url=" + WapSiteUrl + "/tmpl/store.html?shop_id=" + e.store_info.shop_id);
             }
             $("#store_banner").html(r);
+            var label_name_msg = template.render("label_name_tmpl", e);
+            $("#label_name").html(label_name_msg);
+
             if (e.store_info.is_favorate) {
                 $("#store_notcollect").hide();
                 $("#store_collected").show();

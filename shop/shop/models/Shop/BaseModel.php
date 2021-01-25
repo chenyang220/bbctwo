@@ -70,10 +70,10 @@ class Shop_BaseModel extends Shop_Base
     		$FavoritesShopIds = array();
     	}
 
-
 		$Label_BaseModel = new Label_BaseModel();
 		$Label_Base = $Label_BaseModel->getByWhere("*");
 		$label_name_rows = array_column($Label_Base, "label_name", "id");
+
 		//把数据库的状态以及分类id 和等级id全部变成中文。
 		foreach ($data["items"] as $key => $value)
 		{
@@ -109,9 +109,15 @@ class Shop_BaseModel extends Shop_Base
 			}
             $data["items"][$key]["label_name"]  =   $label_name;       
             $company            = $shopCompanyModel->getOne($value['shop_id']);
-            $data['items'][$key] = array_merge($data['items'][$key], $company);
+
+
+			if ($company['shop_id'] == $data['items'][$key]['shop_id']) {
+				$data['items'][$key] = array_merge($data['items'][$key], $company);
+			}
 
 		}
+
+
 		return $data;
 	}
 

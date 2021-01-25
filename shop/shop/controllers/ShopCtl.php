@@ -577,7 +577,17 @@ class ShopCtl extends Controller
                 }
             }
         }
-
+        $Label_BaseModel = new Label_BaseModel();
+        $Label_Base = $Label_BaseModel->getByWhere("*");
+        $label_name_arr = array_column($Label_Base, "label_name","id");
+        $shop_label_name = array();
+        if ($shop_base['label_id']) {
+           $label_id_arr = explode(",", $shop_base['label_id']);
+           foreach ($label_id_arr as $key => $label_id) {
+               $shop_label_name[$label_id] = $label_name_arr[$label_id];
+           }
+        } 
+        $store_info['shop_label_name'] = $shop_label_name;
         $store_info['goods_count'] = count($goods_common_list);
         $store_info['is_favorate'] = $u_f_shop;
         $store_info['is_own_shop'] = $shop_base['shop_self_support'];

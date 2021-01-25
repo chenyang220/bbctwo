@@ -50,12 +50,19 @@
 					<!-- <b class="fans">粉丝数 56435</b> -->
 					</p>
 					<p><em>综合评分</em>
-					<span class="star-span"><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i></span>
-					<label class="label-item">人气</label><label class="label-item">销量</label>
+					
+
+					<span id="label_name">
+
+					</span>
+			
+
+
 					</p>
 				</div>
 				<div class="store-head-oper">
-					<button>关注</button><button>签到</button>
+					<button class="operate btn-save collect pd-collect" onclick="collectShop(<?php echo $_GET['shop_id']?>)">收藏</button>
+					<!-- <button>签到</button> -->
 				</div>
 			</div>
 			<ul class="custom-store-nav flex" id="nav_tab">
@@ -74,47 +81,6 @@
 		<!-- 店铺活动 -->
 		<div id="storeactivity_con"></div>
 	</div>
-	
-	
-	
-	
-   <!-- <div class="mb25">
-        <div id="store-wrapper" class="nctouch-store-con">
-			<div class="store-head-bg fz0" style="background:url() no-repeat center;background-size:cover;">
-				<div class="nctouch-store-top iblock fz0" id="store_banner"></div>
-				<div id="nav_tab_con" class="nctouch-single-nav nctouch-store-nav">
-					
-				</div>
-			</div>
-            <div id="storeindex_con" class="relative wp100 fz0">
-				<div class="bgf iblock wp100 pl-20 pr-20 box-size mt-20">
-					
-					<div class="store-vou bort1 borb1" id="voucher_list_div"></div>
-					<div class="nctouch-store-block nctouch-store-ranking">
-						<div class="title"><i class="icon icon-rank"></i><span><?= __('商品排行榜'); ?></span></div>
-						<div class="nctouch-single-nav">
-							<ul id="goods_rank_tab">
-								<li><a href="javascript: void(0);" data-type="collect"><?= __('收藏排行'); ?></a></li>
-								<li><a href="javascript: void(0);" data-type="salenum"><?= __('销量排行'); ?></a></li>
-							</ul>
-						</div>
-						<div class="top-list mt0" nc_type="goodsranklist" id="goodsrank_collect"></div>
-						<div class="top-list" nc_type="goodsranklist" id="goodsrank_salenum"></div>
-					</div>
-				</div>
-                <div style=" text-align: center;margin-top: 5px;"><a href="https://www.look56.com/download.html"><img src="./img/guanggao.png" style="width: 90%;"></a></div>
-                <div class="nctouch-store-block shop-owner-recommend">
-                    <div class="title">
-                        <span><?= __('店主推荐'); ?></span>
-                    </div>
-                    <div class="nctouch-store-goods-list" id="goods_recommend"></div>
-                </div>
-            </div>
-            
-            
-        </div>
-    </div> -->
-    
     <div class="fix-block-r">
         <a href="javascript:void(0);" class="gotop-btn gotop hide" id="goTopBtn"><i></i></a>
     </div>
@@ -123,18 +89,6 @@
 
     <div id="shop_footer_div"></div>
     
- 
-<!--  <div class="nctouch-store-bottom nctouch-store-bottoms fixed-Width">
-         <ul>
-            <li><a id="store_intro" href="javascript:void(0);">
-                <i class="icon footer-first"></i>
-                <?= __('店铺介绍'); ?></a></li>
-            <li><a id="goods_cat" href="javascript:void(0);"><?= __('分类'); ?></a></li>
-            <li><a id="store_voucher" href="javascript: void(0);"><?= __('领券'); ?></a></li>
-            <li><a id="store_kefu" class="kefu" href="javascript: void(0);"><?= __('联系客服'); ?></a></li>
-            <li><a href="member/member.html?shop_id_wap=1"><?= __('个人中心'); ?></a></li>
-        </ul> 
-  </div> --> 
 	<!-- 首页 -->
 	<script type="text/html" id="store_index_tpl">
 	    <!-- 首页-图片 -->
@@ -344,6 +298,16 @@
             </a>
         </dl>
         <% } %> -->
+    </script>
+
+    
+    <script type="text/html" id="label_name_tmpl">
+		<span class="star-span"><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i></span>
+		<% if(store_info.shop_label_name){%>
+			<% for (var i in store_info.shop_label_name) {  %>
+				<label class="label-item"><%= store_info.shop_label_name[i] %><%=store_info.shop_label_name.length %></label>
+			<% } %>
+		<% } %>
     </script>
     <script type="text/html" id="goodsrank_salenum_tpl">
 		<div class="swiper-container store-sale-rank-swiper">
