@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="../css/iconfont.css">
 		<link rel="stylesheet" href="../css/customize.css">
     </head>
-    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
     <script type="text/javascript">
         var url = '../store/store?shop_id='+<?php echo $_GET['shop_id']?>; 
         wx.miniProgram.redirectTo({url:url})
