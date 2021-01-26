@@ -62,6 +62,7 @@ include __DIR__.'/../includes/header.php';
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../js/ncscroll-load.js"></script>
     <script type="text/javascript" src="../js/simple-plugin.js"></script>
+    <script src="../js/waterfall-store.js?v=8"></script>
     <script>
         $(function () {
             var shop_id = getQueryString("shop_id");

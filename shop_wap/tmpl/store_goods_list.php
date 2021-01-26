@@ -16,6 +16,7 @@
 <?php
 include __DIR__ . '/../includes/header.php';
 ?>
+<link rel="stylesheet" href="../css/customize.css">
 <div class="customize-feature-goods-list-nav store-goods-list-nav">
     <ul id="nav_ul">
         <li><a href="javascript:void(0);" class="current" id="sort_default"><?= __('综合'); ?><i></i></a></li>
