@@ -79,7 +79,15 @@ include __DIR__ . '/../includes/header.php';
 					</dt>
 					<dd class="goods-sale">
 						<a href="product_detail.html?goods_id=<%=v.goods_id[0].goods_id;%>">
-							<p class="label"><label class="label-item">舒适</label><label class="label-item">干练</label></p>
+							<p class="label">
+                                <% if (v.label_name_arr) { %>
+                                    <% for (var l in v.label_name_arr) { %>
+                                            <label class="label-item"><%= v.label_name_arr[l]%></label>
+                                    <% } %>
+                                <% } %>
+                                           <!--      <label class="label-item">舒适</label><label class="label-item">干练</label> -->
+
+                            </p>
 							<p>
 								<span class="goods-price"><?= __('￥'); ?><em><%=v.common_price;%></em>
 									<% if (v.sole_flag) {%>

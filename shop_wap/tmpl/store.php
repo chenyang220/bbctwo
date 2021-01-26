@@ -335,7 +335,13 @@
 												<h4> <%= v.common_name %></h4>
 										</dt>
 										<dd class="goods-sale">
-											<p class="label"><label class="label-item">舒适</label></p>
+											<p class="label">
+												<% if (v.label_name_arr) { %>
+				                                    <% for (var l in v.label_name_arr) { %>
+				                                            <label class="label-item"><%= v.label_name_arr[l]%></label>
+				                                    <% } %>
+				                                <% } %>
+											</p>
 											<p>
 												<span class="goods-price"><b>￥</b><em><%= v.common_price %></em>
 												</span>
