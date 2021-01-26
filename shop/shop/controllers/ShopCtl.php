@@ -686,8 +686,7 @@ class ShopCtl extends Controller
             }
         }
         $xianshi = $discount_list['items'];
-        //                  print_r($discount_list);
-        // exit;
+
         //砍价
         $bargain_list = $bargainBaseModel->getBargainList(array('bargain_status' => Bargain_BaseModel::ISON, 'shop_id' => $shop_id));
         $kanjia = $bargain_list['items'];

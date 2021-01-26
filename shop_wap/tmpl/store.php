@@ -60,7 +60,8 @@
 				</div>
 			</div>
 			<ul class="custom-store-nav flex" id="nav_tab">
-				<li class="selected"><a href="javascript: void(0);" data-type="storeindex" id="storeindex" onclick="nav_clicks('storeindex')"><?= __('店铺首页'); ?></a></li>
+				<!-- <li class="selected"><a href="javascript: void(0);" data-type="storeindex" id="storeindex" onclick="nav_clicks('storeindex')"><?= __('店铺首页'); ?></a></li> -->
+				<li class="selected"><a href="javascript: void(0);" data-type="storeindex" id="storeindex" onclick="nav_click('storeindex')"><?= __('店铺精选'); ?></a></li>
 				<li><a href="javascript: void(0);" data-type="allgoods" id="allgoods" onclick="nav_click('allgoods')"><?= __('全部商品'); ?></a></li>
 				<li><a href="javascript: void(0);" data-type="newgoods" id="newgoods" onclick="nav_click('newgoods')"><?= __('商品上新'); ?></a></li>
 				<li><a href="javascript: void(0);" data-type="storeactivity" id="storeactivity" onclick="nav_click('storeactivity')"><?= __('店铺活动'); ?></a></li>
