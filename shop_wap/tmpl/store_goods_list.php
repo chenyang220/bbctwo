@@ -85,8 +85,6 @@ include __DIR__ . '/../includes/header.php';
                                             <label class="label-item"><%= v.label_name_arr[l]%></label>
                                     <% } %>
                                 <% } %>
-                                           <!--      <label class="label-item">舒适</label><label class="label-item">干练</label> -->
-
                             </p>
 							<p>
 								<span class="goods-price"><?= __('￥'); ?><em><%=v.common_price;%></em>
