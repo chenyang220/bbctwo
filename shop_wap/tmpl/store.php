@@ -366,8 +366,8 @@
 		</div>
     </script>
     <script type="text/html" id="storeactivity_tpl">
-		<div class="customize-goods-lists">
 			<% if(promotion.count){ %>
+				<div class="customize-goods-lists">
 				<% if(promotion.mansong){ %>
 					<div class="list style-change">
 						<ul class="fz0 custom-store-goods-special masonry">
@@ -470,35 +470,8 @@
 					</ul>
 					</div>
 				<% } %>
-			<% } %>
-		</div>
+			    </div>
 
-
-
-<!--         <% if(promotion.count){ %>
-        <% if(promotion.mansong){ for(var k=0; k < promotion.mansong.length; k++){ var mansong = promotion.mansong[k];if(mansong.shop_id != 0){ %>
-        <div class="store-sale-block">
-            <a href="store_goods.html?shop_id=<%=shop_id %>">
-                <div class="store-sale-tit">
-                    <h3><%=mansong.mansong_start_time %></h3>
-                    <time><?= __('活动时间：'); ?> <%=mansong.start_time_text%> <?= __('至'); ?> <%=mansong.mansong_end_time%>
-                    </time>
-                </div>
-                <div class="sotre-sale-con">
-                    <ul class="mjs">
-                        <% for (var i in mansong.rule) { var rules = mansong.rule[i]; %>
-                        <li><?= __('单笔订单消费满'); ?><em><?= __('¥'); ?><%=rules.rule_price %></em> <% if(rules.rule_discount) { %><?= __('，立减现金'); ?><em><?= __('¥'); ?><%=rules.rule_discount %></em> <% } %> <% if(rules.goods_id > 0) { %><?= __('，'); ?> <?= __('还可获赠品'); ?><img src="<%=rules.goods_image %>" alt="<%=rules.goods_name %>">&nbsp;<?= __('。'); ?> <% } %>
-                        </li>
-                        <% } %>
-                    </ul>
-                    <% if(mansong.mansong_remark){ %>
-                    <p class="note"><?= __('活动说明：'); ?> <%=mansong.mansong_remark %>
-                    </p>
-                    <% } %>
-                </div>
-            </a>
-        </div>
-        <% }}} %> -->
         <% }else{ %>
 	       	<div class="nctouch-norecord search">
 	            <div class="norecord-ico"><i></i></div>
