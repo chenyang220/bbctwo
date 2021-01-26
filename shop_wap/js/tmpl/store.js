@@ -48,7 +48,7 @@ $("#goods_search").on("click", ".header-inp", function ()
 function dajinquan () {
     location.href = WapSiteUrl + "/tmpl/voucher_list.html?shop=" + shop_id;
 }
-
+var tt = '';
 $(function () {
     if (!e) {
         window.location.href = WapSiteUrl + "/index.html";
@@ -67,7 +67,7 @@ $(function () {
             var s = e.store_info.store_name + " - 店铺首页";
             document.title = s;
             var r = template.render("store_banner_tpl", e);
-      
+      tt = e;
             var indexTem = template.render("store_index_tpl",e);
             $("#storeindex_con").html(indexTem);
             waterFall(columns);
@@ -301,12 +301,11 @@ function nav_click(nav_type) {
     window.scrollTo(0, 0);
     window.location.hash = nav_type;
     switch (nav_type) {
-    case "storeindex":
-		// columns=2;
-		// var indexTem = template.render("store_index_tpl");
-  //       $("#storeindex_con").html(indexTem);
-		// waterFall(columns);
-        window.location.href = ApiUrl + "/tmpl/store.html?shop_id=1";
+    case "storeindex1":
+		columns=2;
+		var indexTem = template.render("store_index_tpl",tt);
+        $("#storeindex_con").html(indexTem);
+		waterFall(columns);
         break;
     case "allgoods":
 		columns=2;
