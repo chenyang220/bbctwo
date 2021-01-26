@@ -97,10 +97,10 @@ include $this->view->getTplPath() . '/' . 'footer.php';
                 }
 
 
-                if (label_logo == '') {
-                    parent.Public.tips({type:1, content : "标签logo不能为空！" });
-                    return false;
-                }
+                // if (label_logo == '') {
+                //     parent.Public.tips({type:1, content : "标签logo不能为空！" });
+                //     return false;
+                // }
 
 
                 $.ajax({
