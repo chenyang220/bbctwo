@@ -642,12 +642,175 @@ class ShopCtl extends Controller
 
     }
 
-    /**
+ /**
      *
      * wap 获取店铺满送 限时
      */
 
     public function getShopPromotion()
+    {
+        $mansong = array();
+        $xianshi = array();
+        $kanjia = array();
+        $pintuan = array();
+        $promotion = array();
+
+        $discountBaseModel = new Discount_BaseModel();
+        $manSongBaseModel = new ManSong_BaseModel();
+        $bargainBaseModel = new Bargain_BaseModel();
+        $pinTuanBaseModel = new PinTuan_Base();
+        $shop_id = request_int('shop_id');
+        $Discount_GoodsModel = new  Discount_GoodsModel();
+        $Discount_Goods = $Discount_GoodsModel->getByWhere("*");
+        $discount_goods_id_arr = array_column($Discount_Goods, "goods_id","discount_id");
+
+        $Goods_BaseModel = new Goods_BaseModel();
+    
+
+        $discount_goods_image_arr = array();
+        foreach ($discount_goods_id_arr as $key => $discount_goods_id) {
+            $Goods_Base = $Goods_BaseModel->getOne(array("goods_id"=>$discount_goods_id));
+
+            $discount_goods_image_arr[$key] =  $Goods_Base['goods_image'];
+
+        }
+
+ 
+       
+        //限时
+        $discount_list = $discountBaseModel->getDiscountActList(array('discount_state' => Discount_BaseModel::NORMAL, 'shop_id' => $shop_id));
+        if ($discount_list['items']) {
+            foreach ($discount_list['items'] as $key => $value) {
+                $discount_list['items'][$key]['goods_image'] =  $discount_goods_image_arr[$value['discount_id']];
+
+            }
+        }
+        $xianshi = $discount_list['items'];
+        //                  print_r($discount_list);
+        // exit;
+        //砍价
+        $bargain_list = $bargainBaseModel->getBargainList(array('bargain_status' => Bargain_BaseModel::ISON, 'shop_id' => $shop_id));
+        $kanjia = $bargain_list['items'];
+
+        //拼团
+        $pintuan_list = $pinTuanBaseModel->getPinTuanList(array('status' => PinTuan_Base::$statusEnabled, 'shop_id' => $shop_id));
+        $pintuan = $pintuan_list['items'];
+        //满送
+        $mansong_list = $manSongBaseModel->getManSongActList(array('mansong_state' => ManSong_BaseModel::NORMAL, 'shop_id' => $shop_id));
+        $mansong_list_f = $mansong_list['items'];
+        fb($mansong_list_f);
+
+        if ($mansong_list_f) {
+            foreach ($mansong_list_f as $maskey => $masval) {
+                $mansong[] = $manSongBaseModel->getManSongActItem(array('shop_id' => $shop_id, 'mansong_id' => $masval['mansong_id']));
+            }
+
+        } else {
+            $mansong = $mansong_list_f;
+        }
+
+        //当店铺没有满送活动和限时活动的时候对应字段返回默认值，防止App接收数据崩溃
+        $flag_mansong = false;
+        if (!$mansong && 'json' == request_string('typ')) {
+            $mansong['mansong_id'] = 0;
+            $mansong['mansong_name'] = '';
+            $mansong['combo_id'] = 0;
+            $mansong['mansong_start_time'] = '2017-04-01 10:00:00';
+            $mansong['mansong_end_time'] = '2017-04-01 11:00:00';
+            $mansong['user_id'] = 0;
+            $mansong['shop_id'] = 0;
+            $mansong['user_nickname'] = '';
+            $mansong['shop_name'] = '';
+            $mansong['mansong_state'] = 2;
+            $mansong['mansong_remark'] = '';
+            $mansong['id'] = 0;
+            $mansong['mansong_state_label'] = '已关闭';
+            $mansong['rule']['rule_id'] = 0;
+            $mansong['rule']['mansong_id'] = 0;
+            $mansong['rule']['rule_price'] = 0;
+            $mansong['rule']['rule_discount'] = 0;
+            $mansong['rule']['goods_name'] = '';
+            $mansong['rule']['goods_id'] = 0;
+            $mansong['rule']['id'] = 0;
+            $mansong['rule']['goods_price'] = 0;
+            $mansong['rule']['goods_image'] = '';
+            $mansong[] = $mansong;
+            $flag_mansong = true;
+        }
+        $flag_kanjia = false;
+        if (!$kanjia && 'json' == request_string('typ')) {
+            $kanjia['bargain_id'] =0;
+            $kanjia['shop_id'] = 0;
+            $kanjia['shop_name'] = '';
+            $kanjia ['goods_id'] =0;
+            $kanjia['goods_price'] =0;
+            $kanjia['bargain_price'] =0;
+            $kanjia['bargain_stock'] =0;
+            $kanjia['bargain_desc'] ='砍价砍价';
+            $kanjia['start_time'] =0;
+            $kanjia['end_time'] =0;
+            $kanjia['join_num'] =0;
+            $kanjia['buy_num'] =0;
+            $kanjia['bargain_status'] =0;
+            $kanjia['bargain_type'] =0;
+            $kanjia['bargain_num_price'] =0;
+            $kanjia['create_time'] ='';
+            $kanjia['is_del'] =0;
+            $kanjia['bargain_stock_count']=0;
+            $kanjia['goods_name'] ='';
+            $kanjia ['goods_old_price'] ='';
+            $kanjia['goods_image'] ='';
+            $kanjia ['is_self'] =0;
+            $kanjia ['start_date'] ='';
+            $kanjia['start'] ='0000-00-00';
+            $kanjia['end_date'] ='0000-00-00';
+            $kanjia['end'] ='0000-00-00';
+            $kanjia['bargain_status_con'] ='进行中';
+            $kanjia[] = $kanjia;
+            $flag_kanjia = true;
+        }
+
+        $flag_xianshi = false;
+        if (!$xianshi && 'json' == request_string('typ')) {
+            $xianshi['discount_id'] = 0;
+            $xianshi['discount_name'] = '';
+            $xianshi['discount_title'] = '';
+            $xianshi['discount_explain'] = '';
+            $xianshi['combo_id'] = 0;
+            $xianshi['discount_start_time'] = '2017-04-01 10:00:00';
+            $xianshi['discount_end_time'] = '2017-04-01 11:00:00';
+            $xianshi['user_id'] = 0;
+            $xianshi['shop_id'] = 0;
+            $xianshi['user_nick_name'] = '';
+            $xianshi['shop_name'] = '';
+            $xianshi['discount_lower_limit'] = 0;
+            $xianshi['discount_state'] = 0;
+            $xianshi['id'] = 0;
+            $xianshi['discount_state_label'] = '已关闭';
+            $xianshi[] = $xianshi;
+            $flag_xianshi = true;
+        }
+
+        if ($flag_mansong && $flag_xianshi&&$flag_kanjia) {
+            $promotion['count'] = 0;
+        } else {
+            $promotion['count'] = 1;
+        }
+
+        $promotion['mansong'] = $mansong;
+        $promotion['xianshi'] = $xianshi;
+        $promotion['kanjia'] =$kanjia;
+        $promotion['pintuan'] =$pintuan;
+        $data['promotion'] = $promotion;
+
+        $this->data->addBody(-140, $data);
+    }
+    /**
+     *
+     * wap 获取店铺满送 限时
+     */
+
+    public function getShopPromotion2()
     {
         $mansong = array();
         $xianshi = array();

@@ -49,7 +49,6 @@
 					<p class="top"><span class="name">订来订趣 新疆礼物</span>
 					<!-- <b class="fans">粉丝数 56435</b> -->
 					</p>
-					..
 					<p>
 						<em>综合评分</em>
 						<span id="label_name"></span>
@@ -366,6 +365,150 @@
 		</div>
     </script>
     <script type="text/html" id="storeactivity_tpl">
+		<div class="customize-goods-lists">
+			<% if(promotion.count){ %>
+				<% if(promotion.mansong){ %>
+					<div class="list style-change">
+						<ul class="fz0 custom-store-goods-special masonry">
+							<%for(var k=0; k < promotion.mansong.length; k++){ var mansong = promotion.mansong[k];if(mansong.shop_id != 0){ %>
+							<li class="item">
+								<div class="pad">
+									<span class="goods-pic">
+										<a href="store_goods.html?shop_id=<%=shop_id %>">
+											<img src="https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200925/160100996855688270210436410088.jpg">
+										</a>
+									</span>
+									<dl class="goods-info relative">
+										<dt class="goods-name">
+											<a href="store_goods.html?shop_id=<%=shop_id %>">
+												<h4 class="one-overflow">
+												<div>活动名称</div>
+												<span style="    display: inline-block;background-color: #ED5564;color: #FFF;">满即送	
+												</span>
+											</h4>
+											</a>
+										</dt>
+										<dd class="goods-sale">
+											<a href="store_goods.html?shop_id=<%=shop_id %>">
+												<p class="custom-store-activity-time"><em class="time">活动时间： <%=mansong.start_time_text%>-<%=mansong.mansong_end_time%></em></p>
+											</a>
+										</dd>
+									</dl>
+							   </div>
+							</li>
+        					<% }} %>
+        			</ul>
+					</div>
+        		<% } %>
+        		<% if(promotion.kanjia){ %>
+				   <div class="list style-change">
+				   <ul class="fz0 custom-store-goods-special masonry">
+        		   <%for(var k=0; k < promotion.kanjia.length; k++){var kanjia = promotion.kanjia[k]; if(kanjia.shop_id != 0){%>
+						<li class="item">
+							<div class="pad">
+								<span class="goods-pic">
+									<a href="store_goods.html?shop_id=<%=shop_id %>">
+										<img src="<%=kanjia.goods_image%>">
+									</a>
+								</span>
+								<dl class="goods-info relative">
+									<dt class="goods-name">
+										<a href="store_goods.html?shop_id=<%=shop_id %>">
+											<h4 class="one-overflow">
+												<div>活动名称</div>
+												<span style="    display: inline-block;background-color: #ED5564;color: #FFF;">砍价砍价
+												</span>
+											</h4>
+										</a>
+									</dt>
+									<dd class="goods-sale">
+										<a href="store_goods.html?shop_id=<%=shop_id %>">
+											<p class="custom-store-activity-time"><em class="time">活动时间：<%=kanjia.start_date%>-<%=kanjia.end_date%></em></p>
+										</a>
+									</dd>
+								</dl>
+						   </div>
+						</li>	
+        		    <% }} %>
+					</ul>
+					</div>
+				<% } %>
+
+
+				<% if(promotion.xianshi){%>
+					<div class="list style-change">
+					<ul class="fz0 custom-store-goods-special masonry">
+					<% for(var k=0; k < promotion.xianshi.length; k++){var xianshi = promotion.xianshi[k]; if(xianshi.shop_id != 0){%>
+						<li class="item">
+							<div class="pad">
+								<span class="goods-pic">
+									<a href="store_goods.html?shop_id=<%=shop_id %>">
+										<img src="<%=xianshi.goods_image%>">
+									</a>
+								</span>
+								<dl class="goods-info relative">
+									<dt class="goods-name">
+										<a href="store_goods.html?shop_id=<%=shop_id %>">
+
+											<h4 class="one-overflow">
+												<div>活动名称</div>
+												<span style="    display: inline-block;background-color: #ED5564;color: #FFF;">限时折扣	
+												</span>
+											</h4>
+										</a>
+									</dt>
+									<dd class="goods-sale">
+										<a href="store_goods.html?shop_id=<%=shop_id %>">
+											<p class="custom-store-activity-time"><em class="time">活动时间：<%=xianshi.discount_start_time%>—<%=xianshi.discount_end_time%></em></p>
+										</a>
+									</dd>
+								</dl>
+						   </div>
+						</li>	
+					<% }} %>
+					</ul>
+					</div>
+				<% } %>
+			<% } %>
+		</div>
+
+
+
+<!--         <% if(promotion.count){ %>
+        <% if(promotion.mansong){ for(var k=0; k < promotion.mansong.length; k++){ var mansong = promotion.mansong[k];if(mansong.shop_id != 0){ %>
+        <div class="store-sale-block">
+            <a href="store_goods.html?shop_id=<%=shop_id %>">
+                <div class="store-sale-tit">
+                    <h3><%=mansong.mansong_start_time %></h3>
+                    <time><?= __('活动时间：'); ?> <%=mansong.start_time_text%> <?= __('至'); ?> <%=mansong.mansong_end_time%>
+                    </time>
+                </div>
+                <div class="sotre-sale-con">
+                    <ul class="mjs">
+                        <% for (var i in mansong.rule) { var rules = mansong.rule[i]; %>
+                        <li><?= __('单笔订单消费满'); ?><em><?= __('¥'); ?><%=rules.rule_price %></em> <% if(rules.rule_discount) { %><?= __('，立减现金'); ?><em><?= __('¥'); ?><%=rules.rule_discount %></em> <% } %> <% if(rules.goods_id > 0) { %><?= __('，'); ?> <?= __('还可获赠品'); ?><img src="<%=rules.goods_image %>" alt="<%=rules.goods_name %>">&nbsp;<?= __('。'); ?> <% } %>
+                        </li>
+                        <% } %>
+                    </ul>
+                    <% if(mansong.mansong_remark){ %>
+                    <p class="note"><?= __('活动说明：'); ?> <%=mansong.mansong_remark %>
+                    </p>
+                    <% } %>
+                </div>
+            </a>
+        </div>
+        <% }}} %> -->
+        <% }else{ %>
+	       	<div class="nctouch-norecord search">
+	            <div class="norecord-ico"><i></i></div>
+	            <dl>
+	                <dt><?= __('商铺最近没有促销活动'); ?></dt>
+	                <dd><?= __('收藏店铺经常来逛一逛'); ?></dd>
+	            </dl>
+	        </div>
+        <% } %>
+    </script>
+    <script type="text/html" id="storeactivity_tpl44">
 		<div class="tc"><a class="custom-btn-store-activity" href="javascript:;">活动最低价</a></div>
 		<div class="customize-goods-lists">
 			<div class="list style-change">
@@ -494,7 +637,6 @@
             </div>
         </div>
     </script>
-    
     <script type="text/javascript" src="../js/zepto.min.js"></script>
     <script type="text/javascript" src="../js/template.js"></script>
     <script type="text/javascript" src="../js/swiper.min.js"></script>

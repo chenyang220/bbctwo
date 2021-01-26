@@ -79,7 +79,8 @@ class Bargain_BaseModel extends Bargain_Base
         }
         $sql .= " ORDER BY bargain_base.create_time DESC LIMIT " . ($page - 1) . "," . $rows;
         $result = $this->sql->getAll($sql);
-
+// print_r($sql);
+// exit;
         $res = array();
         if($cond_row['is_list'] == 1){
             foreach ($result as $k => $v) {
@@ -126,6 +127,7 @@ class Bargain_BaseModel extends Bargain_Base
         $data['items'] = $res;
         return $data;
     }
+
 
     //根据砍价活动id获取对应商品信息以及活动信息
     public function getBargainInfo($bargain_id)
