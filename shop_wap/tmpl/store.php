@@ -455,7 +455,7 @@
 								</span>
 								<dl class="goods-info relative">
 									<dt class="goods-name">
-										<a href="store_goods.html?shop_id=<%=shop_id %>">
+										<a href="store_goods.html?shop_id=<%=shop_id %>&common_is_xian=1">
 
 											<h4 class="one-overflow">
 												<div>活动名称</div>

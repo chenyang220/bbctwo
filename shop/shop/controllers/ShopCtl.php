@@ -418,6 +418,10 @@ class ShopCtl extends Controller
             $price_from = request_float('price_from');
             $price_to = request_float('price_to');
             $cond_row['shop_id'] = $shop_id;
+
+            if (request_int('common_is_xian')) {
+                $cond_row['common_is_xian'] = 1;
+            }
             $Goods_CommonModel = new Goods_CommonModel();
 
             if ($search) {
