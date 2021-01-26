@@ -90,13 +90,26 @@ include $this->view->getTplPath() . '/' . 'footer.php';
         $(function () {
             $(".buttons").click(function () {
                 var label_name = $("#label_name").val();
+                var label_logo = $("#label_logo").val();
+                if (label_name == '') {
+                    parent.Public.tips({type:1, content : "标签名称不能为空！" });
+                    return false;
+                }
+
+
+                if (label_logo == '') {
+                    parent.Public.tips({type:1, content : "标签logo不能为空！" });
+                    return false;
+                }
+
+
                 $.ajax({
                     type: "POST",
                     url: SITE_URL +'?ctl=Shop_Label&met=addLabelset&typ=json',
                     data: {
                         label_name:label_name,
                         label_tag_sort: $("#label_tag_sort").val(),
-                        label_logo: $("#label_logo").val()
+                        label_logo: label_logo
                     },
                     success: function(data){
                         if(data.status == 200)
