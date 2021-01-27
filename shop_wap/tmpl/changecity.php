@@ -49,7 +49,8 @@ include __DIR__.'/../includes/header.php';
         function setsubsite(subsite_id,domain){
             if(typeof(domain) == 'undefined' || !domain){
                 if (type == 'specials') {
-                    addCookie('sub_site_specials_id',subsite_id,0);
+                    addCookie('sub_site_id',subsite_id,0);
+                    // addCookie('sub_site_specials_id',subsite_id,0);
                     window.location.href = WapSiteUrl+'/specials/index.html?sub_site_id='+subsite_id;
                 } else {
                     addCookie('sub_site_id',subsite_id,0);

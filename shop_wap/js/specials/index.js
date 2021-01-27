@@ -1,9 +1,18 @@
 
 var html = '';
-var sub_site_id = getCookie('sub_site_specials_id');
+// var sub_site_id = getCookie('sub_site_specials_id');
 // alert(sub_site_id);
-if(getCookie('sub_site_specials_id') === '' || getCookie('sub_site_specials_id') === 'undefined' || getCookie('sub_site_specials_id') === null){
+// if(getCookie('sub_site_specials_id') === '' || getCookie('sub_site_specials_id') === 'undefined' || getCookie('sub_site_specials_id') === null){
+//         sub_site_id = 0;
+// }
+// if(getCookie('sub_site_specials_id') === '' || getCookie('sub_site_specials_id') === 'undefined' || getCookie('sub_site_specials_id') === null){
+//         sub_site_id = 0;
+// }
+
+var sub_site_id = getCookie('sub_site_id');
+if(getCookie('sub_site_id') === '' || getCookie('sub_site_id') === 'undefined' || getCookie('sub_site_id') === null){
         sub_site_id = 0;
+        addCookie('sub_site_id',subsite_id,0);
 }
 $(function() {
     $.ajax({
@@ -13,9 +22,6 @@ $(function() {
         success: function(result) {
             if(result.status == 200)
             {
-
-
-
                if(typeof(result.data.subsite_is_open) == 'undefined' || !result.data.subsite_is_open){
                     $('#cohesive_dev').hide();
                 }else{
