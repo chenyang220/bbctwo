@@ -149,7 +149,9 @@ include TPL_PATH . '/' . 'footer.php';
                     if ( item_data.mb_tpl_layout_data ) {
                         f_img = item_data.mb_tpl_layout_data.square ? item_data.mb_tpl_layout_data.square.image : default_img,
                         s_img = item_data.mb_tpl_layout_data.rectangle1 ? item_data.mb_tpl_layout_data.rectangle1.image : default_img,
-                        t_img = item_data.mb_tpl_layout_data.rectangle2 ? item_data.mb_tpl_layout_data.rectangle2.image : default_img;
+                        t_img = item_data.mb_tpl_layout_data.rectangle2 ? item_data.mb_tpl_layout_data.rectangle2.image : default_img,
+                        t_img3 = item_data.mb_tpl_layout_data.rectangle3 ? item_data.mb_tpl_layout_data.rectangle3.image : default_img,
+                        t_img4 = item_data.mb_tpl_layout_data.rectangle4 ? item_data.mb_tpl_layout_data.rectangle4.image : default_img;
                     }
 
                     html = '<div nctype="special_item" class="special-item home2 '+ (item_data.mb_tpl_layout_enable == 1 ? 'usable' : 'unusable') +'" data-item-id="' + item_data.mb_tpl_layout_id + '">' +
@@ -159,8 +161,8 @@ include TPL_PATH . '/' . 'footer.php';
                                 '<div class="home2_1"><div nctype="item_image" class="item"><img nctype="image" src="' + f_img + '" alt=""></div></div>' +
                                 '<div class="home2_2"><div class="home2_2_1"><div nctype="item_image" class="item"><img nctype="image" src="' + s_img + '" alt=""></div></div>' +
                                 '<div class="home2_2_2"><div nctype="item_image" class="item"> <img nctype="image" src="' + t_img + '" alt=""></div></div></div>'+
-								'<div class="home3_2"><div class="home3_2_1 iblock wp50"><div nctype="item_image" class="item"><img class="wp100" nctype="image" src="' + s_img + '" alt=""></div></div>' +
-								'<div class="home3_2_2 iblock wp50"><div nctype="item_image" class="item"> <img class="wp100" nctype="image" src="' + t_img + '" alt=""></div></div></div>'+
+								'<div class="home3_2"><div class="home3_2_1 iblock wp50"><div nctype="item_image" class="item"><img class="wp100" nctype="image" src="' + t_img3 + '" alt=""></div></div>' +
+								'<div class="home3_2_2 iblock wp50"><div nctype="item_image" class="item"> <img class="wp100" nctype="image" src="' + t_img4 + '" alt=""></div></div></div>'+
                                 '</div></div></div>' +
                                 '<div class="handle"><a nctype="btn_move_up" href="javascript:;">' +
                                     '<i class="fa fa-arrow-up"></i>上移</a> <a nctype="btn_move_down" href="javascript:;">' +
@@ -625,12 +627,14 @@ include TPL_PATH . '/' . 'footer.php';
         });
         //编辑模块
         $('#item_list').on('click', '[nctype="btn_edit_item"]', function() {
-
             var item_id = $(this).attr('data-item-id');
             var item_type = $(this).attr('data-item-type');
             var item_module=$(this).attr('data-item-module');
             //var act_type = $(this).attr('data-item-actype');
             var title = $(this).parents('div[nctype="special_item"]').find('div.item_type').html();
+
+
+            // console.log(item_data[item_id]);
             $.dialog({
                 title: title,
                 dialogClass:"editDialog",

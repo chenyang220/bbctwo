@@ -43,8 +43,8 @@ include   '../includes/header.php';
        setCookie("u_id","<?=$u_id?>"); 
     }
     if (u_id) {
-           window.location.href = UCenterApiUrl + '/?ctl=Login&met=oauth&typ=e&u_id=' + u_id + "&return_url=" + WapSiteUrl + "/specials/index.html";
-        }
+       window.location.href = UCenterApiUrl + '/?ctl=Login&met=oauth&typ=e&u_id=' + u_id + "&return_url=" + WapSiteUrl + "/specials/index.html";
+    }
 </script>
 <body>
 	

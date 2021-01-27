@@ -157,7 +157,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
             </div>
 			<div class="custom-index-module custom-module-2 layout1 clearfix">
-				<a class="fl small" href=""><img class="wp100" src="<%= rectangle1_image %>" alt=""></a><a class="fr small" href=""><img class="wp100" src="<%= rectangle2_image %>" alt=""></a>
+				<a class="fl small" href="<%= rectangle3_url %>"><img class="wp100" src="<%= rectangle3_image %>" alt=""></a><a class="fr small" href="<%= rectangle4_url %>"><img class="wp100" src="<%= rectangle4_image %>" alt=""></a>
 			</div>
         </div>
     </div>

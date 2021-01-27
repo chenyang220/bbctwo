@@ -253,7 +253,35 @@ class IndexCtl extends Controller
                         $newGoods['data'] = array_values($layout_data_val['mb_tpl_layout_data']);
                         $data[$mb_tpl_layout_id + 1]['newGoods'] = $newGoods;
                     }
-                    if ($layout_data_val['mb_tpl_layout_type'] == 'home2' || $layout_data_val['mb_tpl_layout_type'] == 'home4') {
+
+                    if ($layout_data_val['mb_tpl_layout_type'] == 'home2') {
+                        $home2_4 = [];
+                        $mb_tpl_layout_data = $layout_data_val['mb_tpl_layout_data'];
+                        $home2_4['title'] = $layout_data_val['mb_tpl_layout_title'];
+                        $home2_4['rectangle1_image'] = $mb_tpl_layout_data['rectangle1']['image'];
+                        $home2_4['rectangle1_type'] = $mb_tpl_layout_data['rectangle1']['image_type'];
+                        $home2_4['rectangle1_data'] = $mb_tpl_layout_data['rectangle1']['image_data'];
+                        $home2_4['rectangle2_image'] = $mb_tpl_layout_data['rectangle2']['image'];
+                        $home2_4['rectangle2_type'] = $mb_tpl_layout_data['rectangle2']['image_type'];
+                        $home2_4['rectangle2_data'] = $mb_tpl_layout_data['rectangle2']['image_data'];
+
+
+                        $home2_4['rectangle3_image'] = $mb_tpl_layout_data['rectangle3']['image'];
+                        $home2_4['rectangle3_type'] = $mb_tpl_layout_data['rectangle3']['image_type'];
+                        $home2_4['rectangle3_data'] = $mb_tpl_layout_data['rectangle3']['image_data'];
+
+
+
+                        $home2_4['rectangle4_image'] = $mb_tpl_layout_data['rectangle4']['image'];
+                        $home2_4['rectangle4_type'] = $mb_tpl_layout_data['rectangle4']['image_type'];
+                        $home2_4['rectangle4_data'] = $mb_tpl_layout_data['rectangle4']['image_data'];
+                        $home2_4['square_image'] = $mb_tpl_layout_data['square']['image'];
+                        $home2_4['square_type'] = $mb_tpl_layout_data['square']['image_type'];
+                        $home2_4['square_data'] = $mb_tpl_layout_data['square']['image_data'];
+                        $data[$mb_tpl_layout_id + 1][$layout_data_val['mb_tpl_layout_type']] = $home2_4;
+                    }
+
+                    if ($layout_data_val['mb_tpl_layout_type'] == 'home4') {
                         $home2_4 = [];
                         $mb_tpl_layout_data = $layout_data_val['mb_tpl_layout_data'];
                         $home2_4['title'] = $layout_data_val['mb_tpl_layout_title'];

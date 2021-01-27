@@ -8,7 +8,6 @@ include TPL_PATH . '/' . 'header.php';
 <link href="<?= $this->view->css ?>/mb.css" rel="stylesheet" type="text/css">
 <div class="mb-item-edit-content">
     <div class="index_block home2">
-        <!--<h3><?= __('模型版块布局'); ?>B</h3>-->
         <div class="title">
             <h5><?= __('标题：'); ?></h5>
             <input id="home1_title" type="text" class="txt w200" name="item_data[title]"  maxlength="8" value="">
@@ -20,7 +19,7 @@ include TPL_PATH . '/' . 'header.php';
                     <input nctype="image_name" name="item_data[square_image]" type="hidden" value="s0_04953036315894578.jpg">
                     <input nctype="image_type" name="item_data[square_type]" type="hidden" value="keyword">
                     <input nctype="image_data" name="item_data[square_data]" type="hidden" value="<?= __('水果'); ?>">
-                    <a nctype="btn_edit_item_image" data-name="square" data-desc="320*260" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑'); ?></a>
+                    <a nctype="btn_edit_item_image" data-name="square" data-desc="320*260" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑1'); ?></a>
                 </div>
             </div>
             <div class="home2_2">
@@ -29,7 +28,7 @@ include TPL_PATH . '/' . 'header.php';
                         <input nctype="image_name" name="item_data[rectangle1_image]" type="hidden" value="s0_04953036568877399.jpg">
                         <input nctype="image_type" name="item_data[rectangle1_type]" type="hidden" value="goods">
                         <input nctype="image_data" name="item_data[rectangle1_data]" type="hidden" value="100374">
-                        <a nctype="btn_edit_item_image" data-name="rectangle1" data-desc="320*130" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑'); ?></a>
+                        <a nctype="btn_edit_item_image" data-name="rectangle1" data-desc="320*130" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑2'); ?></a>
                     </div>
                 </div>
                 <div class="home2_2_2">
@@ -37,25 +36,25 @@ include TPL_PATH . '/' . 'header.php';
                         <input nctype="image_name" name="item_data[rectangle2_image]" type="hidden" value="s0_04953036851456664.jpg">
                         <input nctype="image_type" name="item_data[rectangle2_type]" type="hidden" value="goods">
                         <input nctype="image_data" name="item_data[rectangle2_data]" type="hidden" value="100028">
-                        <a nctype="btn_edit_item_image" data-name="rectangle2" data-desc="320*130" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑'); ?></a>
+                        <a nctype="btn_edit_item_image" data-name="rectangle2" data-desc="320*130" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑3'); ?></a>
                     </div>
                 </div>
             </div>
 			<div class="home3_2">
 			    <div class="home3_2_1 iblock wp50">
-			        <div nctype="item_image" class="item"> <img class="wp100" nctype="image" name="item_data[rectangle1_image]" src="<?= $this->view->img_com ?>/image.png" alt="">
-			            <input nctype="image_name" name="item_data[rectangle1_image]" type="hidden" value="s0_04953036568877399.jpg">
-			            <input nctype="image_type" name="item_data[rectangle1_type]" type="hidden" value="goods">
-			            <input nctype="image_data" name="item_data[rectangle1_data]" type="hidden" value="100374">
-			            <a nctype="btn_edit_item_image" data-name="rectangle1" data-desc="320*130" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑'); ?></a>
+			        <div nctype="item_image" class="item"> <img class="wp100" nctype="image" name="item_data[rectangle3_image]" src="<?= $this->view->img_com ?>/image.png" alt="">
+			            <input nctype="image_name" name="item_data[rectangle3_image]" type="hidden" value="s0_04953036568877399.jpg">
+			            <input nctype="image_type" name="item_data[rectangle3_type]" type="hidden" value="goods">
+			            <input nctype="image_data" name="item_data[rectangle3_data]" type="hidden" value="100374">
+			            <a nctype="btn_edit_item_image" data-name="rectangle3" data-desc="320*130" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑4'); ?></a>
 			        </div>
 			    </div>
 			    <div class="home3_2_2 iblock wp50">
-			        <div nctype="item_image" class="item"> <img class="wp100" nctype="image" name="item_data[rectangle2_image]" src="<?= $this->view->img_com ?>/image.png" alt="">
-			            <input nctype="image_name" name="item_data[rectangle2_image]" type="hidden" value="s0_04953036851456664.jpg">
-			            <input nctype="image_type" name="item_data[rectangle2_type]" type="hidden" value="goods">
-			            <input nctype="image_data" name="item_data[rectangle2_data]" type="hidden" value="100028">
-			            <a nctype="btn_edit_item_image" data-name="rectangle2" data-desc="320*130" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑'); ?></a>
+			        <div nctype="item_image" class="item"> <img class="wp100" nctype="image" name="item_data[rectangle4_image]" src="<?= $this->view->img_com ?>/image.png" alt="">
+			            <input nctype="image_name" name="item_data[rectangle4_image]" type="hidden" value="s0_04953036851456664.jpg">
+			            <input nctype="image_type" name="item_data[rectangle4_type]" type="hidden" value="goods">
+			            <input nctype="image_data" name="item_data[rectangle4_data]" type="hidden" value="100028">
+			            <a nctype="btn_edit_item_image" data-name="rectangle4" data-desc="320*130" href="javascript:;"><i class="fa fa-pencil-square-o"></i><?= __('编辑5'); ?></a>
 			        </div>
 			    </div>
 			</div>
@@ -80,11 +79,15 @@ include TPL_PATH . '/' . 'footer.php';
         if (layout_data) {
             layout_data.rectangle1 && render(layout_data.rectangle1 ,'rectangle1');
             layout_data.rectangle2 && render(layout_data.rectangle2 ,'rectangle2');
+            layout_data.rectangle3 && render(layout_data.rectangle3 ,'rectangle3');
+            layout_data.rectangle4 && render(layout_data.rectangle4 ,'rectangle4');
             layout_data.square && render(layout_data.square ,'square');
         } else {
             layout_data = {
                 rectangle1: {},
                 rectangle2: {},
+                rectangle3: {},
+                rectangle4: {},
                 square: {}
             }
         }
