@@ -23,6 +23,20 @@ include __DIR__ . '/includes/header.php';
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="js/swiper.min.4.4.1.js"></script>
 </head>
+<style type="text/css">
+    .head-fixed a.header-inps {
+    display: inline-block;
+    margin-left: 2.045rem;
+    /*padding: 0.375rem 1.41667rem;*/
+    width: 11.818rem;
+    height: 1.273rem;
+    background: #fff;
+    border-radius: 1.66667rem;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: center;
+}
+</style>
 <script type="text/javascript" src="js/ucsdk.min.js"></script>
 <script type="text/javascript" src="js/cookie.js"></script>
 <script type="text/javascript">
@@ -51,23 +65,36 @@ include __DIR__ . '/includes/header.php';
 <!-- 搜索 -->
 <div class="head-fixed">
     <div class="head-ser">
-      <!--  <div class="cohesive " id="cohesive_dev"><a href="./tmpl/changecity.html" class="colf"><span class="city-text sub_site_name_span"><?php echo __('全部'); ?></span>
-                <i class="icon-drapdown"></i></a></div> -->
-        <a href="tmpl/search.html" class="index-header-inps header-inps <?php if ($_COOKIE['is_app_guest']) { ?> isApp  <?php } ?>"> <b
-                    class="iconfont icon-search"></b><span class="search-input" id="keyword"><?php echo __('搜你想搜的'); ?></span>
-					<em class="zk-index-search fr">搜索</em>
-        </a> <?php if ($_COOKIE['is_app_guest']) { ?> <a class="qrcode_open scan ml-20 iblock tc" href="/qrcode_open"><i class="iconfont icon-scan colf"></i><span class="fz-20 colf ml20 block">扫一扫</span></a>
-
+        <span class="cohesive " id="cohesive_dev">
+            <a href="./tmpl/changecity.html" class="colf">
+                <span class="city-text sub_site_name_span">
+                    <?php echo __('全部'); ?> 
+                </span>
+                <i class="icon-drapdown"></i>
+            </a>
+        </span>
+        <span style="float-left:60px;">
+        <a href="tmpl/search.html" class="index-header-inps header-inps <?php if ($_COOKIE['is_app_guest']) { ?> isApp  <?php } ?>"> 
+            <b class="iconfont icon-search"></b>
+            <span class="search-input" id="keyword" ><?php echo __('搜你想搜的'); ?></span>	
+            <em class="zk-index-search fr">搜索</em>
+        </a> 
+        <?php if ($_COOKIE['is_app_guest']) { ?> 
+            <a class="qrcode_open scan ml-20 iblock tc" href="/qrcode_open">
+                <i class="iconfont icon-scan colf"></i>
+                <span class="fz-20 colf ml20 block">扫一扫</span>
+            </a>
         <?php } ?> 
 		<!-- <a id="header-nav" class="message colf" href="tmpl/message.html"><i></i><b id="is_look"></b></a> -->
-
+        </span>
     </div>
-     <div class="clearfix index-head-top-nav">
+    <div class="clearfix index-head-top-nav">
            <ul class="flex-layout category-head" id="category-head"></ul>
-      </div>
-      <div class="fen"><a href="<?php echo $WapSiteUrl;?>tmpl/product_first_categroy.html">
+    </div>
+    <div class="fen"><a href="<?php echo $WapSiteUrl;?>tmpl/product_first_categroy.html">
 
-        <i></i></a></div>
+        <i></i></a>
+    </div>
 </div>
 <div id="serch_down" class="" style="display: none">
 
