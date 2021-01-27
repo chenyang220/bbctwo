@@ -29,6 +29,7 @@ include __DIR__.'/../includes/header.php';
             getSubsiteList();
         });
         
+        var type = getQueryString("type");
         function getSubsiteList(){
             $.ajax({
                 url: ApiUrl + "/index.php?ctl=Base_District&met=subSite&typ=json",
@@ -47,8 +48,14 @@ include __DIR__.'/../includes/header.php';
         
         function setsubsite(subsite_id,domain){
             if(typeof(domain) == 'undefined' || !domain){
-                addCookie('sub_site_id',subsite_id,0);
-                window.location.href = WapSiteUrl+'/index.html?sub_site_id='+subsite_id;
+                if (type == 'specials') {
+                    addCookie('sub_site_specials_id',subsite_id,0);
+                    window.location.href = WapSiteUrl+'/specials/index.html?sub_site_id='+subsite_id;
+                } else {
+                    addCookie('sub_site_id',subsite_id,0);
+                    window.location.href = WapSiteUrl+'/index.html?sub_site_id='+subsite_id;
+                }
+
             }else{
                 var WapSiteUrlArray =WapSiteUrl.split( "/" ); 
                 var WapSiteHost = WapSiteUrlArray[2];
@@ -57,7 +64,12 @@ include __DIR__.'/../includes/header.php';
                 if(WapSiteHostArray[0] == 'www'){
                     WapSiteHost = WapSiteHost.replace('www.','');
                 }
-                window.location.href = 'http://'+domain+'.'+WapSiteHost+'/index.html?sub_site_id='+subsite_id;
+                if (type == 'specials') {
+                    window.location.href = 'http://'+domain+'.'+WapSiteHost+'/specials/index.html?sub_site_id='+subsite_id;
+                } else {
+                    window.location.href = 'http://'+domain+'.'+WapSiteHost+'/index.html?sub_site_id='+subsite_id;
+                }
+                
             }
             
            

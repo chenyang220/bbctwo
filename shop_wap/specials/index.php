@@ -1,7 +1,6 @@
 <?php
 include   '../includes/header.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en" class="bgf">
 <head>
@@ -50,9 +49,14 @@ include   '../includes/header.php';
 <body>
 	
     <div class="customize-feature-page-head clearfix">
-    	<div class="iblock city">
-    		<em>乌鲁木齐</em><i class="zk-drap"></i>
-    	</div>
+    	<div class="cohesive iblock city" id="cohesive_dev">
+            <a href="../tmpl/changecity.html?type=specials" class="colf">
+                <span class="city-text sub_site_name_span">
+                    <?php echo __('全部'); ?> 
+                </span>
+                <i class="zk-drap"></i>
+            </a>
+        </div>
     	<div class="customize-feature-page-input">
 				<i class="iconfont icon-search"></i>
 				<div class="flex1">

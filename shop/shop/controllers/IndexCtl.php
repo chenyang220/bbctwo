@@ -51,7 +51,22 @@ class IndexCtl extends Controller
         $label_tag_sort_arr = array_column($Label_Base, NULL,"label_tag_sort");
         $data['label_tag_sort'] = $label_tag_sort_arr;
 
-        $layout_list = $this->mbTplLayoutModel->getByWhere(array('tpl_layout_style'=>4));
+        $sub_site_name = '';
+        $subsite_is_open = Web_ConfigModel::value("subsite_is_open");
+        if ($subsite_is_open == Sub_SiteModel::SUB_SITE_IS_OPEN) {
+            $sub_site_id = request_int('sub_site_id');
+            $subsite_is_open = 1;  //开启
+            if ($sub_site_id > 0) {
+                
+                $sub_site_info = $this->subsitemodel->getSubSite($sub_site_id);
+                $sub_site_name = $sub_site_info[$sub_site_id]['sub_site_name'];
+            }
+        } else {
+            $subsite_is_open = 0; //关闭
+            $sub_site_id = 0;
+        }
+
+        $layout_list = $this->mbTplLayoutModel->getByWhere(array('tpl_layout_style'=>4,'sub_site_id' => $sub_site_id));
         $mb_tpl_layout_type_arr = array_column($layout_list, NULL,'mb_tpl_layout_type');
       
         $Label_Base_arr = $Label_BaseModel->getByWhere("*");
@@ -88,6 +103,9 @@ class IndexCtl extends Controller
         }
         $mb_tpl_layout_type_arr['goods'] = $goods_arr;
         $data['layout_list'] = $mb_tpl_layout_type_arr;
+        $data['sub_site_id'] = $sub_site_id;
+        $data['subsite_is_open'] = $subsite_is_open;
+        $data['sub_site_name'] = $sub_site_name;
         return $this->data->addBody(-140,$data, "uuu", 200);
     }
 

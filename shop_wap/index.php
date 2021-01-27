@@ -25,17 +25,16 @@ include __DIR__ . '/includes/header.php';
 </head>
 <style type="text/css">
     .head-fixed a.header-inps {
-    display: inline-block;
-    margin-left: 2.045rem;
-    /*padding: 0.375rem 1.41667rem;*/
-    width: 11.818rem;
-    height: 1.273rem;
-    background: #fff;
-    border-radius: 1.66667rem;
-    box-sizing: border-box;
-    vertical-align: top;
-    text-align: center;
-}
+        display: inline-block;
+        margin-left: 2.045rem;
+        width: 11.818rem;
+        height: 1.273rem;
+        background: #fff;
+        border-radius: 1.66667rem;
+        box-sizing: border-box;
+        vertical-align: top;
+        text-align: center;
+    }
 </style>
 <script type="text/javascript" src="js/ucsdk.min.js"></script>
 <script type="text/javascript" src="js/cookie.js"></script>
