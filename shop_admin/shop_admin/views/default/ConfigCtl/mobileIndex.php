@@ -145,7 +145,7 @@ include TPL_PATH . '/' . 'footer.php';
                                     '<i class="fa fa-pencil-square-o"></i>编辑</a> <a nctype="btn_del_item" data-item-id="' + item_data.mb_tpl_layout_id + '" href="javascript:;"><i class="fa fa-trash-o"></i>删除</a></div></div>';
                     break;
                 case 'home2':
-                    var f_img = default_img, s_img = default_img, t_img = default_img;
+                    var f_img = default_img, s_img = default_img, t_img = default_img, t_img3 = default_img,t_img4 = default_img;
                     if ( item_data.mb_tpl_layout_data ) {
                         f_img = item_data.mb_tpl_layout_data.square ? item_data.mb_tpl_layout_data.square.image : default_img,
                         s_img = item_data.mb_tpl_layout_data.rectangle1 ? item_data.mb_tpl_layout_data.rectangle1.image : default_img,
