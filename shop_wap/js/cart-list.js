@@ -363,7 +363,6 @@ $(function () {
                 else {
                     quantity = parseInt(buynum + 1);
                 }
-                alert(quantity);
             } else if (type == "minus") {
                 if (buynum > data_min) {
                     quantity = parseInt(buynum - 1);
@@ -382,7 +381,6 @@ $(function () {
                     return false;
                 }
 
-                alert(quantity);
             } else if (type == "custom") {
                 quantity = self.value;
             }
