@@ -23,9 +23,9 @@ include __DIR__ . '/../includes/header.php';
     <body>
     <header id="header" class="fixed borb0">
         <div class="header-wrap">
-            <div class="header-l">
+<!--             <div class="header-l">
                 <a href="javascript:history.go(-1)"> <i class="back"></i> </a>
-            </div>
+            </div> -->
             <div class="header-title">
                 <h1><?= __('购物车'); ?></h1>
             </div>
