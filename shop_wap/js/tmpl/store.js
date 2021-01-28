@@ -67,7 +67,7 @@ $(function () {
             var s = e.store_info.store_name + " - 店铺首页";
             document.title = s;
             var r = template.render("store_banner_tpl", e);
-      tt = e;
+            tt = e;
             var indexTem = template.render("store_index_tpl",e);
             $("#storeindex_con").html(indexTem);
             waterFall(columns);
@@ -77,7 +77,8 @@ $(function () {
             $("#store_banner").html(r);
             var label_name_msg = template.render("label_name_tmpl", e);
             $("#label_name").html(label_name_msg);
-
+            $(".shop_image").attr("style","background-image:url("+ e.store_info.shop_logo+")");
+            $(".shop_name").html(e.store_info.store_name);
             if (e.store_info.is_favorate) {
                 $("#store_notcollect").hide();
                 $("#store_collected").show();

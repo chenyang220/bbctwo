@@ -630,6 +630,7 @@ class ShopCtl extends Controller
         $store_info['user_id'] = $shop_base['user_id'];
         $store_info['store_tel'] = $shop_base['shop_tel'];
         $store_info['is_open_im'] = Yf_Registry::get('im_statu');
+        $store_info['shop_logo'] = $shop_base['shop_logo'];
         //获取店铺IM
         if ($shop_base['shop_self_support'] == 'true' && Web_ConfigModel::value('self_shop_im')) {
             $store_info['self_shop_im'] = $this->shopBaseModel->getSelfShopIm($shop_base['user_name'], $shop_base['shop_self_support']);

@@ -541,7 +541,7 @@ include   '../includes/header.php';
 			</div>
             <% if (store_info.shop_self_support != "true") {%>
             <div class="goods-detail-store">
-                <a href="store<%= store_info.shop_wap_index == 1 ? '' :store_info.shop_wap_index %>.html?shop_id=<%= store_info.store_id %>">
+                <a href="../tmpl/store<%= store_info.shop_wap_index == 1 ? '' :store_info.shop_wap_index %>.html?shop_id=<%= store_info.store_id %>">
                     <div class="store-name flex">
                     	<% if(goods_info.wap_shop_logo){ %>
                     	<!-- <i class="icon-store"></i> -->
@@ -551,7 +551,7 @@ include   '../includes/header.php';
 						<% }%>
 						<div class="flex1">
 							<p class="top"><span class="name"><%= store_info.store_name %></span>
-								<!-- <b class="fans">粉丝数 56435</b> -->
+								<!-- <b class="fans">粉丝数 <%= store_info.shop_wap_index%></b> -->
 							</p>
 							<p><em>综合评分</em>
 							<span class="star-span">

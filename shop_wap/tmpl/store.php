@@ -44,9 +44,9 @@
 	<div class="custom-store-top bgf">
 		<div class="custom-store-info goods-detail-store">
 			<div class="store-name flex">
-			    <i class="icon-store" style="background-image:url(https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200928/160126733562579976301346610359.png!64x64.png);"></i>
+			    <i class="icon-store  shop_image" style="background-image:url(https://shops.look56.com/image.php/shop/data/upload/media/b54a7238a221685616d4fe794fa43b0b/10002/1/image/20200928/160126733562579976301346610359.png!64x64.png);"></i>
 				<div class="flex1">
-					<p class="top"><span class="name">订来订趣 新疆礼物</span>
+					<p class="top"><span class="name shop_name">订来订趣 新疆礼物</span>
 					<!-- <b class="fans">粉丝数 56435</b> -->
 					</p>
 					<p>
