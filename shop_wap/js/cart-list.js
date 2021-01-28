@@ -24,8 +24,6 @@ $(function () {
                 var info = goodsarr[i].split(',');
                 if (isNaN(info[0]) || isNaN(info[1])) continue;
                 data = getGoods(info[0], info[1]);
-
-                console.info(data);
                 if ($.isEmptyObject(data)) continue;
                 if (cart_list.length > 0) {
                     var has = false
@@ -66,6 +64,7 @@ $(function () {
             $(".JS-header-edit").show();
         }
         var html = template.render('cart-list1', rData);
+
         $('#cart-list').addClass('no-login');
         if (rData.cart_list.length == 0) {
             get_footer();
@@ -128,7 +127,6 @@ $(function () {
         });
         //购买数量加
         $(".add").click(function () {
-			alert('11111')
             var sPrents = $(this).parents(".cart-litemw-cnt");
             var goods_id = sPrents.attr('cart_id');
             //查询当前购物车商品是否是限购商品 2017.5.3
@@ -139,10 +137,8 @@ $(function () {
                 dataType: "json",
                 success: function (result) {
                     var data = result.data;
-                    console.info(data);
                     if (result.status == 200) {
                         var buynum = parseInt($(".buy-num").val());
-                        console.info(buynum);
                         //如果是限购商品
                         if (data.buyer_limit) {
                             if (parseInt(buynum + 1) >= data.buyer_limit) {
@@ -150,7 +146,6 @@ $(function () {
                                 if (buynum == data.buyer_limit) {
                                     for (var i = 0; i < goodsarr.length; i++) {
                                         var info = goodsarr[i].split(',');
-                                        console.info(info);
                                         if (info[0] == goods_id) {
                                             info[1] = data.buyer_limit;
                                             goodsarr[i] = info[0] + ',' + info[1];
@@ -165,7 +160,6 @@ $(function () {
                                 } else if (buynum < data.buyer_limit) {
                                     for (var i = 0; i < goodsarr.length; i++) {
                                         var info = goodsarr[i].split(',');
-                                        console.info(info);
                                         if (info[0] == goods_id) {
                                             info[1] = parseInt(buynum + 1);
                                             goodsarr[i] = info[0] + ',' + info[1];
@@ -182,7 +176,6 @@ $(function () {
                                 // sPrents.find('.buy-num').val(parseInt(buynum+1));
                                 for (var i = 0; i < goodsarr.length; i++) {
                                     var info = goodsarr[i].split(',');
-                                    console.info(info);
                                     if (info[0] == goods_id) {
                                         info[1] = parseInt(buynum + 1);
                                         goodsarr[i] = info[0] + ',' + info[1];
@@ -195,7 +188,6 @@ $(function () {
                         } else {
                             for (var i = 0; i < goodsarr.length; i++) {
                                 var info = goodsarr[i].split(',');
-                                console.info(info);
                                 if (info[0] == goods_id) {
                                     info[1] = parseInt(info[1]) + 1;
                                     goodsarr[i] = info[0] + ',' + info[1];
@@ -236,7 +228,6 @@ $(function () {
 
                             rData.WapSiteUrl = WapSiteUrl;
                             rData.check_out = true;
-                            console.info(rData);
                             var html = template.render('cart-list', rData);
                             if (rData.cart_list.length == 0) {
                                 get_footer();
@@ -295,7 +286,6 @@ $(function () {
                 data: {k: key, u: getCookie('id'), id: cart_id},
                 dataType: "json",
                 success: function (res) {
-                    console.info(res);
                     if (checkLogin(res.login)) {
                         if (res.status == 200) {
                             initCartList();
@@ -359,7 +349,6 @@ $(function () {
             var data_min = sPrents.find(".buy-num").attr('data_min');
             var promotion = sPrents.find(".buy-num").attr('promotion');
             var goodsPrice = sPrents.find(".goods-price");
-            console.log(sPrents.find(".buy-num"));
             var buynum = parseInt(numInput.val());
             var old = sPrents.find('.goods-info .nums');
             var quantity = 1;
@@ -374,7 +363,7 @@ $(function () {
                 else {
                     quantity = parseInt(buynum + 1);
                 }
-
+                alert(quantity);
             } else if (type == "minus") {
                 if (buynum > data_min) {
                     quantity = parseInt(buynum - 1);
@@ -392,6 +381,8 @@ $(function () {
                     });
                     return false;
                 }
+
+                alert(quantity);
             } else if (type == "custom") {
                 quantity = self.value;
             }
@@ -403,7 +394,6 @@ $(function () {
                 dataType: "json",
                 success: function (res) {
                     //initCartList();
-                    console.info(res);
                     if (checkLogin(res.login)) {
                         if (res.status == 200) {
                             numInput.val(quantity);
@@ -594,9 +584,7 @@ function calculateTotalPrice() {
         }
     });
     $(".total-money").find('em').html(totalPrice.toFixed(2));
-    console.log(nums);
     $(".check-out").find("em").html(nums);
-    console.log($(".check-out").html());
     check_button();
     return true;
 }
@@ -699,11 +687,9 @@ $(function () {
         checkboxes.each(function (i, e) {
             if (!$(e).hasClass('store_checkbox') && !$(e).hasClass('all_checkbox')) {
                 var inpnum=$(e).parents().find("input.buynum").val();
-                console.log(inpnum);
                 productNumber += Number(inpnum);
             }
         });
-        console.log(productNumber);
         $productNumber.text(productNumber);
     }
 

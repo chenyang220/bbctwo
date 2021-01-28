@@ -21,7 +21,7 @@ include __DIR__ . '/../includes/header.php';
         <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
     </head>
     <body>
-    <!-- <header id="header" class="fixed borb0">
+    <header id="header" class="fixed borb0">
         <div class="header-wrap">
             <div class="header-l">
                 <a href="javascript:history.go(-1)"> <i class="back"></i> </a>
@@ -34,17 +34,17 @@ include __DIR__ . '/../includes/header.php';
             </div>
         </div>
     </header>
-	 -->
-    <div class="">
+	
+    <div class="" style="margin-top:45px;">
 		<div class="zk-cart-orders bgf">
 			<div class="zk-cart-orders-content">
-				<p><span>我的订单</span><a class="fr" href="">查看全部</a></p>
+				<p><span>我的订单</span><a class="fr" href="/tmpl/member/order_list.html">查看全部</a></p>
 				<ul class="clearfix">
-					<li><a href=""><em class="img-box"><img src="../images/zk/c-dfk.png" alt="icon"></em><span>待付款</span></a></li>
-					<li><a href=""><em class="img-box"><img src="../images/zk/c-dfh.png" alt="icon"></em><span>待发货</span></a></li>
-					<li><a href=""><em class="img-box"><img src="../images/zk/c-dsh.png" alt="icon"></em><span>待收货</span></a></li>
-					<li><a href=""><em class="img-box"><img src="../images/zk/c-dpj.png" alt="icon"></em><span>待评价</span></a></li>
-					<li><a href=""><em class="img-box"><img src="../images/zk/c-dsh.png" alt="icon"></em><span>退款售后</span></a></li>
+					<li><a href="/tmpl/member/order_list.html?data-state=wait_pay"><em class="img-box"><img src="../images/zk/c-dfk.png" alt="icon"></em><span>待付款</span></a></li>
+					<li><a href="/tmpl/member/order_list.html?data-state=order_payed"><em class="img-box"><img src="../images/zk/c-dfh.png" alt="icon"></em><span>待发货</span></a></li>
+					<li><a href="/tmpl/member/order_list.html?data-state=wait_confirm_goods"><em class="img-box"><img src="../images/zk/c-dsh.png" alt="icon"></em><span>待收货</span></a></li>
+					<li><a href="/tmpl/member/order_list.html?data-state=finish"><em class="img-box"><img src="../images/zk/c-dpj.png" alt="icon"></em><span>待评价</span></a></li>
+					<li><a href="/tmpl/member/member_refund.html"><em class="img-box"><img src="../images/zk/c-dsh.png" alt="icon"></em><span>退款售后</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -118,19 +118,37 @@ include __DIR__ . '/../includes/header.php';
 								    <span class="minus">
 								        <a href="javascript:void(0);">&nbsp;</a>
 								    </span>
-								    <span>
-								        <input type="number" min="1" class="buy-num buynum"
-								               value="<%=goods.goods_num%>"/>
-								    </span>
+                                      <!-- s <?= __('获取并设置限购数量'); ?> 2017.5.2 -->
+                                    <span>
+                                        <% if(goods.buy_limit > 0 && !goodsIsHaveBuy)
+                                        {
+                                            data_max = goods.buy_limit;
+                                        }
+                                        else
+                                        {
+                                            data_max = goods.goods_base.goods_stock;
+                                        }
+                                        if(goods.goods_base.lower_limit)
+                                        {
+                                            data_min = goods.goods_base.lower_limit;
+                                            promotion = 1;
+                                        }
+                                        else
+                                        {
+                                            data_min = 1;
+                                            promotion = 0;
+                                        }
+                                        %>
+                                        <input type="number" min="122" class="buy-num buynum" promotion="<%=promotion%>"
+                                               data_max="<%=data_max%>" data_min="<%=data_min%>"
+                                               value="<%=goods.goods_num%>"/>
+                                        <!-- e <?= __('获取并设置限购数量'); ?> 2017.5.2 -->
+                                    </span>
 								    <span class="add">
 								        <a href="javascript:void(0);">&nbsp;</a>
 								    </span>
 								</div>
-							</dd>
-                            <!--  <% if(goods.old_price > 0){ %>
-                             <span class="old-price"><?= __('￥'); ?><s><%=goods.old_price%></s></span>
-                             <% } %> -->
-                            
+							</dd>  
                                 <% if(goods.goods_base.is_del ==2){ %>
 								<span class="old-price">
 									<p style="color: red"><?= __('商品已被商家删除'); ?></p>
@@ -178,7 +196,7 @@ include __DIR__ . '/../includes/header.php';
                                             promotion = 0;
                                         }
                                         %>
-                                        <input type="number" min="1" class="buy-num buynum" promotion="<%=promotion%>"
+                                        <input type="number" min="122" class="buy-num buynum" promotion="<%=promotion%>"
                                                data_max="<%=data_max%>" data_min="<%=data_min%>"
                                                value="<%=goods.goods_num%>"/>
                                         <!-- e <?= __('获取并设置限购数量'); ?> 2017.5.2 -->
@@ -275,120 +293,132 @@ include __DIR__ . '/../includes/header.php';
 
 
     <script id="cart-list1" type="text/html">
-        <% if(cart_list.length >0){%><% for (var i = 0;i
-        <cart_list.length;i++){%>
-        <div class="nctouch-cart-container">
-            <dl class="nctouch-cart-store bgf borb1">
-                <dt>
-                    <span class="store-check">
-					    <input class="store_checkbox" type="checkbox" checked>
-					</span>
-                    <i class="iconfont icon-stores"></i> <%=cart_list[i].store_name%>
-                   <!-- <span class="JS-edit fr"><?= __('编辑'); ?></span> -->
-                </dt>
-            </dl>
-            <ul class="nctouch-cart-item nctouch-cart-item-new">
-                <% if (cart_list[i].goods) { %> <% for (var j=0; j
-                <cart_list
-                        [i].goods.length; j++) {var goods=cart_list[i].goods[j];%>
-                    <li cart_id="<%=goods.cart_id%>" class="cart-litemw-cnt borb1">
-                        <div class="buy-li">
-                            <div class="goods-check">
-                                <input type="checkbox" checked name="cart_id" data-num="<%= goods.goods_num %>"
-                                       value="<%=goods.cart_id%>"/>
-                            </div>
-                            <div class="goods-pic">
-                                <a href="<%=WapSiteUrl%>/tmpl/product_detail.html?goods_id=<%=goods.goods_id%>">
-                                    <img src="<%=goods.goods_image_url%>"/> </a>
-                            </div>
-                            <dl class="goods-info fr">
-                                <dt class="goods-name">
-                                    <a class="z-dhwz iblock" href="<%=WapSiteUrl%>/tmpl/product_detail.html?goods_id=<%=goods.goods_id%>">
-                                        <%=goods.goods_name%> </a>
-                                </dt>
-                               <!-- <dd class="goods-type"><%=goods.goods_spec%></dd> -->
-								<%if(goods.goods_spec){%>
-								<dd class="goods-type">
-									<span class="zk-cart-type-sel"><em><%=goods.goods_spec%></em><i class="iconfont icon-xiala align-top"></i></span>
-								</dd>
-								<%}%>
-                                <dd class="iblock">
-									<span class="goods-price"><b class="rmb"><?= __('￥'); ?></b><em><%=goods.goods_price%></em></span>
-									<!-- <span class="fr nums">x<%=goods.goods_num%></span> -->
-									<div class="value-box">
-									    <span class="minus">
-									        <a href="javascript:void(0);">-</a>
-									    </span>
-									    <span>
-									        <input type="number" min="1" class="buy-num buynum"
-									               value="<%=goods.goods_num%>"/>
-									    </span>
-									    <span class="add">
-									        <a href="javascript:void(0);">&nbsp;</a>
-									    </span>
-									</div>
-								</dd>
-                            </dl>
-                            <div class="edit-area">
-                                <div class="goods-del" cart_id="<%=goods.cart_id%>">
-                                    <?= __('删除'); ?>
+        <% if(cart_list.length >0){ %>
+           <ul class="nctouch-cart-item nctouch-cart-item-new">
+            <% for (var i = 0;i< cart_list.length;i++){ %>
+                <div class="nctouch-cart-container">
+                    <dl class="nctouch-cart-store bgf borb1">
+                        <dt>
+                            <span class="store-check">
+        					    <input class="store_checkbox" type="checkbox" checked>
+        					</span>
+                            <i class="iconfont icon-stores"></i> <%=cart_list[i].store_name%>
+                           <!-- <span class="JS-edit fr"><?= __('编辑'); ?></span> -->
+                        </dt>
+                    </dl>
+                </div>
+                <% if (cart_list[i].goods) { %> 
+                    <% for (var j=0; j< cart_list[i].goods.length; j++) {var goods=cart_list[i].goods[j];%>
+                        <li cart_id="<%=goods.cart_id%>" class="cart-litemw-cnt borb1">
+                            <div class="buy-li">
+                                <div class="goods-check">
+                                    <input type="checkbox" checked name="cart_id" data-num="<%= goods.goods_num %>"
+                                           value="<%=goods.cart_id%>"/>
                                 </div>
-                                <div class="goods-subtotal">
-									<div class="value-box">
-									    <span class="minus">
-									        <a href="javascript:void(0);">&nbsp;</a>
-									    </span>
-									    <span>
-									        <input type="number" min="1" class="buy-num buynum"
-									               value="<%=goods.goods_num%>"/>
-									    </span>
-									    <span class="add">
-									        <a href="javascript:void(0);">&nbsp;</a>
-									    </span>
-									</div>
-                                    
+                                <div class="goods-pic">
+                                    <a href="<%=WapSiteUrl%>/tmpl/product_detail.html?goods_id=<%=goods.goods_id%>">
+                                        <img src="<%=goods.goods_image_url%>"/> </a>
+                                </div>
+                                <dl class="goods-info fr">
+                                    <dt class="goods-name">
+                                        <a class="z-dhwz iblock" href="<%=WapSiteUrl%>/tmpl/product_detail.html?goods_id=<%=goods.goods_id%>">
+                                            <%=goods.goods_name%> </a>
+                                    </dt>
+                                   <!-- <dd class="goods-type"><%=goods.goods_spec%></dd> -->
+                                    <%if(goods.goods_spec){%>
+                                    <dd class="goods-type">
+                                        <span class="zk-cart-type-sel"><em><%=goods.goods_spec%></em><i class="iconfont icon-xiala align-top"></i></span>
+                                    </dd>
+                                    <%}%>
+                                    <dd class="iblock">
+                                        <span class="goods-price"><b class="rmb"><?= __('￥'); ?></b><em><%=goods.goods_price%></em></span>
+                                        <!-- <span class="fr nums">x<%=goods.goods_num%></span> -->
+                                        <div class="value-box">
+                                            <span class="minus">
+                                                <a href="javascript:void(0);">-</a>
+                                            </span>
+
+                                            <!-- s <?= __('获取并设置限购数量'); ?> 2017.5.2 -->
+                                            <span>
+                                            <input type="number" min="1" class="buy-num buynum"
+                                                   value="<%=goods.goods_num%>"/>
+                                        </span>
+                                            <span class="add">
+                                                <a href="javascript:void(0);">&nbsp;</a>
+                                            </span>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="edit-area">
+                                    <div class="goods-del" cart_id="<%=goods.cart_id%>">
+                                        <?= __('删除'); ?>
+                                    </div>
+                                    <div class="goods-subtotal">
+                                        <div class="value-box">
+                                            <span class="minus">
+                                                <a href="javascript:void(0);">&nbsp;</a>
+                                            </span>
+                                            <span>
+                                                <input type="number" min="1" class="buy-num buynum"
+                                                       value="<%=goods.goods_num%>"/>
+                                            </span>
+                                            <span class="add">
+                                                <a href="javascript:void(0);">&nbsp;</a>
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <% } %> <% } %>
+                        </li>
+                    <% } %> 
+                <% } %>
+
+            <%}%>
             </ul>
-        </div><%}%><% if (check_out === true) {%>
-        <div class="nctouch-cart-bottom">
-            <div class="all-check fl pl-20">
-                <input class="all_checkbox" type="checkbox" checked> <span class="selected-all fz-30 col2"><?= __('全选'); ?></span>
+
+
+
+
+            <% if (check_out === true) {%>
+            <div class="nctouch-cart-bottom">
+                <div class="all-check fl pl-20">
+                    <input class="all_checkbox" type="checkbox" checked> <span class="selected-all fz-30 col2"><?= __('全选'); ?></span>
+                </div>
+                <div class="total">
+                    <dl class="total-money">
+                        <dt class="fz-28 col3"><?= __('合计：'); ?></dt>
+                        <dd><?= __('￥'); ?><em><%=sum%></em></dd>
+                    </dl>
+                </div>
+                <div class="check-out ok">
+                    <a href="javascript:void(0)"><?= __('结算'); ?></a>
+                </div>
             </div>
-            <div class="total">
-                <dl class="total-money">
-                    <dt class="fz-28 col3"><?= __('合计：'); ?></dt>
-                    <dd><?= __('￥'); ?><em><%=sum%></em></dd>
+            <% } else { %>
+            <div class="nctouch-cart-bottom no-login">
+                <div class="cart-nologin-tip clearfix"><span class="fl"><?= __('为了您的购物有更好的体验请优先登录'); ?></span><a
+                            href="../tmpl/member/login.html" class="fz-26 fr col2"><b class="align-middle"><?= __('去登录'); ?></b><i
+                                class="iconfont icon-arrow-right align-middle colbc ml-10"></i></a></div>
+            </div>
+            <% } %>
+        <%}else{%>
+            <div class="nctouch-norecord cart">
+                <div class="norecord-ico"><i></i></div>
+                <dl>
+                    <dt class="colbc"><?= __('购物车空空如也'); ?></dt>
+
                 </dl>
-            </div>
-            <div class="check-out ok">
-                <a href="javascript:void(0)"><?= __('结算'); ?></a>
-            </div>
-        </div><% } else { %>
-        <div class="nctouch-cart-bottom no-login">
-            <div class="cart-nologin-tip clearfix"><span class="fl"><?= __('为了您的购物有更好的体验请优先登录'); ?></span><a
-                        href="../tmpl/member/login.html" class="fz-26 fr col2"><b class="align-middle"><?= __('去登录'); ?></b><i
-                            class="iconfont icon-arrow-right align-middle colbc ml-10"></i></a></div>
-        </div><% } %><%}else{%>
-        <div class="nctouch-norecord cart">
-            <div class="norecord-ico"><i></i></div>
-            <dl>
-                <dt class="colbc"><?= __('购物车空空如也'); ?></dt>
 
-            </dl>
-
-        </div><%}%>
+            </div>
+        <%}%>
     </script>
 
     <!-- <?= __('底部'); ?> -->
     <?php
-    include __DIR__ . '/../includes/footer_menu.php';
+    // include __DIR__ . '/../includes/footer_menu.php';
     ?>
-
-
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
     <script type="text/javascript" src="../js/template.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../js/tmpl/footer.js"></script>
