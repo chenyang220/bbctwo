@@ -25,19 +25,19 @@ include   '../includes/header.php';
 	<link rel="stylesheet" type="text/css" href="../css/nctouch_products_detail.css?v=311">
 </head>
 <body class="bgf">
-	<header id="header" class="fixed customize-index-header">
-        <div class="header-wrap">
-           <div class="left">
+	<!-- <header id="header" class="fixed customize-index-header"> -->
+        <!-- <div class="header-wrap"> -->
+    <!--        <div class="left">
 			   <a class="iblock" href="javascript:history.go(-1)"><i class="zk-head-back"></i></a>
-		   </div>
-            <div class="header-title">
+		   </div> -->
+<!--             <div class="header-title">
                 <h1>特色商城</h1>
-            </div>
-           <div class="right fz0">
+            </div> -->
+  <!--          <div class="right fz0">
                <a class="iblock" href="javascript:void(0);"><i class="zk-head-more"></i></a>
-           </div>
-        </div>
-    </header>
+           </div> -->
+        <!-- </div> -->
+    <!-- </header> -->
     <div id="product_detail_html" class="posr zIndex1"></div>
     <div class="nctouch-main-layout" >
 	    <div class="swiper-container custom-product-det-swiper" id="goods_image"></div>

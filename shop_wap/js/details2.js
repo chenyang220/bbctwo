@@ -41,13 +41,10 @@ $(function(){
             data: {goods_id: goods_id, k: key, u: getCookie("id"), ua: "wap"},
             dataType: "json",
             success: function (result) {
-
-
                 var data = result.data;
-
+                common_id = data.goods_info.common_id;
                 $("#shop_name").html(data.goods_info.shop_name);
                 $("#shop_img").attr("style","background:url("+data.store_info.store_logo+") no-repeat center;background-size:contain");
-                console.log(data);
                 if (data.goods_image) {
                     data.goods_image = data.goods_image.split(";");
                 } else {
