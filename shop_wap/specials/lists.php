@@ -123,8 +123,8 @@
             <dd>
                     <span class="inp-balck">
                         <input type="text" id="price_from" nctype="price" pattern="[0-9]*"
-                               class="inp" placeholder="<?= __('最低价'); ?>"/></span> <span class="line"></span>
-                <span class="inp-balck"><input nctype="price" type="text" id="price_to" pattern="[0-9]*" class="inp"
+                               class="inp" placeholder="<?= __(''); ?>"/></span> <span class="line"></span>
+                <span class="inp-balck"><input nctype="price" type="text" id="price_to" pattern="[0-9]*" class="inp" placeholder="<?= __(''); ?>"
                                                                                                                                 placeholder="<?= __('最高价'); ?>"/></span>
             </dd>
         </dl>

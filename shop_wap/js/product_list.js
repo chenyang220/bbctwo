@@ -29,6 +29,7 @@ var searchTimes = myDate.getTime();
 var brandsHtml="";
 var brandHtml2="";
 var columns=1;
+var specials_search = getQueryString("specials_search");
 var mb = getQueryString("mb");
 if (!getCookie('sub_site_id')) {
     addCookie('sub_site_id', 0, 0);
@@ -36,13 +37,13 @@ if (!getCookie('sub_site_id')) {
 
 
 
-// var lng = '';
-// var lat = '';
+
 
 ////百度定位,需要使用默认位置时从cookie获取
 function baidu_lbs_geo() {
     document.write(returnCitySN["cip"]+','+returnCitySN["cname"]) 
-
+var ip_lng = '';
+var ip_lat = '';
     // 百度地图API功能
     var map = new BMap.Map("allmap");
     // 创建地址解析器实例
@@ -438,11 +439,20 @@ function search_adv() {
                 e += "&ci=" + r
             }
 
-            if (label_id) {
-                window.location.href = WapSiteUrl + "/specials/lists.html" + e + "&label_id=" + label_id
+            if (specials_search == 'specials') {
+                if (label_id) {
+                    window.location.href = WapSiteUrl + "/specials/lists.html" + e + "&label_id=" + label_id
+                } else {
+                    window.location.href = WapSiteUrl + "/specials/lists.html" + e + "&specials_search=specials";
+                }
             } else {
-                window.location.href = WapSiteUrl + "/tmpl/product_list.html" + e
+                if (label_id) {
+                    window.location.href = WapSiteUrl + "/specials/lists.html" + e + "&label_id=" + label_id
+                } else {
+                    window.location.href = WapSiteUrl + "/tmpl/product_list.html" + e
+                }
             }
+           
             
         });
         $('a[nctype="items"]').click(function () {

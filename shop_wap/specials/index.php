@@ -158,7 +158,7 @@ include   '../includes/header.php';
         // '<div class="rel"><b class="rmb">￥</b><strong>159.00</strong><em>330人付款</em></div></div></a></li>';             
        
 		$('#search').click(function(){
-			window.location.href="./lists.php";
+			window.location.href="./lists.php?specials_search=specials";
 		})
 	</script>
 </body>
