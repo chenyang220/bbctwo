@@ -67,7 +67,7 @@ $(function () {
             var s = e.store_info.store_name + " - 店铺首页";
             document.title = s;
             var r = template.render("store_banner_tpl", e);
-            tt = e;
+      tt = e;
             var indexTem = template.render("store_index_tpl",e);
             $("#storeindex_con").html(indexTem);
             waterFall(columns);
@@ -77,7 +77,7 @@ $(function () {
             $("#store_banner").html(r);
             var label_name_msg = template.render("label_name_tmpl", e);
             $("#label_name").html(label_name_msg);
-            $(".shop_image").attr("style","background-image:url("+ e.store_info.shop_logo+")");
+			$(".shop_image").attr("style","background-image:url("+ e.store_info.shop_logo+")");
             $(".shop_name").html(e.store_info.store_name);
             if (e.store_info.is_favorate) {
                 $("#store_notcollect").hide();
@@ -298,40 +298,42 @@ function nav_clicks(nav_type) {
 function nav_click(nav_type) {
     $("#nav_tab").find("li").removeClass("selected");
     $("#" + nav_type).parent().addClass("selected").siblings().removeClass("selected");
-    $("#storeindex_con,#allgoods_con,#newgoods_con,#storeactivity_con").html(' ');
+    $("#storeindex_con,#allgoods_con,#newgoods_con,#storeactivity_con").hide();
     window.scrollTo(0, 0);
     window.location.hash = nav_type;
     switch (nav_type) {
     case "storeindex1":
 		columns=2;
+		$("#storeindex_con").show();
 		var indexTem = template.render("store_index_tpl",tt);
         $("#storeindex_con").html(indexTem);
 		waterFall(columns);
         break;
     case "allgoods":
 		columns=2;
-        if ($("#allgoods_con").html() !='') {
+		$("#allgoods_con").show();
+        if (!$("#allgoods_con").html()) {
             $("#allgoods_con").load("store_goods_list.html", function () {
                 $(".goods-search-list-nav").addClass("posr");
                 $(".goods-search-list-nav").css("top", "0");
                 $("#sort_inner").css("position", "static");
             });
         }
-        // $("#allgoods_con").show();
-		
+        
+		waterFall(columns);
         break;
     case "newgoods":
 		columns=2;
         if ($("#newgoods_con .addtime").html() !='') {
             s();
         }
-        // $("#newgoods_con").show();
+        $("#newgoods_con").show();
 		
         break;
     case "storeactivity":
 		columns=1;
-		 // $("#storeactivity_con").show();
-        if ($("#storeactivity_con").html() !='') {
+		 $("#storeactivity_con").show();
+        if (!$("#storeactivity_con").html()) {
             r();
         }
        
