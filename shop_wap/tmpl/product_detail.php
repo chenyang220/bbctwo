@@ -820,7 +820,7 @@ if ($_GET['qr']) {
                     <!-- <a href="javascript:void(0);" class="kefu wp30" onclick="openChat();"><i></i><p><?= __('客服'); ?></p></a> -->
                     <!--YF_IM <?= __('联系客服'); ?> END -->
                     <a href="javascript:void(0);" class="operate btn-save collect pd-collect <% if (is_favorate) { %>favorate<% } %>"><i></i><p><?= __('收藏'); ?></p></a>
-                    <!-- <a href="../tmpl/cart_list.html" class="operate cart"><i></i><p><?= __('购物车'); ?></p><span id="cart_count"></span></a> -->
+                    <a href="../tmpl/cart_list.html" class="operate cart" style="display: none;"><i></i><p><?= __('购物车'); ?></p><span id="cart_count"></span></a>
                 </div>
                 <div class="fz0 special-bottom-btn-module <%if(!goods_hair_info.if_store || goods_info.goods_storage == 0){%>no-buy<%}%>">
                     <% if (goods_info.cart == '1'&&goods_info.promotion_type!='seckill'&&goods_info.promotion_type!='presale') { %>
