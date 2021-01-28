@@ -32,7 +32,7 @@ include __DIR__ . '/../includes/header.php';
     <span><a href="javascript:void(0);" id="collect"><?= __('人气排序'); ?><i></i></a></span>
 </div>
 <div class="customize-goods-lists">
-	<div class="grid pt-0 style-change" nc_type="product_content">
+	<div class="grid pt-0 style-change 1111" nc_type="product_content">
 	    <ul class="masonry" id="product_list"></ul>
 	</div>
 </div>

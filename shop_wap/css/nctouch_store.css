@@ -112,13 +112,16 @@
 .nctouch-store-goods-list .addtime {
 	display: block;
     width: 100%;
-    line-height: 1.954rem;
+/*    line-height: 1.954rem; */
     margin: 0;
     border: none 0;
+	font-size:0;
+	margin-bottom: 0.318rem;
+	display: block;
 }
 .nctouch-store-goods-list .addtime time {
 	font-size: 0.636rem;
-    line-height: 1.954rem;
+/*    line-height: 1.954rem; */
     color: #555;}
 
 .nctouch-store-goods-list .addtime span{
@@ -319,6 +322,7 @@
 	/* width:49.2%; */
 }
 .store-goods-list-nav{
+	margin-top:-.5rem;
 	position: relative !important;
 	top: 0 !important;
 	z-index: 1 !important;

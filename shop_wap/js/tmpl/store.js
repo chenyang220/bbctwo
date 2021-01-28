@@ -278,19 +278,36 @@ $(function () {
     });
 });
 
-function toColumns(){
-	if($('.style-change').hasClass('list')){
-		$('.style-change').removeClass('list').addClass('grid');
+function toColumns(obj){
+	obj=obj?obj:'#storeindex1';
+	var dom='';
+	switch (obj) {
+	case "#storeindex1":
+		dom='#storeindex_con';
+	    break;
+	case "#allgoods":
+		dom='#allgoods_con';
+	    break;
+	case "#newgoods":
+		dom="#newgoods_con";
+	    break;
+	case "#storeactivity":
+		dom="#storeactivity_con";
+	    break;
+	}
+	if($(dom).find('.style-change').hasClass('list')){
+		$(dom).find('.style-change').removeClass('list').addClass('grid');
 		columns=2;
 	}else{
-		$('.style-change').removeClass('grid').addClass('list');
+		$(dom).find('.style-change').removeClass('grid').addClass('list');
 		columns=1;
 	}
 	waterFall(columns);
 }
 
 $("#menuChange").click(function(){
-	toColumns();
+	var nav_hash = window.location.hash;
+	toColumns(nav_hash);
 })
 function nav_clicks(nav_type) {
     window.location.reload();
@@ -307,6 +324,7 @@ function nav_click(nav_type) {
 		$("#storeindex_con").show();
 		var indexTem = template.render("store_index_tpl",tt);
         $("#storeindex_con").html(indexTem);
+		$("#storeindex_con").find('.style-change').removeClass('list').addClass('grid');
 		waterFall(columns);
         break;
     case "allgoods":
@@ -319,16 +337,17 @@ function nav_click(nav_type) {
                 $("#sort_inner").css("position", "static");
             });
         }
-        
+        $("#allgoods_con").find('.style-change').removeClass('list').addClass('grid');
 		waterFall(columns);
         break;
     case "newgoods":
 		columns=2;
-        if ($("#newgoods_con .addtime").html() !='') {
+        if (!$("#newgoods_con .addtime").html()) {
             s();
         }
         $("#newgoods_con").show();
-		
+		$("#newgoods_con").find('.style-change').removeClass('list').addClass('grid');
+		waterFall(columns);
         break;
     case "storeactivity":
 		columns=1;
@@ -336,6 +355,8 @@ function nav_click(nav_type) {
         if (!$("#storeactivity_con").html()) {
             r();
         }
+		$("#storeactivity_con").find('.style-change').removeClass('grid').addClass('list');
+		waterFall(columns);
        
         break;
     }

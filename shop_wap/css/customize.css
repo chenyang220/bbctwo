@@ -286,7 +286,8 @@
     width: 30%;
 }
 .customize-feature-goods-list-nav ul li a, .ser-adv a {
-    font-size: 0.772rem;
+    /* font-size: 0.772rem; */
+	font-size:0.636rem;
     color: #333;
     line-height: 1.95rem;
     text-align: center;
@@ -346,7 +347,8 @@
 	color:#FF4300;
 }
 .customize-goods-lists .had-sale{
-	margin-left:0.318rem;
+	display:block;
+	/* margin-left:0.318rem; */
 	font-size:0.5rem;
 	color:#9E9E9E;
 }
@@ -942,6 +944,7 @@
 	top: 4.227rem; */
 	width: 100%;
 /* 	z-index: 5; */
+	padding:0 0.681rem;
 	margin:0;
 	box-sizing:border-box;
 	font-size:0;
@@ -953,6 +956,23 @@
 .custom-img-module{
 	margin-bottom:0.84rem;
 }
-.custom-module-tit{
-	
+.list .custom-store-activity-ul .goods-pic{
+	width:4.136rem;
+	height:4.136rem;
+}
+.custom-store-activity-ul h4 div{
+	margin-bottom:0.272rem;
+	font-size:0.545rem;
+	color:#222;
+}
+.custom-store-activity-ul h4 span{
+	display:inline-block;
+	padding:0 0.3rem;
+	font-size:0.409rem;
+	color:#fff;
+	background:#F34664;
+	border-radius:0.5rem;
+}
+.custom-store-activity-ul li{
+	min-height:5.204rem;
 }
