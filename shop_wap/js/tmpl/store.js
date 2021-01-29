@@ -70,11 +70,6 @@ $(function () {
 			tt = e;
             var indexTem = template.render("store_index_tpl",e);
             $("#storeindex_con").html(indexTem);
-			// console.log('ppppppppppppppp')
-			// for(var i=0;i<$(".masonry .item").length;i++){
-			// 	// console.log($(".masonry .item").length);
-			// 	console.log($(".masonry .item").eq(i).height())
-			// }
 			waterFall(columns);
 			 window.onscroll=function(){
 				if ($(window).scrollTop() + $(window).height() == $(document).height()) {
