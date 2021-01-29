@@ -67,10 +67,25 @@ $(function () {
             var s = e.store_info.store_name + " - 店铺首页";
             document.title = s;
             var r = template.render("store_banner_tpl", e);
-      tt = e;
+			tt = e;
             var indexTem = template.render("store_index_tpl",e);
             $("#storeindex_con").html(indexTem);
-            waterFall(columns);
+			// console.log('ppppppppppppppp')
+			// for(var i=0;i<$(".masonry .item").length;i++){
+			// 	// console.log($(".masonry .item").length);
+			// 	console.log($(".masonry .item").eq(i).height())
+			// }
+			waterFall(columns);
+			// 页面尺寸改变时实时触发
+			window.onresize = function() {
+			    //重新定义瀑布流
+			    waterFall(columns);
+			};
+			//初始化
+			window.onload = function(){
+			    //实现瀑布流
+			    waterFall(columns);
+			}
             if (getCookie("is_app_guest")) {
                 $("#shareit_store").attr("href", "/share_toall.html?shop_id=" + e.store_info.shop_id + "&title=" + encodeURIComponent(e.store_info.store_name) + "&img=" + e.store_info.store_avatar + "&url=" + WapSiteUrl + "/tmpl/store.html?shop_id=" + e.store_info.shop_id);
             }
@@ -166,6 +181,7 @@ $(function () {
                 $(".shop-owner-recommend").remove();
             }
             /* 店铺首页刷新闪烁 */
+			 
         }
     });
     $("#goods_rank_tab").find("a").click(function () {

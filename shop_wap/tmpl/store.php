@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="../css/nctouch_products_detail.css?v=911">
 		<link rel="stylesheet" href="../css/swiper.min.css">
         <link rel="stylesheet" href="../css/iconfont.css">
-		<link rel="stylesheet" href="../css/customize.css?v=11">
+		<link rel="stylesheet" href="../css/customize.css?v=11399">
     </head>
     <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
     <script type="text/javascript">
@@ -98,11 +98,11 @@
 	    			<% for (var j in common_salenum_list) { var s = common_salenum_list[j]; %>
 	    			<li class="item">
 	    				<div class="pad">
-	    					<span class="goods-pic">
+	    					<span class="goods-pic iblock">
 	    						<% if (s.third_url) { %>
-									<a href="<%= s.third_url %>">
+									<a class="iblock wp100" href="<%= s.third_url %>">
 								<% } else {%>
-									<a href="product_detail.html?goods_id=<%= s.goods_id %>&amp;pos=1&amp;pos_page=product_list">
+									<a class="iblock wp100" href="product_detail.html?goods_id=<%= s.goods_id %>&amp;pos=1&amp;pos_page=product_list">
 								<% } %>
 	    							<img src="<%=s.common_image %>">
 	    						</a>
@@ -617,9 +617,9 @@
     <script type="text/javascript" src="../js/zepto.waypoints.js"></script>
     <script type="text/javascript" src="../js/ncscroll-load.js"></script>
 	<script type="text/javascript" src="../js/swiper.min.js"></script>
+	<script src="../js/waterfall-store.js?v=8121412"></script>
     <script type="text/javascript" src="../js/tmpl/store.js"></script>
     <script type="text/javascript" src="../js/tmpl/footer.js"></script>
-	<script src="../js/waterfall-store.js?v=8"></script>
     <script type="text/javascript">
         var level = getQueryString('level');
         var shop_id = getQueryString('shop_id');

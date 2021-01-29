@@ -2,10 +2,12 @@
 // 瀑布流
 function waterFall(columns) {
     // 1- 确定图片的宽度 - 滚动条宽度
+	console.log('vvvvvvvvqq')
     var pageWidth = getClient().width-15;
     var columns = columns; //列数
     var itemWidth = parseInt(pageWidth/columns); //得到item的宽度
 	$(".masonry .item").css('width',itemWidth); //设置到item的宽度
+	console.log(pageWidth,columns,itemWidth);
 	for(var v=0;v<$(".masonry").length;v++){
 		var arr = "arr" + v;
 		arr=[];
@@ -14,6 +16,7 @@ function waterFall(columns) {
 			var width = $(this).width();
 			 var bi = itemWidth/width; //获取缩小的比值
 			 var boxheight = parseInt(height*bi); //图片的高度*比值 = item的高度
+			 console.log(width,height,bi,boxheight)
 			 if (i < columns) {
 			     // 2- 确定第一行
 			     $(this).css({
@@ -21,6 +24,7 @@ function waterFall(columns) {
 			         left:(itemWidth) * i
 			     });
 			     arr.push(boxheight);
+				 console.log(height,boxheight,arr);
 			 } else {
 			     // 其他行
 			     // 3- 找到数组中最小高度  和 它的索引
@@ -44,6 +48,7 @@ function waterFall(columns) {
 			     arr[index] = arr[index] + boxheight;
 			 }
 		})
+		console.log(arr);
 		let max = arr[0];
 		for (let i = 0; i < arr.length - 1; i++) {
 				  max = max < arr[i+1] ? arr[i+1] : max
