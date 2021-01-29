@@ -76,6 +76,12 @@ $(function () {
 			// 	console.log($(".masonry .item").eq(i).height())
 			// }
 			waterFall(columns);
+			 window.onscroll=function(){
+				if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+					  waterFall(columns);
+				 }
+				 
+			}
 			// 页面尺寸改变时实时触发
 			window.onresize = function() {
 			    //重新定义瀑布流
