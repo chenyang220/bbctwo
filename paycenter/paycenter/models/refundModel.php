@@ -102,6 +102,8 @@ class refundModel
             $flag = $this->alipay($refund_order, $payment_config);
         }else if(in_array($payment_channel_code,$pay_code['wx_code'])){
             $flag = $this->wx($union_order);
+        } else if ($payment_channel_code == 'unionpay') {
+            $flag = $this->unionpay($union_order);
         }
         return $flag;
     }
@@ -132,46 +134,32 @@ class refundModel
     }
 
 
+    /**
+     * 中酷银联退款
+     * @param $union_order array 订单信息
+     * @throws WxPayException0
+     * @return boolean
+     */
+    private function unionpay($union_order)
+    {
+       if ($union_order['notify_data']) {
+            $union_notify_data = ($union_order['notify_data']);
+            $union_notify_data['refund_amount'] = $union_order['union_online_pay_amount'] * 100;
+            $Payment_JhYlAppModel =  new Payment_JhYlAppModel();
+            $Payment_JhYlApp = $Payment_JhYlAppModel->YlReturnMoney($union_notify_data);
+            if ($Payment_JhYlApp['errcode'] == 0) {
+                return true;
+            } else {
+                return false;
+            }
+       } else {
+            return false;
+       }
+    }
 
-
-
-  // private function wx($order, $paymentConfig)
-  //   {
-        // require_once LIB_PATH . '/Api/wx/lib/WxPay.Api.php';
-
-        // $this->defineWxConstants($paymentConfig);
-        // $inputObj = new WxPayRefund();
-        // $inputObj->SetOp_user_id(MCHID_DEF);
-        // $inputObj->SetTransaction_id($order['third_party_trade_no']); #微信生成的订单号，在支付通知中有返回
-        // $inputObj->SetOut_refund_no($order['return_number']); #商户系统内部的退款单号，商户系统内部唯一，只能是数字、大小写字母_-|*@ ，同一退款单号多次请求只退一笔。
-        // $inputObj->SetTotal_fee($order['order_amount']*100); #订单总金额，单位为分，只能为整数，详见支付金额
-        // $inputObj->SetRefund_fee($order['refund_amount']*100); #退款总金额，订单总金额，单位为分，只能为整数，详见支付金额
-
-        // $res = WxPayApi::refund($inputObj);
-
-        // if ($res['result_code'] != 'SUCCESS') {
-        //     throw new Exception("err_code：$res[err_code]（$res[err_code_des]）");
-        // }
-        // return true;
-    // }
-
-
-
-    //public function getPaymentChannel($shop_id, $third_party_app_id)
     public function getPaymentChannel($payment_channel_code)
     {
-//        $payment_channel_list = $this->paymentChannelModel->getByWhere([
-//            //'shop_id'=> $shop_id
-//        ]);
-         $payment_channel_info = $this->paymentChannelModel->getByWhere(['payment_channel_code'=>$payment_channel_code]);
-
-
-//        $payment_channel_list = array_filter($payment_channel_list, function ($item) use ($third_party_app_id) {
-//            return $item['payment_channel_config']['appid'] == $third_party_app_id
-//                ? true
-//                : false;
-//        });
-
+        $payment_channel_info = $this->paymentChannelModel->getByWhere(['payment_channel_code'=>$payment_channel_code]);
         $payment_channel = current($payment_channel_info);
 
         if ($payment_channel === false) {

@@ -1064,9 +1064,7 @@ class ApiCtl extends Yf_AppController
 			echo(json_encode($data,JSON_UNESCAPED_UNICODE));
 			exit();
 		}
-	    // $Payment_JhWxApp = $Payment_JhWxAppModel->wxReturnMoney($Union_Order);
 	   	$Union_OrderModel->sql->startTransactionDb();
-	    // if ($Payment_JhWxApp['errcode'] == 0 && $order_goods_rows) {	
 		$sql1 = "select * from yf_order_base where order_id='". $Union_Order['inorder'] . "'";
 		$order_base_select = $db->find($sql1);
 		$order_base = current($order_base_select);
@@ -1121,18 +1119,6 @@ class ApiCtl extends Yf_AppController
 			$data['msg'] = "提交失败,提交信息有误！";
 			$data['status'] = 250;
 		}
-			// if ($flge && $Union_OrderModel->sql-> commitDb()) {
-			// 	$data['msg'] = "退款成功";
-			// 	$data['status'] = 200;
-			// } else {
-			// 	$Union_OrderModel->sql-> rollBackDb();
-			// 	$data['msg'] = "提交失败,请稍后重试！";
-			// 	$data['status'] = 250;
-			// }
-	  //   } else {
-			// $data['msg'] = "退款失败,请稍后重试！";
-			// $data['status'] = 250;
-	  //   }
 	    $data['order_id'] = $Union_Order['inorder'];
 		echo(json_encode($data,JSON_UNESCAPED_UNICODE));
 		exit();

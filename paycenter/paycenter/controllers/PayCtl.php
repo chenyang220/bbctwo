@@ -480,6 +480,7 @@ class PayCtl extends Controller
 		{
 			$pay_flag = false;
 			$pay_user_id = 0;
+			$flag = $this->update_order($trade_id,$trade_row['inorder'],'unionpay');
 			//判断当前用户是否是下单者，并且订单状态是否是待付款状态
 			if($trade_row['buyer_id'] == Perm::$userId)
 			{
@@ -489,7 +490,6 @@ class PayCtl extends Controller
 			else
 			{
                 //修改
-                $flag = $this->update_order($trade_id,$trade_row['inorder'],'unionpay');
                 if($flag == false){
                     //报错
                     echo"<script>alert('支付失败，请重新支付 !');history.go(-1);</script>";

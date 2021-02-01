@@ -189,7 +189,7 @@ EOT;
      * 聚合银联APP查询付款状态接口
      */
     public function YlReturnMoney($union_notify_data) {
-        $url = "https://api.tlinx.com/mct1/payrefund";
+        $url = "http://testapi.ttg.xjrccb.com.cn/mct1/payrefund";
         //验签数据
         $timestamp = time();
         $code = $this->randCode(10,1);
@@ -245,7 +245,7 @@ EOT;
           );
           $message = $ZkSms->simba_business_notice_send($getToken['token'], $msg,$order_base[0]['order_from']);
         }
-        Yf_Log::log($result,Yf_Log::LOG,'wxReturnMoney');
+        Yf_Log::log($result,Yf_Log::LOG,'YlReturnMoney');
         return $result;
     }
     /*------h5支付end------*/
