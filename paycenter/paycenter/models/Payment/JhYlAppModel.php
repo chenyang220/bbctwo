@@ -2,9 +2,9 @@
 {
     exit('No Permission');
 }
-require_once LIB_PATH . '/Api/wx/lib/WxPay.Api.php';
-require_once LIB_PATH . '/Api/wx/lib/WxPay.Notify.php';
-include_once LIB_PATH . '/Api/wx/WxPay.JsApiPay.php';
+// require_once LIB_PATH . '/Api/wx/lib/WxPay.Api.php';
+// require_once LIB_PATH . '/Api/wx/lib/WxPay.Notify.php';
+// include_once LIB_PATH . '/Api/wx/WxPay.JsApiPay.php';
 /**
  * @author     Yf <service@yuanfeng.cn>
  */
@@ -32,6 +32,8 @@ class Payment_JhYlAppModel {
      */
     public function pay($order_row)
     {
+
+
         if ($order_row)
             {
                 $this->order = $order_row;
@@ -41,52 +43,125 @@ class Payment_JhYlAppModel {
             {
                 throw new Exception('订单状态不为待付款状态');
             }
-            $result = $this->JhwxAppPay($order_row);
+            $result = $this->JhYlAppPay($order_row);
+        // file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($result,true),FILE_APPEND);
+
+            $url_data = '';
             if ($result['errcode'] == 0) {
                 $Union_OrderModel = new Union_OrderModel();
                 $Union_OrderModel->editUnionOrder($order_row['union_order_id'],array("ord_no"=>$result['data']['ord_no'],"out_no"=>$result['data']['out_no']));
-                $trade_result = json_decode($result['data']['trade_result'],true);
-                if ($order_row['return_url']) {
-                    $rediret_url = urlencode(Yf_Registry::get('url')."?ctl=Info&met=h5_pay"  . "&order_id=" . $this->order['inorder'] . "&r_url=" . $order_row['return_url']);
-                } else {
-                    $rediret_url = urlencode(Yf_Registry::get('url')."?ctl=Info&met=h5_pay&trade_id=".$this->order['trade_id']);
-                }
-                $mweb_url = $trade_result['mweb_url'] . "&redirect_url=" . $rediret_url;
-                header("Location:" . $mweb_url);
+                $code_url = $result['data']["trade_qrcode"];
+                $url_data = urlencode($code_url);
             }
             $app_id = $this->order['app_id'];
+            $base_url             = Yf_Registry::get('base_url');
             //查找回调地址
             $User_AppModel = new User_AppModel();
             $user_app      = $User_AppModel->getOne($app_id);
             if ($order_row['return_url']) {
                 $user_app['app_url'] = $order_row['return_url'] . "&order_id=" . $this->order['inorder'] . "&order_status=2";
             }
+
+            print <<<EOT
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>银联支付</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" /> 
+        <script type="text/javascript" src="{$base_url}/paycenter/static/default/js/jquery-1.9.1.js"></script>
+    </head>
+    <link rel="stylesheet" type="text/css"  href="../../../paycenter/static/default/css/WxNative.css"/>
+    <body>
+        <!--导航-->
+        <header>
+            <div class="clearfix Navigation">
+                <span class=" pay-li-cashier">
+                     收银台
+                </span>
+                <span class=" pay-li-nickname ml14"><a href="$login_out_url">退出</a></span>
+                <span class=" pay-li-nickname ml14">|</span>
+                <span class=" pay-li-nickname ml14"><a href="$shop_url">返回商城</a></span>
+                <ul class="clearfix pay-order-number">
+                    <li class="fl ">
+                        订单提交成功，请尽快付款！订单号：
+                        <span>{$this->order[inorder]}</span>
+                    </li>
+                    <li class="fr">应付金额<span class="jiage">{$this->order[trade_payment_amount]}</span>元</li>
+                </ul>
+
+            </div>
+        </header>
+        <!--支付内容-->
+        <div>
+            <div class="wx-payment clearfix">
+                <div class="fl wx-payment-left">
+                    <p>银联支付</p>
+                    <img alt="模式二扫码支付" src="{$base_url}/paycenter/api/qrcode.php?data={$url_data}" width="290" height="290">
+                    <div class="wx-payment-left-div1">
+                        <ul class="clearfix">
+                            <li class="pay-icon fl"></li>
+                            <li class="pay-text fl">请使用银联扫描<br>扫描二维码支付</li>
+                        </ul>
+                    </div>
+                    <div class="wx-payment-left-div2">
+                        <a href="javascript:history.back(-1)"><img src="paycenter/models/Payment/zuojiantou.png" width="9" height="16">选择其他支付方式</a>
+                    </div>
+                </div>
+                <div class="fl wx-payment-right">
+
+                </div>
+            </div>
+        </div>
+<script>
+        $(function(){
+           setInterval(function(){check()}, 5000);  //5秒查询一次支付是否成功
+        })
+        function check(){
+            var url = "{$check_url}";
+            var out_trade_no = '$out_trade_no';
+            var param = {'code':out_trade_no};
+            $.post(url, param, function(data){
+                //data = JSON.parse(data);
+                if(data.status == "200"){
+                    //alert(JSON.stringify(data));
+                    alert("订单支付成功,即将跳转...");
+                    window.location.href = "{$return_url}";
+                }else{
+                    console.log(data);
+                }
+            },'json');
         }
+    </script>
+</body>
+</html>
+EOT;
+        die();
+
         
     }
 
 
 
-    /*------h5支付begin------*/
+    /*------支付begin------*/
     /**
      * @param $trade_row 传送的支付单数据
      * @return boolean
      * 聚合银联APP预支付接口
      */
     public function JhYlAppPay($trade_row) {
-        $url = "https://api.tlinx.com/mct1/payorder";
+        $url = "http://testapi.ttg.xjrccb.com.cn/mct1/payorder";
         //验签数据
         $timestamp = time();
         $code = $this->randCode(6,1);
         $data['out_no'] = time() . $code;
-        $data['pmt_tag'] = "WeixinTTGL";
-        $data["pmt_name"] = "微信支付";
+        $data['pmt_tag'] = "UnionXJNX";
+        $data["pmt_name"] = "银联二维码";
         $data['original_amount'] = sprintf("%.2f",$trade_row['trade_payment_amount']) * 100 ;//原始交易金额
         $data['trade_amount'] = sprintf("%.2f",$trade_row['union_online_pay_amount']) * 100 ;//实际交易金额
-        $data['trade_type'] = "MWEB";
-        $data['spbill_create_ip'] = $_SERVER['REMOTE_ADDR'];
         $data["notify_url"] = Yf_Registry::get('paycenter_api_url') . "/paycenter/api/payment/wx/jh_notify_url.php?out_trade_no=" . $trade_row['union_order_id'];
-        $data['scene_info'] = '{"h5_info":{"type":"Wap","wap_url":"https://ms.look56.com/","wap_name":"支付"}}';
         $result=$this->api($url,$data,$this->open_key,$timestamp,$this->open_id);
         return $result;
     }
@@ -181,31 +256,6 @@ class Payment_JhYlAppModel {
         return $result;
     }
     /*------h5支付end------*/
-
-
-    /*------JSDK原生支付begin------*/
-    /**
-     * @param $trade_row 传送的支付单数据
-     * @return boolean
-     * 聚合微信APP支付接口 (原生JSDK支付)
-     */
-    // public function JhwxJsdkPay($trade_row) {
-    //     $url = "https://api.tlinx.com/mct1/payorder";
-    //     //验签数据
-    //     $timestamp = time();
-    //     $code = $this->randCode(6,1);
-    //     $data['out_no'] = time() . $code;
-    //     $data['pmt_tag'] = "WeixinSXF2";
-    //     $data["pmt_name"] = "微信支付";
-    //     $data['original_amount'] = sprintf("%.2f",$trade_row['trade_payment_amount']) * 100 ;//原始交易金额
-    //     $data['trade_amount'] = sprintf("%.2f",$trade_row['union_online_pay_amount']) * 100 ;//实际交易金额
-    //     $data['JSAPI'] = "1";
-    //     $data['sub_appid'] = $this->gz_app_id;
-    //     $data['sub_openid'] = $this->sub_openid();//用户的open_id
-    //     $data["notify_url"] = Yf_Registry::get('paycenter_api_url') . "/paycenter/api/payment/wx/jh_notify_url.php?out_trade_no=" . $trade_row['union_order_id'];
-    //     $result=$this->api($url,$data,$this->gz_open_key,$timestamp,$this->gz_open_id);
-    //     return $result;
-    // }
 
     /*
     *
