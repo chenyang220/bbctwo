@@ -71,7 +71,9 @@ class PaymentModel
                 $PaymentModel = new Payment_TenpayWapModel($config_row);
                 break;
              case 'unionpay':
-                    $PaymentModel = new Payment_UnionPayModel($config_row);
+                    // $PaymentModel = new Payment_UnionPayModel($config_row);
+                    $PaymentModel = new Payment_JhYlAppModel();
+
                 break;
              case 'paypal':
                     $PaymentModel = new Payment_Paypal($config_row);
