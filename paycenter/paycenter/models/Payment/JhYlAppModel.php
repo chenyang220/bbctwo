@@ -2,9 +2,6 @@
 {
     exit('No Permission');
 }
-// require_once LIB_PATH . '/Api/wx/lib/WxPay.Api.php';
-// require_once LIB_PATH . '/Api/wx/lib/WxPay.Notify.php';
-// include_once LIB_PATH . '/Api/wx/WxPay.JsApiPay.php';
 /**
  * @author     Yf <service@yuanfeng.cn>
  */
@@ -32,8 +29,6 @@ class Payment_JhYlAppModel {
      */
     public function pay($order_row)
     {
-
-
         if ($order_row)
             {
                 $this->order = $order_row;
