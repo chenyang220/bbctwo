@@ -44,8 +44,6 @@ class Payment_JhYlAppModel {
                 throw new Exception('订单状态不为待付款状态');
             }
             $result = $this->JhYlAppPay($order_row);
-        // file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($result,true),FILE_APPEND);
-
             $url_data = '';
             if ($result['errcode'] == 0) {
                 $Union_OrderModel = new Union_OrderModel();
