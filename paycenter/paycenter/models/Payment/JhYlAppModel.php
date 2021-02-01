@@ -11,9 +11,6 @@ include_once LIB_PATH . '/Api/wx/WxPay.JsApiPay.php';
 class Payment_JhYlAppModel {
     private $open_id = 'b913146cf9581ad1212970510d21c565';
     private $open_key = 'b59a6234808f4f6dd02e134c69abf631';
-    // private $gz_open_id = 'e646f39f441d656041731c45d52147ed';
-    // private $gz_open_key = 'e27cc7ff234c39f1b8107a7db1a8fec5';
-    // private $gz_app_id = 'wx6e791c29beaa82af';  //公众号APPID
     private $type = '';
     /**
      * Constructor
