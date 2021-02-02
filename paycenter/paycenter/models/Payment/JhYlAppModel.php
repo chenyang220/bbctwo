@@ -124,14 +124,11 @@ class Payment_JhYlAppModel {
         })
         function check(){
             var url = "{$check_url}";
-            var out_trade_no = '$out_trade_no';
-            var param = {'code':out_trade_no};
+            var param = {'code':''};
             $.post(url, param, function(data){
-                //data = JSON.parse(data);
                 if(data.status == "200"){
-                    //alert(JSON.stringify(data));
                     alert("订单支付成功,即将跳转...");
-                    window.location.href = "{$return_url}";
+                    window.location.href = data.data.url;
                 }else{
                     console.log(data);
                 }
