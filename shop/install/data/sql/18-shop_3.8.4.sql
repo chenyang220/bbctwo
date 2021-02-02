@@ -122,3 +122,9 @@ ADD COLUMN `third_url`  varchar(255) NULL COMMENT '第三方跳转链接';
 ALTER TABLE `yf_label_base`
 MODIFY COLUMN `label_tag_sort`  int(5) NULL DEFAULT NULL COMMENT '标签排序',
 MODIFY COLUMN `label_logo`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '标签logo';
+
+
+
+
+ALTER TABLE `ucenter_user_info`
+ADD COLUMN `appToken`  varchar(255) NULL COMMENT 'APP端带的token';

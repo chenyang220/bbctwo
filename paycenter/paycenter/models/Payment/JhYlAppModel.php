@@ -48,6 +48,14 @@ class Payment_JhYlAppModel {
             }
             $app_id = $this->order['app_id'];
             $base_url             = Yf_Registry::get('base_url');
+            //商户订单号
+            $out_trade_no = $this->order['union_order_id'];
+            //主动查询银联支付订单状态
+            $db = new YFSQL();
+            $sql = "select * from ucenter_user_info where user_id=" . $this->order['buyer_id'];
+            $ucenter_user_info_get = $db->find($sql);
+            $ucenter_user_info = current($ucenter_user_info_get);
+            $check_url = Yf_Registry::get('paycenter_api_url'). "?ctl=Info&met=yl_paystatus&order_id=" . $this->order['inorder'] . "&token=" . $ucenter_user_info['token']. "&enterId=". $ucenter_user_info['enterId'] . "&appToken=". $ucenter_user_info['appToken'];
             //查找回调地址
             $User_AppModel = new User_AppModel();
             $user_app      = $User_AppModel->getOne($app_id);
@@ -109,6 +117,8 @@ class Payment_JhYlAppModel {
             </div>
         </div>
 <script>
+
+
         $(function(){
            setInterval(function(){check()}, 5000);  //5秒查询一次支付是否成功
         })
@@ -248,21 +258,8 @@ EOT;
         Yf_Log::log($result,Yf_Log::LOG,'YlReturnMoney');
         return $result;
     }
-    /*------h5支付end------*/
+    /*------支付end------*/
 
-    /*
-    *
-    *  获取用户的openID
-    *
-    *
-    */
-    public function sub_openid () {
-        //①、获取用户openid
-        $tools = new JsApiPay();
-        $openId = $tools->GetOpenid();
-        return $openId;
-    }
-    /*------JSDK原生支付end------*/
 
 
     #API调用主接口

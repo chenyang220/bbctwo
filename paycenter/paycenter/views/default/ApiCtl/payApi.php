@@ -37,7 +37,7 @@
     //用app电话号码登录
     var u_id = '<?php echo $u_id;?>';
     if (u_id) {
-        window.location.href =  UCENTER_URL + '/?ctl=Login&met=oauth&typ=pay&u_id=' + u_id + "&return_url="  + '<?=($returnUrl)?>';
+        window.location.href =  UCENTER_URL + '/?ctl=Login&met=oauth&typ=pay&u_id=' + u_id + "&return_url="  + "<?=($returnUrl)?>" + "&appToken="  + "<?=($appToken)?>";
     }
 </script>
 <?php if ($uorder_base) { ?>

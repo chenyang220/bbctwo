@@ -1213,7 +1213,6 @@ class InfoCtl extends Controller
             $url = Yf_Registry::get('shop_wap_url') ;
         }
         //付款成功提醒 
-        
         /*中酷消息推送begin*/
         $db = new YFSQL();
         $userModel = new User_BaseModel();
@@ -1248,11 +1247,77 @@ class InfoCtl extends Controller
         header("Location:" . $url);
     }
 
+    public function yl_paystatus(){
+        $order_id = request_string('order_id');
+        $Payment_JhYlAppModel = new Payment_JhYlAppModel();
+        $paystatus = $Payment_JhYlAppModel->paystatus($order_id);
+        $Union_OrderModel = new Union_OrderModel();
+        $trade_row = $Union_OrderModel->getOneByWhere(array("inorder"=>$order_id)); 
+        $r_url =htmlspecialchars_decode($trade_row['r_url']);
+        if ($r_url) {
+            $appToken = request_string('appToken');
+            if ($paystatus['data']['status'] == 1) {
+                $status = 200;
+                $msg = "success";
+                $url = $r_url . "&appToken=" . $appToken . "&order_id=" . $order_id . "&order_status=2";
+            } else {
+                $status = 250;
+                $msg = "failure";
+                $url = $r_url . "&appToken=" . $appToken . "&order_id=" . $order_id . "&order_status=1";
+            }    
+        } else {
+            if ($paystatus['data']['status'] == 1) {
+                $status = 200;
+                $msg = "success";
+                $url = Yf_Registry::get('shop_wap_url') ;
+            } else {
+                $status = 250;
+                $msg = "failure";
+                $url = Yf_Registry::get('shop_wap_url') ;
+            } 
+            
+        }
+        $data['url'] = $url;
+        //付款成功提醒 
+        /*中酷消息推送begin*/
+        $db = new YFSQL();
+        $userModel = new User_BaseModel();
+        $sql = "select * from yf_order_base where order_id='" . $order_id . "'";
+        $order_base_get = $db->find($sql);
+        $order_base = current($order_base_get);
+        $token = request_string('token');
+        $enterId = request_string('enterId');
+        $ZkSms = new ZkSms();
+        $getToken = $ZkSms->token($token,$enterId);
+        if ($getToken) {
+            if ($paystatus['data']['status'] == 1) {
+                $content = "尊敬的用户" . $order_base['buyer_user_name'] . ",订单编号为："  . $order_base['order_id'] . "的订单已支付成功。";
+            } else {
+                 $content = "尊敬的用户" . $order_base['buyer_user_name'] . ",订单编号为："  . $order_base['order_id'] . "的订单支付失败。";
+            } 
+            $receivers[0] = $order_base['buyer_user_id'];
+            $msg = array(
+                "msgType"=>1,
+                "noticeType"=>1,
+                "templateCode"=>"pure_text_bill",
+                "businessId"=>1,
+                "subject"=>"订单支付",
+                "content"=> $content,
+                "enterName"=>"订单支付",
+                'sender'=> $getToken['u_id'],
+                "receivers"=> $receivers
+            );
+            $message = $ZkSms->simba_business_notice_send($getToken['token'], $msg,$order_base['order_from']);
+        }
+
+        /*中酷消息推送end*/
+        // header("Location:" . $url);
+        $this->data->addBody(-140, $data, $msg, $status);
+    }
 
     //支付成功页
     public function after_pay()
     { 
-
         $type = request_string("type");
         $Consume_TradeModel = new Consume_TradeModel();
         $order_id = request_string('order_id');
@@ -1289,6 +1354,7 @@ class InfoCtl extends Controller
         $user_card_pay = 0;
         $user_money_pay = 0;
         $user_online_pay = 0;
+
         //使用充值卡或账户余额支付时，查找账户的资源资源信息
         if ($card_payway == 'true' || $money_payway == 'true') {
             $User_ResourceModel = new User_ResourceModel();
@@ -1305,6 +1371,7 @@ class InfoCtl extends Controller
                     $payment_amount = 0;
                 }
             }
+
             //使用账户余额支付
             if ($money_payway == 'true') {
                 if ($user_money <= $payment_amount) {
@@ -1316,6 +1383,7 @@ class InfoCtl extends Controller
                 }
             }
         }
+
         if ($online_payway) {
             $user_online_pay = $payment_amount;
         }
