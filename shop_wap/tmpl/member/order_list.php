@@ -318,6 +318,7 @@
     <script type="text/javascript" src="../../js/tmpl/order_payment_common.js"></script>
     <script type="text/javascript" src="../../js/tmpl/order_list.js"></script>
     <script>
+                ucenterLogin();
         $(document).ready(function(){
                 $("#z-tab-order").click(function(){
                     $("#z-tab-box").toggle();
