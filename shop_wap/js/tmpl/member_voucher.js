@@ -7,11 +7,11 @@ var u = getCookie("id");
 var state = getQueryString('act');
 $(function ()
 {
-    if (!k || !u)
-    {
-        window.location.href = WapSiteUrl + "/tmpl/member/login.html";
-        return ; 
-    }
+//     if (!k || !u)
+//     {
+//         window.location.href = WapSiteUrl + "/tmpl/member/login.html";
+//         return ; 
+//     }
     
     ajaxVoucher(state);
     
