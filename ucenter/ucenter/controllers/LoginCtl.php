@@ -21,6 +21,7 @@ class LoginCtl extends Yf_AppController
      * @return    [type]                  [description]
      */
     public function oauth(){
+
         $u_id = request_string('u_id');
         $return_url = request_string('return_url');
         $User_InfoModel = new User_InfoModel();
@@ -41,6 +42,7 @@ class LoginCtl extends Yf_AppController
         $data = array();
         $data['user_id'] = $user_info_row['user_id'];
         $encrypt_str = Perm::encryptUserInfo($data, $session_id);
+
         $arr_body = array(
             "user_name" => $user_info_row['user_name'],
             "server_id" => $server_id,
@@ -64,7 +66,9 @@ class LoginCtl extends Yf_AppController
             $url = './index.php?ctl=Login&act=login&callback=' . urlencode($return_url);
             header('location:' . $url);
         } else {
-            include $this->view->getView();
+
+$url = Yf_Registry::get('shop_api_url') . "/?ctl=Login&met=check&typ=e&redirect=" . urlencode($return_url) . "&us={$user_id}&ks={$encrypt_str}";
+            header('location:' . $url);
         }
     }
     public function create_html($params, $action , $asyn = false) {
@@ -99,6 +103,10 @@ class LoginCtl extends Yf_AppController
         $post_data = [];
         //检测shop
         $url = Yf_Registry::get('shop_api_url')."?ctl=Index&met=checkApp&user_name={$username}";
+        $this->create_html($post_data,$url );
+
+        //检测shop
+        $url = Yf_Registry::get('shop_api_url')."?ctl=Login&met=check&us={$user_id}&ks={$key}";
         $this->create_html($post_data,$url );
 
         //检测paycenter
@@ -2086,6 +2094,7 @@ class LoginCtl extends Yf_AppController
             $data['k'] = $_COOKIE['key'];
             $data['u'] = $_COOKIE['id'];
         }
+
         $this->data->addBody(100, $data, $msg, $status);
     }
 
