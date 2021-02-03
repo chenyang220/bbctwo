@@ -55,8 +55,18 @@
 					</p>
 				</div>
 				<div class="store-head-oper">
-					<button class="operate btn-save collect pd-collect" onclick="collectShop(<?php echo $_GET['shop_id']?>)">收藏</button>
+					<!-- <button class="operate btn-save collect pd-collect" onclick="collectShop(<?php echo $_GET['shop_id']?>)">收藏</button> -->
 					<!-- <button>签到</button> -->
+					<?php if(!$_COOKIE['SHOP_ID_WAP']){?>
+			        <div class="store-favorate">
+			            <a href="javascript:void(0);" id="store_collected" class="added fz-28" > 
+			                <i class="iconfont icon-like default-color align-middle mr-10"></i><b class="default-color"><?= __('已收藏'); ?></b> 
+			            </a> 
+			            <a href="javascript:void(0);" id="store_notcollect" class="fz-28"  style="color: #222;" hidden="true"> 
+			                <i class="iconfont icon-like align-middle mr-10"></i><b><?= __('收藏'); ?></b> 
+			            </a> 
+			        </div>
+			        <?php } ?>
 				</div>
 			</div>
 			<ul class="custom-store-nav flex" id="nav_tab">

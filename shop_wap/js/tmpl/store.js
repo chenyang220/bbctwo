@@ -21,26 +21,26 @@ function tidyStoreNewGoodsData(t) {
     return t;
 }
 // 收藏店铺变成已收藏
-function collectShop(shop_id) {
-    var k = getCookie("key");
-    var u = getCookie("id");
-    if (k && u) {
-        $.getJSON(ApiUrl + '/index.php?ctl=Shop&met=addCollectShop&typ=json', {
-            shop_id: shop_id,
-            k: k,
-            u: u
-        }, function (data) {
-            if (data.status == 200) {
-                $.sDialog({skin: "green", content: "收藏成功！", okBtn: false, cancelBtn: false});
-                $(".pd-collect").html("已收藏");
-            } else {
-                $.sDialog({skin: "red", content: "该店铺已收藏！", okBtn: false, cancelBtn: false});
-            }
-        });
-    } else {
-        $.sDialog({skin: "red", content: "请先登录！", okBtn: false, cancelBtn: false});
-    }
-}
+// function collectShop(shop_id) {
+//     var k = getCookie("key");
+//     var u = getCookie("id");
+    // if (k && u) {
+    //     $.getJSON(ApiUrl + '/index.php?ctl=Shop&met=addCollectShop&typ=json', {
+    //         shop_id: shop_id,
+    //         k: k,
+    //         u: u
+    //     }, function (data) {
+    //         if (data.status == 200) {
+    //             $.sDialog({skin: "green", content: "收藏成功！", okBtn: false, cancelBtn: false});
+    //             $(".pd-collect").html("已收藏");
+    //         } else {
+    //             $.sDialog({skin: "red", content: "该店铺已收藏！", okBtn: false, cancelBtn: false});
+    //         }
+    //     });
+    // } else {
+    //     $.sDialog({skin: "red", content: "请先登录！", okBtn: false, cancelBtn: false});
+//     }
+// }
 $("#goods_search").on("click", ".header-inp", function ()
     {
         location.href = WapSiteUrl + "/tmpl/search.html?mb=shop";
