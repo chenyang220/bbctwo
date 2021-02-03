@@ -6,9 +6,9 @@ var reset = true;
 var orderKey = "";
 $(function () {
     var e = getCookie("key");
-    if (!e) {
-        window.location.href = WapSiteUrl + "/tmpl/member/login.html"
-    }
+    // if (!e) {
+    //     window.location.href = WapSiteUrl + "/tmpl/member/login.html"
+    // }
     if (getQueryString("data-state") != "") {
         $("#filtrate_ul").find("li").has('a[data-state="' + getQueryString("data-state") + '"]').addClass("selected").siblings().removeClass("selected")
     }
