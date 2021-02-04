@@ -140,9 +140,10 @@ include __DIR__.'/../../includes/header.php';
                 'key': key,
                 'fields': 'point'
             }, function (result) {
-
-                var html = template.render('pointscount_model', result);
-                $("#pointscount").html(html);
+                if (result.status == 200) {
+                    var html = template.render('pointscount_model', result);
+                    $("#pointscount").html(html);
+                }
             });
         });
     </script>
