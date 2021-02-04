@@ -1,9 +1,9 @@
 $(function () {
     var t = getCookie("key");
-    if (!t) {
-        window.location.href = WapSiteUrl + "/tmpl/member/login.html";
-        return false;
-    }
+    // if (!t) {
+    //     window.location.href = WapSiteUrl + "/tmpl/member/login.html";
+    //     return false;
+    // }
     var e = new ncScrollLoad;
     e.loadInit({
         url: ApiUrl + "/index.php?ctl=Buyer_Favorites&met=favoritesShop&typ=json",
