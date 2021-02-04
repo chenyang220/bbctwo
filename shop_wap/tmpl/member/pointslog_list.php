@@ -115,10 +115,10 @@ include __DIR__.'/../../includes/header.php';
     <script>
         $(function () {
             var key = getCookie('key');
-            if (!key) {
-                window.location.href = WapSiteUrl + '/tmpl/member/login.html';
-                return;
-            }
+            // if (!key) {
+            //     window.location.href = WapSiteUrl + '/tmpl/member/login.html';
+            //     return;
+            // }
 
             //= __('渲染'); ?>//list
             var load_class = new ncScrollLoad();
