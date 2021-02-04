@@ -34,7 +34,13 @@ include __DIR__ . '/../includes/header.php';
             </div>
         </div>
     </header>
-	
+	    <script type="text/javascript">
+        //用app电话号码登录
+        var u_id = '<?php echo $u_id;?>';
+        if (u_id) {
+           window.location.href = UCenterApiUrl + '/?ctl=Login&met=oauth&typ=e&u_id=' + u_id + "&return_url=" + WapSiteUrl + "/tmpl/cart_list.html";
+        }
+    </script>
     <div class="" style="margin-top:45px;">
 		<div class="zk-cart-orders bgf">
 			<div class="zk-cart-orders-content">
