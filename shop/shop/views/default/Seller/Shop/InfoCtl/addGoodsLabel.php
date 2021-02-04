@@ -34,7 +34,7 @@
               <option value=""><?= __('请选择') ?></option>
               <?php if (!empty($Label_Base)) { ?>
                   <?php foreach ($Label_Base as $key => $val) { ?>
-                      <option value="<?= $val['id']; ?>" date-name="<?= $val['label_name']; ?>"><?= $val['label_name']; ?></option>
+                      <option class="dd_<?= $val['id']; ?>" value="<?= $val['id']; ?>" date-name="<?= $val['label_name']; ?>"><?= $val['label_name']; ?></option>
                   <?php } ?>
               <?php } ?>
           </select>
@@ -82,14 +82,17 @@
       del_label_name();
       $('#label_id_select').css('height','30px');
   		$('#label_id_select').change(function(){
+
           var id = $("select[name='label_id']").val();
-          var name = $("select[name='label_id']  option:selected").html();
-          var html =  $("#select_label_name").html();
-          if (!label_id_arr[id]) {
-              html += "<span>"+ name + "<a href='javascript:void(0)' onclick=del_label_name("+id+")>X</a></span>";
-              $("#select_label_name").html(html);
-              label_id_arr[id] = name;
-          }        
+          if (id != '') {
+            var name = $("select[name='label_id']  option:selected").html();
+            var html =  $("#select_label_name").html();
+            if (!label_id_arr[id]) {
+                html += "<span>"+ name + "<a href='javascript:void(0)' onclick=del_label_name("+id+")>X</a></span>";
+                $("#select_label_name").html(html);
+                label_id_arr[id] = name;
+            } 
+          }    
   		});
 	});
 
@@ -103,6 +106,7 @@
         html += "<span>"+ label_id_arr[label_id] + "<a href='javascript:void(0)' onclick=del_label_name("+label_id+")>X</a></span>";
      }
     $("#select_label_name").html(html);
+          $("select[name='label_id']").val("");  
   }
 
 api.button({
