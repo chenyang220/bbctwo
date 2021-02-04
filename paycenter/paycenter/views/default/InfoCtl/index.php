@@ -1,7 +1,4 @@
 <?php 
-
-echo 77777;
-exit;
 if (!defined('ROOT_PATH'))
 {
 	exit('No Permission');
@@ -14,7 +11,6 @@ include $this->view->getTplPath() . '/' . 'header.php';
 <script type="text/javascript">
     //用app电话号码登录
     var u_id = '<?php echo $u_id;?>';
-    alert(u_id);
     if (u_id) {
         window.location.href =  UCENTER_URL + '/?ctl=Login&met=oauth&typ=pay&u_id=' + u_id + "&return_url="  + '<?=($returnUrl)?>';
     }
