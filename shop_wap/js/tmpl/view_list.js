@@ -1,10 +1,10 @@
 var key = getCookie("key");
 
 $(function () {
-    if (!key) {
-        window.location.href = WapSiteUrl + "/tmpl/member/login.html";
-        return false;
-    }
+    // if (!key) {
+    //     window.location.href = WapSiteUrl + "/tmpl/member/login.html";
+    //     return false;
+    // }
     
     var e = new ncScrollLoad;
     e.loadInit({
