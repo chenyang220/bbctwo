@@ -2,7 +2,8 @@ var key = getCookie("key");
 
 $(function ()
 {
-     var key=getCookie("key");if(!key){location.href="login.html"}
+     var key=getCookie("key");
+     // if(!key){location.href="login.html"}
 
     function s()
     {

@@ -1,9 +1,9 @@
 $(function(){
    var e = getCookie("key");
-    if (!e) {
-        window.location.href = WapSiteUrl + "/tmpl/member/login.html"
-    }
- 
+    // if (!e) {
+    //     window.location.href = WapSiteUrl + "/tmpl/member/login.html"
+    // }
+
     $.ajax({
         type:'post',
         url:ApiUrl+"/?ctl=Distribution_NewBuyer_Distribution&met=wapIndex&typ=json",
