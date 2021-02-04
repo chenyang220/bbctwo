@@ -4,14 +4,32 @@ $(function () {
     //     window.location.href = WapSiteUrl + "/tmpl/member/login.html";
     //     return false;
     // }
-    var e = new ncScrollLoad;
-    e.loadInit({
+    // var e = new ncScrollLoad;
+    // e.loadInit({
+    //     url: ApiUrl + "/index.php?ctl=Buyer_Favorites&met=favoritesShop&typ=json",
+    //     getparam: {k: t, u: getCookie("id")},
+    //     tmplid: "sfavorites_list",
+    //     containerobj: $("#favorites_list"),
+    //     iIntervalId: true,
+    //     data: {WapSiteUrl: WapSiteUrl}
+    // });
+
+    $.ajax({
         url: ApiUrl + "/index.php?ctl=Buyer_Favorites&met=favoritesShop&typ=json",
-        getparam: {k: t, u: getCookie("id")},
-        tmplid: "sfavorites_list",
-        containerobj: $("#favorites_list"),
-        iIntervalId: true,
-        data: {WapSiteUrl: WapSiteUrl}
+        data: {k: t, u: getCookie("id")},
+        type: 'post',
+        dataType: 'json',
+        success: function(data) {
+            if (data.status == 200) {
+                 var r = template.render("sfavorites_list", data.data);
+                    $("#favorites_list").html(r)
+                    // if($("#viewlist li").hasClass('active'))
+                    // {
+                    //     $("#viewlist li").removeClass('active');
+                    //     $("#viewlist li").addClass('active');
+                    // }
+            }
+        }
     });
     $("#favorites_list").on("click", "[nc_type='fav_del']", function () {
         var t = $(this).attr("data_id");

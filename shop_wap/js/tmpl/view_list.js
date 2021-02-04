@@ -5,24 +5,44 @@ $(function () {
     //     window.location.href = WapSiteUrl + "/tmpl/member/login.html";
     //     return false;
     // }
-    
-    var e = new ncScrollLoad;
-    e.loadInit({
+  $.ajax({
         url: ApiUrl + "/index.php?ctl=Buyer_Favorites&met=footprintwap&typ=json",
-        getparam: {k: key, u: getCookie('id')},
-        tmplid: "viewlist_data",
-        containerobj: $("#viewlist"),
-        iIntervalId: true,
-        data: {WapSiteUrl: WapSiteUrl},
-        callback:function (data) {
-            if($("#viewlist li").hasClass('active'))
-            {
-                $("#viewlist li").removeClass('active');
-                $("#viewlist li").addClass('active');
+        data: {k: key, u: getCookie('id')},
+        type: 'post',
+        dataType: 'json',
+        success: function(data) {
+            if (data.status == 200) {
+                 var r = template.render("viewlist_data", data.data);
+                    $("#viewlist").html(r)
+                    if($("#viewlist li").hasClass('active'))
+                    {
+                        $("#viewlist li").removeClass('active');
+                        $("#viewlist li").addClass('active');
+                    }
             }
         }
     });
-       
+
+
+    // var e = new ncScrollLoad;
+    // e.loadInit({
+    //     url: ApiUrl + "/index.php?ctl=Buyer_Favorites&met=footprintwap&typ=json",
+    //     getparam: {k: key, u: getCookie('id')},
+    //     tmplid: "viewlist_data",
+    //     containerobj: $("#viewlist"),
+    //     iIntervalId: true,
+    //     data: {WapSiteUrl: WapSiteUrl},
+    //     callback:function (data) {
+    //         if($("#viewlist li").hasClass('active'))
+    //         {
+    //             $("#viewlist li").removeClass('active');
+    //             $("#viewlist li").addClass('active');
+    //         }
+    //     }
+    // });
+      
+
+
     $("#clearbtn").click(function () {
         var common_id = [];
         $("#viewlist li input[type='checkbox']").each(function(){
