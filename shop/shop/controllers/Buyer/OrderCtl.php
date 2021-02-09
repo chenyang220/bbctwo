@@ -1414,9 +1414,8 @@ class Buyer_OrderCtl extends Buyer_Controller
         $union_order_id = trim(request_string('order_id'));
         $state_info = request_string('state_info');
         //获取订单详情，判断订单的当前状态与下单这是否为当前用户
-
         $db = new YFSQL();
-        $sql = "SELECT * from pay_union_order where union_order_id = {$union_order_id}";
+        $sql = "SELECT * from pay_union_order where union_order_id = '{$union_order_id}'";
         $pay_union_order_select  = $db->find($sql);
         $pay_union_order = current( $pay_union_order_select);
         $order_id = $pay_union_order['inorder'];
