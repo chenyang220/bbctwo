@@ -72,22 +72,11 @@ class Payment_Alipay implements Payment_Interface
 
         }
 
-
         $requestJson = '{"product_code":"FAST_INSTANT_TRADE_PAY","out_trade_no":"'.$order_row['union_order_id'].'","subject":"'.$order_row['trade_title'].'","total_amount":"'.$order_row['union_online_pay_amount'].'","body":"'.$order_row['trade_title'].'"}';
 
         $request->setBizContent($requestJson);
-
-
-
-
-
         //请求
         $result = $aop->pageExecute($request);
-
-
-
-
-
         //输出
         echo $result;
     }

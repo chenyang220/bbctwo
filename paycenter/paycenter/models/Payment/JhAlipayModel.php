@@ -29,7 +29,7 @@ class Payment_JhAlipayModel {
      */
     public function pay($order_row)
     {
-        if ($order_row)
+            if ($order_row)
             {
                 $this->order = $order_row;
             }   
@@ -39,108 +39,17 @@ class Payment_JhAlipayModel {
                 throw new Exception('订单状态不为待付款状态');
             }
             $result = $this->JhAlipay($order_row);
+
             $url_data = '';
             if ($result['errcode'] == 0) {
                 $Union_OrderModel = new Union_OrderModel();
                 $Union_OrderModel->editUnionOrder($order_row['union_order_id'],array("ord_no"=>$result['data']['ord_no'],"out_no"=>$result['data']['out_no']));
-                $code_url = $result['data']["trade_qrcode"];
-                $url_data = urlencode($code_url);
+                $code_url = $result['data']["trade_result"];
+                $url_data = json_decode($code_url,true);
+                echo $url_data['orderInfo'];
+                exit;
             }
-            $app_id = $this->order['app_id'];
-            $base_url             = Yf_Registry::get('base_url');
-            //商户订单号
-            $out_trade_no = $this->order['union_order_id'];
-            //主动查询银联支付订单状态
-            $db = new YFSQL();
-            $sql = "select * from ucenter_user_info where user_id=" . $this->order['buyer_id'];
-            $ucenter_user_info_get = $db->find($sql);
-            $ucenter_user_info = current($ucenter_user_info_get);
-            $check_url = Yf_Registry::get('paycenter_api_url'). "?ctl=Info&met=yl_paystatus&order_id=" . $this->order['inorder'] . "&token=" . $ucenter_user_info['token']. "&enterId=". $ucenter_user_info['enterId'] . "&appToken=". $ucenter_user_info['appToken'];
-            //查找回调地址
-            $User_AppModel = new User_AppModel();
-            $user_app      = $User_AppModel->getOne($app_id);
-            if ($order_row['return_url']) {
-                $user_app['app_url'] = $order_row['return_url'] . "&order_id=" . $this->order['inorder'] . "&order_status=2";
-            }
-
-            print <<<EOT
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>银联支付</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" /> 
-        <script type="text/javascript" src="{$base_url}/paycenter/static/default/js/jquery-1.9.1.js"></script>
-    </head>
-    <link rel="stylesheet" type="text/css"  href="../../../paycenter/static/default/css/WxNative.css"/>
-    <body>
-        <!--导航-->
-        <header>
-            <div class="clearfix Navigation">
-                <span class=" pay-li-cashier">
-                     收银台
-                </span>
-                <span class=" pay-li-nickname ml14"><a href="$login_out_url">退出</a></span>
-                <span class=" pay-li-nickname ml14">|</span>
-                <span class=" pay-li-nickname ml14"><a href="$shop_url">返回商城</a></span>
-                <ul class="clearfix pay-order-number">
-                    <li class="fl ">
-                        订单提交成功，请尽快付款！订单号：
-                        <span>{$this->order[inorder]}</span>
-                    </li>
-                    <li class="fr">应付金额<span class="jiage">{$this->order[trade_payment_amount]}</span>元</li>
-                </ul>
-
-            </div>
-        </header>
-        <!--支付内容-->
-        <div>
-            <div class="wx-payment clearfix">
-                <div class="fl wx-payment-left">
-                    <p>银联支付</p>
-                    <img alt="模式二扫码支付" src="{$base_url}/paycenter/api/qrcode.php?data={$url_data}" width="290" height="290">
-                    <div class="wx-payment-left-div1">
-                        <ul class="clearfix">
-                            <li class="pay-icon fl"></li>
-                            <li class="pay-text fl">请使用银联扫描<br>扫描二维码支付</li>
-                        </ul>
-                    </div>
-                    <div class="wx-payment-left-div2">
-                        <a href="javascript:history.back(-1)"><img src="paycenter/models/Payment/zuojiantou.png" width="9" height="16">选择其他支付方式</a>
-                    </div>
-                </div>
-                <div class="fl wx-payment-right">
-
-                </div>
-            </div>
-        </div>
-<script>
-
-
-        $(function(){
-           setInterval(function(){check()}, 5000);  //5秒查询一次支付是否成功
-        })
-        function check(){
-            var url = "{$check_url}";
-            var param = {'code':''};
-            $.post(url, param, function(data){
-                if(data.status == "200"){
-                    alert("订单支付成功,即将跳转...");
-                    window.location.href = data.data.url;
-                }else{
-                    console.log(data);
-                }
-            },'json');
-        }
-    </script>
-</body>
-</html>
-EOT;
-        die();
-
-        
+            
     }
 
 
@@ -158,8 +67,8 @@ EOT;
         $code = $this->randCode(6,1);
         $data['out_no'] = time() . $code;
         $data['pmt_tag'] = "AlipayZL";
-        // $data["pmt_name"] = "银联二维码";
-        $data["trade_type"] = "6";
+        $data["pmt_name"] = "支付宝";
+        $data["trade_type"] = "5";
         $data['original_amount'] = sprintf("%.2f",$trade_row['trade_payment_amount']) * 100 ;//原始交易金额
         $data['trade_amount'] = sprintf("%.2f",$trade_row['union_online_pay_amount']) * 100 ;//实际交易金额
         $data["notify_url"] = Yf_Registry::get('paycenter_api_url') . "/paycenter/api/payment/wx/jh_notify_url.php?out_trade_no=" . $trade_row['union_order_id'];
