@@ -55,14 +55,15 @@ class PaymentModel
         }
         switch ($channel) {
              case 'alipay':
-                    if (!Yf_Utils_Device::isMobile())
-                    {
-                        $PaymentModel = new Payment_Alipay($config_row);
-                    }
-                    else
-                    {
-                        $PaymentModel = new Payment_AlipayWap($config_row);
-                    }
+                    // if (!Yf_Utils_Device::isMobile())
+                    // {
+                    //     $PaymentModel = new Payment_Alipay($config_row);
+                    // }
+                    // else
+                    // {
+                    //     $PaymentModel = new Payment_AlipayWap($config_row);
+                    // }
+                    $PaymentModel = new Payment_JhAlipayModel($config_row);
                     break;
              case 'tenpay':
                 $PaymentModel = new Payment_TenpayModel($config_row);
