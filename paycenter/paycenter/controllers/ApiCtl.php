@@ -1036,7 +1036,7 @@ class ApiCtl extends Yf_AppController
 		$db = new YFSQL();
 		$u_id =  request_string('u_id');
 	    $union_order_id =  request_string('union_order_id');
-		$return_type =  request_string('return_type');//1-退款申请 2-退货申请 3-虚拟退款',
+		$return_type =  request_int('return_type');//1-退款申请 2-退货申请 3-虚拟退款',
 	    $Union_Order = $Union_OrderModel->getOneByWhere(array("union_order_id"=>$union_order_id,"order_state_id>"=>1));
 	    if (!$Union_Order) {
 	    	$data['data']['inorder'] = $union_order_id;
@@ -1045,6 +1045,8 @@ class ApiCtl extends Yf_AppController
 	    	echo(json_encode($data,JSON_UNESCAPED_UNICODE));
 			exit();
 	    }
+
+
 		$u_sql = "select * from ucenter_user_info where u_id=$u_id";
 		$ucenter_user_info_get = $db->find($u_sql);
 		$ucenter_user_info = current($ucenter_user_info_get);
@@ -1111,7 +1113,7 @@ class ApiCtl extends Yf_AppController
 				$data['status'] = 200;
 			} else {
 				$Union_OrderModel->sql-> rollBackDb();
-				$data['msg'] = "提交失败,请稍后重试！";
+				$data['msg'] = "退款失败,请稍后重试！";
 				$data['status'] = 250;
 			}
 		} else {
