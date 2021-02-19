@@ -210,7 +210,7 @@ if ($_GET['qr']) {
         //联系客服
         UC.config = {
             // 开启调试模式
-            debug: false,
+            debug: true,
             // 当前登录用户TOKEN，不传会默认从地址栏获取
             token:"<?php echo $token;?>",
             // // 当前企业ID，不传会默认从地址栏获取

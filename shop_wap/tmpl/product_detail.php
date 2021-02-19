@@ -529,7 +529,18 @@ if ($_GET['qr']) {
 									   <a class="fz-28" href="javascript:;">生成海报</a>
 									</div>
 								<% }%>
-								<a class="share" href=""><i></i><em>分享</em></a>
+								<!-- <a class="share" href=""><i></i><em>分享</em></a> -->
+                               <!--  <?php if ($_COOKIE['is_app_guest']) { ?>
+                                    <li>
+                                        <a href="" id='shareit' class="share"> <i></i><em>分享</em><sup></sup></a>
+                                    </li>
+                                <?php }elseif (substr_count($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') == 0){ ?>
+                                    <?php if(substr_count($_SERVER['HTTP_USER_AGENT'],'UCBrowser') >= 1 || substr_count($_SERVER['HTTP_USER_AGENT'],'UCWEB') >= 1 || substr_count($_SERVER['HTTP_USER_AGENT'],'MQQBrowser') >= 1){ ?>
+                                        <li>
+                                            <a  class="share" id='share_wap'> <i></i><em>分享</em><sup></sup></a>
+                                        </li>
+                                    <?php }?>
+                                <?php }?> -->
 							</div>
 						</div>
 					</div>				

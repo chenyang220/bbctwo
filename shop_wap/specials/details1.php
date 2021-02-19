@@ -419,7 +419,18 @@ include   '../includes/header.php';
 									   <a class="fz-28" href="javascript:;">生成海报</a>
 									</div>
 								<% }%>
-								<a class="share" href=""><i></i><em>分享</em></a>
+								<!-- <a class="share" href=""><i></i><em>分享</em></a> -->
+                                <!-- <?php if ($_COOKIE['is_app_guest']) { ?>
+                                    <li>
+                                        <a href="" id='shareit' class="share"> <i></i><em>分享</em><sup></sup></a>
+                                    </li>
+                                <?php }elseif (substr_count($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') == 0){ ?>
+                                    <?php if(substr_count($_SERVER['HTTP_USER_AGENT'],'UCBrowser') >= 1 || substr_count($_SERVER['HTTP_USER_AGENT'],'UCWEB') >= 1 || substr_count($_SERVER['HTTP_USER_AGENT'],'MQQBrowser') >= 1){ ?>
+                                        <li>
+                                            <a  class="share" id='share_wap'> <i></i><em>分享</em><sup></sup></a>
+                                        </li>
+                                    <?php }?>
+                                <?php }?> -->
 							</div>
 						</div>
 					</div>				
@@ -947,6 +958,110 @@ include   '../includes/header.php';
                 console.log(data);
             }
         })
+
+
+        var shop_u_id = '';
+        $.ajax({
+            url: ApiUrl + "/index.php?ctl=Goods_Goods&met=getShopUid&typ=json",
+            type: "POST",
+            data: {k: getCookie("key"), u: getCookie("id"), goods_id: goods_id},
+            dataType: "json",
+            async: false,
+            success: function (result) {
+                if (result.status == 200) {
+                    shop_u_id = result.data[0].u_id;
+                     token = result.data[0].token;
+                }
+            }
+        });
+
+
+        $(function () {
+             //联系客服
+            UC.config = {
+                // 开启调试模式
+                debug: false,
+                // 当前登录用户TOKEN，不传会默认从地址栏获取
+                token: getCookie("token"),
+                // 当前企业ID，不传会默认从地址栏获取
+                enterId: getCookie("enterId"),
+                // 必填,从开放平台处获取
+                appId: '172d1c69e247207db52b54081255e450',
+                // 必填,从开放平台处获取
+                appSecurity: '896f886913826082f52a49a63aef4cff',
+                // 鉴权后跳转地址（当前页面地址）, 注意域名必须和创建APP时候设置的域名保持一致,从开放平台处获取
+                redirectUri: WapSiteUrl + "/tmpl/product_detail.html?goods_id=7"
+            };
+        });
+          // 用于处理接口异常、接口不存在
+        UC.error = function (data) {
+                console.error(data);
+        };
+        UC.ready = function () {
+                //在这调用接口方法
+                // openChat();
+                // getUserInfo();
+                // hideNavigationBarLeft();  
+                // setNavigationBarRight();
+        };
+        function openChat() {
+            var apiName = 'openChat';
+            var param = {
+              'sessionId': shop_u_id,
+              'sessionType': 1,
+              'content': ''
+            };
+            UC.call(apiName, param, function (data) {
+              console.log('=========' + apiName + '=========');
+              console.log(JSON.stringify(data));
+            }, function (data) {
+              console.log(data, apiName);
+            });
+        }
+
+
+        function hideNavigationBarLeft () {
+            alert(1);
+            var apiName = 'hideNavigationBarLeft';
+            var param = '';
+            UC.call(apiName, param, function (data) {
+                alert(3);
+           console.log('=========' + apiName + '=========');
+           console.log(JSON.stringify(data));
+            }, function (data) {
+                alert(4);
+            console.log(data, apiName);
+            });
+          };
+        function setNavigationBarRight () {
+            alert(2);
+            var apiName = 'setNavigationBarRight';
+            var param = {
+              'text': ''
+            };
+            UC.call(apiName, param, function (data) {
+                alert(5);
+              console.log('=========' + apiName + '=========');
+              console.log(JSON.stringify(data));
+            }, function (data) {
+                alert(6);
+              console.log(data, apiName);
+            });
+          };
+            //商品属性面板折叠'); ?>
+            function isHidden(oDiv) {
+                var vDiv = document.getElementById(oDiv);
+                var vBtn = document.getElementById("btn_attr");
+                if (vDiv.style.display == "none") {
+                    vBtn.innerHTML = "<?= __('商品属性'); ?>&nbsp;<?= __('︽'); ?>";
+                } else {
+                    vBtn.innerHTML = "<?= __('商品属性'); ?>&nbsp;<?= __('︾'); ?>";
+                }
+                vDiv.style.display = (vDiv.style.display == "none") ? "block" : "none";
+            }
+
+
+
     </script>
     <script>
 //    判断内容加载完成后执行
