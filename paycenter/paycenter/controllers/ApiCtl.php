@@ -1066,6 +1066,20 @@ class ApiCtl extends Yf_AppController
 			echo(json_encode($data,JSON_UNESCAPED_UNICODE));
 			exit();
 		}
+		if ($order_goods_rows[0]['goods_return_status']  == 2) {
+			$data['msg'] = "退款已完成，请勿重复操作！";
+			$data['status'] = 250;
+			echo(json_encode($data,JSON_UNESCAPED_UNICODE));
+			exit();
+		}
+
+		if ($order_goods_rows[0]['goods_refund_status']  == 2) {
+			$data['msg'] = "退货已完成，请勿重复操作！";
+			$data['status'] = 250;
+			echo(json_encode($data,JSON_UNESCAPED_UNICODE));
+			exit();
+		}
+
 	   	$Union_OrderModel->sql->startTransactionDb();
 		$sql1 = "select * from yf_order_base where order_id='". $Union_Order['inorder'] . "'";
 		$order_base_select = $db->find($sql1);
