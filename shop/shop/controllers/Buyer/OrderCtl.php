@@ -809,6 +809,56 @@ class Buyer_OrderCtl extends Buyer_Controller
     /**
      * 删除订单
      *
+     * @author  
+     */
+    public function selectOrderReturnApi()
+    {
+         
+         $union_order_id = request_string('union_order_id');
+
+         $u_id = request_int('u_id');
+
+
+         $db = new YFSQL();
+
+         $sql = "SELECT  * FROM  pay_union_order WHERE union_order_id = '" .$union_order_id ."'";
+
+         $pay_union_order = $db->find($sql);
+
+         $order_id = $pay_union_order[0]['inorder'];
+         
+         if (!$pay_union_order[0]) {
+            return $this->data->addBody(-140, array(), "该订单不存在，请核对后查询！", 250);
+         }
+
+
+         $sql = "SELECT  * FROM  ucenter_user_info WHERE u_id = " .$u_id;
+
+         $ucenter_user_info = $db->find($sql);
+
+
+         if (!$ucenter_user_info[0] || $ucenter_user_info[0]['user_id'] != $pay_union_order[0]['buyer_id']) {
+            return $this->data->addBody(-140, array(), "该用户没有购买此订单，无查询权限！", 250);
+         }
+
+         $Order_ReturnModel = new Order_ReturnModel();
+
+         $Order_Return = $Order_ReturnModel->getOneByWhere(array("order_number"=>$order_id));
+
+         if (!$Order_Return) {
+
+
+$a[0] = $order_id;
+              return $this->data->addBody(-140, $Order_Return, "该订单暂无退款操作！", 250);
+         }
+
+         $this->data->addBody(-140, $Order_Return, "success", 200);
+
+    }
+
+    /**
+     * 删除订单
+     *
      * @author     Zhuyt
      */
     public function hideOrder()
