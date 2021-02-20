@@ -12,6 +12,12 @@
         display: inline-block;
         line-height: 1.8rem;
     }
+
+    .sj {
+
+    border-color: #AAA transparent transparent transparent;
+
+}
 </style>
 <?php
 include __DIR__ . '/../includes/header.php';
@@ -19,17 +25,22 @@ include __DIR__ . '/../includes/header.php';
 <link rel="stylesheet" href="../css/customize.css">
 <div class="customize-feature-goods-list-nav store-goods-list-nav">
     <ul id="nav_ul">
-        <li><a href="javascript:void(0);" class="current" id="sort_default"><?= __('综合'); ?><i></i></a></li>
+        <li><a href="javascript:void(0);" class="current" id="sort_default"><?= __('综合'); ?><i class="sj"></i></a></li>
         <li><a href="javascript:void(0);" id="sort_salesnum"><?= __('销量'); ?></a></li>
-		<li><a href="javascript:void(0);" class="">价格</a></li>
+		<li><a href="javascript:void(0);" id="sort_prices">价格</a></li>
     </ul>
     <div class="ser-adv flex1"><a href="javascript:void(0);" id="search_adv">筛选<i></i></a></div>
 </div>
 <div id="sort_inner" class="goods-sort-inner hide borb1">
     <span><a href="javascript:void(0);" class="cur" id="default"><?= __('综合排序'); ?><i></i></a></span>
-    <span><a href="javascript:void(0);" id="pricedown"><?= __('价格从高到低'); ?><i></i></a></span>
-    <span><a href="javascript:void(0);" id="priceup"><?= __('价格从低到高'); ?><i></i></a></span>
+
     <span><a href="javascript:void(0);" id="collect"><?= __('人气排序'); ?><i></i></a></span>
+</div>
+<div id="sort_price" class="goods-sort-inner hide borb1"  style="position: static;">
+<!--     <span><a href="javascript:void(0);" id="pricedown_price"><?= __('价格从高到低'); ?><i></i></a></span>
+    <span><a href="javascript:void(0);" id="priceup_price"><?= __('价格从低到高'); ?><i></i></a></span> -->
+        <span><a href="javascript:void(0);" id="pricedown"><?= __('价格从高到低'); ?><i></i></a></span>
+    <span><a href="javascript:void(0);" id="priceup"><?= __('价格从低到高'); ?><i></i></a></span>
 </div>
 <div class="customize-goods-lists">
 	<div class="grid pt-0 style-change 1111" nc_type="product_content">

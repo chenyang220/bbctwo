@@ -26,18 +26,72 @@ $(function () {
         }
     });
     $("#sort_default").click(function () {
+        $(this).addClass("current");
+        $("#sort_prices").removeClass("current");
+        $("#sort_salesnum").removeClass("current");
+        $("#sort_price").addClass("hide")
         if ($("#sort_inner").hasClass("hide")) {
             $("#sort_inner").removeClass("hide")
         } else {
             $("#sort_inner").addClass("hide")
         }
     });
+    $("#sort_prices").click(function () {
+        $(this).addClass("current");
+
+        $("#sort_default").removeClass("current");
+        $("#sort_salesnum").removeClass("current");
+        $("#sort_inner").addClass("hide")
+        $("#sort_price").removeClass("hide")
+    });
+    //销量优先
+    $("#sort_salesnum").click(function () {
+        order_val = 2;
+        order_key = 3;
+        $(this).addClass("current");
+        $("#sort_default").removeClass("current");
+        $("#sort_prices").removeClass("current");
+        $("#sort_price").addClass("hide")
+        $("#sort_inner").addClass("hide").find("a").removeClass("cur");
+        hasmore = true;
+        $("#product_list").html('');
+        curpage = 1;
+        firstRow = 0;
+        get_list()
+    });
+
     $("#sort_inner").find("a").click(function () {
         $("#sort_inner").addClass("hide").find("a").removeClass("cur");
         var e = $(this).addClass("cur").text();
         $("#sort_default").addClass("current").html(e + "<i></i>");
         $("#sort_salesnum").removeClass("current")
     });
+
+    
+
+
+    //价格从高到底 onclick="get_list({'order_val':'2','order_key':'2'})"
+    $("#pricedown_price").click(function (){
+        order_val = 2;
+        order_key = 2;
+        hasmore = true;
+        $("#product_list").html('');
+        curpage = 1;
+        firstRow = 0;
+        get_list();
+    });
+    //价格从底到高 onclick="get_list({'order_val':'1','order_key':'2'})"
+    $("#priceup_price").click(function (){
+        order_val = 1;
+        order_key = 2;
+        hasmore = true;
+        $("#product_list").html('');
+        curpage = 1;
+        firstRow = 0;
+        get_list();
+    });
+
+
     //综合排序   onclick="get_list({'order_val':'0','order_key':'0'})"
     $("#default").click(function (){
         order_val = 0;
@@ -56,6 +110,8 @@ $(function () {
         $("#product_list").html('');
         curpage = 1;
         firstRow = 0;
+        $("#sort_price").addClass("hide")
+        $("#sort_prices").html("价格从高到底")
         get_list();
     });
     //价格从底到高 onclick="get_list({'order_val':'1','order_key':'2'})"
@@ -63,7 +119,9 @@ $(function () {
         order_val = 1;
         order_key = 2;
         hasmore = true;
+        $("#sort_price").addClass("hide")
         $("#product_list").html('');
+        $("#sort_prices").html("价格从底到高")
         curpage = 1;
         firstRow = 0;
         get_list();
@@ -78,19 +136,7 @@ $(function () {
         firstRow = 0;
         get_list();
     });
-    //销量优先
-    $("#sort_salesnum").click(function () {
-        order_val = 2;
-        order_key = 3;
-        $(this).addClass("current");
-        $("#sort_default").removeClass("current");
-        $("#sort_inner").addClass("hide").find("a").removeClass("cur");
-        hasmore = true;
-        $("#product_list").html('');
-        curpage = 1;
-        firstRow = 0;
-        get_list()
-    });
+
     $("#product_list").on("click", '[nc_type="goods_more_link"]', function () {
         var e = $(this).attr("param_id");
         if (e <= 0) {

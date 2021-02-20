@@ -555,23 +555,23 @@
         <% }}} %>
         
         <% if(promotion.xianshi){ for(var k=0; k < promotion.xianshi.length; k++){var xianshi = promotion.xianshi[k]; if(xianshi.shop_id != 0){%>
-        <div class="store-sale-block">
-            <a href="store_goods.html?shop_id=<%=shop_id %>">
-                <div class="store-sale-tit">
-                    <h3><%=xianshi.discount_name %></h3>
-                    <time><?= __('活动时间：'); ?> <%=xianshi.discount_start_time%> <?= __('至'); ?> <%=xianshi.discount_end_time%>
-                    </time>
-                </div>
-                <div class="sotre-sale-con">
-                    <ul class="xs">
-                        <li><?= __('单件活动商品满'); ?><em><%=xianshi.discount_lower_limit %></em><?= __('件即可享受折扣价。'); ?></li>
-                    </ul>
-                    <% if(xianshi.discount_explain){ %>
-                    <p class="note"><?= __('活动说明：'); ?> <%=xianshi.discount_explain %>
-                    </p>
-                    <% } %>
-            </a>
-        </div>
+	        <div class="store-sale-block">
+	            <a href="store_goods.html?shop_id=<%=shop_id %>">
+	                <div class="store-sale-tit">
+	                    <h3><%=xianshi.discount_name %></h3>
+	                    <time><?= __('活动时间：'); ?> <%=xianshi.discount_start_time%> <?= __('至'); ?> <%=xianshi.discount_end_time%>
+	                    </time>
+	                </div>
+	                <div class="sotre-sale-con">
+	                    <ul class="xs">
+	                        <li><?= __('单件活动商品满'); ?><em><%=xianshi.discount_lower_limit %></em><?= __('件即可享受折扣价。'); ?></li>
+	                    </ul>
+	                    <% if(xianshi.discount_explain){ %>
+	                    <p class="note"><?= __('活动说明：'); ?> <%=xianshi.discount_explain %>
+	                    </p>
+	                    <% } %>
+	            </a>
+	        </div>
         <% }}} %>
         
         <% }else{ %>
