@@ -602,7 +602,7 @@ include   '../includes/header.php';
             <% } %>
             <div class="flex special-bottom-box <% if(goods_info.promotion_type=='presale'){%> presale-bottom-btn <% }%>"   > <!-- !!!!!!!预售状态下此div添加class:presale-bottom-btn -->
                 <div class="otreh-handle special-bottom-oper-module">
-					<a class="operate btn-store" href="">
+					<a class="operate btn-store" href="../tmpl/store<%= store_info.shop_wap_index == 1 ? '' :store_info.shop_wap_index %>.html?shop_id=<%= store_info.store_id %>">
 						<i></i><span class="block">店铺</span>
 					</a>
                     <!--YF_IM <?= __('联系客服'); ?> kefu START -->

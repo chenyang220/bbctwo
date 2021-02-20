@@ -1,27 +1,27 @@
 <?php
 include __DIR__ . '/../includes/header.php';
-$token = isset($_GET['token']) ? $_GET['token'] : $_COOKIE['token']; //令牌
-$enterprise_id = isset($_GET['enterId']) ? $_GET['enterId'] : $_COOKIE['enterId']; //企业id
-if ($token && $enterprise_id != '') {
-    include_once __DIR__ . '/../simba/src/QuickOauth.class.php';
-    include_once __DIR__ .'/../simba/src/Api.class.php';
-    $quick_oauth = new simba\oauth\QuickOauth();
-    $hashkey = $quick_oauth->getHashkey($token);  // 获取hashKey
-    $result = $quick_oauth->getAccessToken($token, $enterprise_id, $hashkey);
-    $access_token = $result['access_token']; // 放入从授权入口或者快速授权入口获取到的access_token
-    $apiObj = new simba\oauth\Api();
-    $result = $apiObj->simba_user_info($access_token);
-    $u_id = '';
-    if($result['msgCode'] == 200){
-       $u_id = $result['result']['userNumber'];
-    }
-}
+// $token = isset($_GET['token']) ? $_GET['token'] : $_COOKIE['token']; //令牌
+// $enterprise_id = isset($_GET['enterId']) ? $_GET['enterId'] : $_COOKIE['enterId']; //企业id
+// if ($token && $enterprise_id != '') {
+//     include_once __DIR__ . '/../simba/src/QuickOauth.class.php';
+//     include_once __DIR__ .'/../simba/src/Api.class.php';
+//     $quick_oauth = new simba\oauth\QuickOauth();
+//     $hashkey = $quick_oauth->getHashkey($token);  // 获取hashKey
+//     $result = $quick_oauth->getAccessToken($token, $enterprise_id, $hashkey);
+//     $access_token = $result['access_token']; // 放入从授权入口或者快速授权入口获取到的access_token
+//     $apiObj = new simba\oauth\Api();
+//     $result = $apiObj->simba_user_info($access_token);
+//     $u_id = '';
+//     if($result['msgCode'] == 200){
+//        $u_id = $result['result']['userNumber'];
+//     }
+// }
 
 
-if ($_GET['qr']) {
-    setcookie('is_app_guest', 1, time() + 86400 * 366);
-    $_COOKIE['is_app_guest'] = 1;
-}
+// if ($_GET['qr']) {
+//     setcookie('is_app_guest', 1, time() + 86400 * 366);
+//     $_COOKIE['is_app_guest'] = 1;
+// }
 ?>
     <!DOCTYPE html>
     <html>
@@ -823,7 +823,7 @@ if ($_GET['qr']) {
             <% } %>
             <div class="flex special-bottom-box <% if(goods_info.promotion_type=='presale'){%> presale-bottom-btn <% }%>"   > <!-- !!!!!!!预售状态下此div添加class:presale-bottom-btn -->
                 <div class="otreh-handle special-bottom-oper-module">
-					<a class="operate btn-store" href="">
+					<a class="operate btn-store" href="store<%= store_info.shop_wap_index == 1 ? '' :store_info.shop_wap_index %>.html?shop_id=<%= store_info.store_id %>">
 						<i></i><span class="block">店铺</span>
 					</a>
                     <!--YF_IM <?= __('联系客服'); ?> kefu START -->
@@ -1129,12 +1129,13 @@ if ($_GET['qr']) {
             }
         });
 
-
+alert(getCookie("token"))
+alert(getCookie("enterId"))
         $(function () {
              //联系客服
             UC.config = {
                 // 开启调试模式
-                debug: false,
+                debug: true,
                 // 当前登录用户TOKEN，不传会默认从地址栏获取
                 token: getCookie("token"),
                 // 当前企业ID，不传会默认从地址栏获取
@@ -1156,7 +1157,7 @@ if ($_GET['qr']) {
         UC.ready = function () {
                 //在这调用接口方法
                 // openChat();
-                // getUserInfo();
+                getUserInfo();
                 // hideNavigationBarLeft();  
                 // setNavigationBarRight();
         };
@@ -1168,16 +1169,31 @@ if ($_GET['qr']) {
               'content': ''
             };
             UC.call(apiName, param, function (data) {
-              console.log('=========' + apiName + '=========');
-              console.log(JSON.stringify(data));
+              // console.log('=========' + apiName + '=========');
+              // console.log(JSON.stringify(data));
             }, function (data) {
-              console.log(data, apiName);
+              // console.log(data, apiName);
             });
         }
 
+ //获取用户信息
+  function getUserInfo () {
+    alert(UC)
+    var apiName = 'getUserInfo';
+    var param = '';
+    UC.call(apiName, param, function (data) {
+      console.log('=========' + apiName + '=========');
+      // console.log(JSON.stringify(data));
+           UC.debug.log("3"+JSON.stringify(data));
 
+            UC.debug.log(888888);
+    }, function (data) {
+          UC.debug.log(999);
+      // console.log(data, apiName);
+           // UC.debug.log("4"+data);
+    });
+  }
         function hideNavigationBarLeft () {
-            alert(1);
             var apiName = 'hideNavigationBarLeft';
             var param = '';
             UC.call(apiName, param, function (data) {
