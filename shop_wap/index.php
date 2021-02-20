@@ -227,10 +227,10 @@ include __DIR__ . '/includes/header.php';
             <p><%= item[i].navName %></p>
         </li>
         <% } %>
-		<li class="jf">
+		<!-- <li class="jf">
 			<span><a href="specials/index.html"><img src=""/></a></span>
 			<p>特色商城</p>
-		</li>
+		</li> -->
     </ul>
 </script>
 <script type="text/html" id="activityA">
