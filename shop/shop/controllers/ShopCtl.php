@@ -379,7 +379,16 @@ class ShopCtl extends Controller
         if ($shop_type == 2) {
             $ctl = 'Supplier_Goods';
         }
-
+        //品牌
+        $Goods_BrandModel = new Goods_BrandModel();
+        $goods_brand = $Goods_BrandModel->listByWhere(array(),array(),1,8);
+        $goods_brand = $goods_brand['items'];
+        $goods_brand_all = $Goods_BrandModel->listByWhere(array(),array(),1,100);
+        $goods_brand_all = $this->data_letter_sort($goods_brand_all['items'],'brand_initial');
+        //推荐品牌
+        $Goods_BrandModel = new Goods_BrandModel();
+        $goods_brands = $Goods_BrandModel->getByWhere(array('brand_recommend'=>1));
+        $goods_brands_all = $this->data_letter_sort($goods_brands,'brand_initial');
         //2.评分信息
         $shop_detail = $this->shopBaseModel->getShopDetail($shop_id);
         $shop_scores_num = ($shop_detail['shop_desc_scores'] + $shop_detail['shop_service_scores'] + $shop_detail['shop_send_scores']) / 3;
@@ -440,6 +449,35 @@ class ShopCtl extends Controller
                 }
                 $cond_row['shop_cat_id:like'] = '%' . ',' . $shop_cat_id . ',' . '%';
             }
+            $op1 = request_string('op1');
+            $op2 = request_string('op2');
+            $op3 = request_string('op3');
+
+            if ($op1) {
+                //仅显示有货
+                if ($op1 === 'havestock') {
+                    $cond_row['common_stock:>'] = 0;
+                }
+            }
+
+            $actgoods = request_int('actgoods',0);
+            if ($actgoods) {
+                //仅显示促销商品
+                $cond_row['common_is_xian'] = 1;
+            }
+
+            $own_shop = request_int('own_shop');
+            $other_shop = request_int('other_shop');
+            //自营店铺和入驻店铺同时选择，则不对该条搜索条件处理
+            if (($own_shop || $other_shop) && !($own_shop && $other_shop)) {
+                if ($own_shop) {
+                    $cond_row['shop_self_support'] = 1;
+                } else {
+                    $cond_row['shop_self_support'] = 0;
+                }
+            }
+
+
 
             if ($price_from) {
                 $cond_row['common_price:>='] = $price_from;
@@ -448,17 +486,26 @@ class ShopCtl extends Controller
             if ($price_to) {
                 $cond_row['common_price:<='] = $price_to;
             }
-
+            $virtual = request_int('virtual');
+            if ($virtual == 1) {
+                $cond_row['common_is_virtual'] = Goods_CommonModel::GOODS_VIRTUAL;
+            }
             if ($order) {
                 $order_row = array($order => $sort);
             }
-
+            //商品品牌
+            $brand_id = request_row('brand_id');
+            if (!is_array($brand_id)) {
+                $brand_id = explode(',', $brand_id);
+            }
+            if ($brand_id) {
+                $cond_row['brand_id:in'] = $brand_id;
+            }
             $cond_row['common_state'] = Goods_CommonModel::GOODS_STATE_NORMAL;
             $cond_row['common_verify'] = 1;
             if (request_string('type_wxapp') == 'wxapp' && request_string('type_wxapp')) {
                 $cond_row['common_is_tuan'] = 0;
             }
-
             if ($shop_goods_cat){
                 $datas = $Goods_CommonModel->getGoodsListByShopIds($shop_goods_cat_ids, $cond_row, $order_row, $page, $rows);
             }else{
@@ -489,7 +536,22 @@ class ShopCtl extends Controller
 
             }
 
-
+            $datas['goods_brand'] = $goods_brand;
+            foreach ($datas['goods_brand'] as $key =>$val){
+                $datas['goods_brand'][$key]['key'] = $key;
+                $datas['goods_brand'][$key]['checked'] = false;
+            }
+            $datas['goods_brand_all'] = $goods_brand_all;
+            array_pop($goods_brands_all);
+            $datas['goods_brands_all'] = array_values($goods_brands_all);
+            foreach ($datas['goods_brand_all'] as $key=>$val){
+                foreach ($val as $k=>$v){
+                    $datas['goods_brand_all'][$key][$k]['key'] = $k;
+                    $datas['goods_brand_all'][$key][$k]['checked'] = false;
+                }
+                
+            }
+            $datas['brand_info'] = array_values($goods_brand_all);
             $this->data->addBody(-140, $datas);
 
         } else {
@@ -497,6 +559,39 @@ class ShopCtl extends Controller
         }
 
     }
+
+//        按字母分组
+        function data_letter_sort($list, $field)
+        {
+            $resault = array();
+
+            foreach( $list as $key => $val )
+            {
+                // 添加 # 分组，用来 存放 首字母不能 转为 大写英文的 数据
+                $resault['#'] = array();
+                // 首字母 转 大写英文
+                $letter = strtoupper( substr($val[$field], 0, 1) );
+                // 是否 大写 英文 字母
+                if( !preg_match('/^[A-Z]+$/', $letter) )
+                {
+                    $letter = '#';
+                }
+                // 创建 字母 分组
+                if( !array_key_exists($letter, $resault) )
+                {
+                    $resault[$letter] = array();
+                }
+                // 字母 分组 添加 数据
+                Array_push($resault[$letter], $val);
+            }
+            // 依据 键名 字母 排序，该函数 返回 boolean
+            ksort($resault);
+            // 将 # 分组 放到 最后
+            $arr_last = $resault['#'];
+            unset($resault['#']);
+            $resault['#'] = $arr_last;
+            return $resault;
+        }
 
     public function getCommonList()
     {

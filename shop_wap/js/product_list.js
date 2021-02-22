@@ -247,7 +247,7 @@ function get_list() {
         }
        var  goods_brand_html = template.render("goods_brand", e.data);
         $("#goods_brands").html(goods_brand_html);
-
+console.log(e);
         brandsHtml=template.render("goods_brand_all", e.data);
         $(".loading").remove();
         brandsHtml2=template.render("goods_brands_all", e.data);
@@ -438,7 +438,6 @@ function search_adv() {
             if (r != "") {
                 e += "&ci=" + r
             }
-
             if (specials_search == 'specials') {
                 if (label_id) {
                     window.location.href = WapSiteUrl + "/specials/lists.html" + e + "&label_id=" + label_id
