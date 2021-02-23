@@ -1142,7 +1142,7 @@ if ($_GET['qr']) {
              //联系客服
             UC.config = {
                 // 开启调试模式
-                debug: true,
+                debug: false,
                 // 当前登录用户TOKEN，不传会默认从地址栏获取
                 token: getCookie("token"),
                 // 当前企业ID，不传会默认从地址栏获取
@@ -1164,7 +1164,7 @@ if ($_GET['qr']) {
         UC.ready = function () {
                 //在这调用接口方法
                 // openChat();
-                getUserInfo();
+                // getUserInfo();
                 // hideNavigationBarLeft();  
                 // setNavigationBarRight();
         };
@@ -1185,7 +1185,6 @@ if ($_GET['qr']) {
 
  //获取用户信息
   function getUserInfo () {
-    alert(UC)
     var apiName = 'getUserInfo';
     var param = '';
     UC.call(apiName, param, function (data) {
@@ -1193,9 +1192,9 @@ if ($_GET['qr']) {
       // console.log(JSON.stringify(data));
            UC.debug.log("3"+JSON.stringify(data));
 
-            UC.debug.log(888888);
+
     }, function (data) {
-          UC.debug.log(999);
+        
       // console.log(data, apiName);
            // UC.debug.log("4"+data);
     });
