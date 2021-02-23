@@ -91,24 +91,29 @@ function get_list() {
     } else {
         var url = ApiUrl + "/index.php?ctl=Shop_Index&met=index&typ=json&ua=wap&sub_site_id=0&k=" + k + "&u=" + u;
     }
-
-    $.getJSON(url, param, function (e) {
-        if (!e) {
-            e = [];
-            e.data.items = [];
+    $.ajax({
+        type: "post",
+        url:url,
+        data: param,
+        dataType: "json",
+        success: function (e) {
+            if (!e) {
+                e = [];
+                e.data.items = [];
+            }
+            var html = template.render("store-lists-area", e);
+            $(".store-lists-area").append(html);
+            curpage++;
+            if (e.data.page < e.data.total) {
+                firstRow = e.data.records;
+                hasmore = true;
+            } else {
+                hasmore = false;
+            }
+            var swiper = new Swiper('.store-item-goods', {
+                slidesPerView:"auto",
+            });
         }
-        var html = template.render("store-lists-area", e);
-        $(".store-lists-area").append(html);
-        curpage++;
-        if (e.data.page < e.data.total) {
-            firstRow = e.data.records;
-            hasmore = true;
-        } else {
-            hasmore = false;
-        }
-		var swiper = new Swiper('.store-item-goods', {
-			slidesPerView:"auto",
-		});
     })
 }
 

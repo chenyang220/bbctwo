@@ -170,7 +170,6 @@ class Shop_IndexCtl extends Controller
 	public function index()
 	{
 		$this->initData();
-
 		$cond_row = array();
 		$cond_row['shop_status'] = Shop_BaseModel::SHOP_STATUS_OPEN;
 		
@@ -286,7 +285,6 @@ class Shop_IndexCtl extends Controller
 		
 		$district = new Base_DistrictModel();
 		$district_data = $district->getDistrictTree(0);
- 
 		if ('json' == $this->typ)
 		{
 			$this->data->addBody(-140, $data);
