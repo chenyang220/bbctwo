@@ -248,13 +248,13 @@ die;
         $ucenter_user_info = current($ucenter_user_info_select);
         $ZkSms = new ZkSms();
         $getToken = $ZkSms->token($ucenter_user_info['token'],$ucenter_user_info['enterId']);
-        if ($resul['errcode'] == 0) {
+        if ($result['errcode'] == 0) {
              $content = "尊敬的用户" . $ucenter_user_info['user_name'] . ",编号为："  . $Union_Order['inorder'] . "的订单已成功退款";
         } else {
             $content = "尊敬的用户" . $ucenter_user_info['user_name'] . ",编号为："  . $Union_Order['inorder'] . "的订单退款失败，请稍后重试！";
         }
 
-
+file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($content,true),FILE_APPEND);
         $order_sql = "SELECT * from yf_order_base where order_id=" . $Union_Order['inorder'];
         $order_base = $db->find($order_sql);
         if ($getToken) {
