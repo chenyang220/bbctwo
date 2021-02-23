@@ -32,11 +32,12 @@ $(function () {
                 //分类
                 var category = resp.data.category;
                 if (category) {
-                    var cat_html = '<a href="' + WapSiteUrl + '/tmpl/pintuan_index.html?cat_id=0" class="swiper-slide">全部</a>';
+                    var cat_html = '<a href="' + WapSiteUrl + '/tmpl/pintuan_index.html?cat_id=0" class="swiper-slide active pintuan_all">全部</a>';
                     for (var i in category) {
                         var active_class = '';
                         if (resp.data.cat_id == category[i].cat_id) {
                             active_class = 'active';
+
                         }
                         cat_html = cat_html + '<a href="' + WapSiteUrl + '/tmpl/pintuan_index.html?cat_id=' + category[i].cat_id + '" class="swiper-slide ' + active_class + '">' + category[i].cat_name + '</a>';
                     }
@@ -45,7 +46,9 @@ $(function () {
                 }
                 //banner
                 var banner = resp.data.banner;
-                
+                if (cat_id != 0) {
+                    $(".pintuan_all").removeClass('active');
+                }
                 if (banner) {
                     var banner_html = '';
                     for (var a in banner) {
