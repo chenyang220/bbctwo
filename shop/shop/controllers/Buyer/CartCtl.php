@@ -279,8 +279,15 @@ class Buyer_CartCtl extends Controller
             $data['glist'] = $Points_CartModel->getOnePointsCartByWhere($cond_points_row, array());
         } else {
             $data['glist'] = $this->cartModel->getCardList($cond_row, array(), $is_discount);
+
+
+            if ($data['glist']['count'] == 0) {
+                $data['glist'] = array();
+            }
+      
         }
-        $catt_iid = current($data['glist'])['goods'][0]['goods_base']['cat_id'];
+file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($data['glist'] ,true),FILE_APPEND);
+        
         if (!$cart_type) {
             $data['user_rate'] = $user_rate;
         }
@@ -518,7 +525,11 @@ class Buyer_CartCtl extends Controller
             $data['cash_on_delivery_status'] = Web_ConfigModel::value('cash_on_delivery_status');
             $data['isPlus'] = $isPlus;
             $data['sumPlusGoods'] = $sumPlusGoods;
-            $data['glist'][0]['cat_id'] = $catt_iid;
+            if ($data['glist']) {
+                $catt_iid = current($data['glist'])['goods'][0]['goods_base']['cat_id'];
+                $data['glist'][0]['cat_id'] = $catt_iid;
+            }
+            
             $this->data->addBody(-140, $data);
         } else {
             include $this->view->getView();

@@ -175,7 +175,6 @@ Zepto(function () {
                 cart_type: cart_type
             },
             success: function (result) {
-                  console.log(result);
                 if (result.status == 250) {
                     Zepto.sDialog({
                         skin: "red",
@@ -191,9 +190,11 @@ Zepto(function () {
                 result.data.address_id = address_id;
                 result.data.WapSiteUrl = WapSiteUrl;
                 delete result.data.glist.count
-                var html = template.render('goods_list', result.data);
-
-                Zepto("#deposit").html(html);
+                if (result.data) {
+                    var html = template.render('goods_list', result.data);
+                    Zepto("#deposit").html(html);
+                }
+               
                 //判断是否是自营决定是否显示会员折扣
                 // if (Number(result.data.rate_service_status) == 1 && result.data.is_shop_self_support > 0) {
                 //     $("#support").hide();
