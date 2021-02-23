@@ -60,7 +60,7 @@ include   '../includes/header.php';
     	<div class="customize-feature-page-input">
 				<i class="iconfont icon-search"></i>
 				<div class="flex1">
-					<input class="placeholder-c1 wp100" type="text" placeholder="搜你想搜的">
+					<input name="search_text" class="placeholder-c1 wp100" type="text" placeholder="搜你想搜的">
 				</div>
 				<label for="search" id="search">搜索</label>
     	</div>
@@ -158,7 +158,8 @@ include   '../includes/header.php';
         // '<div class="rel"><b class="rmb">￥</b><strong>159.00</strong><em>330人付款</em></div></div></a></li>';             
        
 		$('#search').click(function(){
-			window.location.href="./lists.php?specials_search=specials";
+			var search_text = $("input[name='search_text']").val();
+			window.location.href="./lists.php?specials_search=specials&search=" + search_text;
 		})
 	</script>
 </body>

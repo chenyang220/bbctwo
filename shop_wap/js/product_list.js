@@ -30,6 +30,7 @@ var brandsHtml="";
 var brandHtml2="";
 var columns=1;
 var specials_search = getQueryString("specials_search");
+var search_text = getQueryString("search");
 var mb = getQueryString("mb");
 if (!getCookie('sub_site_id')) {
     addCookie('sub_site_id', 0, 0);
@@ -62,13 +63,6 @@ var ip_lat = '';
     geolocation.getCurrentPosition(function(r){
         if(this.getStatus() == BMAP_STATUS_SUCCESS){
             var mk = new BMap.Marker(r.point);
-            // if (ip_lng) {
-            //     lng = ip_lng;
-            // }
-
-            //  if (ip_lat) {
-            //     lat = ip_lat;
-            // }
             addCookie('lng', ip_lng);
             addCookie('lat', ip_lat);
         } else {
@@ -229,6 +223,12 @@ function get_list() {
     if(goods_brands_alls !=''){
         param.op1 = 'goods_brands_alls'
     }
+
+    if(specials_search == 'specials' && search_text != ''){
+        param.search_text = search_text;
+    }
+
+
     //定位到上次浏览的商品
     var goods_pos = getCookie('goods_pos');
     var key = getCookie('key');
@@ -247,7 +247,6 @@ function get_list() {
         }
        var  goods_brand_html = template.render("goods_brand", e.data);
         $("#goods_brands").html(goods_brand_html);
-console.log(e);
         brandsHtml=template.render("goods_brand_all", e.data);
         $(".loading").remove();
         brandsHtml2=template.render("goods_brands_all", e.data);
@@ -419,14 +418,6 @@ function search_adv() {
             if (brand_ids_str != '') {
                 e += '&brand_id='+ brand_ids_str;
             }
-
-
-            // if($("#goods_brand_alls")[0].className == "current"){
-            //     e += "&goods_brand_alls=1"
-            // }
-            // if($("#goods_brands_alls")[0].className == "current"){
-            //     e += '&goods_brands_alls =1'
-            // }
             if (typeof(cat_id) !== 'undefined' && cat_id !== '') {
                 e += "&cat_id=" + cat_id
             }

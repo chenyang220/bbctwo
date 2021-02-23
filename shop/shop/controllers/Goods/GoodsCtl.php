@@ -385,6 +385,12 @@
             if (request_string('mb') == "shop") {
                 $cond_row['shop_id'] = request_string('shop_id_search');
             }
+
+
+            if (trim(request_string('search_text')) != "") {
+                $cond_row['common_name:LIKE'] ='%' . urldecode(trim(request_string('search_text'))) . '%' ;
+            }
+
             $data = $Goods_CommonModel->getGoodsList($cond_row, $order_row, $page, $rows, $property_value_row);
 
             //店铺分类
