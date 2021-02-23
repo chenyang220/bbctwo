@@ -1,27 +1,27 @@
 <?php
 include __DIR__ . '/../includes/header.php';
-// $token = isset($_GET['token']) ? $_GET['token'] : $_COOKIE['token']; //令牌
-// $enterprise_id = isset($_GET['enterId']) ? $_GET['enterId'] : $_COOKIE['enterId']; //企业id
-// if ($token && $enterprise_id != '') {
-//     include_once __DIR__ . '/../simba/src/QuickOauth.class.php';
-//     include_once __DIR__ .'/../simba/src/Api.class.php';
-//     $quick_oauth = new simba\oauth\QuickOauth();
-//     $hashkey = $quick_oauth->getHashkey($token);  // 获取hashKey
-//     $result = $quick_oauth->getAccessToken($token, $enterprise_id, $hashkey);
-//     $access_token = $result['access_token']; // 放入从授权入口或者快速授权入口获取到的access_token
-//     $apiObj = new simba\oauth\Api();
-//     $result = $apiObj->simba_user_info($access_token);
-//     $u_id = '';
-//     if($result['msgCode'] == 200){
-//        $u_id = $result['result']['userNumber'];
-//     }
-// }
+$token = isset($_GET['token']) ? $_GET['token'] : $_COOKIE['token']; //令牌
+$enterprise_id = isset($_GET['enterId']) ? $_GET['enterId'] : $_COOKIE['enterId']; //企业id
+if ($token && $enterprise_id != '') {
+    include_once __DIR__ . '/../simba/src/QuickOauth.class.php';
+    include_once __DIR__ .'/../simba/src/Api.class.php';
+    $quick_oauth = new simba\oauth\QuickOauth();
+    $hashkey = $quick_oauth->getHashkey($token);  // 获取hashKey
+    $result = $quick_oauth->getAccessToken($token, $enterprise_id, $hashkey);
+    $access_token = $result['access_token']; // 放入从授权入口或者快速授权入口获取到的access_token
+    $apiObj = new simba\oauth\Api();
+    $result = $apiObj->simba_user_info($access_token);
+    $u_id = '';
+    if($result['msgCode'] == 200){
+       $u_id = $result['result']['userNumber'];
+    }
+}
 
 
-// if ($_GET['qr']) {
-//     setcookie('is_app_guest', 1, time() + 86400 * 366);
-//     $_COOKIE['is_app_guest'] = 1;
-// }
+if ($_GET['qr']) {
+    setcookie('is_app_guest', 1, time() + 86400 * 366);
+    $_COOKIE['is_app_guest'] = 1;
+}
 ?>
     <!DOCTYPE html>
     <html>
@@ -52,6 +52,16 @@ include __DIR__ . '/../includes/header.php';
         .s-dialog-btn-cancel {
             border-left-width: 0px !important;
         }
+        #poster_pic {
+    position: fixed;
+    top: 0;
+    width: 79.4%;
+    background-color: #fff;
+    border-radius: 0.454rem;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
     </style>
     <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
     <script type="text/javascript">
@@ -1128,9 +1138,6 @@ include __DIR__ . '/../includes/header.php';
                 }
             }
         });
-
-alert(getCookie("token"))
-alert(getCookie("enterId"))
         $(function () {
              //联系客服
             UC.config = {
