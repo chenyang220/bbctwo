@@ -284,7 +284,7 @@
          * @return array $rows 返回的查询内容
          * @access public
          */
-        public function getGoodsList($cond_row = array(), $order_row = array(), $page = 1, $rows = 10, $property_value_row = array(),$del_flg = true)
+        public function getGoodsList($cond_row = array(), $order_row = array(), $page = 1, $rows = 10000, $property_value_row = array(),$del_flg = true)
         {
             if($del_flg == true){
                 $cond_row['is_del'] = self::IS_DEL_NO;

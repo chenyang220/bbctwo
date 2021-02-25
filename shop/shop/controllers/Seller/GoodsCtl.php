@@ -958,7 +958,6 @@
                     } elseif ($shop_base['shop_type'] == 1 && $common_base['product_is_allow_update'] == 0 && $common_base['product_is_allow_price'] == 0) {
                         $common_data = array();
                     }
-
                     $edit_status = $this -> goodsCommonModel -> editCommon($common_id, $common_data);
                     //获取供应商商品对应的店家商品common_id,修改库存
                     foreach ($commons as $common) {

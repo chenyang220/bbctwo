@@ -315,11 +315,11 @@
             if ($act === 'evaluate') {
                 $order_row['common_evaluate'] = $actorder;
             }
-            // $label_id = request_string('label_id');
-            // //评论数
-            // if ($label_id > 0) {
-            //     $cond_row['label_id:like'] = '%'.$label_id.'%';
-            // }
+            $label_id = request_string('label_id');
+            //评论数
+            if ($label_id) {
+                $cond_row['label_id'] = $label_id;
+            }
             $op1 = request_string('op1');
             $op2 = request_string('op2');
             $op3 = request_string('op3');
@@ -390,9 +390,7 @@
             if (trim(request_string('search_text')) != "") {
                 $cond_row['common_name:LIKE'] ='%' . urldecode(trim(request_string('search_text'))) . '%' ;
             }
-
             $data = $Goods_CommonModel->getGoodsList($cond_row, $order_row, $page, $rows, $property_value_row);
-
             //店铺分类
             $shop_goods_cat_id = request_int('shop_goods_cat_id');
             if($shop_goods_cat_id){
@@ -419,7 +417,7 @@
             $data['label_name_arr'] = $label_name_arr;
 
 
-      
+
             // 商品参加促销活动，即显示促销价，取消原价显示
             $Goods_BaseModel = new Goods_BaseModel();
             if (!empty($data['items'])) {
@@ -449,9 +447,6 @@
                    // if (empty($v['good'])){
                    //      unset($data['items'][$k]);
                    // }
-
-             
-                   
                     // 如果商品不存在，即删除$k
                     if (!empty(request_string('label_id')) && (!trim($v['label_id']) || !in_array(request_string('label_id'), $label_id_arr))){
                         unset($data['items'][$k]);
