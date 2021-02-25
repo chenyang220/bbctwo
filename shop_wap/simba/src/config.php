@@ -16,7 +16,8 @@ $_config = array(
     'action_quick_oauth' => 'oauth/openAuthorizePersonal', //快速授权
     'scope' => 'read',
     'response_type' => 'code',
-    'redirect_uri' => 'http://zwap.yuanfengshop.com?token=#TOKEN&enterId=#ENTERID&hashkey=#HASHKEY', //回调地址
+    // 'redirect_uri' => 'http://zwap.yuanfengshop.com?token=#TOKEN&enterId=#ENTERID&hashkey=#HASHKEY', //回调地址
+        'redirect_uri' => 'https://ms.look56.com?token=#TOKEN&enterId=#ENTERID&hashkey=#HASHKEY', //回调地址
     /* 模板消息参数 */
     'type_code' => 'cloud-disk',
     'template_code' => 'cloud-disk_general',

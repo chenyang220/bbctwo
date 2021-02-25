@@ -315,11 +315,11 @@
             if ($act === 'evaluate') {
                 $order_row['common_evaluate'] = $actorder;
             }
-            $label_id = request_string('label_id');
-            //评论数
-            if ($label_id > 0) {
-                $cond_row['label_id:like'] = '%'.$label_id.'%';
-            }
+            // $label_id = request_string('label_id');
+            // //评论数
+            // if ($label_id > 0) {
+            //     $cond_row['label_id:like'] = '%'.$label_id.'%';
+            // }
             $op1 = request_string('op1');
             $op2 = request_string('op2');
             $op3 = request_string('op3');
@@ -417,10 +417,14 @@
             $Label_Base = $Label_BaseModel->getByWhere("*");
             $label_name_arr = array_column($Label_Base, "label_name","id");
             $data['label_name_arr'] = $label_name_arr;
+
+
+      
             // 商品参加促销活动，即显示促销价，取消原价显示
             $Goods_BaseModel = new Goods_BaseModel();
             if (!empty($data['items'])) {
                foreach ($data['items'] as $k=>$v) {
+                    $label_id_arr = '';
                     $label_name = [];
                     if (trim($v['label_id'])) {
                         $label_id_arr = explode(",", trim($v['label_id']));
@@ -430,6 +434,7 @@
                     } else {
                         $label_name = '';
                     }
+
                     $data['items'][$k]['label_name'] = $label_name;
                     $goods_detail = $Goods_BaseModel->getGoodsDetailInfoByGoodId($v['goods_id']);
                     if ($goods_detail['goods_base']['promotion_price']) {
@@ -444,6 +449,13 @@
                    // if (empty($v['good'])){
                    //      unset($data['items'][$k]);
                    // }
+
+             
+                   
+                    // 如果商品不存在，即删除$k
+                    if (!empty(request_string('label_id')) && (!trim($v['label_id']) || !in_array(request_string('label_id'), $label_id_arr))){
+                        unset($data['items'][$k]);
+                    }
                }
            }
     

@@ -39,8 +39,11 @@ include __DIR__ . '/includes/header.php';
 <script type="text/javascript" src="js/ucsdk.min.js"></script>
 <script type="text/javascript" src="js/cookie.js"></script>
 <script type="text/javascript">
+alert("<?=$_GET['token']?>")
     if (getCookie("token") == "undefined" || getCookie("token") == null   ||  "<?=$_GET['token']?>" != '') {
         setCookie("token","<?=$_GET['token']?>");
+
+         // alert(getCookie("token"))
     }
 
     if (getCookie("enterId")  == "undefined" || getCookie("enterId") == null   ||  "<?=$_GET['enterId']?>" != '') {
@@ -77,6 +80,7 @@ include __DIR__ . '/includes/header.php';
             <b class="iconfont icon-search"></b>
             <span class="search-input" id="keyword" ><?php echo __('搜你想搜的'); ?></span>	
             <em class="zk-index-search fr">搜索</em>
+
         </a> 
         <?php if ($_COOKIE['is_app_guest']) { ?> 
             <a class="qrcode_open scan ml-20 iblock tc" href="/qrcode_open">
@@ -87,6 +91,7 @@ include __DIR__ . '/includes/header.php';
 		<!-- <a id="header-nav" class="message colf" href="tmpl/message.html"><i></i><b id="is_look"></b></a> -->
         </span>
     </div>
+     
     <div class="clearfix index-head-top-nav">
            <ul class="flex-layout category-head" id="category-head"></ul>
     </div>
@@ -95,6 +100,7 @@ include __DIR__ . '/includes/header.php';
         <i></i></a>
     </div>
 </div>
+
 <div id="serch_down" class="" style="display: none">
 
 </div>
@@ -102,6 +108,7 @@ include __DIR__ . '/includes/header.php';
 <div class="bgf">
     <div id="main-container1" class="fz0"></div>
 </div>
+
 <div class="nctouch-home-layout" id="main-container2"></div>
 <div class="guess-like guess-like-module" id="favourite"></div>
 
@@ -109,7 +116,12 @@ include __DIR__ . '/includes/header.php';
 <!-- 底部 -->
 <?php include __DIR__ . '/includes/footer_menu.php'; ?>
 <script type="text/html" id="category-one">
-     <li class="flex"><a class="cur">首页</a></li>
+     <li class="flex">
+ <!-- <a href="<%= WapSiteUrl %>/tmpl/ceshi.html?token=<?php echo $_GET['token'];?>&enterId=0">测试</a> -->
+
+  <a href="<%= WapSiteUrl %>/tmpl/ceshi.html?token=a0fuy3iu2q307ai3&enterId=0">测试</a>
+        <a class="cur">首页</a>
+    </li>
      <% for(var i = 0;i<items.length;i++){ %>
     <li class="flex"><a href="<%= WapSiteUrl %>/tmpl/product_list.html?cat_id=<%= items[i].cat_id %>"><%= items[i].cat_name %></a></li>
     <% } %>
