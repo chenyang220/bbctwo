@@ -315,11 +315,11 @@
             if ($act === 'evaluate') {
                 $order_row['common_evaluate'] = $actorder;
             }
-            $label_id = request_string('label_id');
-            //评论数
-            if ($label_id) {
-                $cond_row['label_id'] = $label_id;
-            }
+            // $label_id = request_string('label_id');
+            // //评论数
+            // if ($label_id) {
+            //     $cond_row['label_id'] = $label_id;
+            // }
             $op1 = request_string('op1');
             $op2 = request_string('op2');
             $op3 = request_string('op3');
