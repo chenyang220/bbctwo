@@ -377,6 +377,8 @@
                         $formvars['reason'] = '退款';
                         $formvars['order_id'] = $order_base['order_id'];
                         $formvars['goods_id'] = $return['order_goods_id'];
+
+
                         $rs = get_url_with_encrypt($key, sprintf('%s?ctl=Api_User_Info&met=editReturnUserResourceInfo&typ=json', Yf_Registry::get('paycenter_api_url')), $formvars);
                         
                         $dist_rs['status'] = 200;
@@ -434,6 +436,15 @@
                         $status = $data_row['status'];
                         $msg = $data_row['msg'];
                         if ( $status != 200) {
+                                                            $data1['return_state'] = Order_ReturnModel::RETURN_WAIT_PASS;
+                                $data1['return_shop_handle'] = 1;
+                                $rs_row = array();
+                                $edit_flag = $this->orderReturnModel->editReturn($order_return_id, $data1);
+
+           
+file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($order_return_id,true),FILE_APPEND);
+file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($data1,true),FILE_APPEND);
+file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($edit_flag,true),FILE_APPEND);
                             $this->data->addBody(-140, array(),"退款失败！", $status);
                             return false;
                         }
@@ -712,10 +723,11 @@
                         $key = Yf_Registry::get('shop_api_key');
                         $url = Yf_Registry::get('paycenter_api_url');
                         $uorderinfo  = get_url_with_encrypt($key, sprintf('%s?ctl=Api_Pay_Pay&met=getVeUordersBy&typ=json', $url), $formvars);
+                             $this->Order_ReturnModel->sql->rollBackDb();
                         if($uorderinfo["status"] == "200"){
                            $uorder = $uorderinfo["data"] ;
                         }else{
-                            $this->Order_ReturnModel->sql->rollBackDb();
+                       
                              $data  = array();
                              $msg = "订单信息不完整，无法在线退款" ;
                              $status = 250 ;
@@ -861,7 +873,6 @@
                         $url = Yf_Registry::get('paycenter_api_url');
 
                         $return_rs = get_url_with_encrypt($key, sprintf('%s?ctl=Api_Pay_Pay&met=refundShopTransfer&typ=json', $url), $formvars);
-
                         if ($return_rs['status'] != 200) {
                             check_rs(false, $rs_row);
                         }
@@ -905,6 +916,8 @@
                         }
                         //平台同意退款（只增加买家的流水）
                         $rs = get_url_with_encrypt($key, sprintf('%s?ctl=Api_Pay_Pay&met=refundBuyerTransfer&typ=json', $url), $formvars);
+
+                        file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($rs,true),FILE_APPEND);
                         $data['for'] = $formvars;
                         if ($rs['status'] == 200) {
                             check_rs(true, $rs_row);
@@ -972,17 +985,17 @@
                     }
                 }
                 $data['rs'] = $rs_row;
+
+           
                 $flag = is_ok($rs_row);
             } else {
                 $flag = false;
                 $data = array();
 
             }
-
             if ($flag && $Order_ReturnModel->sql->commitDb()) {
                 $status = 200;
                 $msg = __('success');
-
                 /**
                  *  加入统计中心
                  */
@@ -1014,7 +1027,6 @@
                 $Order_ReturnModel->sql->rollBackDb();
                 $status = 250;
                 $msg = __('failure');
-
             }
 
 

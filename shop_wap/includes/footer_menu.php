@@ -15,9 +15,9 @@
 //	'我的'=>'/tmpl/member/member.html',
 //];
 ?>
-<!--    <div class="footer bort1 " id="footer-template-bort1">
+   <div class="footer bort1 " id="footer-template-bort1">
 
-    </div> -->
+    </div>
 
 <script id="footer-template" type="text/template">
      <ul class="clearfix 4444444">

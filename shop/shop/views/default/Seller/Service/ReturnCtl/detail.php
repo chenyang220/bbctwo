@@ -18,7 +18,6 @@
                 } ?></a></li>
             <li class=" active"><a href="javascript:void(0);"><?= __('查看详情') ?></a></li>
         </ul>
-    
     </div>
     
     
@@ -308,6 +307,7 @@
     </div>
     <link href="./shop/static/common/css/jquery/plugins/dialog/green.css" rel="stylesheet">
     <script type="text/javascript" src="<?= $this->view->js_com ?>/plugins/jquery.dialog.js"></script>
+
     <script>
         var order_return_id = $('#order_return_id').val();
         $(document).ready(function () {
@@ -348,6 +348,9 @@
                 }
 
             }).on("click", "#handle_submit", function (e) {
+
+                 $("#handle_submit").attr("disabled", true).attr("value", 
+"提交中..."); 
                 ajax_url = SITE_URL + '?ctl=Seller_Service_Return&met=agreeReturn&typ=json';
                 $(e.delegateTarget).trigger("validate");
             }).on("click", "#handle_close", function (e) {

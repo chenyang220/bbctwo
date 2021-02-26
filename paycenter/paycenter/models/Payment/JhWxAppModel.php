@@ -239,7 +239,6 @@ die;
             $open_id = $this->open_id;
         }
         $result=$this->api($url,$data,$open_key,$timestamp,$open_id);
-
         //付款成功提醒 
         /*中酷消息推送begin*/
         $db = new YFSQL();       

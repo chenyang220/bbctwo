@@ -729,7 +729,7 @@
             } else {
 
                 //查找合并单中的付款情况，购物卡优先退款
-               $uorder_base = $Union_OrderModel->getOne ($uorder_id);
+                $uorder_base = $Union_OrderModel->getOne ($uorder_id);
                 $pay_codes = Yf_Registry::get('pay_config')['pay_code'];
                 if($reason == '退款'){
                     if(in_array($uorder_base['payment_channel_code'],$pay_codes['alipay_code'])){
@@ -743,8 +743,8 @@
                     }
                 }
 
-               $time = time();
-               $flow_id = time();
+                $time = time();
+                $flow_id = time();
 
                 //插入收款方的交易记录
                 $record_add_buy_row = array();
@@ -795,6 +795,7 @@
                             'return_goods_name'=> $order_return_info['order_goods_name'],
                         ];
                         $refundModel = new refundModel();
+                        //正式退款
                         $flag = $refundModel->refundSingle($arr);
                     }
                 } else{
@@ -850,7 +851,9 @@
                 $m = $Consume_RecordModel->msg->getMessages();
                 $msg = $m ? $m[0] : 'failure777';
                 $status = 250;
+                $date['status'] = 250;
             }
+
             $this->data->addBody(-140, $date, $msg, $status);
         }
         
