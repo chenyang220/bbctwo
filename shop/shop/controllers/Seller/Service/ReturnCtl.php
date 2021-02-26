@@ -440,11 +440,6 @@
                                 $data1['return_shop_handle'] = 1;
                                 $rs_row = array();
                                 $edit_flag = $this->orderReturnModel->editReturn($order_return_id, $data1);
-
-           
-file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($order_return_id,true),FILE_APPEND);
-file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($data1,true),FILE_APPEND);
-file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($edit_flag,true),FILE_APPEND);
                             $this->data->addBody(-140, array(),"退款失败！", $status);
                             return false;
                         }
