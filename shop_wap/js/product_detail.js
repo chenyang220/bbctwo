@@ -330,7 +330,7 @@ $(function () {
         //渲染页面
         $.ajax({
             url: ApiUrl + "/index.php?ctl=Goods_Goods&met=goods&typ=json",
-            type: "get",
+            type: "post",
             data: {goods_id: goods_id, k: key, u: getCookie("id"), cid: cid, lbs_geo: lbs_geo, ua: "wap"},
             dataType: "json",
             success: function (result) {
