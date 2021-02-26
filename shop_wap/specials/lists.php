@@ -49,14 +49,47 @@
     <ul id="nav_ul">
         <li><a href="javascript:void(0);" class="current" id="sort_default"><?= __('综合'); ?><i></i></a></li>
         <li><a href="javascript:void(0);" class="" onclick="init_get_list('sale', 'DESC')"><?= __('销量'); ?></a></li>
-		<li><a href="javascript:void(0);" class="">价格</a></li>
+        <li><a href="javascript:void(0);" class="" id="sort_prices">价格</a></li>
         
     </ul>
     <div class="ser-adv flex1"><a href="javascript:void(0);" id="search_adv"><?= __('筛选'); ?><i></i></a></div>
 </div>
 
 <div id="sort_inner" class="goods-sort-inner hide">
-    <span><a href="javascript:void(0);" class="cur" onclick="init_get_list('', '')"><?= __('综合'); ?><i></i></a></span> <span><a href="javascript:void(0);" onclick="init_get_list('evaluate', 'DESC')"><?= __('评价排序'); ?><i></i></a></span> <span><a href="javascript:void(0);" onclick="init_get_list('price', 'DESC')"><?= __('价格从高到低'); ?><i></i></a></span> <span><a href="javascript:void(0);" onclick="init_get_list('price', 'ASC')"><?= __('价格从低到高'); ?><i></i></a></span>
+    <span>
+        <a href="javascript:void(0);" class="cur" onclick="init_get_list('', '')"><?= __('综合'); ?>
+            <i></i>
+        </a>
+    </span> 
+    <span>
+        <a href="javascript:void(0);" onclick="init_get_list('evaluate', 'DESC')"><?= __('评价排序'); ?>
+            <i></i>
+        </a>
+    </span> 
+    <!-- <span>
+        <a href="javascript:void(0);" onclick="init_get_list('price', 'DESC')"><?= __('价格从高到低'); ?>
+            <i></i>
+        </a>
+    </span> 
+    <span>
+        <a href="javascript:void(0);" onclick="init_get_list('price', 'ASC')"><?= __('价格从低到高'); ?>
+            <i></i>
+        </a>
+    </span> -->
+</div>
+
+
+<div id="sort_price" class="goods-sort-inner hide borb1"  style="">
+    <span>
+        <a href="javascript:void(0);" onclick="init_get_list('price', 'DESC')"><?= __('价格从高到低'); ?>
+            <i></i>
+        </a>
+    </span> 
+    <span>
+        <a href="javascript:void(0);" onclick="init_get_list('price', 'ASC')"><?= __('价格从低到高'); ?>
+            <i></i>
+        </a>
+    </span>
 </div>
 
 <div class="customize-feature-goods-list-contents customize-goods-lists bgf">
@@ -154,114 +187,112 @@
 <script type="text/html" id="home_body">
     <% var common_list = data.items; %>
     <% if(common_list.length >0){%>
-    <%for(j=0;j < common_list.length;j++){%>
-    <%  var goods_list = common_list[j].good; var pos = (data.page-1)*pagesize+1+j;%>
-    <% if(typeof(goods_list)!=='undefined' && goods_list.length >0){%>
-    <%for(i=0;i<1;i++){%>
-    <li class="item" goods_id="<%=goods_list[i].goods_id;%>" id="goods_pos_<%=pos;%>">
-		<div class="pad">
-				<span class="goods-pic">
-					<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
-                        <img src="<%= image_cdn(goods_list[i].goods_image); %>"/>
-                        <% if(common_list[j].promotion_type=='presale'){%>
-                        <b class="presale-list-logs">预售</b>
+        <%for(j=0;j < common_list.length;j++){%>
+        <%  var goods_list = common_list[j].good; var pos = (data.page-1)*pagesize+1+j;%>
+        <% if(typeof(goods_list)!=='undefined' && goods_list.length >0){%>
+        <%for(i=0;i<1;i++){%>
+        <li class="item" goods_id="<%=goods_list[i].goods_id;%>" id="goods_pos_<%=pos;%>">
+    		<div class="pad">
+    				<span class="goods-pic">
+    					<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
+                            <img src="<%= image_cdn(goods_list[i].goods_image); %>"/>
+                            <% if(common_list[j].promotion_type=='presale'){%>
+                            <b class="presale-list-logs">预售</b>
+                            <% } %>
+                        </a>
+    				</span>
+    			<dl class="goods-info relative">
+    				<dt class="goods-name">
+                        <% if(common_list[j].third_url){%>
+    <a href="javascript:void(0);"  onClick="urlu('<%=common_list[j].third_url%>');">
+                        <% } else {%>
+                        <a href="<%=data.label_url%>.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
                         <% } %>
-                    </a>
-				</span>
-			<dl class="goods-info relative">
-				<dt class="goods-name">
-                    <% if(common_list[j].third_url){%>
-<a href="javascript:void(0);"  onClick="urlu('<%=common_list[j].third_url%>');">
-                    <% } else {%>
-                    <a href="<%=data.label_url%>.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
-                    <% } %>
-					
+    					
 
-						<h4><%=goods_list[i].goods_name;%></h4>
-						<h6><%=goods_list[i].goods_jingle;%></h6>
-					</a>
-				</dt>
+    						<h4><%=goods_list[i].goods_name;%></h4>
+    						<h6><%=goods_list[i].goods_jingle;%></h6>
+    					</a>
+    				</dt>
 
-				<dd class="goods-sale">
-                               <% if(common_list[j].third_url){%>
-<a href="javascript:void(0);"  onClick="urlu('<%=common_list[j].third_url%>');">
-                    <% } else {%>
-                                <a href="<%=data.label_url%>.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
-                    <% } %>
-	
-					<% if(common_list[j].label_name){%>
-					<p class="label">
+    				<dd class="goods-sale">
+                                   <% if(common_list[j].third_url){%>
+    <a href="javascript:void(0);"  onClick="urlu('<%=common_list[j].third_url%>');">
+                        <% } else {%>
+                                    <a href="<%=data.label_url%>.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
+                        <% } %>
+    	
+    					<% if(common_list[j].label_name){%>
+    					<p class="label">
 
-						<%for(label_id in common_list[j].label_name){%>
-                    	<label class="label-item"><%=common_list[j].label_name[label_id]%></label>
-                    	<% } %>
-				    </p>                    	
-                    <% } %>
-					<p>
-						<span class="goods-price"><b><?= __('￥'); ?></b><em><%=goods_list[i].goods_price;%></em>
-							<%
-								if (goods_list[i].sole_flag) {
-							%>
-								<span class="phone-sale"><i></i><?= __('手机专享'); ?></span>
-							<%
-								}
-							%>
-						</span>
-						<b class="had-sale"><%=common_list[j].common_salenum;%>人付款</b>
-					</p>
-				
-						<% if (goods_list[i].is_virtual == '1') { %> <span class="sale-type"><?= __('虚拟'); ?></span> <% } else { %> <% if (goods_list[i].is_presell == '1') { %> <span class="sale-type"><?= __('预'); ?></span> <% } %> <% if (goods_list[i].is_fcode == '1') { %> <span class="sale-type">F</span> <% } %> <% } %>
-						
-						<% if(goods_list[i].group_flag || goods_list[i].xianshi_flag){ %> <span class="sale-type"><?= __('降'); ?></span> <% } %> <% if(goods_list[i].have_gift == '1'){ %> <span class="sale-type"><?= __('赠'); ?></span> <% } %> </a>
-						<!-- 3.6.7-plus会员价 -->
-						<%if(common_list[j].plus_status){%>
-						 <em class="plus-pri"><?= __('￥'); ?><%=common_list[j].plus_price;%></em><b class="plus-logo"></b>
-						<%}%>
-				</dd>
-				<dd class="goods-assist fz0">
-					<a href="../tmpl/store<%= common_list[j].shop_wap_index == 1 ? '' :common_list[j].shop_wap_index %>.html?shop_id=<%=common_list[j].shop_id %>">
-						<span><%=common_list[j].shop_name;%></span><i class="iconfont icon-arrow-right"></i>
-					</a>
-					<!-- <a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
-						<span class="goods-sold"><?= __('销量'); ?>
-							<em><%=common_list[j].common_salenum;%></em>
-						</span>
-						<span class="goods-sold"><?= __('评论'); ?>
-							<em><%=common_list[j].common_evaluate;%></em>
-						</span>
-					</a> -->
-					<!--<div class="goods-store">
-						<% if (goods_list[i].is_own_shop == '1') { %> <span class="mall"><?= __('自营'); ?></span> <% } else { %>
-						<a href="javascript:void(0);" data-id='<%=goods_list[i].shop_id;%>'><%=goods_list[i].store_name;%><i></i></a> <% } %>
-						<div class="sotre-creidt-layout" style="display: none;"></div>
-					</div>-->
-				</dd>
-			   <% if (common_list[j].common_is_directseller == '1' && data.distributor_open==1) { %>
-				 <span class="make_money">
-					<li>分享赚</li>
-					<% if (data.distributor_type==1) { %>
-						<li>￥<%=common_list[j].common_a_first%></li>
-					<% }else{ %>
-						<li>￥<%=common_list[j].common_c_first%></li>
-					<% } %>
-				</span>
-				<% } %>
-			</dl>
-       </div>
-    </li><%}%><%}%><% } %>
-   <!-- <li class="loading">
-        <div class="spinner"><i></i></div>
-        <?= __('商品数据读取中'); ?>...
-    </li> -->
+    						<%for(label_id in common_list[j].label_name){%>
+                        	<label class="label-item"><%=common_list[j].label_name[label_id]%></label>
+                        	<% } %>
+    				    </p>                    	
+                        <% } %>
+    					<p>
+    						<span class="goods-price"><b><?= __('￥'); ?></b><em><%=goods_list[i].goods_price;%></em>
+    							<%
+    								if (goods_list[i].sole_flag) {
+    							%>
+    								<span class="phone-sale"><i></i><?= __('手机专享'); ?></span>
+    							<%
+    								}
+    							%>
+    						</span>
+    						<b class="had-sale"><%=common_list[j].common_salenum;%>人付款</b>
+    					</p>
+    				
+    						<% if (goods_list[i].is_virtual == '1') { %> <span class="sale-type"><?= __('虚拟'); ?></span> <% } else { %> <% if (goods_list[i].is_presell == '1') { %> <span class="sale-type"><?= __('预'); ?></span> <% } %> <% if (goods_list[i].is_fcode == '1') { %> <span class="sale-type">F</span> <% } %> <% } %>
+    						
+    						<% if(goods_list[i].group_flag || goods_list[i].xianshi_flag){ %> <span class="sale-type"><?= __('降'); ?></span> <% } %> <% if(goods_list[i].have_gift == '1'){ %> <span class="sale-type"><?= __('赠'); ?></span> <% } %> </a>
+    						<!-- 3.6.7-plus会员价 -->
+    						<%if(common_list[j].plus_status){%>
+    						 <em class="plus-pri"><?= __('￥'); ?><%=common_list[j].plus_price;%></em><b class="plus-logo"></b>
+    						<%}%>
+    				</dd>
+    				<dd class="goods-assist fz0">
+    					<a href="../tmpl/store<%= common_list[j].shop_wap_index == 1 ? '' :common_list[j].shop_wap_index %>.html?shop_id=<%=common_list[j].shop_id %>">
+    						<span><%=common_list[j].shop_name;%></span><i class="iconfont icon-arrow-right"></i>
+    					</a>
+    					<!-- <a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
+    						<span class="goods-sold"><?= __('销量'); ?>
+    							<em><%=common_list[j].common_salenum;%></em>
+    						</span>
+    						<span class="goods-sold"><?= __('评论'); ?>
+    							<em><%=common_list[j].common_evaluate;%></em>
+    						</span>
+    					</a> -->
+    					<!--<div class="goods-store">
+    						<% if (goods_list[i].is_own_shop == '1') { %> <span class="mall"><?= __('自营'); ?></span> <% } else { %>
+    						<a href="javascript:void(0);" data-id='<%=goods_list[i].shop_id;%>'><%=goods_list[i].store_name;%><i></i></a> <% } %>
+    						<div class="sotre-creidt-layout" style="display: none;"></div>
+    					</div>-->
+    				</dd>
+    			   <% if (common_list[j].common_is_directseller == '1' && data.distributor_open==1) { %>
+    				 <span class="make_money">
+    					<li>分享赚</li>
+    					<% if (data.distributor_type==1) { %>
+    						<li>￥<%=common_list[j].common_a_first%></li>
+    					<% }else{ %>
+    						<li>￥<%=common_list[j].common_c_first%></li>
+    					<% } %>
+    				</span>
+    				<% } %>
+    			</dl>
+           </div>
+        </li><%}%><%}%><% } %>
+
 	<%}else {%>
-    <div class="nctouch-norecord search">
-        <div class="norecord-ico"><i></i></div>
-        <dl>
-            <dt><?= __('没有找到任何相关信息'); ?></dt>
-            <dd><?= __('选择或搜索其它商品分类'); ?>/<?= __('名称'); ?>...</dd>
-        </dl>
-        <a href="javascript:history.go(-1)" class="btn"><?= __('重新选择'); ?></a>
-    </div><%}%>
+        <div class="nctouch-norecord search">
+            <div class="norecord-ico"><i></i></div>
+            <dl>
+                <dt><?= __('没有找到任何相关信息'); ?></dt>
+                <dd><?= __('选择或搜索其它商品分类'); ?>/<?= __('名称'); ?>...</dd>
+            </dl>
+            <a href="javascript:history.go(-1)" class="btn"><?= __('重新选择'); ?></a>
+        </div>
+    <%}%>
 </script>
 
 <!-- 查看全部品牌[按照字母排序] -->

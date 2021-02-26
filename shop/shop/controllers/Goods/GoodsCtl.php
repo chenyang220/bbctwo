@@ -387,7 +387,7 @@
             }
 
 
-            if (trim(request_string('search_text')) != "") {
+            if (trim(request_string('search_text')) != "" && trim(request_string('search_text')) != "*") {
                 $cond_row['common_name:LIKE'] ='%' . urldecode(trim(request_string('search_text'))) . '%' ;
             }
             $data = $Goods_CommonModel->getGoodsList($cond_row, $order_row, $page, $rows, $property_value_row);
@@ -415,9 +415,6 @@
             $Label_Base = $Label_BaseModel->getByWhere("*");
             $label_name_arr = array_column($Label_Base, "label_name","id");
             $data['label_name_arr'] = $label_name_arr;
-
-
-
             // 商品参加促销活动，即显示促销价，取消原价显示
             $Goods_BaseModel = new Goods_BaseModel();
             if (!empty($data['items'])) {
@@ -569,6 +566,8 @@
                     $data['items'][$k]['common_c_first'] = number_format($goods_common_c['common_c_first'] * $goods_common_c['common_price'] / 100, 2);
                 }
             }
+
+
             if ('json' == $this->typ) {
                 //重组data返回值
                 //$data['items'] = $this->reformData($data['items']);

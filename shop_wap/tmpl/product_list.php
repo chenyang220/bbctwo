@@ -50,15 +50,50 @@
     <ul id="nav_ul">
         <li><a href="javascript:void(0);" class="current" id="sort_default"><?= __('综合'); ?><i></i></a></li>
         <li><a href="javascript:void(0);" class="" onclick="init_get_list('sale', 'DESC')"><?= __('销量'); ?></a></li>
-		<li><a href="javascript:void(0);" class="">价格</a></li>
+		<li><a href="javascript:void(0);" class="" id="sort_prices">价格</a></li>
         
     </ul>
     <div class="ser-adv flex1"><a href="javascript:void(0);" id="search_adv"><?= __('筛选'); ?><i></i></a></div>
 </div>
 
 <div id="sort_inner" class="goods-sort-inner hide">
-    <span><a href="javascript:void(0);" class="cur" onclick="init_get_list('', '')"><?= __('综合'); ?><i></i></a></span> <span><a href="javascript:void(0);" onclick="init_get_list('evaluate', 'DESC')"><?= __('评价排序'); ?><i></i></a></span> <span><a href="javascript:void(0);" onclick="init_get_list('price', 'DESC')"><?= __('价格从高到低'); ?><i></i></a></span> <span><a href="javascript:void(0);" onclick="init_get_list('price', 'ASC')"><?= __('价格从低到高'); ?><i></i></a></span>
+    <span>
+        <a href="javascript:void(0);" class="cur" onclick="init_get_list('', '')"><?= __('综合'); ?>
+            <i></i>
+        </a>
+    </span> 
+    <span>
+        <a href="javascript:void(0);" onclick="init_get_list('evaluate', 'DESC')"><?= __('评价排序'); ?>
+            <i></i>
+        </a>
+    </span> 
+    <!-- <span>
+        <a href="javascript:void(0);" onclick="init_get_list('price', 'DESC')"><?= __('价格从高到低'); ?>
+            <i></i>
+        </a>
+    </span> 
+    <span>
+        <a href="javascript:void(0);" onclick="init_get_list('price', 'ASC')"><?= __('价格从低到高'); ?>
+            <i></i>
+        </a>
+    </span> -->
 </div>
+
+
+<div id="sort_price" class="goods-sort-inner hide borb1"  style="">
+    <span>
+        <a href="javascript:void(0);" onclick="init_get_list('price', 'DESC')"><?= __('价格从高到低'); ?>
+            <i></i>
+        </a>
+    </span> 
+    <span>
+        <a href="javascript:void(0);" onclick="init_get_list('price', 'ASC')"><?= __('价格从低到高'); ?>
+            <i></i>
+        </a>
+    </span>
+</div>
+
+
 
 <div class="customize-feature-goods-list-contents customize-goods-lists bgf">
     <div id="product_list" class="style-change list">

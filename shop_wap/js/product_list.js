@@ -36,7 +36,7 @@ if (!getCookie('sub_site_id')) {
     addCookie('sub_site_id', 0, 0);
 }
 
-
+var actorder = '';
 
 
 
@@ -120,6 +120,11 @@ $(function () {
         }
     });
     $("#sort_default").click(function () {
+        $(this).addClass("current");
+        $("#sort_prices").removeClass("current");
+        $("#sort_salesnum").removeClass("current");
+        $("#sort_price").addClass("hide")
+
         if ($("#sort_inner").hasClass("hide")) {
             $("#sort_inner").removeClass("hide")
         }
@@ -127,6 +132,19 @@ $(function () {
             $("#sort_inner").addClass("hide")
         }
     });
+
+
+    $("#sort_prices").click(function () {
+        $(this).addClass("current");
+
+        $("#sort_default").removeClass("current");
+        $("#sort_salesnum").removeClass("current");
+        $("#sort_inner").addClass("hide")
+        $("#sort_price").removeClass("hide")
+    });
+
+
+
     $("#nav_ul").find("a").click(function () {
         $(this).addClass("current").parent().siblings().find("a").removeClass("current");
         if (!$("#sort_inner").hasClass("hide") && $(this).parent().index() > 0) {
@@ -138,6 +156,14 @@ $(function () {
         var e = $(this).addClass("cur").text();
         $("#sort_default").html(e + "<i></i>")
     });
+
+    $("#sort_price").find("a").click(function () {
+        $("#sort_price").addClass("hide").find("a").removeClass("cur");
+        var e = $(this).addClass("cur").text();
+        $("#sort_prices").html(e + "<i></i>")
+    });
+
+
     $("#product_list").on("click", ".goods-store a", function () {
         var e = $(this);
         var r = $(this).attr("data-id");
@@ -176,8 +202,8 @@ function get_list() {
     else if (brand_id != "") {
         param.brand_id = brand_id
     }
-    if (key != "") {
-        param.actorder = key
+    if (actorder != "") {
+        param.actorder = actorder
     }
     if (order != "") {
         param.act = order
@@ -258,6 +284,13 @@ function get_list() {
         } else {
             e.data.label_url = "details1";
         }
+        var common_arr = []
+        if (Array.isArray(e.data.items) == false) {
+            for (let i in e.data.items) {
+                common_arr.push(e.data.items[i]); //属性
+            }
+            e.data.items = common_arr;
+        }  
         var r = template.render("home_body", e);
         $("#product_list .goods-search-list").append(r);
 		 waterFall(columns);
@@ -474,7 +507,7 @@ function search_adv() {
 
 function init_get_list(e, r) {
     order = e;
-    key = r;
+    actorder = r;
     curpage = 1;
     firstRow = 0;
     hasmore = true;
