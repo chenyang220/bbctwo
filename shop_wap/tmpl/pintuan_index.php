@@ -14,18 +14,26 @@ include __DIR__.'/../includes/header.php';
 	<script src="../js/swiper.min.js"></script>
     <script type="text/javascript" src="../js/zepto.min.js"></script>
 </head>
+<style type="text/css">
+.nctouch-main-layouts {
+    display: inline-block;
+    width: 100%;
+    /* margin-top: 2rem; */
+}
+</style>
 <body>
-	<header id="header" class="fixed">
-        <div class="header-wrap">
-            <div class="header-l">
+
+	<!-- <header id="header" class="fixed"> -->
+        <!-- <div class="header-wrap"> -->
+            <!-- <div class="header-l"> -->
                 <!-- <a href="../index.html"> <i class="back"></i> </a> -->
-            </div>
-            <div class="header-title">
+            <!-- </div> -->
+         <!--    <div class="header-title">
                 <h1><?= __('拼团中心'); ?></h1>
-            </div>
-        </div>
-    </header>
-    <div class="nctouch-main-layout">
+            </div> -->
+        <!-- </div> -->
+    <!-- </header> -->
+    <div class="nctouch-main-layouts">
     	<div class="pt_nav bgf swiper-container">
     	 	<div class="swiper-wrapper" id="pt_category">
                 

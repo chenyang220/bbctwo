@@ -39,7 +39,6 @@ include __DIR__ . '/includes/header.php';
 <script type="text/javascript" src="js/ucsdk.min.js"></script>
 <script type="text/javascript" src="js/cookie.js"></script>
 <script type="text/javascript">
-alert("<?=$_GET['token']?>")
     if (getCookie("token") == "undefined" || getCookie("token") == null   ||  "<?=$_GET['token']?>" != '') {
         setCookie("token","<?=$_GET['token']?>");
 
