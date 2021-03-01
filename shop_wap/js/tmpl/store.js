@@ -69,9 +69,10 @@ $(function () {
             var r = template.render("store_banner_tpl", e);
 			tt = e;
             var indexTem = template.render("store_index_tpl",e);
-            $("#storeindex_con").html(indexTem);
+            $("#storeindex_con").html(indexTem).css('visibility','hidden');
 			imagesLoaded( document.querySelector('#storeindex_con'), function( instance ) {
 			  waterFall(columns);
+			  $("#storeindex_con").css('visibility','visible');
 			});
 			 window.onscroll=function(){
 				if ($(window).scrollTop() + $(window).height() == $(document).height()) {
@@ -344,10 +345,11 @@ function nav_click(nav_type) {
 		columns=2;
 		$("#storeindex_con").show();
 		var indexTem = template.render("store_index_tpl",tt);
-        $("#storeindex_con").html(indexTem);
+        $("#storeindex_con").html(indexTem).css('visibility','hidden');
 		$("#storeindex_con").find('.style-change').removeClass('list').addClass('grid');
 		imagesLoaded( document.querySelector('#storeindex_con'), function( instance ) {
 		  waterFall(columns);
+		  $("#storeindex_con").css('visibility','visible');
 		});
         break;
     case "allgoods":
