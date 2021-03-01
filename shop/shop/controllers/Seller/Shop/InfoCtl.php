@@ -185,7 +185,8 @@ class Seller_Shop_InfoCtl extends Seller_Controller
 	public function tsSet()
 	{
 		$Label_BaseModel = new  Label_BaseModel();
-        $Label_Base = $Label_BaseModel->getByWhere("*");
+        $Label_Base = $Label_BaseModel->getByWhere(array("label_tag_sort:>"=>0,"label_tag_sort:<="=>8));
+        // $Label_Base = $Label_BaseModel->getByWhere("*");
         $label_name_arr = array_column($Label_Base, "label_name", "id");
 		$shop_id            = Perm::$shopId;
 		$Shop_BaseModel = new  Shop_BaseModel();
