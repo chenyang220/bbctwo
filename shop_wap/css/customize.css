@@ -391,6 +391,7 @@
 }
 .customize-goods-lists .grid li{
 	display:inline-block;
+	width:50%;
 }
 .customize-goods-lists .grid .pad{
 	margin-left: 0.34rem;
