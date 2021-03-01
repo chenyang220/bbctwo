@@ -70,8 +70,10 @@ $(function () {
 			tt = e;
             var indexTem = template.render("store_index_tpl",e);
             $("#storeindex_con").html(indexTem);
+			$("#storeindex_con").find('li').css('position','relative')
 			waterFall(columns);
 			imagesLoaded( document.querySelector('#storeindex_con'), function( instance ) {
+			 $("#storeindex_con").find('li').css('position','absolute')
 			  waterFall(columns);
 			 });
 			
