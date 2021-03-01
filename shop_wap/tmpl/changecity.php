@@ -80,9 +80,9 @@ include __DIR__.'/../includes/header.php';
 <body>
 	<header id="header" class="nctouch-product-header fixed">
 	    <div class="header-wrap">
-	        <!-- <div class="header-l"> <a href="javascript:history.go(-1)"> <i class="back"></i> </a> </div> -->
-	        <div class="city-title"><?= __('选择城市'); ?></div>
-	        <!-- <div class="header-r"><a id="header-nav" href="javascript:void(0);"><i class="more"></i><sup style="display: inline;"></sup></a> </div> -->
+	       <div class="header-title posr">
+			   <h1 class="drap-h1-after">选择城市</h1>
+		   </div>
 	    </div>
 	    <div class="nctouch-nav-layout">
 	        <div class="nctouch-nav-menu"> <span class="arrow"></span>

@@ -39,7 +39,7 @@
 			</div>
 		</a>
 		<!-- <a href="./shop_goods_cat.html?shop_id=<?php echo $_GET['shop_id']?>" class="zk-menu"></a> -->
-		<b class="zk-menu" id="menuChange"></b>
+		<b class="zk-menu active" id="menuChange"></b>
 	</div>
 	<div class="custom-store-top bgf">
 		<div class="custom-store-info goods-detail-store">

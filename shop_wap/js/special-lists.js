@@ -15,9 +15,11 @@ $(function(){
 	$("#menuChange").click(function(){
 		if($('.style-change').hasClass('list')){
 			$('.style-change').removeClass('list').addClass('grid');
+			$('.zk-menu').addClass('active');
 			columns=2;
 		}else{
 			$('.style-change').removeClass('grid').addClass('list');
+			$('.zk-menu').removeClass('active');
 			columns=1;
 		}
 		waterFall(columns);

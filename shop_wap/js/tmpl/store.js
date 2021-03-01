@@ -314,9 +314,11 @@ function toColumns(obj){
 	}
 	if($(dom).find('.style-change').hasClass('list')){
 		$(dom).find('.style-change').removeClass('list').addClass('grid');
+		$('.zk-menu').addClass('active');
 		columns=2;
 	}else{
 		$(dom).find('.style-change').removeClass('grid').addClass('list');
+		$('.zk-menu').removeClass('active');
 		columns=1;
 	}
 	waterFall(columns);
