@@ -308,8 +308,30 @@ class Seller_Shop_InfoCtl extends Seller_Controller
 	//加载添加商品标签
 	public function addGoodsLabel()
 	{
-	    $Label_BaseModel = new  Label_BaseModel();
-        $Label_Base = $Label_BaseModel->getByWhere("*");
+
+		 $shop_id = Perm::$shopId;
+		 $Label_BaseModel = new  Label_BaseModel();
+		 $Shop_BaseModel = new Shop_BaseModel();
+            $Shop_Base = $Shop_BaseModel->getOne($shop_id);
+            if ($Shop_Base['label_is_check'] == 0) {
+                $label_id = "";
+            } else {
+                $label_id = trim($Shop_Base['label_id'],",");
+            }
+            $label_base_arr = $Label_BaseModel->getByWhere("*");
+            $label_name_arr = array_column($label_base_arr, null,"id");
+            foreach ($label_base_arr as $k => $label_base) {
+                if ($label_base['label_tag_sort'] == 0) {
+                    $label_id = trim($label_id,",") . "," . $label_base['id'];
+                }
+            }
+            $Label_Base = array();
+            $label_id_arr = explode(",", trim($label_id,","));
+            foreach ($label_id_arr as $key => $label_id) {
+                $Label_Base[$label_id] = $label_name_arr[$label_id];
+            }
+	    
+     //    $Label_Base = $Label_BaseModel->getByWhere("*");
 		include $this->view->getView();
 	}
 	public function addcategoryrow()
