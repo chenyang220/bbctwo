@@ -70,14 +70,15 @@ $(function () {
 			tt = e;
             var indexTem = template.render("store_index_tpl",e);
             $("#storeindex_con").html(indexTem);
-			// imagesLoaded( document.querySelector('#storeindex_con'), function( instance ) {
+			waterFall(columns);
+			imagesLoaded( document.querySelector('#storeindex_con'), function( instance ) {
 			  waterFall(columns);
-			  // $("#storeindex_con").css('visibility','visible');
-			// });
+			 });
+			
 			 window.onscroll=function(){
 				if ($(window).scrollTop() + $(window).height() == $(document).height()) {
 					  waterFall(columns);
-				 }
+				}
 				 
 			}
 			// 页面尺寸改变时实时触发
