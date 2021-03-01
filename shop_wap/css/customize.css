@@ -392,6 +392,7 @@
 .customize-goods-lists .grid li{
 	display:inline-block;
 	width:50%;
+	vertical-align:top;
 }
 .customize-goods-lists .grid .pad{
 	margin-left: 0.34rem;

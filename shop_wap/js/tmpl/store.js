@@ -69,10 +69,10 @@ $(function () {
             var r = template.render("store_banner_tpl", e);
 			tt = e;
             var indexTem = template.render("store_index_tpl",e);
-            $("#storeindex_con").html(indexTem).css('visibility','hidden');
+            $("#storeindex_con").html(indexTem);
 			imagesLoaded( document.querySelector('#storeindex_con'), function( instance ) {
 			  waterFall(columns);
-			  $("#storeindex_con").css('visibility','visible');
+			  // $("#storeindex_con").css('visibility','visible');
 			});
 			 window.onscroll=function(){
 				if ($(window).scrollTop() + $(window).height() == $(document).height()) {
