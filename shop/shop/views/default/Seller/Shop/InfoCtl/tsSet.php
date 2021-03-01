@@ -5,7 +5,6 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
 ?>
 </head>
 <body>
-
     <form id="form" action="#" method="post" >
         <div class="form-style">
             <input type="hidden" name="supplier_id" id="id" value="<?=$data['supplier_id']?>" />
