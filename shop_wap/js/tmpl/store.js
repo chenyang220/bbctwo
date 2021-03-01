@@ -70,7 +70,9 @@ $(function () {
 			tt = e;
             var indexTem = template.render("store_index_tpl",e);
             $("#storeindex_con").html(indexTem);
-			waterFall(columns);
+			imagesLoaded( document.querySelector('#storeindex_con'), function( instance ) {
+			  waterFall(columns);
+			});
 			 window.onscroll=function(){
 				if ($(window).scrollTop() + $(window).height() == $(document).height()) {
 					  waterFall(columns);
@@ -344,7 +346,9 @@ function nav_click(nav_type) {
 		var indexTem = template.render("store_index_tpl",tt);
         $("#storeindex_con").html(indexTem);
 		$("#storeindex_con").find('.style-change').removeClass('list').addClass('grid');
-		waterFall(columns);
+		imagesLoaded( document.querySelector('#storeindex_con'), function( instance ) {
+		  waterFall(columns);
+		});
         break;
     case "allgoods":
 		columns=2;
@@ -357,7 +361,9 @@ function nav_click(nav_type) {
             });
         }
         $("#allgoods_con").find('.style-change').removeClass('list').addClass('grid');
-		waterFall(columns);
+		imagesLoaded( document.querySelector('#allgoods_con'), function( instance ) {
+		  waterFall(columns);
+		});
         break;
     case "newgoods":
 		columns=2;
@@ -366,7 +372,9 @@ function nav_click(nav_type) {
         }
         $("#newgoods_con").show();
 		$("#newgoods_con").find('.style-change').removeClass('list').addClass('grid');
-		waterFall(columns);
+		imagesLoaded( document.querySelector('#newgoods_con'), function( instance ) {
+		  waterFall(columns);
+		});
         break;
     case "storeactivity":
 		columns=1;
@@ -375,7 +383,9 @@ function nav_click(nav_type) {
             r();
         }
 		$("#storeactivity_con").find('.style-change').removeClass('grid').addClass('list');
-		waterFall(columns);
+		imagesLoaded( document.querySelector('#storeactivity_con'), function( instance ) {
+		  waterFall(columns);
+		});
        
         break;
     }
@@ -385,7 +395,7 @@ function nav_click(nav_type) {
 function s() {
     var t = {};
     t.id = e;
-    var o = new ncScrollLoad;
+    //var o = new ncScrollLoad;
   //   o.loadInit({
   //       url: ApiUrl + "/index.php?ctl=Shop&met=goodsList&order=common_sell_time&sort=desc&typ=json",
   //       getparam: t,
@@ -403,7 +413,9 @@ function s() {
 	    success: function (res) {
 	        var n = template.render("newgoods_tpl", res.data);
 			$("#newgoods_con").html(n);
-			waterFall(columns);
+			imagesLoaded( document.querySelector('#newgoods_con'), function( instance ) {
+			  waterFall(columns);
+			});
 	    }
 	});
 }

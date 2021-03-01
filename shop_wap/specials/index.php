@@ -118,7 +118,7 @@ include   '../includes/header.php';
 <a class="pad" href="details1.html?goods_id=<%=goods[i].goods_id%>">
 	    			<% } %>
 					<!-- <a class="pad" href="details1.html?goods_id=<%=goods[i].goods_id%>"> -->
-						<em class="img-box"><img src="<%=goods[i].goods_image%>" alt="goods">
+						<em class="img-box"><img class="imgLoad" src="<%=goods[i].goods_image%>" alt="goods">
 							<!-- <b>景点·3.2km</b> -->
 						</em>
 						<div class="cont">
@@ -143,6 +143,7 @@ include   '../includes/header.php';
 		<% } %>
 	</script>
 	<script src="../js/special-common.js?v=8"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	<script src="../js/waterfall.js?v=8"></script>
 	<script type="text/javascript" src="../js/zepto.min.js" ></script>
     <script type="text/javascript" src="../js/animation.js"></script>
