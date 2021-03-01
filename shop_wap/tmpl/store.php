@@ -622,7 +622,7 @@
     <script type="text/javascript" src="../js/zepto.min.js"></script>
     <script type="text/javascript" src="../js/template.js"></script>
     <script type="text/javascript" src="../js/swiper.min.js"></script>
-    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/common1.js"></script>
     <script type="text/javascript" src="../js/simple-plugin.js"></script>
     <script type="text/javascript" src="../js/zepto.waypoints.js"></script>
     <script type="text/javascript" src="../js/ncscroll-load.js"></script>
