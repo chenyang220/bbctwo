@@ -71,8 +71,8 @@ include __DIR__.'/../../includes/header.php';
                     <a href="javascript:void(0);" nc_type="fav_del" data_id="<%=v.shop_id %>" class="fav-unsave"></a>
                 </li>
                 <%}%>
-                    <li class="loading">
-                        <div class="spinner"><i></i></div><?= __('数据读取中'); ?></li>
+                    <!-- <li class="loading"> -->
+                        <!-- <div class="spinner"><i></i></div><?= __('数据读取中'); ?></li> -->
                     <%}else{%>
                         <div class="nctouch-norecord favorite-store">
                             <div class="norecord-ico"><i></i></div>

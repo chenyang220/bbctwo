@@ -77,10 +77,10 @@
                 <a href="javascript:void(0);" nc_type="fav_del" data_id="<%=v.goods_id %>" class="fav-del"></a>
             </li>
         <%}%>
-        <li class="loading">
+<!--         <li class="loading">
             <div class="spinner"><i></i></div>
             <?= __('浏览记录读取中'); ?>...
-        </li>
+        </li> -->
     <%}else{%>
         <div class="nctouch-norecord favorite-goods">
             <div class="norecord-ico"><i></i></div>
