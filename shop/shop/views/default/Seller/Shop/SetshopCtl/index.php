@@ -24,6 +24,45 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
             <dt><?=__('店铺等级：')?></dt>
             <dd><?=$re['shop_grade']?></dd>
         </dl>
+
+            <dl class="dl">
+                <dt><i>*</i><?=__('店铺标签：')?></dt>
+                <dd >
+                      <select name="label_id" id="label_id_select">
+                          <option value=""><?= __('请选择') ?></option>
+                          <?php if (!empty($Label_Base)) { ?>
+                              <?php foreach ($Label_Base as $key => $val) { ?>
+                                  <option value="<?= $val['id']; ?>" date-name="<?= $val['label_name']; ?>"><?= $val['label_name']; ?></option>
+                              <?php } ?>
+                          <?php } ?>
+                      </select>
+                </dd>
+            </dl>  
+            <dl class="dl">
+                <dt><?=__('已选标签：')?></dt>
+                <input type="hidden" name="label_id_str" id="t" value="<?=$label_id_str;?>" />
+ 
+                    <?php 
+                        if (!empty($shop_label_base)) {
+
+                            ?>
+                            <dd id="select_label_name" class="select_cat_name">
+                            <?php
+                            foreach ($shop_label_base as $key => $label_base) {
+                                ?>
+                                    <span><?=$label_base['label_name']?></span>
+                                <?php
+                            }
+                        } else {
+                           ?>
+                                          <dd id="select_label_name">
+                           <span style="color: #fd3d53"><?= __('店铺标签正在审核中！') ?></span>
+                                <?php    
+
+                        }
+                    ?>
+                </dd>
+            </dl>
                 <dl class="dl">
                     <dt><i class="required">*</i><?=__('所在地区')?>：</dt>
                     <dd>
@@ -180,6 +219,50 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
             local.search(address);
         }
     });
+
+
+
+
+        var label_id_arr = [];
+        $('#label_id_select').change(function(){
+
+            var id = $("select[name='label_id']").val();
+            if (id != '') {
+                var name = $("select[name='label_id']  option:selected").html();
+                if (label_id_arr.length>0) {
+                  var html =  $("#select_label_name").html();
+                } else {
+                  var html =  "";
+                }
+                $("input[name='label_id_str']").val("");
+                if (!label_id_arr[id]) {
+                    html += "<span>"+ name + "<a href='javascript:void(0)' onclick=del_label_name("+id+")>X</a></span>";
+                    $("#select_label_name").html(html);
+                    label_id_arr[id] = name;
+                }
+
+                var label_id_str = '';
+                for (label_id in label_id_arr) {
+                    label_id_str = label_id_str + "," + label_id;
+                }
+                $("input[name='label_id_str']").val(label_id_str);
+            }    
+        });
+        function del_label_name (id) {
+            var html = '';
+            if (id) {
+              delete label_id_arr[id];
+            }
+            $("input[name='label_id_str']").val("");
+            var label_id_str = "";  
+            for (label_id in label_id_arr) {
+                label_id_str = label_id_str + "," + label_id;
+                html += "<span>"+ label_id_arr[label_id] + "<a href='javascript:void(0)' onclick=del_label_name("+label_id+")>X</a></span>";
+            }
+            $("input[name='label_id_str']").val(label_id_str);
+            $("#select_label_name").html(html);
+            $("select[name='label_id']").val("");  
+        }
     $(document).ready(function(){
          var ajax_url = './index.php?ctl=Seller_Shop_Setshop&met=editShop&typ=json';
         $('#form').validator({

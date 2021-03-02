@@ -54,6 +54,41 @@ class Seller_Shop_SetshopCtl extends Seller_Controller {
         $Shop_DomainModel = new Shop_DomainModel();
         $domain_list      = $Shop_DomainModel->getOne($shop_id['shop_id']);
 
+
+        $Label_Base = array();
+        $shop_id = Perm::$shopId;
+        $Label_BaseModel = new  Label_BaseModel();
+        $Shop_BaseModel = new Shop_BaseModel();
+        $Shop_Base = $Shop_BaseModel->getOne($shop_id);
+        if ($Shop_Base['label_is_check'] == 0) {
+            $label_id = "";
+            $label_id_str = "";
+        } else {
+            $label_id = trim($Shop_Base['label_id'],",");
+            $label_id_str = $label_id;
+            $label_base_arr = $Label_BaseModel->getByWhere("*");
+            $label_name_arr = array_column($label_base_arr, null,"id");
+
+            $shop_label_id_arr = explode(",", trim($label_id,","));
+            $shop_label_base = array();
+            foreach ($shop_label_id_arr as $key => $shop_label_id) {
+                $shop_label_base[$shop_label_id] = $label_name_arr[$shop_label_id];
+            }
+
+            foreach ($label_base_arr as $k => $label_base) {
+                if ($label_base['label_tag_sort'] == 0) {
+                    $label_id = trim($label_id,",") . "," . $label_base['id'];
+                }
+            }
+            
+            $label_id_arr = explode(",", trim($label_id,","));
+            foreach ($label_id_arr as $key => $label_id) {
+                $Label_Base[$label_id] = $label_name_arr[$label_id];
+            }
+        }
+        
+
+
         if ('json' == $this->typ)
         {
             $status              = 200;
@@ -108,6 +143,13 @@ class Seller_Shop_SetshopCtl extends Seller_Controller {
         $Shop_DomainModel = new Shop_DomainModel();
         $domain_list      = $Shop_DomainModel->getOne($shop_id);
 
+
+
+        if (request_string('label_id_str')) {
+            // unset($edit_shop_row['label_id_str']);
+            $edit_shop_row['label_id'] = trim(request_string('label_id_str'),",");
+            $edit_shop_row['label_is_check'] = 0;
+        }
         if ($domain_list)
         {
             $can_times = intval($domain_list['shop_edit_domain']) + 1;
@@ -123,6 +165,9 @@ class Seller_Shop_SetshopCtl extends Seller_Controller {
             $add_row['shop_self_domain'] = Web_ConfigModel::Value('retain_domain');
             $flag                         = $Shop_DomainModel->addDomain($add_row);
         }
+
+
+
         $flag             = $this->shopBaseModel->editBase($shop_id, $edit_shop_row);
 
 

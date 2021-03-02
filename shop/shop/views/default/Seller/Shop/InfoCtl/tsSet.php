@@ -55,30 +55,39 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
     </form>
 <script>
         var label_id_arr = [];
-        $('#label_id_select').change(function(){
-            if (label_id_arr.length == 0) {
-                $("#select_label_name").html('');
-            }
-              var id = $("select[name='label_id']").val();
-              var name = $("select[name='label_id']  option:selected").html();
+$('#label_id_select').change(function(){
+
+          var id = $("select[name='label_id']").val();
+          if (id != '') {
+            var name = $("select[name='label_id']  option:selected").html();
+            if (label_id_arr.length>0) {
               var html =  $("#select_label_name").html();
-              if (!label_id_arr[id]) {
-                  html += "<span>"+ name + "<a href='javascript:void(0)' onclick=del_label_name("+id+")>X</a></span>";
-                  $("#select_label_name").html(html);
-                  label_id_arr[id] = name;
-              }        
-        });
-        function del_label_name (id) {
-             var html = '';
-             if (id) {
-              delete label_id_arr[id];
-             }
-             
-             for (label_id in label_id_arr) {
-                html += "<span>"+ label_id_arr[label_id] + "<a href='javascript:void(0)' onclick=del_label_name("+label_id+")>X</a></span>";
-             }
-            $("#select_label_name").html(html);
-        }
+            } else {
+              var html =  "";
+            }
+            
+            if (!label_id_arr[id]) {
+                html += "<span>"+ name + "<a href='javascript:void(0)' onclick=del_label_name("+id+")>X</a></span>";
+                $("#select_label_name").html(html);
+                label_id_arr[id] = name;
+            } 
+          }    
+      });
+
+function del_label_name (id) {
+     var html = '';
+     if (id) {
+      delete label_id_arr[id];
+     }
+     
+     for (label_id in label_id_arr) {
+        html += "<span>"+ label_id_arr[label_id] + "<a href='javascript:void(0)' onclick=del_label_name("+label_id+")>X</a></span>";
+     }
+    $("#select_label_name").html(html);
+          $("select[name='label_id']").val("");  
+  }
+
+
 
        $(document).ready(function(){
     
