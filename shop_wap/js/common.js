@@ -30,7 +30,6 @@ if(getQueryString('user_parent_id')){
 
         }
     });
-
 }
 
 if (getCookie("token")) {
