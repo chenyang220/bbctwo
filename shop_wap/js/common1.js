@@ -33,7 +33,12 @@ if(getQueryString('user_parent_id')){
 
 }
 
-
+if (getCookie("token")) {
+    window.onload = function () {
+        //方法内容
+         $("#footer-template-bort1").css("display","none");
+    }
+}
 var script = document.createElement("script");
 script.type = "text/javascript";
 script.src = "https://res.wx.qq.com/open/js/jweixin-1.2.0.js";

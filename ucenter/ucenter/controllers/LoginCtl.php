@@ -56,6 +56,7 @@ class LoginCtl extends Yf_AppController
             $edit_row['token'] = request_string('token',0);
             $edit_row['enterId'] = request_string('enterId',0);
             $edit_row['appToken'] = request_string('appToken',0);
+            $edit_row['action_time'] = time();
             $User_InfoModel->editInfo($user_info_row['user_id'],$edit_row);
         }
 

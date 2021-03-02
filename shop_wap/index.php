@@ -42,7 +42,7 @@ include __DIR__ . '/includes/header.php';
     if (getCookie("token") == "undefined" || getCookie("token") == null   ||  "<?=$_GET['token']?>" != '') {
         setCookie("token","<?=$_GET['token']?>");
 
-         // alert(getCookie("token"))
+
     }
 
     if (getCookie("enterId")  == "undefined" || getCookie("enterId") == null   ||  "<?=$_GET['enterId']?>" != '') {
