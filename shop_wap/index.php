@@ -116,9 +116,6 @@ include __DIR__ . '/includes/header.php';
 <?php include __DIR__ . '/includes/footer_menu.php'; ?>
 <script type="text/html" id="category-one">
      <li class="flex">
- <!-- <a href="<%= WapSiteUrl %>/tmpl/ceshi.html?token=<?php echo $_GET['token'];?>&enterId=0">测试</a> -->
-
-  <a href="<%= WapSiteUrl %>/tmpl/ceshi.html?token=a0fuy3iu2q307ai3&enterId=0">测试</a>
         <a class="cur">首页</a>
     </li>
      <% for(var i = 0;i<items.length;i++){ %>
