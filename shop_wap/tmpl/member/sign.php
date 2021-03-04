@@ -20,15 +20,15 @@
 	}
 </style>
 <body>
-	<header id="header" class="posf borb1">
+<!-- 	<header id="header" class="posf borb1">
 	    <div class="header-wrap">
 	        <div class="header-l"> <a href="javascript:history.go(-1)"> <i class="back"></i> </a> </div>
 			<div class="header-title">
 				<h1>签到.优惠</h1>
 			</div>
 	    </div>
-	</header>
-	<div class="nctouch-main-layout">
+	</header> -->
+	<div class="" >
 		<div class="zk-sign-head">
 			<div class="clearfix">
 				<div class="fl">
