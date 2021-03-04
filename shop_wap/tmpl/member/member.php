@@ -141,7 +141,7 @@
     <script type="text/javascript" src="../../js/NativeShare.js"></script>
     <script type="text/javascript" src="../../js/tmpl/member.js"></script>
     <script type="text/javascript" src="../../js/tmpl/footer.js"></script>
-    <script type="text/javascript" src="../../js/soshm.min.js"></script>
+    <script type="text/javascript" src="../../tmpl/js/soshm.min.js"></script>
     </body>
     </html>
 <?php

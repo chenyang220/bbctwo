@@ -154,6 +154,61 @@ class Buyer_IndexCtl extends Buyer_Controller
 		//会员用户
 		$data = $this->userInfoModel->getUserMore($uid);
 
+		$day = date("w");
+		$curtime = time() - $day * 24 * 60 * 60;
+
+		$time_i = 0;
+		for ($i=1; $i < 8; $i++) { 
+
+			$a1 = date("m-d",$curtime + $i * 24 * 60 * 60);
+			$a2 = date("m-d",time());
+			if ($a1 == $a2) {
+				$time_i = $i;
+			}	
+		}
+
+ 		// $data['info']['user_sign_day'] = 1;
+
+		for ($i=1; $i < 8; $i++) { 
+
+			$curdate[$i]['time'] = date("m-d",$curtime + $i * 24 * 60 * 60);
+			$curdate[$time_i]['time'] = "今日";
+			if ($i >= $time_i) {
+				$user_sign_day = $data['info']['user_sign_day'] + 1;
+				if (($user_sign_day + ($i- $time_i)) <= 3) {
+					$curdate[$i]['grade'] = 2;
+			    } else if (3 < ($user_sign_day + ($i- $time_i)) && ($user_sign_day + ($i- $time_i)) <= 7) {
+			        $curdate[$i]['grade'] =  3;
+			    } else if (($user_sign_day + ($i- $time_i)) > 7 && ($user_sign_day + ($i- $time_i)) <= 30) {
+			        $curdate[$i]['grade'] =  5;
+			    } else if ($user_sign_day>= 30 && ($user_sign_day+ ($i- $time_i)) % 30 >= 1 && ($user_sign_day + ($i- $time_i)) % 30 <= 7) {
+			        $curdate[$i]['grade'] = 10;
+			    } else if ($$user_sign_day >= 30 && ($$user_sign_day + ($i- $time_i)) > 30  && (($$user_sign_day + ($i- $time_i)) % 30 == 0  || ($$user_sign_day + ($i- $time_i))  % 30 > 7)) {
+			        $curdate[$i]['grade'] = 5;
+			    }
+			    $curdate[$i]['type'] = 1;
+			} else {
+				$user_sign_day = $data['info']['user_sign_day'] + 1 - abs($i - $time_i);
+				if (($user_sign_day + ($i- $time_i)) <= 3) {
+					$curdate[$i]['grade'] = 2;
+			    } else if (3 < ($user_sign_day + ($i- $time_i)) && ($user_sign_day + ($i- $time_i)) <= 7) {
+			        $curdate[$i]['grade'] =  3;
+			    } else if (($user_sign_day + ($i- $time_i)) > 7 && ($user_sign_day + ($i- $time_i)) <= 30) {
+			        $curdate[$i]['grade'] =  5;
+			    } else if ($user_sign_day>= 30 && ($user_sign_day+ ($i- $time_i)) % 30 >= 1 && ($user_sign_day + ($i- $time_i)) % 30 <= 7) {
+			        $curdate[$i]['grade'] = 10;
+			    } else if ($$user_sign_day >= 30 && ($$user_sign_day + ($i- $time_i)) > 30  && (($$user_sign_day + ($i- $time_i)) % 30 == 0  || ($$user_sign_day + ($i- $time_i))  % 30 > 7)) {
+			        $curdate[$i]['grade'] = 5;
+			    }
+				// $curdate[$i]['grade'] = 0;
+				$curdate[$i]['type'] = 0;
+			}
+			
+		}
+
+		$data['curdate'] = $curdate;
+
+
 		$this->data->addBody(-140, $data);
 	}
     
