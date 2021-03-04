@@ -74,22 +74,22 @@ $(function () {
     });
 });
 
-$("div").delegate(".sign", "click", function(){
-    var key =  getCookie('key');
-    $.ajax({
-        type:'post',
-        url: ApiUrl + "/index.php?ctl=Buyer_User&met=userInfoSign&typ=json",
-        data: {k: key, u: getCookie('id')},
-        dataType: 'json',
-        success: function (result) {
-            if (result.data.sign_satus == 1) {
-                $(".sign").children().find(".middle").html("已签到");
-            } else {
-                $(".sign").children().find(".middle").html("签到");
-            }
-        }
-    });
-});
+// $("div").delegate(".sign", "click", function(){
+//     var key =  getCookie('key');
+//     $.ajax({
+//         type:'post',
+//         url: ApiUrl + "/index.php?ctl=Buyer_User&met=userInfoSign&typ=json",
+//         data: {k: key, u: getCookie('id')},
+//         dataType: 'json',
+//         success: function (result) {
+//             if (result.data.sign_satus == 1) {
+//                 $(".sign").children().find(".middle").html("已签到");
+//             } else {
+//                 $(".sign").children().find(".middle").html("签到");
+//             }
+//         }
+//     });
+// });
 
 
 
@@ -137,14 +137,16 @@ $(function () {
                     //未开通原样显示
                     if (!result.data.Plusday || result.data.user.user_status==3 || result.data.open_status==0){
                         html += '</div></div></div>'
-                             + '<div class="sign"><a href="javascript:void(0);"><i class="goods-sign"></i><b class="middle">'+result.data.sign_satus+'</b></a></div>';
+                                                     + '<div class="sign"><a href="../../tmpl/member/sign.php"><i class="goods-sign"></i><b class="middle">签到</b></a></div>';
+                             // + '<div class="sign"><a href="javascript:void(0);"><i class="goods-sign"></i><b class="middle">'+result.data.sign_satus+'</b></a></div>';
                     }
                     //试用
                     if (result.data.user.user_status ==1 && result.data.open_status==1) {
                       html += '<b class="plus-user-log"></b><i class="plus-member-try">试用</i>'
                             + '<em class="block plus-try-time">'+result.data.Plusday+'天后试用到期</em>'
                             + '</div></div></div>'
-                            + '<div class="sign"><a herf="javascript:void(0);"><b class="middle">'+result.data.sign_satus+'</b></a>'
+                            + '<div class="sign"><a herf="javascript:void(0);"><b class="middle">签到</b></a>'
+                            // + '<div class="sign"><a herf="javascript:void(0);"><b class="middle">'+result.data.sign_satus+'</b></a>'
                             + '</div><a href="plus_open.html" class="plus-open-enterance">开通正式会员</a>';
                     }
                     //window.location.href = WapSiteUrl + "/tmpl/member/login.html"
@@ -153,7 +155,8 @@ $(function () {
                       html +='<b class="plus-user-log active"></b><i class="plus-member-try active">试用</i>'
                            + '<em class="block plus-try-time">'+ result.data.Plusday +'到期</em>'
                            + '</div></div></div>'
-                           + '<div class="sign"><a href="javascript:void(0);"><b class="middle">'+ result.data.sign_satus +'</b></a>'
+                           + '<div class="sign"><a href="javascript:void(0);"><b class="middle">签到</b></a>'
+                           // + '<div class="sign"><a href="javascript:void(0);"><b class="middle">'+ result.data.sign_satus +'</b></a>'
                            + '</div><a href="plus_open.html" class="plus-open-enterance">立即续费</a>'; 
                     }
                     //过期
