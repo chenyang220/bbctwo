@@ -36,154 +36,130 @@
 						<span><em>积分</em><i class="zk-jf"></i><b>:</b></span>
 						<strong id="pointnum">1200</strong>
 					</p>
-<!-- 					<p>
-						<span><em>金币</em><i class="zk-jb"></i><b>:</b></span>
-						<strong>2088</strong>
-					</p> -->
 				</div>
 				<span class="fr zk-level-sign">积分规则</span>
-				<!-- <span class="fr zk-level-sign active">黑卡会员</span> -->
 			</div>
 			<p class="zk-sign-days">已连签<b id="continuation_sign">0</b>天</p>
 			<div id="sign_heard"></div>
-			<!-- <ul class="zk-sign-det-ul clearfix fz-0 tc">
-				<li>
-					<span>+1</span>
-					<em class="block">04-06</em>
-					<b></b>
-				</li>
-				<li>
-					<span>+1</span>
-					<em class="block">04-07</em>
-					<b></b>
-				</li>
-				<li>
-					<span>+1</span>
-					<em class="block">04-08</em>
-					<b></b>
-				</li>
-				<li class="active signed">
-					<span>+1</span>
-					<em class="block">今日</em>
-					<b></b>
-				</li>
-				<li>
-					<span class="color">+2</span>
-					<em class="block">04-10</em>
-					<b></b>
-				</li>
-				<li>
-					<span class="color">+3</span>
-					<em class="block">04-11</em>
-					<b></b>
-				</li>
-				<li>
-					<span class="color">+4</span>
-					<em class="block">04-12</em>
-					<b></b>
-				</li>
-			</ul> -->
-			<div class="tc"><button class="btn-sign-get">签到领取金币</button></div>
+			<div class="tc"><button class="btn-sign-get"  id="sign_btn">签到领取积分</button></div>
 		</div>
 		<div class="zk-module-tit clearfix">
-			<span>代金券</span><a class="fr" href=""><em>查看更多</em><i class="iconfont icon-btnrightarrow"></i></a>
+			<span>代金券</span><a class="fr" href="/../tmpl/voucher_list.html"><em>查看更多</em><i class="iconfont icon-btnrightarrow"></i></a>
 		</div>
-		<ul class="zk-voucher-items clearfix">
-			<li>
-				<a href="">
-				<span class="fl">
-					<em><b>满</b><strong>199-100</strong></em>
-					<br/>
-					<b>优惠券</b>
-				</span>
-				<span class="fr">立即<br/>领取</span>
-				</a>
-			</li>
-			<li>
-				<a href="">
-				<span class="fl">
-					<em><b>满</b><strong>199-100</strong></em>
-					<br/>
-					<b>优惠券</b>
-				</span>
-				<span class="fr">立即<br/>领取</span>
-				</a>
-			</li>
-			<li>
-				<a href="">
-				<span class="fl">
-					<em><b>满</b><strong>199-100</strong></em>
-					<br/>
-					<b>优惠券</b>
-				</span>
-				<span class="fr">立即<br/>领取</span>
-				</a>
-			</li>
-			<li>
-				<a href="">
-				<span class="fl">
-					<em><b>满</b><strong>199-100</strong></em>
-					<br/>
-					<b>优惠券</b>
-				</span>
-				<span class="fr">立即<br/>领取</span>
-				</a>
-			</li>
-		</ul>
+		<div id="voucher_list"></div>
 		<div>
 			<div class="zk-module-tit clearfix borb1 bgf">
-				<span>专属代金券</span><a class="fr" href=""><i class="iconfont icon-btnrightarrow"></i></a>
+				<span>专属代金券</span><a class="fr" href="">
+				</a>
 			</div>
 			<ul class="sign-jb-exchange-items">
 				<li>
-					<a href="javascript:;" class="img-box"><img class="cter" src="https://www.yuanfengtest.com/image.php/shop/data/upload/media/6fc0625bf097e245fa1c1007bf528b2d/10011/9/image/20181126/1543234155824096.jpg!360x64.jpg" alt=""></a>
+					<a href="javascript:;" class="img-box"><img class="cter" src="/../../img/旅游.jpg" alt=""></a>
 					<div class="sign-jb-exchange-content">
-						<h4><a href="javascript:;">韩式部队火锅套餐</a></h4>
-						<p class="sign-goods-ty"><a class="block one-overflow" href="">套餐：辛拉面、鱼饼、芝士年糕、时令蔬菜、菌菇类...</a></p>
-						<p class="tr"><a class="btn-zk-exchange" href="javascript:;">兑换</a></p>
+						<h4><a href="javascript:;">旅游</a></h4>
+						<p class="sign-goods-ty"><a class="block one-overflow">领取旅游专属代金券</a></p>
+						<p class="sign-goods-ty">积分+1</p><!--显示出来-->
+						<p class="tr"><a class="btn-zk-exchange" href="javascript:;" date-type="ly" date-src="">去领取</a></p>
 					</div>
 				</li>
 				<li>
-					<a href="javascript:;" class="img-box"><img class="cter" src="https://www.yuanfengtest.com/image.php/shop/data/upload/media/6fc0625bf097e245fa1c1007bf528b2d/10011/9/image/20181126/1543234155824096.jpg!360x64.jpg" alt=""></a>
+					<a href="javascript:;" class="img-box"><img class="cter" src="/../../img/酒店.jpg" alt=""></a>
 					<div class="sign-jb-exchange-content">
-						<h4><a href="javascript:;">韩式部队火锅套餐</a></h4>
-						<p class="sign-goods-ty"><a class="block one-overflow" href="">套餐：辛拉面、鱼饼、芝士年糕、时令蔬菜、菌菇类...</a></p>
-						<p class="tr"><a class="btn-zk-exchange" href="javascript:;">兑换</a></p>
+						<h4><a href="javascript:;">住宿</a></h4>
+						<p class="sign-goods-ty"><a class="block one-overflow">领取住宿专属代金券</a></p>
+						<p class="sign-goods-ty">积分+1</p><!--显示出来-->
+						<p class="tr"><a class="btn-zk-exchange" href="javascript:;"  date-type="zs" date-src="">去领取</a></p>
 					</div>
 				</li>
-				
+				<li>
+					<a href="javascript:;" class="img-box"><img class="cter" src="/../../img/美食.jpg" alt=""></a>
+					<div class="sign-jb-exchange-content">
+						<h4><a href="javascript:;">美食</a></h4>
+						<p class="sign-goods-ty"><a class="block one-overflow" >领取美食专属代金券</a></p>
+						<p class="sign-goods-ty">积分+1</p><!--显示出来-->
+						<p class="tr"><a class="btn-zk-exchange" href="javascript:;" date-type="ms" date-src="">去领取</a></p>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
+
+	<div  class="hide"  id="sign_state">
+		<ul>
+			<li>积分可用于兑换代金券或在积分商城兑换礼品。</li>
+			<li>用户每天总计只能签到一次。</li>
+			<li>3天包含3天以内可获得2个积分，4至6天内可获得3个积分，从第7天开始每天可获得5个积分，若任何一天停止签到，则从第一个获取2个积分重新计算，连续"签到"一个月可获取一周的双倍积分奖励。</li>
+			<li></li>
+		</ul>
+		<div class="btn btn_state">知道了</div>
+	</div>
 <script type="text/html" id="sign_heard_template">
     <% if (curdate) { %>
-    	
 		<ul class="zk-sign-det-ul clearfix fz-0 tc">
 			<% for (var i in curdate) { %>
-			<li  class="<%= curdate[i].time == '今日' ? 'active signed' : '' %>   <%= curdate[i].type == 0 ? 'gq' : '' %> ">
-				<span class="<%= curdate[i].time == '今日' ? 'block' : '' %>  <%= curdate[i].type == 1 && curdate[i].time != '今日'? 'color' : '' %>" >+<%= curdate[i].grade %></span>
+			<li  class="<%= curdate[i].time == '今日' && sign_satus == 1 ? 'active signed' : '' %> <%= curdate[i].time == '今日'? 'day' : '' %> ">
+				<span class="<%= curdate[i].type == 1 ? 'color' : '' %>" >+<%= curdate[i].grade %></span>
 				<em class="block"><%= curdate[i].time %></em>
 				<b></b>
 			</li>
 			<% } %>
 		</ul>
 	<% } %>
-    <!-- <div>
-        <% if (title) { %>
-        <div class="common-tit tc">
-            <h4 class='fz-32'><%= title %></h4>
-        </div>
-        <% } %>
-        <div class="layout2 pl-20 pr-20">
-            <ul class="clearfix fz0">
-                <% for (var i in item) { %>
-                <li><a href="<%= item[i].url %>"><img src="<%= item[i].image %>" alt=""></a></li>
-                <% } %>
-            </ul>
-        </div>
-    </div> -->
 </script>
-
+<script type="text/html" id="voucher_list_template">
+	<% if (items.length > 0) { %>
+		<ul class="zk-voucher-items clearfix">
+			<% if (items[0]) { %>
+				<li>
+					<a href="">
+					<span class="fl">
+						<em><b>满</b><strong><%=items[0]['voucher_t_limit']%>-<%=items[0]['voucher_t_price']%></strong></em>
+						<br/>
+						<b>优惠券</b>
+					</span>
+					<span class="fr">立即<br/>领取</span>
+					</a>
+				</li>
+			<% } %>
+			<% if (items[1]) { %>	
+				<li>
+					<a href="">
+					<span class="fl">
+						<em><b>满</b><strong><%=items[1]['voucher_t_limit']%>-<%=items[1]['voucher_t_price']%></strong></em>
+						<br/>
+						<b>优惠券</b>
+					</span>
+					<span class="fr">立即<br/>领取</span>
+					</a>
+				</li>
+			<% } %>
+			<% if (items[2]) { %>
+				<li>
+					<a href="">
+					<span class="fl">
+						<em><b>满</b><strong><%=items[2]['voucher_t_limit']%>-<%=items[2]['voucher_t_price']%></strong></em>
+						<br/>
+						<b>优惠券</b>
+					</span>
+					<span class="fr">立即<br/>领取</span>
+					</a>
+				</li>
+			<% } %>
+			<% if (items[3]) { %>
+				<li>
+					<a href="">
+					<span class="fl">
+						<em><b>满</b><strong><%=items[3]['voucher_t_limit']%>-<%=items[3]['voucher_t_price']%></strong></em>
+						<br/>
+						<b>优惠券</b>
+					</span>
+					<span class="fr">立即<br/>领取</span>
+					</a>
+				</li>
+			<% } %>
+		</ul>
+	<% } %>
+</script>
 	<script type="text/javascript" src="/../../js/zepto.js"></script>
     <script type="text/javascript" src="/../../js/simple-plugin.js"></script>
     <script type="text/javascript" src="/../../js/template.js"></script>

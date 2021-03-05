@@ -154,9 +154,31 @@ class Buyer_IndexCtl extends Buyer_Controller
 		//会员用户
 		$data = $this->userInfoModel->getUserMore($uid);
 
+        $time = date('Y-m-d H:i:s',strtotime(date("Y-m-d"),time()));
+        $Points_LogModel = new  Points_LogModel();
+
+
+        $Points_Log = $Points_LogModel->getOneByWhere(array('user_id'=>$uid,'points_log_time:>='=>$time,'class_id'=>9));
+
+  		if ($Points_Log) {
+            // 已签到
+            $data['sign_satus'] = 1;
+        } else {
+			$data['sign_satus'] = 0;
+        }
+
+		$Points_Log_flage = $Points_LogModel->getByWhere(array('user_id'=>$uid,'points_log_time:>='=>$time,'class_id'=>10));
+
+
+		// print_r($user_id."<<");
+		// 		print_r($time);
+		// exit;
+		$points_log_flag_arr = array_column($Points_Log_flage, "points_log_flag");
+		$data['points_log_flag_arr'] = $points_log_flag_arr;
+
 		$day = date("w");
 		$curtime = time() - $day * 24 * 60 * 60;
-
+		//判断哪一天是今日
 		$time_i = 0;
 		for ($i=1; $i < 8; $i++) { 
 
@@ -167,13 +189,14 @@ class Buyer_IndexCtl extends Buyer_Controller
 			}	
 		}
 
- 		// $data['info']['user_sign_day'] = 1;
+
 
 		for ($i=1; $i < 8; $i++) { 
 
 			$curdate[$i]['time'] = date("m-d",$curtime + $i * 24 * 60 * 60);
 			$curdate[$time_i]['time'] = "今日";
 			if ($i >= $time_i) {
+				//未过期日期
 				$user_sign_day = $data['info']['user_sign_day'] + 1;
 				if (($user_sign_day + ($i- $time_i)) <= 3) {
 					$curdate[$i]['grade'] = 2;
@@ -188,6 +211,8 @@ class Buyer_IndexCtl extends Buyer_Controller
 			    }
 			    $curdate[$i]['type'] = 1;
 			} else {
+
+				//过期日期
 				$user_sign_day = $data['info']['user_sign_day'] + 1 - abs($i - $time_i);
 				if (($user_sign_day + ($i- $time_i)) <= 3) {
 					$curdate[$i]['grade'] = 2;
@@ -200,7 +225,7 @@ class Buyer_IndexCtl extends Buyer_Controller
 			    } else if ($$user_sign_day >= 30 && ($$user_sign_day + ($i- $time_i)) > 30  && (($$user_sign_day + ($i- $time_i)) % 30 == 0  || ($$user_sign_day + ($i- $time_i))  % 30 > 7)) {
 			        $curdate[$i]['grade'] = 5;
 			    }
-				// $curdate[$i]['grade'] = 0;
+
 				$curdate[$i]['type'] = 0;
 			}
 			

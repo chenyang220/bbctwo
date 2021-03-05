@@ -128,3 +128,8 @@ MODIFY COLUMN `label_logo`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general
 
 ALTER TABLE `ucenter_user_info`
 ADD COLUMN `appToken`  varchar(255) NULL COMMENT 'APP端带的token';
+
+
+ALTER TABLE `yf_points_log`
+MODIFY COLUMN `class_id`  tinyint(1) NOT NULL COMMENT '积分类型1.会员注册,2.会员登录3.评价4.购买商品5.6.管理员操作7.积分换购商品8.积分兑换代金券 9、签到 10、第三方领取代金券' AFTER `points_log_type`;
+

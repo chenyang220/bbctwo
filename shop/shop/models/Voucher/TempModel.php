@@ -43,7 +43,7 @@ class Voucher_TempModel extends Voucher_Temp
 		$shop_cat_row    = $Shop_ClassModel->getClassWhere();
 
 		$expire_row = array();
-		foreach ($rows['items'] as $key => $value)
+		foreach (array_values($rows['items']) as $key => $value)
 		{
 			$rows['items'][$key]['voucher_t_state_label']         = __(self::$voucher_state_map[$value['voucher_t_state']]);
 			$rows['items'][$key]['voucher_t_access_method_label'] = __(self::$voucher_access_method_map[$value['voucher_t_access_method']]);

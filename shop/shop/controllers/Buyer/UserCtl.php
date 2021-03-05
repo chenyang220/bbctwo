@@ -60,12 +60,20 @@
          */
         public function userInfoSign () {
             $user_id = Perm::$userId;
+
+
+            if (!$user_id) {
+                $status = 250;
+                $msg = "未登录！";
+            }
             $time = date('Y-m-d H:i:s',strtotime(date("Y-m-d"),time()));
             $Points_LogModel = new  Points_LogModel();
             $Points_Log = $Points_LogModel->getOneByWhere(array('user_id'=>$user_id,'points_log_time:>='=>$time,'class_id'=>9));
             if ($Points_Log) {
                 //已签到
                 $date['sign_satus'] = 1;
+                $status = 250;
+                $msg = "你已签到，请勿重复操作！";
             } else {
                 //未签到
                 $User_InfoModel = new User_InfoModel();
@@ -87,6 +95,8 @@
                         $points_log_points = 5;
                     }
                     $edit_User_Info['user_sign_day'] = $User_Info['user_sign_day'] + 1;
+
+
                     $User_Info_edit = $User_InfoModel->editInfo($user_id,$edit_User_Info);
                 } else {
                     $points_log_points = 2;
@@ -111,14 +121,69 @@
                 if ($User_Resource_edit && $Points_Log) {
                      $date['sign_satus'] = 1;
                     $User_InfoModel->sql->commitDb();
+
+                    $status = 200;
+                    $msg = "签到成功";
                 } else {
                     $date['sign_satus'] = 0;
                     $User_InfoModel->sql->rollBackDb();
+                    $status = 250;
+                    $msg = "签到失败";
                 }
             } 
-            return $this->data->addBody(-140, $date);
+            $this->data->addBody(-140, $date, $msg, $status);
         }
 
+        public function userInfoVoucher () {
+            $points_log_flag = request_string('points_log_flag');
+            $user_id = Perm::$userId;
+            if (!$user_id) {
+                $status = 250;
+                $msg = "未登录！";
+            }
+            $User_InfoModel = new User_InfoModel();
+            $User_Info = $User_InfoModel->getOne($user_id);
+
+
+            $time = date('Y-m-d H:i:s',strtotime(date("Y-m-d"),time()));
+            $Points_LogModel = new  Points_LogModel();
+            $Points_Log = $Points_LogModel->getOneByWhere(array('user_id'=>$user_id,'points_log_time:>='=>$time,'class_id'=>10,'points_log_flag'=>$points_log_flag));
+            if ($Points_Log) {
+                //已签到
+                $date['sign_satus'] = 1;
+                $status = 250;
+                $msg = "你已领取，请勿重复操作！";
+            } else {
+                $User_InfoModel->sql->startTransactionDb();
+                $addLogRows['points_log_type'] = 1;
+                $addLogRows['class_id'] = 10;
+                $addLogRows['user_id'] = $user_id;
+                $addLogRows['user_name'] = $User_Info['user_name'];
+                $addLogRows['admin_name'] = 'admin';
+                $addLogRows['points_log_points'] = 1;
+                $addLogRows['freeze_points'] = 0;
+                $addLogRows['points_log_time'] = date("Y-m-d H:i:s",time());
+                $addLogRows['points_log_desc'] = "第三方代金券";
+                $addLogRows['points_log_flag'] = $points_log_flag;
+                $Points_Log = $Points_LogModel->addLog($addLogRows);
+                $User_ResourceModel = new  User_ResourceModel();
+                $User_Resource = $User_ResourceModel->getOne($user_id);
+                $editResourceRows['user_points'] =  $User_Resource['user_points'] + 1;
+                $User_Resource_edit = $User_ResourceModel->editResource($user_id,$editResourceRows);
+                if ($User_Resource_edit && $Points_Log) {
+                     $date['sign_satus'] = 1;
+                    $User_InfoModel->sql->commitDb();
+                    $status = 200;
+                    $msg = "领取成功";
+                } else {
+                    $User_InfoModel->sql->rollBackDb();
+                    $status = 250;
+                    $msg = "领取失败";
+                }
+            }
+
+            $this->data->addBody(-140, array(), $msg, $status);
+        }
 
 
         /**

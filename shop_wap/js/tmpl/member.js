@@ -74,22 +74,7 @@ $(function () {
     });
 });
 
-// $("div").delegate(".sign", "click", function(){
-//     var key =  getCookie('key');
-//     $.ajax({
-//         type:'post',
-//         url: ApiUrl + "/index.php?ctl=Buyer_User&met=userInfoSign&typ=json",
-//         data: {k: key, u: getCookie('id')},
-//         dataType: 'json',
-//         success: function (result) {
-//             if (result.data.sign_satus == 1) {
-//                 $(".sign").children().find(".middle").html("已签到");
-//             } else {
-//                 $(".sign").children().find(".middle").html("签到");
-//             }
-//         }
-//     });
-// });
+
 
 
 
