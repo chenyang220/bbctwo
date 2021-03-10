@@ -130,6 +130,7 @@ var firstRow = 0;
 
 
     $("#voucher_list").on('click', "[nctype='exchange_integrate']", function() {
+
         //领取代金券
         if(!getCookie("id")){
             $.sDialog({skin: "red", content: '用户尚未登录！', okBtn: false, cancelBtn: false});

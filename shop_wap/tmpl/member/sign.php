@@ -151,7 +151,7 @@
 						<br/>
 						<b style="font-size:1px;">优惠券</b>
 					</span>
-					<span class="fr">立即<br/>领取</span>
+					<span class="fr" nctype="exchange_integrate" data-vid="<%= items[1].id %>">立即<br/>领取</span>
 					</a>
 				</li>
 			<% } %>
@@ -175,7 +175,7 @@
 						<br/>
 						<b style="font-size:1px;">优惠券</b>
 					</span>
-					<span class="fr">立即<br/>领取</span>
+					<span class="fr" nctype="exchange_integrate" data-vid="<%= items[3].id %>">立即<br/>领取</span>
 					</a>
 				</li>
 			<% } %>
