@@ -58,6 +58,7 @@ var firstRow = 0;
 
                 if (result.status == 200) {
                     if (result.data.sign_satus == 1) {
+                        $("#continuation_sign").html(result.data.user_sign_day);
                         $("#sign_btn").html("签到成功").addClass('active');
                         $(".day").addClass("active signed");
                         $.sDialog({

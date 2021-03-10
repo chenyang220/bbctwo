@@ -121,7 +121,7 @@
                 if ($User_Resource_edit && $Points_Log) {
                      $date['sign_satus'] = 1;
                     $User_InfoModel->sql->commitDb();
-
+                    $date['user_sign_day'] = $User_Info['user_sign_day'] + 1;
                     $status = 200;
                     $msg = "签到成功";
                 } else {
