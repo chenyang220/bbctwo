@@ -133,19 +133,19 @@
 		<ul class="zk-voucher-items clearfix plr20">
 			<% if (items[0]) { %>
 				<li>
-					<a href="">
+					<a href="javascript:void(0)">
 					<span class="fl">
 						<em><b style="font-size:1px;">满</b><strong style="font-size:1px;"><%=items[0]['voucher_t_limit']%>-<%=items[0]['voucher_t_price']%></strong></em>
 						<br/>
 						<b style="font-size:1px;">优惠券</b>
 					</span>
-					<span class="fr">立即<br/>领取</span>
+					<span class="fr" nctype="exchange_integrate" data-vid="<%= items[0].id %>">立即<br/>领取</span>
 					</a>
 				</li>
 			<% } %>
 			<% if (items[1]) { %>	
 				<li>
-					<a href="">
+					<a href="javascript:void(0)">
 					<span class="fl">
 						<em><b style="font-size:1px;">满</b><strong style="font-size:1px;"><%=items[1]['voucher_t_limit']%>-<%=items[1]['voucher_t_price']%></strong></em>
 						<br/>
@@ -157,19 +157,19 @@
 			<% } %>
 			<% if (items[2]) { %>
 				<li>
-					<a href="">
+					<a href="javascript:void(0)">
 					<span class="fl">
 						<em><b style="font-size:1px;">满</b><strong style="font-size:1px;"><%=items[2]['voucher_t_limit']%>-<%=items[2]['voucher_t_price']%></strong></em>
 						<br/>
 						<b style="font-size:1px;">优惠券</b>
 					</span>
-					<span class="fr">立即<br/>领取</span>
+					<span class="fr"  nctype="exchange_integrate" data-vid="<%= items[2].id %>">立即<br/>领取</span>
 					</a>
 				</li>
 			<% } %>
 			<% if (items[3]) { %>
 				<li>
-					<a href="">
+					<a href="javascript:void(0)">
 					<span class="fl">
 						<em><b style="font-size:1px;">满</b><strong style="font-size:1px;"><%=items[3]['voucher_t_limit']%>-<%=items[3]['voucher_t_price']%></strong></em>
 						<br/>

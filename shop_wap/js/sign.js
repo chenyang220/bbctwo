@@ -127,4 +127,61 @@ var firstRow = 0;
     $(".btn_state").click(function(){
         $("#sign_state").addClass("hide");
     })
+
+
+    $("#voucher_list").on('click', "[nctype='exchange_integrate']", function() {
+        //领取代金券
+        if(!getCookie("id")){
+            $.sDialog({skin: "red", content: '用户尚未登录！', okBtn: false, cancelBtn: false});
+            return false;
+        }
+        var v_id = $(this).data("vid");
+        $.ajax({
+            url: ApiUrl + "/index.php?ctl=Voucher&met=getVoucherById&typ=json",
+            data: {vid: v_id},
+            type: 'post',
+            dataType: 'json',
+            success: function(data) {
+                if ( data.status == 200 ) {
+                    var data = data.data, voucher_t_eachlimit = data.voucher_t_eachlimit;
+                    var limit = '';
+                    if(voucher_t_eachlimit == 0){
+                        limit = "每个ID领取无限制";
+                    }else{
+                        limit = "每个ID限领" + voucher_t_eachlimit + "张";
+                    }
+
+                    $.sDialog({ skin: "red",
+                        content: limit,
+                        okBtn: true,
+                        cancelBtn: true,
+                        okFn: function () {
+                            $.ajax({
+                                url: ApiUrl + "/index.php?ctl=Voucher&met=receiveVoucher&typ=json",
+                                data: {vid: v_id,k: getCookie("key"),u: getCookie("id")},
+                                type: 'post',
+                                dataType: 'json',
+                                success: function (data) {
+                                    $.sDialog({
+                                        skin: "red",
+                                        content: data.msg,
+                                        okBtn: false,
+                                        cancelBtn: false
+                                    });
+                                }
+                            })
+                        }
+                    });
+                } else {
+                    $.sDialog({skin: "red", content: "网络异常", okBtn: false, cancelBtn: false});
+                }
+            }
+        });
+    });
  })
+
+
+     
+
+
+ 
