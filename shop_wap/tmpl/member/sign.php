@@ -77,7 +77,7 @@
 						<div class="sign-jb-exchange-content">
 							<h4><a href="javascript:;">住宿</a></h4>
 							<p class="sign-goods-ty"><a class="block one-overflow">领取住宿专属代金券</a></p>
-							<p class="sign-goods-ty">积分+1</p><!--显示出来-->
+							<p class="sign-goods-ty2">积分+1</p><!--显示出来-->
 							<p class="tr"><a class="btn-zk-exchange" href="javascript:;"  date-type="zs" date-src="">去领取</a></p>
 						</div>
 					</li>
@@ -86,7 +86,7 @@
 						<div class="sign-jb-exchange-content">
 							<h4><a href="javascript:;">美食</a></h4>
 							<p class="sign-goods-ty"><a class="block one-overflow" >领取美食专属代金券</a></p>
-							<p class="sign-goods-ty">积分+1</p><!--显示出来-->
+							<p class="sign-goods-ty2">积分+1</p><!--显示出来-->
 							<p class="tr"><a class="btn-zk-exchange" href="javascript:;" date-type="ms" date-src="">去领取</a></p>
 						</div>
 					</li>
@@ -135,9 +135,9 @@
 				<li>
 					<a href="">
 					<span class="fl">
-						<em><b>满</b><strong><%=items[0]['voucher_t_limit']%>-<%=items[0]['voucher_t_price']%></strong></em>
+						<em><b style="font-size:1px;">满</b><strong style="font-size:1px;"><%=items[0]['voucher_t_limit']%>-<%=items[0]['voucher_t_price']%></strong></em>
 						<br/>
-						<b>优惠券</b>
+						<b style="font-size:1px;">优惠券</b>
 					</span>
 					<span class="fr">立即<br/>领取</span>
 					</a>
@@ -147,9 +147,9 @@
 				<li>
 					<a href="">
 					<span class="fl">
-						<em><b>满</b><strong><%=items[1]['voucher_t_limit']%>-<%=items[1]['voucher_t_price']%></strong></em>
+						<em><b style="font-size:1px;">满</b><strong style="font-size:1px;"><%=items[1]['voucher_t_limit']%>-<%=items[1]['voucher_t_price']%></strong></em>
 						<br/>
-						<b>优惠券</b>
+						<b style="font-size:1px;">优惠券</b>
 					</span>
 					<span class="fr">立即<br/>领取</span>
 					</a>
@@ -159,9 +159,9 @@
 				<li>
 					<a href="">
 					<span class="fl">
-						<em><b>满</b><strong><%=items[2]['voucher_t_limit']%>-<%=items[2]['voucher_t_price']%></strong></em>
+						<em><b style="font-size:1px;">满</b><strong style="font-size:1px;"><%=items[2]['voucher_t_limit']%>-<%=items[2]['voucher_t_price']%></strong></em>
 						<br/>
-						<b>优惠券</b>
+						<b style="font-size:1px;">优惠券</b>
 					</span>
 					<span class="fr">立即<br/>领取</span>
 					</a>
@@ -171,9 +171,9 @@
 				<li>
 					<a href="">
 					<span class="fl">
-						<em><b>满</b><strong><%=items[3]['voucher_t_limit']%>-<%=items[3]['voucher_t_price']%></strong></em>
+						<em><b style="font-size:1px;">满</b><strong style="font-size:1px;"><%=items[3]['voucher_t_limit']%>-<%=items[3]['voucher_t_price']%></strong></em>
 						<br/>
-						<b>优惠券</b>
+						<b style="font-size:1px;">优惠券</b>
 					</span>
 					<span class="fr">立即<br/>领取</span>
 					</a>

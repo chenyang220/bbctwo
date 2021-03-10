@@ -122,9 +122,7 @@
         </div>
         <footer id="footer"></footer>
         <!-- <?= __('底部'); ?> -->
-        <?php
-            include __DIR__ . '/../../includes/footer_menu.php';
-        ?>
+  
     </div>
     
     <script type="text/javascript" src="../../js/zepto.js"></script>
@@ -141,7 +139,10 @@
     <script type="text/javascript" src="../../js/NativeShare.js"></script>
     <script type="text/javascript" src="../../js/tmpl/member.js"></script>
     <script type="text/javascript" src="../../js/tmpl/footer.js"></script>
-    <script type="text/javascript" src="../../tmpl/js/soshm.min.js"></script>
+    <script type="text/javascript" src="../../js/soshm.min.js"></script>
+          <?php
+            include __DIR__ . '/../../includes/footer_menu.php';
+        ?>
     </body>
     </html>
 <?php
