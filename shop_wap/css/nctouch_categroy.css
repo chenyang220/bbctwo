@@ -79,13 +79,29 @@
 
 /* 签到 */
 .zk-sign-head{
+	position:relative;
 	display:inline-block;
-	padding:0.772rem 0.681rem 0.454rem;
+	padding:0.772rem 0.681rem 0;
 	width:100%;
-	height:11.204rem;
-	background:url(../images/zk/sign-head-bg.png) no-repeat center;
-	background-size:cover;
+	background:#FF7800;
 	box-sizing:border-box;
+}
+.sign-top-module{
+	/* position:absolute;
+	bottom:0; */
+	margin-top:1.136rem;
+	width:100%;
+	left:0;
+	/* padding:0 0.681rem; */
+	box-sizing:border-box;
+}
+.sign-white-content{
+	border-top-right-radius: 0.5rem;
+	border-top-left-radius: 0.5rem;
+	display:inline-block;
+	padding-top:0.795rem;
+	padding-bottom:0.75rem;
+	width:100%;
 }
 @media (max-width:360px){
 	.zk-sign-head{
@@ -103,7 +119,7 @@
 .zk-sign-head .fl span em{
 	display:inline-block;
 	margin-right:0.454rem;
-	font-size:0.75rem;
+	font-size:0.681rem;
 }
 .zk-sign-head .fl span i{
 	display:inline-block;
@@ -123,20 +139,22 @@
 	margin-left:0.795rem;
 	font-size:0.886rem;
 }
-.zk-sign-head .fl span b{
-	margin-left: 0.3rem;
-}
+
 .zk-sign-head .zk-level-sign{
+	position:absolute;
+	right:0;
+	top:0.5rem;
 	display:inline-block;
 	margin-top:0.9rem;
-	width:4.045rem;
-	height:1.409rem;
-	line-height:1.409rem;
-	background:#F22E39;
+	width:2.9rem;
+	height:1rem;
+	line-height:1rem;
+	background:#fff;
 	box-shadow:0px 3px 5px 0px rgba(0, 0, 0, 0.1);
-	border-radius:0.227rem;
-	font-size:0.75rem;
-	color:#fff;
+	border-top-left-radius:0.6rem;
+	border-bottom-left-radius:0.6rem;
+	font-size:0.545rem;
+	color:#FF9100;
 	text-align:center;
 }
 .zk-level-sign.active{
@@ -146,12 +164,19 @@
 .zk-sign-days{
 	margin-left: 0.454rem;
 	margin-bottom: 0.6rem;
-	margin-top: 0.7rem;
-	font-size: 0.59rem;
-	color: #fff;
+	/* margin-top: 0.7rem; */
+	font-size: 0.681rem;
+	color:#444;
+	
 }
-.zk-sign-days b{
-	color:#F6FF00;
+.zk-sign-days span,.zk-sign-days b{
+	color:#FF9100 !important;
+	vertical-align:top !important;
+}
+.sign-top-module em{
+	padding-right:0.386rem;
+	font-size:0.681rem;
+	color:#FF9100;
 }
 .zk-sign-det-ul li{
 	position:relative;
@@ -166,24 +191,29 @@
 .zk-sign-det-ul li span{
 	display:inline-block;
 	width:1.727rem;
-	height:2.159rem;
+	height:2.1rem;
 	background:url(../images/zk/sign-li.png) no-repeat center;
 	background-size:contain;
 	font-size:0.636rem;
 	color:#999;
+	padding-top: 0.2rem;
+	box-sizing: border-box;
 }
-.zk-sign-det-ul li.active span{
+.zk-sign-det-ul li.day span{
 	background:url(../images/zk/sign-li-active.png) no-repeat center;
-	background-size:cover;
+	background-size:contain;
 	color:#fff;
 }
 .zk-sign-det-ul li em{
-	margin-top:-0.2rem;
+	padding-right:0 !important;
 	font-size:0.545rem;
 	color:#444;
 }
 .zk-sign-det-ul li.active em{
 	color:#F32A2A;
+}
+.zk-sign-det-ul li.day span.color{
+	color:#fff;
 }
 .zk-sign-det-ul li span.color{
 	color:#FF7800;
@@ -195,69 +225,77 @@
 	background: url(../images/zk/sign-yes.png) no-repeat center;
 	background-size: contain;
 	position: absolute;
-	top: -0.2rem;
-	right: -0.1rem;
+	top: 0;
+	right: 0;
 }
 .zk-sign-det-ul li.signed b{
 	display:inline-block;
 }
 .btn-sign-get{
 	display:inline-block;
-	margin-top:0.454rem;
+	margin-top:0.886rem;
 	width:5.454rem;
 	height:1.363rem;
 	line-height:1.363rem;
-	background:rgba(255,255,255,.8);
+	background:#F45862;
 	border-radius:0.681rem;
-	font-size:0.727rem;
-	color:#FF7800;
+	font-size:0.681rem;
+	color:#fff;
 	text-align:center;
 	border:0;
 }
+.btn-sign-get.active{
+	background:#BDBDBD;
+}
 .zk-module-tit{
-	padding:0.863rem 0.681rem;
+	padding:0.818rem 0.681rem 0.636rem;
+}
+.zk-module-tit-special{
+	padding:0.613rem 0.681rem 0.5rem;
 }
 .zk-module-tit span{
 	padding-left:0.454rem;
 	font-size:0.818rem;
+	font-weight:bold;
 	color:#333;
 	border-left:0.181rem solid #FF7800;
 }
 .zk-module-tit em{
-	font-size:0.681rem;
+	font-size:0.5rem;
 	color:#999;
+	vertical-align:middle;
 }
 .zk-module-tit .iconfont{
-	font-size:1rem;
+	font-size:0.8rem;
 	color:#999;
 	vertical-align:middle;
 }
 .zk-voucher-items{
-	margin-bottom: 1.136rem;
+	/* margin-bottom: 1.136rem; */
 }
 .zk-voucher-items li{
 	float: left;
 	width: 50%;
 	height: 3.545rem;
 	box-sizing: border-box;
-	padding:0.9rem 1rem 0 1.181rem;
+	padding:0.7rem 1rem 0 1rem;
 	font-size: 0;
 }
 .zk-voucher-items li:nth-child(1){
 	background:url(../images/zk/sign-v1.png) no-repeat center;
-	background-size:contain;
+	background-size:cover;
 }
 .zk-voucher-items li:nth-child(2){
 	background:url(../images/zk/sign-v2.png) no-repeat center;
-	background-size:contain;
+	background-size:cover;
 }
 .zk-voucher-items li:nth-child(3){
 	background:url(../images/zk/sign-v3.png) no-repeat center;
-	background-size:contain;
+	background-size:cover;
 }
 .zk-voucher-items li:nth-child(4){
 	background:url(../images/zk/sign-v4.png) no-repeat center;
-	background-size:contain;
+	background-size:cover;
 }
 .zk-voucher-items li:nth-child(1) span.fl b,.zk-voucher-items li:nth-child(1) span.fl strong{
 	font-size:0.681rem;
@@ -277,7 +315,7 @@
 }
 
 .zk-voucher-items li span.fl strong{
-	font-weight:bold;
+	/* font-weight:bold; */
 }
 .zk-voucher-items li span.fr{
 	font-size:0.681rem;
@@ -309,47 +347,151 @@
 }
 .sign-jb-exchange-items li{
 	position:relative;
-	margin-bottom:0.568rem;
-	padding:0.681rem;
+	margin:0.681rem;
 	background:#fff;
-	box-shadow:0px 3px 5px 0px rgba(0, 0, 0, 0.06);
+	border-radius:0.6rem;
+	box-shadow:0px 0 10px 0px rgba(0, 0, 0, 0.06);
+	min-height: 3.5rem;
+}
+.zk-sign-det-ul li i{
+	display:none;
+	width:1.2rem;
+	height:0.34rem;
+	background:url(../images/zk/sign-line.png) no-repeat center;
+	background-size:cover;
+	position: absolute;
+	top: 0.5rem;
+	left: 0.4rem;
+}
+.zk-sign-det-ul li.old i{
+	display:inline-block;
+	
 }
 .sign-jb-exchange-content{
-	padding-left:5.295rem;
+	padding-left:2.9rem;
 	font-size:0;
-	min-height:3.95rem;
 }
 .sign-jb-exchange-content h4{
-	margin-bottom:0.454rem;
+	margin-bottom:0.2rem;
+	padding-top: 0.454rem;
 }
 .sign-jb-exchange-content h4 a{
-	font-size:0.727rem;
+	font-size:0.636rem;
 	color:#333;
 }
 .sign-jb-exchange-content .sign-goods-ty a{
-	font-size:0.681rem;
-	color:#666;
+	font-size:0.5rem;
+	color:#999;
+}
+.sign-goods-ty2{
+	font-size:0.454rem;
+	color:#FA5A34;
 }
 .btn-zk-exchange{
-	display:inline-block;
-	margin-top:0.522rem;
-	width:3.181rem;
-	height:1.136rem;
-	line-height:1.136rem;
-	background:#FF7800;
-	font-size:0.681rem;
-	color:#fff;
-	text-align:center;
-	border-radius:0.568rem;
+	display: inline-block;
+	margin-top: 0.522rem;
+	width: 2.8rem;
+	height: 1.136rem;
+	line-height: 1.136rem;
+	background: #F55861;
+	font-size: 0.636rem;
+	color: #fff;
+	text-align: center;
+	border-radius: 0.568rem;
+	position: absolute;
+	right: 0.363rem;
+	top: 0.8rem;
 }
 .sign-jb-exchange-items .img-box{
 	position:absolute;
-	left:0.681rem;
+	left:0.381rem;
 	top:0.681rem;
 	z-index:2;
-	width:4.613rem;
-	height:3.95rem;
-	border-radius:0.09rem;
+	width:2rem;
+	height:2rem;
 	overflow:hidden;
 	box-shadow:0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+#pointnum{
+	font-size:1.636rem;
+}
+.sign-top-text{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0.6rem;
+}
+.zk-sign-content{
+	margin-top:0.772rem;
+}
+#sign_state{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width:100%;
+	height: 100%;
+	z-index:10;
+}
+.sign-rules{
+	display:inline-block;
+	padding-bottom: 0.88rem;
+	width:74.4%;
+	min-height:15.363rem;
+	background: #fff url(../images/zk/dialog-bg.png) no-repeat top;
+	background-size: contain;
+	border-radius: 1rem;
+	box-sizing:border-box;
+}
+.sign-rules h3{
+	margin-top:1.59rem;
+	font-size:0.9rem;
+	font-weight:bold;
+	color:#fff;
+}
+.sign-rules ul{
+	margin-top:2.7rem;
+	padding-right:0.522rem;
+	padding-bottom:0.5rem;
+}
+.sign-rules li{
+	position:relative;
+	padding-left:1.59rem;
+	margin-bottom:0.3rem;
+	font-size: 0.454rem;
+	color:#999;
+	line-height:0.9rem;
+}
+.sign-rules li i{
+	position:absolute;
+	left:.59rem;
+	top:.2rem;
+	display:inline-block;
+	width:0.568rem;
+	height:0.568rem;
+	background:url(../images/zk/y.png) no-repeat center;
+	background-size:contain;
+}
+#sign_state .table{
+	background: rgba(0,0,0,.4);
+}
+.btn_state{
+	position:relative;
+	display:inline-block;
+	margin-top:0.863rem;
+	width:5.454rem;
+	height:1.363rem;
+	line-height:1.363rem;
+	background:#F55861;
+	font-size:0.727rem;
+	color:#fff;
+	border-radius:0.8rem;
+}
+.btn_state:before{
+	content:'';
+	width:9.454rem;
+	height:1px;
+	background:#ebebeb;
+	position:absolute;
+	left:50%;
+	top:-0.863rem;
+	margin-left:-4.727rem;
 }

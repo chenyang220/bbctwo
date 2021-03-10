@@ -21,7 +21,7 @@ var firstRow = 0;
 
 
         if (result.data.sign_satus == 1) {
-            $("#sign_btn").html("签到成功");
+            $("#sign_btn").html("签到成功").addClass('active');
         }
         
 
@@ -58,7 +58,7 @@ var firstRow = 0;
 
                 if (result.status == 200) {
                     if (result.data.sign_satus == 1) {
-                        $("#sign_btn").html("签到成功");
+                        $("#sign_btn").html("签到成功").addClass('active');
                         $(".day").addClass("active signed");
                         $.sDialog({
                             content: result.msg,
