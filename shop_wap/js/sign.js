@@ -7,7 +7,7 @@ var firstRow = 0;
 
  $(function (){
  	//获取会员积分'); ?>
-    $.getJSON(ApiUrl + '/index.php?ctl=Buyer_Index&met=getUserInfo&typ=json', {
+    $.getJSON(ApiUrl + '/index.php?ctl=Buyer_Order&met=getUserInfo&typ=json', {
         'k': key,
         'u':u,
     }, function (result) {
