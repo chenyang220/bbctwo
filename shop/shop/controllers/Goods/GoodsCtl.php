@@ -390,6 +390,8 @@
             if (trim(request_string('search_text')) != "" && trim(request_string('search_text')) != "*") {
                 $cond_row['common_name:LIKE'] ='%' . urldecode(trim(request_string('search_text'))) . '%' ;
             }
+
+            $rows = 10000;
             $data = $Goods_CommonModel->getGoodsList($cond_row, $order_row, $page, $rows, $property_value_row);
             //店铺分类
             $shop_goods_cat_id = request_int('shop_goods_cat_id');
@@ -445,7 +447,7 @@
                    //      unset($data['items'][$k]);
                    // }
                     // 如果商品不存在，即删除$k
-                    if (!empty(request_string('label_id')) && (!trim($v['label_id']) || !in_array(request_string('label_id'), $label_id_arr))){
+                    if (!empty(request_string('label_id')) &&  !in_array(request_string('label_id'), $label_id_arr)){
                         unset($data['items'][$k]);
                     }
                }
