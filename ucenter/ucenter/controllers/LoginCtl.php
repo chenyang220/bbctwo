@@ -4565,6 +4565,115 @@ $url = Yf_Registry::get('shop_api_url') . "/?ctl=Login&met=check&typ=e&redirect=
         }
     }
 
+
+    /**
+     * 第三方中酷快速注册
+     * 
+     * @dateTime  2020-08-14
+     * @author fzh
+     * @version   3.8.1
+     */
+    public function thirdQuick(){
+        //参数接收
+        $user_name = request_string('user_mobile');  //用户手机号
+        $uid = request_int('u_id');  //奥通用户id
+        $password = 'uid123456';
+        $password = md5($password);
+        $mobile = $user_name;
+        $bolean = true;
+        $status = 200;
+
+        //参数验证
+        if (empty($mobile)) {
+           return $this->data->addBody(-140, array(),'手机号码不能为空', 250);
+        }else{
+           $bolean = self::is_mobile_number($mobile);
+        }
+        if (!$bolean) {
+           return $this->data->addBody(-140, array(),'手机号码格式不正确', 250);
+        }
+        if (empty($uid) || !is_integer($uid)) {
+             return $this->data->addBody(-140, array(),'奥通用户id不正确', 250);
+        }
+        $User_InfoModel = new User_InfoModel();
+        $User_InfoDetail = new User_InfoDetailModel();
+        $User_Info_name = $User_InfoModel->getOneByWhere(array("user_name"=>$user_name));
+        if ($User_Info_name) {
+            $edit_User_Info = $User_InfoModel->editInfo($User_Info_name['user_id'],array("u_id"=>$uid));
+            if ($edit_User_Info) {
+                $status = 200;
+                $msg = "success";
+            } else {
+                $status = 250;
+                $msg = '创建用户信息失败';
+            }
+            return $this->data->addBody(-140, array(), $msg, $status);
+        } else {
+            // 注册一个会员信息
+            $server_id = 0;
+            $rs_row = array();
+            $User_InfoModel->sql->startTransaction();
+            $Db = Yf_Db::get('ucenter');
+            $seq_name = 'user_id';
+            $user_id = $Db->nextId($seq_name);
+            $now_time = time();
+            $ip = get_ip();
+            $session_id = uniqid();
+            $arr_field_user_info = array();
+            $arr_field_user_info['user_name'] = $mobile;
+            $arr_field_user_info['action_time'] = $now_time;
+            $arr_field_user_info['action_ip'] = $ip;
+            $arr_field_user_info['session_id'] = $session_id;
+            $arr_field_user_info['u_id'] = $uid;
+            $user_id = $User_InfoModel->addInfo($arr_field_user_info,true);
+            $arr_field_user_info_detail = array();
+            //添加mobile绑定.
+            //绑定标记：mobile/email/openid  绑定类型+openid
+            $bind_id = sprintf('mobile_%s', $mobile);
+            //查找bind绑定表
+            $User_BindConnectModel = new User_BindConnectModel();
+            $bind_info = $User_BindConnectModel->getOne($bind_id);
+            if (!$bind_info) {
+                $time = date('Y-m-d H:i:s', time());
+                //插入绑定表
+                $bind_array = array(
+                    'bind_id' => $bind_id,
+                    'user_id' => $user_id,
+                    'bind_type' => $User_BindConnectModel::MOBILE,
+                    'bind_time' => $time
+                );
+                $flag = $User_BindConnectModel->addBindConnect($bind_array);
+                array_push($rs_row, $flag);
+            }
+            $arr_field_user_info_detail['user_mobile_verify'] = "1";
+            $arr_field_user_info_detail['user_name'] = $mobile;
+            $arr_field_user_info_detail['nickname'] = $user_name;
+            $arr_field_user_info_detail['user_mobile'] = $mobile;
+            $arr_field_user_info_detail['user_tel'] = $mobile;
+            $arr_field_user_info_detail['user_reg_time'] = $now_time;
+            $arr_field_user_info_detail['user_count_login'] = 1;
+            $arr_field_user_info_detail['user_lastlogin_time'] = $now_time;
+            $arr_field_user_info_detail['user_lastlogin_ip'] = $ip;
+            $arr_field_user_info_detail['user_reg_ip'] = $ip;
+            $arr_field_user_info_detail['user_avatar'] = '';
+            $flag = $User_InfoDetail->addInfoDetail($arr_field_user_info_detail);
+            array_push($rs_row, $flag);
+            if (is_ok($rs_row) && $User_InfoModel->sql->commit()) {
+                $d = array();
+                $d['user_id'] = $user_id;
+                $encrypt_str = Perm::encryptUserInfo($d, $session_id);
+                $arr_body = array(
+                    "user_name" => $user_name
+                );
+                return $this->data->addBody(-140, $arr_body);
+            } else {
+                $User_InfoModel->sql->rollBack();
+                return $this->data->setError('创建用户信息失败');
+            }
+        }
+        
+    }
+
     /**
      * 第三方中酷快速注册
      * 
