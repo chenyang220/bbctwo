@@ -231,8 +231,19 @@ class Api_User_InfoCtl extends Yf_AppController
      * @return json
      */
     public function getUserInfoByName(){
-        $user_name = request_string('user_name');
-        $cond_row['user_name'] = $user_name;
+        $uid = request_string('uid');
+        $db = new YFSQL();
+        $sql = "select * from ucenter_user_info where u_id=" . $uid;
+
+        $u_arr = $db->find($sql);
+
+
+        if (!$u_arr) {
+            return $this -> data -> addBody(-140, array(), __('鉴权UID查无此用户'), 250);
+        }
+        $ucenter_user_info = current($u_arr);
+        $user_id = $ucenter_user_info['user_id'];
+        $cond_row['user_id'] = $user_id;
         $data = $this->userInfoModel->getByWhere($cond_row);
         $this->data->addBody(-140, $data);
     }
