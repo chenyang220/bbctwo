@@ -4576,7 +4576,7 @@ $url = Yf_Registry::get('shop_api_url') . "/?ctl=Login&met=check&typ=e&redirect=
     public function thirdQuick(){
         //参数接收
         $user_name = request_string('user_mobile');  //用户手机号
-        $uid = request_int('u_id');  //奥通用户id
+        // $uid = request_int('u_id');  //奥通用户id
         $password = 'uid123456';
         $password = md5($password);
         $mobile = $user_name;
@@ -4615,7 +4615,7 @@ $url = Yf_Registry::get('shop_api_url') . "/?ctl=Login&met=check&typ=e&redirect=
             $arr_field_user_info['action_time'] = $now_time;
             $arr_field_user_info['action_ip'] = $ip;
             $arr_field_user_info['session_id'] = $session_id;
-            $arr_field_user_info['u_id'] = $uid;
+            $arr_field_user_info['u_id'] = '';
             $user_id = $User_InfoModel->addInfo($arr_field_user_info,true);
             $arr_field_user_info_detail = array();
             //添加mobile绑定.
