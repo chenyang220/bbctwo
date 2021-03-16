@@ -4592,21 +4592,12 @@ $url = Yf_Registry::get('shop_api_url') . "/?ctl=Login&met=check&typ=e&redirect=
         if (!$bolean) {
            return $this->data->addBody(-140, array(),'手机号码格式不正确', 250);
         }
-        if (empty($uid) || !is_integer($uid)) {
-             return $this->data->addBody(-140, array(),'奥通用户id不正确', 250);
-        }
         $User_InfoModel = new User_InfoModel();
         $User_InfoDetail = new User_InfoDetailModel();
         $User_Info_name = $User_InfoModel->getOneByWhere(array("user_name"=>$user_name));
         if ($User_Info_name) {
-            $edit_User_Info = $User_InfoModel->editInfo($User_Info_name['user_id'],array("u_id"=>$uid));
-            if ($edit_User_Info) {
-                $status = 200;
-                $msg = "success";
-            } else {
-                $status = 250;
-                $msg = '创建用户信息失败';
-            }
+            $status = 250;
+            $msg = '该手机用户已存在，创建用户信息失败！';
             return $this->data->addBody(-140, array(), $msg, $status);
         } else {
             // 注册一个会员信息
