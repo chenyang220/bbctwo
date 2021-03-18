@@ -4576,7 +4576,6 @@ $url = Yf_Registry::get('shop_api_url') . "/?ctl=Login&met=check&typ=e&redirect=
     public function thirdQuick(){
         //参数接收
         $user_name = request_string('user_mobile');  //用户手机号
-        // $uid = request_int('u_id');  //奥通用户id
         $password = 'uid123456';
         $password = md5($password);
         $mobile = $user_name;
@@ -4585,12 +4584,14 @@ $url = Yf_Registry::get('shop_api_url') . "/?ctl=Login&met=check&typ=e&redirect=
 
         //参数验证
         if (empty($mobile)) {
-           return $this->data->addBody(-140, array(),'手机号码不能为空', 250);
+            $date['status_code'] = 2;
+           return $this->data->addBody(-140, $date,'手机号码不能为空', 250);
         }else{
            $bolean = self::is_mobile_number($mobile);
         }
         if (!$bolean) {
-           return $this->data->addBody(-140, array(),'手机号码格式不正确', 250);
+           $date['status_code'] = 3;
+           return $this->data->addBody(-140, $date,'手机号码格式不正确', 250);
         }
         $User_InfoModel = new User_InfoModel();
         $User_InfoDetail = new User_InfoDetailModel();
@@ -4598,7 +4599,8 @@ $url = Yf_Registry::get('shop_api_url') . "/?ctl=Login&met=check&typ=e&redirect=
         if ($User_Info_name) {
             $status = 250;
             $msg = '该手机用户已存在，创建用户信息失败！';
-            return $this->data->addBody(-140, array(), $msg, $status);
+            $date['status_code'] = 4;
+            return $this->data->addBody(-140, $date, $msg, $status);
         } else {
             // 注册一个会员信息
             $server_id = 0;
@@ -4653,13 +4655,13 @@ $url = Yf_Registry::get('shop_api_url') . "/?ctl=Login&met=check&typ=e&redirect=
                 $d = array();
                 $d['user_id'] = $user_id;
                 $encrypt_str = Perm::encryptUserInfo($d, $session_id);
-                $arr_body = array(
-                    "user_name" => $user_name
-                );
-                return $this->data->addBody(-140, $arr_body);
+                $date['status_code'] = 1;
+                $date['user_name'] = $user_name;
+                return $this->data->addBody(-140, $date, "创建用户信息成功", 200);
             } else {
+                $date['status_code'] = 5;
                 $User_InfoModel->sql->rollBack();
-                return $this->data->setError('创建用户信息失败');
+                return $this->data->addBody(-140,$date, "创建用户信息失败！", 250);
             }
         }
         
