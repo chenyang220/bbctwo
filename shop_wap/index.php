@@ -41,8 +41,6 @@ include __DIR__ . '/includes/header.php';
 <script type="text/javascript">
     if (getCookie("token") == "undefined" || getCookie("token") == null   ||  "<?=$_GET['token']?>" != '') {
         setCookie("token","<?=$_GET['token']?>");
-
-
     }
 
     if (getCookie("enterId")  == "undefined" || getCookie("enterId") == null   ||  "<?=$_GET['enterId']?>" != '') {
@@ -748,7 +746,8 @@ background: url(../../img/bg4.png) no-repeat;
 <script type="text/javascript" src="js/addtohomescreen.js"></script>
 <script type="text/javascript" src="js/jquery.timeCountDown.js"></script>
 <script>
-
+ // alert(getCookie("key"))
+ //        alert(getCookie("id"))
       var urlstr = location.href;
       var urlstatus=false;
       $("#category-head a").each(function () {

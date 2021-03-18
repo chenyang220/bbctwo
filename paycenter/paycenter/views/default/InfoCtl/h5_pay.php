@@ -204,13 +204,10 @@ if ($_GET['qr']) {
             else
             return null;
         }
-        // alert(getCookie("token"));
-        // alert(getCookie("enterId"));
-        // alert("<?=$u_id?>");
         //联系客服
         UC.config = {
             // 开启调试模式
-            debug: true,
+            debug: false,
             // 当前登录用户TOKEN，不传会默认从地址栏获取
             token:"<?php echo $token;?>",
             // // 当前企业ID，不传会默认从地址栏获取
@@ -229,22 +226,18 @@ if ($_GET['qr']) {
                 console.error(data);
         };
         UC.ready = function () {
-		  UC.debug.log("<?php echo $token;?>");
             //在这调用接口方法
             hideNavigationBarLeft();
             // getUserInfo();
             setNavigationBarRight();
         };
           function hideNavigationBarLeft () {
-		// alert(1);
             var apiName = 'hideNavigationBarLeft';
             var param = '';
             UC.call(apiName, param, function (data) {
-                // alert(3);
            console.log('=========' + apiName + '=========');
            console.log(JSON.stringify(data));
             }, function (data) {
-                // alert(4);
            console.log(data, apiName);
             });
           };
