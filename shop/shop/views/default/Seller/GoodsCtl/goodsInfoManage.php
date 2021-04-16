@@ -332,12 +332,12 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
             <div class="service-set-items">
                 <a href="javascript:void(0)" class="bbc_seller_btns ncbtn" id="add_goods_label"><?= __('添加商品标签') ?></a>
                  <span id="label_content">
-                <?php    if ($data['label_Base_edit']) {?>
+                <?php    if ($data['label_Base_edit']) {   $add_label_arr = array();?>
          
                         <?php
                             foreach ($data['label_Base_edit'] as $key => $val) {
                         ?>
-                            <label><?php print_r($data['label_Base'][$val]['label_name'])  ?></label>
+                            <label><?php print_r($data['label_Base'][$val]['label_name']);  $add_label_arr[$val] = $data['label_Base'][$val]['label_name'];?></label>
                         <?php 
                             } 
                         ?>
@@ -1001,7 +1001,14 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
 
 
 <script>
-var label_id_arr = [];
+
+    <?php
+        if (!$add_label_arr) {
+            $add_label_arr = [];
+        }
+
+    ?>
+    var label_id_arr = <?=json_encode($add_label_arr)?>;
     $('#add_goods_label').click(function ()
         {
             $.dialog({

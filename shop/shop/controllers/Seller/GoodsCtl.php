@@ -257,6 +257,10 @@
                 } else {
                     $data['label_Base_edit'] = '';
                 }
+
+
+                // print_r($data['label_Base_edit']);
+                // exit;
                 $this -> view -> setMet('goodsInfoManage');
                 include $this -> view -> getView();
             }
@@ -656,7 +660,10 @@
             $common_data['common_length'] = request_string('glength');
             $common_data['common_width'] = request_string('width');
             $common_data['common_height'] = request_string('height');
-            $label_id = trim(request_string('label_id',0),",");
+            // if () {
+
+            // }
+            $label_id = trim(trim(request_string('label_id')),",");
 
 
 
