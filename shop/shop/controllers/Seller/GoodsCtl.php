@@ -1189,6 +1189,7 @@
                         $this -> goodsBaseModel -> editBase($goods_id, $goods_data, false);
                         $edit_ids[] = $goods_id;
                     } else {
+
                         $goods_id = $this -> goodsBaseModel -> addBase($goods_data, true);
                         $add_ids[] = $goods_id;
                     }
