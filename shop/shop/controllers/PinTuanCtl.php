@@ -20,8 +20,7 @@ class PinTuanCtl extends Controller
             $this->goodsBaseModel = new Goods_BaseModel();
                 
 	}
-
-    /*
+ /*
      *  拼团主页面
      */
     public function index() {
@@ -42,6 +41,8 @@ class PinTuanCtl extends Controller
 
         //首页版块置顶操作
         $cond_row = array();
+
+
         if(request_string('pintuan_id')) {
             $pintuan_id = request_string('pintuan_id');
             $ids = explode(',',$pintuan_id);
@@ -52,8 +53,17 @@ class PinTuanCtl extends Controller
             $cond_row['status'] = 1;
             $cond_row['start_time:<'] = date('Y-m-d H:i:s');
             $cond_row['end_time:>'] = date('Y-m-d H:i:s');
+             $goods = $this->pinTuanBaseModel->getGoodsList($cond_row,$cat_id);
+        } else {
+            $cond_row_id['status'] = 1;
+            $cond_row_id['start_time:<'] = date('Y-m-d H:i:s');
+            $cond_row_id['end_time:>'] = date('Y-m-d H:i:s');
+            $pinTuan = $this->pinTuanBaseModel->getByWhere($cond_row_id);
+            $ids = array_column($pinTuan, 'id');
+            $cond_row = $cond_row_id;
+            $cond_row['id:IN'] = $ids;
+            $goods = $this->pinTuanBaseModel->getGoodsList($cond_row,$cat_id);
         }
-        $goods = $this->pinTuanBaseModel->getGoodsList($cond_row,$cat_id);
         if($pintuan_list) {
             $goods = array_merge($pintuan_list,$goods);
         }
@@ -77,6 +87,77 @@ class PinTuanCtl extends Controller
             include $this->view->getView();
         }
     }
+ //    /*
+ //     *  拼团主页面
+ //     */
+ //    public function index() {
+ //        $data = array();
+ //        //类目
+ //        $data['category'] = $this->pinTuanBaseModel->getCategory();
+ //        //banner大图
+ //        $data['banner'] = $this->pinTuanBaseModel->getBanner();
+
+ //        $data['banner'] = array_values($data['banner']);
+
+ //        //拼团大图列表
+ //        $recommend_goods = $this->pinTuanBaseModel->getRecommend();
+ //        //获取商品的销量
+ //        $data['recommend'] = $this->pinTuanDetailModel->getSaleNumsByList($recommend_goods);
+ //        //商品
+ //        $cat_id = request_int('cat_id',0);
+
+ //        //首页版块置顶操作
+ //        $cond_row = array();
+ //        if(request_string('pintuan_id')) {
+ //            $pintuan_id = request_string('pintuan_id');
+ //            $ids = explode(',',$pintuan_id);
+ //            $pintuan_cond_row['id:IN'] = $ids;
+ //            $pintuan_cond_row['end_time:>'] = date('Y-m-d H:i:s');
+ //            $pintuan_list = $this->pinTuanBaseModel->getGoodsList($pintuan_cond_row);
+ //            $cond_row['id:NOT IN'] = $ids;
+ //            $cond_row['status'] = 1;
+ //            $cond_row['start_time:<'] = date('Y-m-d H:i:s');
+ //            $cond_row['end_time:>'] = date('Y-m-d H:i:s');
+ //        } else {
+ //            $cond_row_id['status'] = 1;
+ //            $cond_row_id['start_time:<'] = date('Y-m-d H:i:s');
+ //            $cond_row_id['end_time:>'] = date('Y-m-d H:i:s');
+ //            $pinTuan = $this->pinTuanBaseModel->getByWhere($cond_row_id);
+ //            $ids = array_column($pinTuan, 'id');
+ //            $cond_row = $cond_row_id;
+ //            $cond_row['id:IN'] = $ids;
+ //            $goods = $this->pinTuanBaseModel->getGoodsList($cond_row,$cat_id);
+ //        }
+
+ // if($pintuan_list) {
+ //            $goods = array_merge($pintuan_list,$goods);
+ //        }
+ //        $goods = $this->pinTuanBaseModel->getGoodsList($cond_row,$cat_id);
+ //        // file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($cond_row,true),FILE_APPEND);
+ //        file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs1.php',print_r($goods,true),FILE_APPEND);
+ //        if($pintuan_list) {
+ //            $goods = array_merge($pintuan_list,$goods);
+ //        }
+ //        foreach($goods as $k=>$v)
+ //        {
+ //            if($v['goods']['goods_stock'] <= 0)
+ //            {
+ //                $this->pinTuanBaseModel->editBase($k,array('status'=>0));
+ //            }
+ //        }
+ //        //获取商品的销量
+ //        $goods = $this->pinTuanDetailModel->getSaleNumsByList($goods);
+
+ //        $data['goods'] = array_values($goods);
+ //        $data['cat_id'] = $cat_id;
+
+
+ //        if($this->typ == 'json'){
+ //            return $this->data->addBody(-140,$data,$cond_row);
+ //        } else {
+ //            include $this->view->getView();
+ //        }
+ //    }
 
     /**
      *  参团(去拼团)
