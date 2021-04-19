@@ -504,7 +504,7 @@
                         //平台同意退款（只增加买家的流水）
                         $rs = get_url_with_encrypt($key, sprintf('%s?ctl=Api_Pay_Pay&met=refundBuyerTransfer&typ=json', $url), $formvars);
 
-                    file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($rs,true),FILE_APPEND);
+                    // file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($rs,true),FILE_APPEND);
                         $data['for'] = $formvars;
                         if ($rs['status'] == 200) {
                             check_rs(true, $rs_row);
@@ -515,7 +515,7 @@
                             $data['return_finish_time'] = get_date_time();
                             $rs_row = array();
 
-                            file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($data,true),FILE_APPEND);
+                            // file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($data,true),FILE_APPEND);
                             $edit_flag = $this->Order_ReturnModel->editReturn($order_return_id, $data);
                             check_rs($edit_flag, $rs_row);
 

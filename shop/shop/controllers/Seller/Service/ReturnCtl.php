@@ -50,6 +50,7 @@
                 $this->view->setMet('detail');
             } else {
                 $data = $this->listReturn(Order_ReturnModel::RETURN_TYPE_ORDER);
+                
                 //分销商分销的商品
                 $GoodsCommonModel = new Goods_CommonModel();
                 $Order_GoodsModel = new Order_GoodsModel();
@@ -512,6 +513,10 @@
                         $data_row = $this->agree($order_return_id, "商家收到货物，同意退款");
                         $status = $data_row['status'];
                         $msg = $data_row['msg'];
+                        if ($status == 250) {
+                            $data['return_state'] = Order_ReturnModel::RETURN_SELLER_PASS;
+                            $flag = $this->orderReturnModel->editReturn($order_return_id, $data);
+                        }
                     }
                 } else {
                     $status = 250;
