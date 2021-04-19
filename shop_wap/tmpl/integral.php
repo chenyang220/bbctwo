@@ -64,7 +64,9 @@ include __DIR__ . '/../includes/header.php';
     
     <!-- </header> -->
     <div class="integral-wap fixed-Width">
-        <!-- <div class="integral-ban"><img id="promotiom_img"></div> -->
+        <div class="integral-ban">
+            <!-- <img id="promotiom_img"> -->
+        </div>
         <!--    <ul class="integral-types">-->
         <!--        <li class="icon-voucher">-->
         <!--            <a href="javascript:;">-->
