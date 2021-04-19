@@ -338,9 +338,15 @@
                             else {
                                 if (a.msg == 'failure') {
                                     Public.tips.error('<?=__('操作失败！')?>');
+                                    setTimeout(function(){
+                                        window.location.reload();
+                                    },3000);
                                 }
                                 else {
                                     Public.tips.error(a.msg);
+                                    setTimeout(function(){
+                                        window.location.reload();
+                                    },3000);
                                 }
                             }
                         }
@@ -381,6 +387,10 @@
                                 },3000)
                             } else {
                                 Public.tips.error('<?=__('操作失败！')?>');
+                                setTimeout(function(){
+                                    window.location.reload();
+                                },3000);
+
                             }
                         }
                     });
