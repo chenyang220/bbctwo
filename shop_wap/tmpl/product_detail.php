@@ -62,6 +62,10 @@ if ($_GET['qr']) {
     opacity: 0;
     display: none;
 }
+
+a.buy-now {
+    background:  #F22E39 !important;
+}
     </style>
     <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
     <script type="text/javascript">

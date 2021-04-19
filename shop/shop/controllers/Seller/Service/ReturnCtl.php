@@ -561,7 +561,14 @@
             if ($return['seller_user_id'] == Perm::$shopId) {
                 $data['return_shop_message'] = $return_shop_message;
                 $data['return_state'] = Order_ReturnModel::RETURN_SELLER_UNPASS;
-                $data['return_shop_handle'] = Order_ReturnModel::RETURN_SELLER_UNPASS;
+
+
+                if ($return_type == 1) {
+                    $data['return_shop_handle'] = Order_ReturnModel::RETURN_WAIT_PASS;
+                } else {
+                    $data['return_shop_handle'] = Order_ReturnModel::RETURN_SELLER_UNPASS;
+                }
+                
                 $data['return_shop_time'] = get_date_time();
                 
                 $rs_row = array();

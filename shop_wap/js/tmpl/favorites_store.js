@@ -21,6 +21,9 @@ $(function () {
         dataType: 'json',
         success: function(data) {
             if (data.status == 200) {
+
+
+                console.log(data.data)
                  var r = template.render("sfavorites_list", data.data);
                     $("#favorites_list").html(r)
                     // if($("#viewlist li").hasClass('active'))
