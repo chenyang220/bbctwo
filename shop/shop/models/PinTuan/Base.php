@@ -219,6 +219,7 @@ class PinTuan_Base extends Yf_Model
     }
 
 
+
     /**
      * 获取拼团商品
      * @return type
@@ -234,6 +235,7 @@ class PinTuan_Base extends Yf_Model
                 $goods_id[] = $value['detail']['goods_id'];
             }
         }
+
         $goods_detail = array();
         if($goods_id){
             $goods_model = new Goods_BaseModel();
@@ -267,7 +269,6 @@ class PinTuan_Base extends Yf_Model
 
             }
         }
-
         foreach ($where['id:IN'] as $k=>$v)
         {
             foreach ($pt_detail as $kk=>$vv)
@@ -278,10 +279,73 @@ class PinTuan_Base extends Yf_Model
                 }
             }
         }
-
-
         return $pt_details;
     }
+
+ //    /**
+ //     * 获取拼团商品
+ //     * @return type
+ //     */
+ //    public function getGoodsList($where = array(),$cat_id=0){
+ //        $pt_detail = $this->getDetailList($where);
+ //        $goods_id = array();
+ //        foreach ($pt_detail as $key=>$value){
+ //            if(!$value['detail'] || !$value['detail']['goods_id']){
+ //                unset($pt_detail[$key]);
+ //                continue;
+ //            } else {
+ //                $goods_id[] = $value['detail']['goods_id'];
+ //            }
+ //        }
+ //        $goods_detail = array();
+ //        if($goods_id){
+ //            $goods_model = new Goods_BaseModel();
+ //            $goods_detail = $goods_model->getBase($goods_id);
+ //            //对已下架商品进行过滤,
+ //            foreach ($goods_detail as $key => $val) {
+ //                if ($val['goods_is_shelves'] == 2) {
+ //                    unset($goods_detail[$key]);
+ //                }
+ //            }
+            
+ //        }
+ //        foreach ($pt_detail as $k=>$val){
+ //            if(!$goods_detail[$val['detail']['goods_id']]){
+ //                unset($pt_detail[$k]);
+ //                continue;
+ //            } else {
+ //                $pt_detail[$k]['goods'] = $goods_detail[$val['detail']['goods_id']];
+
+ //                if($cat_id>0) {
+ //                    $Goods_CatModel = new Goods_CatModel();
+ //                    $cat_tree           = $Goods_CatModel->getCatTreeData($cat_id, true, 0);
+
+ //                    $category_ids = array_column($cat_tree,'cat_id');
+
+
+ //                    if (!in_array($goods_detail[$val['detail']['goods_id']]['cat_id'] ,$category_ids)) {
+ //                        unset($pt_detail[$k]);
+ //                    }
+ //                }
+
+ //            }
+ //        }
+ // // file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($where,true),FILE_APPEND);
+ //        foreach ($where['id:IN'] as $k=>$v)
+ //        {
+
+
+ //            foreach ($pt_detail as $kk=>$vv)
+ //            {
+ //                if($v==$kk)
+ //                {
+ //                    $pt_details[] =$vv;
+ //                }
+ //            }
+ //        }
+
+ //        return $pt_details;
+ //    }
 
 
     /**
