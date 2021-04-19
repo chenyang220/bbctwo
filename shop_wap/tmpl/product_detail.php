@@ -270,9 +270,7 @@ a.buy-now {
                             </div>
                             <h5 class="fz-28 col2 more-overflow pt-20"><%=goods_commend_list[i].common_name%></h5>
                             <b class="fz-30 pl-10 pr-10 mb-20 mt-20"><?= __('￥'); ?><%=goods_commend_list[i].common_price%></b>
-                        </a>
-                        
-                        
+                        </a> 
                     </li>
                     <% } %>
                 <% } %>
