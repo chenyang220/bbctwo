@@ -19,13 +19,27 @@ include __DIR__.'/../includes/header.php';
     <link rel="stylesheet" type="text/css" href="../css/nctouch_products_list.css">
 </head>
 <body>
-<header id="header" class="nctouch-product-header fixed">
-    <div class="header-wrap">
+    <style type="text/css">
+        .nctouch-main-layout-a {
+            display: block;
+            top: -0.1rem;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            /* overflow: hidden; */
+            z-index: 1;
+            position: absolute;
+            bottom: 0;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+<!-- <header id="header" class="nctouch-product-header fixed"> -->
+    <!-- <div class="header-wrap"> -->
         <!-- <div class="header-l"> <a href="javascript:history.go(-1)"> <i class="back"></i> </a> </div> -->
         <!-- <div class="header-r"> <a id="header-nav" href="javascript:void(0);"><i class="more"></i><sup style="display: inline;"></sup></a> </div> -->
-    </div>
-    <div class="nctouch-nav-layout">
-        <div class="nctouch-nav-menu"> <span class="arrow"></span>
+    <!-- </div> -->
+    <!-- <div class="nctouch-nav-layout"> -->
+<!--         <div class="nctouch-nav-menu"> <span class="arrow"></span>
             <ul>
                 <?php if($_COOKIE['SHOP_ID_WAP']){ ?>
                     <li><a href="../tmpl/store.html?shop_id=<?=$_COOKIE['SHOP_ID_WAP']?>"><i class="home"></i><?= __('首页'); ?></a></li>
@@ -39,8 +53,8 @@ include __DIR__.'/../includes/header.php';
                 <li><a href="javascript:void(0);"><i class="message"></i><?= __('消息'); ?><sup></sup></a></li>
             </ul>
         </div>
-    </div>
-</header>
+    </div> -->
+<!-- </header> -->
 <div class="goods-search-list-nav">
     <ul id="nav_ul">
         <li><a href="javascript:void(0);" class="current" id="sort_default"><?= __('默认排序'); ?><i></i></a></li>
@@ -67,16 +81,16 @@ include __DIR__.'/../includes/header.php';
 <div class="nctouch-full-mask hide">
     <div class="nctouch-full-mask-bg"></div>
     <div class="nctouch-full-mask-block">
-        <div class="header">
-            <div class="header-wrap">
-                <!-- <div class="header-l"> <a href="javascript:void(0);"><i class="back"></i></a></div> -->
+<!--         <div class="header" style="display: block;">
+            <div class="header-wrap"> -->
+     <!--            <div class="-headerl"> <a href="javascript:void(0);"><i class="back"></i></a></div>
                 <div class="header-title">
                     <h1><?= __('积分商品筛选'); ?></h1>
-                </div>
-                <div class="header-r"><a href="javascript:void(0);" id="reset" class="text"><?= __('重置'); ?></a> </div>
-            </div>
-        </div>
-        <div class="nctouch-main-layout-a secreen-layout" id="list-items-scroll" style="top: 2rem;"><div></div></div>
+                </div> -->
+<!--                 <div class="header-r"><a href="javascript:void(0);" id="reset" class="text"><?= __('重置'); ?></a> </div>
+        </div> -->
+        <!-- </div> -->
+        <div class="nctouch-main-layout-a secreen-layout" id="list-items-scroll" ><div></div></div>
     </div>
 </div>
 <div class="nctouch-main-layout mt40 mb20">
@@ -119,6 +133,9 @@ include __DIR__.'/../includes/header.php';
 
 <script type="text/html" id="search_items">
     <div>
+        <dl>
+            <dt  id="p-headerl"  style="color: #FE244B"><i class="back"></i><?= __('< 返回'); ?></dt>
+        </dl>
         <dl>
             <dt><?= __('所需积分'); ?></dt>
             <dd>

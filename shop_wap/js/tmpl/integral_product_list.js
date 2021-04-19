@@ -11,8 +11,13 @@ var only_self = getQueryString("is_self");
 var points_min = getQueryString("points_min");
 var points_max = getQueryString("points_max");
 
-$(function () {
+window.onload = function(){
+　　$("#p-headerl").click(function(){
+        $(".nctouch-full-mask").addClass("hide");
+    })
+}
 
+$(function () {
     $.animationLeft({valve: "#search_adv", wrapper: ".nctouch-full-mask", scroll: "#list-items-scroll"});
 
     get_list();
@@ -169,6 +174,7 @@ function get_list()
 function search_adv()
 {
     $("#list-items-scroll").html(template.render("search_items"));
+
 
     if ( points_min > -1 ) $("#points_min").val(points_min);
     if ( points_max > -1 ) $("#points_max").val(points_max);
