@@ -22,7 +22,8 @@ $(function() {
         dataType: 'json',
         data: param,
         success: function(data) {
-            if ( data.status == 200 ) {console.info(data);
+            if ( data.status == 200 ) {
+                // console.info(data);
                 var data = data.data;
 
                 // var swiper_container_nav = template.render("swiper-container-nav", data);
@@ -35,9 +36,14 @@ $(function() {
                 $(".righttubiao a").addClass("bottG");
                 //判断是否有轮播图
                 var banner = data.banner;
-                if(banner.slider1.slider1_image == '' && banner.slider2.slider2_image == '' && banner.slider3.slider3_image == '' && banner.slider4.slider4_image == '') {
-                    $(".swiper-pagination").hide();
+                console.log(banner)
+
+                if (typeof banner != "undefined") {
+                    if(banner.slider1.slider1_image == '' && banner.slider2.slider2_image == '' && banner.slider3.slider3_image == '' && banner.slider4.slider4_image == '') {
+                        $(".swiper-pagination").hide();
+                    }
                 }
+                
                 var swiper_banner = template.render("swiper-banner", data);
                 $(".swiper-banner").append(swiper_banner);
                 var swiper = new Swiper('.swiper-banner', {
