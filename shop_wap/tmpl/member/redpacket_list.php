@@ -23,9 +23,11 @@ $act = $_GET['act'] ? $_GET['act'] : 0;
     <body>
     <header id="header">
         <div class="header-wrap">
-            <!-- <div class="header-l"><a href="member.html"><i class="back"></i></a></div> -->
-            <span class="header-tab"><a href="member_voucher.html">代金券</a><a class="cur" href="redpacket_list.html">我的红包</a></span>
-            <a  class="delredpacket" href="javascript:void(0)"><?= __('清空'); ?></a>
+            <div class="header-l">
+				<!-- <a href="member.html"><i class="back"></i></a> -->
+			</div>
+            <span class="header-tab"><a class="colf" href="member_voucher.html">代金券</a><a class="cur colf" href="redpacket_list.html">我的红包</a></span>
+            <a  class="delredpacket colf" href="javascript:void(0)"><?= __('清空'); ?></a>
             <!-- <div class="header-r"> <a id="header-nav" href="javascript:void(0);"><i class="more"></i><sup></sup></a> </div> -->
         </div>
         <div class="nctouch-nav-layout">

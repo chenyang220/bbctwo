@@ -24,12 +24,12 @@ function ajaxVoucher(state){
         {
             $(".delvoucher").click(function ()
             {
-                // $.sDialog({
-                //     skin: "block", content: "确认清空失效代金券吗？", okBtn: true, cancelBtn: true, okFn: function ()
-                //     {
+                $.sDialog({
+                    skin: "block", content: "确认清空失效代金券吗？", okBtn: true, cancelBtn: true, okFn: function ()
+                    {
                         delvoucher()
-                //     }
-                // })
+                   }
+                })
             })
             if (e.status == 200){
                 if (e.data.items.length==0){

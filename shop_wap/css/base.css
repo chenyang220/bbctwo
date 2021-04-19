@@ -421,7 +421,7 @@ sub { vertical-align: text-bottom }
 .header-tab { display: inline-block; height: 1.4rem; margin: 0.275rem auto 0 auto; font-size: 0; border-radius: 0.2rem; }
 .header-tab a {position:relative; display: inline-block; height: 1.363rem;width: 4.09rem;/* padding: 0 1rem;*/ text-align: center; font-size: 0.681rem; color: #222; line-height: 1.363rem;  }
 .header-tab a.cur:after {display:inline-block; }
-.header-tab a:after{content:"";width:2rem;height:0.1rem;background:#fe244b;position:absolute;left:50%;bottom:-0.2rem;margin-left:-1rem; display:none;}
+.header-tab a:after{content:"";width:2rem;height:0.1rem;background:#fff;position:absolute;left:50%;bottom:-0.2rem;margin-left:-1rem; display:none;}
 /*标题导航*/
 .header-nav { display: inline-block; margin: 0 auto; vertical-align: top; font-size: 0; white-space: nowrap; }
 .header-nav li { display: inline-block; vertical-align: top; text-align: center; height: 1.95rem; }
@@ -540,7 +540,7 @@ header.fixed { position: fixed;/* background: rgba(248,248,248,0.95);*/ z-index:
 .header-l a i.home { width: 80%; height: 80%; margin: 10%; background-image: url(../images/home_b.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 90%; opacity: 0.7; }
 .transparent .header-l a i.mine-back {width:1.35rem; height:1.35rem;background-image: url(../images/new/arrow_left_r.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 100%;}
 .delvoucher{padding-right: 0.454rem;font-size:0.636rem;color: #4a4a4a;line-height: 1.95rem;}
-.delredpacket{position: absolute;right: 2rem;padding-top: 0.56rem;font-size:0.7rem;color: #4a4a4a;}
+.delredpacket{/* position: absolute;right: 2rem; */padding-right: 0.454rem;font-size:0.636rem;color: #4a4a4a;line-height: 1.95rem;}
 /*单一标题*/
 /*头部下拉菜单*/
 .nctouch-nav-layout { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: transparent; }
