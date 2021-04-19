@@ -1,3 +1,4 @@
+
 var shop_id = getQueryString("shop_id");
 var keyword = decodeURIComponent(getQueryString("keyword"));
 var order_key = getQueryString("key");
@@ -102,7 +103,7 @@ $(function () {
     
 
 
-    //价格从高到底 onclick="get_list({'order_val':'2','order_key':'2'})"
+    //价格从高到低 onclick="get_list({'order_val':'2','order_key':'2'})"
     $("#pricedown_price").click(function (){
         order_val = 2;
         order_key = 2;
@@ -112,7 +113,7 @@ $(function () {
         firstRow = 0;
         get_list();
     });
-    //价格从底到高 onclick="get_list({'order_val':'1','order_key':'2'})"
+    //价格从低到高 onclick="get_list({'order_val':'1','order_key':'2'})"
     $("#priceup_price").click(function (){
         order_val = 1;
         order_key = 2;
@@ -134,7 +135,7 @@ $(function () {
         firstRow = 0;
         get_list();
     });
-    //价格从高到底 onclick="get_list({'order_val':'2','order_key':'2'})"
+    //价格从高到低 onclick="get_list({'order_val':'2','order_key':'2'})"
     $("#pricedown").click(function (){
         order_val = 2;
         order_key = 2;
@@ -143,19 +144,19 @@ $(function () {
         curpage = 1;
         firstRow = 0;
         $("#sort_price").addClass("hide")
-        $("#sort_prices").html("价格从高到底")
+        $("#sort_prices").html("价格从高到低")
         get_list();
     });
-    //价格从底到高 onclick="get_list({'order_val':'1','order_key':'2'})"
+    //价格从低到高 onclick="get_list({'order_val':'1','order_key':'2'})"
     $("#priceup").click(function (){
         order_val = 1;
         order_key = 2;
         hasmore = true;
-        $("#sort_price").addClass("hide")
         $("#product_list").html('');
-        $("#sort_prices").html("价格从底到高")
-        curpage = 1;
-        firstRow = 0;
+		curpage = 1;
+		firstRow = 0;
+        $("#sort_price").addClass("hide")
+        $("#sort_prices").html("价格从低到高")
         get_list();
     });
     //人气排序 onclick="get_list({'order_val':'2','order_key':'5'})"
@@ -374,7 +375,6 @@ function get_list()
 
         var  goods_brand_html = template.render("goods_brand", e.data);
         $("#goods_brands").html(goods_brand_html);
-
         brandsHtml=template.render("goods_brand_all", e.data);
         $(".loading").remove();
         brandsHtml2=template.render("goods_brands_all", e.data);
@@ -383,7 +383,11 @@ function get_list()
 
 
         $("#product_list").append(r);
-		 waterFall(columns);
+		imagesLoaded( document.querySelector('#allgoods_con'), function( instance ) {
+		 $("#allgoods_con").find('.item').css('position','absolute')
+		  waterFall(columns);
+		 });
+		 
        if(e.data.page < e.data.total)
        {
            firstRow = e.data.records;
@@ -394,6 +398,7 @@ function get_list()
            hasmore = false;
        }
     })
+	
 }
 function search_adv() {
     $.ajax({

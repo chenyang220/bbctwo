@@ -210,7 +210,7 @@ include __DIR__ . '/../includes/header.php';
 			<div class="pad">
 				<span class="goods-pic">
 					<a href="product_detail.html?goods_id=<%=v.goods_id[0].goods_id;%>">
-						<img src="<%=v.common_image;%>"/>
+						<img src="<%=v.common_image;%>" />
 					</a>
 				</span>
 				<dl class="goods-info">
@@ -299,5 +299,5 @@ include __DIR__ . '/../includes/header.php';
     }
 }
 
-    window.load = loadJs(WapSiteUrl+"/js/tmpl/store_goods_list.js");
+    window.load = loadJs(WapSiteUrl+"/js/tmpl/store_goods_list.js?v=4412");
 </script>
