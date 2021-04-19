@@ -50,7 +50,6 @@
                 $this->view->setMet('detail');
             } else {
                 $data = $this->listReturn(Order_ReturnModel::RETURN_TYPE_ORDER);
-                
                 //分销商分销的商品
                 $GoodsCommonModel = new Goods_CommonModel();
                 $Order_GoodsModel = new Order_GoodsModel();
@@ -911,8 +910,6 @@
                         }
                         //平台同意退款（只增加买家的流水）
                         $rs = get_url_with_encrypt($key, sprintf('%s?ctl=Api_Pay_Pay&met=refundBuyerTransfer&typ=json', $url), $formvars);
-
-                        file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'abs.php',print_r($rs,true),FILE_APPEND);
                         $data['for'] = $formvars;
                         if ($rs['status'] == 200) {
                             check_rs(true, $rs_row);

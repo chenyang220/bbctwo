@@ -62,7 +62,6 @@ class Order_ReturnModel extends Order_Return
 	public function getReturnList($cond_row = array(), $order_row = array(), $page = 1, $rows = 100)
 	{
 		$data = $this->listByWhere($cond_row, $order_row, $page, $rows);
-
 		foreach ($data['items'] as $k => $v)
 		{
 			if($v['return_shop_handle'] == 3)

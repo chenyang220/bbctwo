@@ -270,7 +270,12 @@ die;
           );
           $message = $ZkSms->simba_business_notice_send($getToken['token'], $msg,$order_base[0]['order_from']);
         }
+
+        if ($result['errcode'] != 0) {
+            $result['data'] = $union_notify_data;
+        }
         Yf_Log::log($result,Yf_Log::LOG,'wxReturnMoney');
+
         return $result;
     }
     /*------h5支付end------*/
