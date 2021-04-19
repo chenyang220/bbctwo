@@ -21,6 +21,27 @@ include __DIR__ . '/../includes/header.php';
         <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
     </head>
     <body>
+        <style type="text/css">
+            header, .header {
+                background: rgba(0,0,0,0);
+                height: 2rem;
+                position: fixed;
+                z-index: 8;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: auto;
+                /* border-bottom: solid 1px #e7e7e7; */
+            }
+            .goods-detail-foot .buy-handle a, .goods-option-foot .buy-handle a {
+    display: block;
+    height: 2rem;
+    font-size: 0.681rem;
+    line-height: 2rem;
+    color: #222;
+    text-align: center;
+}
+        </style>
     <header id="header" class="posf">
         <div class="header-wrap">
             <!-- <div class="header-l"><a href="javascript:history.go(-1)"> <i class="back"></i> </a></div> -->

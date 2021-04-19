@@ -19,6 +19,19 @@ include __DIR__.'/../includes/header.php';
     <link rel="stylesheet" type="text/css" href="../css/nctouch_products_detail.css">
 </head>
 <body>
+    <style type="text/css">
+            header, .header {
+                background: rgba(0,0,0,0);
+                height: 2rem;
+                position: fixed;
+                z-index: 8;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: auto;
+                /* border-bottom: solid 1px #e7e7e7; */
+            }
+        </style>
 <header id="header" class="posf">
     <div class="header-wrap">
         <!-- <div class="header-l"> <a href="javascript:history.go(-1)"> <i class="back"></i> </a> </div> -->
