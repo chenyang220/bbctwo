@@ -481,7 +481,7 @@ include $this->view->getTplPath() . '/' . 'seller_header.php';
                 echo $common_data['third_url'];
             } ?>"/>
 
-            <p class="hint"><?= __('此链接为特殊商品跳转到第三方详情的链接例如 http://ms.look56.com/?index.php') ?></p>
+            <p class="hint"><?= __('此链接为特殊商品跳转到第三方详情的链接例如 ms.look56.com/?index.php') ?></p>
         </dd>
     </dl>
     <?php

@@ -145,7 +145,7 @@ include   '../includes/header.php';
     <script type="text/html" id="productRecommendation">
         <div class="goods-detail-recom grid">
             <h4 class="tc"><?= __('店铺推荐'); ?></h4>
-            <ul class="new-goods clearfix bgf pl-10 pr-10 box-size">
+            <ul class="new-goods bg-f5">
                 <% if(goods_commend_list){ %>
                     <% for (var i = 0; i<goods_commend_list.length ;i++){ %>
                     <li>
@@ -161,7 +161,7 @@ include   '../includes/header.php';
 
                         <!-- <a href="product_detail.html?goods_id=<%=goods_commend_list[i].goods_id%>"> -->
                             <div class="overhide">
-                                <div class="table wp100">
+                                <div class="table">
                                     <span class="img-area">
                                         <img src="<%=goods_commend_list[i].common_image%>">
                                     </span>
@@ -959,6 +959,9 @@ include   '../includes/header.php';
     <!--o2o<?= __('分店地图'); ?>End-->
 
     <script>
+        function urlu(url1) {
+           window.location.href=url1;
+        }
         $.ajax({
             url:ApiUrl + '/index.php?ctl=GroupBuy&met=groupBuyViews&typ=json',
             type:'GET',
