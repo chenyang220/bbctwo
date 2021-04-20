@@ -983,3 +983,11 @@
 .custom-store-activity-ul li{
 	min-height:5.204rem;
 }
+.masonry .nctouch-norecord{
+	position:unset;
+	top:auto; 
+	left:auto;
+	 width:auto; 
+	 height:auto; 
+	 margin:auto;
+}
