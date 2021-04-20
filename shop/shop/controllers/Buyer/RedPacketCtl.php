@@ -80,9 +80,37 @@ class Buyer_RedPacketCtl extends Buyer_Controller
 			$this->data->addBody(-140, $data);
 		}
     }
+public function delRedpackets()
+    {
+        $user_id = Perm::$userId;
+        $red_id = [];
 
+        $redpacketlist = $this->redPacketBaseModel->getByWhere(['redpacket_owner_id'=>$user_id,'redpacket_state:IN'=>[RedPacket_BaseModel::USED,RedPacket_BaseModel::EXPIRED]]);
 
-    public function delRedpackets()
+        if($redpacketlist){
+            $red_id = array_column($redpacketlist,'redpacket_id');
+        }
+
+        $flag = $this->redPacketBaseModel->editRedPacket($red_id,['redpacket_state' => RedPacket_BaseModel::RECOVER]);
+        $rs_row = array();
+        check_rs($flag, $rs_row);
+        $fl = is_ok($rs_row);
+
+        if ($fl) {
+            $status = 200;
+            $msg = __('success');
+
+        } else {
+            $status = 250;
+            $msg = __('failure');
+
+        }
+        $data = array('fl' => $fl);
+
+        $this->data->addBody(-140, $data, $msg, $status);
+    }
+
+    public function delRedpacket()
     {
         $user_id = Perm::$userId;
         $red_id = [];
