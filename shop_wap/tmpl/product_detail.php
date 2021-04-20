@@ -52,16 +52,16 @@ if ($_GET['qr']) {
         .s-dialog-btn-cancel {
             border-left-width: 0px !important;
         }
-        #poster_pic {
-    position: fixed;
-    top: 0;
-    width: 79.4%;
-    background-color: #fff;
-    border-radius: 0.454rem;
-    overflow: hidden;
-    opacity: 0;
-    display: none;
-}
+        /*#poster_pic {
+            position: fixed;
+            top: 0;
+            width: 79.4%;
+            background-color: #fff;
+            border-radius: 0.454rem;
+            overflow: hidden;
+            opacity: 0;
+            display: none;
+        }*/
 
 a.buy-now {
     background:  #F22E39 !important;

@@ -70,9 +70,9 @@ include   '../includes/header.php';
     <!-- <?= __('代金券'); ?> -->
     <div id="voucher_html" class="nctouch-bottom-mask down"></div>
     <!-- 海报样式 -->
-    <!-- <div class="clearfix" id="poster_pic"> -->
+    <div class="clearfix" id="poster_pic">
         <!-- 顶部 -->
-    <!-- </div> -->
+    </div>
      <div class="mask_div">
         <!-- 遮罩层 -->
         <div class="vemask" style=""></div>
