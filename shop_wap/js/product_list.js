@@ -135,15 +135,20 @@ $(function () {
 
 
     $("#sort_prices").click(function () {
+		if($('#sort_price').hasClass('hide')){
+			$("#sort_price").removeClass("hide")
+		}else{
+			$("#sort_price").addClass("hide")
+		}
         $(this).addClass("current");
 
         $("#sort_default").removeClass("current");
         $("#sort_salesnum").removeClass("current");
         $("#sort_inner").addClass("hide")
-        $("#sort_price").removeClass("hide")
+        
     });
 
-
+	
 
     $("#nav_ul").find("a").click(function () {
         $(this).addClass("current").parent().siblings().find("a").removeClass("current");
@@ -513,6 +518,7 @@ function init_get_list(e, r) {
     hasmore = true;
     $("#product_list .goods-search-list").html("");
     $("#footer").removeClass("posa");
+	$('#sort_price').addClass('hide');
     get_list();
 }
 
