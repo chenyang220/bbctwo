@@ -145,7 +145,7 @@ include   '../includes/header.php';
     <script type="text/html" id="productRecommendation">
         <div class="goods-detail-recom grid">
             <h4 class="tc"><?= __('店铺推荐'); ?></h4>
-            <ul class="new-goods bg-f5">
+            <ul class="new-goods clearfix bgf pl-10 pr-10 box-size">
                 <% if(goods_commend_list){ %>
                     <% for (var i = 0; i<goods_commend_list.length ;i++){ %>
                     <li>
@@ -161,7 +161,7 @@ include   '../includes/header.php';
 
                         <!-- <a href="product_detail.html?goods_id=<%=goods_commend_list[i].goods_id%>"> -->
                             <div class="overhide">
-                                <div class="table">
+                                <div class="table wp100">
                                     <span class="img-area">
                                         <img src="<%=goods_commend_list[i].common_image%>">
                                     </span>
