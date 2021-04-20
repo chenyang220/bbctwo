@@ -132,8 +132,6 @@ $(function () {
             $("#sort_inner").addClass("hide")
         }
     });
-
-
     $("#sort_prices").click(function () {
 		if($('#sort_price').hasClass('hide')){
 			$("#sort_price").removeClass("hide")
