@@ -149,7 +149,17 @@ include   '../includes/header.php';
                 <% if(goods_commend_list){ %>
                     <% for (var i = 0; i<goods_commend_list.length ;i++){ %>
                     <li>
-                        <a href="product_detail.html?goods_id=<%=goods_commend_list[i].goods_id%>">
+
+                         <% if(goods_commend_list[i].third_url){%>
+    <a href="javascript:void(0);"  onClick="urlu('<%=goods_commend_list[i].third_url%>');">
+                        <% } else {%>
+                        <a href="<%=goods_commend_list[i].label_url%>.html?goods_id=<%=goods_commend_list[i].goods_id;%>&pos=<%=pos%>&pos_page=product_list">
+                        <% } %>
+
+
+
+
+                        <!-- <a href="product_detail.html?goods_id=<%=goods_commend_list[i].goods_id%>"> -->
                             <div class="overhide">
                                 <div class="table">
                                     <span class="img-area">

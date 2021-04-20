@@ -172,12 +172,25 @@ class Goods_Common extends Yf_Model
 	public function getRecommonRow($data_recommon)
 	{
 		$Goods_CommonModel = new Goods_CommonModel();
+		$Label_BaseModel = new Label_BaseModel();
+		$Label_Base = $Label_BaseModel->getByWhere("*");
+		$label_name_arr = array_column($Label_Base, "label_name","id");
+
 		$items             = array();
 		if (!empty($data_recommon['items']))
 		{
 			$items = $data_recommon['items'];
 			foreach ($items as $key => $value)
 			{
+				$items[$key]['label_url'] = "details1";
+				if ($value['label_id']) {
+					$label_id_arr = explode(",", $value['label_id']);
+					foreach ($label_id_arr as $l_key => $label_id) {
+						if ($label_name_arr[$label_id] == '民风民俗' || $label_name_arr[$label_id] == "非遗") {
+							$items[$key]['label_url'] = "details2";
+						}
+					}
+				}	
 				$goods_id = '';
 				$goods_id = $Goods_CommonModel->getGoodsId($value['common_id']);
 				if ($goods_id)
@@ -190,6 +203,7 @@ class Goods_Common extends Yf_Model
 				}
 			}
 		}
+
 		return $items;
 	}
 
