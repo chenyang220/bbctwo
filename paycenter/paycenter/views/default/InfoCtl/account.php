@@ -92,14 +92,14 @@ include $this->view->getTplPath() . '/' . 'header.php';
 				<tr>
                   <td class="check_name"><?=__('正面照')?></td>
                   <td>
-                    <div class="user-avatar"><span><img  id="image_img"  src="<?=$user_info['user_identity_face_logo'] ?>" width="" height="151" nc_type="avatar"></span></div>
+                    <div class="user-avatar"><span><img  id="image_img"  src="<?=image_thumb($user_info['user_identity_face_logo'],500,500) ?>" width="" height="151" nc_type="avatar"></span></div>
                   </td>
 				  <td class="account_ahref"></td>
                 </tr>
 				<tr>
                   <td class="check_name"><?=__('背面照')?></td>
                   <td>
-                    <div class="user-avatar"><span><img  id="image_img"  src="<?=$user_info['user_identity_font_logo'] ?>" width="" height="151" nc_type="avatar"></span></div>
+                    <div class="user-avatar"><span><img  id="image_img"  src="<?=image_thumb($user_info['user_identity_font_logo'],500,500) ?>" width="" height="151" nc_type="avatar"></span></div>
                   </td>
 				  <td class="account_ahref"></td>
                 </tr>
