@@ -263,7 +263,7 @@ include __DIR__ . '/../includes/header.php';
             <% } %>
         </div><%}%>
         <% if (check_out === true) {%>
-        <div class="nctouch-cart-bottom bot-2 clearfix">
+        <div class="nctouch-cart-bottom clearfix">
             <div class="all-check fl pl-20">
                 <input class="all_checkbox" type="checkbox" checked> <span class="selected-all fz-30 col6"><?= __('全选'); ?></span>
             </div>

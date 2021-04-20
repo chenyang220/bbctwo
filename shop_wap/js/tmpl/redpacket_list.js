@@ -23,12 +23,12 @@ function ajaxVoucher(state){
         {
             $(".delredpacket").click(function ()
             {
-                // $.sDialog({
-                //     skin: "block", content: "确认清空失效红包吗？", okBtn: true, cancelBtn: true, okFn: function ()
-                //     {
+                 $.sDialog({
+                     skin: "block", content: "确认清空失效红包吗？", okBtn: true, cancelBtn: true, okFn: function ()
+                     {
                         delredpacket()
-                //     }
-                // })
+                     }
+                 })
             })
             if (e.status == 200){
                if (e.data.items.length==0){

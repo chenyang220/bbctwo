@@ -256,13 +256,13 @@ a.buy-now {
     <script type="text/html" id="productRecommendation">
         <div class="goods-detail-recom grid">
             <h4 class="tc"><?= __('店铺推荐'); ?></h4>
-            <ul class="new-goods bg-f5">
+            <ul class="new-goods clearfix bgf pl-10 pr-10 box-size">
                 <% if(goods_commend_list){ %>
                     <% for (var i = 0; i<goods_commend_list.length ;i++){ %>
                     <li>
                         <a href="product_detail.html?goods_id=<%=goods_commend_list[i].goods_id%>">
                             <div class="overhide">
-                                <div class="table">
+                                <div class="table wp100">
                                     <span class="img-area">
                                         <img src="<%=goods_commend_list[i].common_image%>">
                                     </span>
@@ -270,9 +270,7 @@ a.buy-now {
                             </div>
                             <h5 class="fz-28 col2 more-overflow pt-20"><%=goods_commend_list[i].common_name%></h5>
                             <b class="fz-30 pl-10 pr-10 mb-20 mt-20"><?= __('￥'); ?><%=goods_commend_list[i].common_price%></b>
-                        </a>
-                        
-                        
+                        </a> 
                     </li>
                     <% } %>
                 <% } %>
