@@ -53,7 +53,7 @@ include $this->view->getTplPath() . '/' . 'header.php';
                                 <div class="user-avatar">
 	                    <span>
                             <input type="hidden" id="img_input">
-                            <img  id="image_img"  src="<?=$data['user_identity_face_logo']?image_thumb($data['user_identity_face_logo'],500,500):'holder.js/240x151?text=预览区'; ?>"  width="" height="151" nc_type="avatar">
+                            <img  id="image_img"  src="<?=$data['user_identity_face_logo']?$data['user_identity_face_logo']:'holder.js/240x151?text=预览区'; ?>"  width="" height="151" nc_type="avatar">
 	                 	<!-- 	   <img  id="image_img"  src="<?=$data['user_identity_face_logo']?Img::url($data['user_identity_face_logo']):'holder.js/240x151?text=预览区'; ?>"  width="" height="151" nc_type="avatar"> -->
 	                    </span>
                                 </div>
@@ -74,7 +74,7 @@ include $this->view->getTplPath() . '/' . 'header.php';
                         <tr>
                             <td class="check_name"><?=__('背面照预览：')?></td>
                             <td>
-                                   <div class="user-avatar"><span><img  id="image_font_img"  src="<?=$data['user_identity_font_logo']?image_thumb($data['user_identity_font_logo'],500,500):'holder.js/240x151?text=预览区' ?>" width="" height="151" nc_type="avatar"></span></div>
+                                   <div class="user-avatar"><span><img  id="image_font_img"  src="<?=$data['user_identity_font_logo']?$data['user_identity_font_logo']:'holder.js/240x151?text=预览区' ?>" width="" height="151" nc_type="avatar"></span></div>
                              <!--    <div class="user-avatar"><span><img  id="image_font_img"  src="<?=$data['user_identity_font_logo']?Img::url($data['user_identity_font_logo']):'holder.js/240x151?text=预览区' ?>" width="" height="151" nc_type="avatar"></span></div> -->
                                 <p class="hint mt5"><span style="color:orange;"><?=__('背面照尺寸为')?><span class="phosize">240x151</span><?=__('像素，请根据系统操作提示进行裁剪并生效。')?></span></p>
                             </td>
@@ -200,12 +200,20 @@ include $this->view->getTplPath() . '/' . 'header.php';
             });
 
             function callback ( respone , api ) {
-                if (respone.type == '.jpeg') {
-                      respone.url = respone.url_prefix + respone.url_path;
+            
+                // if (respone.type == '.jpeg') {
+                      respone.url1 = respone.url_prefix + respone.url_path;
+                // }
+                if (respone.url1) {
+                   var uu = respone.url1; 
+                } else {
+                    var uu = respone.url;
                 }
-                $('#image_img').attr('src', respone.url);
+                    console.log(uu)
+                $('#image_img').attr('src', uu);
                 $('#user_identity_face_logo').attr('value', respone.url);
                 api.close();
+
             }
 
         })
@@ -224,10 +232,18 @@ include $this->view->getTplPath() . '/' . 'header.php';
             });
 
             function callback ( respone , api ) {
-                  if (respone.type == '.jpeg') {
-                      respone.url = respone.url_prefix + respone.url_path;
+                //   if (respone.type == '.jpeg') {
+                //       respone.url = respone.url_prefix + respone.url_path;
+                // }
+                 // if (respone.type == '.jpeg') {
+                      respone.url1 = respone.url_prefix + respone.url_path;
+                // }
+                if (respone.url1) {
+                   var uu = respone.url1; 
+                } else {
+                    var uu = respone.url;
                 }
-                $('#image_font_img').attr('src', respone.url);
+                $('#image_font_img').attr('src', uu);
                 $('#user_identity_font_logo').attr('value', respone.url);
                 api.close();
             }

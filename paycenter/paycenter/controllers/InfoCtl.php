@@ -1703,8 +1703,32 @@ class InfoCtl extends Controller
         if (!$edit['user_identity_card']) {
             return $this->data->addBody(-140, [], __('请填写证件号'), 250);
         }
-        $edit['user_identity_font_logo'] = trim(request_string('user_identity_font_logo'));
-        $edit['user_identity_face_logo'] = trim(request_string('user_identity_face_logo'));
+        $user_identity_font_logo = trim(request_string('user_identity_font_logo'));
+
+        $a = explode("!",$user_identity_font_logo);
+      
+        if (strstr($a[1], '0x0')) {
+            $edit['user_identity_font_logo'] = $a[0];
+
+        } else {
+            $edit['user_identity_font_logo'] = $user_identity_font_logo;
+        }
+
+
+
+        $user_identity_face_logo = trim(request_string('user_identity_face_logo'));
+
+        $b = explode("!",$user_identity_face_logo);
+        if (strstr($b[1], '0x0')) {
+            $edit['user_identity_face_logo'] = $b[0];
+        } else {
+            $edit['user_identity_face_logo'] = $user_identity_face_logo;
+        }
+
+
+
+
+        // $edit['user_identity_face_logo'] = trim(request_string('user_identity_face_logo'));
         if (!$edit['user_identity_font_logo'] || !$edit['user_identity_face_logo']) {
             return $this->data->addBody(-140, [], __('请上传证件照'), 250);
         }
