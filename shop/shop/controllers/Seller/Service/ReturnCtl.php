@@ -696,7 +696,7 @@
 
                     if ($return['return_goods_return']) {
                         //商家拒绝退款退货3
-                        $goods_data['goods_refund_status'] = Order_GoodsModel::REFUND_REF;
+                        $goods_data['goods_refund_status'] = Order_GoodsModel::REFUND_IN;
                         $edit_flag = $Order_GoodsModel->editGoods($return['order_goods_id'], $goods_data);
                         check_rs($edit_flag, $rs_row);
                     } else {

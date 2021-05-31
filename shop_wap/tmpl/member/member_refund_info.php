@@ -18,15 +18,15 @@ include __DIR__.'/../../includes/header.php';
     <link rel="stylesheet" type="text/css" href="../../css/nctouch_member.css">
 </head>
 <body>
-<header id="header">
-    <div class="header-wrap">
+<!-- <header id="header"> -->
+<!--     <div class="header-wrap">
         <div class="header-l"> <a href="javascript:history.go(-1)"> <i class="back"></i> </a> </div>
     <span class="header-title">
     <h1><?= __('退款详情'); ?></h1>
     </span>
-    </div>
-</header>
-<div class="nctouch-main-layout" id="refund-info-div"> </div>
+    </div> -->
+<!-- </header> -->
+<div class="nctouch-main-layout" id="refund-info-div" style="margin-top: 0px;"> </div>
 <footer id="footer"></footer>
 <script type="text/html" id="refund-info-script">
    <!--<div>
