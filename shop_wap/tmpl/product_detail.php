@@ -609,7 +609,7 @@ a.buy-now {
 			 </div>
 			 <!-- 新版代金券 -->
 			<div class="custom-det-module" id="getVoucher">
-				<a class="special-goods-li" href="">
+				<a class="special-goods-li" href="./member/member_voucher.html">
 					<span>
 						<i class="zk-voucher"></i><em id='voucher_list_text'>领取代金券</em>
 					</span>
