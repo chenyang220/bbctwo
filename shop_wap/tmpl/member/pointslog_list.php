@@ -81,18 +81,18 @@ include __DIR__.'/../../includes/header.php';
                         <div class="money add" style="background:none;color:#29e2d3">+
                             <%=v.points_log_points;%>
                         </div>
-                        <%}else{%>
+                    <%}else{%>
                             <div class="money reduce">
                                 <%=v.points_log_points;%>
                             </div>
-                            <%}%>
+                    <%}%>
                                 <time class="date">
                                     <%=v.points_log_time;%>
                                 </time>
                 </li>
-                <%}%>
-                    <li class="loading">
-                        <div class="spinner"><i></i></div><?= __('数据读取中'); ?></li>
+            <%}%>
+                   <!--  <li class="loading">
+                        <div class="spinner"><i></i></div><?= __('数据读取中'); ?></li> -->
                     <%
         }else {
         %>
