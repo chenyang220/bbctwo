@@ -42,7 +42,7 @@ $(function () {
         $.ajax({
             type: "post",
             url: ApiUrl + "/index.php?ctl=Goods_Informationnewslist&met=Complaint&typ=json",
-            data: {id: e},
+            data: {id: e,k: getCookie('key'),u: getCookie('id')},
             dataType: "json",
             success: function (e) {
                 console.log(e);

@@ -124,6 +124,7 @@ class Api_Information_NewsCtl extends Api_Controller
     public function addInformationNews()
     {
         $data = [];
+        $data['author_id'] = request_int('user_id');
         $data['title'] = request_string('title');
         $data['subtitle'] = request_string('subtitle');
         $data['content'] = request_string('content');
