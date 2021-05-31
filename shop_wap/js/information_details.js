@@ -8,6 +8,9 @@ $(function () {
     	console.log(t);
     	 var newsdetails=t.data;
     	 console.log(newsdetails);
+         if (newsdetails.number == null || newsdetails.number == "") {
+            newsdetails.number = 0;
+         }
     	 var html='<h2 class="title-info">'+newsdetails.title+'</h2>';
     	     html+='<p class="subheadInfo">'+newsdetails.subtitle+'</p>';
              html +='<div class="authorBox"><P>'+newsdetails.authorname+'</P><P><span>'+newsdetails.number+'</span>条阅读</P>';

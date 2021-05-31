@@ -41,7 +41,7 @@ include __DIR__ . '/../includes/header.php';
     
     <div class="authorBox">
         <P><%=newsdetails['authorname']%></P>
-        <p><span><%=newsdetails['number']%></span>条阅读</p>
+        <p><span><%=newsdetails['number']==null ? "0" : newsdetails['number'] %></span>条阅读</p>
         <% if(newsdetails['author_type']==2){%> <a class="entranceBn" href="store.html?shop_id=<%=newsdetails['shop_id']%>"><i></i>进入店铺</a> <%}%>
     </div>
 
