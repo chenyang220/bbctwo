@@ -47,10 +47,9 @@ $(function () {
             success: function (e) {
                 console.log(e);
                 if (e.status == 200) {
-                    
                     window.location.reload()
                 } else {
-                    $.sDialog({skin: "red", content: "操作失败！", okBtn: false, cancelBtn: false})
+                    $.sDialog({skin: "red", content: e.msg, okBtn: false, cancelBtn: false})
                 }
             }
         })
