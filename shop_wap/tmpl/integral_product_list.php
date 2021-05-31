@@ -63,13 +63,13 @@ include __DIR__.'/../includes/header.php';
     </ul>
     <div class="browse-mode"><a href="javascript:void(0);" id="show_style"><span class="browse-list"></span></a></div>
 </div>
-<div id="sort_inner" class="goods-sort-inner hide">
+<div id="sort_inner" class="goods-sort-inner hide top2">
     <span><a href="javascript:void(0);" onclick="init_get_list('order', 'default')"><?= __('默认排序'); ?><i></i></a></span>
     <span><a href="javascript:void(0);" onclick="init_get_list('order', 'stimedesc')"><?= __('最近上架'); ?><i></i></a></span>
     <span><a href="javascript:void(0);" onclick="init_get_list('order', 'pointsasc')"><?= __('积分值从低到高'); ?><i></i></a></span>
     <span><a href="javascript:void(0);" onclick="init_get_list('order', 'pointsdesc')"><?= __('积分值从高到低'); ?><i></i></a></span>
 </div>
-<div id="grade_inner" class="goods-sort-inner hide">
+<div id="grade_inner" class="goods-sort-inner hide top2">
     <span><a href="javascript:void(0);" onclick="init_get_list('grade', 0)"><?= __('会员等级'); ?><i></i></a></span>
     <span><a href="javascript:void(0);" onclick="init_get_list('grade', 1)"><?= __('注册会员'); ?><i></i></a></span>
     <span><a href="javascript:void(0);" onclick="init_get_list('grade', 2)"><?= __('铜牌会员'); ?><i></i></a></span>
@@ -93,7 +93,7 @@ include __DIR__.'/../includes/header.php';
         <div class="nctouch-main-layout-a secreen-layout" id="list-items-scroll" ><div></div></div>
     </div>
 </div>
-<div class="nctouch-main-layout mt40 mb20">
+<div class="nctouch-main-layout mt20 mb20">
     <div id="product_list" class="list">
         <ul class="goods-secrch-list">
         </ul>

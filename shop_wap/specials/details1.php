@@ -619,6 +619,7 @@ include   '../includes/header.php';
                     <span onclick="openChat();"  class="operate btn-customer"><i></i><p><?= __('客服'); ?></p></span>
                     <a href="javascript:void(0);" class="operate btn-save collect pd-collect <% if (is_favorate) { %>favorate<% } %>"><i></i><p><?= __('收藏'); ?></p></a>
                 </div>
+				<a href="../tmpl/cart_list.html" class="operate cart" style="display: none;"><i></i><p>购物车</p><span id="cart_count"><sup>25</sup></span></a>
                 <div class="fz0 special-bottom-btn-module <%if(!goods_hair_info.if_store || goods_info.goods_storage == 0){%>no-buy<%}%>">
                     <% if (goods_info.cart == '1'&&goods_info.promotion_type!='seckill'&&goods_info.promotion_type!='presale') { %>
                         <a href="javascript:void(0);" class="btn-cart <%if(goods_hair_info.if_store){%>animation-up<%}%> add-cart"><?= __('加入购物车'); ?></a>

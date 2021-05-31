@@ -61,7 +61,7 @@ include __DIR__.'/../../includes/header.php';
             <% for (var k in items) { var v = items[k]; %>
                 <li id="favitem_<%=v.shop_id %>">
                     <a href="<%=WapSiteUrl%>/tmpl/store.html?shop_id=<%=v.shop_id %>">
-                        <div class="store-avatar"><img src="<%=v.shop_logo, 60, 60 %>" /></div>
+                        <div class="store-avatar" style="background:url(<%=v.shop_logo, 60, 60 %>) no-repeat center;background-size:contain;"></div>
                         <dl class="store-info">
                             <dt class="store-name one-overflow wp80"><%=v.shop_name %></dt>
                             <dd><span><?= __('粉丝：'); ?><em><%=v.shop.shop_collect %></em><?= __('人'); ?></span><span>&nbsp;</span></dd>

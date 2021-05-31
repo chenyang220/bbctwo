@@ -292,6 +292,7 @@ $(function () {
                             delCookie('cart_count');
                             // 更新购物车中商品数量
                             getCartCount();
+							$(".JS-header-edit").html('编辑').removeClass('done');
                         } else {
                             alert(res.msg);
                         }

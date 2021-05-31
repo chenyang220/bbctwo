@@ -38,6 +38,7 @@
 }
 
 .goods-sort-inner { filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#19000000', endColorstr='#19000000');background:rgba(0,0,0,0.1); position: fixed; z-index: 4; top: 3.9rem; left: 0; right: 0; bottom: 0;}
+.top2{top:2rem !important;}
 .goods-sort-inner span { background-color: #FFF; display: block; padding-left: 0.38rem;}
 .goods-sort-inner span:first-child a{border-top:none;}
 .goods-sort-inner span a { font-size: 0.6rem; line-height: 1rem; color: #777; display: block; height: 1rem; padding: 0.5rem 0.75rem 0.5rem 0.38rem; border-top: solid 0.05rem #EEE;}

@@ -11,15 +11,39 @@ var only_self = getQueryString("is_self");
 var points_min = getQueryString("points_min");
 var points_max = getQueryString("points_max");
 
-window.onload = function(){
-　　$("#p-headerl").click(function(){
-        $(".nctouch-full-mask").addClass("hide");
-    })
-}
 
 $(function () {
-    $.animationLeft({valve: "#search_adv", wrapper: ".nctouch-full-mask", scroll: "#list-items-scroll"});
-
+    // $.animationLeft({valve: "#search_adv", wrapper: ".nctouch-full-mask", scroll: "#list-items-scroll"});
+	 var handler = function () {
+	        event.preventDefault();
+	        event.stopPropagation();
+	    };
+		 $(document).on("click", "#ldg_lockmask", function () {
+		        $(this).remove();
+		        $(document.body).css("overflow", "auto");
+		        document.body.removeEventListener('touchmove', handler, false);
+		        document.body.removeEventListener('wheel', handler, false);
+		    });
+			$(document).on("click", "#p-headerl", function () {
+				$(".nctouch-full-mask").removeClass('left').addClass('right');
+				$('#ldg_lockmask').remove();
+				$(document.body).css("overflow", "auto");
+				document.body.removeEventListener('touchmove', handler, false);
+				document.body.removeEventListener('wheel', handler, false);
+			})
+	$.animationLeft(
+        {
+            valve: "#search_adv",
+            wrapper: ".nctouch-full-mask",
+            openCallback: function () {
+                $(".JS-search").css("z-index", 1999);
+                $("body").append("<div id=\"ldg_lockmask\"></div>");
+                $(document.body).css("overflow", "hidden");
+                document.body.addEventListener('touchmove', handler, false);
+                document.body.addEventListener('wheel', handler, false);
+            }
+        }
+    );
     get_list();
     search_adv();
     
